@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InterchangeAssessmentMetadata xmlns="http://ed-fi.org/0100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0100 C:/Projects/TSDS/trunk/src/Etl/EdFi.Etl.EdFi/Ed-Fi/Interchange-AssessmentMetadata.xsd">
+	<Assessment id="TA-PSAT-Mathematics-1">
+		<AssessmentTitle>PSAT</AssessmentTitle>
+		<AssessmentIdentificationCode IdentificationSystem="Test Contractor">
+			<ID>PSAT Mathematics</ID>
+		</AssessmentIdentificationCode>
+		<AssessmentCategory>College entrance exam</AssessmentCategory>
+		<AcademicSubject>Mathematics</AcademicSubject>
+		<GradeLevelAssessed>Eleventh grade</GradeLevelAssessed>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>
+				<Description>State Criteria</Description>
+			</PerformanceLevel>
+			<AssessmentReportingMethod>Scale score</AssessmentReportingMethod>
+			<MinimumScore>20</MinimumScore>
+			<MaximumScore>80</MaximumScore>
+		</AssessmentPerformanceLevel>
+		<ContentStandard>PSAT</ContentStandard>
+		<Version>1</Version>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>80</MaxRawScore>
+	</Assessment>
+	<Assessment id="TA-PSAT-CriticalReading-1">
+		<AssessmentTitle>PSAT</AssessmentTitle>
+		<AssessmentIdentificationCode IdentificationSystem="Test Contractor">
+			<ID>PSAT Critical Reading</ID>
+		</AssessmentIdentificationCode>
+		<AssessmentCategory>College entrance exam</AssessmentCategory>
+		<AcademicSubject>Critical Reading</AcademicSubject>
+		<GradeLevelAssessed>Eleventh grade</GradeLevelAssessed>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>
+				<Description>State Criteria</Description>
+			</PerformanceLevel>
+			<AssessmentReportingMethod>Scale score</AssessmentReportingMethod>
+			<MinimumScore>20</MinimumScore>
+			<MaximumScore>80</MaximumScore>
+		</AssessmentPerformanceLevel>
+		<ContentStandard>PSAT</ContentStandard>
+		<Version>1</Version>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>80</MaxRawScore>
+	</Assessment>
+	<Assessment id="TA-PSAT-Writing-1">
+		<AssessmentTitle>PSAT</AssessmentTitle>
+		<AssessmentIdentificationCode IdentificationSystem="Test Contractor">
+			<ID>PSAT Writing</ID>
+		</AssessmentIdentificationCode>
+		<AssessmentCategory>College entrance exam</AssessmentCategory>
+		<AcademicSubject>Writing</AcademicSubject>
+		<GradeLevelAssessed>Eleventh grade</GradeLevelAssessed>
+		<ContentStandard>PSAT</ContentStandard>
+		<Version>1</Version>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>80</MaxRawScore>
+	</Assessment>
+	<PerformanceLevelDescriptor id="ID_1">
+		<Description>State Criteria</Description>
+		<PerformanceBaseConversion>Proficient</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+</InterchangeAssessmentMetadata>

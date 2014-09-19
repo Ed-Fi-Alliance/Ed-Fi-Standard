@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 rel. 2 sp1 (http://www.altova.com) by Matt Warden (Double Line Partners) -->
+<!-- (c)2012 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0110" targetNamespace="http://ed-fi.org/0110" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Staff Association Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStaffAssociation">
+		<xs:annotation>
+			<xs:documentation>This interchange is for staff and teacher information.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Staff" type="Staff"/>
+				<xs:element name="StaffEducationOrgEmploymentAssociation" type="StaffEducationOrgEmploymentAssociation"/>
+				<xs:element name="StaffEducationOrgAssignmentAssociation" type="StaffEducationOrgAssignmentAssociation"/>
+				<xs:element name="Teacher" type="Teacher"/>
+				<xs:element name="TeacherSchoolAssociation" type="TeacherSchoolAssociation"/>
+				<xs:element name="TeacherSectionAssociation" type="TeacherSectionAssociation"/>
+				<xs:element name="LeaveEvent" type="LeaveEvent"/>
+				<xs:element name="OpenStaffPosition" type="OpenStaffPosition"/>
+				<xs:element name="StaffProgramAssociation" type="StaffProgramAssociation"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

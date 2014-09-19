@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2013 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0110" targetNamespace="http://ed-fi.org/0110" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Assessment Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentAssessment">
+		<xs:annotation>
+			<xs:documentation>This interchange loads assessment results for students. Optionally, student results can be loaded at the objective or item level.
+
+This interchange can be used to exchange the scores and other results associated with students taking an assessment. The interchange schema supports reporting different types of scores (e.g., raw scores, scale scores, vertical scores, percentiles), absence information, and test accommodations. Scores may be exchanged at the test, objective, and/or assessment item levels. The companion Assessment Metadata interchange is used to exchange descriptive metadata about the assessment(s) for which this interchange provides results.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="StudentReference" type="StudentReferenceType">
+					<xs:annotation>
+						<xs:documentation>Relates the exchanged assessment scores and results to a unique student.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="AssessmentReference" type="AssessmentReferenceType">
+					<xs:annotation>
+						<xs:documentation>References the metadata definition for the assessment.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="StudentAssessment" type="StudentAssessment">
+					<xs:annotation>
+						<xs:documentation>This entity represents the analysis or scoring of a student&apos;s response on an assessment. The analysis results in a value that represents a student&apos;s performance on a set of items on a test.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="StudentObjectiveAssessment" type="StudentObjectiveAssessment">
+					<xs:annotation>
+						<xs:documentation>This entity holds the score and or performance levels earned for an objective assessment by a student.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="StudentAssessmentItem" type="StudentAssessmentItem">
+					<xs:annotation>
+						<xs:documentation>This entity represents the student&apos;s response to an assessment item and the item-level scores such as correct, incorrect, or met standard. </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

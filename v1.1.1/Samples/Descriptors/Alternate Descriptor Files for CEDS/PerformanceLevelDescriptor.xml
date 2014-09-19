@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0110" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0110 
+..\..\..\Schemas\Interchange-Descriptors.xsd">
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>Level1</ShortDescription>
+		<Description>Level 1: The lowest level assigned to students who completed the assessment and obtained a valid score.</Description>
+		<PerformanceBaseConversion>Fail</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>Level2</ShortDescription>
+		<Description>Level 2</Description>
+		<PerformanceBaseConversion>Below Basic</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>Level3</ShortDescription>
+		<Description>Level 3</Description>
+		<PerformanceBaseConversion>Basic</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>Level4</ShortDescription>
+		<Description>Level 4</Description>
+		<PerformanceBaseConversion>Pass</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>Level5</ShortDescription>
+		<Description>Level 5</Description>
+		<PerformanceBaseConversion>Proficient</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>Level6</ShortDescription>
+		<Description>Level 6</Description>
+		<PerformanceBaseConversion>Advanced</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+</InterchangeDescriptors>

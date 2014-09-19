@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Edward Comer (private) -->
+<!-- (c)2011 Michael & Susan Dell Foundation. All Rights Reserved.-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0100" targetNamespace="http://ed-fi.org/0100" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Assessment Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentAssessment">
+		<xs:annotation>
+			<xs:documentation>This interchange is to load the assessment results.  Loading of student results per objective or item is optional.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="StudentReference" type="StudentReferenceType"/>
+				<xs:element name="AssessmentReference" type="AssessmentReferenceType"/>
+				<xs:element name="StudentAssessment" type="StudentAssessment"/>
+				<xs:element name="StudentObjectiveAssessment" type="StudentObjectiveAssessment"/>
+				<xs:element name="StudentAssessmentItem" type="StudentAssessmentItem"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

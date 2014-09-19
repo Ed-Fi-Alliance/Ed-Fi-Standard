@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 rel. 2 sp1 (http://www.altova.com) by Matt Warden (Double Line Partners) -->
+<!-- (c)2012 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0110" targetNamespace="http://ed-fi.org/0110" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Grade Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentGrade">
+		<xs:annotation>
+			<xs:documentation>This interchange is for semester, final and grading period grades</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ReportCard" type="ReportCard"/>
+				<xs:element name="Grade" type="Grade"/>
+				<xs:element name="StudentCompetency" type="StudentCompetency"/>
+				<xs:element name="LearningObjective" type="LearningObjective"/>
+				<xs:element name="StudentCompetencyObjective" type="StudentCompetencyObjective"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

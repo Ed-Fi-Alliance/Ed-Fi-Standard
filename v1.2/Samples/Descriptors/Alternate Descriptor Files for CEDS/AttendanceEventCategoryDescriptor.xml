@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Interchange-Descriptors.xsd"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0120 
+..\..\..\Schemas\Interchange-Descriptors.xsd">
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>Present</ShortDescription>
+		<Description>In Attendance</Description>
+		<AttendanceEventCategoryMap>In Attendance</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>ExcusedAbsence</ShortDescription>
+		<Description>Excused Absence</Description>
+		<AttendanceEventCategoryMap>Excused Absence</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>UnexcusedAbsence</ShortDescription>
+		<Description>Unexcused Absence</Description>
+		<AttendanceEventCategoryMap>Unexcused Absence</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>Tardy</ShortDescription>
+		<Description>Tardy</Description>
+		<AttendanceEventCategoryMap>Tardy</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>EarlyDeparture</ShortDescription>
+		<Description>Early departure</Description>
+		<AttendanceEventCategoryMap>Early departure</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+</InterchangeDescriptors>

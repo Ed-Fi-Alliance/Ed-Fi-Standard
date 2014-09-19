@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Interchange-Descriptors.xsd"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0110" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0110 
+..\..\..\Schemas\Interchange-Descriptors.xsd">
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>In Attendance</ShortDescription>
+		<Description>In Attendance</Description>
+		<AttendanceEventCategoryMap>In Attendance</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>Absence</ShortDescription>
+		<Description>Absence</Description>
+		<AttendanceEventCategoryMap>Absence</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>Excused Absence</ShortDescription>
+		<Description>Excused Absence</Description>
+		<AttendanceEventCategoryMap>Excused Absence</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>Unexcused Absence</ShortDescription>
+		<Description>Unexcused Absence</Description>
+		<AttendanceEventCategoryMap>Unexcused Absence</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>Tardy</ShortDescription>
+		<Description>Tardy</Description>
+		<AttendanceEventCategoryMap>Tardy</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+	<AttendanceEventCategoryDescriptor namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+		<ShortDescription>Early departure</ShortDescription>
+		<Description>Early departure</Description>
+		<AttendanceEventCategoryMap>Early departure</AttendanceEventCategoryMap>
+	</AttendanceEventCategoryDescriptor>
+</InterchangeDescriptors>

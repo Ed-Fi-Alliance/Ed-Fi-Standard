@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xsi:schemaLocation="http://ed-fi.org/0110 
+..\..\..\Schemas\Interchange-Descriptors.xsd" xmlns="http://ed-fi.org/0110" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>00126</CodeValue>
+		<ShortDescription>00126</ShortDescription>
+		<Description>Student</Description>
+		<ReporterDescriptionMap>Student</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03032</CodeValue>
+		<ShortDescription>03032</ShortDescription>
+		<Description>Student enrolled in the school where the incident occurred</Description>
+		<ReporterDescriptionMap>Student</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03033</CodeValue>
+		<ShortDescription>03033</ShortDescription>
+		<Description>Student enrolled in another school</Description>
+		<ReporterDescriptionMap>Student</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03034</CodeValue>
+		<ShortDescription>03034</ShortDescription>
+		<Description>Student expelled or involuntarily withdrawn</Description>
+		<ReporterDescriptionMap>Student</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03422</CodeValue>
+		<ShortDescription>03422</ShortDescription>
+		<Description>Staff member</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03035</CodeValue>
+		<ShortDescription>03035</ShortDescription>
+		<Description>Professional educational staff</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04732</CodeValue>
+		<ShortDescription>04732</ShortDescription>
+		<Description>Teacher</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>13782</CodeValue>
+		<ShortDescription>13782</ShortDescription>
+		<Description>Substitute teacher</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>13335</CodeValue>
+		<ShortDescription>13335</ShortDescription>
+		<Description>Librarians/Media Specialist</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04725</CodeValue>
+		<ShortDescription>04725</ShortDescription>
+		<Description>Counselor</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>13334</CodeValue>
+		<ShortDescription>13334</ShortDescription>
+		<Description>School Counselor</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04723</CodeValue>
+		<ShortDescription>04723</ShortDescription>
+		<Description>Athletic coach</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04730</CodeValue>
+		<ShortDescription>04730</ShortDescription>
+		<Description>Student activity advisor/non athletic coach</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>13403</CodeValue>
+		<ShortDescription>13403</ShortDescription>
+		<Description>Other Professional Staff</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04783</CodeValue>
+		<ShortDescription>04783</ShortDescription>
+		<Description>Registered nurse</Description>
+		<ReporterDescriptionMap>Other</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04788</CodeValue>
+		<ShortDescription>04788</ShortDescription>
+		<Description>Social worker</Description>
+		<ReporterDescriptionMap>Other</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03041</CodeValue>
+		<ShortDescription>03041</ShortDescription>
+		<Description>Administrator</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04718</CodeValue>
+		<ShortDescription>04718</ShortDescription>
+		<Description>Principal/headmaster/headmistress/head of school</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04711</CodeValue>
+		<ShortDescription>04711</ShortDescription>
+		<Description>Deputy/associate/vice /assistant principal</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04710</CodeValue>
+		<ShortDescription>04710</ShortDescription>
+		<Description>Dean/dean of instructions/dean of students/dean of boys/dean of girls/dean of student activities</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04721</CodeValue>
+		<ShortDescription>04721</ShortDescription>
+		<Description>Superintendent/commissioner</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04712</CodeValue>
+		<ShortDescription>04712</ShortDescription>
+		<Description>Deputy/associate/assistant superintendent/ commissioner</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04708</CodeValue>
+		<ShortDescription>04708</ShortDescription>
+		<Description>Board of education/school board/board of trustees member</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>13342</CodeValue>
+		<ShortDescription>13342</ShortDescription>
+		<Description>All Other Support Staff</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04864</CodeValue>
+		<ShortDescription>04864</ShortDescription>
+		<Description>Bus driver</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>13340</CodeValue>
+		<ShortDescription>13340</ShortDescription>
+		<Description>School Administrative Support Staff</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04878</CodeValue>
+		<ShortDescription>04878</ShortDescription>
+		<Description>Custodian</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04877</CodeValue>
+		<ShortDescription>04877</ShortDescription>
+		<Description>Cook/food preparer (food service staff)</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>13333</CodeValue>
+		<ShortDescription>13333</ShortDescription>
+		<Description>Paraprofessionals/Instructional Aide</Description>
+		<ReporterDescriptionMap>Staff</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>04885</CodeValue>
+		<ShortDescription>04885</ShortDescription>
+		<Description>Security guard</Description>
+		<ReporterDescriptionMap>Law enforcement officer</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03054</CodeValue>
+		<ShortDescription>03054</ShortDescription>
+		<Description>Law enforcement officer</Description>
+		<ReporterDescriptionMap>Law enforcement officer</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03055</CodeValue>
+		<ShortDescription>03055</ShortDescription>
+		<Description>Municipal law enforcement officer assigned to the school</Description>
+		<ReporterDescriptionMap>Law enforcement officer</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03056</CodeValue>
+		<ShortDescription>03056</ShortDescription>
+		<Description>Municipal law enforcement officer not assigned to the school</Description>
+		<ReporterDescriptionMap>Law enforcement officer</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03057</CodeValue>
+		<ShortDescription>03057</ShortDescription>
+		<Description>School district police officer assigned to the school</Description>
+		<ReporterDescriptionMap>Law enforcement officer</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03058</CodeValue>
+		<ShortDescription>03058</ShortDescription>
+		<Description>School district police officer not assigned to the school</Description>
+		<ReporterDescriptionMap>Law enforcement officer</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03059</CodeValue>
+		<ShortDescription>03059</ShortDescription>
+		<Description>Nonschool personnel</Description>
+		<ReporterDescriptionMap>Other</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>00850</CodeValue>
+		<ShortDescription>00850</ShortDescription>
+		<Description>Parent/guardian</Description>
+		<ReporterDescriptionMap>Parent/guardian</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03060</CodeValue>
+		<ShortDescription>03060</ShortDescription>
+		<Description>Representative of visiting school</Description>
+		<ReporterDescriptionMap>Other</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03061</CodeValue>
+		<ShortDescription>03061</ShortDescription>
+		<Description>Other adult</Description>
+		<ReporterDescriptionMap>Other</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03168</CodeValue>
+		<ShortDescription>03168</ShortDescription>
+		<Description>Former student</Description>
+		<ReporterDescriptionMap>Student</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>03062</CodeValue>
+		<ShortDescription>03062</ShortDescription>
+		<Description>Other nonstudent youth</Description>
+		<ReporterDescriptionMap>Other</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+	<ReporterDescriptionDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ReporterDescriptionDescriptor.xml">
+		<CodeValue>09997</CodeValue>
+		<ShortDescription>09997</ShortDescription>
+		<Description>Unknown</Description>
+		<ReporterDescriptionMap>Other</ReporterDescriptionMap>
+	</ReporterDescriptionDescriptor>
+</InterchangeDescriptors>

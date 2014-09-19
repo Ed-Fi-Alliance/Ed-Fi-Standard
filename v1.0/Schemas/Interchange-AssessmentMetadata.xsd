@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Edward Comer (private) -->
+<!-- (c)2011 Michael & Susan Dell Foundation. All Rights Reserved.-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0100" targetNamespace="http://ed-fi.org/0100" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Assessment Metadata Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeAssessmentMetadata">
+		<xs:annotation>
+			<xs:documentation>This interchange is to load the metadata about assessments, specifically the definitions of the assessments, the learning objectives, learning standards and the assessment items.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AssessmentFamily" type="AssessmentFamily"/>
+				<xs:element name="Assessment" type="Assessment"/>
+				<xs:element name="AssessmentPeriodDescriptor" type="AssessmentPeriodDescriptor"/>
+				<xs:element name="PerformanceLevelDescriptor" type="PerformanceLevelDescriptor"/>
+				<xs:element name="ObjectiveAssessment" type="ObjectiveAssessment"/>
+				<xs:element name="AssessmentItem" type="AssessmentItem"/>
+				<xs:element name="LearningObjective" type="LearningObjective"/>
+				<xs:element name="LearningStandard" type="LearningStandard"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

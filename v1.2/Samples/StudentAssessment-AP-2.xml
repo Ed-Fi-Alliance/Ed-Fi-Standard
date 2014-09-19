@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeStudentAssessment xmlns:ann="http://ed-fi.org/annotation" xsi:schemaLocation="http://ed-fi.org/0120 ..\Schemas\Interchange-StudentAssessment.xsd" xmlns="http://ed-fi.org/0120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AssessmentReference id="AP_07">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - United States History</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_13">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Art History</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_14">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Art: Studio Art Drawing</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_15">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Art: Studio Art 2-D Design</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_16">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Art: Studio Art 3-D Design</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_20">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Biology</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Science</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_25">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Chemistry</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Science</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_28">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Chinese Language and Culture</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_31">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Computer Science A</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_33">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Computer Science AB</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_34">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Economics: Microeconomics</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_35">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Economics: Macroeconomics</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_36">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - English Language and Composition</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>English Language Arts</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_37">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - English Literature and Composition</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>English Language Arts</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_40">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Environmental Science</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Science</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_43">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - European History</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_48">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - French Language and Culture</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_51">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - French Literature</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_53">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Human Geography</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_55">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - German Language and Culture</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_57">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Government and Politics: United States</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_58">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Government and Politics: Comparative</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_60">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Latin: Vergil</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_61">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Latin: Literature</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_62">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Italian Language and Culture</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_64">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Japanese Language and Culture</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_66">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Calculus AB</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Mathematics</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_68">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Calculus BC</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Mathematics</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_69">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Calculus BC: AB Subscore</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Mathematics</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_75">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Music Theory</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_76">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Music Theory: Aural Subscore</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_77">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Music Theory: Nonaural Subscore</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_78">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Physics B</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Science</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_80">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Physics C: Mechanics</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Science</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_82">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Physics C: Electricity and Magnetism</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Science</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_85">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Psychology</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_87">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Spanish Language</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_89">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Spanish Literature</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Other</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_90">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - Statistics</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Mathematics</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="AP_93">
+		<AssessmentIdentity>
+			<AssessmentTitle>AP - World History</AssessmentTitle>
+			<AssessmentCategory>Advanced Placement</AssessmentCategory>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Social Studies</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-16</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>4</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604823</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-15</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>3</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604823</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-16</AdministrationDate>
+		<SerialNumber>58379905</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604836</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_36"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604868</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_57"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604880</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_07"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-14</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>4</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604823</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_66"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-15</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>3</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604823</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_36"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-16</AdministrationDate>
+		<SerialNumber>58379905</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604836</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_37"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604868</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_58"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-12</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604880</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_35"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-16</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>4</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605204</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-15</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>3</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605207</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-16</AdministrationDate>
+		<SerialNumber>58379905</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605208</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605210</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_57"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605212</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_07"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-16</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>4</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605139</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-15</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>3</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605122</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-16</AdministrationDate>
+		<SerialNumber>58379905</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605121</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_82"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605120</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_57"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605119</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_07"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-16</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>4</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605105</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-15</AdministrationDate>
+		<SerialNumber>63770795</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>3</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605103</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_68"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-16</AdministrationDate>
+		<SerialNumber>58379905</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604836</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_53"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605096</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_57"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2010-05-15</AdministrationDate>
+		<SerialNumber>63776238</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>5</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605095</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="AP_07"/>
+	</StudentAssessment>
+</InterchangeStudentAssessment>

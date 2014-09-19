@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeStudentAssessment xsi:schemaLocation="http://ed-fi.org/0100 C:/Projects/TSDS/trunk/src/Etl/EdFi.Etl.EdFi/Ed-Fi/Interchange-StudentAssessment.xsd" xmlns="http://ed-fi.org/0100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<StudentReference id="STU-605394">
+		<StudentIdentity>
+			<StudentUniqueStateId>605394</StudentUniqueStateId>
+			<Name>
+				<FirstName>Jessie</FirstName>
+				<LastSurname>Beck</LastSurname>
+			</Name>
+			<BirthDate>1994-09-17</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605594">
+		<StudentIdentity>
+			<StudentUniqueStateId>605594</StudentUniqueStateId>
+			<Name>
+				<FirstName>Jorge</FirstName>
+				<LastSurname>Brock</LastSurname>
+			</Name>
+			<BirthDate>1994-05-26</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605518">
+		<StudentIdentity>
+			<StudentUniqueStateId>605518</StudentUniqueStateId>
+			<Name>
+				<FirstName>Marvin</FirstName>
+				<LastSurname>Buchanan</LastSurname>
+			</Name>
+			<BirthDate>1994-04-28</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605516">
+		<StudentIdentity>
+			<StudentUniqueStateId>605516</StudentUniqueStateId>
+			<Name>
+				<FirstName>Oscar</FirstName>
+				<LastSurname>Collier</LastSurname>
+			</Name>
+			<BirthDate>1994-11-21</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605590">
+		<StudentIdentity>
+			<StudentUniqueStateId>605590</StudentUniqueStateId>
+			<Name>
+				<FirstName>Arthur</FirstName>
+				<LastSurname>Doyle</LastSurname>
+			</Name>
+			<BirthDate>1994-03-02</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605472">
+		<StudentIdentity>
+			<StudentUniqueStateId>605472</StudentUniqueStateId>
+			<Name>
+				<FirstName>Allen</FirstName>
+				<LastSurname>Frederick</LastSurname>
+			</Name>
+			<BirthDate>1994-02-11</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605529">
+		<StudentIdentity>
+			<StudentUniqueStateId>605529</StudentUniqueStateId>
+			<Name>
+				<FirstName>Clifton</FirstName>
+				<LastSurname>Garrison</LastSurname>
+			</Name>
+			<BirthDate>1994-04-13</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605438">
+		<StudentIdentity>
+			<StudentUniqueStateId>605438</StudentUniqueStateId>
+			<Name>
+				<FirstName>Edgar</FirstName>
+				<LastSurname>Gray</LastSurname>
+			</Name>
+			<BirthDate>1994-02-14</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605535">
+		<StudentIdentity>
+			<StudentUniqueStateId>605535</StudentUniqueStateId>
+			<Name>
+				<FirstName>Vernon</FirstName>
+				<LastSurname>Guerra</LastSurname>
+			</Name>
+			<BirthDate>1994-09-28</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605493">
+		<StudentIdentity>
+			<StudentUniqueStateId>605493</StudentUniqueStateId>
+			<Name>
+				<FirstName>Antonio</FirstName>
+				<LastSurname>Hendrix</LastSurname>
+			</Name>
+			<BirthDate>1994-02-22</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605707">
+		<StudentIdentity>
+			<StudentUniqueStateId>605707</StudentUniqueStateId>
+			<Name>
+				<FirstName>Manuel</FirstName>
+				<LastSurname>Macias</LastSurname>
+			</Name>
+			<BirthDate>1994-04-12</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605488">
+		<StudentIdentity>
+			<StudentUniqueStateId>605488</StudentUniqueStateId>
+			<Name>
+				<FirstName>Lloyd</FirstName>
+				<LastSurname>Mathews</LastSurname>
+			</Name>
+			<BirthDate>1994-04-27</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<StudentReference id="STU-605659">
+		<StudentIdentity>
+			<StudentUniqueStateId>605659</StudentUniqueStateId>
+			<Name>
+				<FirstName>Gene</FirstName>
+				<LastSurname>May</LastSurname>
+			</Name>
+			<BirthDate>1994-07-26</BirthDate>
+			<Sex>Male</Sex>
+		</StudentIdentity>
+	</StudentReference>
+	<AssessmentReference id="TA-SAT-Mathematics-1">
+		<AssessmentIdentity>
+			<AssessmentTitle>SAT</AssessmentTitle>
+			<AcademicSubject>Mathematics</AcademicSubject>
+			<GradeLevelAssessed>Twelfth grade</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="TA-SAT-CriticalReading-1">
+		<AssessmentIdentity>
+			<AssessmentTitle>SAT</AssessmentTitle>
+			<AcademicSubject>Critical Reading</AcademicSubject>
+			<GradeLevelAssessed>Twelfth grade</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="TA-SAT-Writing-1">
+		<AssessmentIdentity>
+			<AssessmentTitle>SAT</AssessmentTitle>
+			<AcademicSubject>Writing</AcademicSubject>
+			<GradeLevelAssessed>Twelfth grade</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>410</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>17</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>17</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605394"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>370</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>11</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>13</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605394"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>400</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>19</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>23</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605394"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>450</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>28</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>30</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605594"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>360</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>9</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>11</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605594"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>270</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605594"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>550</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>61</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>66</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605518"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>630</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>86</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>89</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605518"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>630</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>87</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>92</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605518"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>580</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>70</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>74</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605516"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>610</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>82</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>86</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605516"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>550</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>69</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>77</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605516"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>580</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>70</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>74</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605590"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>490</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>46</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>52</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605590"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>540</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>66</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>74</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605590"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>680</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>90</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>93</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605472"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>650</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>89</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>92</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605472"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>600</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>82</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>87</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605472"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>450</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>28</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>30</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605529"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>400</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>17</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>21</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605529"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>310</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>4</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>4</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605529"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>410</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>17</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>17</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605438"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>380</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>13</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>15</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605438"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>430</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>29</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>35</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605438"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>460</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>31</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>34</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605535"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>470</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>39</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>45</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605535"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>430</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>29</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>35</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605535"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>670</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>89</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>92</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605493"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>570</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>72</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>77</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605493"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>530</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>63</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>71</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605493"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>370</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>9</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>9</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605707"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>460</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>35</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>42</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605707"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>400</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>19</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>23</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605707"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>220</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605488"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>380</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>13</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>15</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605488"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>430</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>29</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>35</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605488"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>250</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605659"/>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>220</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605659"/>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage>English</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>240</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+		</ScoreResults>
+		<StudentReference ref="STU-605659"/>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+</InterchangeStudentAssessment>

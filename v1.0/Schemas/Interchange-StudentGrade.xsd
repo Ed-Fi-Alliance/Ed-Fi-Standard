@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 (http://www.altova.com) by Edward Comer (private) -->
+<!-- (c)2011 Michael & Susan Dell Foundation. All Rights Reserved.-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0100" targetNamespace="http://ed-fi.org/0100" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Grade Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentGrade">
+		<xs:annotation>
+			<xs:documentation>This interchange is for student transcript data; semester, final and grading period grades; and/or for student gradebook entries.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="StudentAcademicRecord" type="StudentAcademicRecord"/>
+				<xs:element name="CourseTranscript" type="CourseTranscript"/>
+				<xs:element name="ReportCard" type="ReportCard"/>
+				<xs:element name="Grade" type="Grade"/>
+				<xs:element name="StudentCompetency" type="StudentCompetency"/>
+				<xs:element name="Diploma" type="Diploma"/>
+				<xs:element name="GradebookEntry" type="GradebookEntry"/>
+				<xs:element name="StudentGradebookEntry" type="StudentGradebookEntry"/>
+				<xs:element name="CompentencyLevelDescriptor" type="CompetencyLevelDescriptor"/>
+				<xs:element name="LearningObjective" type="LearningObjective"/>
+				<xs:element name="StudentCompentencyObjective" type="StudentCompetencyObjective"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

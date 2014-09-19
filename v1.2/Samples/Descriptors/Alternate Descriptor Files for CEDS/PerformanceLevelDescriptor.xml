@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0120 
+..\..\..\Schemas\Interchange-Descriptors.xsd">
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>GradeLevel</ShortDescription>
+		<Description>At or above Grade Level</Description>
+		<PerformanceBaseConversion>Pass</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>BelowGradeLevel</ShortDescription>
+		<Description>Below Grade Level</Description>
+		<PerformanceBaseConversion>Fail</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+	<PerformanceLevelDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/PerformanceLevelDescriptor.xml">
+		<ShortDescription>NA</ShortDescription>
+		<Description>Not applicable</Description>
+		<PerformanceBaseConversion>Advanced</PerformanceBaseConversion>
+	</PerformanceLevelDescriptor>
+</InterchangeDescriptors>

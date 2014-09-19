@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 rel. 2 sp1 (http://www.altova.com) by Matt Warden (Double Line Partners) -->
+<!-- (c)2012 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0110" targetNamespace="http://ed-fi.org/0110" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Finance Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeFinance">
+		<xs:annotation>
+			<xs:documentation>This interchange is for financial data.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Account" type="Account">
+					<xs:annotation>
+						<xs:documentation>This financial entity represents a funding source combined with its purpose and type of transaction.  It provides a formal record of the debits and credits relating to the specific account.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Actual" type="Actual">
+					<xs:annotation>
+						<xs:documentation>This financial entity represents the sum of the financial transactions to date relating to a specific account.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Budget" type="Budget">
+					<xs:annotation>
+						<xs:documentation>This financial entity represents the amount of monies allocated to be spent or received by an education organization as related to a specific account.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="ContractedStaff" type="ContractedStaff">
+					<xs:annotation>
+						<xs:documentation>This financial entity represents the sum of the financial transactions to date for contracted staff.  Contracted staff includes "contractors" or "consultants" who perform services for an agreed upon fee, or an employee of a management service contracted to work on site.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Payroll" type="Payroll">
+					<xs:annotation>
+						<xs:documentation>This financial entity represents the sum of the financial transactions to date for employee compensation.  An "employee" who performs services under the direction of the employing institution or agency, is compensated for such services by the employer, and is eligible for employee benefits and wage or salary tax withholdings.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeStudentAssessment xmlns:ann="http://ed-fi.org/annotation" xsi:schemaLocation="http://ed-fi.org/0120 ..\Schemas\Interchange-StudentAssessment.xsd" xmlns="http://ed-fi.org/0120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AssessmentReference id="TA-SAT-Mathematics-1">
+		<AssessmentIdentity>
+			<AssessmentTitle>SAT</AssessmentTitle>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Mathematics</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="TA-SAT-CriticalReading-1">
+		<AssessmentIdentity>
+			<AssessmentTitle>SAT</AssessmentTitle>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Reading</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentReference id="TA-SAT-Writing-1">
+		<AssessmentIdentity>
+			<AssessmentTitle>SAT</AssessmentTitle>
+			<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+				<Description>Writing</Description>
+			</AcademicSubject>
+			<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+				<Description>Twelfth grade</Description>
+			</GradeLevelAssessed>
+			<Version>1</Version>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>410</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>17</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>17</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605394</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>370</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>11</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>13</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605394</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>400</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>19</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>23</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605394</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>450</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>28</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>30</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605594</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>360</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>9</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>11</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605594</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>270</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605594</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>550</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>61</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>66</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605518</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>630</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>86</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>89</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605518</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>630</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>87</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>92</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605518</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>580</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>70</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>74</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605516</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>610</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>82</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>86</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605516</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>550</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>69</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>77</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605516</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>580</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>70</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>74</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605590</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>490</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>46</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>52</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605590</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>540</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>66</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>74</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605590</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>680</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>90</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>93</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605472</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>650</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>89</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>92</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605472</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>600</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>82</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>87</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605472</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>450</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>28</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>30</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605529</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>400</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>17</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>21</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605529</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>310</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>4</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>4</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605529</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>410</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>17</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>17</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605438</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>380</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>13</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>15</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605438</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>430</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>29</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>35</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605438</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>460</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>31</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>34</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605535</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>470</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>39</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>45</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605535</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>430</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>29</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>35</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605535</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>670</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>89</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>92</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605493</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>570</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>72</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>77</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605493</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>530</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>63</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>71</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605493</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>370</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>9</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>9</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605707</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>460</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>35</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>42</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605707</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>400</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>19</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>23</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605707</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>220</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605488</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>380</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>13</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>15</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605488</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>430</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>29</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>35</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605488</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>250</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605659</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Mathematics-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>220</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605659</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-CriticalReading-1"/>
+	</StudentAssessment>
+	<StudentAssessment>
+		<AdministrationDate>2011-05-01</AdministrationDate>
+		<SerialNumber>0</SerialNumber>
+		<AdministrationLanguage namespace="http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml">
+			<Description>English</Description>
+		</AdministrationLanguage>
+		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+		<RetestIndicator>Primary Administration</RetestIndicator>
+		<ScoreResults AssessmentReportingMethod="Raw score">
+			<Result>240</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="National College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<ScoreResults AssessmentReportingMethod="State College-Bound Percentile">
+			<Result>1</Result>
+			<ResultDatatype>Integer</ResultDatatype>
+		</ScoreResults>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605659</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<AssessmentReference ref="TA-SAT-Writing-1"/>
+	</StudentAssessment>
+</InterchangeStudentAssessment>

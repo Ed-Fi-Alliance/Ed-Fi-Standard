@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xsi:schemaLocation="http://ed-fi.org/0110 
+..\..\..\Schemas\Interchange-Descriptors.xsd" xmlns="http://ed-fi.org/0110" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ContinuationOfServicesReasonDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ContinuationofServicesReasonDescriptor.xml">
+		<CodeValue>01</CodeValue>
+		<ShortDescription>01</ShortDescription>
+		<Description>Providing services for the duration of the term</Description>
+		<ContinuationOfServicesMap>Ceased to be migratory during school term</ContinuationOfServicesMap>
+	</ContinuationOfServicesReasonDescriptor>
+	<ContinuationOfServicesReasonDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ContinuationofServicesReasonDescriptor.xml">
+		<CodeValue>02</CodeValue>
+		<ShortDescription>02</ShortDescription>
+		<Description>Providing services for an additional year -comparable services are not available</Description>
+		<ContinuationOfServicesMap>Ceased to be migratory during previous school term and no comparable services are available</ContinuationOfServicesMap>
+	</ContinuationOfServicesReasonDescriptor>
+	<ContinuationOfServicesReasonDescriptor namespace="http://www.ed-fi.org/CEDSDescriptor/ContinuationofServicesReasonDescriptor.xml">
+		<CodeValue>03</CodeValue>
+		<ShortDescription>03</ShortDescription>
+		<Description>Serving secondary students through credit accrual programs</Description>
+		<ContinuationOfServicesMap>Previously migratory secondary student continuing secondary school credit accrual</ContinuationOfServicesMap>
+	</ContinuationOfServicesReasonDescriptor>
+</InterchangeDescriptors>

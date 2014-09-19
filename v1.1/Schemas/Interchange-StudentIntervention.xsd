@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 rel. 2 sp1 (http://www.altova.com) by Matt Warden (Double Line Partners) -->
+<!-- (c)2012 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0110" targetNamespace="http://ed-fi.org/0110" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:element name="InterchangeStudentIntervention">
+		<xs:annotation>
+			<xs:documentation>This interchange is for intervention data.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="EducationContent" type="EducationContent"/>
+				<xs:element name="InterventionPrescription" type="InterventionPrescription"/>
+				<xs:element name="Intervention" type="Intervention"/>
+				<xs:element name="InterventionStudy" type="InterventionStudy"/>
+				<xs:element name="StudentInterventionAssociation" type="StudentInterventionAssociation"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
