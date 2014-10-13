@@ -35,7 +35,7 @@ Contents of this repository
 	- /Schemas contains the Ed-Fi Interchange XSDs related to this version.
 		- /Draft contains the draft version of the Ed-Fi Interchange XSDs
 	
-About the Ed-Fi Technology
+About Ed-Fi Technology
 ===========
 
 For more information about the Ed-Fi Alliance and Ed-Fi Technology, please visit the official Ed-Fi Alliance Web site at [http://www.ed-fi.org](http://www.ed-fi.org/).
