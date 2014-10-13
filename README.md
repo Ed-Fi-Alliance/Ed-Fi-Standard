@@ -1,6 +1,6 @@
 Ed-Fi-Standard
 ==========
-This repository hosts the Ed-Fi Data Standard used by all of Ed-Fi Technologies. 
+This repository hosts the Ed-Fi Data Standard used by the Ed-Fi Technology components. 
 
 Contents of this repository
 =========
