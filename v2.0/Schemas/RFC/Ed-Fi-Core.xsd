@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 (x64) (http://www.altova.com) by Double Line, Inc. (Double Line, Inc.) -->
 <!-- (c)2013 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-Draft" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-Draft" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
@@ -2213,7 +2214,7 @@ Vacation</xs:documentation>
 </xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="PercentOfAssessment" type="PercentOfAssessment" minOccurs="0">
+					<xs:element name="PercentOfAssessment" type="percent" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The percent of the Assessment that tests this Objective.</xs:documentation>
 						</xs:annotation>
@@ -14740,7 +14741,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:decimal">
-			<xs:totalDigits value="9"/>
+			<xs:totalDigits value="5"/>
 			<xs:fractionDigits value="4"/>
 		</xs:restriction>
 	</xs:simpleType>
@@ -14805,18 +14806,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			<xs:maxInclusive value="1"/>
 			<xs:totalDigits value="5"/>
 			<xs:fractionDigits value="4"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="PercentOfAssessment">
-		<xs:annotation>
-			<xs:documentation>The percent of the Assessment that tests this Objective.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:decimal">
-			<xs:totalDigits value="6"/>
-			<xs:fractionDigits value="2"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="SchoolHoursPerWeek">
