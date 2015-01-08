@@ -5455,12 +5455,12 @@ Other</xs:documentation>
 							<xs:documentation>The staff providing special education services to the student.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="SpecialEducationHoursPerWeek" type="SpecialEducationHoursPerWeek" minOccurs="0">
+					<xs:element name="SpecialEducationHoursPerWeek" type="HoursPerWeek" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The number of hours per week for special education instruction and therapy</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="SchoolHoursPerWeek" type="SchoolHoursPerWeek" minOccurs="0">
+					<xs:element name="SchoolHoursPerWeek" type="HoursPerWeek" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Indicate the total number of hours of instructional time per week for the school that the student attends.</xs:documentation>
 						</xs:annotation>
@@ -14808,9 +14808,9 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			<xs:fractionDigits value="4"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="SchoolHoursPerWeek">
+	<xs:simpleType name="HoursPerWeek">
 		<xs:annotation>
-			<xs:documentation>Indicate the total number of hours of instructional time per week for the school that the student attends.</xs:documentation>
+			<xs:documentation>The number of hours per week used on an activity.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -14830,18 +14830,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		<xs:restriction base="xs:int">
 			<xs:minInclusive value="1"/>
 			<xs:maxInclusive value="8"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="SpecialEducationHoursPerWeek">
-		<xs:annotation>
-			<xs:documentation>Indicate the total number of hours of instructional time per week for the school that the student attends.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:decimal">
-			<xs:totalDigits value="5"/>
-			<xs:fractionDigits value="2"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="TotalInstructionalDays">
