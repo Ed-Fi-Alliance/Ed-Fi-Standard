@@ -8470,7 +8470,7 @@ Student late arrival/early dismissal
 					<xs:documentation>A unique number or alphanumeric code assigned to a course by a school, school system, state or other agency or entity.  For multi-part course codes, concatenate the parts separated by a "/".  For example, consider the following SCED code-    subject = 20 Math    course = 272 Geometry    level = G General    credits = 1.00   course sequence 1 of 1- would be entered as 20/272/G/1.00/1 of 1.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="CourseCodeSystem" type="CourseCodeSystemType">
+			<xs:element name="CourseIdentificationSystem" type="CourseIdentificationSystemType">
 				<xs:annotation>
 					<xs:documentation>A system that is used to identify the organization of subject matter and related learning experiences provided for the instruction of students.</xs:documentation>
 				</xs:annotation>
@@ -11078,7 +11078,7 @@ Withdrawn
 			<xs:enumeration value="Withdrawn"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="CourseCodeSystemType">
+	<xs:simpleType name="CourseIdentificationSystemType">
 		<xs:annotation>
 			<xs:documentation>A system that is used to identify the organization of subject matter and related learning experiences provided for the instruction of students. In addition to identifying courses using the appropriate state codes, cross referencing courses with one of the national course codes is encouraged.</xs:documentation>
 			<xs:appinfo>
