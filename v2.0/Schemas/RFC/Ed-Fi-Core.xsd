@@ -941,7 +941,7 @@ Withdrawn</xs:documentation>
 							<xs:documentation>&apos;The number of credits a student earned for completing a given course.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="EarnedAdditionalCredit" type="AdditionalCredit" minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="EarnedAdditionalCredits" type="AdditionalCredits" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>&apos;The number of additional credits a student attempted and could earn for successfully completing a given course (e.g., dual credit, AP, IB)</xs:documentation>
 						</xs:annotation>
@@ -7984,7 +7984,7 @@ Volunteer/no contract
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="AdditionalCredit">
+	<xs:complexType name="AdditionalCredits">
 		<xs:annotation>
 			<xs:documentation>Additional credits or units of value awarded for the completion of a course (e.g., AP, IB, Dual Credits).</xs:documentation>
 			<xs:appinfo>
