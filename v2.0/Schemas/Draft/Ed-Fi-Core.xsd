@@ -14555,18 +14555,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			<xs:maxLength value="24"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="text">
-		<xs:annotation>
-			<xs:documentation>Long string for annotations or descriptions</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:token">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="1024"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="timeinterval">
 		<xs:annotation>
 			<xs:documentation>A period of time with fixed, well-defined limits.</xs:documentation>
