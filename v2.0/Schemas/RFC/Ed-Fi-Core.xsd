@@ -14011,7 +14011,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
-			<xs:maxLength value="75"/>
+			<xs:maxLength value="10"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="GradebookEntryTitle">
@@ -14275,7 +14275,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
-			<xs:maxLength value="75"/>
+			<xs:maxLength value="30"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="PositionTitle">
