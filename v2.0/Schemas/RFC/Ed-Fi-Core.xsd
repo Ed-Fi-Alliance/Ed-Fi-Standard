@@ -83,7 +83,7 @@
 				<xs:sequence>
 					<xs:element name="AccountNumber" type="AccountNumber">
 						<xs:annotation>
-							<xs:documentation>The alpha-numeric string that identifies the account.</xs:documentation>
+							<xs:documentation>The alphanumeric string that identifies the account.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="AccountCode" type="AccountCodeDescriptorReferenceType" maxOccurs="unbounded">
@@ -2365,7 +2365,7 @@ Bilingual/English as a Second Language</xs:documentation>
 				<xs:sequence>
 					<xs:element name="ParentUniqueId" type="UniqueId">
 						<xs:annotation>
-							<xs:documentation>A unique alpha-numeric code assigned to a parent.</xs:documentation>
+							<xs:documentation>A unique alphanumeric code assigned to a parent.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="Name" type="Name">
@@ -2934,7 +2934,7 @@ Special education students
 				<xs:sequence>
 					<xs:element name="StaffUniqueId" type="UniqueId">
 						<xs:annotation>
-							<xs:documentation>A unique alpha-numeric code assigned to a staff.</xs:documentation>
+							<xs:documentation>A unique alphanumeric code assigned to a staff.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="StaffIdentificationCode" type="StaffIdentificationCode" minOccurs="0" maxOccurs="unbounded">
@@ -3090,7 +3090,7 @@ Special education students
 				<xs:sequence>
 					<xs:element name="StudentUniqueId" type="UniqueId">
 						<xs:annotation>
-							<xs:documentation>A unique alpha-numeric code assigned to a student.</xs:documentation>
+							<xs:documentation>A unique alphanumeric code assigned to a student.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="StudentIdentificationCode" type="StudentIdentificationCode" minOccurs="0" maxOccurs="unbounded">
@@ -5705,7 +5705,7 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="AccountNumber" type="AccountNumber">
 				<xs:annotation>
-					<xs:documentation>The alpha-numeric string that identifies the account.</xs:documentation>
+					<xs:documentation>The alphanumeric string that identifies the account.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="FiscalYear" type="xs:int">
@@ -6769,7 +6769,7 @@ Local Neglected Program</xs:documentation>
 			</xs:annotation>
 			<xs:element name="ParentUniqueId" type="UniqueId">
 				<xs:annotation>
-					<xs:documentation>A unique alpha-numeric code assigned to a parent.</xs:documentation>
+					<xs:documentation>A unique alphanumeric code assigned to a parent.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -7013,7 +7013,7 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="StaffUniqueId" type="UniqueId">
 				<xs:annotation>
-					<xs:documentation>A unique alpha-numeric code assigned to a staff.</xs:documentation>
+					<xs:documentation>A unique alphanumeric code assigned to a staff.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -7084,7 +7084,7 @@ Local Neglected Program</xs:documentation>
 			</xs:annotation>
 			<xs:element name="StudentUniqueId" type="UniqueId">
 				<xs:annotation>
-					<xs:documentation>A unique alpha-numeric code assigned to a student.</xs:documentation>
+					<xs:documentation>A unique alphanumeric code assigned to a student.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -13486,7 +13486,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="AccountNumber">
 		<xs:annotation>
-			<xs:documentation>The alpha-numeric string that identifies the account.</xs:documentation>
+			<xs:documentation>The alphanumeric string that identifies the account.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -14590,7 +14590,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	</xs:simpleType>
 	<xs:simpleType name="UniqueId">
 		<xs:annotation>
-			<xs:documentation>A unique alpha-numeric code assigned to a person by a system managing unique identifiers.</xs:documentation>
+			<xs:documentation>A unique alphanumeric code assigned to a person by a system managing unique identifiers.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
