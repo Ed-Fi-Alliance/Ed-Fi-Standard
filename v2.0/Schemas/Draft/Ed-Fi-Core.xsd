@@ -459,7 +459,7 @@ Prose
 							<xs:documentation>The correct response for the assessment item.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="ExpectedTimeAssessed" type="timeinterval" minOccurs="0">
+					<xs:element name="ExpectedTimeAssessed" type="TimeInterval" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The duration of time allotted for the assessment item.</xs:documentation>
 						</xs:annotation>
@@ -1239,7 +1239,7 @@ Representative of visiting school
 									<xs:documentation>The organization credited with publishing the resource.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
-							<xs:element name="TimeRequired" type="timeinterval" minOccurs="0">
+							<xs:element name="TimeRequired" type="TimeInterval" minOccurs="0">
 								<xs:annotation>
 									<xs:documentation>Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience.</xs:documentation>
 								</xs:annotation>
@@ -2214,7 +2214,7 @@ Vacation</xs:documentation>
 </xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="PercentOfAssessment" type="percent" minOccurs="0">
+					<xs:element name="PercentOfAssessment" type="Percent" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The percent of the Assessment that tests this Objective.</xs:documentation>
 						</xs:annotation>
@@ -4806,7 +4806,7 @@ Volunteer/no contract
 					<xs:documentation>The department or suborganization the employee/contractor is associated with in the Education Organization.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="FullTimeEquivalency" type="percent" minOccurs="0">
+			<xs:element name="FullTimeEquivalency" type="Percent" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The ratio between the hours of work expected in a position and the hours of work normally expected in a full-time position in the same setting.</xs:documentation>
 				</xs:annotation>
@@ -4959,7 +4959,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					<xs:documentation>Indicates that the entire section is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="PercentageContribution" type="percent" minOccurs="0">
+			<xs:element name="PercentageContribution" type="Percent" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Indicates the percentage of the total scheduled course time, academic standards, and/or learning activities delivered in this section by this staff member. A Teacher of Record designation may be based solely or partially on this contribution percentage.</xs:documentation>
 				</xs:annotation>
@@ -9109,7 +9109,7 @@ Change of assignment</xs:documentation>
 					<xs:documentation>The amount of Section 1003(a) and 1003(g) allocations to LEAs.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="SchoolImprovementReservedFundsPercentage" type="percent" minOccurs="0">
+			<xs:element name="SchoolImprovementReservedFundsPercentage" type="Percent" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED's regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.</xs:documentation>
 				</xs:annotation>
@@ -9124,7 +9124,7 @@ Change of assignment</xs:documentation>
 					<xs:documentation>The maximum dollar amount that may be spent per child for expenditures related to supplemental educational services under Title I of the ESEA.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="StateAssessmentAdministrationFunding" type="percent" minOccurs="0">
+			<xs:element name="StateAssessmentAdministrationFunding" type="Percent" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The percentage of funds used to administer assessments required by section 1111(b) or to carry out other activities described in section 6111 and other activities related to ensuring that the State's schools and local educational agencies are held accountable for results.</xs:documentation>
 				</xs:annotation>
@@ -9678,7 +9678,7 @@ Met standard
 							<xs:documentation>A meaningful raw score of the performance of an individual on an assessment item.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="TimeAssessed" type="timeinterval" minOccurs="0">
+					<xs:element name="TimeAssessed" type="TimeInterval" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The overall time a student actually spent during the assessment item.</xs:documentation>
 						</xs:annotation>
@@ -14555,11 +14555,11 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			<xs:maxLength value="24"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="timeinterval">
+	<xs:simpleType name="TimeInterval">
 		<xs:annotation>
 			<xs:documentation>A period of time with fixed, well-defined limits.</xs:documentation>
 			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:duration"/>
@@ -14668,7 +14668,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		<xs:annotation>
 			<xs:documentation>US currency in dollars and cents.</xs:documentation>
 			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:decimal"/>
@@ -14782,11 +14782,11 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			<xs:maxInclusive value="8"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="percent">
+	<xs:simpleType name="Percent">
 		<xs:annotation>
 			<xs:documentation>A proportion in relation to the whole (as measured in parts per one hundred).</xs:documentation>
 			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:decimal">
