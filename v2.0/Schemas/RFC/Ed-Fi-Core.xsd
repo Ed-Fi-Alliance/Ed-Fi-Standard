@@ -5555,7 +5555,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="CodeValue" type="CodeValue">
 						<xs:annotation>
-							<xs:documentation>A globally unique identifier for this descriptor.</xs:documentation>
+							<xs:documentation>A globally unique identifier within this descriptor type.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="Namespace" type="URI" minOccurs="0">
