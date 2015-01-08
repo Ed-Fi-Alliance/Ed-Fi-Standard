@@ -14861,7 +14861,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		</xs:annotation>
 		<xs:restriction base="xs:int">
 			<xs:minInclusive value="1"/>
-			<xs:maxInclusive value="52"/>
+			<xs:maxInclusive value="54"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="WeekNumber">
@@ -14873,7 +14873,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		</xs:annotation>
 		<xs:restriction base="xs:int">
 			<xs:minInclusive value="1"/>
-			<xs:maxInclusive value="52"/>
+			<xs:maxInclusive value="54"/>
 		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>
