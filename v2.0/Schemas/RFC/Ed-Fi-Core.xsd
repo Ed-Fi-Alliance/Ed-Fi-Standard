@@ -14723,7 +14723,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	</xs:simpleType>
 	<xs:simpleType name="Learning">
 		<xs:annotation>
-			<xs:documentation>Grade Point Average computed for a grading period or cumulatively.</xs:documentation>
+			<xs:documentation>Student's learning method preference (ex. auditory, visual, and "kinesthetic or tactile") expressed as a normalized percentage.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
