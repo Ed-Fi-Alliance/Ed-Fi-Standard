@@ -7450,7 +7450,7 @@ Volunteer/no contract
 	</xs:complexType>
 	<xs:complexType name="AccountCodeDescriptorReferenceType">
 		<xs:annotation>
-			<xs:documentation>Provides references for account code descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:documentation>Provides references for account code descriptor during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
 			</xs:appinfo>
