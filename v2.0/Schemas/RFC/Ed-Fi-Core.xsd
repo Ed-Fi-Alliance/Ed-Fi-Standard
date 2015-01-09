@@ -946,7 +946,7 @@ Withdrawn</xs:documentation>
 							<xs:documentation>&apos;The number of additional credits a student attempted and could earn for successfully completing a given course (e.g., dual credit, AP, IB)</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+					<xs:element name="WhenTakenGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Student&apos;s grade level at time of course.</xs:documentation>
 							<xs:appinfo>
@@ -8621,7 +8621,7 @@ Student late arrival/early dismissal
 					<xs:documentation>The value of credits or units of value awarded for the completion of a course.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+			<xs:element name="WhenTakenGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The grade level when the student is planned to take the course.</xs:documentation>
 					<xs:appinfo>
