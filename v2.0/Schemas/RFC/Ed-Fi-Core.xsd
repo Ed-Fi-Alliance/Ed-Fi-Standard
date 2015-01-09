@@ -752,7 +752,7 @@ Prose
 				<xs:sequence>
 					<xs:element name="CourseCode" type="IdentificationCode">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>A unique alphanumeric code assigned to a course.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="CourseTitle" type="CourseTitle">
