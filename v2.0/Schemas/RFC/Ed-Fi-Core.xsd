@@ -775,7 +775,7 @@ Prose
 							<xs:documentation>Specification of the specific program or designation associated with the course.  For example: Ap, IB, Dual Credit, CTE. etc.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="OfferedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>The grade levels in which the course is offered.</xs:documentation>
 							<xs:appinfo>
