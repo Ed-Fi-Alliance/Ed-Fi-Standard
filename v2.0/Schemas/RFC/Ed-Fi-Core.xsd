@@ -14071,18 +14071,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			<xs:maxLength value="60"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="IdentityCourseCode">
-		<xs:annotation>
-			<xs:documentation>A unique number or alphanumeric code assigned to a course by a local education agency.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="20"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="IncidentIdentifier">
 		<xs:annotation>
 			<xs:documentation>A locally assigned unique identifier (within the school or school district) to identify each specific incident or occurrence. The same identifier should be used to document the entire incident even if it included multiple offenses and multiple offenders.</xs:documentation>
