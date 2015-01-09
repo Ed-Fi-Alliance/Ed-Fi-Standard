@@ -8435,7 +8435,7 @@ Student late arrival/early dismissal
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Title" type="Title">
+			<xs:element name="Title" type="ContentStandardTitle">
 				<xs:annotation>
 					<xs:documentation>The name of the content standard, for example Common Core.</xs:documentation>
 				</xs:annotation>
@@ -14573,7 +14573,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		</xs:annotation>
 		<xs:restriction base="xs:duration"/>
 	</xs:simpleType>
-	<xs:simpleType name="Title">
+	<xs:simpleType name="ContentStandardTitle">
 		<xs:annotation>
 			<xs:documentation>The name of the content standard, for example Common Core.</xs:documentation>
 			<xs:appinfo>
