@@ -10393,6 +10393,7 @@ Student late arrival/early dismissal
 			<xs:enumeration value="Marketing, Sales and Service"/>
 			<xs:enumeration value="Science, Technology, Engineering and Mathematics"/>
 			<xs:enumeration value="Transportation, Distribution and Logistics"/>
+			<xs:enumeration value="Other"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="CharterStatusType">
@@ -11497,11 +11498,12 @@ Withdrawn
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:enumeration value="State Education Agency"/>
+			<xs:enumeration value="Education Organization Network"/>
 			<xs:enumeration value="Education Service Center"/>
 			<xs:enumeration value="Local Education Agency"/>
 			<xs:enumeration value="School"/>
-			<xs:enumeration value="Education Organization Network"/>
+			<xs:enumeration value="State Education Agency"/>
+			<xs:enumeration value="Other"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="EducationOrganizationIdentificationSystemType">
@@ -11539,10 +11541,11 @@ Vocational</xs:documentation>
 			<xs:enumeration value="Career Pathways"/>
 			<xs:enumeration value="Career Suggestions"/>
 			<xs:enumeration value="Completion and Reach Age 22"/>
-			<xs:enumeration value="Full Time Employment"/>
 			<xs:enumeration value="Employability Skills"/>
+			<xs:enumeration value="Full Time Employment"/>
 			<xs:enumeration value="High School Education Plan"/>
 			<xs:enumeration value="IDEA IEP"/>
+			<xs:enumeration value="Other"/>
 			<xs:enumeration value="Outside Service Access"/>
 			<xs:enumeration value="Personal Graduation Plan"/>
 			<xs:enumeration value="Student Success Plan"/>
@@ -11903,6 +11906,7 @@ Vocational</xs:documentation>
 			<xs:enumeration value="Active"/>
 			<xs:enumeration value="Expositive"/>
 			<xs:enumeration value="Mixed"/>
+			<xs:enumeration value="Other"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="InternetAccessType">
@@ -11926,8 +11930,9 @@ Vocational</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
 			<xs:enumeration value="Curriculum"/>
-			<xs:enumeration value="Supplement"/>
+			<xs:enumeration value="Other"/>
 			<xs:enumeration value="Practice"/>
+			<xs:enumeration value="Supplement"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="InterventionEffectivenessRatingType">
@@ -11944,6 +11949,7 @@ Vocational</xs:documentation>
 			<xs:enumeration value="Potentially Negative Effects"/>
 			<xs:enumeration value="Negative Effects"/>
 			<xs:enumeration value="No Discernible Effects"/>
+			<xs:enumeration value="Other"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="LanguageMapType">
@@ -12128,6 +12134,7 @@ Vocational</xs:documentation>
 			<xs:enumeration value="Credit by examination"/>
 			<xs:enumeration value="Credit recovery"/>
 			<xs:enumeration value="Online credit"/>
+			<xs:enumeration value="Other"/>
 			<xs:enumeration value="Transfer credit"/>
 		</xs:restriction>
 	</xs:simpleType>
@@ -13200,40 +13207,41 @@ Second retest
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
+			<xs:enumeration value="21st CCL Participant"/>
+			<xs:enumeration value="Adult"/>
+			<xs:enumeration value="Alternative"/>
 			<xs:enumeration value="Asylee"/>
 			<xs:enumeration value="Displaced Homemaker"/>
+			<xs:enumeration value="Early Reading First P3, P4"/>
+			<xs:enumeration value="Economically Disadvantaged"/>
+			<xs:enumeration value="Even Start Funded P3, P4"/>
+			<xs:enumeration value="Fee Based P3, P4"/>
 			<xs:enumeration value="Foster Care"/>
+			<xs:enumeration value="Free Lunch"/>
+			<xs:enumeration value="Head Start Funded P3, P4"/>
 			<xs:enumeration value="Homeless"/>
+			<xs:enumeration value="Imagination Library"/>
 			<xs:enumeration value="Immigrant"/>
-			<xs:enumeration value="Neglected or Delinquent"/>
+			<xs:enumeration value="LEAPs Participant"/>
+			<xs:enumeration value="Locally Funded P3, P4"/>
+			<xs:enumeration value="Lottery Funded P3, P4"/>
 			<xs:enumeration value="Migrant"/>
+			<xs:enumeration value="Neglected or Delinquent"/>
+			<xs:enumeration value="Other"/>
 			<xs:enumeration value="Parent in Military"/>
 			<xs:enumeration value="Pregnant"/>
+			<xs:enumeration value="Private"/>
+			<xs:enumeration value="Reduced Lunch"/>
 			<xs:enumeration value="Refugee"/>
+			<xs:enumeration value="Regular"/>
+			<xs:enumeration value="Residential Mental Health Facility (PC 426)"/>
 			<xs:enumeration value="Runaway"/>
 			<xs:enumeration value="Section 504 Handicapped"/>
 			<xs:enumeration value="Single Parent"/>
-			<xs:enumeration value="Unaccompanied Youth"/>
-			<xs:enumeration value="LEAPs Participant"/>
-			<xs:enumeration value="21st CCL Participant"/>
-			<xs:enumeration value="Alternative"/>
-			<xs:enumeration value="Fee Based P3, P4"/>
-			<xs:enumeration value="Adult"/>
-			<xs:enumeration value="Head Start Funded P3, P4"/>
-			<xs:enumeration value="Locally Funded P3, P4"/>
-			<xs:enumeration value="Residential Mental Health Facility (PC 426)"/>
-			<xs:enumeration value="Economically Disadvantaged"/>
-			<xs:enumeration value="Early Reading First P3, P4"/>
-			<xs:enumeration value="Lottery Funded P3, P4"/>
-			<xs:enumeration value="Private"/>
-			<xs:enumeration value="Voluntary Expansion (P4)/Pilot P3, P4"/>
-			<xs:enumeration value="Regular"/>
-			<xs:enumeration value="Title 1"/>
-			<xs:enumeration value="Even Start Funded P3, P4"/>
-			<xs:enumeration value="Imagination Library"/>
-			<xs:enumeration value="Free Lunch"/>
-			<xs:enumeration value="Reduced Lunch"/>
 			<xs:enumeration value="Student Paid Lunch (full price)"/>
+			<xs:enumeration value="Title 1"/>
+			<xs:enumeration value="Unaccompanied Youth"/>
+			<xs:enumeration value="Voluntary Expansion (P4)/Pilot P3, P4"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="StudentIdentificationSystemType">
