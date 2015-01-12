@@ -11484,8 +11484,8 @@ Withdrawn
 			<xs:enumeration value="Off-school center"/>
 			<xs:enumeration value="Pull-out class"/>
 			<xs:enumeration value="Resource room"/>
-			<xs:enumeration value="Single Sex Classroom"/>
-			<xs:enumeration value="Self-contained"/>
+			<xs:enumeration value="Single sex classroom"/>
+			<xs:enumeration value="Self-contained (Special Education)"/>
 			<xs:enumeration value="Self-study"/>
 			<xs:enumeration value="Shop"/>
 		</xs:restriction>
@@ -13071,38 +13071,37 @@ Second retest
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:enumeration value="Teacher"/>
-			<xs:enumeration value="Other"/>
+			<xs:enumeration value="Assistant Principal"/>
+			<xs:enumeration value="Assistant Superintendent"/>
 			<xs:enumeration value="Counselor"/>
-			<xs:enumeration value="School Administrator"/>
-			<xs:enumeration value="LEA Administrator"/>
-			<xs:enumeration value="School Specialist"/>
-			<xs:enumeration value="LEA Specialist"/>
-			<xs:enumeration value="Operational Support"/>
-			<xs:enumeration value="Support Services Staff">
-				<xs:annotation>
-					<xs:documentation>Professional and supervisory staff providing non-instructional services to students including attendance officers; staff providing health, psychology, speech pathology, audiology, or social services; and supervisors of the preceding staff and of health, transportation, and food service workers.</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="School Leader"/>
+			<xs:enumeration value="Instructional Aide"/>
 			<xs:enumeration value="Instructional Coordinator">
 				<xs:annotation>
 					<xs:documentation>Staff supervising instructional programs including professional staff members or supervisors in an early learning program assigned specific duties related to instruction , or supervisors at a school district or sub-district level including curriculum coordinators or supervisors; in-service training staff; Title I supervisors; home economics supervisors; educational television staff; coordinators and supervisors of audiovisual services; and staff engaged in development of computer-assisted instruction.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="Instructional Aide"/>
+			<xs:enumeration value="LEA Administrator"/>
+			<xs:enumeration value="LEA Specialist"/>
 			<xs:enumeration value="Librarians/Media Specialists">
 				<xs:annotation>
 					<xs:documentation>A professional staff member or supervisor assigned specific duties and school time for professional library and media service activities. Activities include: selecting, acquiring, preparing, cataloging, and circulating books and other printed materials; planning the use of library and media services by students, teachers and other members of the instructional staff; and guiding individuals in their use of media services and library materials, (whether maintained separately or as part of an instructional materials center).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
+			<xs:enumeration value="Operational Support"/>
+			<xs:enumeration value="Other"/>
+			<xs:enumeration value="Principal"/>
+			<xs:enumeration value="School Administrator"/>
+			<xs:enumeration value="School Leader"/>
+			<xs:enumeration value="School Specialist"/>
 			<xs:enumeration value="State Administrator"/>
 			<xs:enumeration value="Substitute Teacher"/>
-			<xs:enumeration value="Principal"/>
-			<xs:enumeration value="Assistant Principal"/>
 			<xs:enumeration value="Superintendent"/>
-			<xs:enumeration value="Assistant Superintendent"/>
-			<xs:enumeration value="LEA System Administrator"/>
+			<xs:enumeration value="Support Services Staff">
+				<xs:annotation>
+					<xs:documentation>Professional and supervisory staff providing non-instructional services to students including attendance officers; staff providing health, psychology, speech pathology, audiology, or social services; and supervisors of the preceding staff and of health, transportation, and food service workers.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Teacher"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="StaffIdentificationSystemType">
