@@ -11919,6 +11919,7 @@ Vocational</xs:documentation>
 		<xs:restriction base="xs:token">
 			<xs:enumeration value="High Speed"/>
 			<xs:enumeration value="Less Than High Speed"/>
+			<xs:enumeration value="None"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="InterventionClassType">
@@ -12863,19 +12864,21 @@ Second retest
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
+			<xs:enumeration value="All Levels"/>
+			<xs:enumeration value="Adult School"/>
 			<xs:enumeration value="Elementary/Secondary School"/>
 			<xs:enumeration value="Elementary School"/>
 			<xs:enumeration value="High School"/>
-			<xs:enumeration value="Middle School"/>
-			<xs:enumeration value="Junior High School"/>
-			<xs:enumeration value="SecondarySchool"/>
-			<xs:enumeration value="Ungraded"/>
-			<xs:enumeration value="Adult School"/>
 			<xs:enumeration value="Infant/toddler School"/>
+			<xs:enumeration value="Intermediate School"/>
+			<xs:enumeration value="Junior High School"/>
+			<xs:enumeration value="Middle School"/>
 			<xs:enumeration value="Preschool/early childhood"/>
 			<xs:enumeration value="Primary School"/>
-			<xs:enumeration value="Intermediate School"/>
-			<xs:enumeration value="All Levels"/>
+			<xs:enumeration value="SecondarySchool"/>
+			<xs:enumeration value="Ungraded"/>
+			<xs:enumeration value="Other Secondary"/>
+			<xs:enumeration value="Other Combination"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="SchoolChoiceImplementStatusType">
