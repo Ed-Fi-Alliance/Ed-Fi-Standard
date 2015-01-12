@@ -5011,7 +5011,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 		<xs:complexContent>
 			<xs:extension base="StudentProgramAssociation">
 				<xs:sequence>
-					<xs:element name="CTEProgram" type="CTEProgram" maxOccurs="unbounded">
+					<xs:element name="CTEProgram" type="CTEProgram" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>The career cluster representing the career path of the Vocational/Career Tech concentrator.</xs:documentation>
 						</xs:annotation>
