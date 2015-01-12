@@ -11675,7 +11675,7 @@ Vocational</xs:documentation>
 		<xs:restriction base="xs:token">
 			<xs:enumeration value="Transferred"/>
 			<xs:enumeration value="Graduated"/>
-			<xs:enumeration value="Completed "/>
+			<xs:enumeration value="Completed"/>
 			<xs:enumeration value="Died or is permanently incapacitated"/>
 			<xs:enumeration value="Withdrawn"/>
 			<xs:enumeration value="Expelled"/>
@@ -13053,8 +13053,8 @@ Second retest
 		</xs:annotation>
 		<xs:restriction base="xs:token">
 			<xs:enumeration value="Inside regular class 80% or more of the day"/>
-			<xs:enumeration value="Inside regular class no more than 79% of day and no less than 40% of the day "/>
-			<xs:enumeration value="Inside regular class less than 40% of the day "/>
+			<xs:enumeration value="Inside regular class no more than 79% of day and no less than 40% of the day"/>
+			<xs:enumeration value="Inside regular class less than 40% of the day"/>
 			<xs:enumeration value="Separate School"/>
 			<xs:enumeration value="Residential Facility"/>
 			<xs:enumeration value="Homebound/Hospital"/>
