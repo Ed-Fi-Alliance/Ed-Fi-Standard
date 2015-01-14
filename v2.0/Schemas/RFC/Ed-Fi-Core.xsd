@@ -3020,15 +3020,27 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="YearsOfPriorProfessionalExperience" type="xs:int" minOccurs="0">
+					<xs:element name="YearsOfPriorProfessionalExperience" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The total number of years that an individual has previously held a similar professional position in one or more education institutions.</xs:documentation>
 						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:totalDigits value="5"/>
+								<xs:fractionDigits value="2"/>
+							</xs:restriction>
+						</xs:simpleType>
 					</xs:element>
-					<xs:element name="YearsOfPriorTeachingExperience" type="xs:int" minOccurs="0">
+					<xs:element name="YearsOfPriorTeachingExperience" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The total number of years that an individual has previously held a teaching position in one or more education institutions.</xs:documentation>
 						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:totalDigits value="5"/>
+								<xs:fractionDigits value="2"/>
+							</xs:restriction>
+						</xs:simpleType>
 					</xs:element>
 					<xs:element name="Credential" type="Credential" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
