@@ -3020,27 +3020,15 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="YearsOfPriorProfessionalExperience" minOccurs="0">
+					<xs:element name="YearsOfPriorProfessionalExperience" type="NumberOfYears" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The total number of years that an individual has previously held a similar professional position in one or more education institutions.</xs:documentation>
 						</xs:annotation>
-						<xs:simpleType>
-							<xs:restriction base="xs:decimal">
-								<xs:totalDigits value="5"/>
-								<xs:fractionDigits value="2"/>
-							</xs:restriction>
-						</xs:simpleType>
 					</xs:element>
-					<xs:element name="YearsOfPriorTeachingExperience" minOccurs="0">
+					<xs:element name="YearsOfPriorTeachingExperience" type="NumberOfYears" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The total number of years that an individual has previously held a teaching position in one or more education institutions.</xs:documentation>
 						</xs:annotation>
-						<xs:simpleType>
-							<xs:restriction base="xs:decimal">
-								<xs:totalDigits value="5"/>
-								<xs:fractionDigits value="2"/>
-							</xs:restriction>
-						</xs:simpleType>
 					</xs:element>
 					<xs:element name="Credential" type="Credential" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
@@ -14802,6 +14790,15 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		<xs:restriction base="xs:int">
 			<xs:minInclusive value="1"/>
 			<xs:maxInclusive value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NumberOfYears">
+		<xs:annotation>
+			<xs:documentation>The number of years expressed as whole and fractional units.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="5"/>
+			<xs:fractionDigits value="2"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="Percent">
