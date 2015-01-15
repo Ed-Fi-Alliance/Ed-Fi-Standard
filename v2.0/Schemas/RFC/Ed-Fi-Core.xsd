@@ -10355,18 +10355,15 @@ Student late arrival/early dismissal
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:enumeration value="Instructional day"/>
-			<xs:enumeration value="Teacher only day"/>
-			<xs:enumeration value="Holiday"/>
-			<xs:enumeration value="Make-up day"/>
-			<xs:enumeration value="Weather day"/>
-			<xs:enumeration value="Student late arrival/early dismissal"/>
 			<xs:enumeration value="Emergency day"/>
-			<xs:enumeration value="Strike"/>
+			<xs:enumeration value="Holiday"/>
+			<xs:enumeration value="Instructional day"/>
+			<xs:enumeration value="Make-up day"/>
 			<xs:enumeration value="Other"/>
-			<xs:enumeration value="Calendar Start Date"/>
-			<xs:enumeration value="Calendar End Date"/>
-			<xs:enumeration value="Parent-Teacher Conference"/>
+			<xs:enumeration value="Strike"/>
+			<xs:enumeration value="Student late arrival/early dismissal"/>
+			<xs:enumeration value="Teacher only day"/>
+			<xs:enumeration value="Weather day"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="CareerPathwayType">
