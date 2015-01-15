@@ -12076,23 +12076,18 @@ Vocational</xs:documentation>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:enumeration value="Televised"/>
-			<xs:enumeration value="Telepresence/video conference"/>
-			<xs:enumeration value="Videotaped/prerecorded video"/>
-			<xs:enumeration value="Other technology-based instruction"/>
-			<xs:enumeration value="Technology-based instruction in classroom"/>
+			<xs:enumeration value="Center-based instruction"/>
 			<xs:enumeration value="Correspondence instruction">
 				<xs:annotation>
 					<xs:documentation>Course is taught via hard or electronic copy or other media (CD, DVD, video cassette) and student works at own pace usually without an instructor present, but generally under supervision of LEA. Includes "packet" programs.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
+			<xs:enumeration value="Distance Learning (other than online)"/>
 			<xs:enumeration value="Face-to-face instruction">
 				<xs:annotation>
 					<xs:documentation>Course is taught primarily in person and usually in a conventional classroom or lecture hall.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="Virtual/On-line Distance learning"/>
-			<xs:enumeration value="Center-based instruction"/>
 			<xs:enumeration value="Independent study">
 				<xs:annotation>
 					<xs:documentation>Structured learning experience is recognized for credit but is not under supervision of the LEA.</xs:documentation>
@@ -12100,8 +12095,12 @@ Vocational</xs:documentation>
 			</xs:enumeration>
 			<xs:enumeration value="Internship"/>
 			<xs:enumeration value="Other"/>
-			<xs:enumeration value=""/>
-			<xs:enumeration value="Distance Learning (other than online)"/>
+			<xs:enumeration value="Other technology-based instruction"/>
+			<xs:enumeration value="Technology-based instruction in classroom"/>
+			<xs:enumeration value="Telepresence/video conference"/>
+			<xs:enumeration value="Televised"/>
+			<xs:enumeration value="Videotaped/prerecorded video"/>
+			<xs:enumeration value="Virtual/On-line Distance learning"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="MeetingDayType">
