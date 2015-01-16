@@ -1720,17 +1720,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="InterventionIdentificationCode" type="IdentificationCode">
 						<xs:annotation>
-							<xs:documentation/>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="ShortDescription" type="ShortDescription" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation/>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Description" type="Description" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>A unique number or alphanumeric code assigned to an intervention.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -1795,17 +1785,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="InterventionPrescriptionIdentificationCode" type="IdentificationCode">
 						<xs:annotation>
-							<xs:documentation/>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="ShortDescription" type="ShortDescription" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation/>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Description" type="Description" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>A unique number or alphanumeric code assigned to an intervention prescription.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -1882,17 +1862,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="InterventionStudyIdentificationCode" type="IdentificationCode">
 						<xs:annotation>
-							<xs:documentation/>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="ShortDescription" type="ShortDescription" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation/>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Description" type="Description" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>A unique number or alphanumeric code assigned to an intervention study.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6471,12 +6441,12 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="InterventionIdentificationCode" type="IdentificationCode">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>A unique number or alphanumeric code assigned to an intervention.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Provide user information to lookup and link to an existing educational organization record.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6491,12 +6461,12 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="InterventionPrescriptionIdentificationCode" type="IdentificationCode">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>A unique number or alphanumeric code assigned to an intervention prescription.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Provide user information to lookup and link to an existing educational organization record.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
