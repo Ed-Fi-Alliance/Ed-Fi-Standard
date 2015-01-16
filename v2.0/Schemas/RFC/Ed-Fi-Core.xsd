@@ -1006,7 +1006,7 @@ Withdrawn</xs:documentation>
 					</xs:element>
 					<xs:element name="ExternalCourse" type="ExternalCourse" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Course taken and administered by another educational organization.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6708,7 +6708,7 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="AssessmentReference" type="AssessmentReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="IdentificationCode" type="IdentificationCode">
@@ -7901,7 +7901,7 @@ Volunteer/no contract
 		<xs:sequence>
 			<xs:element name="Achievement" type="Achievement">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>An entity that includes information about achievement earned by a learner upon fulfilling a specified criteria.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="AcademicHonorCategory" type="AcademicHonorCategoryType">
@@ -8608,7 +8608,7 @@ Student late arrival/early dismissal
 		<xs:sequence>
 			<xs:element name="CourseSetName" type="CourseSetName">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Identifying name given to a collection of courses.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="CourseReference" type="CourseReferenceType" maxOccurs="unbounded">
@@ -8694,7 +8694,7 @@ Student late arrival/early dismissal
 		<xs:sequence>
 			<xs:element name="Achievement" type="Achievement">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>An entity that includes information about achievement earned by a learner upon fulfilling a specified criteria.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="DiplomaAwardDate" type="xs:date">
@@ -8765,11 +8765,12 @@ Distinguished Achievement Program</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
 			</xs:appinfo>
+			<xs:documentation>Published papers, reports or other educational documents.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="EducationContentReference" type="EducationContentReferenceType" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Relates the education content source to the education content.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="LearningResourceMetadataURI" type="LearningResourceMetadataURI" minOccurs="0" maxOccurs="unbounded">
@@ -8871,7 +8872,7 @@ Change of assignment</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="ExternalCourse">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>Course taken and administered by another educational organization.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
 			</xs:appinfo>
@@ -8934,7 +8935,7 @@ Change of assignment</xs:documentation>
 			</xs:element>
 			<xs:element name="IdentificationDocumentUse" type="IdentificationDocumentUseType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The primary function of the document used for establishing identity.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -8961,7 +8962,7 @@ Change of assignment</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="InternationalAddress">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>Addresses located outside of the United States.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
 			</xs:appinfo>
@@ -8974,22 +8975,22 @@ Change of assignment</xs:documentation>
 			</xs:element>
 			<xs:element name="AddressLine1" type="AddressLine">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The first line of the address.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="AddressLine2" type="AddressLine" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The second line of the address.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="AddressLine3" type="AddressLine" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The third line of the address.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="AddressLine4" type="AddressLine" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The fourth line of the address.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="Country" type="CountryType">
@@ -9062,7 +9063,7 @@ Change of assignment</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="Language">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>A method of written or spoken communication.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
 			</xs:appinfo>
@@ -9070,7 +9071,7 @@ Change of assignment</xs:documentation>
 		<xs:sequence>
 			<xs:element name="Language" type="LanguageDescriptorReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>A specification of which written or spoken communication is being used.</xs:documentation>
 					<xs:appinfo>
 						<ann:Descriptor>LanguageDescriptor</ann:Descriptor>
 					</xs:appinfo>
@@ -9334,7 +9335,7 @@ Change of assignment</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="PerformanceLevel">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>A performance level value that describes student proficiency.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
 			</xs:appinfo>
@@ -9347,7 +9348,7 @@ Change of assignment</xs:documentation>
 			</xs:element>
 			<xs:element name="PerformanceLevel" type="PerformanceLevelDescriptorReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>A specification of which performance level value describes the student proficiency.</xs:documentation>
 					<xs:appinfo>
 						<ann:Descriptor>PerformanceLevelDescriptor</ann:Descriptor>
 					</xs:appinfo>
@@ -9466,7 +9467,7 @@ Change of assignment</xs:documentation>
 		<xs:sequence>
 			<xs:element name="Achievement" type="Achievement">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>An entity that includes information about achievement earned by a learner upon fulfilling a specified criteria.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="RecognitionType" type="RecognitionType">
@@ -9559,7 +9560,7 @@ Change of assignment</xs:documentation>
 		<xs:sequence>
 			<xs:element name="StaffReference" type="StaffReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Relates the service provider to the staff.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="PrimaryProvider" type="xs:boolean" minOccurs="0">
@@ -9865,6 +9866,36 @@ Met standard
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
+			<xs:enumeration value="Attendance award">
+				<xs:annotation>
+					<xs:documentation>Recognition of a student's superior attendance record.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Awarding of units of value">
+				<xs:annotation>
+					<xs:documentation>Awards or recognition given to a student for the completion of course or activity requirements in a form of pre-determined set of numeric values.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Certificate">
+				<xs:annotation>
+					<xs:documentation>Certificate given to a student in recognition of his/her achievements (e.g., an award for perfect attendance during the school year).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Citizenship award/recognition">
+				<xs:annotation>
+					<xs:documentation>Awards or recognition given to a student for the demonstration of good citizenship (e.g., voluntary community services).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Completion of requirement, but no units of value awarded">
+				<xs:annotation>
+					<xs:documentation>Recognition of a student's completion of the requirement for a course or an activity; no unit of value awarded.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Honor award">
+				<xs:annotation>
+					<xs:documentation>An award given to a candidate for exceptional performance.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
 			<xs:enumeration value="Honor roll">
 				<xs:annotation>
 					<xs:documentation>A category of students who achieve high grades during a session or year.</xs:documentation>
@@ -9885,46 +9916,6 @@ Met standard
 					<xs:documentation>A designation awarding participation in an organization's honors program, which is specifically designed to give exceptionally able students additional and appropriate educational challenges beyond standard curriculum.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="Prize awards">
-				<xs:annotation>
-					<xs:documentation/>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Scholarships">
-				<xs:annotation>
-					<xs:documentation>An award of financial aid for a student to further his or her education.</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Awarding of units of value">
-				<xs:annotation>
-					<xs:documentation>Awards or recognition given to a student for the completion of course or activity requirements in a form of pre-determined set of numeric values.</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Citizenship award/recognition">
-				<xs:annotation>
-					<xs:documentation>Awards or recognition given to a student for the demonstration of good citizenship (e.g., voluntary community services).</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Completion of requirement, but no units of value awarded">
-				<xs:annotation>
-					<xs:documentation>Recognition of a student's completion of the requirement for a course or an activity; no unit of value awarded.</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Attendance award">
-				<xs:annotation>
-					<xs:documentation>Recognition of a student's superior attendance record.</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Certificate">
-				<xs:annotation>
-					<xs:documentation>Certificate given to a student in recognition of his/her achievements (e.g., an award for perfect attendance during the school year).</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Honor award">
-				<xs:annotation>
-					<xs:documentation/>
-				</xs:annotation>
-			</xs:enumeration>
 			<xs:enumeration value="Letter of student commendation">
 				<xs:annotation>
 					<xs:documentation>A written letter, usually prepared and signed by the senior management of an organization, commending the employee for his or her contribution to and/or achievement in an organization.</xs:documentation>
@@ -9940,9 +9931,19 @@ Met standard
 					<xs:documentation>Designation as one of the highest achieving students out of those who were awarded a competitive scholarship from the National Merit Scholarship Corporation. Less than 1% of entrants qualify as National Merit Scholars.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
+			<xs:enumeration value="Other">
+				<xs:annotation>
+					<xs:documentation>Other academic honors.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
 			<xs:enumeration value="Points">
 				<xs:annotation>
 					<xs:documentation>Points awarded to a student in recognition of his or her achievements.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Prize awards">
+				<xs:annotation>
+					<xs:documentation>An award given to a candidate for one time or ongoing performance.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="Promotion or advancement">
@@ -9950,9 +9951,9 @@ Met standard
 					<xs:documentation>Promotion or advancement awarded to a student in recognition of his/her achievements (e.g., advancement from regular to honors class, and promotion from junior varsity to varsity).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="Other">
+			<xs:enumeration value="Scholarships">
 				<xs:annotation>
-					<xs:documentation>Other academic honors.</xs:documentation>
+					<xs:documentation>An award of financial aid for a student to further his or her education.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 		</xs:restriction>
@@ -13593,7 +13594,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="Author">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>The individual credited with the creation of the resource.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13822,7 +13823,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	</xs:simpleType>
 	<xs:simpleType name="CourseSetName">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>Identifying name given to a collection of courses.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
