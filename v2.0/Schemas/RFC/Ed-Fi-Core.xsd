@@ -44,7 +44,7 @@
 				<xs:sequence>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Relates the academic week to an existing Educational Organization.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="WeekIdentifier" type="WeekIdentifier">
@@ -476,7 +476,7 @@ Prose
 					</xs:element>
 					<xs:element name="AssessmentReference" type="AssessmentReferenceType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Relates the assessment item to an existing assessment.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -576,7 +576,7 @@ Prose
 					</xs:element>
 					<xs:element name="CalendarEvent" type="CalendarEvent" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Additional description of the date such as date classification and duration of the event.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -699,7 +699,7 @@ Prose
 					</xs:element>
 					<xs:element name="SuccessCriteria" type="Criteria" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>One or more statements that describes the criteria used by teachers and students to check for attainment of a competency objective. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the competency objective.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -1399,7 +1399,7 @@ Representative of visiting school
 				<xs:sequence>
 					<xs:element name="EducationOrganizationNetworkId" type="xs:int">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>A unique number or alphanumeric code assigned to a network of education organizations.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="NetworkPurpose" type="NetworkPurposeType">
@@ -1550,7 +1550,7 @@ Representative of visiting school
 				<xs:sequence>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Provide user information to lookup and link to an existing educational organization record.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="GradingPeriod" type="GradingPeriodDescriptorReferenceType">
@@ -1630,7 +1630,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="GraduationSchoolYear" type="SchoolYearType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>The school year the student is expected to graduate.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -1962,7 +1962,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="ParentLearningObjectiveReference" type="LearningObjectiveReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Provide user information to lookup and link to an existing learning objective which serves as a method to group other learning objectives.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -2042,7 +2042,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="ParentLearningStandardReference" type="LearningStandardReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Provide user information to lookup and link to an existing learning standard which serves as a method to group other learning standards.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -2246,12 +2246,12 @@ Vacation</xs:documentation>
 					</xs:element>
 					<xs:element name="ParentObjectiveAssessmentReference" type="ObjectiveAssessmentReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Provide user information to lookup and link to the parent objective assessment containing this objective assessment.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="AssessmentReference" type="AssessmentReferenceType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -2900,7 +2900,7 @@ Special education students
 					</xs:element>
 					<xs:element name="SchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Relates the session to the school.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType" maxOccurs="unbounded">
@@ -3329,7 +3329,7 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Provide user information to lookup and link to an existing educational organization record.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="SchoolYear" type="SchoolYearType">
@@ -3507,7 +3507,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Relates the competency objective to a grading period.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="StudentReference" type="StudentReferenceType">
@@ -3642,7 +3642,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType">
 						<xs:annotation>
-							<xs:documentation/>
+							<xs:documentation>Relates the learning objective to a grading period.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="StudentReference" type="StudentReferenceType">
