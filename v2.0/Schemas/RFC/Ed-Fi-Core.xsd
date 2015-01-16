@@ -4499,7 +4499,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StudentCharacteristicDescriptor">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>This descriptor defines the set of important characteristics of the student.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Descriptor</ann:TypeGroup>
 			</xs:appinfo>
@@ -4619,7 +4619,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationPeerAssociation">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>The association from an education organization to its peers.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 			</xs:appinfo>
@@ -5800,7 +5800,7 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="AssessmentReference" type="AssessmentReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="IdentificationCode" type="IdentificationCode">
@@ -6200,7 +6200,7 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="EducationOrganizationNetworkId" type="xs:int">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>A unique number or alphanumeric code assigned to a network of education organizations.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6439,7 +6439,7 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 			<xs:element name="GraduationSchoolYear" type="SchoolYearType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The school year the student is expected to graduate.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6556,7 +6556,7 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 			<xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of the learning objective.</xs:documentation>
 					<xs:appinfo>
 						<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
 					</xs:appinfo>
@@ -6564,7 +6564,7 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 			<xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The grade level for which the learning objective is targeted.</xs:documentation>
 					<xs:appinfo>
 						<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
 					</xs:appinfo>
@@ -6950,7 +6950,7 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Provide user information to lookup and link to an existing school.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="SchoolYear" type="SchoolYearType">
@@ -7018,7 +7018,7 @@ Volunteer/no contract
 			</xs:element>
 			<xs:element name="HireDate" type="xs:date">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>The month, day, and year on which an individual was hired for a position.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -7125,7 +7125,7 @@ Volunteer/no contract
 			</xs:element>
 			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 				<xs:annotation>
-					<xs:documentation/>
+					<xs:documentation>Provide user information to lookup and link to an existing educational organization record.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="SchoolYear" type="SchoolYearType">
