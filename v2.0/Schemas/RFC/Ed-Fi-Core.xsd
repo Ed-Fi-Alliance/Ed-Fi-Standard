@@ -427,7 +427,7 @@ Second grade
 	</xs:complexType>
 	<xs:complexType name="AssessmentItem">
 		<xs:annotation>
-			<xs:documentation>This entity represents one of many single measures that make up an assessment. </xs:documentation>
+			<xs:documentation>This entity represents one of many single measures that make up an assessment.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 			</xs:appinfo>
@@ -600,7 +600,7 @@ Prose
 					</xs:element>
 					<xs:element name="ClassPeriodName" type="ClassPeriodName">
 						<xs:annotation>
-							<xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period, or AB schedules). </xs:documentation>
+							<xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period, or AB schedules).</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -818,7 +818,7 @@ Prose
 					</xs:element>
 					<xs:element name="CourseDefinedBy" type="CourseDefinedByType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Specifies whether the course was defined by the SEA, LEA, School, or national organization.  </xs:documentation>
+							<xs:documentation>Specifies whether the course was defined by the SEA, LEA, School, or national organization.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="MinimumAvailableCredits" type="Credits" minOccurs="0">
@@ -880,7 +880,7 @@ Prose
 					</xs:element>
 					<xs:element name="LocalCourseTitle" type="CourseTitle" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle. </xs:documentation>
+							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="InstructionalTimePlanned" type="Duration" minOccurs="0">
@@ -1001,7 +1001,7 @@ Withdrawn</xs:documentation>
 					</xs:element>
 					<xs:element name="LocalCourseTitle" type="CourseTitle" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle. </xs:documentation>
+							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="ExternalCourse" type="ExternalCourse" minOccurs="0" maxOccurs="unbounded">
@@ -1107,7 +1107,7 @@ Withdrawn</xs:documentation>
 					</xs:element>
 					<xs:element name="IncidentDate" type="xs:date">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year on which the incident occurred. </xs:documentation>
+							<xs:documentation>The month, day, and year on which the incident occurred.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="IncidentTime" type="xs:time" minOccurs="0">
@@ -1325,7 +1325,7 @@ Representative of visiting school
 	</xs:complexType>
 	<xs:complexType name="EducationOrganization" abstract="true">
 		<xs:annotation>
-			<xs:documentation>This entity represents any public or private institution, organization or agency that provides instructional or support services to students or staff at any level. </xs:documentation>
+			<xs:documentation>This entity represents any public or private institution, organization or agency that provides instructional or support services to students or staff at any level.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 			</xs:appinfo>
@@ -1380,7 +1380,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="OperationalStatus" type="OperationalStatusType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The current operational status of the education organization (e.g., active, inactive). </xs:documentation>
+							<xs:documentation>The current operational status of the education organization (e.g., active, inactive).</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -1462,7 +1462,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="GradeType" type="GradeType">
 						<xs:annotation>
-							<xs:documentation>The type of grade reported (e.g., Exam, Final, Grading Period). </xs:documentation>
+							<xs:documentation>The type of grade reported (e.g., Exam, Final, Grading Period).</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="PerformanceBaseConversion" type="PerformanceBaseConversionType" minOccurs="0">
@@ -1501,7 +1501,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="GradebookEntryType" type="GradebookEntryType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc.  </xs:documentation>
+							<xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="DateAssigned" type="xs:date">
@@ -1667,7 +1667,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="PopulationServed" type="PopulationServedType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>A subset of students that are the focus of the intervention. </xs:documentation>
+							<xs:documentation>A subset of students that are the focus of the intervention.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="unbounded">
@@ -1767,7 +1767,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="PopulationServed" type="PopulationServedType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>A subset of students that are the focus of the intervention. </xs:documentation>
+							<xs:documentation>A subset of students that are the focus of the intervention.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="unbounded">
@@ -2113,8 +2113,7 @@ Vacation</xs:documentation>
 					</xs:element>
 					<xs:element name="LocalEducationAgencyCategory" type="LocalEducationAgencyCategoryType">
 						<xs:annotation>
-							<xs:documentation>The category of local education agency/district. For example: Independent or Charter 
-							</xs:documentation>
+							<xs:documentation>The category of local education agency/district. For example: Independent or Charter.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="CharterStatus" type="CharterStatusType" minOccurs="0">
@@ -2582,12 +2581,12 @@ Bilingual/English as a Second Language</xs:documentation>
 					</xs:element>
 					<xs:element name="NumberOfDaysAbsent" type="NumberOfDaysAbsent" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The number of days an individual is absent when school is in session during a given reporting period. </xs:documentation>
+							<xs:documentation>The number of days an individual is absent when school is in session during a given reporting period.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="NumberOfDaysInAttendance" type="NumberOfDaysInAttendance" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The number of days an individual is present when school is in session during a given reporting period. </xs:documentation>
+							<xs:documentation>The number of days an individual is present when school is in session during a given reporting period.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="NumberOfDaysTardy" type="NumberOfDaysTardy" minOccurs="0">
@@ -2693,7 +2692,7 @@ Bilingual/English as a Second Language</xs:documentation>
 					</xs:element>
 					<xs:element name="SchoolType" type="SchoolType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The type of education institution as classified by its primary focus. </xs:documentation>
+							<xs:documentation>The type of education institution as classified by its primary focus.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="CharterStatus" type="CharterStatusType" minOccurs="0">
@@ -3014,7 +3013,7 @@ Special education students
 					</xs:element>
 					<xs:element name="HighestCompletedLevelOfEducation" type="LevelOfEducationDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The extent of formal instruction an individual has received (e.g., the highest grade in school completed or its equivalent or the highest degree received). </xs:documentation>
+							<xs:documentation>The extent of formal instruction an individual has received (e.g., the highest grade in school completed or its equivalent or the highest degree received).</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>LevelOfEducationDescriptor</ann:Descriptor>
 							</xs:appinfo>
@@ -3378,7 +3377,7 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
 					</xs:element>
 					<xs:element name="AdministrationLanguage" type="LanguageDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The language in which an assessment is written and/or administered. </xs:documentation>
+							<xs:documentation>The language in which an assessment is written and/or administered.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>LanguageDescriptor</ann:Descriptor>
 							</xs:appinfo>
@@ -4252,7 +4251,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="PerformanceLevelDescriptor">
 		<xs:annotation>
-			<xs:documentation>This descriptor defines various levels or thresholds for performance on the assessment.  </xs:documentation>
+			<xs:documentation>This descriptor defines various levels or thresholds for performance on the assessment.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Descriptor</ann:TypeGroup>
 			</xs:appinfo>
@@ -4328,7 +4327,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="ReporterDescriptionDescriptor">
 		<xs:annotation>
-			<xs:documentation>This descriptor defines the type of individual who reported an incident. </xs:documentation>
+			<xs:documentation>This descriptor defines the type of individual who reported an incident.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Descriptor</ann:TypeGroup>
 			</xs:appinfo>
@@ -4347,7 +4346,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="ResidencyStatusDescriptor">
 		<xs:annotation>
-			<xs:documentation>This descriptor defines indications of the location of a person's legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit. </xs:documentation>
+			<xs:documentation>This descriptor defines indications of the location of a person's legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Descriptor</ann:TypeGroup>
 			</xs:appinfo>
@@ -4766,7 +4765,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StaffEducationOrganizationEmploymentAssociation">
 		<xs:annotation>
-			<xs:documentation>This association indicates the education organization an employee, contractor, volunteer or other service provider is formally associated with typically indicated by which organization the staff member has a services contract with or receives compensation from.   </xs:documentation>
+			<xs:documentation>This association indicates the education organization an employee, contractor, volunteer or other service provider is formally associated with typically indicated by which organization the staff member has a services contract with or receives compensation from.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 			</xs:appinfo>
@@ -5359,7 +5358,7 @@ Vocational</xs:documentation>
 			</xs:element>
 			<xs:element name="ResidencyStatus" type="ResidencyStatusDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>An indication of the location of a persons legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit. </xs:documentation>
+					<xs:documentation>An indication of the location of a persons legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit.</xs:documentation>
 					<xs:appinfo>
 						<ann:Descriptor>ResidencyStatusDescriptor</ann:Descriptor>
 					</xs:appinfo>
@@ -5402,8 +5401,7 @@ Vocational</xs:documentation>
 			</xs:element>
 			<xs:element name="EndDate" type="xs:date" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Month, day, and year of the withdrawal or exit of the student from the section.
-                                                                   </xs:documentation>
+					<xs:documentation>Month, day, and year of the withdrawal or exit of the student from the section.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="HomeroomIndicator" type="xs:boolean" minOccurs="0">
@@ -5467,7 +5465,7 @@ Other</xs:documentation>
 					</xs:element>
 					<xs:element name="MultiplyDisabled" type="xs:boolean" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Indicates whether the student receiving special education and related services has been designated as multiply disabled by the admission, review, and dismissal committee as aligned with Federal requirements. </xs:documentation>
+							<xs:documentation>Indicates whether the student receiving special education and related services has been designated as multiply disabled by the admission, review, and dismissal committee as aligned with Federal requirements.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="MedicallyFragile" type="xs:boolean" minOccurs="0">
@@ -5630,7 +5628,7 @@ Local Neglected Program</xs:documentation>
 		</xs:attribute>
 		<xs:attribute name="ref" type="xs:IDREF">
 			<xs:annotation>
-				<xs:documentation>The XML IDREF that references the object associated with this object. </xs:documentation>
+				<xs:documentation>The XML IDREF that references the object associated with this object.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
@@ -5713,7 +5711,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="AccountIdentity" type="AccountIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing account record in the receiving system. </xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing account record in the receiving system.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -5880,7 +5878,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="CalendarDateIdentity" type="CalendarDateIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing class period record in the receiving system.  </xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing class period record in the receiving system.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -5897,7 +5895,7 @@ Local Neglected Program</xs:documentation>
 		<xs:sequence>
 			<xs:element name="ClassPeriodName" type="ClassPeriodName">
 				<xs:annotation>
-					<xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period or AB schedules). </xs:documentation>
+					<xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period or AB schedules).</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="SchoolReference" type="SchoolReferenceType">
@@ -5919,7 +5917,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="ClassPeriodIdentity" type="ClassPeriodIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing class period record in the receiving system.  </xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing class period record in the receiving system.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -5958,7 +5956,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="CohortIdentity" type="CohortIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing cohort record in the receiving system.  </xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing cohort record in the receiving system.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6005,7 +6003,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="CompetencyObjectiveIdentity" type="CompetencyObjectiveIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing competency objective record in the receiving system.  </xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing competency objective record in the receiving system.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6014,7 +6012,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="CourseIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of courses. </xs:documentation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of courses.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6074,7 +6072,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="CourseOfferingIdentity" type="CourseOfferingIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing course offering record in the receiving system. </xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing course offering record in the receiving system.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6345,7 +6343,7 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 			<xs:element name="GradeType" type="GradeType">
 				<xs:annotation>
-					<xs:documentation>The type of grade reported (e.g., Exam, Final, Grading Period). </xs:documentation>
+					<xs:documentation>The type of grade reported (e.g., Exam, Final, Grading Period).</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6691,7 +6689,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="LocationIdentity" type="LocationIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing location record in the receiving system.  </xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing location record in the receiving system.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6942,7 +6940,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="SessionIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of sessions at a school. </xs:documentation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of sessions at a school.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6977,7 +6975,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="SessionIdentity" type="SessionIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing session record in the receiving system.  </xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing session record in the receiving system.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -8019,7 +8017,7 @@ Volunteer/no contract
 			</xs:element>
 			<xs:element name="ApartmentRoomSuiteNumber" type="ApartmentRoomSuiteNumber" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The apartment, room, or suite number of an address. </xs:documentation>
+					<xs:documentation>The apartment, room, or suite number of an address.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="BuildingSiteNumber" type="BuildingSiteNumber" minOccurs="0">
@@ -8029,12 +8027,12 @@ Volunteer/no contract
 			</xs:element>
 			<xs:element name="City" type="City">
 				<xs:annotation>
-					<xs:documentation>The name of the city in which an address is located. </xs:documentation>
+					<xs:documentation>The name of the city in which an address is located.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="StateAbbreviation" type="StateAbbreviationType">
 				<xs:annotation>
-					<xs:documentation>The abbreviation for the state (within the United States) or outlying area in which an address is located. </xs:documentation>
+					<xs:documentation>The abbreviation for the state (within the United States) or outlying area in which an address is located.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="PostalCode" type="PostalCode">
@@ -8334,9 +8332,7 @@ Teacher only day
 Holiday
 Make-up day
 Weather day
-Student late arrival/early dismissal
-...
-					</xs:documentation>
+Student late arrival/early dismissal</xs:documentation>
 					<xs:appinfo>
 						<ann:Descriptor>CalendarEventDescriptorReference</ann:Descriptor>
 					</xs:appinfo>
@@ -8378,7 +8374,7 @@ Student late arrival/early dismissal
 	</xs:complexType>
 	<xs:complexType name="ClassRanking">
 		<xs:annotation>
-			<xs:documentation>The academic rank information of a student in relation to his or her graduating class </xs:documentation>
+			<xs:documentation>The academic rank information of a student in relation to his or her graduating class.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
 			</xs:appinfo>
@@ -9637,7 +9633,7 @@ Change of assignment</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="StudentAssessmentItem">
 		<xs:annotation>
-			<xs:documentation>This entity represents the student's response to an assessment item and the item-level scores such as correct, incorrect or met standard. </xs:documentation>
+			<xs:documentation>This entity represents the student's response to an assessment item and the item-level scores such as correct, incorrect or met standard.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
 			</xs:appinfo>
@@ -9695,8 +9691,7 @@ Met standard
 	</xs:complexType>
 	<xs:complexType name="StudentCharacteristic">
 		<xs:annotation>
-			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth		
-			</xs:documentation>
+			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
 			</xs:appinfo>
@@ -9859,8 +9854,7 @@ Met standard
 	</xs:annotation>
 	<xs:simpleType name="AcademicHonorCategoryType">
 		<xs:annotation>
-			<xs:documentation>A designation of the type of academic distinctions earned by or awarded to the student.
-			</xs:documentation>
+			<xs:documentation>A designation of the type of academic distinctions earned by or awarded to the student.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -9960,8 +9954,7 @@ Met standard
 	</xs:simpleType>
 	<xs:simpleType name="AcademicSubjectMapType">
 		<xs:annotation>
-			<xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.
-			</xs:documentation>
+			<xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -10239,12 +10232,7 @@ Cognitive and perceptual skills test
 	</xs:simpleType>
 	<xs:simpleType name="AssessmentItemResultType">
 		<xs:annotation>
-			<xs:documentation>The analyzed result of a student's response to an assessment item.. For example:
-Correct
-Incorrect
-Met standard
-...
-			</xs:documentation>
+			<xs:documentation>The analyzed result of a student's response to an assessment item.. For example: Correct, Incorrect, Met standard.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -10259,8 +10247,7 @@ Met standard
 	</xs:simpleType>
 	<xs:simpleType name="AssessmentReportingMethodType">
 		<xs:annotation>
-			<xs:documentation>The method that the instructor of the class uses to report the performance and achievement of all students. It may be a qualitative method such as individualized teacher comments or a quantitative method such as a letter or a numerical grade. In some cases, more than one type of reporting method may be used.
-			</xs:documentation>
+			<xs:documentation>The method that the instructor of the class uses to report the performance and achievement of all students. It may be a qualitative method such as individualized teacher comments or a quantitative method such as a letter or a numerical grade. In some cases, more than one type of reporting method may be used.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -10541,8 +10528,7 @@ Student late arrival/early dismissal
 	</xs:simpleType>
 	<xs:simpleType name="CountryCodeType">
 		<xs:annotation>
-			<xs:documentation>The two character code of countries. (Note: A list of countries and codes is currently maintained and updated by the ISO as ISO 3166 on its website: http://www.iso.org/iso/country_codes.htm)
-			</xs:documentation>
+			<xs:documentation>The two character code of countries. (Note: A list of countries and codes is currently maintained and updated by the ISO as ISO 3166 on its website: http://www.iso.org/iso/country_codes.htm)</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -10800,8 +10786,7 @@ Student late arrival/early dismissal
 	</xs:simpleType>
 	<xs:simpleType name="CountryType">
 		<xs:annotation>
-			<xs:documentation>The names of countries. (Note: A list of countries and codes is currently maintained and updated by the ISO as ISO 3166 on its website: http://www.iso.org/iso/country_codes.htm)
-			</xs:documentation>
+			<xs:documentation>The names of countries. (Note: A list of countries and codes is currently maintained and updated by the ISO as ISO 3166 on its website: http://www.iso.org/iso/country_codes.htm)</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -11060,12 +11045,7 @@ Student late arrival/early dismissal
 	</xs:simpleType>
 	<xs:simpleType name="CourseAttemptResultType">
 		<xs:annotation>
-			<xs:documentation>The result from the student's attempt to take the course, for example:
-Pass
-Fail
-Incomplete
-Withdrawn
-			</xs:documentation>
+			<xs:documentation>The result from the student's attempt to take the course, for example: Pass, Fail, Incomplete, Withdrawn</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -11125,7 +11105,7 @@ Withdrawn
 	</xs:simpleType>
 	<xs:simpleType name="CourseLevelCharacteristicType">
 		<xs:annotation>
-			<xs:documentation>The item for indication of the nature and difficulty of instruction: Remedial, Basic, Honors, Ap, IB, Dual Credit, CTE. etc. </xs:documentation>
+			<xs:documentation>The item for indication of the nature and difficulty of instruction: Remedial, Basic, Honors, Ap, IB, Dual Credit, CTE. etc.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -11690,7 +11670,7 @@ Vocational</xs:documentation>
 	</xs:simpleType>
 	<xs:simpleType name="GradebookEntryType">
 		<xs:annotation>
-			<xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc. </xs:documentation>
+			<xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -12029,7 +12009,7 @@ Vocational</xs:documentation>
 	</xs:simpleType>
 	<xs:simpleType name="LimitedEnglishProficiencyMapType">
 		<xs:annotation>
-			<xs:documentation>An indication that the student has been identified as Limited English Proficient or English Proficient by the Language Proficiency Assessment Committee (LPAC). </xs:documentation>
+			<xs:documentation>An indication that the student has been identified as Limited English Proficient or English Proficient by the Language Proficiency Assessment Committee (LPAC).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -12068,7 +12048,7 @@ Vocational</xs:documentation>
 	</xs:simpleType>
 	<xs:simpleType name="MediumOfInstructionType">
 		<xs:annotation>
-			<xs:documentation>The media through which teachers provide instruction to students and students and teachers communicate about instructional matters.  </xs:documentation>
+			<xs:documentation>The media through which teachers provide instruction to students and students and teachers communicate about instructional matters.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -12150,7 +12130,7 @@ Vocational</xs:documentation>
 	</xs:simpleType>
 	<xs:simpleType name="OldEthnicityType">
 		<xs:annotation>
-			<xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and Race.  </xs:documentation>
+			<xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and Race.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -12165,7 +12145,7 @@ Vocational</xs:documentation>
 	</xs:simpleType>
 	<xs:simpleType name="OperationalStatusType">
 		<xs:annotation>
-			<xs:documentation>The current operational status of the education organization (e.g., active, inactive).  </xs:documentation>
+			<xs:documentation>The current operational status of the education organization (e.g., active, inactive).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -12726,7 +12706,7 @@ LEP Exempt
 	</xs:simpleType>
 	<xs:simpleType name="RepeatIdentifierType">
 		<xs:annotation>
-			<xs:documentation>An indication as to whether a student has previously taken a given course. </xs:documentation>
+			<xs:documentation>An indication as to whether a student has previously taken a given course.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -12744,7 +12724,7 @@ LEP Exempt
 	</xs:simpleType>
 	<xs:simpleType name="ReporterDescriptionMapType">
 		<xs:annotation>
-			<xs:documentation>Information on the type of individual who reported the incident. </xs:documentation>
+			<xs:documentation>Information on the type of individual who reported the incident.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -12810,8 +12790,7 @@ Partial response
 	</xs:simpleType>
 	<xs:simpleType name="RestraintEventReasonType">
 		<xs:annotation>
-			<xs:documentation>The items of categorization of the circumstances or reason for the restraint.
-			</xs:documentation>
+			<xs:documentation>The items of categorization of the circumstances or reason for the restraint.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -12911,7 +12890,7 @@ Second retest
 	</xs:simpleType>
 	<xs:simpleType name="SchoolType">
 		<xs:annotation>
-			<xs:documentation>The type of education institution as classified by its primary focus. </xs:documentation>
+			<xs:documentation>The type of education institution as classified by its primary focus.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -13131,7 +13110,7 @@ Second retest
 	</xs:simpleType>
 	<xs:simpleType name="StateAbbreviationType">
 		<xs:annotation>
-			<xs:documentation>The abbreviation for the state (within the United States) or outlying area in which an address is located. </xs:documentation>
+			<xs:documentation>The abbreviation for the state (within the United States) or outlying area in which an address is located.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -13398,7 +13377,7 @@ Second retest
 	</xs:simpleType>
 	<xs:simpleType name="WeaponMapType">
 		<xs:annotation>
-			<xs:documentation>The category for the types of weapon used during an incident. </xs:documentation>
+			<xs:documentation>The category for the types of weapon used during an incident.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 			</xs:appinfo>
@@ -13533,7 +13512,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="ApartmentRoomSuiteNumber">
 		<xs:annotation>
-			<xs:documentation>The apartment, room, or suite number of an address. </xs:documentation>
+			<xs:documentation>The apartment, room, or suite number of an address.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13545,7 +13524,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="AssessmentForm">
 		<xs:annotation>
-			<xs:documentation>Identifies the form of the assessment, for example a regular versus makeup form, multiple choice versus constructed response, etc.		</xs:documentation>
+			<xs:documentation>Identifies the form of the assessment, for example a regular versus makeup form, multiple choice versus constructed response, etc.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13569,8 +13548,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="AssessmentTitle">
 		<xs:annotation>
-			<xs:documentation>The title or name of the assessment.
-			</xs:documentation>
+			<xs:documentation>The title or name of the assessment.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13606,7 +13584,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="BellScheduleName">
 		<xs:annotation>
-			<xs:documentation>The title or name of the bell schedule.		</xs:documentation>
+			<xs:documentation>The title or name of the bell schedule.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13654,7 +13632,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="City">
 		<xs:annotation>
-			<xs:documentation>The name of the city in which an address is located. </xs:documentation>
+			<xs:documentation>The name of the city in which an address is located.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13666,7 +13644,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="ClassPeriodName">
 		<xs:annotation>
-			<xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period or AB schedules). </xs:documentation>
+			<xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period or AB schedules).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13726,7 +13704,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="ContactRestrictions">
 		<xs:annotation>
-			<xs:documentation>Restrictions for student and/or teacher contact with the individual (e.g., the student may not be picked up by the individual)                                                                           </xs:documentation>
+			<xs:documentation>Restrictions for student and/or teacher contact with the individual (e.g., the student may not be picked up by the individual).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13811,7 +13789,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	<xs:simpleType name="CountyFIPSCode">
 		<xs:annotation>
 			<xs:documentation>Definition
-The Federal Information Processing Standards (FIPS) numeric code for the county issued by the National Institute of Standards and Technology (NIST). Counties are considered to be the "first-order subdivisions" of each State and statistically equivalent entity, regardless of their local designations (county, parish, borough, etc.). Counties in different States will have the same code. A unique county number is created when combined with the 2-digit FIPS State Code. </xs:documentation>
+The Federal Information Processing Standards (FIPS) numeric code for the county issued by the National Institute of Standards and Technology (NIST). Counties are considered to be the "first-order subdivisions" of each State and statistically equivalent entity, regardless of their local designations (county, parish, borough, etc.). Counties in different States will have the same code. A unique county number is created when combined with the 2-digit FIPS State Code.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -13991,7 +13969,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	</xs:simpleType>
 	<xs:simpleType name="GenerationCodeSuffix">
 		<xs:annotation>
-			<xs:documentation>An appendage, if any, used to denote an individual's generation in his family (e.g., Jr., Sr., III).  </xs:documentation>
+			<xs:documentation>An appendage, if any, used to denote an individual's generation in his family (e.g., Jr., Sr., III).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
@@ -14735,7 +14713,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	</xs:simpleType>
 	<xs:simpleType name="NumberOfDaysInAttendance">
 		<xs:annotation>
-			<xs:documentation>The number of days an individual is present when school is in session during a given reporting period. </xs:documentation>
+			<xs:documentation>The number of days an individual is present when school is in session during a given reporting period.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 			</xs:appinfo>
