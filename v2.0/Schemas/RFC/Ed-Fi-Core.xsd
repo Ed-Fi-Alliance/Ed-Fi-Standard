@@ -964,7 +964,7 @@ Withdrawn</xs:documentation>
 							<xs:documentation>The final indicator of student performance in a class as submitted by the instructor.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="FinalNumericGradeEarned" type="xs:integer" minOccurs="0">
+					<xs:element name="FinalNumericGradeEarned" type="NumericGrade" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The final indicator of student performance in a class as submitted by the instructor.</xs:documentation>
 						</xs:annotation>
@@ -1450,7 +1450,7 @@ Representative of visiting school
 							<xs:documentation>A final or interim (grading period) indicator of student performance in a class as submitted by the instructor.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="NumericGradeEarned" type="xs:integer" minOccurs="0">
+					<xs:element name="NumericGradeEarned" type="NumericGrade" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>A final or interim (grading period) indicator of student performance in a class as submitted by the instructor.</xs:documentation>
 						</xs:annotation>
@@ -3520,7 +3520,7 @@ LEP Exempt
 							<xs:documentation>A final or interim (grading period) indicator of student performance in a class as submitted by the instructor.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="NumericGradeEarned" type="xs:integer" minOccurs="0">
+					<xs:element name="NumericGradeEarned" type="NumericGrade" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>A final or interim (grading period) indicator of student performance in a class as submitted by the instructor.</xs:documentation>
 						</xs:annotation>
@@ -14721,9 +14721,24 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	<xs:simpleType name="NumberOfYears">
 		<xs:annotation>
 			<xs:documentation>The number of years expressed as whole and fractional units.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
+			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:decimal">
 			<xs:totalDigits value="5"/>
+			<xs:fractionDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NumericGrade">
+		<xs:annotation>
+			<xs:documentation>The numeric grade expressed as whole and fractional units.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="9"/>
 			<xs:fractionDigits value="2"/>
 		</xs:restriction>
 	</xs:simpleType>
