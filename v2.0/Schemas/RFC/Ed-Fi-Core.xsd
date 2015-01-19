@@ -3972,7 +3972,11 @@ LEP Exempt
 		<xs:complexContent>
 			<xs:extension base="DescriptorType">
 				<xs:sequence>
-					<xs:element name="CountryCode" type="CountryCodeMapType"/>
+					<xs:element name="CountryCode" type="CountryCodeMapType">
+						<xs:annotation>
+							<xs:documentation>The unique two digit International Organization for Standardization (ISO) code.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -8292,7 +8296,7 @@ Tardy</xs:documentation>
 			</xs:element>
 			<xs:element name="Country" type="CountryDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The unique two digit International Organization for Standardization (ISO) code for the country in which an individual is born.</xs:documentation>
+					<xs:documentation>The country in which an individual is born.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="DateEnteredUS" type="xs:date" minOccurs="0">
@@ -8987,7 +8991,7 @@ Change of assignment</xs:documentation>
 			</xs:element>
 			<xs:element name="Country" type="CountryDescriptorReferenceType">
 				<xs:annotation>
-					<xs:documentation>The name of the country per the International Organization for Standardization (ISO) 3166.</xs:documentation>
+					<xs:documentation>The name of the country.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="Latitude" type="Coordinate" minOccurs="0">
