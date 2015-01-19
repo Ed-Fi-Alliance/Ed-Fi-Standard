@@ -3962,6 +3962,21 @@ LEP Exempt
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="CountryDescriptor">
+		<xs:annotation>
+			<xs:documentation>This descriptor defines the name of the country.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Descriptor</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorType">
+				<xs:sequence>
+					<xs:element name="CountryCode" type="CountryCodeMapType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="CredentialFieldDescriptor">
 		<xs:annotation>
 			<xs:documentation>This descriptor defines the fields of certification that the state education agency offers to teachers.</xs:documentation>
@@ -7526,6 +7541,17 @@ Volunteer/no contract
 			<xs:extension base="DescriptorReferenceType"/>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="CountryDescriptorReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides references for country descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="CredentialFieldDescriptorReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides references for credential field descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -8264,7 +8290,7 @@ Tardy</xs:documentation>
 					<xs:documentation>For students born outside of the US, the Province or jurisdiction in which an individual is born.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="BirthCountryCode" type="CountryCodeType" minOccurs="0">
+			<xs:element name="Country" type="CountryDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The unique two digit International Organization for Standardization (ISO) code for the country in which an individual is born.</xs:documentation>
 				</xs:annotation>
@@ -8894,7 +8920,7 @@ Change of assignment</xs:documentation>
 					<xs:documentation>Name of the entity or institution that issued the document.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="IssuerCountry" type="CountryType" minOccurs="0">
+			<xs:element name="Country" type="CountryDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Country of origin of the document.</xs:documentation>
 				</xs:annotation>
@@ -8959,7 +8985,7 @@ Change of assignment</xs:documentation>
 					<xs:documentation>The fourth line of the address.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Country" type="CountryType">
+			<xs:element name="Country" type="CountryDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>The name of the country per the International Organization for Standardization (ISO) 3166.</xs:documentation>
 				</xs:annotation>
@@ -10496,7 +10522,7 @@ Student late arrival/early dismissal
 			<xs:enumeration value="Per Student"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="CountryCodeType">
+	<xs:simpleType name="CountryCodeMapType">
 		<xs:annotation>
 			<xs:documentation>The two character code of countries. (Note: A list of countries and codes is currently maintained and updated by the ISO as ISO 3166 on its website: http://www.iso.org/iso/country_codes.htm)</xs:documentation>
 			<xs:appinfo>
@@ -10752,265 +10778,6 @@ Student late arrival/early dismissal
 			<xs:enumeration value="YE"/>
 			<xs:enumeration value="ZM"/>
 			<xs:enumeration value="ZW"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="CountryType">
-		<xs:annotation>
-			<xs:documentation>The names of countries. (Note: A list of countries and codes is currently maintained and updated by the ISO as ISO 3166 on its website: http://www.iso.org/iso/country_codes.htm)</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Enumeration</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:token">
-			<xs:enumeration value="AFGHANISTAN"/>
-			<xs:enumeration value="ÅLAND ISLANDS"/>
-			<xs:enumeration value="ALBANIA"/>
-			<xs:enumeration value="ALGERIA"/>
-			<xs:enumeration value="AMERICAN SAMOA"/>
-			<xs:enumeration value="ANDORRA"/>
-			<xs:enumeration value="ANGOLA"/>
-			<xs:enumeration value="ANGUILLA"/>
-			<xs:enumeration value="ANTARCTICA"/>
-			<xs:enumeration value="ANTIGUA AND BARBUDA"/>
-			<xs:enumeration value="ARGENTINA"/>
-			<xs:enumeration value="ARMENIA"/>
-			<xs:enumeration value="ARUBA"/>
-			<xs:enumeration value="AUSTRALIA"/>
-			<xs:enumeration value="AUSTRIA"/>
-			<xs:enumeration value="AZERBAIJAN"/>
-			<xs:enumeration value="BAHAMAS"/>
-			<xs:enumeration value="BAHRAIN"/>
-			<xs:enumeration value="BANGLADESH"/>
-			<xs:enumeration value="BARBADOS"/>
-			<xs:enumeration value="BELARUS"/>
-			<xs:enumeration value="BELGIUM"/>
-			<xs:enumeration value="BELIZE"/>
-			<xs:enumeration value="BENIN"/>
-			<xs:enumeration value="BERMUDA"/>
-			<xs:enumeration value="BHUTAN"/>
-			<xs:enumeration value="BOLIVIA, PLURINATIONAL STATE OF"/>
-			<xs:enumeration value="BONAIRE, SINT EUSTATIUS AND SABA"/>
-			<xs:enumeration value="BOSNIA AND HERZEGOVINA"/>
-			<xs:enumeration value="BOTSWANA"/>
-			<xs:enumeration value="BOUVET ISLAND"/>
-			<xs:enumeration value="BRAZIL"/>
-			<xs:enumeration value="BRITISH INDIAN OCEAN TERRITORY"/>
-			<xs:enumeration value="BRUNEI DARUSSALAM"/>
-			<xs:enumeration value="BULGARIA"/>
-			<xs:enumeration value="BURKINA FASO"/>
-			<xs:enumeration value="BURUNDI"/>
-			<xs:enumeration value="CAMBODIA"/>
-			<xs:enumeration value="CAMEROON"/>
-			<xs:enumeration value="CANADA"/>
-			<xs:enumeration value="CAPE VERDE"/>
-			<xs:enumeration value="CAYMAN ISLANDS"/>
-			<xs:enumeration value="CENTRAL AFRICAN REPUBLIC"/>
-			<xs:enumeration value="CHAD"/>
-			<xs:enumeration value="CHILE"/>
-			<xs:enumeration value="CHINA"/>
-			<xs:enumeration value="CHRISTMAS ISLAND"/>
-			<xs:enumeration value="COCOS (KEELING) ISLANDS"/>
-			<xs:enumeration value="COLOMBIA"/>
-			<xs:enumeration value="COMOROS"/>
-			<xs:enumeration value="CONGO"/>
-			<xs:enumeration value="CONGO, THE DEMOCRATIC REPUBLIC OF THE"/>
-			<xs:enumeration value="COOK ISLANDS"/>
-			<xs:enumeration value="COSTA RICA"/>
-			<xs:enumeration value="CÔTE D'IVOIRE"/>
-			<xs:enumeration value="CROATIA"/>
-			<xs:enumeration value="CUBA"/>
-			<xs:enumeration value="CURAÇAO"/>
-			<xs:enumeration value="CYPRUS"/>
-			<xs:enumeration value="CZECH REPUBLIC"/>
-			<xs:enumeration value="DENMARK"/>
-			<xs:enumeration value="DJIBOUTI"/>
-			<xs:enumeration value="DOMINICA"/>
-			<xs:enumeration value="DOMINICAN REPUBLIC"/>
-			<xs:enumeration value="ECUADOR"/>
-			<xs:enumeration value="EGYPT"/>
-			<xs:enumeration value="EL SALVADOR"/>
-			<xs:enumeration value="EQUATORIAL GUINEA"/>
-			<xs:enumeration value="ERITREA"/>
-			<xs:enumeration value="ESTONIA"/>
-			<xs:enumeration value="ETHIOPIA"/>
-			<xs:enumeration value="FALKLAND ISLANDS (MALVINAS)"/>
-			<xs:enumeration value="FAROE ISLANDS"/>
-			<xs:enumeration value="FIJI"/>
-			<xs:enumeration value="FINLAND"/>
-			<xs:enumeration value="FRANCE"/>
-			<xs:enumeration value="FRENCH GUIANA"/>
-			<xs:enumeration value="FRENCH POLYNESIA"/>
-			<xs:enumeration value="FRENCH SOUTHERN TERRITORIES"/>
-			<xs:enumeration value="GABON"/>
-			<xs:enumeration value="GAMBIA"/>
-			<xs:enumeration value="GEORGIA"/>
-			<xs:enumeration value="GERMANY"/>
-			<xs:enumeration value="GHANA"/>
-			<xs:enumeration value="GIBRALTAR"/>
-			<xs:enumeration value="GREECE"/>
-			<xs:enumeration value="GREENLAND"/>
-			<xs:enumeration value="GRENADA"/>
-			<xs:enumeration value="GUADELOUPE"/>
-			<xs:enumeration value="GUAM"/>
-			<xs:enumeration value="GUATEMALA"/>
-			<xs:enumeration value="GUERNSEY"/>
-			<xs:enumeration value="GUINEA"/>
-			<xs:enumeration value="GUINEA-BISSAU"/>
-			<xs:enumeration value="GUYANA"/>
-			<xs:enumeration value="HAITI"/>
-			<xs:enumeration value="HEARD ISLAND AND MCDONALD ISLANDS"/>
-			<xs:enumeration value="HOLY SEE (VATICAN CITY STATE)"/>
-			<xs:enumeration value="HONDURAS"/>
-			<xs:enumeration value="HONG KONG"/>
-			<xs:enumeration value="HUNGARY"/>
-			<xs:enumeration value="ICELAND"/>
-			<xs:enumeration value="INDIA"/>
-			<xs:enumeration value="INDONESIA"/>
-			<xs:enumeration value="IRAN, ISLAMIC REPUBLIC OF"/>
-			<xs:enumeration value="IRAQ"/>
-			<xs:enumeration value="IRELAND"/>
-			<xs:enumeration value="ISLE OF MAN"/>
-			<xs:enumeration value="ISRAEL"/>
-			<xs:enumeration value="ITALY"/>
-			<xs:enumeration value="JAMAICA"/>
-			<xs:enumeration value="JAPAN"/>
-			<xs:enumeration value="JERSEY"/>
-			<xs:enumeration value="JORDAN"/>
-			<xs:enumeration value="KAZAKHSTAN"/>
-			<xs:enumeration value="KENYA"/>
-			<xs:enumeration value="KIRIBATI"/>
-			<xs:enumeration value="KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF"/>
-			<xs:enumeration value="KOREA, REPUBLIC OF"/>
-			<xs:enumeration value="KUWAIT"/>
-			<xs:enumeration value="KYRGYZSTAN"/>
-			<xs:enumeration value="LAO PEOPLE'S DEMOCRATIC REPUBLIC"/>
-			<xs:enumeration value="LATVIA"/>
-			<xs:enumeration value="LEBANON"/>
-			<xs:enumeration value="LESOTHO"/>
-			<xs:enumeration value="LIBERIA"/>
-			<xs:enumeration value="LIBYA"/>
-			<xs:enumeration value="LIECHTENSTEIN"/>
-			<xs:enumeration value="LITHUANIA"/>
-			<xs:enumeration value="LUXEMBOURG"/>
-			<xs:enumeration value="MACAO"/>
-			<xs:enumeration value="MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF"/>
-			<xs:enumeration value="MADAGASCAR"/>
-			<xs:enumeration value="MALAWI"/>
-			<xs:enumeration value="MALAYSIA"/>
-			<xs:enumeration value="MALDIVES"/>
-			<xs:enumeration value="MALI"/>
-			<xs:enumeration value="MALTA"/>
-			<xs:enumeration value="MARSHALL ISLANDS"/>
-			<xs:enumeration value="MARTINIQUE"/>
-			<xs:enumeration value="MAURITANIA"/>
-			<xs:enumeration value="MAURITIUS"/>
-			<xs:enumeration value="MAYOTTE"/>
-			<xs:enumeration value="MEXICO"/>
-			<xs:enumeration value="MICRONESIA, FEDERATED STATES OF"/>
-			<xs:enumeration value="MOLDOVA, REPUBLIC OF"/>
-			<xs:enumeration value="MONACO"/>
-			<xs:enumeration value="MONGOLIA"/>
-			<xs:enumeration value="MONTENEGRO"/>
-			<xs:enumeration value="MONTSERRAT"/>
-			<xs:enumeration value="MOROCCO"/>
-			<xs:enumeration value="MOZAMBIQUE"/>
-			<xs:enumeration value="MYANMAR"/>
-			<xs:enumeration value="NAMIBIA"/>
-			<xs:enumeration value="NAURU"/>
-			<xs:enumeration value="NEPAL"/>
-			<xs:enumeration value="NETHERLANDS"/>
-			<xs:enumeration value="NEW CALEDONIA"/>
-			<xs:enumeration value="NEW ZEALAND"/>
-			<xs:enumeration value="NICARAGUA"/>
-			<xs:enumeration value="NIGER"/>
-			<xs:enumeration value="NIGERIA"/>
-			<xs:enumeration value="NIUE"/>
-			<xs:enumeration value="NORFOLK ISLAND"/>
-			<xs:enumeration value="NORTHERN MARIANA ISLANDS"/>
-			<xs:enumeration value="NORWAY"/>
-			<xs:enumeration value="OMAN"/>
-			<xs:enumeration value="PAKISTAN"/>
-			<xs:enumeration value="PALAU"/>
-			<xs:enumeration value="PALESTINIAN TERRITORY, OCCUPIED"/>
-			<xs:enumeration value="PANAMA"/>
-			<xs:enumeration value="PAPUA NEW GUINEA"/>
-			<xs:enumeration value="PARAGUAY"/>
-			<xs:enumeration value="PERU"/>
-			<xs:enumeration value="PHILIPPINES"/>
-			<xs:enumeration value="PITCAIRN"/>
-			<xs:enumeration value="POLAND"/>
-			<xs:enumeration value="PORTUGAL"/>
-			<xs:enumeration value="PUERTO RICO"/>
-			<xs:enumeration value="QATAR"/>
-			<xs:enumeration value="RÉUNION"/>
-			<xs:enumeration value="ROMANIA"/>
-			<xs:enumeration value="RUSSIAN FEDERATION"/>
-			<xs:enumeration value="RWANDA"/>
-			<xs:enumeration value="SAINT BARTHÉLEMY"/>
-			<xs:enumeration value="SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA"/>
-			<xs:enumeration value="SAINT KITTS AND NEVIS"/>
-			<xs:enumeration value="SAINT LUCIA"/>
-			<xs:enumeration value="SAINT MARTIN (FRENCH PART)"/>
-			<xs:enumeration value="SAINT PIERRE AND MIQUELON"/>
-			<xs:enumeration value="SAINT VINCENT AND THE GRENADINES"/>
-			<xs:enumeration value="SAMOA"/>
-			<xs:enumeration value="SAN MARINO"/>
-			<xs:enumeration value="SAO TOME AND PRINCIPE"/>
-			<xs:enumeration value="SAUDI ARABIA"/>
-			<xs:enumeration value="SENEGAL"/>
-			<xs:enumeration value="SERBIA"/>
-			<xs:enumeration value="SEYCHELLES"/>
-			<xs:enumeration value="SIERRA LEONE"/>
-			<xs:enumeration value="SINGAPORE"/>
-			<xs:enumeration value="SINT MAARTEN (DUTCH PART)"/>
-			<xs:enumeration value="SLOVAKIA"/>
-			<xs:enumeration value="SLOVENIA"/>
-			<xs:enumeration value="SOLOMON ISLANDS"/>
-			<xs:enumeration value="SOMALIA"/>
-			<xs:enumeration value="SOUTH AFRICA"/>
-			<xs:enumeration value="SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"/>
-			<xs:enumeration value="SOUTH SUDAN"/>
-			<xs:enumeration value="SPAIN"/>
-			<xs:enumeration value="SRI LANKA"/>
-			<xs:enumeration value="SUDAN"/>
-			<xs:enumeration value="SURINAME"/>
-			<xs:enumeration value="SVALBARD AND JAN MAYEN"/>
-			<xs:enumeration value="SWAZILAND"/>
-			<xs:enumeration value="SWEDEN"/>
-			<xs:enumeration value="SWITZERLAND"/>
-			<xs:enumeration value="SYRIAN ARAB REPUBLIC"/>
-			<xs:enumeration value="TAIWAN, PROVINCE OF CHINA"/>
-			<xs:enumeration value="TAJIKISTAN"/>
-			<xs:enumeration value="TANZANIA, UNITED REPUBLIC OF"/>
-			<xs:enumeration value="THAILAND"/>
-			<xs:enumeration value="TIMOR-LESTE"/>
-			<xs:enumeration value="TOGO"/>
-			<xs:enumeration value="TOKELAU"/>
-			<xs:enumeration value="TONGA"/>
-			<xs:enumeration value="TRINIDAD AND TOBAGO"/>
-			<xs:enumeration value="TUNISIA"/>
-			<xs:enumeration value="TURKEY"/>
-			<xs:enumeration value="TURKMENISTAN"/>
-			<xs:enumeration value="TURKS AND CAICOS ISLANDS"/>
-			<xs:enumeration value="TUVALU"/>
-			<xs:enumeration value="UGANDA"/>
-			<xs:enumeration value="UKRAINE"/>
-			<xs:enumeration value="UNITED ARAB EMIRATES"/>
-			<xs:enumeration value="UNITED KINGDOM"/>
-			<xs:enumeration value="UNITED STATES"/>
-			<xs:enumeration value="UNITED STATES MINOR OUTLYING ISLANDS"/>
-			<xs:enumeration value="URUGUAY"/>
-			<xs:enumeration value="UZBEKISTAN"/>
-			<xs:enumeration value="VANUATU"/>
-			<xs:enumeration value="VENEZUELA, BOLIVARIAN REPUBLIC OF"/>
-			<xs:enumeration value="VIET NAM"/>
-			<xs:enumeration value="VIRGIN ISLANDS, BRITISH"/>
-			<xs:enumeration value="VIRGIN ISLANDS, U.S."/>
-			<xs:enumeration value="WALLIS AND FUTUNA"/>
-			<xs:enumeration value="WESTERN SAHARA"/>
-			<xs:enumeration value="YEMEN"/>
-			<xs:enumeration value="ZAMBIA"/>
-			<xs:enumeration value="ZIMBABWE"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="CourseAttemptResultType">
