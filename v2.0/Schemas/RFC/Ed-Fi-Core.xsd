@@ -7230,7 +7230,7 @@ Volunteer/no contract
 	</xs:complexType>
 	<xs:complexType name="StudentIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of students by unique identification.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of students.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -7242,6 +7242,61 @@ Volunteer/no contract
 			<xs:element name="StudentUniqueId" type="UniqueId">
 				<xs:annotation>
 					<xs:documentation>A unique alphanumeric code assigned to a student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of students.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentUniqueId" type="UniqueId" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique alphanumeric code assigned to a student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StudentIdentificationCode" type="StudentIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Name" type="Name" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full legal name of the person.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OtherName" type="OtherNameType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Other names (e.g., alias, nickname, previous legal name) associated with a person.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Sex" type="SexType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A person's gender.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BirthData" type="BirthData" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The set of elements that capture relevant data regarding a person's birth, including birth date and place of birth.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Race" type="RaceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -7351,7 +7406,12 @@ Volunteer/no contract
 				<xs:sequence>
 					<xs:element name="StudentIdentity" type="StudentIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing student record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of students.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentLookup" type="StudentLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of students.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
