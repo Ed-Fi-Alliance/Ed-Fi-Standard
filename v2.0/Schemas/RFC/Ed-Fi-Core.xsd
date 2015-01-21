@@ -1633,7 +1633,7 @@ Representative of visiting school
 							<xs:documentation>The school year the student is expected to graduate.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="GraduationRequirement" type="GraduationRequirement" minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="GraduationRequirement" type="RequiredAssessment" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>The assessments and associated required score and performance level needed to satisfy graduation requirements.</xs:documentation>
 						</xs:annotation>
@@ -8948,31 +8948,6 @@ Change of assignment</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="GraduationRequirement">
-		<xs:annotation>
-			<xs:documentation>The assessments and associated required score and performance level needed to satisfy graduation requirements.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="AssessmentReference" type="AssessmentReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="RequiredAssessmentScore" type="AssessmentScore" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Score required to be met or exceeded to successfully meet the graduation requirement. </xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="RequiredAssessmentPerformanceLevel" type="AssessmentPerformanceLevel" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Performance level required to be met or exceeded to successfully meet the graduation requirement. </xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="IdentificationDocument">
 		<xs:annotation>
 			<xs:documentation>Represents the valid document that a person uses for identification.</xs:documentation>
@@ -9566,6 +9541,31 @@ Change of assignment</xs:documentation>
 			<xs:element name="RecognitionAwardExpiresDate" type="xs:date" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Date on which the award expires.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RequiredAssessment">
+		<xs:annotation>
+			<xs:documentation>The assessments and associated required score and performance level.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Common</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AssessmentReference" type="AssessmentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RequiredAssessmentScore" type="AssessmentScore" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Score required to be met or exceeded.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RequiredAssessmentPerformanceLevel" type="AssessmentPerformanceLevel" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Performance level required to be met or exceeded.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
