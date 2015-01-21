@@ -5623,7 +5623,7 @@ Local Neglected Program</xs:documentation>
 	</xs:annotation>
 	<xs:complexType name="AcademicWeekIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -5641,6 +5641,31 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="AcademicWeekLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The start date for the academic week.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EndDate" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The end date for the academic week.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="AcademicWeekReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for academic weeks. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
@@ -5653,7 +5678,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="AcademicWeekIdentity" type="AcademicWeekIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Identity of the academic week.</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="AcademicWeekLookup" type="AcademicWeekLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
