@@ -6753,7 +6753,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="ParentIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of parents and guardians uniquely.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of parents and guardians uniquely.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6765,6 +6765,56 @@ Local Neglected Program</xs:documentation>
 			<xs:element name="ParentUniqueId" type="UniqueId">
 				<xs:annotation>
 					<xs:documentation>A unique alphanumeric code assigned to a parent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ParentLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of parents and guardians uniquely.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="PersonUniqueId" type="UniqueId" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique alphanumeric code assigned to a parent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Name" type="Name" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full legal name of the person.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OtherName" type="OtherName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Other names (e.g., alias, nickname, previous legal name) associated with a person.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Sex" type="SexType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A person's gender.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Address" type="Address" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Parent's address, if different from student address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Telephone" type="Telephone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The 10-digit telephone number, including the area code, for the person.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ElectronicMail" type="ElectronicMail" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -7109,6 +7159,16 @@ Volunteer/no contract
 					<xs:documentation>The month, day, and year on which an individual was born.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="Telephone" type="Telephone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The 10-digit telephone number, including the area code, for the person.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ElectronicMail" type="ElectronicMail" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
@@ -7119,14 +7179,9 @@ Volunteer/no contract
 					<xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The way this data element is listed, it must allow for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Telephone" type="Telephone" minOccurs="0">
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The 10-digit telephone number, including the area code, for the person.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ElectronicMail" type="ElectronicMail" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs.</xs:documentation>
+					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
