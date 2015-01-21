@@ -5623,7 +5623,7 @@ Local Neglected Program</xs:documentation>
 	</xs:annotation>
 	<xs:complexType name="AcademicWeekIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -5641,31 +5641,6 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="AcademicWeekLookupType">
-		<xs:annotation>
-			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>LookupType</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The start date for the academic week.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The end date for the academic week.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="AcademicWeekReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for academic weeks. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
@@ -5678,12 +5653,7 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="AcademicWeekIdentity" type="AcademicWeekIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="AcademicWeekLookup" type="AcademicWeekLookupType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of academic weeks.</xs:documentation>
+							<xs:documentation>Identity of the academic week.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6191,7 +6161,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of educational organizations, especially ESCs, LEAs (districts), and schools.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of educational organizations.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6204,9 +6174,39 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="EducationOrganizationLookupType" abstract="true">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of educational organizations.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationOrganizationId" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The identifier assigned to an education agency by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameOfInstitution" type="NameOfInstitution" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="EducationOrganizationNetworkIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of educational organization networks.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of educational organization networks.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6215,6 +6215,31 @@ Local Neglected Program</xs:documentation>
 			<xs:element name="EducationOrganizationNetworkId" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>A unique number or alphanumeric code assigned to a network of education organizations.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EducationOrganizationNetworkLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of educational organization networks.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationOrganizationNetworkId" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to a network of education organizations.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameOfInstitution" type="NameOfInstitution" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6231,7 +6256,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="EducationOrganizationNetworkIdentity" type="EducationOrganizationNetworkIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing educational organization network record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of educational organization networks.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EducationOrganizationNetworkLookup" type="EducationOrganizationNetworkLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of educational organization networks.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6240,7 +6270,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationReferenceType">
 		<xs:annotation>
-			<xs:documentation>Provides alternative references for Educational Organization (ESC, LEA, school) reference during interchange. Use XML IDREF to reference an educational organization record that is included in the interchange</xs:documentation>
+			<xs:documentation>Provides alternative references for Educational Organization reference during interchange. Use XML IDREF to reference an educational organization record that is included in the interchange</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
 			</xs:appinfo>
@@ -6250,7 +6280,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="EducationOrganizationIdentity" type="EducationOrganizationIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of educational organizations.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EducationOrganizationLookup" type="EducationOrganizationLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of educational organizations.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6259,7 +6294,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="EducationServiceCenterIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of education service centers.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of education service centers.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6268,6 +6303,31 @@ Local Neglected Program</xs:documentation>
 			<xs:element name="EducationServiceCenterId" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>The identifier assigned to an education service center by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EducationServiceCenterLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of education service centers.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationServiceCenterId" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The identifier assigned to an education service center by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameOfInstitution" type="NameOfInstitution" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6284,7 +6344,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="EducationServiceCenterIdentity" type="EducationServiceCenterIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing education service center record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of education service centers.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EducationServiceCenterLookup" type="EducationServiceCenterLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of education service centers.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6641,7 +6706,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="LocalEducationAgencyIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of local education agencies.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of local education agencies.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6650,6 +6715,31 @@ Local Neglected Program</xs:documentation>
 			<xs:element name="LocalEducationAgencyId" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocalEducationAgencyLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of local education agencies.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="LocalEducationAgencyId" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameOfInstitution" type="NameOfInstitution" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6666,7 +6756,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="LocalEducationAgencyIdentity" type="LocalEducationAgencyIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing local education agency record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of local education agencies.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="LocalEducationAgencyLookup" type="LocalEducationAgencyLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of local education agencies.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6928,7 +7023,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="SchoolIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of schools.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of schools.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6937,6 +7032,31 @@ Local Neglected Program</xs:documentation>
 			<xs:element name="SchoolId" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>The identifier assigned to a school by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SchoolLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of schools.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SchoolId" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The identifier assigned to a school by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameOfInstitution" type="NameOfInstitution" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6953,7 +7073,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="SchoolIdentity" type="SchoolIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of schools.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SchoolLookup" type="SchoolLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of schools.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -7212,7 +7337,7 @@ Volunteer/no contract
 	</xs:complexType>
 	<xs:complexType name="StateEducationAgencyIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of State Education Agency.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of State Education Agency.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -7221,6 +7346,31 @@ Volunteer/no contract
 			<xs:element name="StateEducationAgencyId" type="xs:int">
 				<xs:annotation>
 					<xs:documentation>The identifier assigned to a State Education Agency by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StateEducationAgencyLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of State Education Agency.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StateEducationAgencyId" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The identifier assigned to a State Education Agency by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameOfInstitution" type="NameOfInstitution" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -7237,7 +7387,12 @@ Volunteer/no contract
 				<xs:sequence>
 					<xs:element name="StateEducationAgencyIdentity" type="StateEducationAgencyIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing State Education Agency record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of State Education Agency.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StateEducationAgencyLookup" type="StateEducationAgencyLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of State Education Agency.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
