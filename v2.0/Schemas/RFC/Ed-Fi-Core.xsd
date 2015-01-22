@@ -5706,7 +5706,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="AssessmentFamilyIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of assessment families by unique identification.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of assessment families.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -5715,6 +5715,36 @@ Local Neglected Program</xs:documentation>
 			<xs:element name="AssessmentFamilyTitle" type="AssessmentTitle">
 				<xs:annotation>
 					<xs:documentation>The title or name of the assessment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AssessmentFamilyLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of assessment families.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AssessmentFamilyTitle" type="AssessmentTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title or name of the assessment family.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentFamilyIdentificationCode" type="AssessmentFamilyIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentCategory" type="AssessmentCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The category of an assessment based on format and content. For example: Achievement test, Advanced placement test, Alternate assessment/grade-level standards, Attitudinal test, Cognitive and perceptual skills test, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Version" type="Version" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The version identifier for the assessment family.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -5731,7 +5761,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="AssessmentFamilyIdentity" type="AssessmentFamilyIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing assessment record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of assessment families.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="AssessmentFamilyLookup" type="AssessmentFamilyLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of assessment families.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -5740,7 +5775,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="AssessmentIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of assessments by unique identification.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of assessments.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -5813,6 +5848,63 @@ Local Neglected Program</xs:documentation>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="AssessmentLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of assessments.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AssessmentTitle" type="AssessmentTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title or name of the assessment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The typical grade level for which an assessment is designed.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Version" type="Version" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The version identifier for the assessment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>References the AssessmentFamily this Assessment is a member of.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentCategory" type="AssessmentCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The category of an assessment based on format and content. For example:
+Achievement test
+Advanced placement test
+Alternate assessment/grade-level standards
+Attitudinal test
+Cognitive and perceptual skills test
+...</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="AssessmentReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for assessments during interchange. Use XML IDREF to reference a course record that is included in the interchange</xs:documentation>
@@ -5825,7 +5917,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="AssessmentIdentity" type="AssessmentIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to uniquely identify and link to an existing assessment record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of assessments.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="AssessmentLookup" type="AssessmentLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of assessments.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -5998,7 +6095,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="CourseIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of courses.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of courses.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6012,6 +6109,36 @@ Local Neglected Program</xs:documentation>
 			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 				<xs:annotation>
 					<xs:documentation>The Education Organization that defines the curriculum and courses offered - often the LEA or school.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CourseLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of courses.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="CourseCode" type="IdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique alphanumeric code assigned to a course.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The Education Organization that defines the curriculum and courses offered - often the LEA or school.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CourseIdentificationCode" type="CourseIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The code that identifies the organization of subject matter and related learning experiences provided for the instruction of students.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CourseTitle" type="CourseTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The descriptive name given to a course of study offered in a school or other institution or organization. In departmentalized classes at the elementary, secondary, and postsecondary levels (and for staff development activities), this refers to the name by which a course is identified (e.g., American History, English III). For elementary and other non-departmentalized classes, it refers to any portion of the instruction for which a grade or report is assigned (e.g., reading, composition, spelling, and language arts).</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6077,9 +6204,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="CourseIdentity" type="CourseIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing course record in the receiving system.  Two cases are supported:
-1. StateCourseCode or other standard course code
-2. SchoolOrganizationID + LocalCourseCode</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of courses.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CourseLookup" type="CourseLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of courses.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6358,7 +6488,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="GradebookEntryIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of gradebook entries.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of gradebook entries.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6385,6 +6515,41 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="GradebookEntryLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of gradebook entries.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SectionReference" type="SectionReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The section associated with the gradebook entry.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GradebookEntryTitle" type="GradebookEntryTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The name or title of the activity to be recorded in the gradebook entry.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DateAssigned" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The date the assignment, homework or assessment was assigned or executed.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GradebookEntryType" type="GradebookEntryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifies the grading period for the gradebook entry</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="GradebookEntryReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for gradebook entries. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
@@ -6397,7 +6562,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="GradebookEntryIdentity" type="GradebookEntryIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The identity for the gradebook entry.</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of gradebook entries.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="GradebookEntryLookup" type="GradebookEntryLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of gradebook entries.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6672,7 +6842,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="LearningStandardIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of the Learning Standard</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of learning standard.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6681,6 +6851,47 @@ Local Neglected Program</xs:documentation>
 			<xs:element name="LearningStandardId" type="LearningStandardId">
 				<xs:annotation>
 					<xs:documentation>Provide user information to lookup and link to an existing learning standard record in the receiving system</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LearningStandardLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of learning standard.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="LearningStandardId" type="LearningStandardId" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The Identifier for the specific learning standard (e.g., 111.15.3.1.A)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LearningStandardIdentificationCode" type="LearningStandardIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a learning Standard.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ContentStandard" type="ContentStandard" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The content standard from which the learning standard was derived.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The grade level for the specific learning standard.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Subject area for the learning standard.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -6697,7 +6908,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="LearningStandardIdentity" type="LearningStandardIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing learning standard record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of learning standard.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="LearningStandardLookup" type="LearningStandardLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of learning standard.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6935,7 +7151,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="ProgramIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of programs.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of programs.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -6958,6 +7174,36 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="ProgramLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of programs.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ProgramType" type="ProgramType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The type of program.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramName" type="ProgramName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The formal name of the program of instruction, training, services or benefits available through federal, state, or local agencies.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Relates the program to an Education Organization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramId" type="ProgramId" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to a program by a school, school system, a state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="ProgramReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for programs. Use XML IDREF to reference a program record that is included in the interchange</xs:documentation>
@@ -6970,7 +7216,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="ProgramIdentity" type="ProgramIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing program record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of programs.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ProgramLookup" type="ProgramLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of programs.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -7087,7 +7338,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="SectionIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of sections at a school by unique identification.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of sections.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -7110,6 +7361,41 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="SectionLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of sections.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="LocationReference" type="LocationReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The location, typically a classroom, where the section meets.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The class period during which the section meets.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CourseOfferingReference" type="CourseOfferingReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The course offering taught in the section.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The school where the section is taught.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="UniqueSectionCode" type="UniqueSectionCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique identifier for the section that is defined by the classroom, the subjects taught, and the instructors that are assigned.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="SectionReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for section. Use XML IDREF to reference a section record that is included in the interchange</xs:documentation>
@@ -7122,7 +7408,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="SectionIdentity" type="SectionIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup by unique identification and link to an existing section record in the receiving system</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of sections.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SectionLookup" type="SectionLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of sections.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -7131,7 +7422,7 @@ Local Neglected Program</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="SessionIdentityType">
 		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of sessions at a school.</xs:documentation>
+			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of sessions.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Identity</ann:TypeGroup>
 			</xs:appinfo>
@@ -7154,6 +7445,36 @@ Local Neglected Program</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="SessionLookupType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of sesions.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>LookupType</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Relates the session to the school.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The identifier for the school year.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Term" type="TermType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The term for the session during the school year.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SessionName" type="IdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The identifier for the calendar for the academic session (e.g., 2010/11, 2011 Summer).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="SessionReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for sessions at an education organization. Use XML IDREF to reference a session record that is included in the interchange.</xs:documentation>
@@ -7166,7 +7487,12 @@ Local Neglected Program</xs:documentation>
 				<xs:sequence>
 					<xs:element name="SessionIdentity" type="SessionIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing session record in the receiving system.</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of sessions.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SessionLookup" type="SessionLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of sesions.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -7556,6 +7882,50 @@ Volunteer/no contract
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="StudentLearningObjectiveIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of the Student Learning Objective.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Identifier for the student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LearningObjectiveReference" type="LearningObjectiveReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Identifier for the learning objective.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing grading period record in the receiving system</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentLearningObjectiveReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Learning Objective reference during interchange. Use XML IDREF to reference a student learning objective record that is included in the interchange</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentLearningObjectiveIdentity" type="StudentLearningObjectiveIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Provide user information to lookup and link to an existing student learning objective record in the receiving system</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentLookupType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of students.</xs:documentation>
@@ -7610,50 +7980,6 @@ Volunteer/no contract
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="StudentLearningObjectiveIdentityType">
-		<xs:annotation>
-			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of the Student Learning Objective.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Identity</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>The Identifier for the student.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="LearningObjectiveReference" type="LearningObjectiveReferenceType">
-				<xs:annotation>
-					<xs:documentation>The Identifier for the learning objective.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing grading period record in the receiving system</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="StudentLearningObjectiveReferenceType">
-		<xs:annotation>
-			<xs:documentation>Provides alternative references for Student Learning Objective reference during interchange. Use XML IDREF to reference a student learning objective record that is included in the interchange</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="ReferenceType">
-				<xs:sequence>
-					<xs:element name="StudentLearningObjectiveIdentity" type="StudentLearningObjectiveIdentityType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing student learning objective record in the receiving system</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentProgramAssociationIdentityType">
 		<xs:annotation>
