@@ -4520,6 +4520,25 @@ LEP Exempt
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StudentIdentificationSystemDescriptor">
+		<xs:annotation>
+			<xs:documentation>This descriptor defines the originating record system and code that is used for record-keeping purposes of the student.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Descriptor</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorType">
+				<xs:sequence>
+					<xs:element name="StudentIdentificationSystemMap" type="StudentIdentificationSystemMapType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The mapping to a known student characteristic.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="TeachingCredentialDescriptor">
 		<xs:annotation>
 			<xs:documentation>This descriptor defines an indication of the category of a legal document giving authorization to perform teaching assignment services.</xs:documentation>
@@ -8582,6 +8601,17 @@ Volunteer/no contract
 			<xs:extension base="DescriptorReferenceType"/>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StudentIdentificationSystemDescriptorReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides references for student identification system descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="TeachingCredentialDescriptorReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides references for teaching credential descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -10478,7 +10508,7 @@ Met standard
 					<xs:documentation>A unique number or alphanumeric code assigned to a student by a school, school system, a state, or other agency or entity.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="StudentIdentificationSystem" type="StudentIdentificationSystemType">
+			<xs:element name="StudentIdentificationSystem" type="StudentIdentificationSystemDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student.</xs:documentation>
 				</xs:annotation>
@@ -13432,7 +13462,7 @@ Second retest
 			<xs:enumeration value="Unaccompanied Youth"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="StudentIdentificationSystemType">
+	<xs:simpleType name="StudentIdentificationSystemMapType">
 		<xs:annotation>
 			<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a student.</xs:documentation>
 			<xs:appinfo>
@@ -13451,9 +13481,6 @@ Second retest
 			<xs:enumeration value="SSN"/>
 			<xs:enumeration value="State"/>
 			<xs:enumeration value="State Migrant"/>
-			<xs:enumeration value="PIN"/>
-			<xs:enumeration value="Prev PIN"/>
-			<xs:enumeration value="Prev SSN"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="StudentParticipationCodeType">
