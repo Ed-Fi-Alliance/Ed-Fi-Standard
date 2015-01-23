@@ -9130,7 +9130,7 @@ Tardy</xs:documentation>
 					<xs:documentation>The abbreviation for the name of the state (within the United States) or extra-state jurisdiction in which an individual was born.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="BirthInternationalProvince" type="InternationalProvinceOfBirth" minOccurs="0">
+			<xs:element name="BirthInternationalProvince" type="BirthInternationalProvince" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>For students born outside of the US, the Province or jurisdiction in which an individual is born.</xs:documentation>
 				</xs:annotation>
@@ -13940,6 +13940,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 			<xs:maxLength value="60"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="BirthInternationalProvince">
+		<xs:annotation>
+			<xs:documentation>For students born outside of the US, the Province or jurisdiction in which an individual is born.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="150"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="BuildingSiteNumber">
 		<xs:annotation>
 			<xs:documentation>The number of the building on the site, if more than one building shares the same address.</xs:documentation>
@@ -14419,18 +14431,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="60"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="InternationalProvinceOfBirth">
-		<xs:annotation>
-			<xs:documentation>For students born outside of the US, the Province or jurisdiction in which an individual is born.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="150"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="IssuerName">
