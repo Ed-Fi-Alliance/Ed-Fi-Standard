@@ -3841,6 +3841,25 @@ LEP Exempt
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="AssessmentIdentificationSystemDescriptor">
+		<xs:annotation>
+			<xs:documentation>This descriptor holds a coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to an assessment.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Descriptor</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorType">
+				<xs:sequence>
+					<xs:element name="AssessmentIdentificationSystemMap" type="AssessmentIdentificationSystemMapType">
+						<xs:annotation>
+							<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to an assessment.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="AssessmentPeriodDescriptor">
 		<xs:annotation>
 			<xs:documentation>This descriptor holds the period of time window in which an assessment is supposed to be administered (e.g., Beginning of Year, Middle of Year, End of Year).</xs:documentation>
@@ -8235,6 +8254,17 @@ Volunteer/no contract
 			<xs:extension base="DescriptorReferenceType"/>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="AssessmentIdentificationSystemDescriptorReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides references for assessment identification system descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="AssessmentPeriodDescriptorReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides references for assessment period descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -8901,7 +8931,7 @@ Volunteer/no contract
 					<xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, state or other agency or entity.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="AssessmentIdentificationSystem" type="AssessmentIdentificationSystemType">
+			<xs:element name="AssessmentIdentificationSystem" type="AssessmentIdentificationSystemDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to an assessment.</xs:documentation>
 				</xs:annotation>
@@ -8926,7 +8956,7 @@ Volunteer/no contract
 					<xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, state or other agency or entity.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="AssessmentIdentificationSystem" type="AssessmentIdentificationSystemType">
+			<xs:element name="AssessmentIdentificationSystem" type="AssessmentIdentificationSystemDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to an assessment.</xs:documentation>
 				</xs:annotation>
@@ -11018,7 +11048,7 @@ Cognitive and perceptual skills test
 			<xs:enumeration value="Other"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="AssessmentIdentificationSystemType">
+	<xs:simpleType name="AssessmentIdentificationSystemMapType">
 		<xs:annotation>
 			<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to an assessment.</xs:documentation>
 			<xs:appinfo>
@@ -11026,13 +11056,13 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:enumeration value="School"/>
 			<xs:enumeration value="District"/>
-			<xs:enumeration value="State"/>
 			<xs:enumeration value="Federal"/>
-			<xs:enumeration value="Other Federal"/>
-			<xs:enumeration value="Test Contractor"/>
 			<xs:enumeration value="Other"/>
+			<xs:enumeration value="Other Federal"/>
+			<xs:enumeration value="School"/>
+			<xs:enumeration value="State"/>
+			<xs:enumeration value="Test Contractor"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="AssessmentItemCategoryType">
