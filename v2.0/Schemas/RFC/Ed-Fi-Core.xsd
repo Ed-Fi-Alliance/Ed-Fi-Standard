@@ -4501,6 +4501,25 @@ LEP Exempt
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StaffIdentificationSystemDescriptor">
+		<xs:annotation>
+			<xs:documentation>This descriptor defines the originating record system and code that is used for record-keeping purposes of the staff.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Descriptor</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorType">
+				<xs:sequence>
+					<xs:element name="StaffdentificationSystemMap" type="StaffIdentificationSystemMapType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The mapping to a known staff characteristic.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentCharacteristicDescriptor">
 		<xs:annotation>
 			<xs:documentation>This descriptor defines the set of important characteristics of the student.</xs:documentation>
@@ -8590,6 +8609,17 @@ Volunteer/no contract
 			<xs:extension base="DescriptorReferenceType"/>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StaffIdentificationSystemDescriptorReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides references for staff identification system descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentCharacteristicDescriptorReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides references for student characteristic descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -10352,7 +10382,7 @@ Change of assignment</xs:documentation>
 					<xs:documentation>A unique number or alphanumeric code assigned to a staff member by a school, school system, a state, or other agency or entity.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="StaffIdentificationSystem" type="StaffIdentificationSystemType">
+			<xs:element name="StaffIdentificationSystem" type="StaffIdentificationSystemDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a staff member.</xs:documentation>
 				</xs:annotation>
@@ -13339,7 +13369,7 @@ Second retest
 			<xs:enumeration value="Teacher"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="StaffIdentificationSystemType">
+	<xs:simpleType name="StaffIdentificationSystemMapType">
 		<xs:annotation>
 			<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a staff member.</xs:documentation>
 			<xs:appinfo>
@@ -13347,22 +13377,21 @@ Second retest
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
+			<xs:enumeration value="Canadian SIN"/>
+			<xs:enumeration value="District"/>
 			<xs:enumeration value="Drivers License"/>
+			<xs:enumeration value="Federal"/>
 			<xs:enumeration value="Health Record"/>
 			<xs:enumeration value="Medicaid"/>
+			<xs:enumeration value="PIN"/>
 			<xs:enumeration value="Professional Certificate"/>
 			<xs:enumeration value="School"/>
-			<xs:enumeration value="District"/>
-			<xs:enumeration value="State"/>
-			<xs:enumeration value="Federal"/>
-			<xs:enumeration value="Other Federal"/>
 			<xs:enumeration value="Selective Service"/>
 			<xs:enumeration value="SSN"/>
+			<xs:enumeration value="State"/>
 			<xs:enumeration value="US Visa"/>
-			<xs:enumeration value="PIN"/>
-			<xs:enumeration value="Canadian SIN"/>
 			<xs:enumeration value="Other"/>
-			<xs:enumeration value="Prev SSN"/>
+			<xs:enumeration value="Other Federal"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="StateAbbreviationType">
