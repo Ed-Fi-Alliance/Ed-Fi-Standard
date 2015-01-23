@@ -4015,6 +4015,25 @@ LEP Exempt
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="EducationOrganizationIdentificationSystemDescriptor">
+		<xs:annotation>
+			<xs:documentation>This descriptor defines the originating record system and code that is used for record-keeping purposes by education organizations.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Descriptor</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorType">
+				<xs:sequence>
+					<xs:element name="EducationOrganizationIdentificationSystemMap" type="EducationOrganizationIdentificationSystemMapType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>A classification of the behavior for reporting types.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="DisabilityDescriptor">
 		<xs:annotation>
 			<xs:documentation>This descriptor defines a student's impairment.</xs:documentation>
@@ -8288,6 +8307,17 @@ Volunteer/no contract
 			<xs:extension base="DescriptorReferenceType"/>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="EducationOrganizationIdentificationSystemDescriptorReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides references for education organization identification system descriptor and its details during interchange.  Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="EmploymentStatusDescriptorReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides references for employment status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -9482,7 +9512,7 @@ Distinguished Achievement Program</xs:documentation>
 					<xs:documentation>A unique number or alphanumeric code that is assigned to an education organization by a school, school system, state or other agency or entity.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationIdentificationSystem" type="EducationOrganizationIdentificationSystemType">
+			<xs:element name="EducationOrganizationIdentificationSystem" type="EducationOrganizationIdentificationSystemDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>The school system, state, or agency assigning the identification code.</xs:documentation>
 				</xs:annotation>
@@ -10096,7 +10126,7 @@ Change of assignment</xs:documentation>
 					<xs:documentation>A unique number or alphanumeric code that is assigned to an education organization by a school, school system, state or other agency or entity.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationIdentificationSystem" type="EducationOrganizationIdentificationSystemType">
+			<xs:element name="EducationOrganizationIdentificationSystem" type="EducationOrganizationIdentificationSystemDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>The school system, state, or agency assigning the identification code.</xs:documentation>
 				</xs:annotation>
@@ -11680,7 +11710,7 @@ Student late arrival/early dismissal
 			<xs:enumeration value="Other"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="EducationOrganizationIdentificationSystemType">
+	<xs:simpleType name="EducationOrganizationIdentificationSystemMapType">
 		<xs:annotation>
 			<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by education organizations, social services or other agencies to refer to an education organization.</xs:documentation>
 			<xs:appinfo>
@@ -11688,17 +11718,17 @@ Student late arrival/early dismissal
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:enumeration value="School"/>
 			<xs:enumeration value="ACT"/>
-			<xs:enumeration value="LEA"/>
-			<xs:enumeration value="SEA"/>
-			<xs:enumeration value="NCES"/>
-			<xs:enumeration value="Federal"/>
 			<xs:enumeration value="DUNS"/>
-			<xs:enumeration value="Other Federal"/>
+			<xs:enumeration value="Federal"/>
 			<xs:enumeration value="IPEDS"/>
-			<xs:enumeration value="USDE - OPE"/>
+			<xs:enumeration value="LEA"/>
+			<xs:enumeration value="NCES"/>
 			<xs:enumeration value="Other"/>
+			<xs:enumeration value="Other Federal"/>
+			<xs:enumeration value="School"/>
+			<xs:enumeration value="SEA"/>
+			<xs:enumeration value="USDE - OPE"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="EducationPlanType">
