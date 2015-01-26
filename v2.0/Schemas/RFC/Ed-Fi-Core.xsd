@@ -2852,7 +2852,7 @@ Special education students
 							<xs:documentation>The identifier for the school year.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="Term" type="TermType">
+					<xs:element name="Term" type="TermDescriptorReferenceType">
 						<xs:annotation>
 							<xs:documentation>The term for the session during the school year.</xs:documentation>
 						</xs:annotation>
@@ -3311,7 +3311,7 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
 							<xs:documentation>The identifier for the school year.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="Term" type="TermType">
+					<xs:element name="Term" type="TermDescriptorReferenceType">
 						<xs:annotation>
 							<xs:documentation>The term for the session during the school year.</xs:documentation>
 						</xs:annotation>
@@ -4612,6 +4612,25 @@ LEP Exempt
 					<xs:element name="TeachingCredentialMap" type="TeachingCredentialMapType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The mapping to a known teaching credential type.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TermDescriptor">
+		<xs:annotation>
+			<xs:documentation>This descriptor defines an  session during the school year (e.g., Fall Semester).</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Descriptor</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorType">
+				<xs:sequence>
+					<xs:element name="TermMap" type="TermMapType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The type of the session during the school year (e.g., Fall Semester).</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -6254,7 +6273,7 @@ Cognitive and perceptual skills test
 					<xs:documentation>The local code assigned by the School that identifies the course offering provided for the instruction of students.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Term" type="TermType">
+			<xs:element name="Term" type="TermDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>The term for the session during the school year.</xs:documentation>
 				</xs:annotation>
@@ -7536,7 +7555,7 @@ Cognitive and perceptual skills test
 					<xs:documentation>The identifier for the school year.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Term" type="TermType">
+			<xs:element name="Term" type="TermDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>The term for the session during the school year.</xs:documentation>
 				</xs:annotation>
@@ -7561,7 +7580,7 @@ Cognitive and perceptual skills test
 					<xs:documentation>The identifier for the school year.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Term" type="TermType" minOccurs="0">
+			<xs:element name="Term" type="TermDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The term for the session during the school year.</xs:documentation>
 				</xs:annotation>
@@ -7846,7 +7865,7 @@ Volunteer/no contract
 					<xs:documentation>The identifier for the school year.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Term" type="TermType">
+			<xs:element name="Term" type="TermDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>The term for the session during the school year.</xs:documentation>
 				</xs:annotation>
@@ -8708,6 +8727,17 @@ Volunteer/no contract
 	<xs:complexType name="TeachingCredentialDescriptorReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides references for teaching credential descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TermDescriptorReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides references for term descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
 			</xs:appinfo>
@@ -13650,7 +13680,7 @@ Second retest
 			<xs:enumeration value="Work"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="TermType">
+	<xs:simpleType name="TermMapType">
 		<xs:annotation>
 			<xs:documentation>The type of the session during the school year (e.g., Fall Semester).</xs:documentation>
 			<xs:appinfo>
