@@ -14811,18 +14811,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			<xs:maxLength value="35"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="SecondaryBehaviorsType">
-		<xs:annotation>
-			<xs:documentation>Supplemental information about an incident.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="50"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="ServiceCategory">
 		<xs:annotation>
 			<xs:documentation>The category of service provided by a program.</xs:documentation>
