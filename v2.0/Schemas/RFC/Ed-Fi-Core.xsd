@@ -994,19 +994,14 @@ Withdrawn</xs:documentation>
 							<xs:documentation>The descriptive name given to a course of study offered in a school or other institution or organization. In departmentalized classes at the elementary, secondary, and postsecondary levels (and for staff development activities), this refers to the name by which a course is identified (e.g., American History, English III). For elementary and other non-departmentalized classes, it refers to any portion of the instruction for which a grade or report is assigned (e.g., reading, composition, spelling, and language arts).</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="LocalCourseCode" type="LocalCourseCode" minOccurs="0">
+					<xs:element name="AlternativeCourseTitle" type="CourseTitle" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The local code assigned by the School that identifies the course offering provided for the instruction of students.</xs:documentation>
+							<xs:documentation>An alternative course title assigned by a school for identifying internal courses as well as courses originating from other educational organizations.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="LocalCourseTitle" type="CourseTitle" minOccurs="0">
+					<xs:element name="AlternativeCourseCode" type="LocalCourseCode" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="ExternalCourse" type="ExternalCourse" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>Course taken and administered by another educational organization.</xs:documentation>
+							<xs:documentation>An alternative course code assigned by a school for identifying internal courses as well as courses originating from other educational organizations.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -9693,31 +9688,6 @@ Distinguished Achievement Program</xs:documentation>
 			<xs:element name="PrimaryEmailAddressIndicator" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>An indication that the electronic mail address should be used as the principal electronic mail address for an individual or organization.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="ExternalCourse">
-		<xs:annotation>
-			<xs:documentation>Course taken and administered by another educational organization.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="NameOfInstitution" type="NameOfInstitution">
-				<xs:annotation>
-					<xs:documentation>The name of the institution that provided the instruction.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ExternalCourseCode" type="IdentificationCode">
-				<xs:annotation>
-					<xs:documentation>The course code from the institution that provided the instruction.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ExternalCourseTitle" type="CourseTitle" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The course title from the institution that provided the instruction.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
