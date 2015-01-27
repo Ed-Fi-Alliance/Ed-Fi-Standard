@@ -996,12 +996,12 @@ Withdrawn</xs:documentation>
 					</xs:element>
 					<xs:element name="AlternativeCourseTitle" type="CourseTitle" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>An alternative course title assigned by a school for identifying internal courses as well as courses originating from other educational organizations.</xs:documentation>
+							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="AlternativeCourseCode" type="LocalCourseCode" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>An alternative course code assigned by a school for identifying internal courses as well as courses originating from other educational organizations.</xs:documentation>
+							<xs:documentation>The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
