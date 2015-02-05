@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2014 (x64) (http://www.altova.com) by Double Line, Inc. (Double Line, Inc.) -->
+<!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by Double Line, Inc. (Double Line, Inc.) -->
 <!-- (c)2013 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-Draft" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-Draft" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
 	<xs:annotation>
-		<xs:documentation>===== Ed-Fi-Core Version 2.0 Draft October 11, 2014 =====
+		<xs:documentation>===== Ed-Fi-Core Version 2.0 RFC February 5, 2015 =====
 		
 		Ed-Fi Version History
-		1.0   6/28/11  Request for Comment release
-		1.0   8/28/11  Proposed response to RFC
-		1.0   10/7/11  Close of RFC Period
-		1.0   10/17/11  Release 1.0 Candidate A
-		1.0   11/11/11 Release 1.0
-		1.0.01   12/20/11 Minor .01
-		1.0.02   3/18/2012 Minor .02
-		1.0.03   4/15/12 Minor .03 (Alpha for SLC)
-		1.0.04   5/18/12 Minor .04 
-		1.0.05   5/23/12 Minor .05
-		1.0.06   7/3/12 Minor .06
-		1.1.00   7/30/12 v1.1 Request for Comment release
-		1.1.00	10/10/12 v1.1 Final version after RFC
-		1.1.00   11/19/12 Release v1.1
-		1.1.1     4/23/13 Minor v1.1.1
-		1.1.1.1  6/04/13 Minor v1.1.1.1
+		1.0          6/28/11  Request for Comment release
+		1.0          8/28/11  Proposed response to RFC
+		1.0          10/7/11  Close of RFC Period
+		1.0          10/17/11  Release 1.0 Candidate A
+		1.0          11/11/11 Release 1.0
+		1.0.01     12/20/11 Minor .01
+		1.0.02     3/18/2012 Minor .02
+		1.0.03     4/15/12 Minor .03 (Alpha for SLC)
+		1.0.04     5/18/12 Minor .04 
+		1.0.05     5/23/12 Minor .05
+		1.0.06     7/3/12 Minor .06
+		1.1.00     7/30/12 v1.1 Request for Comment release
+		1.1.00	  10/10/12 v1.1 Final version after RFC
+		1.1.00     11/19/12 Release v1.1
+		1.1.1        4/23/13 Minor v1.1.1
+		1.1.1.1     6/04/13 Minor v1.1.1.1
 		1.2-RFC1 7/09/13 v1.2 Request For Comment release
-        1.2  11/07/13 v1.2 Final version after RFC
-        2.0 11/11/14 v2.0 Draft for Technical Preview
+        1.2          11/07/13 v1.2 Final version after RFC
+        2.0-Draft  11/11/14 v2.0 Draft for Technical Preview
+        2.0-RFC   02/05/15 v2.0 Request For Comment release
 
 		</xs:documentation>
 	</xs:annotation>
@@ -327,6 +328,11 @@ Second grade
 							</xs:annotation>
 						</xs:element>
 					</xs:choice>
+					<xs:element name="Namespace" type="URI">
+						<xs:annotation>
+							<xs:documentation>Namespace for the Assessment Vendor.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -419,6 +425,11 @@ Second grade
 					<xs:element name="ParentAssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>References the higher level Assessment Family the Assessment Family belongs to.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Namespace" type="URI">
+						<xs:annotation>
+							<xs:documentation>Namespace for the Assessment Vendor.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
