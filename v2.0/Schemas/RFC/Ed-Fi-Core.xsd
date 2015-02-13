@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by Double Line, Inc. (Double Line, Inc.) -->
-<!-- (c)2013 Ed-Fi Alliance, LLC. All Rights Reserved. -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-Draft" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-Draft" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-RFC" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-RFC" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
 	<xs:annotation>
-		<xs:documentation>===== Ed-Fi-Core Version 2.0 RFC February 5, 2015 =====
+		<xs:documentation>===== Ed-Fi-Core Version 2.0 RFC February 28, 2015 =====
 		
 		Ed-Fi Version History
 		1.0          6/28/11  Request for Comment release
@@ -26,7 +26,7 @@
 		1.2-RFC1 7/09/13 v1.2 Request For Comment release
         1.2          11/07/13 v1.2 Final version after RFC
         2.0-Draft  11/11/14 v2.0 Draft for Technical Preview
-        2.0-RFC   02/05/15 v2.0 Request For Comment release
+        2.0-RFC   02/28/15 v2.0 Request For Comment release
 
 		</xs:documentation>
 	</xs:annotation>
