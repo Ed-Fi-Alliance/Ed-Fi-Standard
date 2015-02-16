@@ -15,6 +15,7 @@ The Descriptor interchange is used to describe metadata about the descriptors an
 				<xs:element name="AccountCodeDescriptor" type="AccountCodeDescriptor"/>
 				<xs:element name="AchievementCategoryDescriptor" type="AchievementCategoryDescriptor"/>
 				<xs:element name="AdministrativeFundingControlDescriptor" type="AdministrativeFundingControlDescriptor"/>
+				<xs:element name="AssessmentIdentificationSystemDescriptor" type="AssessmentIdentificationSystemDescriptor"/>
 				<xs:element name="AssessmentPeriodDescriptor" type="AssessmentPeriodDescriptor"/>
 				<xs:element name="AttendanceEventCategoryDescriptor" type="AttendanceEventCategoryDescriptor"/>
 				<xs:element name="BehaviorDescriptor" type="BehaviorDescriptor"/>
@@ -22,10 +23,13 @@ The Descriptor interchange is used to describe metadata about the descriptors an
 				<xs:element name="ClassroomPositionDescriptor" type="ClassroomPositionDescriptor"/>
 				<xs:element name="CompetencyLevelDescriptor" type="CompetencyLevelDescriptor"/>
 				<xs:element name="ContinuationOfServicesReasonDescriptor" type="ContinuationOfServicesReasonDescriptor"/>
+				<xs:element name="CountryDescriptor" type="CountryDescriptor"/>
+				<xs:element name="CourseIdentificationSystemDescriptor" type="CourseIdentificationSystemDescriptor"/>
 				<xs:element name="CredentialFieldDescriptor" type="CredentialFieldDescriptor"/>
 				<xs:element name="DiagnosisDescriptor" type="DiagnosisDescriptor"/>
 				<xs:element name="DisabilityDescriptor" type="DisabilityDescriptor"/>
 				<xs:element name="DisciplineDescriptor" type="DisciplineDescriptor"/>
+				<xs:element name="EducationOrganizationIdentificationSystemDescriptor" type="EducationOrganizationIdentificationSystemDescriptor"/>
 				<xs:element name="EmploymentStatusDescriptor" type="EmploymentStatusDescriptor"/>
 				<xs:element name="EntryTypeDescriptor" type="EntryTypeDescriptor"/>
 				<xs:element name="ExitWithdrawTypeDescriptor" type="ExitWithdrawTypeDescriptor"/>
@@ -49,8 +53,11 @@ The Descriptor interchange is used to describe metadata about the descriptors an
 				<xs:element name="ServiceDescriptor" type="ServiceDescriptor"/>
 				<xs:element name="SpecialEducationSettingDescriptor" type="SpecialEducationSettingDescriptor"/>
 				<xs:element name="StaffClassificationDescriptor" type="StaffClassificationDescriptor"/>
+				<xs:element name="StaffIdentificationSystemDescriptor" type="StaffIdentificationSystemDescriptor"/>
 				<xs:element name="StudentCharacteristicDescriptor" type="StudentCharacteristicDescriptor"/>
+				<xs:element name="StudentIdentificationSystemDescriptor" type="StudentIdentificationSystemDescriptor"/>
 				<xs:element name="TeachingCredentialDescriptor" type="TeachingCredentialDescriptor"/>
+				<xs:element name="TermDescriptor" type="TermDescriptor"/>
 				<xs:element name="WeaponDescriptor" type="WeaponDescriptor"/>
 			</xs:choice>
 		</xs:complexType>

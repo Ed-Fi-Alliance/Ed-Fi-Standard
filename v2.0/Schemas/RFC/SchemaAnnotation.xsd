@@ -19,7 +19,9 @@
 			<xs:enumeration value="AcademicSubjectDescriptor"/>
 			<xs:enumeration value="AccommodationDescriptor"/>
 			<xs:enumeration value="AccountCodeDescriptor"/>
+			<xs:enumeration value="AchievementCategoryDescriptor"/>
 			<xs:enumeration value="AdministrativeFundingControlDescriptor"/>
+			<xs:enumeration value="AssessmentIdentificationSystemDescriptor"/>
 			<xs:enumeration value="AssessmentPeriodDescriptor"/>
 			<xs:enumeration value="AttendanceEventCategoryDescriptor"/>
 			<xs:enumeration value="BehaviorDescriptor"/>
@@ -27,10 +29,13 @@
 			<xs:enumeration value="ClassroomPositionDescriptor"/>
 			<xs:enumeration value="CompetencyLevelDescriptor"/>
 			<xs:enumeration value="ContinuationOfServicesReasonDescriptor"/>
+			<xs:enumeration value="CountryDescriptor"/>
+			<xs:enumeration value="CourseIdentificationSystemDescriptor"/>
 			<xs:enumeration value="CredentialFieldDescriptor"/>
 			<xs:enumeration value="DiagnosisDescriptor"/>
 			<xs:enumeration value="DisabilityDescriptor"/>
 			<xs:enumeration value="DisciplineDescriptor"/>
+			<xs:enumeration value="EducationOrganizationIdentificationSystemDescriptor"/>
 			<xs:enumeration value="EmploymentStatusDescriptor"/>
 			<xs:enumeration value="EntryTypeDescriptor"/>
 			<xs:enumeration value="ExitWithdrawTypeDescriptor"/>
@@ -39,9 +44,9 @@
 			<xs:enumeration value="GraduationPlanTypeDescriptor"/>
 			<xs:enumeration value="PerformanceLevelDescriptor"/>
 			<xs:enumeration value="LanguageDescriptor"/>
-			<xs:enumeration value="LimitedEnglishProficiencyDescriptor"/>
 			<xs:enumeration value="LevelDescriptor"/>
 			<xs:enumeration value="LevelOfEducationDescriptor"/>
+			<xs:enumeration value="LimitedEnglishProficiencyDescriptor"/>
 			<xs:enumeration value="PerformanceLevelDescriptor"/>
 			<xs:enumeration value="ProgramAssignmentDescriptor"/>
 			<xs:enumeration value="ReasonExitedDescriptor"/>
@@ -54,8 +59,11 @@
 			<xs:enumeration value="ServiceDescriptor"/>
 			<xs:enumeration value="SpecialEducationSettingDescriptor"/>
 			<xs:enumeration value="StaffClassificationDescriptor"/>
+			<xs:enumeration value="StaffIdentificationSystemDescriptor"/>
 			<xs:enumeration value="StudentCharacteristicDescriptor"/>
+			<xs:enumeration value="StudentIdentificationSystemDescriptor"/>
 			<xs:enumeration value="TeachingCredentialDescriptor"/>
+			<xs:enumeration value="TermDescriptor"/>
 			<xs:enumeration value="WeaponDescriptor"/>
 		</xs:restriction>
 	</xs:simpleType>
