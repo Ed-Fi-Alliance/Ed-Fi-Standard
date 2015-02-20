@@ -7265,7 +7265,12 @@ Cognitive and perceptual skills test
 				<xs:sequence>
 					<xs:element name="ParentIdentity" type="ParentIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of parents and guardians</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of parents and guardians</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ParentLookup" type="ParentLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of parents and guardians</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
