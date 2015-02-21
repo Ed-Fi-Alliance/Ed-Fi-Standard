@@ -1639,7 +1639,7 @@ Representative of visiting school
 							<xs:documentation>The school year the student is expected to graduate.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="GraduationRequirement" type="RequiredAssessment" minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="RequiredAssessment" type="RequiredAssessment" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>The assessments and associated required score and performance level needed to satisfy graduation requirements.</xs:documentation>
 						</xs:annotation>
@@ -7265,7 +7265,12 @@ Cognitive and perceptual skills test
 				<xs:sequence>
 					<xs:element name="ParentIdentity" type="ParentIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of parents and guardians</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of parents and guardians</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ParentLookup" type="ParentLookupType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of parents and guardians</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -10353,7 +10358,7 @@ Change of assignment</xs:documentation>
 					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="RequiredAssessmentScore" type="AssessmentScore" minOccurs="0">
+			<xs:element name="RequiredAssessmentScore" type="AssessmentScore" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>Score required to be met or exceeded.</xs:documentation>
 				</xs:annotation>
