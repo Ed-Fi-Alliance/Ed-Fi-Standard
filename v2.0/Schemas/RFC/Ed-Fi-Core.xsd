@@ -1639,7 +1639,7 @@ Representative of visiting school
 							<xs:documentation>The school year the student is expected to graduate.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="GraduationRequirement" type="RequiredAssessment" minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="RequiredAssessment" type="RequiredAssessment" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>The assessments and associated required score and performance level needed to satisfy graduation requirements.</xs:documentation>
 						</xs:annotation>
