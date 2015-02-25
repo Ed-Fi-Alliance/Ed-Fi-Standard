@@ -328,7 +328,7 @@ Second grade
 							</xs:annotation>
 						</xs:element>
 					</xs:choice>
-					<xs:element name="Namespace" type="URI">
+					<xs:element name="Namespace" type="URI" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Namespace for the Assessment Vendor.</xs:documentation>
 						</xs:annotation>
