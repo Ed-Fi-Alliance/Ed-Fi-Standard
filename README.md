@@ -1,12 +1,7 @@
-Ed-Fi-Standard
-==========
 This repository hosts the Ed-Fi Data Standard used by the Ed-Fi Technology components. 
 	
-About Ed-Fi Technology
-===========
+For more information about the Ed-Fi Alliance and Ed-Fi Technology, please visit the Ed-Fi Alliance Web site at [http://www.ed-fi.org](http://www.ed-fi.org/).
 
-For more information about the Ed-Fi Alliance and Ed-Fi Technology, please visit the official Ed-Fi Alliance Web site at [http://www.ed-fi.org](http://www.ed-fi.org/).
+Vist [http://techdoc.ed-fi.org](http://techdocs.ed-fi.org/) for technical documentation and [http://tracker.ed-fi.org](http://tracker.ed-fi.org) to view and enter issues, questions, feature requests, etc.
 
-Copyright
-=========
 (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved.
