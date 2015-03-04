@@ -8827,7 +8827,7 @@ Cognitive and perceptual skills test
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="EducationOrganizationLookupType" abstract="true">
+	<xs:complexType name="EducationOrganizationLookupType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of educational organizations.</xs:documentation>
 			<xs:appinfo>
