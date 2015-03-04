@@ -8704,19 +8704,11 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="Term" type="TermDescriptorReferenceType">
+			<xs:element name="SessionReference" type="SessionReferenceType">
 				<xs:annotation>
-					<xs:documentation>The term for the session during the school year.</xs:documentation>
+					<xs:documentation>The session in which the course is offered at the school.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2024</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SchoolYear" type="SchoolYearType">
-				<xs:annotation>
-					<xs:documentation>The identifier for the school year.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2023</ann:EdFiId>
+						<ann:EdFiId>2420</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
