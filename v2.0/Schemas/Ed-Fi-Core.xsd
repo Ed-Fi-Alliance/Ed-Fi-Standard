@@ -3806,6 +3806,22 @@ Bilingual/English as a Second Language</xs:documentation>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
+					<xs:element name="CharterApprovalAgencyType" type="CharterApprovalAgencyType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The type of agency that approved the establishment or continuation of a charter school.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2423</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CharterApprovalYear" type="SchoolYearType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The school year in which a charter school was initially approved.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2424</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -16591,6 +16607,45 @@ Student late arrival/early dismissal
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>136-017</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CharterApprovalAgencyType">
+		<xs:annotation>
+			<xs:documentation>The type of agency that approved the establishment or continuation of a charter school.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Enumeration</ann:TypeGroup>
+				<ann:EdFiId>2422</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="State board of education">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2422-001</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Public charter school board">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2422-002</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="University">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2422-003</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Other">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2422-099</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
