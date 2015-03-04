@@ -13150,6 +13150,14 @@ Distinguished Achievement Program</xs:documentation>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="DisabilityDeterminationSourceType" type="DisabilityDeterminationSourceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The source that provided the disability determination.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2412</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="EducationContentSource">
@@ -18012,6 +18020,80 @@ Student late arrival/early dismissal
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>161-002</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DisabilityDeterminationSourceType">
+		<xs:annotation>
+			<xs:documentation>The source that provided the disability determination</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Enumeration</ann:TypeGroup>
+				<ann:EdFiId>2421</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="By physician">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-001</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="By health care provider">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-002</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="By school psychologist or other psychologist">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-003</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="By licensed physical therapist">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-004</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Self-reported">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-005</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="By social service or other type of agency">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-006</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Not applicable to the student">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-097</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Unknown or Unreported">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-098</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Other">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>2421-099</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
