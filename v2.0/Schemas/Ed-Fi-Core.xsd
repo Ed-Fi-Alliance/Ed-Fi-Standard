@@ -9871,7 +9871,7 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="PersonUniqueId" type="UniqueId" minOccurs="0">
+			<xs:element name="ParentUniqueId" type="UniqueId" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>A unique alphanumeric code assigned to a parent.</xs:documentation>
 					<xs:appinfo>
