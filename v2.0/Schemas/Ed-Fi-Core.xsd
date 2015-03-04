@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by Double Line, Inc. (Double Line, Inc.) -->
+<!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by R Heim (Double Line, Inc.) -->
 <!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-RFC" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-RFC" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
@@ -25125,45 +25125,17 @@ Second retest
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:token">
-			<xs:enumeration value="Fall Semester">
+			<xs:enumeration value="Semester">
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>246-001</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="Spring Semester">
-				<xs:annotation>
-					<xs:appinfo>
-						<ann:EdFiId>246-008</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Summer Semester">
-				<xs:annotation>
-					<xs:appinfo>
-						<ann:EdFiId>246-009</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="First Trimester">
+			<xs:enumeration value="Trimester">
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>246-003</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Second Trimester">
-				<xs:annotation>
-					<xs:appinfo>
-						<ann:EdFiId>246-007</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Third Trimester">
-				<xs:annotation>
-					<xs:appinfo>
-						<ann:EdFiId>246-011</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
@@ -25181,31 +25153,17 @@ Second retest
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="First Quarter">
+			<xs:enumeration value="Quarter">
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>246-002</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
-			<xs:enumeration value="Second Quarter">
+			<xs:enumeration value="Other">
 				<xs:annotation>
 					<xs:appinfo>
-						<ann:EdFiId>246-006</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Third Quarter">
-				<xs:annotation>
-					<xs:appinfo>
-						<ann:EdFiId>246-010</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="Fourth Quarter">
-				<xs:annotation>
-					<xs:appinfo>
-						<ann:EdFiId>246-004</ann:EdFiId>
+						<ann:EdFiId>246-13</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
