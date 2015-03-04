@@ -8922,6 +8922,14 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2415</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationNetworkReferenceType">
@@ -9035,6 +9043,14 @@ Cognitive and perceptual skills test
 					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2326</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2416</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9683,6 +9699,14 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2417</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="LocalEducationAgencyReferenceType">
@@ -10160,6 +10184,14 @@ Cognitive and perceptual skills test
 					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2345</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2418</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10717,6 +10749,14 @@ Volunteer/no contract
 					<xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2368</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2419</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
