@@ -3831,7 +3831,7 @@ Bilingual/English as a Second Language</xs:documentation>
 					</xs:element>
 					<xs:element name="SequenceOfCourse" type="SequenceOfCourse">
 						<xs:annotation>
-							<xs:documentation>When a section is part of a sequence of parts for a course, the number if the sequence.  If the course has only one part, the value of this section attribute should be 1.</xs:documentation>
+							<xs:documentation>When a section is part of a sequence of parts for a course, the number of the sequence.  If the course has only one part, the value of this section attribute should be 1.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1631</ann:EdFiId>
 							</xs:appinfo>
@@ -10229,6 +10229,22 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="UniqueSectionCode" type="UniqueSectionCode">
+				<xs:annotation>
+					<xs:documentation>A unique identifier for the section that is defined by the classroom, the subjects taught, and the instructors that are assigned.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2411</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SequenceOfCourse" type="SequenceOfCourse">
+				<xs:annotation>
+					<xs:documentation>When a section is part of a sequence of parts for a course, the number of the sequence.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2412</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="SectionLookupType">
@@ -10277,6 +10293,14 @@ Cognitive and perceptual skills test
 					<xs:documentation>A unique identifier for the section that is defined by the classroom, the subjects taught, and the instructors that are assigned.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2351</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SequenceOfCourse" type="SequenceOfCourse" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>When a section is part of a sequence of parts for a course, the number of the sequence.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2413</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
