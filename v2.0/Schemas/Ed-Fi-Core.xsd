@@ -8335,6 +8335,28 @@ Local Neglected Program</xs:documentation>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2310</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentCategory" type="AssessmentCategoryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The category of an assessment based on format and content. For example:
+Achievement test
+Advanced placement test
+Alternate assessment/grade-level standards
+Attitudinal test
+Cognitive and perceptual skills test
+...</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2308</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
@@ -8361,33 +8383,11 @@ Local Neglected Program</xs:documentation>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2310</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="AssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>References the AssessmentFamily this Assessment is a member of.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2309</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="AssessmentCategory" type="AssessmentCategoryType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The category of an assessment based on format and content. For example:
-Achievement test
-Advanced placement test
-Alternate assessment/grade-level standards
-Attitudinal test
-Cognitive and perceptual skills test
-...</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2308</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -8677,11 +8677,11 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
+			<xs:element name="CourseTitle" type="CourseTitle" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The Education Organization that defines the curriculum and courses offered - often the LEA or school.</xs:documentation>
+					<xs:documentation>The descriptive name given to a course of study offered in a school or other institution or organization. In departmentalized classes at the elementary, secondary, and postsecondary levels (and for staff development activities), this refers to the name by which a course is identified (e.g., American History, English III). For elementary and other non-departmentalized classes, it refers to any portion of the instruction for which a grade or report is assigned (e.g., reading, composition, spelling, and language arts).</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2316</ann:EdFiId>
+						<ann:EdFiId>2315</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -8693,11 +8693,11 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="CourseTitle" type="CourseTitle" minOccurs="0">
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The descriptive name given to a course of study offered in a school or other institution or organization. In departmentalized classes at the elementary, secondary, and postsecondary levels (and for staff development activities), this refers to the name by which a course is identified (e.g., American History, English III). For elementary and other non-departmentalized classes, it refers to any portion of the instruction for which a grade or report is assigned (e.g., reading, composition, spelling, and language arts).</xs:documentation>
+					<xs:documentation>The Education Organization that defines the curriculum and courses offered - often the LEA or school.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2315</ann:EdFiId>
+						<ann:EdFiId>2316</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9211,19 +9211,19 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="SectionReference" type="SectionReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The section associated with the gradebook entry.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2331</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="GradebookEntryTitle" type="GradebookEntryTitle" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The name or title of the activity to be recorded in the gradebook entry.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2328</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GradebookEntryType" type="GradebookEntryType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2329</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9235,11 +9235,11 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="GradebookEntryType" type="GradebookEntryType" minOccurs="0">
+			<xs:element name="SectionReference" type="SectionReferenceType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc.</xs:documentation>
+					<xs:documentation>The section associated with the gradebook entry.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2329</ann:EdFiId>
+						<ann:EdFiId>2331</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10088,22 +10088,6 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="ProgramType" type="ProgramType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The type of program.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2343</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ProgramName" type="ProgramName" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The formal name of the program of instruction, training, services or benefits available through federal, state, or local agencies.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2342</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Relates the program to an Education Organization.</xs:documentation>
@@ -10117,6 +10101,22 @@ Cognitive and perceptual skills test
 					<xs:documentation>A unique number or alphanumeric code assigned to a program by a school, school system, a state, or other agency or entity.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2341</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramName" type="ProgramName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The formal name of the program of instruction, training, services or benefits available through federal, state, or local agencies.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2342</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramType" type="ProgramType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The type of program.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2343</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10364,19 +10364,19 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="LocationReference" type="LocationReferenceType" minOccurs="0">
+			<xs:element name="UniqueSectionCode" type="UniqueSectionCode" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The location, typically a classroom, where the section meets.</xs:documentation>
+					<xs:documentation>A unique identifier for the section that is defined by the classroom, the subjects taught, and the instructors that are assigned.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2349</ann:EdFiId>
+						<ann:EdFiId>2351</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType" minOccurs="0">
+			<xs:element name="SequenceOfCourse" type="SequenceOfCourse" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The class period during which the section meets.</xs:documentation>
+					<xs:documentation>When a section is part of a sequence of parts for a course, the number of the sequence.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2347</ann:EdFiId>
+						<ann:EdFiId>2413</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10396,19 +10396,19 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="UniqueSectionCode" type="UniqueSectionCode" minOccurs="0">
+			<xs:element name="LocationReference" type="LocationReferenceType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>A unique identifier for the section that is defined by the classroom, the subjects taught, and the instructors that are assigned.</xs:documentation>
+					<xs:documentation>The location, typically a classroom, where the section meets.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2351</ann:EdFiId>
+						<ann:EdFiId>2349</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="SequenceOfCourse" type="SequenceOfCourse" minOccurs="0">
+			<xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>When a section is part of a sequence of parts for a course, the number of the sequence.</xs:documentation>
+					<xs:documentation>The class period during which the section meets.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2413</ann:EdFiId>
+						<ann:EdFiId>2347</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10489,11 +10489,11 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
+			<xs:element name="SessionName" type="IdentificationCode" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Relates the session to the school.</xs:documentation>
+					<xs:documentation>The identifier for the calendar for the academic session (e.g., 2010/11, 2011 Summer).</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2352</ann:EdFiId>
+						<ann:EdFiId>2354</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10513,11 +10513,11 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="SessionName" type="IdentificationCode" minOccurs="0">
+			<xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The identifier for the calendar for the academic session (e.g., 2010/11, 2011 Summer).</xs:documentation>
+					<xs:documentation>Relates the session to the school.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2354</ann:EdFiId>
+						<ann:EdFiId>2352</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
