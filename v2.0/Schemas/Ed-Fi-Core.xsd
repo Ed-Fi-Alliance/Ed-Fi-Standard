@@ -12345,49 +12345,45 @@ Volunteer/no contract
 				<ann:EdFiId>486</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="ComplexObjectType">
-				<xs:sequence>
-					<xs:element name="EventDate" type="xs:date">
-						<xs:annotation>
-							<xs:documentation>Date for this attendance event.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>749</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
-						<xs:annotation>
-							<xs:documentation>A code describing the attendance event, for example:
+		<xs:sequence>
+			<xs:element name="EventDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date for this attendance event.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>749</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>A code describing the attendance event, for example:
 present
 Unexcused absence
 Excused absence
 Tardy</xs:documentation>
-							<xs:appinfo>
-								<ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
-								<ann:EdFiId>746</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="AttendanceEventReason" type="AttendanceEventReason" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>The reported reason for a student's absence.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>747</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="EducationalEnvironment" type="EducationalEnvironmentType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>The setting in which a child receives education and related services.  This attribute is only used if it differs from the Educational Environment of the section. This is only used in the AttendanceEvent if different from the associated Section.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>748</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
+					<xs:appinfo>
+						<ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
+						<ann:EdFiId>746</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AttendanceEventReason" type="AttendanceEventReason" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The reported reason for a student's absence.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>747</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationalEnvironment" type="EducationalEnvironmentType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The setting in which a child receives education and related services.  This attribute is only used if it differs from the Educational Environment of the section. This is only used in the AttendanceEvent if different from the associated Section.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>748</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="Behavior">
 		<xs:annotation>
@@ -13698,52 +13694,48 @@ Change of assignment</xs:documentation>
 				<ann:EdFiId>516</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="ComplexObjectType">
-				<xs:sequence>
-					<xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType">
-						<xs:annotation>
-							<xs:documentation>The class period associated with the meeting time for a bell schedule.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>872</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="AlternateDayName" type="AlternateDayName" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>An alternate name for the day (e.g., Red, Blue)</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>871</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="StartTime" type="xs:time">
-						<xs:annotation>
-							<xs:documentation>An indication of the time of day the class begins.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>875</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="EndTime" type="xs:time">
-						<xs:annotation>
-							<xs:documentation>An indication of the time of day the class ends.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>873</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="OfficialAttendancePeriod" type="xs:boolean" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Indicator of whether this meeting time is used for official daily attendance.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>874</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
+		<xs:sequence>
+			<xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType">
+				<xs:annotation>
+					<xs:documentation>The class period associated with the meeting time for a bell schedule.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>872</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AlternateDayName" type="AlternateDayName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>An alternate name for the day (e.g., Red, Blue)</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>871</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StartTime" type="xs:time">
+				<xs:annotation>
+					<xs:documentation>An indication of the time of day the class begins.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>875</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EndTime" type="xs:time">
+				<xs:annotation>
+					<xs:documentation>An indication of the time of day the class ends.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>873</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OfficialAttendancePeriod" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicator of whether this meeting time is used for official daily attendance.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>874</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="Name">
 		<xs:annotation>
@@ -14327,77 +14319,73 @@ Change of assignment</xs:documentation>
 				<ann:EdFiId>530</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="ComplexObjectType">
-				<xs:sequence>
-					<xs:element name="AssessmentResponse" type="AssessmentResponse" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>A student's response to a stimulus on a test.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>928</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="DescriptiveFeedback" type="Description" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>The formative descriptive feedback that was given to a learner in response to the results from a scored/evaluated assessment item.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>929</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="ResponseIndicator" type="ResponseIndicatorType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Indicator of the response.  For example:
+		<xs:sequence>
+			<xs:element name="AssessmentResponse" type="AssessmentResponse" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A student's response to a stimulus on a test.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>928</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DescriptiveFeedback" type="Description" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The formative descriptive feedback that was given to a learner in response to the results from a scored/evaluated assessment item.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>929</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ResponseIndicator" type="ResponseIndicatorType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicator of the response.  For example:
 Nonscorable response
 Ineffective response
 Effective response
 Partial response
 ...</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>931</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="AssessmentItemResult" type="AssessmentItemResultType">
-						<xs:annotation>
-							<xs:documentation>The analyzed result of a student's response to an assessment item.. For example:
+					<xs:appinfo>
+						<ann:EdFiId>931</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentItemResult" type="AssessmentItemResultType">
+				<xs:annotation>
+					<xs:documentation>The analyzed result of a student's response to an assessment item.. For example:
 Correct
 Incorrect
 Met standard
 ...</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>927</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="RawScoreResult" type="xs:int" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>A meaningful raw score of the performance of an individual on an assessment item.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>930</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="TimeAssessed" type="TimeInterval" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>The overall time a student actually spent during the assessment item.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>932</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="AssessmentItemReference" type="AssessmentItemReferenceType">
-						<xs:annotation>
-							<xs:documentation>The assessment item responded to by the student.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>926</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
+					<xs:appinfo>
+						<ann:EdFiId>927</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RawScoreResult" type="xs:int" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A meaningful raw score of the performance of an individual on an assessment item.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>930</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TimeAssessed" type="TimeInterval" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The overall time a student actually spent during the assessment item.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>932</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentItemReference" type="AssessmentItemReferenceType">
+				<xs:annotation>
+					<xs:documentation>The assessment item responded to by the student.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>926</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="StudentCharacteristic">
 		<xs:annotation>
@@ -14545,37 +14533,33 @@ Met standard
 				<ann:EdFiId>534</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="ComplexObjectType">
-				<xs:sequence>
-					<xs:element name="ScoreResult" type="ScoreResult" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>912</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="PerformanceLevel" type="PerformanceLevel" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The performance level(s) achieved for the objective assessment.</xs:documentation>
-							<xs:appinfo>
-								<ann:Descriptor>PerformanceLevelDescriptor</ann:Descriptor>
-								<ann:EdFiId>888</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="ObjectiveAssessmentReference" type="ObjectiveAssessmentReferenceType">
-						<xs:annotation>
-							<xs:documentation>Reference to the test objective that is being measured by the objective-level assessment.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>946</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
+		<xs:sequence>
+			<xs:element name="ScoreResult" type="ScoreResult" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A meaningful score or statistical expression of the performance of an individual. The results can be expressed as a number, percentile, range, level, etc.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>912</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PerformanceLevel" type="PerformanceLevel" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The performance level(s) achieved for the objective assessment.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>PerformanceLevelDescriptor</ann:Descriptor>
+						<ann:EdFiId>888</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ObjectiveAssessmentReference" type="ObjectiveAssessmentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Reference to the test objective that is being measured by the objective-level assessment.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>946</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="Telephone">
 		<xs:annotation>
