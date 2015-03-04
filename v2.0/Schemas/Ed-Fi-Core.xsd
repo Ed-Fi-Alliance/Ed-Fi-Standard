@@ -6450,40 +6450,44 @@ LEP Exempt
 				<ann:EdFiId>595</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
-				<xs:annotation>
-					<xs:documentation>The educational organization, often times a district, which is making the InterventionPrescription available to its hierarchy. In some cases, it may be an EducationOrganizationNetwork instead of a district.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1001</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="InterventionPrescriptionReference" type="InterventionPrescriptionReferenceType">
-				<xs:annotation>
-					<xs:documentation>The InterventionPrescription being made available by the EdOrg.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1003</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The begin date of the period during which the InterventionPrescription is available.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1000</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The end date of the period during which the InterventionPrescription is available.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1002</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+						<xs:annotation>
+							<xs:documentation>The educational organization, often times a district, which is making the InterventionPrescription available to its hierarchy. In some cases, it may be an EducationOrganizationNetwork instead of a district.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1001</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="InterventionPrescriptionReference" type="InterventionPrescriptionReferenceType">
+						<xs:annotation>
+							<xs:documentation>The InterventionPrescription being made available by the EdOrg.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1003</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The begin date of the period during which the InterventionPrescription is available.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1000</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The end date of the period during which the InterventionPrescription is available.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1002</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationNetworkAssociation">
 		<xs:annotation>
@@ -6493,40 +6497,44 @@ LEP Exempt
 				<ann:EdFiId>596</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="EducationOrganizationNetworkReference" type="EducationOrganizationNetworkReferenceType">
-				<xs:annotation>
-					<xs:documentation>A reference to the network to which this education organization is a member.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1005</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="MemberEducationOrganizationReference" type="EducationOrganizationReferenceType">
-				<xs:annotation>
-					<xs:documentation>The education organization member in the network</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1007</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date on which the education organization joined this network.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1004</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date on which the education organization left this network.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1006</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="EducationOrganizationNetworkReference" type="EducationOrganizationNetworkReferenceType">
+						<xs:annotation>
+							<xs:documentation>A reference to the network to which this education organization is a member.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1005</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="MemberEducationOrganizationReference" type="EducationOrganizationReferenceType">
+						<xs:annotation>
+							<xs:documentation>The education organization member in the network</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1007</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date on which the education organization joined this network.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1004</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date on which the education organization left this network.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1006</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationPeerAssociation">
 		<xs:annotation>
@@ -6567,48 +6575,52 @@ LEP Exempt
 				<ann:EdFiId>598</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="FeederSchoolReference" type="SchoolReferenceType">
-				<xs:annotation>
-					<xs:documentation>Reference to the Feeder school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1013</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ReceivingSchoolReference" type="SchoolReferenceType">
-				<xs:annotation>
-					<xs:documentation>Reference to the receiving school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1014</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>The month, day, and year of the first day of the feeder school association.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1010</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The month, day, and year of the last day of the feeder school association.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1011</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="FeederRelationshipDescription" type="Description" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Describes the relationship from the feeder school to the receiving school, for example by program emphasis, such as special education, language immersion, science or performing art.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1012</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="FeederSchoolReference" type="SchoolReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the Feeder school.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1013</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ReceivingSchoolReference" type="SchoolReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the receiving school.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1014</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date">
+						<xs:annotation>
+							<xs:documentation>The month, day, and year of the first day of the feeder school association.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1010</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The month, day, and year of the last day of the feeder school association.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1011</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="FeederRelationshipDescription" type="Description" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Describes the relationship from the feeder school to the receiving school, for example by program emphasis, such as special education, language immersion, science or performing art.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1012</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StaffCohortAssociation">
 		<xs:annotation>
@@ -6618,48 +6630,52 @@ LEP Exempt
 				<ann:EdFiId>599</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StaffReference" type="StaffReferenceType">
-				<xs:annotation>
-					<xs:documentation>The staff associated with the cohort of students.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1018</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="CohortReference" type="CohortReferenceType">
-				<xs:annotation>
-					<xs:documentation>Reference to the cohort associated with the staff.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1016</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>Start date for the association of staff to this cohort.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1015</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>End date for the association of staff to this cohort.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1017</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="StudentRecordAccess" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicator of whether the staff has access to the student records of the cohort per district interpretation of FERPA and other privacy laws, regulations and policies.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1019</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>The staff associated with the cohort of students.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1018</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CohortReference" type="CohortReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the cohort associated with the staff.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1016</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date">
+						<xs:annotation>
+							<xs:documentation>Start date for the association of staff to this cohort.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1015</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>End date for the association of staff to this cohort.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1017</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentRecordAccess" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicator of whether the staff has access to the student records of the cohort per district interpretation of FERPA and other privacy laws, regulations and policies.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1019</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StaffEducationOrganizationAssignmentAssociation">
 		<xs:annotation>
@@ -6669,73 +6685,77 @@ LEP Exempt
 				<ann:EdFiId>600</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StaffReference" type="StaffReferenceType">
-				<xs:annotation>
-					<xs:documentation>The staff assigned to the education organization.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1027</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
-				<xs:annotation>
-					<xs:documentation>The educational organization to which the staff member provides services</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1021</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="StaffClassification" type="StaffClassificationDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>The titles of employment, official status, or rank of education staff.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>StaffClassificationDescriptor</ann:Descriptor>
-						<ann:EdFiId>1025</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="PositionTitle" type="PositionTitle" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The descriptive name of an individual's position.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1024</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>Month, day and year of the start or effective date of a staff member's employment, contract or relationship with the LEA.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1020</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Month, day and year of the end or termination date of a staff member's employment, contract or relationship with the LEA.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1022</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="OrderOfAssignment" type="xs:int" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Describes whether the assignment is this the staff member's primary assignment, secondary assignment, etc..</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1023</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="StaffEducationOrganizationEmploymentAssociationReference" type="StaffEducationOrganizationEmploymentAssociationReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>A reference to the employment association</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1026</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>The staff assigned to the education organization.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1027</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+						<xs:annotation>
+							<xs:documentation>The educational organization to which the staff member provides services</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1021</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StaffClassification" type="StaffClassificationDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>The titles of employment, official status, or rank of education staff.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>StaffClassificationDescriptor</ann:Descriptor>
+								<ann:EdFiId>1025</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="PositionTitle" type="PositionTitle" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The descriptive name of an individual's position.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1024</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date">
+						<xs:annotation>
+							<xs:documentation>Month, day and year of the start or effective date of a staff member's employment, contract or relationship with the LEA.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1020</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Month, day and year of the end or termination date of a staff member's employment, contract or relationship with the LEA.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1022</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="OrderOfAssignment" type="xs:int" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Describes whether the assignment is this the staff member's primary assignment, secondary assignment, etc..</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1023</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StaffEducationOrganizationEmploymentAssociationReference" type="StaffEducationOrganizationEmploymentAssociationReferenceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>A reference to the employment association</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1026</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StaffEducationOrganizationEmploymentAssociation">
 		<xs:annotation>
@@ -6745,79 +6765,83 @@ LEP Exempt
 				<ann:EdFiId>601</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StaffReference" type="StaffReferenceType">
-				<xs:annotation>
-					<xs:documentation>The staff employed by the education organization.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1035</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
-				<xs:annotation>
-					<xs:documentation>The Education Organization with which the staff is employed.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1029</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EmploymentStatus" type="EmploymentStatusDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>Reflects the type of employment or contract; for example:
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>The staff employed by the education organization.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1035</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+						<xs:annotation>
+							<xs:documentation>The Education Organization with which the staff is employed.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1029</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EmploymentStatus" type="EmploymentStatusDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reflects the type of employment or contract; for example:
 Probationary
 Contractual
 Substitute/temporary
 Tenured or permanent
 Volunteer/no contract
 ...</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>EmploymentStatusDescriptor</ann:Descriptor>
-						<ann:EdFiId>1031</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EmploymentPeriod" type="EmploymentPeriod">
-				<xs:annotation>
-					<xs:documentation>The set of elements defining and characterizing a person's period of employment including start and end dates and the type and reason for separation.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1030</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="Department" type="Department" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The department or suborganization the employee/contractor is associated with in the Education Organization.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1028</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="FullTimeEquivalency" type="Percent" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The ratio between the hours of work expected in a position and the hours of work normally expected in a full-time position in the same setting.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1032</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="OfferDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Date at which the staff member was made an official offer for this employment.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1034</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="HourlyWage" type="Currency" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Hourly wage associated with the employment position being reported.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1033</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+							<xs:appinfo>
+								<ann:Descriptor>EmploymentStatusDescriptor</ann:Descriptor>
+								<ann:EdFiId>1031</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EmploymentPeriod" type="EmploymentPeriod">
+						<xs:annotation>
+							<xs:documentation>The set of elements defining and characterizing a person's period of employment including start and end dates and the type and reason for separation.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1030</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Department" type="Department" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The department or suborganization the employee/contractor is associated with in the Education Organization.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1028</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="FullTimeEquivalency" type="Percent" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The ratio between the hours of work expected in a position and the hours of work normally expected in a full-time position in the same setting.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1032</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="OfferDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Date at which the staff member was made an official offer for this employment.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1034</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="HourlyWage" type="Currency" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Hourly wage associated with the employment position being reported.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1033</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StaffProgramAssociation">
 		<xs:annotation>
@@ -6827,48 +6851,52 @@ Volunteer/no contract
 				<ann:EdFiId>602</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StaffReference" type="StaffReferenceType">
-				<xs:annotation>
-					<xs:documentation>The staff associated with the program.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1039</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ProgramReference" type="ProgramReferenceType">
-				<xs:annotation>
-					<xs:documentation>The program associated to the staff.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1038</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>Start date for the association of staff to this cohort.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1036</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>End date for the association of staff to this cohort.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1037</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="StudentRecordAccess" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicator of whether the staff has access to the student records of the program per district interpretation of FERPA and other privacy laws, regulations and policies.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1040</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>The staff associated with the program.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1039</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ProgramReference" type="ProgramReferenceType">
+						<xs:annotation>
+							<xs:documentation>The program associated to the staff.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1038</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date">
+						<xs:annotation>
+							<xs:documentation>Start date for the association of staff to this cohort.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1036</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>End date for the association of staff to this cohort.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1037</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentRecordAccess" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicator of whether the staff has access to the student records of the program per district interpretation of FERPA and other privacy laws, regulations and policies.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1040</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StaffSchoolAssociation">
 		<xs:annotation>
@@ -6878,64 +6906,68 @@ Volunteer/no contract
 				<ann:EdFiId>603</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StaffReference" type="StaffReferenceType">
-				<xs:annotation>
-					<xs:documentation>The staff member providing services to the school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1046</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SchoolReference" type="SchoolReferenceType">
-				<xs:annotation>
-					<xs:documentation>The school where the staff member provides services.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1044</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Identifier for a school year</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1045</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ProgramAssignment" type="ProgramAssignmentDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>The name of the program for which the individual is assigned; for example:
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>The staff member providing services to the school.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1046</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SchoolReference" type="SchoolReferenceType">
+						<xs:annotation>
+							<xs:documentation>The school where the staff member provides services.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1044</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Identifier for a school year</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1045</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ProgramAssignment" type="ProgramAssignmentDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>The name of the program for which the individual is assigned; for example:
 Regular education
 Title I-Academic
 Title I-Non-Academic
 Special Education
 Bilingual/English as a Second Language</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>ProgramAssignmentDescriptor</ann:Descriptor>
-						<ann:EdFiId>1043</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>The set of grade levels for which the individual's assignment is responsible.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-						<ann:EdFiId>1042</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>The teaching field taught by an individual, for example English/Language Arts, Reading, Mathematics, Science, Social Sciences, etc.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-						<ann:EdFiId>1041</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+							<xs:appinfo>
+								<ann:Descriptor>ProgramAssignmentDescriptor</ann:Descriptor>
+								<ann:EdFiId>1043</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>The set of grade levels for which the individual's assignment is responsible.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+								<ann:EdFiId>1042</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>The teaching field taught by an individual, for example English/Language Arts, Reading, Mathematics, Science, Social Sciences, etc.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+								<ann:EdFiId>1041</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StaffSectionAssociation">
 		<xs:annotation>
@@ -6945,74 +6977,78 @@ Bilingual/English as a Second Language</xs:documentation>
 				<ann:EdFiId>604</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StaffReference" type="StaffReferenceType">
-				<xs:annotation>
-					<xs:documentation>The staff member assigned to the section.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1053</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SectionReference" type="SectionReferenceType">
-				<xs:annotation>
-					<xs:documentation>The section the staff member is assigned to.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1052</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ClassroomPosition" type="ClassroomPositionDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>The type of position the staff member holds in the specific class/section; for example:
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>The staff member assigned to the section.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1053</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SectionReference" type="SectionReferenceType">
+						<xs:annotation>
+							<xs:documentation>The section the staff member is assigned to.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1052</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ClassroomPosition" type="ClassroomPositionDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>The type of position the staff member holds in the specific class/section; for example:
 Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>ClassroomPositionDescriptor</ann:Descriptor>
-						<ann:EdFiId>1048</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Month, day and year of a teacher's assignment to the section.  If blank, defaults to the first day of the first grading period for the section.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1047</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Month, day and year of the last day of a staff member's assignment to the section.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1049</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="HighlyQualifiedTeacher" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition.  This attribute indicates the teacher is highly qualified for this section being taught.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1050</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="TeacherStudentDataLinkExclusion" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicates that the entire section is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1054</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="PercentageContribution" type="Percent" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicates the percentage of the total scheduled course time, academic standards, and/or learning activities delivered in this section by this staff member. A Teacher of Record designation may be based solely or partially on this contribution percentage.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1051</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+							<xs:appinfo>
+								<ann:Descriptor>ClassroomPositionDescriptor</ann:Descriptor>
+								<ann:EdFiId>1048</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Month, day and year of a teacher's assignment to the section.  If blank, defaults to the first day of the first grading period for the section.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1047</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Month, day and year of the last day of a staff member's assignment to the section.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1049</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="HighlyQualifiedTeacher" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition.  This attribute indicates the teacher is highly qualified for this section being taught.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1050</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="TeacherStudentDataLinkExclusion" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicates that the entire section is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1054</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="PercentageContribution" type="Percent" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicates the percentage of the total scheduled course time, academic standards, and/or learning activities delivered in this section by this staff member. A Teacher of Record designation may be based solely or partially on this contribution percentage.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1051</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentCohortAssociation">
 		<xs:annotation>
@@ -7022,48 +7058,52 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 				<ann:EdFiId>605</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>The student associated with the cohort.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1059</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="CohortReference" type="CohortReferenceType">
-				<xs:annotation>
-					<xs:documentation>Reference to the cohort associated with the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1056</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>The month, day, and year on which the student was first identified as  part of the cohort.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1055</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The month, day, and year on which the student was removed as  part of the cohort.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1057</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SectionReference" type="SectionReferenceType" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>The cohort representing the subdivision of students within one or more sections. For example, a group of students may be given additional instruction and tracked as a cohort.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1058</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>The student associated with the cohort.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1059</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CohortReference" type="CohortReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the cohort associated with the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1056</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date">
+						<xs:annotation>
+							<xs:documentation>The month, day, and year on which the student was first identified as  part of the cohort.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1055</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The month, day, and year on which the student was removed as  part of the cohort.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1057</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SectionReference" type="SectionReferenceType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>The cohort representing the subdivision of students within one or more sections. For example, a group of students may be given additional instruction and tracked as a cohort.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1058</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentCTEProgramAssociation">
 		<xs:annotation>
@@ -7096,44 +7136,48 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 				<ann:EdFiId>607</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>Relates the student associated with the discipline incident.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1072</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DisciplineIncidentReference" type="DisciplineIncidentReferenceType">
-				<xs:annotation>
-					<xs:documentation>Reference to the discipline incident associated with the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1070</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="StudentParticipationCode" type="StudentParticipationCodeType">
-				<xs:annotation>
-					<xs:documentation>The role or type of participation of a student in a discipline incident; for example:
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Relates the student associated with the discipline incident.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1072</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DisciplineIncidentReference" type="DisciplineIncidentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the discipline incident associated with the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1070</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentParticipationCode" type="StudentParticipationCodeType">
+						<xs:annotation>
+							<xs:documentation>The role or type of participation of a student in a discipline incident; for example:
 Victim
 Perpetrator
 Witness
 Reporter</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1071</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="Behavior" type="Behavior" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>Describes behavior by category and provides a detailed description.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1069</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+							<xs:appinfo>
+								<ann:EdFiId>1071</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Behavior" type="Behavior" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>Describes behavior by category and provides a detailed description.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1069</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentEducationOrganizationAssociation">
 		<xs:annotation>
@@ -7143,33 +7187,37 @@ Reporter</xs:documentation>
 				<ann:EdFiId>608</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>A reference to the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1075</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
-				<xs:annotation>
-					<xs:documentation>A reference to the education organization.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1073</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="Responsibility" type="ResponsibilityDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>Indications of an education organization's responsibility for a student, such as accountability, attendance, funding, etc.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>ResponsibilityDescriptor</ann:Descriptor>
-						<ann:EdFiId>1074</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>A reference to the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1075</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+						<xs:annotation>
+							<xs:documentation>A reference to the education organization.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1073</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Responsibility" type="ResponsibilityDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>Indications of an education organization's responsibility for a student, such as accountability, attendance, funding, etc.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>ResponsibilityDescriptor</ann:Descriptor>
+								<ann:EdFiId>1074</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentInterventionAssociation">
 		<xs:annotation>
@@ -7179,48 +7227,52 @@ Reporter</xs:documentation>
 				<ann:EdFiId>609</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>Relates the student associated with the intervention.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1080</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="InterventionReference" type="InterventionReferenceType">
-				<xs:annotation>
-					<xs:documentation>An implementation of an instructional approach focusing on the specific techniques and materials used to teach a given subject.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1079</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="CohortReference" type="CohortReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Relates the cohort, if the student's membership in this cohort is the reason he or she is participating in this intervention.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1076</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="InterventionEffectiveness" type="InterventionEffectiveness" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>A measure of the effects of an intervention in each outcome domain. The rating of effectiveness takes into account four factors: the quality of the research on the intervention, the statistical significance of the research findings, the size of the differences between participants in the intervention and comparison groups and the consistency in results.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1078</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DiagnosticStatement" type="DiagnosticStatement" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>A statement provided by the assigner that provides information regarding why the student was assigned to this intervention.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1077</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Relates the student associated with the intervention.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1080</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="InterventionReference" type="InterventionReferenceType">
+						<xs:annotation>
+							<xs:documentation>An implementation of an instructional approach focusing on the specific techniques and materials used to teach a given subject.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1079</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CohortReference" type="CohortReferenceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Relates the cohort, if the student's membership in this cohort is the reason he or she is participating in this intervention.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1076</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="InterventionEffectiveness" type="InterventionEffectiveness" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>A measure of the effects of an intervention in each outcome domain. The rating of effectiveness takes into account four factors: the quality of the research on the intervention, the statistical significance of the research findings, the size of the differences between participants in the intervention and comparison groups and the consistency in results.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1078</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DiagnosticStatement" type="DiagnosticStatement" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>A statement provided by the assigner that provides information regarding why the student was assigned to this intervention.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1077</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentMigrantEducationProgramAssociation">
 		<xs:annotation>
@@ -7294,73 +7346,77 @@ Reporter</xs:documentation>
 				<ann:EdFiId>611</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>The student associated with parent.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1102</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ParentReference" type="ParentReferenceType">
-				<xs:annotation>
-					<xs:documentation>The parent associated with the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1099</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="Relation" type="RelationType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The nature of an individual's relationship to a student; for example:
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>The student associated with parent.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1102</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ParentReference" type="ParentReferenceType">
+						<xs:annotation>
+							<xs:documentation>The parent associated with the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1099</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Relation" type="RelationType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The nature of an individual's relationship to a student; for example:
 Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian, etc..</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1101</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="PrimaryContactStatus" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicator of whether the person is a primary parental contact for the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1100</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="LivesWith" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicator of whether the student lives with the associated parent.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1098</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EmergencyContactStatus" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicator of whether the person is a designated emergency contact for the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1097</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ContactPriority" type="xs:int" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The numeric order of the preferred sequence or priority of contact.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1095</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ContactRestrictions" type="ContactRestrictions" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Restrictions for student and/or teacher contact with the individual (e.g., the student may not be picked up by the individual)</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1096</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+							<xs:appinfo>
+								<ann:EdFiId>1101</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="PrimaryContactStatus" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicator of whether the person is a primary parental contact for the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1100</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="LivesWith" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicator of whether the student lives with the associated parent.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1098</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EmergencyContactStatus" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicator of whether the person is a designated emergency contact for the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1097</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ContactPriority" type="xs:int" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The numeric order of the preferred sequence or priority of contact.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1095</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ContactRestrictions" type="ContactRestrictions" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Restrictions for student and/or teacher contact with the individual (e.g., the student may not be picked up by the individual)</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1096</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentProgramAssociation">
 		<xs:annotation>
@@ -7370,73 +7426,77 @@ Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian
 				<ann:EdFiId>612</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>The student associated with the program.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1110</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ProgramReference" type="ProgramReferenceType">
-				<xs:annotation>
-					<xs:documentation>The program associated with the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1106</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>Indicates the services being provided to the student by the program.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1109</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>The month, day, and year on which the student first received services.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1103</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The month, day, and year on which the student exited the program or stopped receiving services.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1105</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ReasonExited" type="ReasonExitedDescriptorReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The reason the child left the program within a school or district.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>ReasonExitedDescriptor</ann:Descriptor>
-						<ann:EdFiId>1107</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
-				<xs:annotation>
-					<xs:documentation>The education organization where the student is participating in or receiving the program services.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1104</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ServedOutsideOfRegularSession" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicates whether the student received services during the summer session or between sessions.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1108</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>The student associated with the program.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1110</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ProgramReference" type="ProgramReferenceType">
+						<xs:annotation>
+							<xs:documentation>The program associated with the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1106</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>Indicates the services being provided to the student by the program.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1109</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date">
+						<xs:annotation>
+							<xs:documentation>The month, day, and year on which the student first received services.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1103</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The month, day, and year on which the student exited the program or stopped receiving services.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1105</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ReasonExited" type="ReasonExitedDescriptorReferenceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The reason the child left the program within a school or district.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>ReasonExitedDescriptor</ann:Descriptor>
+								<ann:EdFiId>1107</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+						<xs:annotation>
+							<xs:documentation>The education organization where the student is participating in or receiving the program services.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1104</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ServedOutsideOfRegularSession" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicates whether the student received services during the summer session or between sessions.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1108</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentSchoolAssociation">
 		<xs:annotation>
@@ -7446,150 +7506,154 @@ Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian
 				<ann:EdFiId>613</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>Student enrolled in the school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1127</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SchoolReference" type="SchoolReferenceType">
-				<xs:annotation>
-					<xs:documentation>School enrolling the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1125</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="PrimarySchool" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicates if a given enrollment record should be considered the primary record for a student. If omitted, the default is true.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1121</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The school year associated with the student's enrollment.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1126</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EntryDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>The month, day, and year on which an individual enters and begins to receive instructional services in a school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1114</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EntryGradeLevel" type="GradeLevelDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>The grade level or primary instructional level at which a student enters and receives services in a school or an educational institution during a given academic session.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-						<ann:EdFiId>1115</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EntryGradeLevelReason" type="EntryGradeLevelReasonType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The primary reason as to why a staff member determined that a student should be promoted or not (or be demoted) at the end of a given school term.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1116</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EntryType" type="EntryTypeDescriptorReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The process by which a student enters a school during a given academic session.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>EntryTypeDescriptor</ann:Descriptor>
-						<ann:EdFiId>1117</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="RepeatGradeIndicator" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>An indicator of whether the student is enrolling to repeat a grade level, either by failure or an agreement to hold the student back.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1122</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ClassOfSchoolYear" type="SchoolYearType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Projected High School graduation year</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1111</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SchoolChoiceTransfer" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>An indication of whether students transferred in or out of the school did so during the school year under the provisions for public school choice in accordance with Title I, Part A, Section 1116.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1124</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ExitWithdrawDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The month, day, and year of the first day after the date of an individual's last attendance at a school (if known), the day on which an individual graduated, or the date on which it becomes known officially that an individual left school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1118</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ExitWithdrawType" type="ExitWithdrawTypeDescriptorReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The circumstances under which the student exited from membership in an educational institution.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>ExitWithdrawTypeDescriptor</ann:Descriptor>
-						<ann:EdFiId>1119</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EducationPlan" type="EducationPlanType" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>The type of Education Plan(s) the student is following, if appropriate.  For example:
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Student enrolled in the school.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1127</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SchoolReference" type="SchoolReferenceType">
+						<xs:annotation>
+							<xs:documentation>School enrolling the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1125</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="PrimarySchool" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicates if a given enrollment record should be considered the primary record for a student. If omitted, the default is true.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1121</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The school year associated with the student's enrollment.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1126</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EntryDate" type="xs:date">
+						<xs:annotation>
+							<xs:documentation>The month, day, and year on which an individual enters and begins to receive instructional services in a school.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1114</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EntryGradeLevel" type="GradeLevelDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>The grade level or primary instructional level at which a student enters and receives services in a school or an educational institution during a given academic session.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+								<ann:EdFiId>1115</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EntryGradeLevelReason" type="EntryGradeLevelReasonType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The primary reason as to why a staff member determined that a student should be promoted or not (or be demoted) at the end of a given school term.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1116</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EntryType" type="EntryTypeDescriptorReferenceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The process by which a student enters a school during a given academic session.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>EntryTypeDescriptor</ann:Descriptor>
+								<ann:EdFiId>1117</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="RepeatGradeIndicator" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>An indicator of whether the student is enrolling to repeat a grade level, either by failure or an agreement to hold the student back.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1122</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ClassOfSchoolYear" type="SchoolYearType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Projected High School graduation year</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1111</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SchoolChoiceTransfer" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>An indication of whether students transferred in or out of the school did so during the school year under the provisions for public school choice in accordance with Title I, Part A, Section 1116.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1124</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ExitWithdrawDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The month, day, and year of the first day after the date of an individual's last attendance at a school (if known), the day on which an individual graduated, or the date on which it becomes known officially that an individual left school.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1118</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ExitWithdrawType" type="ExitWithdrawTypeDescriptorReferenceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The circumstances under which the student exited from membership in an educational institution.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>ExitWithdrawTypeDescriptor</ann:Descriptor>
+								<ann:EdFiId>1119</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EducationPlan" type="EducationPlanType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>The type of Education Plan(s) the student is following, if appropriate.  For example:
 Special education IEP
 Vocational</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1112</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ResidencyStatus" type="ResidencyStatusDescriptorReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>An indication of the location of a persons legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>ResidencyStatusDescriptor</ann:Descriptor>
-						<ann:EdFiId>1123</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="GraduationPlanReference" type="GraduationPlanReferenceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The graduation plan associated with the student enrolled in the school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1120</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EmployedWhileEnrolled" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1113</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+							<xs:appinfo>
+								<ann:EdFiId>1112</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ResidencyStatus" type="ResidencyStatusDescriptorReferenceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>An indication of the location of a persons legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>ResidencyStatusDescriptor</ann:Descriptor>
+								<ann:EdFiId>1123</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="GraduationPlanReference" type="GraduationPlanReferenceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The graduation plan associated with the student enrolled in the school.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1120</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EmployedWhileEnrolled" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1113</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentSectionAssociation">
 		<xs:annotation>
@@ -7599,68 +7663,72 @@ Vocational</xs:documentation>
 				<ann:EdFiId>614</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>The student enrolled in the section.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1133</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SectionReference" type="SectionReferenceType">
-				<xs:annotation>
-					<xs:documentation>The section the student is enrolled in.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1132</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>Month, day and year of the student's entry or assignment to the section.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1128</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Month, day, and year of the withdrawal or exit of the student from the section.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1129</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="HomeroomIndicator" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicates the section is the student's homeroom.  Homeroom period may the convention for taking daily attendance.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1130</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="RepeatIdentifier" type="RepeatIdentifierType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>An indication as to whether a student has previously taken a given course.
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>The student enrolled in the section.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1133</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SectionReference" type="SectionReferenceType">
+						<xs:annotation>
+							<xs:documentation>The section the student is enrolled in.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1132</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date">
+						<xs:annotation>
+							<xs:documentation>Month, day and year of the student's entry or assignment to the section.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1128</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Month, day, and year of the withdrawal or exit of the student from the section.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1129</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="HomeroomIndicator" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicates the section is the student's homeroom.  Homeroom period may the convention for taking daily attendance.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1130</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="RepeatIdentifier" type="RepeatIdentifierType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>An indication as to whether a student has previously taken a given course.
 Repeated, counted in grade point average
 Repeated, not counted in grade point average
 Not repeated
 Other</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1131</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="TeacherStudentDataLinkExclusion" type="xs:boolean" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Indicates that the student-section combination is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>1134</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
+							<xs:appinfo>
+								<ann:EdFiId>1131</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="TeacherStudentDataLinkExclusion" type="xs:boolean" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Indicates that the student-section combination is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>1134</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentSpecialEducationProgramAssociation">
 		<xs:annotation>
