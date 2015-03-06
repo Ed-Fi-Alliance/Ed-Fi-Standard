@@ -326,6 +326,11 @@ Second grade
 							</xs:annotation>
 						</xs:element>
 					</xs:choice>
+					<xs:element name="Namespace" type="URI" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Namespace for the Assessment Vendor.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -418,6 +423,11 @@ Second grade
 					<xs:element name="ParentAssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>References the higher level Assessment Family the Assessment Family belongs to.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Namespace" type="URI">
+						<xs:annotation>
+							<xs:documentation>Namespace for the Assessment Vendor.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
