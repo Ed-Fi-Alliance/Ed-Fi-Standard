@@ -791,11 +791,11 @@ Prose
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+					<xs:element name="SchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation>The Education Organization for which the calendar event is defined - often the LEA or school.</xs:documentation>
+							<xs:documentation>The school for which the calendar event is defined.</xs:documentation>
 							<xs:appinfo>
-								<ann:EdFiId>1272</ann:EdFiId>
+								<ann:EdFiId>2426</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -2176,11 +2176,11 @@ Representative of visiting school
 		<xs:complexContent>
 			<xs:extension base="ComplexObjectType">
 				<xs:sequence>
-					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+					<xs:element name="SchoolReference" type="SchoolReferenceType" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to an existing educational organization record.</xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to an existing school record.</xs:documentation>
 							<xs:appinfo>
-								<ann:EdFiId>1431</ann:EdFiId>
+								<ann:EdFiId>2425</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
