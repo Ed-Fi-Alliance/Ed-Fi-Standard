@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by R Heim (Double Line, Inc.) -->
 <!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-RFC" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-RFC" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
@@ -8441,9 +8440,9 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
+					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2013</ann:EdFiId>
 					</xs:appinfo>
@@ -9368,9 +9367,9 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
+					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2040</ann:EdFiId>
 					</xs:appinfo>
