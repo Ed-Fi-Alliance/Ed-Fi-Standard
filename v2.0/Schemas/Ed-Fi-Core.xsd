@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by Double Line, Inc. (Double Line, Inc.) -->
 <!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-RFC" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-RFC" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
@@ -450,7 +449,7 @@ Second grade
 					</xs:choice>
 					<xs:element name="Namespace" type="URI" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Namespace for the Assessment Vendor.</xs:documentation>
+							<xs:documentation>Namespace for the Assessment.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2300</ann:EdFiId>
 							</xs:appinfo>
@@ -582,7 +581,7 @@ Second grade
 					</xs:element>
 					<xs:element name="Namespace" type="URI">
 						<xs:annotation>
-							<xs:documentation>Namespace for the Assessment Vendor.</xs:documentation>
+							<xs:documentation>Namespace for the Assessments in this Assessment Family.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2301</ann:EdFiId>
 							</xs:appinfo>
@@ -5312,7 +5311,7 @@ LEP Exempt
 			<xs:documentation>This descriptor holds the description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Descriptor</ann:TypeGroup>
-				<ann:EdFiId>262</ann:EdFiId>
+				<ann:EdFiId>622</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:complexContent>
@@ -8441,9 +8440,9 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
+					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2013</ann:EdFiId>
 					</xs:appinfo>
@@ -9368,9 +9367,9 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system</xs:documentation>
+					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2040</ann:EdFiId>
 					</xs:appinfo>
@@ -13170,7 +13169,7 @@ Distinguished Achievement Program</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>The source that provided the disability determination.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2412</ann:EdFiId>
+						<ann:EdFiId>2414</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -15759,7 +15758,7 @@ Cognitive and perceptual skills test
 			<xs:enumeration value="Other">
 				<xs:annotation>
 					<xs:appinfo>
-						<ann:EdFiId>120-003</ann:EdFiId>
+						<ann:EdFiId>129-003</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
@@ -22435,7 +22434,7 @@ Vocational</xs:documentation>
 			<xs:enumeration value="Other">
 				<xs:annotation>
 					<xs:appinfo>
-						<ann:EdFiId>215-005</ann:EdFiId>
+						<ann:EdFiId>215-099</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
