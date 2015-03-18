@@ -4499,14 +4499,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The disability condition(s) that best describes an individual's impairment.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1684</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="DisplacementStatus" type="DisplacementStatus" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services.</xs:documentation>
@@ -5028,6 +5020,62 @@ LEP Exempt
 							</xs:annotation>
 						</xs:element>
 					</xs:choice>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentDisability">
+		<xs:annotation>
+			<xs:documentation>This type represents an impairment of body structure or function, a limitation in activities or a restriction in participation, as ordered by severity of impairment.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>502</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Disability" type="DisabilityDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>A disability category that describes a child's impairment.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>DisabilityDescriptor</ann:Descriptor>
+								<ann:EdFiId>809</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DisabilityDiagnosis" type="DisabilityDiagnosis" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>A description of the disability diagnosis.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>810</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="OrderOfDisability" type="xs:int" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The order by severity of student's disabilities: 1- Primary, 2 -  Secondary, 3 - Tertiary, etc.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>811</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DisabilityDeterminationSourceType" type="DisabilityDeterminationSourceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The source that provided the disability determination.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2414</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student associated with the StudentDisability.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2441</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -13173,50 +13221,6 @@ Distinguished Achievement Program</xs:documentation>
 					<xs:documentation>Date on which the award expires.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>805</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="Disability">
-		<xs:annotation>
-			<xs:documentation>This type represents an impairment of body structure or function, a limitation in activities or a restriction in participation, as ordered by severity of impairment.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-				<ann:EdFiId>502</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="Disability" type="DisabilityDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>A disability category that describes a child's impairment.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>DisabilityDescriptor</ann:Descriptor>
-						<ann:EdFiId>809</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DisabilityDiagnosis" type="DisabilityDiagnosis" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>A description of the disability diagnosis.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>810</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="OrderOfDisability" type="xs:int" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The order by severity of student's disabilities: 1- Primary, 2 -  Secondary, 3 - Tertiary, etc.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>811</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DisabilityDeterminationSourceType" type="DisabilityDeterminationSourceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The source that provided the disability determination.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2414</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
