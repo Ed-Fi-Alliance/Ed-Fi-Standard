@@ -4481,15 +4481,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>Reflects important characteristics of the student's home situation:
-Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent and Unaccompanied Youth.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1702</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
@@ -4904,6 +4895,62 @@ LEP Exempt
 						<xs:annotation>
 							<xs:appinfo>
 								<ann:EdFiId>1740</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentCharacteristic">
+		<xs:annotation>
+			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>531</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentCharacteristic" type="StudentCharacteristicDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>The characteristic designated for the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>StudentCharacteristicDescriptor</ann:Descriptor>
+								<ann:EdFiId>936</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the characteristic was designated.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>933</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the characteristic was removed.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>935</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The person, organization, or department that designated the characteristic.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>934</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student associated with the StudentCharacteristic.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2440</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -14465,50 +14512,6 @@ Met standard
 					<xs:documentation>The assessment item responded to by the student.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>926</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="StudentCharacteristic">
-		<xs:annotation>
-			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-				<ann:EdFiId>531</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentCharacteristic" type="StudentCharacteristicDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>The characteristic designated for the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>StudentCharacteristicDescriptor</ann:Descriptor>
-						<ann:EdFiId>936</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the characteristic was designated.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>933</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the characteristic was removed.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>935</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The person, organization, or department that designated the characteristic.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>934</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
