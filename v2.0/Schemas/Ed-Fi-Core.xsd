@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-RFC" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-RFC" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
 	<xs:annotation>
 		<xs:documentation>===== Ed-Fi-Core Version 2.0 April 28, 2015 =====
@@ -4427,35 +4427,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="HispanicLatinoEthnicity" type="xs:boolean">
-						<xs:annotation>
-							<xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1688</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="OldEthnicity" type="OldEthnicityType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and race:
-1 - American Indian or Alaskan Native
-2 - Asian or Pacific Islander
-3 - Black, not of Hispanic origin
-4 - Hispanic
-5 - White, not of Hispanic origin</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1695</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Race" type="RaceType" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1699</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="Citizenship" type="Citizenship" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
@@ -5088,6 +5059,58 @@ LEP Exempt
 							<xs:documentation>Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2443</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentEthnicity">
+		<xs:annotation>
+			<xs:documentation>Reflects characteristics of the student's Race and Ethnicity.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2444</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="HispanicLatinoEthnicity" type="xs:boolean">
+						<xs:annotation>
+							<xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2445</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="OldEthnicity" type="OldEthnicityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and race:
+1 - American Indian or Alaskan Native
+2 - Asian or Pacific Islander
+3 - Black, not of Hispanic origin
+4 - Hispanic
+5 - White, not of Hispanic origin</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2446</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Race" type="RaceType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2447</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student associated with the StudentEthniciity characteristics.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2448</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
