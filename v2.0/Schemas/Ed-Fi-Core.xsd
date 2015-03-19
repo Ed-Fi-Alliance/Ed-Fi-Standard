@@ -4458,14 +4458,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="EconomicDisadvantaged" type="xs:boolean" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1686</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="LearningStyle" type="LearningStyle" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The student's relative preference to visual, auditory and tactile learning expressed as percentages.</xs:documentation>
@@ -25086,6 +25078,7 @@ Second retest
 			</xs:enumeration>
 			<xs:enumeration value="Displaced">
 				<xs:annotation>
+					<xs:documentation>Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>240-035</ann:EdFiId>
 					</xs:appinfo>
@@ -25095,6 +25088,14 @@ Second retest
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>240-036</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EconomicDisadvantaged">
+				<xs:annotation>
+					<xs:documentation>An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>240-037</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
