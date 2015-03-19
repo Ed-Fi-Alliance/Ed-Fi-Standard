@@ -4466,14 +4466,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1698</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="LearningStyle" type="LearningStyle" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The student's relative preference to visual, auditory and tactile learning expressed as percentages.</xs:documentation>
@@ -5480,6 +5472,70 @@ LEP Exempt
 							<xs:documentation>Relates the program associated with the attendance event.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1769</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentProgramParticipation">
+		<xs:annotation>
+			<xs:documentation>Programs the student is participating in or receiving services from.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>522</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="ProgramType" type="ProgramType">
+						<xs:annotation>
+							<xs:documentation>The program the student is associated with or receiving services from.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>904</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ProgramCharacteristic" type="ProgramCharacteristicDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>Reflects important characteristics of the Program, such as categories or particular indications.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>ProgramCharacteristicDescriptor</ann:Descriptor>
+								<ann:EdFiId>903</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the student was associated with the program or service.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>900</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the program participation ended.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>902</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The person, organization, or department that designated the program association.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>901</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student participating in the program.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2460</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -14282,58 +14338,6 @@ Change of assignment</xs:documentation>
 					<xs:documentation>The school system, state, or agency assigning the identification code.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>898</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="ProgramParticipation">
-		<xs:annotation>
-			<xs:documentation>Programs the student is participating in or receiving services from.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-				<ann:EdFiId>522</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="ProgramType" type="ProgramType">
-				<xs:annotation>
-					<xs:documentation>The program the student is associated with or receiving services from.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>904</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ProgramCharacteristic" type="ProgramCharacteristicDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>Reflects important characteristics of the Program, such as categories or particular indications.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>ProgramCharacteristicDescriptor</ann:Descriptor>
-						<ann:EdFiId>903</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the student was associated with the program or service.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>900</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the program participation ended.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>902</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The person, organization, or department that designated the program association.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>901</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
