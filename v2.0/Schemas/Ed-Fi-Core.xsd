@@ -4485,14 +4485,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="StudentIndicator" type="StudentIndicator" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>Indicator(s) or metric(s) computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1704</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="LoginId" type="IdentificationCode" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The login ID for the user; used for security access control interface.</xs:documentation>
@@ -5198,6 +5190,77 @@ LEP Exempt
 							<xs:documentation>The Gradebook Entry associated with the student grade or score.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1753</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentIndicator">
+		<xs:annotation>
+			<xs:documentation>An indicator or metric computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>533</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="IndicatorGroup" type="IndicatorName" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The name for a group of indicators.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>944</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="IndicatorName" type="IndicatorName">
+						<xs:annotation>
+							<xs:documentation>The name of the indicator or metric.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>945</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Indicator" type="Indicator">
+						<xs:annotation>
+							<xs:documentation>The value of the indicator or metric.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>943</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date when the indicator was assigned or computed.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>940</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the indicator or metric was sunset or removed.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>942</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The person, organization, or department that designated the program association.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>941</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student associated with the Indicator.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2451</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -14604,65 +14667,6 @@ Met standard
 					<xs:documentation>The organization code or name assigning the student Identification Code.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>937</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="StudentIndicator">
-		<xs:annotation>
-			<xs:documentation>An indicator or metric computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-				<ann:EdFiId>533</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="IndicatorGroup" type="IndicatorName" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The name for a group of indicators.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>944</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="IndicatorName" type="IndicatorName">
-				<xs:annotation>
-					<xs:documentation>The name of the indicator or metric.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>945</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="Indicator" type="Indicator">
-				<xs:annotation>
-					<xs:documentation>The value of the indicator or metric.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>943</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date when the indicator was assigned or computed.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>940</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the indicator or metric was sunset or removed.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>942</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The person, organization, or department that designated the program association.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>941</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
