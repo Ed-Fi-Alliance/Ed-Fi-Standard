@@ -4228,14 +4228,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1655</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="HighestCompletedLevelOfEducation" type="LevelOfEducationDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The extent of formal instruction an individual has received (e.g., the highest grade in school completed or its equivalent or the highest degree received).</xs:documentation>
@@ -4282,6 +4274,37 @@ Special education students
 							<xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition.  This attribute indicates the teacher is highly qualified for ALL sections being taught.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1652</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StaffLanguage">
+		<xs:annotation>
+			<xs:documentation>Reflects the language the staff member uses to communicate.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2455</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Language" type="Language">
+						<xs:annotation>
+							<xs:documentation>The language the individual uses to communicate.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2456</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the staff member using the language.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2457</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -4449,15 +4472,6 @@ Special education students
 							<xs:appinfo>
 								<ann:Descriptor>LimitedEnglishProficiencyDescriptor</ann:Descriptor>
 								<ann:EdFiId>1692</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
-							<xs:appinfo>
-								<ann:Descriptor>LimitedEnglishProficiencyDescriptor</ann:Descriptor>
-								<ann:EdFiId>1690</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -5300,6 +5314,37 @@ LEP Exempt
 							<xs:documentation>Relates the intervention associated with the attendance event.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1758</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentLanguage">
+		<xs:annotation>
+			<xs:documentation>Reflects the language the student uses to communicate.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2452</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Language" type="Language">
+						<xs:annotation>
+							<xs:documentation>The language the individual uses to communicate.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2453</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student using the language.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2454</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
