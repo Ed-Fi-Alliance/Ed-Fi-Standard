@@ -12107,7 +12107,7 @@ Volunteer/no contract
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Credit" type="Credit">
+			<xs:element name="Credits" type="CreditsValue">
 				<xs:annotation>
 					<xs:documentation>The value of credits or units of value awarded for the completion of a course</xs:documentation>
 					<xs:appinfo>
@@ -12920,7 +12920,7 @@ Student late arrival/early dismissal</xs:documentation>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="Credit" type="Credit">
+			<xs:element name="Credits" type="CreditsValue">
 				<xs:annotation>
 					<xs:documentation>The value of credits or units of value awarded for the completion of a course</xs:documentation>
 					<xs:appinfo>
@@ -26890,7 +26890,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	<xs:annotation>
 		<xs:documentation>===== Numeric Simple Types =====</xs:documentation>
 	</xs:annotation>
-	<xs:simpleType name="Credit">
+	<xs:simpleType name="CreditsValue">
 		<xs:annotation>
 			<xs:documentation>The value of credits or units of value awarded for the completion of a course</xs:documentation>
 			<xs:appinfo>
