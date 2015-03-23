@@ -4220,22 +4220,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="Citizenship" type="Citizenship" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1648</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1655</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="HighestCompletedLevelOfEducation" type="LevelOfEducationDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The extent of formal instruction an individual has received (e.g., the highest grade in school completed or its equivalent or the highest degree received).</xs:documentation>
@@ -4282,6 +4266,68 @@ Special education students
 							<xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition.  This attribute indicates the teacher is highly qualified for ALL sections being taught.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1652</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StaffCitizenship">
+		<xs:annotation>
+			<xs:documentation>Citizenship information for the staff member.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2464</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Citizenship" type="Citizenship">
+						<xs:annotation>
+							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2465</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the staff.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2466</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StaffLanguage">
+		<xs:annotation>
+			<xs:documentation>Reflects the language the staff member uses to communicate.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2455</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Language" type="Language">
+						<xs:annotation>
+							<xs:documentation>The language the individual uses to communicate.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2456</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the staff member using the language.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2457</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -4427,111 +4473,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="HispanicLatinoEthnicity" type="xs:boolean">
-						<xs:annotation>
-							<xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1688</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="OldEthnicity" type="OldEthnicityType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and race:
-1 - American Indian or Alaskan Native
-2 - Asian or Pacific Islander
-3 - Black, not of Hispanic origin
-4 - Hispanic
-5 - White, not of Hispanic origin</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1695</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Race" type="RaceType" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1699</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Citizenship" type="Citizenship" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1682</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="EconomicDisadvantaged" type="xs:boolean" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1686</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="SchoolFoodServicesEligibility" type="SchoolFoodServicesEligibilityDescriptorReferenceType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>An indication of a student's level of eligibility for breakfast, lunch, snack, supper and milk programs.</xs:documentation>
-							<xs:appinfo>
-								<ann:Descriptor>SchoolFoodServicesEligibilityDescriptor</ann:Descriptor>
-								<ann:EdFiId>1700</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>Reflects important characteristics of the student's home situation:
-Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent and Unaccompanied Youth.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1702</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
-							<xs:appinfo>
-								<ann:Descriptor>LimitedEnglishProficiencyDescriptor</ann:Descriptor>
-								<ann:EdFiId>1692</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
-							<xs:appinfo>
-								<ann:Descriptor>LimitedEnglishProficiencyDescriptor</ann:Descriptor>
-								<ann:EdFiId>1690</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>The disability condition(s) that best describes an individual's impairment.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1684</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="DisplacementStatus" type="DisplacementStatus" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1685</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1698</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="LearningStyle" type="LearningStyle" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The student's relative preference to visual, auditory and tactile learning expressed as percentages.</xs:documentation>
@@ -4545,14 +4486,6 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
 							<xs:documentation>The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1683</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="StudentIndicator" type="StudentIndicator" minOccurs="0" maxOccurs="unbounded">
-						<xs:annotation>
-							<xs:documentation>Indicator(s) or metric(s) computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1704</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -4911,6 +4844,93 @@ LEP Exempt
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StudentCharacteristic">
+		<xs:annotation>
+			<xs:documentation>Reflects important characteristics of the student's home situation.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>531</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="StudentCharacteristic" type="StudentCharacteristicDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>The characteristic designated for the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>StudentCharacteristicDescriptor</ann:Descriptor>
+								<ann:EdFiId>936</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the characteristic was designated.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>933</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the characteristic was removed.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>935</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The person, organization, or department that designated the characteristic.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>934</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student associated with the characteristic.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2440</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentCitizenship">
+		<xs:annotation>
+			<xs:documentation>Citizenship information for the student.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2461</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Citizenship" type="Citizenship">
+						<xs:annotation>
+							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2462</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2463</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentCompetencyObjective">
 		<xs:annotation>
 			<xs:documentation>This entity represents the competency assessed or evaluated for the student against a specific Learning Objective.</xs:documentation>
@@ -4981,6 +5001,161 @@ LEP Exempt
 							</xs:annotation>
 						</xs:element>
 					</xs:choice>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentDisability">
+		<xs:annotation>
+			<xs:documentation>This type represents an impairment of body structure or function, a limitation in activities or a restriction in participation, for a student as ordered by severity of impairment.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>502</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Disability" type="DisabilityDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>A disability category that describes a child's impairment.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>DisabilityDescriptor</ann:Descriptor>
+								<ann:EdFiId>809</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DisabilityDiagnosis" type="DisabilityDiagnosis" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>A description of the disability diagnosis.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>810</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="OrderOfDisability" type="xs:int" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The order by severity of student's disabilities: 1- Primary, 2 -  Secondary, 3 - Tertiary, etc.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>811</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DisabilityDeterminationSourceType" type="DisabilityDeterminationSourceType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The source that provided the disability determination.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2414</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student associated with the disability.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2441</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentDisplacementCharacteristic">
+		<xs:annotation>
+			<xs:documentation>This entity represents the Displacement characteristics(s) of a student.  The entity is an extension of the StudentCharacteristic domain entity specifically for the displacement characteristic type.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2442</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="StudentCharacteristic">
+				<xs:sequence>
+					<xs:element name="DisplacementStatus" type="DisplacementStatus">
+						<xs:annotation>
+							<xs:documentation>Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2443</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentEthnicity">
+		<xs:annotation>
+			<xs:documentation>Reflects characteristics of the student's Race and Ethnicity.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2444</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="HispanicLatinoEthnicity" type="xs:boolean">
+						<xs:annotation>
+							<xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2445</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="OldEthnicity" type="OldEthnicityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and race:
+1 - American Indian or Alaskan Native
+2 - Asian or Pacific Islander
+3 - Black, not of Hispanic origin
+4 - Hispanic
+5 - White, not of Hispanic origin</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2446</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Race" type="RaceType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2447</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student associated with the ethnicity characteristics.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2448</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentFoodServicesEligibilityCharacteristic">
+		<xs:annotation>
+			<xs:documentation>This entity represents the Food Services Eligiblity characteristics(s) of a student.  The entity is an extension of the StudentCharacteristic domain entity specifically for the food services characteristic type.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2449</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="StudentCharacteristic">
+				<xs:sequence>
+					<xs:element name="SchoolFoodServicesEligibility" type="SchoolFoodServicesEligibilityDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>An indication of a student's level of eligibility for breakfast, lunch, snack, supper and milk programs.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>SchoolFoodServicesEligibilityDescriptor</ann:Descriptor>
+								<ann:EdFiId>2450</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -5057,6 +5232,77 @@ LEP Exempt
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StudentIndicator">
+		<xs:annotation>
+			<xs:documentation>An indicator or metric computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>533</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="IndicatorGroup" type="IndicatorName" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The name for a group of indicators.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>944</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="IndicatorName" type="IndicatorName">
+						<xs:annotation>
+							<xs:documentation>The name of the indicator or metric.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>945</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Indicator" type="Indicator">
+						<xs:annotation>
+							<xs:documentation>The value of the indicator or metric.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>943</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date when the indicator was assigned or computed.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>940</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the indicator or metric was sunset or removed.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>942</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The person, organization, or department that designated the program association.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>941</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student associated with the Indicator.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2451</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentInterventionAttendanceEvent">
 		<xs:annotation>
 			<xs:documentation>This event entity represents the recording of whether a student is in attendance for an intervention service.</xs:documentation>
@@ -5089,6 +5335,37 @@ LEP Exempt
 							<xs:documentation>Relates the intervention associated with the attendance event.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1758</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentLanguage">
+		<xs:annotation>
+			<xs:documentation>Reflects the language the student uses to communicate.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2452</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Language" type="Language">
+						<xs:annotation>
+							<xs:documentation>The language the individual uses to communicate.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2453</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student using the language.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2454</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -5170,6 +5447,29 @@ LEP Exempt
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StudentLimitedEnglishProficiencyCharacteristic">
+		<xs:annotation>
+			<xs:documentation>This entity represents the Limited English Proficiency characteristics(s) of a student.  The entity is an extension of the StudentCharacteristic domain entity specifically for the limited English proficiency characteristic type.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2458</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="StudentCharacteristic">
+				<xs:sequence>
+					<xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptor">
+						<xs:annotation>
+							<xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2459</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentProgramAttendanceEvent">
 		<xs:annotation>
 			<xs:documentation>This event entity represents the recording of whether a student is in attendance to receive or participate in program services.</xs:documentation>
@@ -5210,6 +5510,70 @@ LEP Exempt
 							<xs:documentation>Relates the program associated with the attendance event.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1769</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentProgramParticipation">
+		<xs:annotation>
+			<xs:documentation>Programs the student is participating in or receiving services from.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>522</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="ProgramType" type="ProgramType">
+						<xs:annotation>
+							<xs:documentation>The program the student is associated with or receiving services from.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>904</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ProgramCharacteristic" type="ProgramCharacteristicDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>Reflects important characteristics of the Program, such as categories or particular indications.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>ProgramCharacteristicDescriptor</ann:Descriptor>
+								<ann:EdFiId>903</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the student was associated with the program or service.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>900</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="EndDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The date the program participation ended.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>902</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>The person, organization, or department that designated the program association.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>901</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student participating in the program.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2460</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -13131,50 +13495,6 @@ Distinguished Achievement Program</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="Disability">
-		<xs:annotation>
-			<xs:documentation>This type represents an impairment of body structure or function, a limitation in activities or a restriction in participation, as ordered by severity of impairment.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-				<ann:EdFiId>502</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="Disability" type="DisabilityDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>A disability category that describes a child's impairment.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>DisabilityDescriptor</ann:Descriptor>
-						<ann:EdFiId>809</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DisabilityDiagnosis" type="DisabilityDiagnosis" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>A description of the disability diagnosis.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>810</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="OrderOfDisability" type="xs:int" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The order by severity of student's disabilities: 1- Primary, 2 -  Secondary, 3 - Tertiary, etc.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>811</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DisabilityDeterminationSourceType" type="DisabilityDeterminationSourceType" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The source that provided the disability determination.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2414</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="EducationContentSource">
 		<xs:annotation>
 			<xs:appinfo>
@@ -14061,58 +14381,6 @@ Change of assignment</xs:documentation>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="ProgramParticipation">
-		<xs:annotation>
-			<xs:documentation>Programs the student is participating in or receiving services from.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-				<ann:EdFiId>522</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="ProgramType" type="ProgramType">
-				<xs:annotation>
-					<xs:documentation>The program the student is associated with or receiving services from.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>904</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ProgramCharacteristic" type="ProgramCharacteristicDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-				<xs:annotation>
-					<xs:documentation>Reflects important characteristics of the Program, such as categories or particular indications.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>ProgramCharacteristicDescriptor</ann:Descriptor>
-						<ann:EdFiId>903</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the student was associated with the program or service.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>900</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the program participation ended.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>902</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The person, organization, or department that designated the program association.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>901</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="Recognition">
 		<xs:annotation>
 			<xs:documentation>Recognition given to the student for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
@@ -14470,50 +14738,6 @@ Met standard
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="StudentCharacteristic">
-		<xs:annotation>
-			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-				<ann:EdFiId>531</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="StudentCharacteristic" type="StudentCharacteristicDescriptorReferenceType">
-				<xs:annotation>
-					<xs:documentation>The characteristic designated for the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:Descriptor>StudentCharacteristicDescriptor</ann:Descriptor>
-						<ann:EdFiId>936</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the characteristic was designated.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>933</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the characteristic was removed.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>935</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The person, organization, or department that designated the characteristic.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>934</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="StudentIdentificationCode">
 		<xs:annotation>
 			<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a student.</xs:documentation>
@@ -14544,65 +14768,6 @@ Met standard
 					<xs:documentation>The organization code or name assigning the student Identification Code.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>937</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="StudentIndicator">
-		<xs:annotation>
-			<xs:documentation>An indicator or metric computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Common</ann:TypeGroup>
-				<ann:EdFiId>533</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="IndicatorGroup" type="IndicatorName" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The name for a group of indicators.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>944</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="IndicatorName" type="IndicatorName">
-				<xs:annotation>
-					<xs:documentation>The name of the indicator or metric.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>945</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="Indicator" type="Indicator">
-				<xs:annotation>
-					<xs:documentation>The value of the indicator or metric.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>943</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="BeginDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date when the indicator was assigned or computed.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>940</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="EndDate" type="xs:date" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The date the indicator or metric was sunset or removed.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>942</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>The person, organization, or department that designated the program association.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>941</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -24954,6 +25119,36 @@ Second retest
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>240-033</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Displaced">
+				<xs:annotation>
+					<xs:documentation>Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>240-035</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Food Services Eligible">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>240-036</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Limited English Proficiency">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>240-037</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Economic Disadvantaged">
+				<xs:annotation>
+					<xs:documentation>An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>240-038</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
