@@ -4466,15 +4466,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
-							<xs:appinfo>
-								<ann:Descriptor>LimitedEnglishProficiencyDescriptor</ann:Descriptor>
-								<ann:EdFiId>1692</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
@@ -5422,6 +5413,29 @@ LEP Exempt
 							</xs:annotation>
 						</xs:element>
 					</xs:choice>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentLimitedEnglishProficiencyCharacteristic">
+		<xs:annotation>
+			<xs:documentation>Reflects characteristics of the student's English proficiency.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2458</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="StudentCharacteristic">
+				<xs:sequence>
+					<xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptor">
+						<xs:annotation>
+							<xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2459</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -25077,6 +25091,13 @@ Second retest
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>240-036</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Limited English Proficiency">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>240-037</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
