@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-RFC" targetNamespace="http://ed-fi.org/0200-RFC" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Demographics Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentDemographics">
+		<xs:annotation>
+			<xs:documentation>This interchange defines demographic information about students.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="StudentReference" type="StudentReferenceType"/>
+				<xs:element name="StudentCitizenship" type="StudentCitizenship"/>
+				<xs:element name="StudentDisability" type="StudentDisability"/>
+				<xs:element name="StudentEthnicity" type="StudentEthnicity"/>
+				<xs:element name="StudentIndicator" type="StudentIndicator"/>
+				<xs:element name="StudentLanguage" type="StudentLanguage"/>
+				<xs:element name="StudentProgramParticipation" type="StudentProgramParticipation"/>
+				<xs:element name="StudentCharacteristic" type="StudentCharacteristic"/>
+				<xs:element name="StudentDisplacementCharacteristic" type="StudentDisplacementCharacteristic"/>
+				<xs:element name="StudentFoodServicesEligibilityCharacteristic" type="StudentFoodServicesEligibilityCharacteristic"/>
+				<xs:element name="StudentLimitedEnglishProficiencyCharacteristic" type="StudentLimitedEnglishProficiencyCharacteristic"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

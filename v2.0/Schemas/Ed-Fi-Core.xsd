@@ -4846,7 +4846,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StudentCharacteristic">
 		<xs:annotation>
-			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth.</xs:documentation>
+			<xs:documentation>Reflects important characteristics of the student's home situation.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>531</ann:EdFiId>
@@ -4890,7 +4890,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>Reference to the student associated with the StudentCharacteristic.</xs:documentation>
+							<xs:documentation>Reference to the student associated with the characteristic.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2440</ann:EdFiId>
 							</xs:appinfo>
@@ -5007,7 +5007,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StudentDisability">
 		<xs:annotation>
-			<xs:documentation>This type represents an impairment of body structure or function, a limitation in activities or a restriction in participation, as ordered by severity of impairment.</xs:documentation>
+			<xs:documentation>This type represents an impairment of body structure or function, a limitation in activities or a restriction in participation, for a student as ordered by severity of impairment.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>502</ann:EdFiId>
@@ -5051,7 +5051,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>Reference to the student associated with the StudentDisability.</xs:documentation>
+							<xs:documentation>Reference to the student associated with the disability.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2441</ann:EdFiId>
 							</xs:appinfo>
@@ -5063,7 +5063,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StudentDisplacementCharacteristic">
 		<xs:annotation>
-			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth.</xs:documentation>
+			<xs:documentation>This entity represents the Displacement characteristics(s) of a student.  The entity is an extension of the StudentCharacteristic domain entity specifically for the displacement characteristic type.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>2442</ann:EdFiId>
@@ -5126,7 +5126,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>Reference to the student associated with the StudentEthniciity characteristics.</xs:documentation>
+							<xs:documentation>Reference to the student associated with the ethnicity characteristics.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2448</ann:EdFiId>
 							</xs:appinfo>
@@ -5138,7 +5138,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StudentFoodServicesEligibilityCharacteristic">
 		<xs:annotation>
-			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth.</xs:documentation>
+			<xs:documentation>This entity represents the Food Services Eligiblity characteristics(s) of a student.  The entity is an extension of the StudentCharacteristic domain entity specifically for the food services characteristic type.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>2449</ann:EdFiId>
@@ -5449,7 +5449,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StudentLimitedEnglishProficiencyCharacteristic">
 		<xs:annotation>
-			<xs:documentation>Reflects characteristics of the student's English proficiency.</xs:documentation>
+			<xs:documentation>This entity represents the Limited English Proficiency characteristics(s) of a student.  The entity is an extension of the StudentCharacteristic domain entity specifically for the limited English proficiency characteristic type.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>2458</ann:EdFiId>
