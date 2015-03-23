@@ -4443,15 +4443,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="SchoolFoodServicesEligibility" type="SchoolFoodServicesEligibilityDescriptorReferenceType" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>An indication of a student's level of eligibility for breakfast, lunch, snack, supper and milk programs.</xs:documentation>
-							<xs:appinfo>
-								<ann:Descriptor>SchoolFoodServicesEligibilityDescriptor</ann:Descriptor>
-								<ann:EdFiId>1700</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
@@ -5111,6 +5102,30 @@ LEP Exempt
 							<xs:documentation>Reference to the student associated with the StudentEthniciity characteristics.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2448</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentFoodServicesEligibilityCharacteristic">
+		<xs:annotation>
+			<xs:documentation>Reflects important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, Unaccompanied Youth.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2449</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="StudentCharacteristic">
+				<xs:sequence>
+					<xs:element name="SchoolFoodServicesEligibility" type="SchoolFoodServicesEligibilityDescriptorReferenceType">
+						<xs:annotation>
+							<xs:documentation>An indication of a student's level of eligibility for breakfast, lunch, snack, supper and milk programs.</xs:documentation>
+							<xs:appinfo>
+								<ann:Descriptor>SchoolFoodServicesEligibilityDescriptor</ann:Descriptor>
+								<ann:EdFiId>2450</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -25006,6 +25021,13 @@ Second retest
 				<xs:annotation>
 					<xs:appinfo>
 						<ann:EdFiId>240-035</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Food Services Eligible">
+				<xs:annotation>
+					<xs:appinfo>
+						<ann:EdFiId>240-036</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:enumeration>
