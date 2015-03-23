@@ -4220,14 +4220,6 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="Citizenship" type="Citizenship" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1648</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
 					<xs:element name="HighestCompletedLevelOfEducation" type="LevelOfEducationDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The extent of formal instruction an individual has received (e.g., the highest grade in school completed or its equivalent or the highest degree received).</xs:documentation>
@@ -4274,6 +4266,37 @@ Special education students
 							<xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition.  This attribute indicates the teacher is highly qualified for ALL sections being taught.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1652</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StaffCitizenship">
+		<xs:annotation>
+			<xs:documentation>Citizenship information for the staff member.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2464</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Citizenship" type="Citizenship">
+						<xs:annotation>
+							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2465</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StaffReference" type="StaffReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the staff.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2466</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -4447,14 +4470,6 @@ Special education students
 							<xs:documentation>Locator for the student photo.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1697</ann:EdFiId>
-							</xs:appinfo>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="Citizenship" type="Citizenship" minOccurs="0">
-						<xs:annotation>
-							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
-							<xs:appinfo>
-								<ann:EdFiId>1682</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -4878,6 +4893,37 @@ LEP Exempt
 							<xs:documentation>Reference to the student associated with the StudentCharacteristic.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2440</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentCitizenship">
+		<xs:annotation>
+			<xs:documentation>Citizenship information for the student.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
+				<ann:EdFiId>2461</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ComplexObjectType">
+				<xs:sequence>
+					<xs:element name="Citizenship" type="Citizenship">
+						<xs:annotation>
+							<xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2462</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="StudentReference" type="StudentReferenceType">
+						<xs:annotation>
+							<xs:documentation>Reference to the student.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2463</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
