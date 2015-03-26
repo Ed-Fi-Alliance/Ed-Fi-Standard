@@ -5756,7 +5756,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="DisabilityMap" type="DisabilityMapType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The m apping to a known disability designation.</xs:documentation>
+							<xs:documentation>The mapping to a known disability designation.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>295</ann:EdFiId>
 							</xs:appinfo>
@@ -7906,7 +7906,7 @@ Local Neglected Program</xs:documentation>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:annotation>
-		<xs:documentation>===== Base Types (borrowed from NIEM standards) =====</xs:documentation>
+		<xs:documentation>===== Base Types (borrowed from NEIM standards) =====</xs:documentation>
 	</xs:annotation>
 	<xs:complexType name="ComplexObjectType" abstract="true">
 		<xs:annotation>
@@ -10567,7 +10567,7 @@ Cognitive and perceptual skills test
 					</xs:element>
 					<xs:element name="SessionLookup" type="SessionLookupType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of sesions.</xs:documentation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of sessions.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2393</ann:EdFiId>
 							</xs:appinfo>
