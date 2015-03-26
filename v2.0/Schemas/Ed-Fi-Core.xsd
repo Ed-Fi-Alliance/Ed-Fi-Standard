@@ -1128,7 +1128,7 @@ Prose
 					</xs:element>
 					<xs:element name="CourseGPAApplicability" type="CourseGPAApplicabilityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>An indicator of whether or not this course being described is included in the computation of the student's Grade Point Average, and if so, if it weighted differently from regular courses.</xs:documentation>
+							<xs:documentation>An indicator of whether or not the course being described is included in the computation of the student's Grade Point Average, and if so, if it is weighted differently from regular courses.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1297</ann:EdFiId>
 							</xs:appinfo>
