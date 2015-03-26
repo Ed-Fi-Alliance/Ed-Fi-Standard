@@ -625,7 +625,7 @@ Prose
 					</xs:element>
 					<xs:element name="MaxRawScore" type="xs:int" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The maximum raw score achievable is all assessment items are correct and scored at the maximum.</xs:documentation>
+							<xs:documentation>The maximum raw score achievable across all assessment items that are correct and scored at the maximum.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1260</ann:EdFiId>
 							</xs:appinfo>
