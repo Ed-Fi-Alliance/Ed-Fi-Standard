@@ -110,7 +110,7 @@
 					</xs:element>
 					<xs:element name="AccountCode" type="AccountCodeDescriptorReferenceType" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>The set of account codes defined for the education accounting system organized by account code type (e.g., fund, function, object, etc.) that map to the account.</xs:documentation>
+							<xs:documentation>The set of account codes defined for the education accounting system organized by account code type (e.g., fund, function, object) that map to the account.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1205</ann:EdFiId>
 							</xs:appinfo>
@@ -160,7 +160,7 @@
 					</xs:element>
 					<xs:element name="RatingTitle" type="RatingTitleType">
 						<xs:annotation>
-							<xs:documentation>The title of the rating (e.g., School Rating, Safety Score, etc.)</xs:documentation>
+							<xs:documentation>The title of the rating (e.g., School Rating, Safety Score)</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1214</ann:EdFiId>
 							</xs:appinfo>
@@ -354,7 +354,7 @@ Second grade
 					</xs:element>
 					<xs:element name="ContentStandard" type="ContentStandard" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard, etc.).</xs:documentation>
+							<xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1229</ann:EdFiId>
 							</xs:appinfo>
@@ -524,7 +524,7 @@ Second grade
 					</xs:element>
 					<xs:element name="ContentStandard" type="ContentStandard" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard, etc.).</xs:documentation>
+							<xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1247</ann:EdFiId>
 							</xs:appinfo>
@@ -879,7 +879,7 @@ Prose
 					</xs:element>
 					<xs:element name="CohortScope" type="CohortScopeType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The scope of cohort (e.g., school, district, classroom, etc.)</xs:documentation>
+							<xs:documentation>The scope of cohort (e.g., school, district, classroom)</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1277</ann:EdFiId>
 							</xs:appinfo>
@@ -2662,7 +2662,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="ContentStandard" type="ContentStandard" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>A reference to the type of content standard e.g., state, national, etc.)</xs:documentation>
+							<xs:documentation>A reference to the type of content standard (e.g., state, national).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1485</ann:EdFiId>
 							</xs:appinfo>
@@ -12730,7 +12730,7 @@ Student late arrival/early dismissal</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="ContentStandard">
 		<xs:annotation>
-			<xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard, etc.).
+			<xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard).
 ...</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Common</ann:TypeGroup>
@@ -16807,7 +16807,7 @@ Student late arrival/early dismissal
 	</xs:simpleType>
 	<xs:simpleType name="CohortScopeType">
 		<xs:annotation>
-			<xs:documentation>The scope of cohort (e.g., school, district, classroom, etc.)</xs:documentation>
+			<xs:documentation>The scope of cohort (e.g., school, district, classroom).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 				<ann:EdFiId>140</ann:EdFiId>
@@ -16881,7 +16881,7 @@ Student late arrival/early dismissal
 	</xs:simpleType>
 	<xs:simpleType name="CohortType">
 		<xs:annotation>
-			<xs:documentation>The type of the cohort (e.g., academic intervention, classroom breakout, etc.)</xs:documentation>
+			<xs:documentation>The type of the cohort (e.g., academic intervention, classroom breakout).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 				<ann:EdFiId>141</ann:EdFiId>
@@ -26688,7 +26688,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	</xs:simpleType>
 	<xs:simpleType name="RatingTitleType">
 		<xs:annotation>
-			<xs:documentation>The title of the rating (e.g., School Rating, Safety Score, etc.)</xs:documentation>
+			<xs:documentation>The title of the rating (e.g., School Rating, Safety Score).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 				<ann:EdFiId>93</ann:EdFiId>
