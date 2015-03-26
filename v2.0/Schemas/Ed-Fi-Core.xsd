@@ -2494,7 +2494,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="AppropriateGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Grade levels for the prescribed intervention-if omitted, considered generally applicable.</xs:documentation>
+							<xs:documentation>Grade levels for the prescribed intervention. If omitted, considered generally applicable.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
 								<ann:EdFiId>1459</ann:EdFiId>
