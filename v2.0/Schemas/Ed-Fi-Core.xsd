@@ -1070,7 +1070,7 @@ Prose
 					</xs:element>
 					<xs:element name="CourseLevelCharacteristic" type="CourseLevelCharacteristicType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Specification of the specific program or designation associated with the course.  For example: Ap, IB, Dual Credit, CTE. etc.</xs:documentation>
+							<xs:documentation>The type of specific program or designation with which the course is associated (e.g., AP, IB, Dual Credit, CTE).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1299</ann:EdFiId>
 							</xs:appinfo>
