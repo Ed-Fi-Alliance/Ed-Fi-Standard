@@ -10863,7 +10863,7 @@ Volunteer/no contract
 	</xs:complexType>
 	<xs:complexType name="StateEducationAgencyReferenceType">
 		<xs:annotation>
-			<xs:documentation>Provides alternative references for State Education Agency reference during interchange. Use XML IDREF to reference an State Education Agency record that is included in the interchange</xs:documentation>
+			<xs:documentation>Provides alternative references for State Education Agency reference during interchange. Use XML IDREF to reference a State Education Agency record that is included in the interchange</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
 				<ann:EdFiId>460</ann:EdFiId>
@@ -10874,7 +10874,7 @@ Volunteer/no contract
 				<xs:sequence>
 					<xs:element name="StateEducationAgencyIdentity" type="StateEducationAgencyIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of State Education Agency.</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of State Education Agencies.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2134</ann:EdFiId>
 							</xs:appinfo>
@@ -10882,7 +10882,7 @@ Volunteer/no contract
 					</xs:element>
 					<xs:element name="StateEducationAgencyLookup" type="StateEducationAgencyLookupType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of State Education Agency.</xs:documentation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of State Education Agencies.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2395</ann:EdFiId>
 							</xs:appinfo>
