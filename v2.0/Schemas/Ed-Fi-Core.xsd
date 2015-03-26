@@ -3521,7 +3521,7 @@ Bilingual/English as a Second Language</xs:documentation>
 					</xs:element>
 					<xs:element name="LearningObjectiveReference" type="LearningObjectiveReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>References the Learning Objective(s) the the Program is associated with.</xs:documentation>
+							<xs:documentation>References the Learning Objective(s) with which the Program is associated.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1574</ann:EdFiId>
 							</xs:appinfo>
@@ -7891,10 +7891,10 @@ Aligns with Federal requirements.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="TitleIPartAParticipant" type="TitleIPartAParticipantType">
 						<xs:annotation>
-							<xs:documentation>An indication of the type of Title I program, if any, in which the student is participating and served:
+							<xs:documentation>An indication of the type of Title I program, if any, in which the student is participating and by which the student is served:
 Public Targeted Assistance Program
 Public Schoolwide Program
-Private school student participating
+Private School Students Participating
 Local Neglected Program</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1162</ann:EdFiId>
