@@ -7350,7 +7350,7 @@ Reporter</xs:documentation>
 					</xs:element>
 					<xs:element name="USInitialEntry" type="xs:date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year on which the student first entered the US.</xs:documentation>
+							<xs:documentation>The month, day, and year on which the student first entered the U.S.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1092</ann:EdFiId>
 							</xs:appinfo>
@@ -7358,7 +7358,7 @@ Reporter</xs:documentation>
 					</xs:element>
 					<xs:element name="USMostRecentEntry" type="xs:date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year of the student's most recent entry into the US.</xs:documentation>
+							<xs:documentation>The month, day, and year of the student's most recent entry into the U.S.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1094</ann:EdFiId>
 							</xs:appinfo>
@@ -7366,7 +7366,7 @@ Reporter</xs:documentation>
 					</xs:element>
 					<xs:element name="USInitialSchoolEntry" type="xs:date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year on which the student first entered a US School.</xs:documentation>
+							<xs:documentation>The month, day, and year on which the student first entered a U.S. School.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1093</ann:EdFiId>
 							</xs:appinfo>
@@ -12546,7 +12546,7 @@ Tardy</xs:documentation>
 			</xs:element>
 			<xs:element name="BirthInternationalProvince" type="BirthInternationalProvince" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>For students born outside of the US, the Province or jurisdiction in which an individual is born.</xs:documentation>
+					<xs:documentation>For students born outside of the U.S., the Province or jurisdiction in which an individual is born.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>757</ann:EdFiId>
 					</xs:appinfo>
@@ -12562,7 +12562,7 @@ Tardy</xs:documentation>
 			</xs:element>
 			<xs:element name="DateEnteredUS" type="xs:date" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>For students born outside of the US, the date the student entered the US.</xs:documentation>
+					<xs:documentation>For students born outside of the U.S., the date the student entered the U.S.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>756</ann:EdFiId>
 					</xs:appinfo>
@@ -12623,7 +12623,7 @@ Student late arrival/early dismissal</xs:documentation>
 		<xs:sequence>
 			<xs:element name="CitizenshipStatus" type="CitizenshipStatusType">
 				<xs:annotation>
-					<xs:documentation>An indicator of whether or not the person is a US citizen.</xs:documentation>
+					<xs:documentation>An indicator of whether or not the person is a U.S. citizen.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>761</ann:EdFiId>
 					</xs:appinfo>
@@ -12632,7 +12632,7 @@ Student late arrival/early dismissal</xs:documentation>
 			<xs:choice minOccurs="0">
 				<xs:element name="Visa" type="VisaType" maxOccurs="unbounded">
 					<xs:annotation>
-						<xs:documentation>An indicator of a non-US citizen's Visa type.</xs:documentation>
+						<xs:documentation>An indicator of a non-U.S. citizen's Visa type.</xs:documentation>
 						<xs:appinfo>
 							<ann:EdFiId>762</ann:EdFiId>
 						</xs:appinfo>
@@ -12640,7 +12640,7 @@ Student late arrival/early dismissal</xs:documentation>
 				</xs:element>
 				<xs:element name="USCitizenshipIdentificationDocument" type="IdentificationDocument" maxOccurs="unbounded">
 					<xs:annotation>
-						<xs:documentation>Describe the probationary documentation of US citizenship.</xs:documentation>
+						<xs:documentation>Describe the probationary documentation of U.S. citizenship.</xs:documentation>
 						<xs:appinfo>
 							<ann:EdFiId>947</ann:EdFiId>
 						</xs:appinfo>
@@ -12649,7 +12649,7 @@ Student late arrival/early dismissal</xs:documentation>
 			</xs:choice>
 			<xs:element name="ForeignCitizenshipIdentificationDocument" type="IdentificationDocument" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
-					<xs:documentation>Describe the probationary documentation of citizenship of an alien or a foreign nationality of a US citizen.</xs:documentation>
+					<xs:documentation>Describe the probationary documentation of citizenship of an alien or a foreign nationality of a U.S. citizen.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>824</ann:EdFiId>
 					</xs:appinfo>
@@ -25854,7 +25854,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="BirthInternationalProvince">
 		<xs:annotation>
-			<xs:documentation>For students born outside of the US, the Province or jurisdiction in which an individual is born.</xs:documentation>
+			<xs:documentation>For students born outside of the U.S., the Province or jurisdiction in which an individual is born.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 				<ann:EdFiId>62</ann:EdFiId>
@@ -26949,7 +26949,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	</xs:simpleType>
 	<xs:simpleType name="Currency">
 		<xs:annotation>
-			<xs:documentation>US currency in dollars and cents.</xs:documentation>
+			<xs:documentation>U.S. currency in dollars and cents.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 				<ann:EdFiId>36</ann:EdFiId>
