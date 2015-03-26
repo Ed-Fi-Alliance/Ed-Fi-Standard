@@ -9728,7 +9728,7 @@ Cognitive and perceptual skills test
 				<xs:sequence>
 					<xs:element name="LearningStandardIdentity" type="LearningStandardIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of learning standard.</xs:documentation>
+							<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of learning standards.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2122</ann:EdFiId>
 							</xs:appinfo>
@@ -9736,7 +9736,7 @@ Cognitive and perceptual skills test
 					</xs:element>
 					<xs:element name="LearningStandardLookup" type="LearningStandardLookupType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of learning standard.</xs:documentation>
+							<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of learning standards.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2387</ann:EdFiId>
 							</xs:appinfo>
