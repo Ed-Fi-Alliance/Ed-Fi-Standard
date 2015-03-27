@@ -2832,7 +2832,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="PrerequisiteLearningStandardReference" type="LearningStandardReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>The unique identifier of a prerequisite Learning Standard Item, a competency needed prior to learning this one. (Some items may have no prerequisites others may have one or more prerequisites. This should only be used to represent the immediate predecessors in a competency-based pathway, i.e. not prerequisites of prerequisites.).</xs:documentation>
+							<xs:documentation>The unique identifier of a prerequisite Learning Standard Item, a competency needed prior to learning this one. (Some items may have no prerequisites others may have one or more prerequisites. This should only be used to represent the immediate predecessors in a competency-based pathway, i.e. not prerequisites of prerequisites).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1503</ann:EdFiId>
 							</xs:appinfo>
@@ -4613,7 +4613,7 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
 					</xs:element>
 					<xs:element name="GradeValueQualifier" type="GradeValueQualifier" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's Grade Point Average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.).</xs:documentation>
+							<xs:documentation>The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's Grade Point Average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.)</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1715</ann:EdFiId>
 							</xs:appinfo>
@@ -5304,7 +5304,7 @@ LEP Exempt
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:annotation>
-		<xs:documentation>===== Descriptors =====.</xs:documentation>
+		<xs:documentation>===== Descriptors =====</xs:documentation>
 	</xs:annotation>
 	<xs:complexType name="AcademicSubjectDescriptor">
 		<xs:annotation>
@@ -6478,7 +6478,7 @@ LEP Exempt
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:annotation>
-		<xs:documentation>===== Associations =====.</xs:documentation>
+		<xs:documentation>===== Associations =====</xs:documentation>
 	</xs:annotation>
 	<xs:complexType name="EducationOrganizationInterventionPrescriptionAssociation">
 		<xs:annotation>
@@ -8042,7 +8042,7 @@ Local Neglected Program.</xs:documentation>
 		</xs:attribute>
 	</xs:complexType>
 	<xs:annotation>
-		<xs:documentation>===== Extended Reference Types =====.</xs:documentation>
+		<xs:documentation>===== Extended Reference Types =====</xs:documentation>
 	</xs:annotation>
 	<xs:complexType name="AcademicWeekIdentityType">
 		<xs:annotation>
@@ -11394,7 +11394,7 @@ Volunteer/no contract
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:annotation>
-		<xs:documentation>===== Extended Descriptor Reference Types =====.</xs:documentation>
+		<xs:documentation>===== Extended Descriptor Reference Types =====</xs:documentation>
 	</xs:annotation>
 	<xs:complexType name="AcademicSubjectDescriptorReferenceType">
 		<xs:annotation>
@@ -11985,7 +11985,7 @@ Volunteer/no contract
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:annotation>
-		<xs:documentation>===== Common Types =====.</xs:documentation>
+		<xs:documentation>===== Common Types =====</xs:documentation>
 	</xs:annotation>
 	<xs:complexType name="AcademicHonor">
 		<xs:annotation>
@@ -12215,7 +12215,7 @@ Volunteer/no contract
 			</xs:element>
 			<xs:element name="CountyFIPSCode" type="CountyFIPSCode" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>The Federal Information Processing Standards (FIPS) numeric code for the county issued by the National Institute of Standards and Technology (NIST). Counties are considered to be the "first-order subdivisions" of each State and statistically equivalent entity, regardless of their local designations (county, parish, borough, etc.). Counties in different States will have the same code. A unique county number is created when combined with the 2-digit FIPS State Code.</xs:documentation>
+					<xs:documentation>The Federal Information Processing Standards (FIPS) numeric code for the county issued by the National Institute of Standards and Technology (NIST). Counties are considered to be the "first-order subdivisions" of each State and statistically equivalent entity, regardless of their local designations (county, parish, borough, etc.) Counties in different States will have the same code. A unique county number is created when combined with the 2-digit FIPS State Code.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>723</ann:EdFiId>
 					</xs:appinfo>
@@ -12255,7 +12255,7 @@ Volunteer/no contract
 			</xs:element>
 			<xs:element name="AddressType" type="AddressType">
 				<xs:annotation>
-					<xs:documentation>The type of address listed for an individual or organization.	For example:  Physical Address, Mailing Address, Home Address, etc.).</xs:documentation>
+					<xs:documentation>The type of address listed for an individual or organization.	For example:  Physical Address, Mailing Address, Home Address, etc.)</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>718</ann:EdFiId>
 					</xs:appinfo>
@@ -12570,7 +12570,7 @@ Tardy.</xs:documentation>
 			</xs:element>
 			<xs:element name="MultipleBirthStatus" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Indicator of whether the student was born with other siblings (i.e., twins, triplets, etc.).</xs:documentation>
+					<xs:documentation>Indicator of whether the student was born with other siblings (i.e., twins, triplets, etc.)</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>758</ann:EdFiId>
 					</xs:appinfo>
@@ -13279,7 +13279,7 @@ Distinguished Achievement Program.</xs:documentation>
 			</xs:element>
 			<xs:element name="ElectronicMailType" type="ElectronicMailType">
 				<xs:annotation>
-					<xs:documentation>The type of email listed for an individual or organization. For example: Home/Personal, Work, etc.).</xs:documentation>
+					<xs:documentation>The type of email listed for an individual or organization. For example: Home/Personal, Work, etc.)</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>818</ann:EdFiId>
 					</xs:appinfo>
@@ -13451,7 +13451,7 @@ Change of assignment.</xs:documentation>
 		<xs:sequence>
 			<xs:element name="AddressType" type="AddressType">
 				<xs:annotation>
-					<xs:documentation>The type of address listed for an individual or organization. For example:  Physical Address, Mailing Address, Home Address, etc.).</xs:documentation>
+					<xs:documentation>The type of address listed for an individual or organization. For example:  Physical Address, Mailing Address, Home Address, etc.)</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>841</ann:EdFiId>
 					</xs:appinfo>
@@ -14711,7 +14711,7 @@ Met standard
 		</xs:sequence>
 	</xs:complexType>
 	<xs:annotation>
-		<xs:documentation>===== Enumerations and Enumerated Collections =====.</xs:documentation>
+		<xs:documentation>===== Enumerations and Enumerated Collections =====</xs:documentation>
 	</xs:annotation>
 	<xs:simpleType name="AcademicHonorCategoryType">
 		<xs:annotation>
@@ -19695,7 +19695,7 @@ Vocational.</xs:documentation>
 	</xs:simpleType>
 	<xs:simpleType name="GradeType">
 		<xs:annotation>
-			<xs:documentation>The type of grade in a report card or transcript (e.g., Final, Exam, Grading Period, ...).</xs:documentation>
+			<xs:documentation>The type of grade in a report card or transcript (e.g., Final, Exam, Grading Period).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 				<ann:EdFiId>177</ann:EdFiId>
@@ -25680,7 +25680,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:annotation>
-		<xs:documentation>===== String Simple Types =====.</xs:documentation>
+		<xs:documentation>===== String Simple Types =====</xs:documentation>
 	</xs:annotation>
 	<xs:simpleType name="AccountCodeCategory">
 		<xs:annotation>
@@ -26076,7 +26076,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	<xs:simpleType name="CountyFIPSCode">
 		<xs:annotation>
 			<xs:documentation>Definition
-The Federal Information Processing Standards (FIPS) numeric code for the county issued by the National Institute of Standards and Technology (NIST). Counties are considered to be the "first-order subdivisions" of each State and statistically equivalent entity, regardless of their local designations (county, parish, borough, etc.). Counties in different States will have the same code. A unique county number is created when combined with the 2-digit FIPS State Code.</xs:documentation>
+The Federal Information Processing Standards (FIPS) numeric code for the county issued by the National Institute of Standards and Technology (NIST). Counties are considered to be the "first-order subdivisions" of each State and statistically equivalent entity, regardless of their local designations (county, parish, borough, etc.) Counties in different States will have the same code. A unique county number is created when combined with the 2-digit FIPS State Code.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 				<ann:EdFiId>30</ann:EdFiId>
@@ -26310,7 +26310,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	</xs:simpleType>
 	<xs:simpleType name="GradeValueQualifier">
 		<xs:annotation>
-			<xs:documentation>The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's Grade Point Average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.).</xs:documentation>
+			<xs:documentation>The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's Grade Point Average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.)</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 				<ann:EdFiId>54</ann:EdFiId>
@@ -26918,7 +26918,7 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:annotation>
-		<xs:documentation>===== Numeric Simple Types =====.</xs:documentation>
+		<xs:documentation>===== Numeric Simple Types =====</xs:documentation>
 	</xs:annotation>
 	<xs:simpleType name="CreditsValue">
 		<xs:annotation>
