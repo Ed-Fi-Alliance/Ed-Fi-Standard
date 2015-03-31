@@ -6529,7 +6529,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationNetworkAssociation">
 		<xs:annotation>
-			<xs:documentation>Properties of the association between the Education Organization and its network(s).</xs:documentation>
+			<xs:documentation>Properties of the association between the EducationOrganization and its network(s).</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>596</ann:EdFiId>
@@ -6540,7 +6540,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="EducationOrganizationNetworkReference" type="EducationOrganizationNetworkReferenceType">
 						<xs:annotation>
-							<xs:documentation>A reference to the network to which this education organization is a member.</xs:documentation>
+							<xs:documentation>A reference to the EducationOrganizationNetwork to which this education organization is a member.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1005</ann:EdFiId>
 							</xs:appinfo>
@@ -6548,7 +6548,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="MemberEducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The education organization member in the network.</xs:documentation>
+							<xs:documentation>The EducationOrganization member in the network.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1007</ann:EdFiId>
 							</xs:appinfo>
@@ -6556,7 +6556,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="BeginDate" type="xs:date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The date on which the education organization joined this network.</xs:documentation>
+							<xs:documentation>The date on which the EducationOrganization joined this network.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1004</ann:EdFiId>
 							</xs:appinfo>
@@ -6564,7 +6564,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="EndDate" type="xs:date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The date on which the education organization left this network.</xs:documentation>
+							<xs:documentation>The date on which the EducationOrganization left this network.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1006</ann:EdFiId>
 							</xs:appinfo>
@@ -6587,7 +6587,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The associated peer organization(s) for the Education Organization.</xs:documentation>
+							<xs:documentation>The associated peer organization(s) for the EducationOrganization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1008</ann:EdFiId>
 							</xs:appinfo>
@@ -6595,7 +6595,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="PeerEducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The associated peer organization(s) for the Education Organization.</xs:documentation>
+							<xs:documentation>The associated peer organization(s) for the EducationOrganization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1009</ann:EdFiId>
 							</xs:appinfo>
@@ -6618,7 +6618,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="FeederSchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation>Reference to the Feeder school.</xs:documentation>
+							<xs:documentation>Reference to the feeder school.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1013</ann:EdFiId>
 							</xs:appinfo>
@@ -6662,7 +6662,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StaffCohortAssociation">
 		<xs:annotation>
-			<xs:documentation>This association indicates the staff associated with a cohort of students.</xs:documentation>
+			<xs:documentation>This association indicates the Staff associated with a cohort of students.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>599</ann:EdFiId>
@@ -6673,7 +6673,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="StaffReference" type="StaffReferenceType">
 						<xs:annotation>
-							<xs:documentation>The staff associated with the cohort of students.</xs:documentation>
+							<xs:documentation>The Staff associated with the cohort of students.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1018</ann:EdFiId>
 							</xs:appinfo>
@@ -6681,7 +6681,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="CohortReference" type="CohortReferenceType">
 						<xs:annotation>
-							<xs:documentation>Reference to the cohort associated with the staff.</xs:documentation>
+							<xs:documentation>Reference to the Cohort associated with the Staff.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1016</ann:EdFiId>
 							</xs:appinfo>
@@ -6728,7 +6728,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="StaffReference" type="StaffReferenceType">
 						<xs:annotation>
-							<xs:documentation>The staff assigned to the education organization.</xs:documentation>
+							<xs:documentation>The Staff assigned to the EducationOrganization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1027</ann:EdFiId>
 							</xs:appinfo>
@@ -6736,7 +6736,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The educational organization to which the staff member provides services.</xs:documentation>
+							<xs:documentation>The EducationalOrganization to which the Staff member provides services.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1021</ann:EdFiId>
 							</xs:appinfo>
@@ -6797,7 +6797,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="StaffEducationOrganizationEmploymentAssociation">
 		<xs:annotation>
-			<xs:documentation>This association indicates the education organization an employee, contractor, volunteer, or other service provider is formally associated with typically indicated by which organization the staff member has a services contract with or receives compensation from.</xs:documentation>
+			<xs:documentation>This association indicates the EducationOrganization an employee, contractor, volunteer, or other service provider is formally associated with typically indicated by which organization the staff member has a services contract with or receives compensation from.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>601</ann:EdFiId>
@@ -6808,7 +6808,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="StaffReference" type="StaffReferenceType">
 						<xs:annotation>
-							<xs:documentation>The staff employed by the education organization.</xs:documentation>
+							<xs:documentation>The Staff employed by the EducationOrganization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1035</ann:EdFiId>
 							</xs:appinfo>
@@ -6816,7 +6816,7 @@ LEP Exempt
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The Education Organization with which the staff is employed.</xs:documentation>
+							<xs:documentation>The EducationOrganization with which the staff is employed.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1029</ann:EdFiId>
 							</xs:appinfo>
@@ -6847,7 +6847,7 @@ Volunteer/no contract
 					</xs:element>
 					<xs:element name="Department" type="Department" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The department or suborganization the employee/contractor is associated with in the Education Organization.</xs:documentation>
+							<xs:documentation>The department or suborganization the employee/contractor is associated with in the EducationOrganization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1028</ann:EdFiId>
 							</xs:appinfo>
@@ -6883,7 +6883,7 @@ Volunteer/no contract
 	</xs:complexType>
 	<xs:complexType name="StaffProgramAssociation">
 		<xs:annotation>
-			<xs:documentation>This association indicates the staff associated with a program.</xs:documentation>
+			<xs:documentation>This association indicates the Staff associated with a program.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>602</ann:EdFiId>
@@ -6894,7 +6894,7 @@ Volunteer/no contract
 				<xs:sequence>
 					<xs:element name="StaffReference" type="StaffReferenceType">
 						<xs:annotation>
-							<xs:documentation>The staff associated with the program.</xs:documentation>
+							<xs:documentation>The Staff associated with the Program.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1039</ann:EdFiId>
 							</xs:appinfo>
@@ -6902,7 +6902,7 @@ Volunteer/no contract
 					</xs:element>
 					<xs:element name="ProgramReference" type="ProgramReferenceType">
 						<xs:annotation>
-							<xs:documentation>The program associated to the staff.</xs:documentation>
+							<xs:documentation>The Program associated to the Staff.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1038</ann:EdFiId>
 							</xs:appinfo>
@@ -6910,7 +6910,7 @@ Volunteer/no contract
 					</xs:element>
 					<xs:element name="BeginDate" type="xs:date">
 						<xs:annotation>
-							<xs:documentation>Start date for the association of staff to this cohort.</xs:documentation>
+							<xs:documentation>Start date for the association of staff to this program.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1036</ann:EdFiId>
 							</xs:appinfo>
@@ -6918,7 +6918,7 @@ Volunteer/no contract
 					</xs:element>
 					<xs:element name="EndDate" type="xs:date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>End date for the association of staff to this cohort.</xs:documentation>
+							<xs:documentation>End date for the association of staff to this program.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1037</ann:EdFiId>
 							</xs:appinfo>
