@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 rel. 2 sp2 (x64) (http://www.altova.com) by Arthur Lindow (Double Line, Inc.) -->
 <!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200-RFC" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200-RFC" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
@@ -2661,7 +2662,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="ContentStandard" type="ContentStandard" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>A reference to the type of content standard (e.g., state, national, etc.)</xs:documentation>
+							<xs:documentation>A reference to the type of content standard (e.g., state, national)</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1485</ann:EdFiId>
 							</xs:appinfo>
