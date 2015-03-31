@@ -4485,7 +4485,7 @@ Special education students
 					<xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:documentation>Reflects important characteristics of the student's home situation:
-Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent and Unaccompanied Youth.</xs:documentation>
+Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1702</ann:EdFiId>
 							</xs:appinfo>
@@ -5473,7 +5473,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="AssessmentIdentificationSystemMap" type="AssessmentIdentificationSystemMapType">
 						<xs:annotation>
-							<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to an assessment.</xs:documentation>
+							<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to an assessment.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>624</ann:EdFiId>
 							</xs:appinfo>
@@ -6353,7 +6353,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="StaffdentificationSystemMap" type="StaffIdentificationSystemMapType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a staff member.</xs:documentation>
+							<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a staff member.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>631</ann:EdFiId>
 							</xs:appinfo>
