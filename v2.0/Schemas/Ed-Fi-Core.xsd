@@ -1680,7 +1680,7 @@ Representative of visiting school
 				<xs:sequence>
 					<xs:element name="ContentIdentifier" type="ContentIdentifier">
 						<xs:annotation>
-							<xs:documentation>A unique identifier for the content.</xs:documentation>
+							<xs:documentation>A unique identifier for the EducationContent.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1365</ann:EdFiId>
 							</xs:appinfo>
@@ -1698,7 +1698,7 @@ Representative of visiting school
 						<xs:sequence>
 							<xs:element name="ShortDescription" type="ShortDescription">
 								<xs:annotation>
-									<xs:documentation>A short name or written representation of the education content.</xs:documentation>
+									<xs:documentation>A short name or written representation of the EducationContent.</xs:documentation>
 									<xs:appinfo>
 										<ann:EdFiId>1377</ann:EdFiId>
 									</xs:appinfo>
@@ -1706,7 +1706,7 @@ Representative of visiting school
 							</xs:element>
 							<xs:element name="Description" type="Description" minOccurs="0">
 								<xs:annotation>
-									<xs:documentation>An extended written representation of the education content.</xs:documentation>
+									<xs:documentation>An extended written representation of the EducationContent.</xs:documentation>
 									<xs:appinfo>
 										<ann:EdFiId>1369</ann:EdFiId>
 									</xs:appinfo>
@@ -1813,7 +1813,7 @@ Representative of visiting school
 							</xs:element>
 							<xs:element name="Language" type="LanguageDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
 								<xs:annotation>
-									<xs:documentation>An indication of the languages in which the Education Content is designed.</xs:documentation>
+									<xs:documentation>An indication of the languages in which the EducationContent is designed.</xs:documentation>
 									<xs:appinfo>
 										<ann:Descriptor>LanguageDescriptor</ann:Descriptor>
 										<ann:EdFiId>1371</ann:EdFiId>
@@ -1840,7 +1840,7 @@ Representative of visiting school
 					</xs:choice>
 					<xs:element name="Cost" type="Currency" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>An amount that has to be paid or spent to buy or obtain the education content.</xs:documentation>
+							<xs:documentation>An amount that has to be paid or spent to buy or obtain the EducationContent.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1366</ann:EdFiId>
 							</xs:appinfo>
@@ -1935,7 +1935,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="WebSite" type="URI" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The public web site address (URL) for the educational organization.</xs:documentation>
+							<xs:documentation>The public web site address (URL) for the EducationOrganization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1390</ann:EdFiId>
 							</xs:appinfo>
@@ -1943,7 +1943,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="OperationalStatus" type="OperationalStatusType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The current operational status of the education organization (e.g., active, inactive).</xs:documentation>
+							<xs:documentation>The current operational status of the EducationOrganization (e.g., active, inactive).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1387</ann:EdFiId>
 							</xs:appinfo>
@@ -1955,7 +1955,7 @@ Representative of visiting school
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationNetwork">
 		<xs:annotation>
-			<xs:documentation>This entity is a self-organized membership network of peer-level EdOrgs intended to provide shared services or collective procurement.</xs:documentation>
+			<xs:documentation>This entity is a self-organized membership network of peer-level education organizations intended to provide shared services or collective procurement.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>557</ann:EdFiId>
@@ -1986,7 +1986,7 @@ Representative of visiting school
 	</xs:complexType>
 	<xs:complexType name="EducationServiceCenter">
 		<xs:annotation>
-			<xs:documentation>This entity represents a regional, multi-services public agency authorized by State Law to develop, manage and provide services, programs, or other support options (e.g., construction, food services, and technology services) to LEAs.</xs:documentation>
+			<xs:documentation>This entity represents a regional, multi-services public agency authorized by state law to develop, manage and provide services, programs, or other support options (e.g., construction, food services, and technology services) to LEAs.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>558</ann:EdFiId>
@@ -2076,7 +2076,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType">
 						<xs:annotation>
-							<xs:documentation>Identifies the grading period for the grade.</xs:documentation>
+							<xs:documentation>Identifies the grading period for the Grade.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1417</ann:EdFiId>
 							</xs:appinfo>
@@ -2099,7 +2099,7 @@ Representative of visiting school
 				<xs:sequence>
 					<xs:element name="GradebookEntryTitle" type="GradebookEntryTitle">
 						<xs:annotation>
-							<xs:documentation>The name or title of the activity to be recorded in the gradebook entry.</xs:documentation>
+							<xs:documentation>The name or title of the activity to be recorded in the GradebookEntry.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1424</ann:EdFiId>
 							</xs:appinfo>
@@ -2107,7 +2107,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="GradebookEntryType" type="GradebookEntryType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc.</xs:documentation>
+							<xs:documentation>The type of the GradebookEntry; for example, homework, assignment, quiz, unit test, oral presentation, etc.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1425</ann:EdFiId>
 							</xs:appinfo>
@@ -2131,7 +2131,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="LearningStandardReference" type="LearningStandardReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Learning Standard(s) associated with the Gradebook Entry.</xs:documentation>
+							<xs:documentation>LearningStandard(s) associated with the GradebookEntry.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1428</ann:EdFiId>
 							</xs:appinfo>
@@ -2139,7 +2139,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="LearningObjectiveReference" type="LearningObjectiveReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Learning Objectives associated with the Gradebook Entry.</xs:documentation>
+							<xs:documentation>LearningObjectives associated with the GradebookEntry.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1427</ann:EdFiId>
 							</xs:appinfo>
@@ -2147,7 +2147,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="SectionReference" type="SectionReferenceType">
 						<xs:annotation>
-							<xs:documentation>The Section associated with the gradebook entry.</xs:documentation>
+							<xs:documentation>The Section associated with the GradebookEntry.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1429</ann:EdFiId>
 							</xs:appinfo>
@@ -2155,7 +2155,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Identifies the grading period for the gradebook entry.</xs:documentation>
+							<xs:documentation>Identifies the grading period for the GradebookEntry.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1426</ann:EdFiId>
 							</xs:appinfo>
@@ -2195,7 +2195,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="BeginDate" type="xs:date">
 						<xs:annotation>
-							<xs:documentation>Month, day, and year of the first day of the grading period.</xs:documentation>
+							<xs:documentation>Month, day, and year of the first day of the GradingPeriod.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1430</ann:EdFiId>
 							</xs:appinfo>
@@ -2203,7 +2203,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="EndDate" type="xs:date">
 						<xs:annotation>
-							<xs:documentation>Month, day, and year of the last day of the grading period.</xs:documentation>
+							<xs:documentation>Month, day, and year of the last day of the GradingPeriod.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1432</ann:EdFiId>
 							</xs:appinfo>
@@ -2211,7 +2211,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
 						<xs:annotation>
-							<xs:documentation>Total days available for educational instruction during the grading period.</xs:documentation>
+							<xs:documentation>Total days available for educational instruction during the GradingPeriod.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1435</ann:EdFiId>
 							</xs:appinfo>
@@ -2251,7 +2251,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="IndividualPlan" type="xs:boolean" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>An indicator of whether the graduation plan is tailored for an individual.</xs:documentation>
+							<xs:documentation>An indicator of whether the GraduationPlan is tailored for an individual.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1441</ann:EdFiId>
 							</xs:appinfo>
@@ -2283,7 +2283,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The reference to the education organization defining the plan.</xs:documentation>
+							<xs:documentation>The reference to the EducationOrganization defining the plan.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1438</ann:EdFiId>
 							</xs:appinfo>
@@ -2322,7 +2322,7 @@ Representative of visiting school
 				<xs:sequence>
 					<xs:element name="EducationContentSource" type="EducationContentSource">
 						<xs:annotation>
-							<xs:documentation>Resources related to or used in this intervention, including any documentation around the intervention itself. Since an intervention is intended to be a published intervention, an intervention should have at least one such resource.</xs:documentation>
+							<xs:documentation>Resources related to or used in this intervention, including any documentation around the Intervention itself. Since an intervention is intended to be a published intervention, an intervention should have at least one such resource.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1449</ann:EdFiId>
 							</xs:appinfo>
@@ -2338,7 +2338,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="Diagnosis" type="DiagnosisDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Targeted purpose of the intervention (e.g., attendance issue, dropout risk).</xs:documentation>
+							<xs:documentation>Targeted purpose of the Intervention (e.g., attendance issue, dropout risk).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1448</ann:EdFiId>
 							</xs:appinfo>
@@ -2349,7 +2349,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="PopulationServed" type="PopulationServedType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>A subset of students that are the focus of the intervention.</xs:documentation>
+							<xs:documentation>A subset of students that are the focus of the Intervention.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1456</ann:EdFiId>
 							</xs:appinfo>
@@ -2357,7 +2357,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Sexes for the intervention. If omitted, considered generally applicable.</xs:documentation>
+							<xs:documentation>Sexes for the Intervention. If omitted, considered generally applicable.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1444</ann:EdFiId>
 							</xs:appinfo>
@@ -2365,7 +2365,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="AppropriateGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Grade levels for the intervention-if omitted, considered generally applicable.</xs:documentation>
+							<xs:documentation>Grade levels for the Intervention-if omitted, considered generally applicable.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
 								<ann:EdFiId>1443</ann:EdFiId>
@@ -2414,7 +2414,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="StaffReference" type="StaffReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Relates the staff member associated with the intervention.</xs:documentation>
+							<xs:documentation>Relates the staff member associated with the Intervention.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1458</ann:EdFiId>
 							</xs:appinfo>
@@ -2453,7 +2453,7 @@ Representative of visiting school
 				<xs:sequence>
 					<xs:element name="EducationContentSource" type="EducationContentSource">
 						<xs:annotation>
-							<xs:documentation>Resources related to or used in this intervention prescription, including any documentation around the intervention prescription itself. Since an intervention prescription is intended to be a published intervention, an intervention prescription should have at least one such resource.</xs:documentation>
+							<xs:documentation>Resources related to or used in this intervention prescription, including any documentation around the InterventionPrescription itself. Since an intervention prescription is intended to be a published intervention, an intervention prescription should have at least one such resource.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1464</ann:EdFiId>
 							</xs:appinfo>
@@ -2469,7 +2469,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="Diagnosis" type="DiagnosisDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Targeted purpose of the intervention (e.g., attendance issue, dropout risk).</xs:documentation>
+							<xs:documentation>Targeted purpose of the InterventionPrescription (e.g., attendance issue, dropout risk).</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>DiagnosisDescriptor</ann:Descriptor>
 								<ann:EdFiId>1463</ann:EdFiId>
@@ -2478,7 +2478,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="PopulationServed" type="PopulationServedType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>A subset of students that are the focus of the intervention.</xs:documentation>
+							<xs:documentation>A subset of students that are the focus of the InterventionPrescription.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1468</ann:EdFiId>
 							</xs:appinfo>
@@ -2486,7 +2486,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Sexes for the intervention. If omitted, considered generally applicable.</xs:documentation>
+							<xs:documentation>Sexes for the InterventionPrescription. If omitted, considered generally applicable.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1460</ann:EdFiId>
 							</xs:appinfo>
@@ -2511,7 +2511,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the Education Organization which is sponsoring the intervention prescription.</xs:documentation>
+							<xs:documentation>Relates the Education Organization which is sponsoring the InterventionPrescription.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1465</ann:EdFiId>
 							</xs:appinfo>
@@ -2550,7 +2550,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="InterventionPrescriptionReference" type="InterventionPrescriptionReferenceType">
 						<xs:annotation>
-							<xs:documentation>Reference to the intervention prescription being studied.</xs:documentation>
+							<xs:documentation>Reference to the InterventionPrescription being studied.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1478</ann:EdFiId>
 							</xs:appinfo>
@@ -2558,7 +2558,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="InterventionEffectiveness" type="InterventionEffectiveness" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Measurement of the effectiveness of the intervention per diagnosis.</xs:documentation>
+							<xs:documentation>Measurement of the effectiveness of the InterventionStudy per diagnosis.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1477</ann:EdFiId>
 							</xs:appinfo>
@@ -2599,7 +2599,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="PopulationServed" type="PopulationServedType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>A subset of students that are the focus of the intervention.</xs:documentation>
+							<xs:documentation>A subset of students that are the focus of the InterventionStudy.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1481</ann:EdFiId>
 							</xs:appinfo>
@@ -2623,7 +2623,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the Education Organization which is sponsoring the intervention study.</xs:documentation>
+							<xs:documentation>Relates the EducationOrganization which is sponsoring the intervention study.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1475</ann:EdFiId>
 							</xs:appinfo>
@@ -2654,7 +2654,7 @@ Representative of visiting school
 				<xs:sequence>
 					<xs:element name="LearningObjectiveId" type="LearningStandardId" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The Identifier for the specific learning objective in the context of a standard (e.g., 111.15.3.1.A).</xs:documentation>
+							<xs:documentation>The identifier for the specific learning objective in the context of a standard (e.g., 111.15.3.1.A).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1487</ann:EdFiId>
 							</xs:appinfo>
@@ -2670,7 +2670,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="Objective" type="Objective">
 						<xs:annotation>
-							<xs:documentation>The designated title of the learning objective.</xs:documentation>
+							<xs:documentation>The designated title of the LearningObjective.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1490</ann:EdFiId>
 							</xs:appinfo>
@@ -2678,7 +2678,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="Description" type="Description" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The description of the learning objective.</xs:documentation>
+							<xs:documentation>The description of the LearningObjective.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1486</ann:EdFiId>
 							</xs:appinfo>
@@ -2695,7 +2695,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType">
 						<xs:annotation>
-							<xs:documentation>The grade level for which the learning objective is targeted.</xs:documentation>
+							<xs:documentation>The grade level for which the LearningObjective is targeted.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
 								<ann:EdFiId>1491</ann:EdFiId>
@@ -2704,7 +2704,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="Nomenclature" type="Nomenclature" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Reflects the specific nomenclature used for the Learning Objective.</xs:documentation>
+							<xs:documentation>Reflects the specific nomenclature used for the LearningObjective.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1489</ann:EdFiId>
 							</xs:appinfo>
@@ -2712,7 +2712,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="SuccessCriteria" type="Criteria" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>One or more statements that describes the criteria used by teachers and students to check for attainment of a learning objective. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the learning objective.</xs:documentation>
+							<xs:documentation>One or more statements that describes the criteria used by teachers and students to check for attainment of a learning objective. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the LearningObjective.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1493</ann:EdFiId>
 							</xs:appinfo>
@@ -2720,7 +2720,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="LearningStandardReference" type="LearningStandardReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Learning standard(s) included in this objective.</xs:documentation>
+							<xs:documentation>LearningStandard(s) included in this objective.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1488</ann:EdFiId>
 							</xs:appinfo>
@@ -2751,7 +2751,7 @@ Representative of visiting school
 				<xs:sequence>
 					<xs:element name="LearningStandardId" type="LearningStandardId">
 						<xs:annotation>
-							<xs:documentation>The Identifier for the specific learning standard (e.g., 111.15.3.1.A).</xs:documentation>
+							<xs:documentation>The identifier for the specific learning standard (e.g., 111.15.3.1.A).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1499</ann:EdFiId>
 							</xs:appinfo>
@@ -2759,7 +2759,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="LearningStandardIdentificationCode" type="LearningStandardIdentificationCode" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a learning Standard.</xs:documentation>
+							<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a learning standard.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1500</ann:EdFiId>
 							</xs:appinfo>
@@ -2783,7 +2783,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="ContentStandard" type="ContentStandard">
 						<xs:annotation>
-							<xs:documentation>The content standard from which the learning standard was derived.</xs:documentation>
+							<xs:documentation>The content standard from which the LearningStandard was derived.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1495</ann:EdFiId>
 							</xs:appinfo>
@@ -2808,7 +2808,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
 						<xs:annotation>
-							<xs:documentation>Subject area for the learning standard.</xs:documentation>
+							<xs:documentation>Subject area for the LearningStandard.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
 								<ann:EdFiId>1494</ann:EdFiId>
@@ -2825,7 +2825,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="SuccessCriteria" type="Criteria" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>One or more statements that describes the criteria used by teachers and students to check for attainment of a learning standard. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the learning standard.</xs:documentation>
+							<xs:documentation>One or more statements that describes the criteria used by teachers and students to check for attainment of a learning standard. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the LearningStandard.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1504</ann:EdFiId>
 							</xs:appinfo>
@@ -2833,7 +2833,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="PrerequisiteLearningStandardReference" type="LearningStandardReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>The unique identifier of a prerequisite Learning Standard Item, a competency needed prior to learning this one. (Some items may have no prerequisites others may have one or more prerequisites. This should only be used to represent the immediate predecessors in a competency-based pathway, i.e. not prerequisites of prerequisites).</xs:documentation>
+							<xs:documentation>The unique identifier of a prerequisite learning standard item, a competency needed prior to learning this one. (Some items may have no prerequisites others may have one or more prerequisites. This should only be used to represent the immediate predecessors in a competency-based pathway, i.e. not prerequisites of prerequisites).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1503</ann:EdFiId>
 							</xs:appinfo>
