@@ -2998,7 +2998,7 @@ Vacation.</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="Location">
 		<xs:annotation>
-			<xs:documentation>This entity represents the physical space where students gather for a particular Class/Section. The Location may be an indoor or outdoor area designated for the purpose of meeting the educational needs of students.</xs:documentation>
+			<xs:documentation>This entity represents the physical space where students gather for a particular class/section. The Location may be an indoor or outdoor area designated for the purpose of meeting the educational needs of students.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>570</ann:EdFiId>
@@ -5582,7 +5582,7 @@ LEP Exempt
 	</xs:complexType>
 	<xs:complexType name="ClassroomPositionDescriptor">
 		<xs:annotation>
-			<xs:documentation>This descriptor defines the type of position the staff member holds in a specific Class/Section.</xs:documentation>
+			<xs:documentation>This descriptor defines the type of position the staff member holds in a specific class/section.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Descriptor</ann:TypeGroup>
 				<ann:EdFiId>283</ann:EdFiId>
@@ -5593,7 +5593,7 @@ LEP Exempt
 				<xs:sequence>
 					<xs:element name="ClassroomPositionMap" type="ClassroomPositionMapType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The mapping to a known type of position the staff member holds in the specific Class/Section.</xs:documentation>
+							<xs:documentation>The mapping to a known type of position the staff member holds in the specific class/section.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>284</ann:EdFiId>
 							</xs:appinfo>
@@ -6938,7 +6938,7 @@ Volunteer/no contract
 	</xs:complexType>
 	<xs:complexType name="StaffSchoolAssociation">
 		<xs:annotation>
-			<xs:documentation>This association indicates the school(s) to which a staff member provides instructional services.</xs:documentation>
+			<xs:documentation>This association indicates the School(s) to which a staff member provides instructional services.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>603</ann:EdFiId>
@@ -6949,7 +6949,7 @@ Volunteer/no contract
 				<xs:sequence>
 					<xs:element name="StaffReference" type="StaffReferenceType">
 						<xs:annotation>
-							<xs:documentation>The staff member providing services to the school.</xs:documentation>
+							<xs:documentation>The Staff member providing services to the School.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1046</ann:EdFiId>
 							</xs:appinfo>
@@ -6957,7 +6957,7 @@ Volunteer/no contract
 					</xs:element>
 					<xs:element name="SchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation>The school where the staff member provides services.</xs:documentation>
+							<xs:documentation>The School where the Staff member provides services.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1044</ann:EdFiId>
 							</xs:appinfo>
@@ -7009,7 +7009,7 @@ Bilingual/English as a Second Language.</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="StaffSectionAssociation">
 		<xs:annotation>
-			<xs:documentation>This association indicates the class Sections to which a staff member is assigned.</xs:documentation>
+			<xs:documentation>This association indicates the class sections to which a staff member is assigned.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>604</ann:EdFiId>
@@ -7020,7 +7020,7 @@ Bilingual/English as a Second Language.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="StaffReference" type="StaffReferenceType">
 						<xs:annotation>
-							<xs:documentation>The staff member assigned to the Section.</xs:documentation>
+							<xs:documentation>The Staff member assigned to the Section.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1053</ann:EdFiId>
 							</xs:appinfo>
@@ -7028,7 +7028,7 @@ Bilingual/English as a Second Language.</xs:documentation>
 					</xs:element>
 					<xs:element name="SectionReference" type="SectionReferenceType">
 						<xs:annotation>
-							<xs:documentation>The Section the staff member is assigned to.</xs:documentation>
+							<xs:documentation>The Section the Staff member is assigned to.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1052</ann:EdFiId>
 							</xs:appinfo>
@@ -7036,7 +7036,7 @@ Bilingual/English as a Second Language.</xs:documentation>
 					</xs:element>
 					<xs:element name="ClassroomPosition" type="ClassroomPositionDescriptorReferenceType">
 						<xs:annotation>
-							<xs:documentation>The type of position the staff member holds in the specific Class/Section; for example:
+							<xs:documentation>The type of position the Staff member holds in the specific class/section; for example:
 Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>ClassroomPositionDescriptor</ann:Descriptor>
@@ -7062,7 +7062,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					</xs:element>
 					<xs:element name="HighlyQualifiedTeacher" type="xs:boolean" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition. This attribute indicates the teacher is highly qualified for this Section being taught.</xs:documentation>
+							<xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition. This attribute indicates the teacher is highly qualified for this section being taught.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1050</ann:EdFiId>
 							</xs:appinfo>
@@ -7070,7 +7070,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					</xs:element>
 					<xs:element name="TeacherStudentDataLinkExclusion" type="xs:boolean" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Indicates that the entire Section is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation.</xs:documentation>
+							<xs:documentation>Indicates that the entire section is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1054</ann:EdFiId>
 							</xs:appinfo>
@@ -7078,7 +7078,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					</xs:element>
 					<xs:element name="PercentageContribution" type="Percent" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Indicates the percentage of the total scheduled course time, academic standards, and/or learning activities delivered in this Section by this staff member. A Teacher of Record designation may be based solely or partially on this contribution percentage.</xs:documentation>
+							<xs:documentation>Indicates the percentage of the total scheduled course time, academic standards, and/or learning activities delivered in this section by this staff member. A teacher of record designation may be based solely or partially on this contribution percentage.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1051</ann:EdFiId>
 							</xs:appinfo>
@@ -7090,7 +7090,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 	</xs:complexType>
 	<xs:complexType name="StudentCohortAssociation">
 		<xs:annotation>
-			<xs:documentation>This association represents the cohort(s) for which a student is designated.</xs:documentation>
+			<xs:documentation>This association represents the Cohort(s) for which a student is designated.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>605</ann:EdFiId>
@@ -7101,7 +7101,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 				<xs:sequence>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>The student associated with the cohort.</xs:documentation>
+							<xs:documentation>The Student associated with the Cohort.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1059</ann:EdFiId>
 							</xs:appinfo>
@@ -7109,7 +7109,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					</xs:element>
 					<xs:element name="CohortReference" type="CohortReferenceType">
 						<xs:annotation>
-							<xs:documentation>Reference to the cohort associated with the student.</xs:documentation>
+							<xs:documentation>Reference to the Cohort associated with the Student.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1056</ann:EdFiId>
 							</xs:appinfo>
@@ -7117,7 +7117,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					</xs:element>
 					<xs:element name="BeginDate" type="xs:date">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year on which the student was first identified as  part of the cohort.</xs:documentation>
+							<xs:documentation>The month, day, and year on which the Student was first identified as part of the Cohort.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1055</ann:EdFiId>
 							</xs:appinfo>
@@ -7125,7 +7125,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					</xs:element>
 					<xs:element name="EndDate" type="xs:date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year on which the student was removed as  part of the cohort.</xs:documentation>
+							<xs:documentation>The month, day, and year on which the Student was removed as part of the Cohort.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1057</ann:EdFiId>
 							</xs:appinfo>
@@ -7133,7 +7133,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					</xs:element>
 					<xs:element name="SectionReference" type="SectionReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>The cohort representing the subdivision of students within one or more Sections. For example, a group of students may be given additional instruction and tracked as a cohort.</xs:documentation>
+							<xs:documentation>The Cohort representing the subdivision of students within one or more sections. For example, a group of students may be given additional instruction and tracked as a cohort.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1058</ann:EdFiId>
 							</xs:appinfo>
@@ -7145,7 +7145,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 	</xs:complexType>
 	<xs:complexType name="StudentCTEProgramAssociation">
 		<xs:annotation>
-			<xs:documentation>This association represents the career and technical education (CTE) program that a student participates in. The association is an extension of the Student Program Association particular for CTE programs.</xs:documentation>
+			<xs:documentation>This association represents the career and technical education (CTE) program that a student participates in. The association is an extension of the StudentProgramAssociation particular for CTE programs.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>606</ann:EdFiId>
@@ -7179,7 +7179,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 				<xs:sequence>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the student associated with the discipline incident.</xs:documentation>
+							<xs:documentation>Relates the Student associated with the DisciplineIncident.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1072</ann:EdFiId>
 							</xs:appinfo>
@@ -7187,7 +7187,7 @@ Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs
 					</xs:element>
 					<xs:element name="DisciplineIncidentReference" type="DisciplineIncidentReferenceType">
 						<xs:annotation>
-							<xs:documentation>Reference to the discipline incident associated with the student.</xs:documentation>
+							<xs:documentation>Reference to the DisciplineIncident associated with the Student.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1070</ann:EdFiId>
 							</xs:appinfo>
@@ -7219,7 +7219,7 @@ Reporter.</xs:documentation>
 	</xs:complexType>
 	<xs:complexType name="StudentEducationOrganizationAssociation">
 		<xs:annotation>
-			<xs:documentation>This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by Student School Association.</xs:documentation>
+			<xs:documentation>This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Association</ann:TypeGroup>
 				<ann:EdFiId>608</ann:EdFiId>
@@ -7230,7 +7230,7 @@ Reporter.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>A reference to the student.</xs:documentation>
+							<xs:documentation>A reference to the Student.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1075</ann:EdFiId>
 							</xs:appinfo>
@@ -7238,7 +7238,7 @@ Reporter.</xs:documentation>
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>A reference to the education organization.</xs:documentation>
+							<xs:documentation>A reference to the EducationOrganization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1073</ann:EdFiId>
 							</xs:appinfo>
@@ -7270,7 +7270,7 @@ Reporter.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the student associated with the intervention.</xs:documentation>
+							<xs:documentation>Relates the Student associated with the Intervention.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1080</ann:EdFiId>
 							</xs:appinfo>
@@ -7469,7 +7469,7 @@ Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian
 				<xs:sequence>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>The student associated with the program.</xs:documentation>
+							<xs:documentation>The Student associated with the Program.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1110</ann:EdFiId>
 							</xs:appinfo>
@@ -7477,7 +7477,7 @@ Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian
 					</xs:element>
 					<xs:element name="ProgramReference" type="ProgramReferenceType">
 						<xs:annotation>
-							<xs:documentation>The program associated with the student.</xs:documentation>
+							<xs:documentation>The Program associated with the Student.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1106</ann:EdFiId>
 							</xs:appinfo>
@@ -7485,7 +7485,7 @@ Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian
 					</xs:element>
 					<xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Indicates the services being provided to the student by the program.</xs:documentation>
+							<xs:documentation>Indicates the Service(s) being provided to the student by the program.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1109</ann:EdFiId>
 							</xs:appinfo>
@@ -7518,7 +7518,7 @@ Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The education organization where the student is participating in or receiving the program services.</xs:documentation>
+							<xs:documentation>The EducationOrganization where the student is participating in or receiving the program services.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1104</ann:EdFiId>
 							</xs:appinfo>
@@ -13068,7 +13068,7 @@ Student late arrival/early dismissal.</xs:documentation>
 			</xs:element>
 			<xs:element name="PrimaryCTEProgramIndicator" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>A Boolean indicator of whether this CTE program, is the student's primary CTE program.</xs:documentation>
+					<xs:documentation>A boolean indicator of whether this CTE program, is the student's primary CTE program.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>802</ann:EdFiId>
 					</xs:appinfo>
@@ -13076,7 +13076,7 @@ Student late arrival/early dismissal.</xs:documentation>
 			</xs:element>
 			<xs:element name="CTEProgramCompletionIndicator" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>A Boolean indicator of whether the student has completed the CTE program.</xs:documentation>
+					<xs:documentation>A boolean indicator of whether the student has completed the CTE program.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>801</ann:EdFiId>
 					</xs:appinfo>
@@ -16767,7 +16767,7 @@ Student late arrival/early dismissal
 	</xs:simpleType>
 	<xs:simpleType name="ClassroomPositionMapType">
 		<xs:annotation>
-			<xs:documentation>The type of position the staff member holds in the specific Class/Section.</xs:documentation>
+			<xs:documentation>The type of position the staff member holds in the specific class/section.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Enumeration</ann:TypeGroup>
 				<ann:EdFiId>139</ann:EdFiId>
