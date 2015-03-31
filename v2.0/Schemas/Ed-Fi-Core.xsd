@@ -2607,7 +2607,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="2">
 						<xs:annotation>
-							<xs:documentation>Sexes participating in this study. If omitted, considered  generally applicable.</xs:documentation>
+							<xs:documentation>Sexes participating in this study. If omitted, considered generally applicable.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1471</ann:EdFiId>
 							</xs:appinfo>
@@ -3091,7 +3091,7 @@ Vacation.</xs:documentation>
 					</xs:element>
 					<xs:element name="Nomenclature" type="Nomenclature" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Reflects the specific nomenclature used for this level of objective assessment.</xs:documentation>
+							<xs:documentation>Reflects the specific nomenclature used for this level of ObjectiveAssessment.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1542</ann:EdFiId>
 							</xs:appinfo>
@@ -3131,7 +3131,7 @@ Vacation.</xs:documentation>
 					</xs:element>
 					<xs:element name="ParentObjectiveAssessmentReference" type="ObjectiveAssessmentReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Provide user information to lookup and link to the parent ObjectiveAssessment containing this objective assessment.</xs:documentation>
+							<xs:documentation>Provide user information to lookup and link to the parent ObjectiveAssessment containing this ObjectiveAssessment.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1543</ann:EdFiId>
 							</xs:appinfo>
@@ -9917,7 +9917,7 @@ Cognitive and perceptual skills test
 	</xs:complexType>
 	<xs:complexType name="ObjectiveAssessmentReferenceType">
 		<xs:annotation>
-			<xs:documentation>Provides alternative references for objective assessments during interchange. Use XML IDREF to reference a course record that is included in the interchange.</xs:documentation>
+			<xs:documentation>Provides alternative references for an ObjectiveAssessment during interchange. Use XML IDREF to reference a course record that is included in the interchange.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
 				<ann:EdFiId>444</ann:EdFiId>
@@ -9928,7 +9928,7 @@ Cognitive and perceptual skills test
 				<xs:sequence>
 					<xs:element name="ObjectiveAssessmentIdentity" type="ObjectiveAssessmentIdentityType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Identity of the objective assessment.</xs:documentation>
+							<xs:documentation>Identity of the ObjectiveAssessment.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2125</ann:EdFiId>
 							</xs:appinfo>
@@ -14678,7 +14678,7 @@ Met standard
 		<xs:sequence>
 			<xs:element name="TelephoneNumber" type="TelephoneNumber">
 				<xs:annotation>
-					<xs:documentation>The Telephone Number including the area code, and extension, if applicable.</xs:documentation>
+					<xs:documentation>The telephone number including the area code, and extension, if applicable.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>949</ann:EdFiId>
 					</xs:appinfo>
