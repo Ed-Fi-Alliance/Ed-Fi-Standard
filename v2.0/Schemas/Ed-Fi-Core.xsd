@@ -152,7 +152,7 @@
 				<xs:sequence>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the accountability rating to an Education Organization.</xs:documentation>
+							<xs:documentation>Relates the AccountabilityRating to an Education Organization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1209</ann:EdFiId>
 							</xs:appinfo>
@@ -184,7 +184,7 @@
 					</xs:element>
 					<xs:element name="SchoolYear" type="SchoolYearType">
 						<xs:annotation>
-							<xs:documentation>The school year for which the accountability rating is assessed.</xs:documentation>
+							<xs:documentation>The school year for which the AccountabilityRating  is assessed.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1215</ann:EdFiId>
 							</xs:appinfo>
@@ -200,7 +200,7 @@
 					</xs:element>
 					<xs:element name="RatingProgram" type="RatingProgram" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The program associated with the accountability rating (e.g., NCLB, AEIS).</xs:documentation>
+							<xs:documentation>The program associated with the AccountabilityRating  (e.g., NCLB, AEIS).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1213</ann:EdFiId>
 							</xs:appinfo>
@@ -262,7 +262,7 @@
 				<xs:sequence>
 					<xs:element name="AssessmentTitle" type="AssessmentTitle">
 						<xs:annotation>
-							<xs:documentation>The title or name of the assessment.</xs:documentation>
+							<xs:documentation>The title or name of the Assessment.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1228</ann:EdFiId>
 							</xs:appinfo>
@@ -370,7 +370,7 @@ Second grade
 					</xs:element>
 					<xs:element name="Language" type="LanguageDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>An indication of the languages in which the Assessment is designed.</xs:documentation>
+							<xs:documentation>An indication of the languages in which the assessment is designed.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1230</ann:EdFiId>
 							</xs:appinfo>
@@ -424,7 +424,7 @@ Second grade
 					</xs:element>
 					<xs:element name="AssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>References the Assessment Family this Assessment is a member of.</xs:documentation>
+							<xs:documentation>References the AssessmentFamily this Assessment is a member of.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1222</ann:EdFiId>
 							</xs:appinfo>
@@ -433,7 +433,7 @@ Second grade
 					<xs:choice minOccurs="0">
 						<xs:element name="SectionReference" type="SectionReferenceType" maxOccurs="unbounded">
 							<xs:annotation>
-								<xs:documentation>The Section(s) to which the assessment is associated.</xs:documentation>
+								<xs:documentation>The Section(s) to which the Assessment is associated.</xs:documentation>
 								<xs:appinfo>
 									<ann:EdFiId>1239</ann:EdFiId>
 								</xs:appinfo>
@@ -462,7 +462,7 @@ Second grade
 	</xs:complexType>
 	<xs:complexType name="AssessmentFamily">
 		<xs:annotation>
-			<xs:documentation>This entity represents a logical grouping or association of assessments that share a common purpose, heritage or content standard. There may be hierarchies of Assessment Families. Characteristics (e.g., Academic Subject) specified for AssessmentFamilies, by convention, are inherited by the Assessments associated with the AssessmentFamily.</xs:documentation>
+			<xs:documentation>This entity represents a logical grouping or association of assessments that share a common purpose, heritage or content standard. There may be hierarchies of assessment families, characteristics (e.g., Academic Subject) specified for assessment families, by convention, are inherited by the Assessments associated with the AssessmentFamily.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>541</ann:EdFiId>
@@ -473,7 +473,7 @@ Second grade
 				<xs:sequence>
 					<xs:element name="AssessmentFamilyTitle" type="AssessmentTitle">
 						<xs:annotation>
-							<xs:documentation>The title or name of the assessment family.</xs:documentation>
+							<xs:documentation>The title or name of the AssessmentFamily.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1245</ann:EdFiId>
 							</xs:appinfo>
@@ -532,7 +532,7 @@ Second grade
 					</xs:element>
 					<xs:element name="Language" type="LanguageDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>An indication of the languages in which the Assessment Family is designed.</xs:documentation>
+							<xs:documentation>An indication of the languages in which the AssessmentFamily is designed.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>LanguageDescriptor</ann:Descriptor>
 								<ann:EdFiId>1248</ann:EdFiId>
@@ -541,7 +541,7 @@ Second grade
 					</xs:element>
 					<xs:element name="Version" type="Version" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The version identifier for the assessment family.</xs:documentation>
+							<xs:documentation>The version identifier for the AssessmentFamily.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1253</ann:EdFiId>
 							</xs:appinfo>
@@ -549,7 +549,7 @@ Second grade
 					</xs:element>
 					<xs:element name="RevisionDate" type="xs:date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year that the conceptual design for the assessment family was most recently revised substantially.</xs:documentation>
+							<xs:documentation>The month, day, and year that the conceptual design for the AssessmentFamily was most recently revised substantially.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1252</ann:EdFiId>
 							</xs:appinfo>
@@ -557,7 +557,7 @@ Second grade
 					</xs:element>
 					<xs:element name="Nomenclature" type="Nomenclature" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Reflects the specific nomenclature used for this level of Assessment Family.</xs:documentation>
+							<xs:documentation>Reflects the specific nomenclature used for this level of AssessmentFamily.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1250</ann:EdFiId>
 							</xs:appinfo>
@@ -574,7 +574,7 @@ Second grade
 					</xs:element>
 					<xs:element name="ParentAssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>References the higher level Assessment Family the Assessment Family belongs to.</xs:documentation>
+							<xs:documentation>References the higher level AssessmentFamily the AssessmentFamily belongs to.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1251</ann:EdFiId>
 							</xs:appinfo>
@@ -582,7 +582,7 @@ Second grade
 					</xs:element>
 					<xs:element name="Namespace" type="URI">
 						<xs:annotation>
-							<xs:documentation>Namespace for the Assessments in this Assessment Family.</xs:documentation>
+							<xs:documentation>Namespace for the Assessments in this AssessmentFamily.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2301</ann:EdFiId>
 							</xs:appinfo>
@@ -613,7 +613,7 @@ Second grade
 					</xs:element>
 					<xs:element name="AssessmentItemCategory" type="AssessmentItemCategoryType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Category or type of the assessment item. For example:
+							<xs:documentation>Category or type of the AssessmentItem. For example:
 Multiple choice
 Analytic
 Prose
@@ -633,7 +633,7 @@ Prose
 					</xs:element>
 					<xs:element name="CorrectResponse" type="CorrectResponse" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The correct response for the assessment item.</xs:documentation>
+							<xs:documentation>The correct response for the AssessmentItem.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1256</ann:EdFiId>
 							</xs:appinfo>
@@ -641,7 +641,7 @@ Prose
 					</xs:element>
 					<xs:element name="ExpectedTimeAssessed" type="TimeInterval" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The duration of time allotted for the assessment item.</xs:documentation>
+							<xs:documentation>The duration of time allotted for the AssessmentItem.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1257</ann:EdFiId>
 							</xs:appinfo>
@@ -649,7 +649,7 @@ Prose
 					</xs:element>
 					<xs:element name="Nomenclature" type="Nomenclature" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Reflects the specific nomenclature used for Assessment Item.</xs:documentation>
+							<xs:documentation>Reflects the specific nomenclature used for AssessmentItem.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1261</ann:EdFiId>
 							</xs:appinfo>
@@ -657,7 +657,7 @@ Prose
 					</xs:element>
 					<xs:element name="LearningStandardReference" type="LearningStandardReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Learning Standard tested by this item.</xs:documentation>
+							<xs:documentation>LearningStandard tested by this item.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1259</ann:EdFiId>
 							</xs:appinfo>
@@ -665,7 +665,7 @@ Prose
 					</xs:element>
 					<xs:element name="AssessmentReference" type="AssessmentReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the assessment item to an existing assessment.</xs:documentation>
+							<xs:documentation>Relates the AssessmentItem to an existing assessment.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1255</ann:EdFiId>
 							</xs:appinfo>
@@ -688,7 +688,7 @@ Prose
 				<xs:sequence>
 					<xs:element name="BellScheduleName" type="BellScheduleName">
 						<xs:annotation>
-							<xs:documentation>Name or title of the bell schedule.</xs:documentation>
+							<xs:documentation>Name or title of the BellSchedule.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1262</ann:EdFiId>
 							</xs:appinfo>
@@ -696,7 +696,7 @@ Prose
 					</xs:element>
 					<xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType">
 						<xs:annotation>
-							<xs:documentation>The grade levels the particular bell schedule applies to.</xs:documentation>
+							<xs:documentation>The grade levels the particular BellSchedule applies to.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1264</ann:EdFiId>
 							</xs:appinfo>
@@ -707,7 +707,7 @@ Prose
 					</xs:element>
 					<xs:element name="SchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation>The school for which the Bell Schedule is defined.</xs:documentation>
+							<xs:documentation>The school for which the BellSchedule is defined.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1266</ann:EdFiId>
 							</xs:appinfo>
@@ -715,7 +715,7 @@ Prose
 					</xs:element>
 					<xs:element name="MeetingTime" type="MeetingTime" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>The times at which this Bell Schedule is intended to meet.</xs:documentation>
+							<xs:documentation>The times at which this BellSchedule is intended to meet.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1265</ann:EdFiId>
 							</xs:appinfo>
@@ -723,7 +723,7 @@ Prose
 					</xs:element>
 					<xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
 						<xs:annotation>
-							<xs:documentation>The first calendar date of the bell schedule.</xs:documentation>
+							<xs:documentation>The first calendar date of the BellSchedule.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1263</ann:EdFiId>
 							</xs:appinfo>
@@ -785,7 +785,7 @@ Prose
 				<xs:sequence>
 					<xs:element name="Date" type="xs:date">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year of the calendar date.</xs:documentation>
+							<xs:documentation>The month, day, and year of the CalendarDate.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1271</ann:EdFiId>
 							</xs:appinfo>
@@ -824,7 +824,7 @@ Prose
 				<xs:sequence>
 					<xs:element name="SchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the class period to the school.</xs:documentation>
+							<xs:documentation>Relates the ClassPeriod to the school.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1274</ann:EdFiId>
 							</xs:appinfo>
@@ -855,7 +855,7 @@ Prose
 				<xs:sequence>
 					<xs:element name="CohortIdentifier" type="CohortIdentifier">
 						<xs:annotation>
-							<xs:documentation>The name or ID for the cohort.</xs:documentation>
+							<xs:documentation>The name or ID for the Cohort.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1778</ann:EdFiId>
 							</xs:appinfo>
@@ -863,7 +863,7 @@ Prose
 					</xs:element>
 					<xs:element name="CohortDescription" type="CohortDescription" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The description of the cohort and its purpose.</xs:documentation>
+							<xs:documentation>The description of the Cohort and its purpose.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1276</ann:EdFiId>
 							</xs:appinfo>
@@ -896,7 +896,7 @@ Prose
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The education organization associated with and owner of the cohort.</xs:documentation>
+							<xs:documentation>The education organization associated with and owner of the Cohort.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1279</ann:EdFiId>
 							</xs:appinfo>
@@ -904,7 +904,7 @@ Prose
 					</xs:element>
 					<xs:element name="ProgramReference" type="ProgramReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>The (optional) program associated with this cohort (e.g., special education).</xs:documentation>
+							<xs:documentation>The (optional) program associated with this Cohort (e.g., special education).</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1280</ann:EdFiId>
 							</xs:appinfo>
@@ -927,7 +927,7 @@ Prose
 				<xs:sequence>
 					<xs:element name="CompetencyObjectiveId" type="IdentificationCode" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The Identifier for the competency objective.</xs:documentation>
+							<xs:documentation>The Identifier for the CompetencyObjective.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1281</ann:EdFiId>
 							</xs:appinfo>
@@ -935,7 +935,7 @@ Prose
 					</xs:element>
 					<xs:element name="Objective" type="Objective">
 						<xs:annotation>
-							<xs:documentation>The designated title of the competency objective.</xs:documentation>
+							<xs:documentation>The designated title of the CompetencyObjective.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1284</ann:EdFiId>
 							</xs:appinfo>
@@ -951,7 +951,7 @@ Prose
 					</xs:element>
 					<xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType">
 						<xs:annotation>
-							<xs:documentation>The grade level for which the competency objective is targeted.</xs:documentation>
+							<xs:documentation>The grade level for which the CompetencyObjective is targeted.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
 								<ann:EdFiId>1285</ann:EdFiId>
@@ -960,7 +960,7 @@ Prose
 					</xs:element>
 					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 						<xs:annotation>
-							<xs:documentation>The Education Organization that defines the curriculum and courses offered - often the LEA or school.</xs:documentation>
+							<xs:documentation>The EducationOrganization that defines the curriculum and courses offered - often the LEA or school.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1283</ann:EdFiId>
 							</xs:appinfo>
@@ -968,7 +968,7 @@ Prose
 					</xs:element>
 					<xs:element name="SuccessCriteria" type="Criteria" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>One or more statements that describes the criteria used by teachers and students to check for attainment of a competency objective. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the competency objective.</xs:documentation>
+							<xs:documentation>One or more statements that describes the criteria used by teachers and students to check for attainment of a competency objective. This criteria gives clear indications as to the degree to which learning is moving through the Zone or Proximal Development toward independent achievement of the CompetencyObjective.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1286</ann:EdFiId>
 							</xs:appinfo>
@@ -980,7 +980,7 @@ Prose
 	</xs:complexType>
 	<xs:complexType name="ContractedStaff">
 		<xs:annotation>
-			<xs:documentation>This financial entity represents the sum of the financial transactions to date for contracted staff. Contracted staff includes "contractors" or "consultants" who perform services for an agreed upon fee, or an employee of a management service contracted to work on site.</xs:documentation>
+			<xs:documentation>This financial entity represents the sum of the financial transactions to date for contracted staff. ContractedStaff includes "contractors" or "consultants" who perform services for an agreed upon fee, or an employee of a management service contracted to work on site.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Domain Entity</ann:TypeGroup>
 				<ann:EdFiId>549</ann:EdFiId>
@@ -1007,7 +1007,7 @@ Prose
 					</xs:element>
 					<xs:element name="AccountReference" type="AccountReferenceType">
 						<xs:annotation>
-							<xs:documentation>Account with which the Contracted Staff expense is associated.</xs:documentation>
+							<xs:documentation>Account with which the ContractedStaff expense is associated.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1287</ann:EdFiId>
 							</xs:appinfo>
@@ -1015,7 +1015,7 @@ Prose
 					</xs:element>
 					<xs:element name="StaffReference" type="StaffReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the staff member to the associated Contracted Staff expense.</xs:documentation>
+							<xs:documentation>Relates the staff member to the associated ContractedStaff expense.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1290</ann:EdFiId>
 							</xs:appinfo>
@@ -1224,7 +1224,7 @@ Prose
 					</xs:element>
 					<xs:element name="LocalCourseTitle" type="CourseTitle" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the Course Title.</xs:documentation>
+							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1315</ann:EdFiId>
 							</xs:appinfo>
@@ -1232,7 +1232,7 @@ Prose
 					</xs:element>
 					<xs:element name="InstructionalTimePlanned" type="Duration" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The planned total number of clock minutes of instruction for this course offering. Generally, this should be at least as many minutes as is required for completion by the related state- or district-defined Course.</xs:documentation>
+							<xs:documentation>The planned total number of clock minutes of instruction for this course offering. Generally, this should be at least as many minutes as is required for completion by the related state- or district-defined course.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1313</ann:EdFiId>
 							</xs:appinfo>
@@ -1364,7 +1364,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="CourseReference" type="CourseReferenceType">
 						<xs:annotation>
-							<xs:documentation>The course recorded in the Course transcript entry.</xs:documentation>
+							<xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1320</ann:EdFiId>
 							</xs:appinfo>
@@ -1380,7 +1380,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="StudentAcademicRecordReference" type="StudentAcademicRecordReferenceType">
 						<xs:annotation>
-							<xs:documentation>Link to the Student's academic record for a semester/school year.</xs:documentation>
+							<xs:documentation>Link to the student's academic record for a semester/school year.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1333</ann:EdFiId>
 							</xs:appinfo>
@@ -1396,7 +1396,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="AlternativeCourseTitle" type="CourseTitle" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the Course Title.</xs:documentation>
+							<xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1330</ann:EdFiId>
 							</xs:appinfo>
@@ -1427,7 +1427,7 @@ Withdrawn.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="DisciplineActionIdentifier" type="DisciplineActionIdentifier">
 						<xs:annotation>
-							<xs:documentation>Identifier assigned by the education organization to the discipline action.</xs:documentation>
+							<xs:documentation>Identifier assigned by the education organization to the DisciplineAction.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1337</ann:EdFiId>
 							</xs:appinfo>
@@ -1444,7 +1444,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="DisciplineDate" type="xs:date">
 						<xs:annotation>
-							<xs:documentation>The date of the discipline action.</xs:documentation>
+							<xs:documentation>The date of the DisciplineAction.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1340</ann:EdFiId>
 							</xs:appinfo>
@@ -1452,7 +1452,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="DisciplineActionLength" type="xs:integer" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The length of time in school days for the Discipline Action (e.g. removal, detention), if applicable.</xs:documentation>
+							<xs:documentation>The length of time in school days for the DisciplineAction (e.g. removal, detention), if applicable.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1338</ann:EdFiId>
 							</xs:appinfo>
@@ -1484,7 +1484,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="StudentReference" type="StudentReferenceType">
 						<xs:annotation>
-							<xs:documentation>The student(s) disciplined by the discipline action.</xs:documentation>
+							<xs:documentation>The student(s) disciplined by the DisciplineAction.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1345</ann:EdFiId>
 							</xs:appinfo>
@@ -1492,7 +1492,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="DisciplineIncidentReference" type="DisciplineIncidentReferenceType" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>Reference to the Discipline Incident associated with the Discipline Action.</xs:documentation>
+							<xs:documentation>Reference to the DisciplineIncident associated with the DisciplineAction.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1341</ann:EdFiId>
 							</xs:appinfo>
@@ -1500,7 +1500,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="StaffReference" type="StaffReferenceType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
-							<xs:documentation>The staff responsible for enforcing the discipline action.</xs:documentation>
+							<xs:documentation>The staff responsible for enforcing the DisciplineAction.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1344</ann:EdFiId>
 							</xs:appinfo>
@@ -1539,7 +1539,7 @@ Withdrawn.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="IncidentIdentifier" type="IncidentIdentifier">
 						<xs:annotation>
-							<xs:documentation>A locally assigned unique identifier (within the school or school district) to identify each specific incident or occurrence. The same identifier should be used to document the entire incident even if it included multiple offenses and multiple offenders.</xs:documentation>
+							<xs:documentation>A locally assigned unique identifier (within the school or school district) to identify each specific DisciplineIncident or occurrence. The same identifier should be used to document the entire DisciplineIncident even if it included multiple offenses and multiple offenders.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1351</ann:EdFiId>
 							</xs:appinfo>
@@ -1547,7 +1547,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="IncidentDate" type="xs:date">
 						<xs:annotation>
-							<xs:documentation>The month, day, and year on which the incident occurred.</xs:documentation>
+							<xs:documentation>The month, day, and year on which the DisciplineIncident occurred.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1349</ann:EdFiId>
 							</xs:appinfo>
@@ -1563,7 +1563,7 @@ Withdrawn.</xs:documentation>
 					</xs:element>
 					<xs:element name="IncidentLocation" type="IncidentLocationType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Identifies where the incident occurred and whether or not it occurred on school, for example:
+							<xs:documentation>Identifies where the DisciplineIncident occurred and whether or not it occurred on school, for example:
 On school
 Administrative offices area
 Cafeteria area
@@ -1585,7 +1585,7 @@ Hallway or stairs
 					</xs:element>
 					<xs:element name="ReporterDescription" type="ReporterDescriptionDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Information on the type of individual who reported the incident. When known and/or if useful, use a more specific option code (e.g., "Counselor" rather than "Professional Staff"); for example:
+							<xs:documentation>Information on the type of individual who reported the DisciplineIncident. When known and/or if useful, use a more specific option code (e.g., "Counselor" rather than "Professional Staff"); for example:
 Student
 Parent/guardian
 Law enforcement officer
@@ -1600,7 +1600,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="ReporterName" type="ReporterName" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Identifies the reporter of the incident by name.</xs:documentation>
+							<xs:documentation>Identifies the reporter of the DisciplineIncident by name.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1356</ann:EdFiId>
 							</xs:appinfo>
@@ -1633,7 +1633,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="CaseNumber" type="CaseNumber" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The case number assigned to the incident by law enforcement or other organization.</xs:documentation>
+							<xs:documentation>The case number assigned to the DisciplineIncident by law enforcement or other organization.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1347</ann:EdFiId>
 							</xs:appinfo>
@@ -1641,7 +1641,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="IncidentCost" type="Currency" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>The value of any quantifiable monetary loss directly resulting from the incident. Examples include the value of repairs necessitated by vandalism of a school facility, or the value of personnel resources used for repairs or consumed by the incident.</xs:documentation>
+							<xs:documentation>The value of any quantifiable monetary loss directly resulting from the DisciplineIncident. Examples include the value of repairs necessitated by vandalism of a school facility, or the value of personnel resources used for repairs or consumed by the incident.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1348</ann:EdFiId>
 							</xs:appinfo>
@@ -1649,7 +1649,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="SchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the incident to the school where the incident occurred.</xs:documentation>
+							<xs:documentation>Relates the DisciplineIncident to the school where the incident occurred.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1357</ann:EdFiId>
 							</xs:appinfo>
@@ -1657,7 +1657,7 @@ Representative of visiting school
 					</xs:element>
 					<xs:element name="StaffReference" type="StaffReferenceType" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>Identifies the staff reporter of the incident by use of a pre-existing school or district unique identifier.</xs:documentation>
+							<xs:documentation>Identifies the staff reporter of the DisciplineIncident by use of a pre-existing school or district unique identifier.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1358</ann:EdFiId>
 							</xs:appinfo>
