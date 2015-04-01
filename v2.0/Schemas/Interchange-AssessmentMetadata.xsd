@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Assessment Metadata Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeAssessmentMetadata">
+		<xs:annotation>
+			<xs:documentation>The Assessment Metadata interchange describes metadata about assessments, including the definitions of the assessment and the assessment items making up the assessment. This interchange is related to the companion Student Assessment interchange, which is used to exchange students' test results.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AssessmentFamily" type="AssessmentFamily"/>
+				<xs:element name="Assessment" type="Assessment"/>
+				<xs:element name="ObjectiveAssessment" type="ObjectiveAssessment"/>
+				<xs:element name="AssessmentItem" type="AssessmentItem"/>
+				<xs:element name="LearningObjective" type="LearningObjective"/>
+				<xs:element name="LearningStandard" type="LearningStandard"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
