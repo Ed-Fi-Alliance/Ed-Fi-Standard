@@ -275,7 +275,7 @@
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptor" minOccurs="0">
+					<xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The category of an assessment based on format and content. For example:
 Achievement test
@@ -11449,6 +11449,18 @@ Volunteer/no contract
 			<xs:appinfo>
 				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
 				<ann:EdFiId>354</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AssessmentCategoryDescriptorReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides references for assessment category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+				<ann:EdFiId>2431</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:complexContent>
