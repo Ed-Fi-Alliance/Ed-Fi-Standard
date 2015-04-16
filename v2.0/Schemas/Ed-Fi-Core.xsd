@@ -44,11 +44,11 @@
 		<xs:complexContent>
 			<xs:extension base="ComplexObjectType">
 				<xs:sequence>
-					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+					<xs:element name="SchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the academic week to an existing Educational Organization.</xs:documentation>
+							<xs:documentation>Relates the academic week to an existing School.</xs:documentation>
 							<xs:appinfo>
-								<ann:EdFiId>1201</ann:EdFiId>
+								<ann:EdFiId>2435</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -8052,11 +8052,11 @@ Local Neglected Program.</xs:documentation>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system.</xs:documentation>
+					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2000</ann:EdFiId>
+						<ann:EdFiId>2436</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -25846,7 +25846,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="Author">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>The person or organization chiefly responsible for intellectual content.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 				<ann:EdFiId>12</ann:EdFiId>
