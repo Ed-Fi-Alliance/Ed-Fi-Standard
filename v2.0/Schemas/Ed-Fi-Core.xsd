@@ -1853,6 +1853,14 @@ Representative of visiting school
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
+					<xs:element name="Namespace" type="URI">
+						<xs:annotation>
+							<xs:documentation>Namespace for the EducationContent.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2438</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -2733,6 +2741,14 @@ Representative of visiting school
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
+					<xs:element name="Namespace" type="URI">
+						<xs:annotation>
+							<xs:documentation>Namespace for the LearningObjective.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2439</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -2843,6 +2859,14 @@ Representative of visiting school
 							<xs:documentation>Provide user information to lookup and link to an existing learning standard which serves as a method to group other learning standards.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>1502</ann:EdFiId>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Namespace" type="URI">
+						<xs:annotation>
+							<xs:documentation>Namespace for the LearningStandard.</xs:documentation>
+							<xs:appinfo>
+								<ann:EdFiId>2440</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
