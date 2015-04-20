@@ -5670,7 +5670,7 @@ LEP Exempt
 		<xs:complexContent>
 			<xs:extension base="DescriptorType">
 				<xs:sequence>
-					<xs:element name="CourseIdentificationSystem" type="CourseIdentificationSystemMapType" minOccurs="0">
+					<xs:element name="CourseIdentificationSystemMap" type="CourseIdentificationSystemMapType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>A system that is used to identify the organization of subject matter and related learning experiences provided for the instruction of students.</xs:documentation>
 							<xs:appinfo>
@@ -6349,7 +6349,7 @@ LEP Exempt
 		<xs:complexContent>
 			<xs:extension base="DescriptorType">
 				<xs:sequence>
-					<xs:element name="StaffdentificationSystemMap" type="StaffIdentificationSystemMapType" minOccurs="0">
+					<xs:element name="StaffIdentificationSystemMap" type="StaffIdentificationSystemMapType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a staff member.</xs:documentation>
 							<xs:appinfo>
