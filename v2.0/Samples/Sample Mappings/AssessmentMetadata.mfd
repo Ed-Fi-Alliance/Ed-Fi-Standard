@@ -1233,7 +1233,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\Interchange-AssessmentMetadata.xsd" outputinstance="Sample XML 2.0\AssessmentMetadata-1Benchmarks-LearningStandard.xml" instanceroot="{http://ed-fi.org/0200}InterchangeAssessmentMetadata"/>
+						<document schema="..\..\Schemas\Interchange-AssessmentMetadata.xsd" instanceroot="{http://ed-fi.org/0200}InterchangeAssessmentMetadata"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -1241,7 +1241,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="156" lty="141" rbx="591" rby="692"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="337">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -1631,7 +1631,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-AssessmentMetadata.xsd" inputinstance="Sample XML 1.2\*" instanceroot="{http://ed-fi.org/0120}InterchangeAssessmentMetadata"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-AssessmentMetadata.xsd" inputinstance="..\..\..\..\..\..\temp\Samples\Sample XML\AssessmentMetadata Sample XML 1.2\*.xml" instanceroot="{http://ed-fi.org/0120}InterchangeAssessmentMetadata"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -2289,7 +2289,6 @@
 					<vertex vertexkey="148">
 						<edges>
 							<edge vertexkey="351" edgekey="559"/>
-							<edge vertexkey="1685" edgekey="1687"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="149">
@@ -2365,6 +2364,7 @@
 					<vertex vertexkey="163">
 						<edges>
 							<edge vertexkey="366" edgekey="574"/>
+							<edge vertexkey="1685" edgekey="1689"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="164">
