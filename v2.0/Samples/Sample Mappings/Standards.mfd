@@ -166,283 +166,34 @@
 						</root>
 					</data>
 				</component>
-				<component name="Interchange-Standards" library="xml" uid="3" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="728" rbx="1127" rby="652"/>
+				<component name="CodeCoalesce" library="user" blackbox="0" uid="37" kind="19" visible="0">
+					<view ltx="952" lty="775" rbx="1124" rby="826"/>
 					<data>
-						<root scrollposition="505">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
-									<namespace uid="http://ed-fi.org/0200"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
 								</namespaces>
 							</header>
-							<entry name="FileInstance" ns="2" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeStandards" ns="1" inpkey="266" expanded="1">
-										<entry name="LearningObjective" ns="1" inpkey="267">
-											<entry name="id" type="attribute" inpkey="268"/>
-											<entry name="LearningObjectiveId" ns="1" inpkey="269"/>
-											<entry name="ContentStandard" ns="1" inpkey="270">
-												<entry name="Title" ns="1" inpkey="271"/>
-												<entry name="Author" ns="1" inpkey="272"/>
-												<entry name="Version" ns="1" inpkey="273"/>
-												<entry name="URI" ns="1" inpkey="274"/>
-												<entry name="PublicationDate" ns="1" inpkey="275"/>
-												<entry name="PublicationYear" ns="1" inpkey="276"/>
-												<entry name="PublicationStatus" ns="1" inpkey="277"/>
-												<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="278" expanded="1">
-													<entry name="id" type="attribute" inpkey="279"/>
-													<entry name="ref" type="attribute" inpkey="280"/>
-													<entry name="EducationOrganizationIdentity" ns="1" inpkey="281" expanded="1">
-														<entry name="EducationOrganizationId" ns="1" inpkey="282"/>
-													</entry>
-													<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-														<entry name="EducationOrganizationId" ns="1" inpkey="608"/>
-														<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="609" expanded="1">
-															<entry name="IdentificationCode" ns="1" inpkey="610"/>
-															<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="611" expanded="1">
-																<entry name="CodeValue" ns="1" inpkey="612"/>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-												<entry name="BeginDate" ns="1" inpkey="283"/>
-												<entry name="EndDate" ns="1" inpkey="284"/>
-											</entry>
-											<entry name="Objective" ns="1" inpkey="285"/>
-											<entry name="Description" ns="1" inpkey="286"/>
-											<entry name="AcademicSubject" ns="1" inpkey="287" expanded="1">
-												<entry name="id" type="attribute" inpkey="288"/>
-												<entry name="ref" type="attribute" inpkey="289"/>
-												<entry name="CodeValue" ns="1" inpkey="290"/>
-												<entry name="Namespace" ns="1" inpkey="613"/>
-											</entry>
-											<entry name="ObjectiveGradeLevel" ns="1" inpkey="291" expanded="1">
-												<entry name="id" type="attribute" inpkey="292"/>
-												<entry name="ref" type="attribute" inpkey="293"/>
-												<entry name="CodeValue" ns="1" inpkey="294"/>
-												<entry name="Namespace" ns="1" inpkey="614"/>
-											</entry>
-											<entry name="Nomenclature" ns="1" inpkey="295"/>
-											<entry name="SuccessCriteria" ns="1" inpkey="296"/>
-											<entry name="LearningStandardReference" ns="1" inpkey="297">
-												<entry name="id" type="attribute" inpkey="298"/>
-												<entry name="ref" type="attribute" inpkey="299"/>
-												<entry name="LearningStandardIdentity" ns="1" inpkey="300" expanded="1">
-													<entry name="LearningStandardId" ns="1" inpkey="301"/>
-												</entry>
-												<entry name="LearningStandardLookup" ns="1" expanded="1">
-													<entry name="LearningStandardId" ns="1" inpkey="615"/>
-													<entry name="LearningStandardIdentificationCode" ns="1" inpkey="616" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="617"/>
-														<entry name="ContentStandardName" ns="1" inpkey="618"/>
-													</entry>
-													<entry name="ContentStandard" ns="1" inpkey="619" expanded="1">
-														<entry name="Title" ns="1" inpkey="620"/>
-														<entry name="Author" ns="1" inpkey="621"/>
-														<entry name="Version" ns="1" inpkey="622"/>
-														<entry name="URI" ns="1" inpkey="623"/>
-														<entry name="PublicationDate" ns="1" inpkey="624"/>
-														<entry name="PublicationYear" ns="1" inpkey="625"/>
-														<entry name="PublicationStatus" ns="1" inpkey="626"/>
-														<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="627">
-															<entry name="id" type="attribute" inpkey="628"/>
-															<entry name="ref" type="attribute" inpkey="629"/>
-															<entry name="EducationOrganizationIdentity" ns="1" inpkey="630" expanded="1">
-																<entry name="EducationOrganizationId" ns="1" inpkey="631"/>
-															</entry>
-															<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-																<entry name="EducationOrganizationId" ns="1" inpkey="632"/>
-																<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="633" expanded="1">
-																	<entry name="IdentificationCode" ns="1" inpkey="634"/>
-																	<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="635" expanded="1">
-																		<entry name="CodeValue" ns="1" inpkey="636"/>
-																	</entry>
-																</entry>
-															</entry>
-														</entry>
-														<entry name="BeginDate" ns="1" inpkey="637"/>
-														<entry name="EndDate" ns="1" inpkey="638"/>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="ParentLearningObjectiveReference" ns="1" inpkey="302" expanded="1">
-												<entry name="id" type="attribute" inpkey="303"/>
-												<entry name="ref" type="attribute" inpkey="304"/>
-												<entry name="LearningObjectiveIdentity" ns="1" inpkey="305" expanded="1">
-													<entry name="Objective" ns="1" inpkey="306"/>
-													<entry name="AcademicSubject" ns="1" inpkey="307" expanded="1">
-														<entry name="id" type="attribute" inpkey="308"/>
-														<entry name="ref" type="attribute" inpkey="309"/>
-														<entry name="CodeValue" ns="1" inpkey="310"/>
-														<entry name="Namespace" ns="1" inpkey="786"/>
-													</entry>
-													<entry name="ObjectiveGradeLevel" ns="1" inpkey="311" expanded="1">
-														<entry name="id" type="attribute" inpkey="312"/>
-														<entry name="ref" type="attribute" inpkey="313"/>
-														<entry name="CodeValue" ns="1" inpkey="314"/>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="LearningStandard" ns="1" inpkey="315" expanded="1">
-											<entry name="id" type="attribute" inpkey="316"/>
-											<entry name="LearningStandardId" ns="1" inpkey="317"/>
-											<entry name="LearningStandardIdentificationCode" ns="1" inpkey="318" expanded="1">
-												<entry name="IdentificationCode" ns="1" inpkey="451"/>
-												<entry name="ContentStandardName" ns="1" inpkey="533"/>
-											</entry>
-											<entry name="Description" ns="1" inpkey="319"/>
-											<entry name="LearningStandardItemCode" ns="1" inpkey="320"/>
-											<entry name="ContentStandard" ns="1" inpkey="321">
-												<entry name="Title" ns="1" inpkey="322"/>
-												<entry name="Author" ns="1" inpkey="323"/>
-												<entry name="Version" ns="1" inpkey="324"/>
-												<entry name="URI" ns="1" inpkey="325"/>
-												<entry name="PublicationDate" ns="1" inpkey="326"/>
-												<entry name="PublicationYear" ns="1" inpkey="327"/>
-												<entry name="PublicationStatus" ns="1" inpkey="328"/>
-												<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="329">
-													<entry name="id" type="attribute" inpkey="330"/>
-													<entry name="ref" type="attribute" inpkey="331"/>
-													<entry name="EducationOrganizationIdentity" ns="1" inpkey="332" expanded="1">
-														<entry name="EducationOrganizationId" ns="1" inpkey="333"/>
-													</entry>
-													<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-														<entry name="EducationOrganizationId" ns="1" inpkey="639"/>
-														<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="640" expanded="1">
-															<entry name="IdentificationCode" ns="1" inpkey="641"/>
-															<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="642" expanded="1">
-																<entry name="CodeValue" ns="1" inpkey="643"/>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-												<entry name="BeginDate" ns="1" inpkey="334"/>
-												<entry name="EndDate" ns="1" inpkey="335"/>
-											</entry>
-											<entry name="URI" ns="1" inpkey="336"/>
-											<entry name="GradeLevel" ns="1" inpkey="337" expanded="1">
-												<entry name="id" type="attribute" inpkey="338"/>
-												<entry name="ref" type="attribute" inpkey="339"/>
-												<entry name="CodeValue" ns="1" inpkey="340"/>
-												<entry name="Namespace" ns="1" inpkey="644"/>
-											</entry>
-											<entry name="AcademicSubject" ns="1" inpkey="341" expanded="1">
-												<entry name="id" type="attribute" inpkey="342"/>
-												<entry name="ref" type="attribute" inpkey="343"/>
-												<entry name="CodeValue" ns="1" inpkey="344"/>
-												<entry name="Namespace" ns="1" inpkey="645"/>
-											</entry>
-											<entry name="CourseTitle" ns="1" inpkey="345"/>
-											<entry name="SuccessCriteria" ns="1" inpkey="346"/>
-											<entry name="PrerequisiteLearningStandardReference" ns="1" inpkey="347">
-												<entry name="id" type="attribute" inpkey="348"/>
-												<entry name="ref" type="attribute" inpkey="349"/>
-												<entry name="LearningStandardIdentity" ns="1" inpkey="350" expanded="1">
-													<entry name="LearningStandardId" ns="1" inpkey="351"/>
-												</entry>
-												<entry name="LearningStandardLookup" ns="1" expanded="1">
-													<entry name="LearningStandardIdentificationCode" ns="1" inpkey="646" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="647"/>
-														<entry name="ContentStandardName" ns="1" inpkey="648"/>
-													</entry>
-													<entry name="ContentStandard" ns="1" inpkey="649" expanded="1">
-														<entry name="Title" ns="1" inpkey="650"/>
-														<entry name="Author" ns="1" inpkey="651"/>
-														<entry name="Version" ns="1" inpkey="652"/>
-														<entry name="URI" ns="1" inpkey="653"/>
-														<entry name="PublicationDate" ns="1" inpkey="654"/>
-														<entry name="PublicationYear" ns="1" inpkey="655"/>
-														<entry name="PublicationStatus" ns="1" inpkey="656"/>
-														<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="657" expanded="1">
-															<entry name="id" type="attribute" inpkey="658"/>
-															<entry name="ref" type="attribute" inpkey="659"/>
-															<entry name="EducationOrganizationIdentity" ns="1" inpkey="660" expanded="1">
-																<entry name="EducationOrganizationId" ns="1" inpkey="661"/>
-															</entry>
-															<entry name="EducationOrganizationLookup" ns="1">
-																<entry name="EducationOrganizationId" ns="1" inpkey="662"/>
-																<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="663" expanded="1">
-																	<entry name="IdentificationCode" ns="1" inpkey="664"/>
-																	<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="665" expanded="1">
-																		<entry name="CodeValue" ns="1" inpkey="666"/>
-																	</entry>
-																</entry>
-															</entry>
-														</entry>
-														<entry name="BeginDate" ns="1" inpkey="667"/>
-														<entry name="EndDate" ns="1" inpkey="668"/>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="ParentLearningStandardReference" ns="1" inpkey="352" expanded="1">
-												<entry name="id" type="attribute" inpkey="353"/>
-												<entry name="ref" type="attribute" inpkey="354"/>
-												<entry name="LearningStandardIdentity" ns="1" inpkey="355" expanded="1">
-													<entry name="LearningStandardId" ns="1" inpkey="356"/>
-												</entry>
-												<entry name="LearningStandardLookup" ns="1" expanded="1">
-													<entry name="LearningStandardId" ns="1" inpkey="669"/>
-													<entry name="LearningStandardIdentificationCode" ns="1" inpkey="670" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="671"/>
-														<entry name="ContentStandardName" ns="1" inpkey="672"/>
-													</entry>
-													<entry name="ContentStandard" ns="1" inpkey="673" expanded="1">
-														<entry name="Title" ns="1" inpkey="674"/>
-														<entry name="Author" ns="1" inpkey="675"/>
-														<entry name="Version" ns="1" inpkey="676"/>
-														<entry name="URI" ns="1" inpkey="677"/>
-														<entry name="PublicationDate" ns="1" inpkey="678"/>
-														<entry name="PublicationYear" ns="1" inpkey="679"/>
-														<entry name="PublicationStatus" ns="1" inpkey="680"/>
-														<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="681" expanded="1">
-															<entry name="id" type="attribute" inpkey="682"/>
-															<entry name="ref" type="attribute" inpkey="683"/>
-															<entry name="EducationOrganizationIdentity" ns="1" inpkey="684" expanded="1">
-																<entry name="EducationOrganizationId" ns="1" inpkey="685"/>
-															</entry>
-															<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-																<entry name="EducationOrganizationId" ns="1" inpkey="686"/>
-																<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="687" expanded="1">
-																	<entry name="IdentificationCode" ns="1" inpkey="688"/>
-																	<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="689" expanded="1">
-																		<entry name="CodeValue" ns="1" inpkey="690"/>
-																	</entry>
-																</entry>
-															</entry>
-														</entry>
-														<entry name="BeginDate" ns="1" inpkey="691"/>
-														<entry name="EndDate" ns="1" inpkey="692"/>
-													</entry>
-													<entry name="GradeLevel" ns="1" inpkey="787" expanded="1">
-														<entry name="id" type="attribute" inpkey="788"/>
-														<entry name="ref" type="attribute" inpkey="789"/>
-														<entry name="CodeValue" ns="1" inpkey="790"/>
-													</entry>
-													<entry name="AcademicSubject" ns="1" inpkey="791">
-														<entry name="id" type="attribute" inpkey="792"/>
-														<entry name="ref" type="attribute" inpkey="793"/>
-														<entry name="CodeValue" ns="1" inpkey="794"/>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
+							<entry name="node" inpkey="782" componentid="19"/>
+							<entry name="replacewith" inpkey="785" componentid="18"/>
+							<entry name="replacewith2" inpkey="783" componentid="14"/>
 						</root>
-						<document schema="..\..\Schemas\Interchange-Standards.xsd" outputinstance="..\Standards" instanceroot="{http://ed-fi.org/0200}InterchangeStandards"/>
-						<wsdl/>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="784" componentid="11"/>
+						</root>
 					</data>
 				</component>
 				<component name="Interchange-AssessmentMetadata" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view rbx="408" rby="652"/>
 					<data>
-						<root scrollposition="619">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -540,7 +291,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="LearningStandard" ns="1" outkey="103" expanded="1">
+										<entry name="LearningStandard" ns="1" outkey="103">
 											<entry name="id" type="attribute" outkey="104"/>
 											<entry name="LearningStandardId" ns="1" outkey="105"/>
 											<entry name="LearningStandardIdentificationCode" ns="1" outkey="106" expanded="1">
@@ -661,31 +412,282 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-AssessmentMetadata.xsd" inputinstance="..\AssessmentMetadata\Sample XML 1.2\AssessmentMetadata-1Benchmarks-LearningStandard.xml" instanceroot="{http://ed-fi.org/0120}InterchangeAssessmentMetadata"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-AssessmentMetadata.xsd" instanceroot="{http://ed-fi.org/0120}InterchangeAssessmentMetadata"/>
 						<wsdl/>
 					</data>
 				</component>
-				<component name="CodeCoalesce" library="user" blackbox="0" uid="37" kind="19" visible="0">
-					<view ltx="952" lty="775" rbx="1124" rby="826"/>
+				<component name="Interchange-Standards" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="728" rbx="1127" rby="652"/>
 					<data>
 						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
 								</namespaces>
 							</header>
-							<entry name="node" inpkey="782" componentid="19"/>
-							<entry name="replacewith" inpkey="785" componentid="18"/>
-							<entry name="replacewith2" inpkey="783" componentid="14"/>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStandards" ns="1" inpkey="266" expanded="1">
+										<entry name="LearningObjective" ns="1" inpkey="267" expanded="1">
+											<entry name="id" type="attribute" inpkey="268"/>
+											<entry name="LearningObjectiveId" ns="1" inpkey="269"/>
+											<entry name="ContentStandard" ns="1" inpkey="270">
+												<entry name="Title" ns="1" inpkey="271"/>
+												<entry name="Author" ns="1" inpkey="272"/>
+												<entry name="Version" ns="1" inpkey="273"/>
+												<entry name="URI" ns="1" inpkey="274"/>
+												<entry name="PublicationDate" ns="1" inpkey="275"/>
+												<entry name="PublicationYear" ns="1" inpkey="276"/>
+												<entry name="PublicationStatus" ns="1" inpkey="277"/>
+												<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="278" expanded="1">
+													<entry name="id" type="attribute" inpkey="279"/>
+													<entry name="ref" type="attribute" inpkey="280"/>
+													<entry name="EducationOrganizationIdentity" ns="1" inpkey="281" expanded="1">
+														<entry name="EducationOrganizationId" ns="1" inpkey="282"/>
+													</entry>
+													<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+														<entry name="EducationOrganizationId" ns="1" inpkey="608"/>
+														<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="609" expanded="1">
+															<entry name="IdentificationCode" ns="1" inpkey="610"/>
+															<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="611" expanded="1">
+																<entry name="CodeValue" ns="1" inpkey="612"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+												<entry name="BeginDate" ns="1" inpkey="283"/>
+												<entry name="EndDate" ns="1" inpkey="284"/>
+											</entry>
+											<entry name="Objective" ns="1" inpkey="285"/>
+											<entry name="Description" ns="1" inpkey="286"/>
+											<entry name="AcademicSubject" ns="1" inpkey="287" expanded="1">
+												<entry name="id" type="attribute" inpkey="288"/>
+												<entry name="ref" type="attribute" inpkey="289"/>
+												<entry name="CodeValue" ns="1" inpkey="290"/>
+												<entry name="Namespace" ns="1" inpkey="613"/>
+											</entry>
+											<entry name="ObjectiveGradeLevel" ns="1" inpkey="291" expanded="1">
+												<entry name="id" type="attribute" inpkey="292"/>
+												<entry name="ref" type="attribute" inpkey="293"/>
+												<entry name="CodeValue" ns="1" inpkey="294"/>
+												<entry name="Namespace" ns="1" inpkey="614"/>
+											</entry>
+											<entry name="Nomenclature" ns="1" inpkey="295"/>
+											<entry name="SuccessCriteria" ns="1" inpkey="296"/>
+											<entry name="LearningStandardReference" ns="1" inpkey="297">
+												<entry name="id" type="attribute" inpkey="298"/>
+												<entry name="ref" type="attribute" inpkey="299"/>
+												<entry name="LearningStandardIdentity" ns="1" inpkey="300" expanded="1">
+													<entry name="LearningStandardId" ns="1" inpkey="301"/>
+												</entry>
+												<entry name="LearningStandardLookup" ns="1" expanded="1">
+													<entry name="LearningStandardId" ns="1" inpkey="615"/>
+													<entry name="LearningStandardIdentificationCode" ns="1" inpkey="616" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="617"/>
+														<entry name="ContentStandardName" ns="1" inpkey="618"/>
+													</entry>
+													<entry name="ContentStandard" ns="1" inpkey="619" expanded="1">
+														<entry name="Title" ns="1" inpkey="620"/>
+														<entry name="Author" ns="1" inpkey="621"/>
+														<entry name="Version" ns="1" inpkey="622"/>
+														<entry name="URI" ns="1" inpkey="623"/>
+														<entry name="PublicationDate" ns="1" inpkey="624"/>
+														<entry name="PublicationYear" ns="1" inpkey="625"/>
+														<entry name="PublicationStatus" ns="1" inpkey="626"/>
+														<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="627">
+															<entry name="id" type="attribute" inpkey="628"/>
+															<entry name="ref" type="attribute" inpkey="629"/>
+															<entry name="EducationOrganizationIdentity" ns="1" inpkey="630" expanded="1">
+																<entry name="EducationOrganizationId" ns="1" inpkey="631"/>
+															</entry>
+															<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+																<entry name="EducationOrganizationId" ns="1" inpkey="632"/>
+																<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="633" expanded="1">
+																	<entry name="IdentificationCode" ns="1" inpkey="634"/>
+																	<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="635" expanded="1">
+																		<entry name="CodeValue" ns="1" inpkey="636"/>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+														<entry name="BeginDate" ns="1" inpkey="637"/>
+														<entry name="EndDate" ns="1" inpkey="638"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="ParentLearningObjectiveReference" ns="1" inpkey="302" expanded="1">
+												<entry name="id" type="attribute" inpkey="303"/>
+												<entry name="ref" type="attribute" inpkey="304"/>
+												<entry name="LearningObjectiveIdentity" ns="1" inpkey="305" expanded="1">
+													<entry name="Objective" ns="1" inpkey="306"/>
+													<entry name="AcademicSubject" ns="1" inpkey="307" expanded="1">
+														<entry name="id" type="attribute" inpkey="308"/>
+														<entry name="ref" type="attribute" inpkey="309"/>
+														<entry name="CodeValue" ns="1" inpkey="310"/>
+														<entry name="Namespace" ns="1" inpkey="786"/>
+													</entry>
+													<entry name="ObjectiveGradeLevel" ns="1" inpkey="311" expanded="1">
+														<entry name="id" type="attribute" inpkey="312"/>
+														<entry name="ref" type="attribute" inpkey="313"/>
+														<entry name="CodeValue" ns="1" inpkey="314"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="Namespace" ns="1" inpkey="810"/>
+										</entry>
+										<entry name="LearningStandard" ns="1" inpkey="315">
+											<entry name="id" type="attribute" inpkey="316"/>
+											<entry name="LearningStandardId" ns="1" inpkey="317"/>
+											<entry name="LearningStandardIdentificationCode" ns="1" inpkey="318">
+												<entry name="IdentificationCode" ns="1" inpkey="451"/>
+												<entry name="ContentStandardName" ns="1" inpkey="533"/>
+											</entry>
+											<entry name="Description" ns="1" inpkey="319"/>
+											<entry name="LearningStandardItemCode" ns="1" inpkey="320"/>
+											<entry name="ContentStandard" ns="1" inpkey="321">
+												<entry name="Title" ns="1" inpkey="322"/>
+												<entry name="Author" ns="1" inpkey="323"/>
+												<entry name="Version" ns="1" inpkey="324"/>
+												<entry name="URI" ns="1" inpkey="325"/>
+												<entry name="PublicationDate" ns="1" inpkey="326"/>
+												<entry name="PublicationYear" ns="1" inpkey="327"/>
+												<entry name="PublicationStatus" ns="1" inpkey="328"/>
+												<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="329">
+													<entry name="id" type="attribute" inpkey="330"/>
+													<entry name="ref" type="attribute" inpkey="331"/>
+													<entry name="EducationOrganizationIdentity" ns="1" inpkey="332" expanded="1">
+														<entry name="EducationOrganizationId" ns="1" inpkey="333"/>
+													</entry>
+													<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+														<entry name="EducationOrganizationId" ns="1" inpkey="639"/>
+														<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="640" expanded="1">
+															<entry name="IdentificationCode" ns="1" inpkey="641"/>
+															<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="642" expanded="1">
+																<entry name="CodeValue" ns="1" inpkey="643"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+												<entry name="BeginDate" ns="1" inpkey="334"/>
+												<entry name="EndDate" ns="1" inpkey="335"/>
+											</entry>
+											<entry name="URI" ns="1" inpkey="336"/>
+											<entry name="GradeLevel" ns="1" inpkey="337">
+												<entry name="id" type="attribute" inpkey="338"/>
+												<entry name="ref" type="attribute" inpkey="339"/>
+												<entry name="CodeValue" ns="1" inpkey="340"/>
+												<entry name="Namespace" ns="1" inpkey="644"/>
+											</entry>
+											<entry name="AcademicSubject" ns="1" inpkey="341">
+												<entry name="id" type="attribute" inpkey="342"/>
+												<entry name="ref" type="attribute" inpkey="343"/>
+												<entry name="CodeValue" ns="1" inpkey="344"/>
+												<entry name="Namespace" ns="1" inpkey="645"/>
+											</entry>
+											<entry name="CourseTitle" ns="1" inpkey="345"/>
+											<entry name="SuccessCriteria" ns="1" inpkey="346"/>
+											<entry name="PrerequisiteLearningStandardReference" ns="1" inpkey="347">
+												<entry name="id" type="attribute" inpkey="348"/>
+												<entry name="ref" type="attribute" inpkey="349"/>
+												<entry name="LearningStandardIdentity" ns="1" inpkey="350" expanded="1">
+													<entry name="LearningStandardId" ns="1" inpkey="351"/>
+												</entry>
+												<entry name="LearningStandardLookup" ns="1" expanded="1">
+													<entry name="LearningStandardIdentificationCode" ns="1" inpkey="646" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="647"/>
+														<entry name="ContentStandardName" ns="1" inpkey="648"/>
+													</entry>
+													<entry name="ContentStandard" ns="1" inpkey="649" expanded="1">
+														<entry name="Title" ns="1" inpkey="650"/>
+														<entry name="Author" ns="1" inpkey="651"/>
+														<entry name="Version" ns="1" inpkey="652"/>
+														<entry name="URI" ns="1" inpkey="653"/>
+														<entry name="PublicationDate" ns="1" inpkey="654"/>
+														<entry name="PublicationYear" ns="1" inpkey="655"/>
+														<entry name="PublicationStatus" ns="1" inpkey="656"/>
+														<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="657" expanded="1">
+															<entry name="id" type="attribute" inpkey="658"/>
+															<entry name="ref" type="attribute" inpkey="659"/>
+															<entry name="EducationOrganizationIdentity" ns="1" inpkey="660" expanded="1">
+																<entry name="EducationOrganizationId" ns="1" inpkey="661"/>
+															</entry>
+															<entry name="EducationOrganizationLookup" ns="1">
+																<entry name="EducationOrganizationId" ns="1" inpkey="662"/>
+																<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="663" expanded="1">
+																	<entry name="IdentificationCode" ns="1" inpkey="664"/>
+																	<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="665" expanded="1">
+																		<entry name="CodeValue" ns="1" inpkey="666"/>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+														<entry name="BeginDate" ns="1" inpkey="667"/>
+														<entry name="EndDate" ns="1" inpkey="668"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="ParentLearningStandardReference" ns="1" inpkey="352">
+												<entry name="id" type="attribute" inpkey="353"/>
+												<entry name="ref" type="attribute" inpkey="354"/>
+												<entry name="LearningStandardIdentity" ns="1" inpkey="355" expanded="1">
+													<entry name="LearningStandardId" ns="1" inpkey="356"/>
+												</entry>
+												<entry name="LearningStandardLookup" ns="1" expanded="1">
+													<entry name="LearningStandardId" ns="1" inpkey="669"/>
+													<entry name="LearningStandardIdentificationCode" ns="1" inpkey="670" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="671"/>
+														<entry name="ContentStandardName" ns="1" inpkey="672"/>
+													</entry>
+													<entry name="ContentStandard" ns="1" inpkey="673" expanded="1">
+														<entry name="Title" ns="1" inpkey="674"/>
+														<entry name="Author" ns="1" inpkey="675"/>
+														<entry name="Version" ns="1" inpkey="676"/>
+														<entry name="URI" ns="1" inpkey="677"/>
+														<entry name="PublicationDate" ns="1" inpkey="678"/>
+														<entry name="PublicationYear" ns="1" inpkey="679"/>
+														<entry name="PublicationStatus" ns="1" inpkey="680"/>
+														<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="681" expanded="1">
+															<entry name="id" type="attribute" inpkey="682"/>
+															<entry name="ref" type="attribute" inpkey="683"/>
+															<entry name="EducationOrganizationIdentity" ns="1" inpkey="684" expanded="1">
+																<entry name="EducationOrganizationId" ns="1" inpkey="685"/>
+															</entry>
+															<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+																<entry name="EducationOrganizationId" ns="1" inpkey="686"/>
+																<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="687" expanded="1">
+																	<entry name="IdentificationCode" ns="1" inpkey="688"/>
+																	<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="689" expanded="1">
+																		<entry name="CodeValue" ns="1" inpkey="690"/>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+														<entry name="BeginDate" ns="1" inpkey="691"/>
+														<entry name="EndDate" ns="1" inpkey="692"/>
+													</entry>
+													<entry name="GradeLevel" ns="1" inpkey="787" expanded="1">
+														<entry name="id" type="attribute" inpkey="788"/>
+														<entry name="ref" type="attribute" inpkey="789"/>
+														<entry name="CodeValue" ns="1" inpkey="790"/>
+													</entry>
+													<entry name="AcademicSubject" ns="1" inpkey="791">
+														<entry name="id" type="attribute" inpkey="792"/>
+														<entry name="ref" type="attribute" inpkey="793"/>
+														<entry name="CodeValue" ns="1" inpkey="794"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="Namespace" ns="1" inpkey="811"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
 						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="CodeValue" outkey="784" componentid="11"/>
-						</root>
+						<document schema="..\..\Schemas\Interchange-Standards.xsd" outputinstance="..\Standards" instanceroot="{http://ed-fi.org/0200}InterchangeStandards"/>
+						<wsdl/>
 					</data>
 				</component>
 			</children>
@@ -786,6 +788,7 @@
 					<vertex vertexkey="86">
 						<edges>
 							<edge vertexkey="285" edgekey="376"/>
+							<edge vertexkey="810" edgekey="814"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="87">
@@ -890,6 +893,7 @@
 					<vertex vertexkey="105">
 						<edges>
 							<edge vertexkey="317" edgekey="403"/>
+							<edge vertexkey="811" edgekey="813"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="106">
