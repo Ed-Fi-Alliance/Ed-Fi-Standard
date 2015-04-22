@@ -8219,7 +8219,7 @@ Local Neglected Program.</xs:documentation>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptor" minOccurs="0">
+			<xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The category of an assessment based on format and content. For example: Achievement test, Advanced placement test, Alternate assessment/grade-level standards, Attitudinal test, Cognitive, and perceptual skills test, etc.</xs:documentation>
 					<xs:appinfo>
@@ -8388,7 +8388,7 @@ Local Neglected Program.</xs:documentation>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptor" minOccurs="0">
+			<xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The category of an assessment based on format and content. For example:
 Achievement test
