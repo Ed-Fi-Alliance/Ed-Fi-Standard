@@ -286,7 +286,7 @@
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="818" lty="105" rbx="1189" rby="721"/>
 					<data>
-						<root scrollposition="352">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -297,7 +297,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentIntervention" ns="1" inpkey="1" expanded="1">
-										<entry name="EducationContent" ns="1" inpkey="2">
+										<entry name="EducationContent" ns="1" inpkey="2" expanded="1">
 											<entry name="id" type="attribute" inpkey="3"/>
 											<entry name="ContentIdentifier" ns="1" inpkey="4"/>
 											<entry name="LearningResourceMetadataURI" ns="1" inpkey="5"/>
@@ -310,7 +310,7 @@
 											<entry name="InteractivityStyle" ns="1" inpkey="12"/>
 											<entry name="ContentClass" ns="1" inpkey="13"/>
 											<entry name="UseRightsURL" ns="1" inpkey="14"/>
-											<entry name="DerivativeSourceEducationContentSource" ns="1" inpkey="15" expanded="1">
+											<entry name="DerivativeSourceEducationContentSource" ns="1" inpkey="15">
 												<entry name="EducationContentReference" ns="1" expanded="1">
 													<entry name="EducationContentIdentity" ns="1" inpkey="16" expanded="1">
 														<entry name="ContentIdentifier" ns="1" inpkey="17"/>
@@ -378,8 +378,9 @@
 											</entry>
 											<entry name="Cost" ns="1" inpkey="33"/>
 											<entry name="CostRate" ns="1" inpkey="34"/>
+											<entry name="Namespace" ns="1" inpkey="970"/>
 										</entry>
-										<entry name="InterventionPrescription" ns="1" inpkey="35" expanded="1">
+										<entry name="InterventionPrescription" ns="1" inpkey="35">
 											<entry name="id" type="attribute" inpkey="36"/>
 											<entry name="EducationContentSource" ns="1" expanded="1">
 												<entry name="EducationContentReference" ns="1" inpkey="474" expanded="1">
@@ -418,7 +419,7 @@
 											</entry>
 											<entry name="InterventionPrescriptionIdentificationCode" ns="1" inpkey="808"/>
 										</entry>
-										<entry name="Intervention" ns="1" inpkey="44" expanded="1">
+										<entry name="Intervention" ns="1" inpkey="44">
 											<entry name="id" type="attribute" inpkey="45"/>
 											<entry name="EducationContentSource" ns="1">
 												<entry name="EducationContentReference" ns="1" inpkey="486">
@@ -495,7 +496,7 @@
 											</entry>
 											<entry name="InterventionIdentificationCode" ns="1" inpkey="851"/>
 										</entry>
-										<entry name="InterventionStudy" ns="1" inpkey="79" expanded="1">
+										<entry name="InterventionStudy" ns="1" inpkey="79">
 											<entry name="id" type="attribute" inpkey="80"/>
 											<entry name="EducationContentSource" ns="1">
 												<entry name="EducationContentReference" ns="1" inpkey="626" expanded="1">
@@ -552,7 +553,7 @@
 											</entry>
 											<entry name="InterventionStudyIdentificationCode" ns="1" inpkey="853"/>
 										</entry>
-										<entry name="StudentInterventionAssociation" ns="1" inpkey="101" expanded="1">
+										<entry name="StudentInterventionAssociation" ns="1" inpkey="101">
 											<entry name="StudentReference" ns="1" inpkey="102" expanded="1">
 												<entry name="id" type="attribute" inpkey="103"/>
 												<entry name="ref" type="attribute" inpkey="104"/>
@@ -711,7 +712,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentIntervention" ns="1" outkey="147" expanded="1">
-										<entry name="EducationContent" ns="1" outkey="148">
+										<entry name="EducationContent" ns="1" outkey="148" expanded="1">
 											<entry name="id" type="attribute" outkey="149"/>
 											<entry name="ContentIdentifier" ns="1" outkey="150"/>
 											<entry name="LearningResourceMetadataURI" ns="1" outkey="151"/>
@@ -751,7 +752,7 @@
 												<entry name="Description" ns="1" outkey="449"/>
 											</entry>
 											<entry name="Version" ns="1" outkey="173"/>
-											<entry name="LearningStandardReference" ns="1" outkey="174" expanded="1">
+											<entry name="LearningStandardReference" ns="1" outkey="174">
 												<entry name="id" type="attribute" outkey="175"/>
 												<entry name="ref" type="attribute" outkey="176"/>
 												<entry name="LearningStandardIdentity" ns="1" outkey="177" expanded="1">
@@ -787,7 +788,7 @@
 											<entry name="Cost" ns="1" outkey="179"/>
 											<entry name="CostRate" ns="1" outkey="180"/>
 										</entry>
-										<entry name="InterventionPrescription" ns="1" outkey="181" expanded="1">
+										<entry name="InterventionPrescription" ns="1" outkey="181">
 											<entry name="id" type="attribute" outkey="182"/>
 											<entry name="EducationContentReference" ns="1" outkey="501" expanded="1">
 												<entry name="id" type="attribute" outkey="502"/>
@@ -945,7 +946,7 @@
 											<entry name="Sex" ns="1" outkey="655"/>
 											<entry name="StateAbbreviation" ns="1" outkey="246"/>
 										</entry>
-										<entry name="StudentInterventionAssociation" ns="1" outkey="247" expanded="1">
+										<entry name="StudentInterventionAssociation" ns="1" outkey="247">
 											<entry name="StudentReference" ns="1" outkey="248" expanded="1">
 												<entry name="id" type="attribute" outkey="249"/>
 												<entry name="ref" type="attribute" outkey="250"/>
@@ -1119,6 +1120,7 @@
 					<vertex vertexkey="150">
 						<edges>
 							<edge vertexkey="4" edgekey="296"/>
+							<edge vertexkey="970" edgekey="971"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="151">

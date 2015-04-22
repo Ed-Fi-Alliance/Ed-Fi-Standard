@@ -166,11 +166,34 @@
 						</root>
 					</data>
 				</component>
+				<component name="CodeCoalesce" library="user" blackbox="0" uid="37" kind="19" visible="0">
+					<view ltx="952" lty="775" rbx="1124" rby="826"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="782" componentid="19"/>
+							<entry name="replacewith" inpkey="785" componentid="18"/>
+							<entry name="replacewith2" inpkey="783" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="784" componentid="11"/>
+						</root>
+					</data>
+				</component>
 				<component name="Interchange-Standards" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="728" rbx="1127" rby="652"/>
 					<data>
-						<root scrollposition="505">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -286,11 +309,12 @@
 													</entry>
 												</entry>
 											</entry>
+											<entry name="Namespace" ns="1" inpkey="810"/>
 										</entry>
 										<entry name="LearningStandard" ns="1" inpkey="315" expanded="1">
 											<entry name="id" type="attribute" inpkey="316"/>
 											<entry name="LearningStandardId" ns="1" inpkey="317"/>
-											<entry name="LearningStandardIdentificationCode" ns="1" inpkey="318" expanded="1">
+											<entry name="LearningStandardIdentificationCode" ns="1" inpkey="318">
 												<entry name="IdentificationCode" ns="1" inpkey="451"/>
 												<entry name="ContentStandardName" ns="1" inpkey="533"/>
 											</entry>
@@ -324,13 +348,13 @@
 												<entry name="EndDate" ns="1" inpkey="335"/>
 											</entry>
 											<entry name="URI" ns="1" inpkey="336"/>
-											<entry name="GradeLevel" ns="1" inpkey="337" expanded="1">
+											<entry name="GradeLevel" ns="1" inpkey="337">
 												<entry name="id" type="attribute" inpkey="338"/>
 												<entry name="ref" type="attribute" inpkey="339"/>
 												<entry name="CodeValue" ns="1" inpkey="340"/>
 												<entry name="Namespace" ns="1" inpkey="644"/>
 											</entry>
-											<entry name="AcademicSubject" ns="1" inpkey="341" expanded="1">
+											<entry name="AcademicSubject" ns="1" inpkey="341">
 												<entry name="id" type="attribute" inpkey="342"/>
 												<entry name="ref" type="attribute" inpkey="343"/>
 												<entry name="CodeValue" ns="1" inpkey="344"/>
@@ -378,7 +402,7 @@
 													</entry>
 												</entry>
 											</entry>
-											<entry name="ParentLearningStandardReference" ns="1" inpkey="352" expanded="1">
+											<entry name="ParentLearningStandardReference" ns="1" inpkey="352">
 												<entry name="id" type="attribute" inpkey="353"/>
 												<entry name="ref" type="attribute" inpkey="354"/>
 												<entry name="LearningStandardIdentity" ns="1" inpkey="355" expanded="1">
@@ -429,6 +453,7 @@
 													</entry>
 												</entry>
 											</entry>
+											<entry name="Namespace" ns="1" inpkey="811"/>
 										</entry>
 									</entry>
 								</entry>
@@ -442,7 +467,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view rbx="408" rby="652"/>
 					<data>
-						<root scrollposition="619">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -453,7 +478,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeAssessmentMetadata" ns="1" outkey="264" expanded="1">
-										<entry name="LearningObjective" ns="1" outkey="68" expanded="1">
+										<entry name="LearningObjective" ns="1" outkey="68">
 											<entry name="id" type="attribute" outkey="69"/>
 											<entry name="LearningObjectiveId" ns="1" outkey="70"/>
 											<entry name="ContentStandard" ns="1" outkey="71">
@@ -665,29 +690,6 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="CodeCoalesce" library="user" blackbox="0" uid="37" kind="19" visible="0">
-					<view ltx="952" lty="775" rbx="1124" rby="826"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="node" inpkey="782" componentid="19"/>
-							<entry name="replacewith" inpkey="785" componentid="18"/>
-							<entry name="replacewith2" inpkey="783" componentid="14"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="CodeValue" outkey="784" componentid="11"/>
-						</root>
-					</data>
-				</component>
 			</children>
 			<graph directed="1">
 				<edges/>
@@ -705,6 +707,7 @@
 					<vertex vertexkey="70">
 						<edges>
 							<edge vertexkey="269" edgekey="360"/>
+							<edge vertexkey="810" edgekey="812"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="71">
@@ -890,6 +893,7 @@
 					<vertex vertexkey="105">
 						<edges>
 							<edge vertexkey="317" edgekey="403"/>
+							<edge vertexkey="811" edgekey="813"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="106">
