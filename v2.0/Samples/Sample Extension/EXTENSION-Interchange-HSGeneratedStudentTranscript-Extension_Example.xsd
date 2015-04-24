@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2013 rel. 2 sp2 (x64) (http://www.altova.com) by Melodie Comer (Double Line, Inc.) -->
 <!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:include schemaLocation="EXTENSION-Ed-Fi-Extended-Core.xsd"/>
@@ -17,6 +16,7 @@
 • Yearly and final credits earned and grade point average (GPA)
 • Graduation plan and date graduated
 • The student transcript interchange should indicate whether it is an official or unofficial submission
+• Postsecondary Institution(s) that the student is attending 
 </xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
@@ -33,6 +33,7 @@
 				<xs:element name="Course" type="Course"/>
 				<xs:element name="StudentAssessment" type="StudentAssessment"/>
 				<xs:element name="School" type="School"/>
+				<xs:element name="PostsecondaryInstitution" type="EXTENSION-PostsecondaryInstitution"/>
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>
