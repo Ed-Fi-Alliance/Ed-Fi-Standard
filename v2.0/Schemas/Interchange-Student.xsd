@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudent">
+		<xs:annotation>
+			<xs:documentation>This interchange defines students and contains all their identifying information.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Student" type="Student"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Education Organization Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeEducationOrganization">
+		<xs:annotation>
+			<xs:documentation>The Education Organization interchange describes education organizations, their structure, and their education offerings. It is used to exchange education organization information about a state's schools, local education agencies (LEAs), education service centers (ESCs), and others. 
+In addition, the interchange (optionally) supports the definition of the education offerings provided by schools, specifically the available courses and alternative/supplemental programs offered. Courses in this context refer to "course catalog" information. As such, this interchange may define current as well as past courses.
+Locations and ClassPeriods can be re-used across Schools, if they are the same, using LocationReference and ClassPeriodReference within other domain entities in the interchange.
+</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="StateEducationAgency" type="StateEducationAgency"/>
+				<xs:element name="EducationServiceCenter" type="EducationServiceCenter"/>
+				<xs:element name="FeederSchoolAssociation" type="FeederSchoolAssociation"/>
+				<xs:element name="LocalEducationAgency" type="LocalEducationAgency"/>
+				<xs:element name="School" type="School"/>
+				<xs:element name="Location" type="Location"/>
+				<xs:element name="ClassPeriod" type="ClassPeriod"/>
+				<xs:element name="Course" type="Course"/>
+				<xs:element name="Program" type="Program"/>
+				<xs:element name="AccountabilityRating" type="AccountabilityRating"/>
+				<xs:element name="EducationOrganizationPeerAssociation" type="EducationOrganizationPeerAssociation"/>
+				<xs:element name="EducationOrganizationNetwork" type="EducationOrganizationNetwork"/>
+				<xs:element name="EducationOrganizationNetworkAssociation" type="EducationOrganizationNetworkAssociation"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Finance Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeFinance">
+		<xs:annotation>
+			<xs:documentation>This interchange describes financial data related to an Education Organization.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Account" type="Account"/>
+				<xs:element name="Actual" type="Actual"/>
+				<xs:element name="Budget" type="Budget"/>
+				<xs:element name="ContractedStaff" type="ContractedStaff"/>
+				<xs:element name="Payroll" type="Payroll"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

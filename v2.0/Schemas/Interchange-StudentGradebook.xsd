@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Gradebook Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentGradebook">
+		<xs:annotation>
+			<xs:documentation>This interchange is for student gradebook entries.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SectionReference" type="SectionReferenceType"/>
+				<xs:element name="GradebookEntry" type="GradebookEntry"/>
+				<xs:element name="StudentGradebookEntry" type="StudentGradebookEntry"/>
+				<xs:element name="LearningObjective" type="LearningObjective"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
