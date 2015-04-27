@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeEducationOrgCalendar xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 C:/Projects/DLP-EdFiTeam/Ed-Fi-Standard/v2.0/Schemas/Interchange-EducationOrgCalendar.xsd">
+	<Session>
+		<SessionName>Traditional</SessionName>
+		<SchoolYear>2010-2011</SchoolYear>
+		<Term>
+			<CodeValue>Fall Semester</CodeValue>
+		</Term>
+		<BeginDate>2010-08-23</BeginDate>
+		<EndDate>2010-12-17</EndDate>
+		<TotalInstructionalDays>81</TotalInstructionalDays>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<GradingPeriodReference ref="GRDP_20100823"/>
+		<GradingPeriodReference ref="GRDP_20101004"/>
+		<GradingPeriodReference ref="GRDP_20101108"/>
+	</Session>
+	<Session>
+		<SessionName>Traditional</SessionName>
+		<SchoolYear>2010-2011</SchoolYear>
+		<Term>
+			<CodeValue>Spring Semester</CodeValue>
+		</Term>
+		<BeginDate>2011-01-04</BeginDate>
+		<EndDate>2011-05-27</EndDate>
+		<TotalInstructionalDays>88</TotalInstructionalDays>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<GradingPeriodReference ref="GRDP_20110104"/>
+		<GradingPeriodReference ref="GRDP_20110222"/>
+		<GradingPeriodReference ref="GRDP_20110411"/>
+	</Session>
+	<Session>
+		<SessionName>Traditional</SessionName>
+		<SchoolYear>2010-2011</SchoolYear>
+		<Term>
+			<CodeValue>Fall Semester</CodeValue>
+		</Term>
+		<BeginDate>2010-08-23</BeginDate>
+		<EndDate>2010-12-17</EndDate>
+		<TotalInstructionalDays>81</TotalInstructionalDays>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<GradingPeriodReference ref="GRDP_20100823"/>
+		<GradingPeriodReference ref="GRDP_20101004"/>
+		<GradingPeriodReference ref="GRDP_20101108"/>
+	</Session>
+	<Session>
+		<SessionName>Traditional</SessionName>
+		<SchoolYear>2010-2011</SchoolYear>
+		<Term>
+			<CodeValue>Spring Semester</CodeValue>
+		</Term>
+		<BeginDate>2011-01-04</BeginDate>
+		<EndDate>2011-05-27</EndDate>
+		<TotalInstructionalDays>88</TotalInstructionalDays>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<GradingPeriodReference ref="GRDP_20110104"/>
+		<GradingPeriodReference ref="GRDP_20110222"/>
+		<GradingPeriodReference ref="GRDP_20110411"/>
+	</Session>
+	<Session>
+		<SessionName>Traditional</SessionName>
+		<SchoolYear>2010-2011</SchoolYear>
+		<Term>
+			<CodeValue>Fall Semester</CodeValue>
+		</Term>
+		<BeginDate>2010-08-23</BeginDate>
+		<EndDate>2010-12-17</EndDate>
+		<TotalInstructionalDays>81</TotalInstructionalDays>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<GradingPeriodReference ref="GRDP_20100823"/>
+		<GradingPeriodReference ref="GRDP_20101004"/>
+		<GradingPeriodReference ref="GRDP_20101108"/>
+	</Session>
+	<Session>
+		<SessionName>Traditional</SessionName>
+		<SchoolYear>2010-2011</SchoolYear>
+		<Term>
+			<CodeValue>Spring Semester</CodeValue>
+		</Term>
+		<BeginDate>2011-01-04</BeginDate>
+		<EndDate>2011-05-27</EndDate>
+		<TotalInstructionalDays>88</TotalInstructionalDays>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<GradingPeriodReference ref="GRDP_20110104"/>
+		<GradingPeriodReference ref="GRDP_20110222"/>
+		<GradingPeriodReference ref="GRDP_20110411"/>
+	</Session>
+	<GradingPeriod id="GRDP_20100823">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<GradingPeriod>
+			<CodeValue>First Six Weeks</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradingPeriodDescriptor.xml</Namespace>
+		</GradingPeriod>
+		<BeginDate>2010-08-23</BeginDate>
+		<EndDate>2010-10-03</EndDate>
+		<TotalInstructionalDays>29</TotalInstructionalDays>
+	</GradingPeriod>
+	<GradingPeriod id="GRDP_20101004">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<GradingPeriod>
+			<CodeValue>Second Six Weeks</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradingPeriodDescriptor.xml</Namespace>
+		</GradingPeriod>
+		<BeginDate>2010-10-04</BeginDate>
+		<EndDate>2010-11-07</EndDate>
+		<TotalInstructionalDays>25</TotalInstructionalDays>
+	</GradingPeriod>
+	<GradingPeriod id="GRDP_20101108">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<GradingPeriod>
+			<CodeValue>Third Six Weeks</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradingPeriodDescriptor.xml</Namespace>
+		</GradingPeriod>
+		<BeginDate>2010-11-08</BeginDate>
+		<EndDate>2010-12-17</EndDate>
+		<TotalInstructionalDays>27</TotalInstructionalDays>
+	</GradingPeriod>
+	<GradingPeriod id="GRDP_20110104">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<GradingPeriod>
+			<CodeValue>Fourth Six Weeks</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradingPeriodDescriptor.xml</Namespace>
+		</GradingPeriod>
+		<BeginDate>2011-01-04</BeginDate>
+		<EndDate>2011-02-21</EndDate>
+		<TotalInstructionalDays>33</TotalInstructionalDays>
+	</GradingPeriod>
+	<GradingPeriod id="GRDP_20110222">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<GradingPeriod>
+			<CodeValue>Fifth Six Weeks</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradingPeriodDescriptor.xml</Namespace>
+		</GradingPeriod>
+		<BeginDate>2011-02-22</BeginDate>
+		<EndDate>2011-04-10</EndDate>
+		<TotalInstructionalDays>29</TotalInstructionalDays>
+	</GradingPeriod>
+	<GradingPeriod id="GRDP_20110411">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup/>
+		</SchoolReference>
+		<GradingPeriod>
+			<CodeValue>Sixth Six Weeks</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradingPeriodDescriptor.xml</Namespace>
+		</GradingPeriod>
+		<BeginDate>2011-04-11</BeginDate>
+		<EndDate>2011-05-27</EndDate>
+		<TotalInstructionalDays>34</TotalInstructionalDays>
+	</GradingPeriod>
+</InterchangeEducationOrgCalendar>
