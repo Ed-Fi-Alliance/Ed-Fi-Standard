@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Cohort Exchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentCohort">
+		<xs:annotation>
+			<xs:documentation>Cohorts are used to designate groups of students outside of class rosters, enrollment lists, or program participation.
+The Student Cohort interchange describes student cohort information. It can be used to exchange information regarding any named group of students, or cohort, for tracking, analysis, or intervention.
+</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Cohort" type="Cohort"/>
+				<xs:element name="StudentCohortAssociation" type="StudentCohortAssociation"/>
+				<xs:element name="StaffCohortAssociation" type="StaffCohortAssociation"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

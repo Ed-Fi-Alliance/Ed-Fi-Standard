@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by Double Line, Inc. (Double Line, Inc.) -->
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Parent Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeParent">
+		<xs:annotation>
+			<xs:documentation>This interchange defines parents and captures the familial relationship between the student and the parent as well as indicators for the parent for residence, primary parental contact, and emergency contact.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Parent" type="Parent"/>
+				<xs:element name="StudentParentAssociation" type="StudentParentAssociation"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

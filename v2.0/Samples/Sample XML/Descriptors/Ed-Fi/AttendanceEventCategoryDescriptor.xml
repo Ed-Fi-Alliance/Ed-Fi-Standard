@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas/Interchange-Descriptors.xsd">
+   <AttendanceEventCategoryDescriptor>
+      <CodeValue>In Attendance</CodeValue>
+      <ShortDescription>In Attendance</ShortDescription>
+      <Description>In Attendance</Description>
+      <Namespace>http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml</Namespace>
+      <AttendanceEventCategoryMap>In Attendance</AttendanceEventCategoryMap>
+   </AttendanceEventCategoryDescriptor>
+   <AttendanceEventCategoryDescriptor>
+      <CodeValue>Excused Absence</CodeValue>
+      <ShortDescription>Excused Absence</ShortDescription>
+      <Description>Excused Absence</Description>
+      <Namespace>http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml</Namespace>
+      <AttendanceEventCategoryMap>Excused Absence</AttendanceEventCategoryMap>
+   </AttendanceEventCategoryDescriptor>
+   <AttendanceEventCategoryDescriptor>
+      <CodeValue>Unexcused Absence</CodeValue>
+      <ShortDescription>Unexcused Absence</ShortDescription>
+      <Description>Unexcused Absence</Description>
+      <Namespace>http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml</Namespace>
+      <AttendanceEventCategoryMap>Unexcused Absence</AttendanceEventCategoryMap>
+   </AttendanceEventCategoryDescriptor>
+   <AttendanceEventCategoryDescriptor>
+      <CodeValue>Tardy</CodeValue>
+      <ShortDescription>Tardy</ShortDescription>
+      <Description>Tardy</Description>
+      <Namespace>http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml</Namespace>
+      <AttendanceEventCategoryMap>Tardy</AttendanceEventCategoryMap>
+   </AttendanceEventCategoryDescriptor>
+   <AttendanceEventCategoryDescriptor>
+      <CodeValue>Early departure</CodeValue>
+      <ShortDescription>Early departure</ShortDescription>
+      <Description>Early departure</Description>
+      <Namespace>http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml</Namespace>
+      <AttendanceEventCategoryMap>Early departure</AttendanceEventCategoryMap>
+   </AttendanceEventCategoryDescriptor>
+</InterchangeDescriptors>
