@@ -50,6 +50,55 @@
 		</CourseReference>
 	</CourseOffering>
 	<CourseOffering>
+		<LocalCourseCode>ALG-1</LocalCourseCode>
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<SessionReference>
+			<SessionIdentity>
+				<SchoolReference>
+					<SchoolIdentity>
+						<SchoolId>255901001</SchoolId>
+					</SchoolIdentity>
+					<SchoolLookup>
+						<SchoolId>255901001</SchoolId>
+					</SchoolLookup>
+				</SchoolReference>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>
+					<CodeValue>Spring Semester</CodeValue>
+				</Term>
+			</SessionIdentity>
+		</SessionReference>
+		<CourseReference>
+			<CourseIdentity>
+				<CourseCode>03100500</CourseCode>
+				<EducationOrganizationReference>
+					<EducationOrganizationIdentity>
+						<EducationOrganizationId>255901001</EducationOrganizationId>
+					</EducationOrganizationIdentity>
+					<EducationOrganizationLookup>
+						<EducationOrganizationId>255901001</EducationOrganizationId>
+					</EducationOrganizationLookup>
+				</EducationOrganizationReference>
+			</CourseIdentity>
+			<CourseLookup>
+				<CourseCode>03100500</CourseCode>
+				<CourseIdentificationCode>
+					<IdentificationCode>ALG-1</IdentificationCode>
+					<CourseIdentificationSystem>
+						<CodeValue>LEA course code</CodeValue>
+					</CourseIdentificationSystem>
+				</CourseIdentificationCode>
+			</CourseLookup>
+		</CourseReference>
+	</CourseOffering>
+	<CourseOffering>
 		<LocalCourseCode>ALG-2</LocalCourseCode>
 		<SchoolReference>
 			<SchoolIdentity>
