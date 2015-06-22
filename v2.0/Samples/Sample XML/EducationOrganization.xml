@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeEducationOrganization xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../Schemas/Interchange-EducationOrganization.xsd">
+<InterchangeEducationOrganization xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 C:/Projects/DLP-EdFiTeam/Ed-Fi-Standard/v2.0/Schemas/Interchange-EducationOrganization.xsd">
 	<EducationServiceCenter id="ESC_255950">
 		<StateOrganizationId>255950</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
@@ -1263,10 +1263,11 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001ALG-1111.32.NA.A.1.D" ref="LSTD_255901001ALG-1111.32.NA.A.1.D">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.32.NA.A.1.D</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_PatternsREnglishLanguageArtstionshipsandAlgebraicReasoning36" ref="LOBJ_PatternsREnglishLanguageArtstionshipsandAlgebraicReasoning36"/>
 	</Course>
 	<Course id="CRSE_255901001ALG-2">
 		<CourseCode>ALG-2</CourseCode>
@@ -1290,10 +1291,11 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001ALG-2111.33.b.2A.2.B" ref="LSTD_255901001ALG-2111.33.b.2A.2.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.33.b.2A.2.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_PatternsREnglishLanguageArtstionshipsandAlgebraicReasoning37" ref="LOBJ_PatternsREnglishLanguageArtstionshipsandAlgebraicReasoning37"/>
 	</Course>
 	<Course id="CRSE_255901001ART-1">
 		<CourseCode>ART-1</CourseCode>
@@ -1386,8 +1388,10 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001BIO112.34.11.C" ref="LSTD_255901001BIO112.34.11.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.34.11.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
 	<Course id="CRSE_255901001CHEM">
@@ -1435,7 +1439,6 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofOrganizationRevisingandEditing47" ref="LOBJ_EssenceofOrganizationRevisingandEditing47"/>
 	</Course>
 	<Course id="CRSE_255901001ECO-FE">
 		<CourseCode>ECO-FE</CourseCode>
@@ -1459,7 +1462,6 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_EconomicandSocialInfluences58" ref="LOBJ_EconomicandSocialInfluences58"/>
 	</Course>
 	<Course id="CRSE_255901001ENG-1">
 		<CourseCode>ENG-1</CourseCode>
@@ -1483,10 +1485,11 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001ENG-1110.31.9.B" ref="LSTD_255901001ENG-1110.31.9.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.31.9.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_CompositionStructure211" ref="LOBJ_CompositionStructure211"/>
 	</Course>
 	<Course id="CRSE_255901001ENG-2">
 		<CourseCode>ENG-2</CourseCode>
@@ -1510,10 +1513,11 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001ENG-2110.32.24.C" ref="LSTD_255901001ENG-2110.32.24.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.32.24.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EffectiveComposition211" ref="LOBJ_EffectiveComposition211"/>
 	</Course>
 	<Course id="CRSE_255901001ENG-3">
 		<CourseCode>ENG-3</CourseCode>
@@ -1537,10 +1541,11 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001ENG-3110.33.5.A" ref="LSTD_255901001ENG-3110.33.5.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.33.5.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofAnalysisandCriticalEvaluationReading211" ref="LOBJ_EssenceofAnalysisandCriticalEvaluationReading211"/>
 	</Course>
 	<Course id="CRSE_255901001ENG-4">
 		<CourseCode>ENG-4</CourseCode>
@@ -1564,10 +1569,11 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001ENG-4110.34.24.B" ref="LSTD_255901001ENG-4110.34.24.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.34.24.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofBasicUnderstandingReading211" ref="LOBJ_EssenceofBasicUnderstandingReading211"/>
 	</Course>
 	<Course id="CRSE_255901001ENVIRSYS">
 		<CourseCode>ENVIRSYS</CourseCode>
@@ -1591,7 +1597,6 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_LivingSystemsandtheEnvironment68" ref="LOBJ_LivingSystemsandtheEnvironment68"/>
 	</Course>
 	<Course id="CRSE_255901001GEOM">
 		<CourseCode>GEOM</CourseCode>
@@ -1615,10 +1620,11 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001GEOM111.34.NA.G.6.A" ref="LSTD_255901001GEOM111.34.NA.G.6.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.34.NA.G.6.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofGeometryandSpatialReasoning36" ref="LOBJ_EssenceofGeometryandSpatialReasoning36"/>
 	</Course>
 	<Course id="CRSE_255901001GOVT">
 		<CourseCode>GOVT</CourseCode>
@@ -1642,7 +1648,6 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofPoliticalInfluences58" ref="LOBJ_EssenceofPoliticalInfluences58"/>
 	</Course>
 	<Course id="CRSE_255901001HLTH-ED">
 		<CourseCode>HLTH-ED</CourseCode>
@@ -1735,8 +1740,10 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001PHYSICS112.39.2.A" ref="LSTD_255901001PHYSICS112.39.2.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.39.2.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
 	<Course id="CRSE_255901001PRE-CALC">
@@ -1761,8 +1768,10 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901001PRE-CALC111.35.NA.P.4.A" ref="LSTD_255901001PRE-CALC111.35.NA.P.4.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.35.NA.P.4.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
 	<Course id="CRSE_255901001SPAN-1">
@@ -1879,7 +1888,6 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_History58" ref="LOBJ_History58"/>
 	</Course>
 	<Course id="CRSE_255901001WGEO">
 		<CourseCode>WGEO</CourseCode>
@@ -1926,7 +1934,6 @@
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_History511" ref="LOBJ_History511"/>
 	</Course>
 	<Course id="CRSE_255901044ART-06">
 		<CourseCode>ART-06</CourseCode>
@@ -2019,10 +2026,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044EnglishLanguageArts-06110.18.2.C" ref="LSTD_255901044EnglishLanguageArts-06110.18.2.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.18.2.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofBasicUnderstandingReading210" ref="LOBJ_EssenceofBasicUnderstandingReading210"/>
 	</Course>
 	<Course id="CRSE_255901044EnglishLanguageArts-07">
 		<CourseCode>ELA-07</CourseCode>
@@ -2046,10 +2054,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044EnglishLanguageArts-07110.19.20.A" ref="LSTD_255901044EnglishLanguageArts-07110.19.20.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.19.20.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofEffectiveComposition210" ref="LOBJ_EssenceofEffectiveComposition210"/>
 	</Course>
 	<Course id="CRSE_255901044EnglishLanguageArts-08">
 		<CourseCode>ELA-08</CourseCode>
@@ -2073,10 +2082,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044EnglishLanguageArts-08110.20.3.A" ref="LSTD_255901044EnglishLanguageArts-08110.20.3.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.20.3.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofLiteraryElementsandTechniquesReading210" ref="LOBJ_EssenceofLiteraryElementsandTechniquesReading210"/>
 	</Course>
 	<Course id="CRSE_255901044HLTH-07">
 		<CourseCode>HLTH-07</CourseCode>
@@ -2146,10 +2156,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044MATH-06111.22.NA.6.2.C" ref="LSTD_255901044MATH-06111.22.NA.6.2.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.22.NA.6.2.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofNumbersOperationsandQuantitativeReasoning36" ref="LOBJ_EssenceofNumbersOperationsandQuantitativeReasoning36"/>
 	</Course>
 	<Course id="CRSE_255901044MATH-07">
 		<CourseCode>MATH-07</CourseCode>
@@ -2173,10 +2184,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044MATH-07111.23.NA.7.4.A" ref="LSTD_255901044MATH-07111.23.NA.7.4.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.23.NA.7.4.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofNumbersOperationsandQuantitativeReasoning37" ref="LOBJ_EssenceofNumbersOperationsandQuantitativeReasoning37"/>
 	</Course>
 	<Course id="CRSE_255901044MATH-08">
 		<CourseCode>MATH-08</CourseCode>
@@ -2200,10 +2212,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044MATH-08111.24.NA.8.15.B" ref="LSTD_255901044MATH-08111.24.NA.8.15.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.24.NA.8.15.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofMathematicalProcessesandTools38" ref="LOBJ_EssenceofMathematicalProcessesandTools38"/>
 	</Course>
 	<Course id="CRSE_255901044MUS-06">
 		<CourseCode>MUS-06</CourseCode>
@@ -2319,10 +2332,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044SCI-06112.18.5.A" ref="LSTD_255901044SCI-06112.18.5.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.18.5.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_StructuresandPropertiesofMatter68" ref="LOBJ_StructuresandPropertiesofMatter68"/>
 	</Course>
 	<Course id="CRSE_255901044SCI-07">
 		<CourseCode>SCI-07</CourseCode>
@@ -2346,10 +2360,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044SCI-07112.19.1.B" ref="LSTD_255901044SCI-07112.19.1.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.19.1.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofMotionForcesandEnergy610" ref="LOBJ_EssenceofMotionForcesandEnergy610"/>
 	</Course>
 	<Course id="CRSE_255901044SCI-08">
 		<CourseCode>SCI-08</CourseCode>
@@ -2373,10 +2388,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044SCI-08112.20.11.B" ref="LSTD_255901044SCI-08112.20.11.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.20.11.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofStructuresandPropertiesofMatter68" ref="LOBJ_EssenceofStructuresandPropertiesofMatter68"/>
 	</Course>
 	<Course id="CRSE_255901044SS-06">
 		<CourseCode>SS-06</CourseCode>
@@ -2400,8 +2416,10 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044SS-06113.18.15.B" ref="LSTD_255901044SS-06113.18.15.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.18.15.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
 	<Course id="CRSE_255901044SS-07">
@@ -2426,8 +2444,10 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044SS-07113.19.19.C" ref="LSTD_255901044SS-07113.19.19.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.19.19.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
 	<Course id="CRSE_255901044SS-08">
@@ -2452,10 +2472,11 @@
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901044SS-08113.20.2.A" ref="LSTD_255901044SS-08113.20.2.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.20.2.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EconomicandSocialInfluences510" ref="LOBJ_EconomicandSocialInfluences510"/>
 	</Course>
 	<Course id="CRSE_255901107ART-01">
 		<CourseCode>ART-01</CourseCode>
@@ -2594,7 +2615,6 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_AnalysisandCriticalEvaluationReading210" ref="LOBJ_AnalysisandCriticalEvaluationReading210"/>
 	</Course>
 	<Course id="CRSE_255901107EnglishLanguageArts-02">
 		<CourseCode>ELA-02</CourseCode>
@@ -2618,10 +2638,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107EnglishLanguageArts-02110.13.1.A" ref="LSTD_255901107EnglishLanguageArts-02110.13.1.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.13.1.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_BasicUnderstandingReading210" ref="LOBJ_BasicUnderstandingReading210"/>
 	</Course>
 	<Course id="CRSE_255901107EnglishLanguageArts-03">
 		<CourseCode>ELA-03</CourseCode>
@@ -2645,10 +2666,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107EnglishLanguageArts-03110.14.17.C" ref="LSTD_255901107EnglishLanguageArts-03110.14.17.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.14.17.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_CompositionStructure210" ref="LOBJ_CompositionStructure210"/>
 	</Course>
 	<Course id="CRSE_255901107EnglishLanguageArts-04">
 		<CourseCode>ELA-04</CourseCode>
@@ -2672,10 +2694,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107EnglishLanguageArts-04110.15.24.Ai" ref="LSTD_255901107EnglishLanguageArts-04110.15.24.Ai">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.15.24.Ai</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EffectiveComposition210" ref="LOBJ_EffectiveComposition210"/>
 	</Course>
 	<Course id="CRSE_255901107EnglishLanguageArts-05">
 		<CourseCode>ELA-05</CourseCode>
@@ -2699,10 +2722,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107EnglishLanguageArts-05110.16.21.Ai" ref="LSTD_255901107EnglishLanguageArts-05110.16.21.Ai">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.21.Ai</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofAnalysisandCriticalEvaluationReading210" ref="LOBJ_EssenceofAnalysisandCriticalEvaluationReading210"/>
 	</Course>
 	<Course id="CRSE_255901107MATH-01">
 		<CourseCode>MATH-01</CourseCode>
@@ -2749,8 +2773,10 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107MATH-02111.14.2.1.B" ref="LSTD_255901107MATH-02111.14.2.1.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.14.2.1.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
 	<Course id="CRSE_255901107MATH-03">
@@ -2775,10 +2801,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107MATH-03111.15.3.4.C" ref="LSTD_255901107MATH-03111.15.3.4.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.15.3.4.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_NumbersOperationsandQuantitativeReasoning33" ref="LOBJ_NumbersOperationsandQuantitativeReasoning33"/>
 	</Course>
 	<Course id="CRSE_255901107MATH-04">
 		<CourseCode>MATH-04</CourseCode>
@@ -2802,10 +2829,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107MATH-04111.16.4.11.D" ref="LSTD_255901107MATH-04111.16.4.11.D">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.16.4.11.D</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofNumbersOperationsandQuantitativeReasoning34" ref="LOBJ_EssenceofNumbersOperationsandQuantitativeReasoning34"/>
 	</Course>
 	<Course id="CRSE_255901107MATH-05">
 		<CourseCode>MATH-05</CourseCode>
@@ -2829,10 +2857,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107MATH-05111.16.4.6.A" ref="LSTD_255901107MATH-05111.16.4.6.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.16.4.6.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_GeometryandSpatialReasoning35" ref="LOBJ_GeometryandSpatialReasoning35"/>
 	</Course>
 	<Course id="CRSE_255901107MUS-01">
 		<CourseCode>MUS-01</CourseCode>
@@ -3086,7 +3115,6 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofLifeScience65" ref="LOBJ_EssenceofLifeScience65"/>
 	</Course>
 	<Course id="CRSE_255901107SCI-02">
 		<CourseCode>SCI-02</CourseCode>
@@ -3110,10 +3138,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107SCI-02112.13.10.C" ref="LSTD_255901107SCI-02112.13.10.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.13.10.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofNatureofScience65" ref="LOBJ_EssenceofNatureofScience65"/>
 	</Course>
 	<Course id="CRSE_255901107SCI-03">
 		<CourseCode>SCI-03</CourseCode>
@@ -3137,10 +3166,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107SCI-03112.14.5.D" ref="LSTD_255901107SCI-03112.14.5.D">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.14.5.D</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofPhysicalScience65" ref="LOBJ_EssenceofPhysicalScience65"/>
 	</Course>
 	<Course id="CRSE_255901107SCI-04">
 		<CourseCode>SCI-04</CourseCode>
@@ -3164,10 +3194,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107SCI-04112.15.7.B" ref="LSTD_255901107SCI-04112.15.7.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.15.7.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_LifeScience65" ref="LOBJ_LifeScience65"/>
 	</Course>
 	<Course id="CRSE_255901107SCI-05">
 		<CourseCode>SCI-05</CourseCode>
@@ -3191,10 +3222,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107SCI-05112.16.2.A" ref="LSTD_255901107SCI-05112.16.2.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.16.2.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofEarthScience65" ref="LOBJ_EssenceofEarthScience65"/>
 	</Course>
 	<Course id="CRSE_255901107SS-01">
 		<CourseCode>SS-01</CourseCode>
@@ -3218,7 +3250,6 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningObjectiveReference id="LOBJ_EssenceofSocialStudiesSkills58" ref="LOBJ_EssenceofSocialStudiesSkills58"/>
 	</Course>
 	<Course id="CRSE_255901107SS-02">
 		<CourseCode>SS-02</CourseCode>
@@ -3242,10 +3273,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107SS-02113.13.10.A" ref="LSTD_255901107SS-02113.13.10.A">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.13.10.A</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_SocialStudiesSkills58" ref="LOBJ_SocialStudiesSkills58"/>
 	</Course>
 	<Course id="CRSE_255901107SS-03">
 		<CourseCode>SS-03</CourseCode>
@@ -3269,10 +3301,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107SS-03113.14.5.C" ref="LSTD_255901107SS-03113.14.5.C">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.14.5.C</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_SocialStudiesSkills510" ref="LOBJ_SocialStudiesSkills510"/>
 	</Course>
 	<Course id="CRSE_255901107SS-04">
 		<CourseCode>SS-04</CourseCode>
@@ -3296,10 +3329,11 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107SS-04113.15.17.B" ref="LSTD_255901107SS-04113.15.17.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.15.17.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
-		<LearningObjectiveReference id="LOBJ_SocialStudiesSkills511" ref="LOBJ_SocialStudiesSkills511"/>
 	</Course>
 	<Course id="CRSE_255901107SS-05">
 		<CourseCode>SS-05</CourseCode>
@@ -3323,8 +3357,10 @@
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
-		<LearningStandardReference id="LSTD_255901107SS-05113.16.13.B" ref="LSTD_255901107SS-05113.16.13.B">
-			<LearningStandardLookup/>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.16.13.B</LearningStandardId>
+			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
 	<Program id="PRGM_2559011">
