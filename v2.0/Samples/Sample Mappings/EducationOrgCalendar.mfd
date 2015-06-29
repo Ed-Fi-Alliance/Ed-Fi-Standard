@@ -28,40 +28,6 @@
 						</root>
 					</data>
 				</component>
-				<component name="CodeCoalesce" library="user" blackbox="0" uid="54" kind="19" visible="0">
-					<view ltx="1089" lty="-175" rbx="1261" rby="-124"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="node" inpkey="857" componentid="44"/>
-							<entry name="replacewith" inpkey="858" componentid="50"/>
-							<entry name="replacewith2" inpkey="859" componentid="47"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="CodeValue" outkey="860" componentid="46"/>
-						</root>
-					</data>
-				</component>
-				<component name="constant" library="core" uid="60" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="898"/>
-					</targets>
-					<view ltx="887" lty="641" rbx="1010" rby="659"/>
-					<data>
-						<constant value="_" datatype="string"/>
-						<wsdl/>
-					</data>
-				</component>
 				<component name="CodeCoalesce" library="user" blackbox="0" uid="56" kind="19" visible="0">
 					<view ltx="615" lty="586" rbx="787" rby="637"/>
 					<data>
@@ -123,16 +89,59 @@
 									<entry name="SchoolIdentity" ns="1" outkey="828" expanded="1">
 										<entry name="SchoolId" ns="1" outkey="881"/>
 									</entry>
-									<entry name="SchoolLookup" ns="1" expanded="1">
-										<entry name="SchoolId" ns="1" outkey="933"/>
-									</entry>
+									<entry name="SchoolLookup" ns="1" expanded="1"/>
 								</entry>
 							</entry>
 						</root>
 					</data>
 				</component>
+				<component name="constant" library="core" uid="61" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="967"/>
+					</targets>
+					<view ltx="748" lty="333" rbx="863" rby="351"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="60" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="898"/>
+					</targets>
+					<view ltx="887" lty="668" rbx="1010" rby="686"/>
+					<data>
+						<constant value="_" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="CodeCoalesce" library="user" blackbox="0" uid="54" kind="19" visible="0">
+					<view ltx="1275" lty="-175" rbx="1447" rby="-124"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="857" componentid="44"/>
+							<entry name="replacewith" inpkey="858" componentid="50"/>
+							<entry name="replacewith2" inpkey="859" componentid="47"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="860" componentid="46"/>
+						</root>
+					</data>
+				</component>
 				<component name="EdOrgFromGradingPeriod" library="user" blackbox="0" uid="19" kind="19" visible="0">
-					<view ltx="437" lty="-151" rbx="900" rby="-12"/>
+					<view ltx="397" lty="-199" rbx="860" rby="-60"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -154,29 +163,36 @@
 								<entry name="SchoolReference" ns="1" outkey="798" expanded="1">
 									<entry name="id" type="attribute" outkey="799"/>
 									<entry name="ref" type="attribute" outkey="800"/>
-									<entry name="SchoolIdentity" ns="1" outkey="801" expanded="1"/>
-									<entry name="SchoolLookup" ns="1" outkey="802" expanded="1">
-										<entry name="SchoolId" ns="1" outkey="803"/>
+									<entry name="SchoolIdentity" ns="1" outkey="801" expanded="1">
+										<entry name="SchoolId" ns="1" outkey="975"/>
+									</entry>
+									<entry name="SchoolLookup" ns="1">
 										<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
-											<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1">
-												<entry name="id" type="attribute" outkey="804"/>
-												<entry name="ref" type="attribute" outkey="805"/>
-												<entry name="Namespace" ns="1" outkey="806"/>
-											</entry>
+											<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
 										</entry>
-										<entry name="NameOfInstitution" ns="1" outkey="807"/>
-										<entry name="EducationOrganizationCategory" ns="1" outkey="808"/>
 									</entry>
 								</entry>
 							</entry>
 						</root>
 					</data>
 				</component>
+				<component name="concat" library="core" uid="62" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="970"/>
+						<datapoint pos="1" key="974"/>
+						<datapoint pos="2" key="971"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="972"/>
+					</targets>
+					<view ltx="972" lty="-160" rbx="1065" rby="-84"/>
+				</component>
 				<component name="Interchange-EducationOrgCalendar" library="xml" uid="4" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="917" lty="10" rbx="1563" rby="522"/>
 					<data>
-						<root scrollposition="154">
+						<root scrollposition="35">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -191,29 +207,25 @@
 											<entry name="id" type="attribute" inpkey="405"/>
 											<entry name="SessionName" ns="1" inpkey="406"/>
 											<entry name="SchoolYear" ns="1" inpkey="407"/>
-											<entry name="Term" ns="1" inpkey="408">
+											<entry name="Term" ns="1" inpkey="408" expanded="1">
 												<entry name="CodeValue" ns="1" inpkey="669"/>
 											</entry>
 											<entry name="BeginDate" ns="1" inpkey="409"/>
 											<entry name="EndDate" ns="1" inpkey="410"/>
 											<entry name="TotalInstructionalDays" ns="1" inpkey="411"/>
-											<entry name="SchoolReference" ns="1" inpkey="670">
+											<entry name="SchoolReference" ns="1" inpkey="670" expanded="1">
 												<entry name="id" type="attribute" inpkey="671"/>
 												<entry name="ref" type="attribute" inpkey="672"/>
 												<entry name="SchoolIdentity" ns="1" inpkey="673" expanded="1">
 													<entry name="SchoolId" ns="1" inpkey="674"/>
 												</entry>
-												<entry name="SchoolLookup" ns="1" expanded="1">
-													<entry name="SchoolId" ns="1" inpkey="675"/>
-													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="676" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="677"/>
-														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="678" expanded="1">
-															<entry name="CodeValue" ns="1" inpkey="679"/>
-														</entry>
+												<entry name="SchoolLookup" ns="1">
+													<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
 													</entry>
 												</entry>
 											</entry>
-											<entry name="GradingPeriodReference" ns="1" inpkey="420">
+											<entry name="GradingPeriodReference" ns="1" inpkey="420" expanded="1">
 												<entry name="id" type="attribute" inpkey="421"/>
 												<entry name="ref" type="attribute" inpkey="422"/>
 												<entry name="GradingPeriodIdentity" ns="1" inpkey="423" expanded="1">
@@ -266,28 +278,19 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="GradingPeriod" ns="1" inpkey="471" expanded="1">
+										<entry name="GradingPeriod" ns="1" inpkey="471">
 											<entry name="id" type="attribute" inpkey="472"/>
 											<entry name="SchoolReference" ns="1" inpkey="743" expanded="1">
 												<entry name="id" type="attribute" inpkey="744"/>
 												<entry name="ref" type="attribute" inpkey="745"/>
 												<entry name="SchoolIdentity" ns="1" inpkey="771" expanded="1"/>
-												<entry name="SchoolLookup" ns="1" inpkey="792" expanded="1">
-													<entry name="SchoolId" ns="1" inpkey="772"/>
-													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="773" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="774"/>
-														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="775" expanded="1">
-															<entry name="id" type="attribute" inpkey="793"/>
-															<entry name="ref" type="attribute" inpkey="794"/>
-															<entry name="CodeValue" ns="1" inpkey="776"/>
-															<entry name="Namespace" ns="1" inpkey="795"/>
-														</entry>
+												<entry name="SchoolLookup" ns="1">
+													<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
 													</entry>
-													<entry name="NameOfInstitution" ns="1" inpkey="796"/>
-													<entry name="EducationOrganizationCategory" ns="1" inpkey="797"/>
 												</entry>
 											</entry>
-											<entry name="GradingPeriod" ns="1" inpkey="473">
+											<entry name="GradingPeriod" ns="1" inpkey="473" expanded="1">
 												<entry name="id" type="attribute" inpkey="474"/>
 												<entry name="ref" type="attribute" inpkey="475"/>
 												<entry name="CodeValue" ns="1" inpkey="478"/>
@@ -307,11 +310,10 @@
 												<entry name="SchoolIdentity" ns="1" inpkey="824" expanded="1">
 													<entry name="SchoolId" ns="1" inpkey="750"/>
 												</entry>
-												<entry name="SchoolLookup" ns="1">
-													<entry name="SchoolId" ns="1" inpkey="932"/>
-												</entry>
+												<entry name="SchoolLookup" ns="1" expanded="1"/>
 											</entry>
-											<entry name="CalendarEvent" ns="1" inpkey="822">
+											<entry name="CalendarEvent" ns="1" inpkey="822" expanded="1">
+												<entry name="EventDuration" ns="1" inpkey="968"/>
 												<entry name="CalendarEvent" ns="1" inpkey="690" expanded="1">
 													<entry name="id" type="attribute" inpkey="691"/>
 													<entry name="ref" type="attribute" inpkey="692"/>
@@ -322,32 +324,57 @@
 										</entry>
 										<entry name="AcademicWeek" ns="1" inpkey="517">
 											<entry name="id" type="attribute" inpkey="518"/>
+											<entry name="SchoolReference" ns="1" inpkey="956" expanded="1">
+												<entry name="id" type="attribute" inpkey="957"/>
+												<entry name="ref" type="attribute" inpkey="958"/>
+												<entry name="SchoolIdentity" ns="1" inpkey="959" expanded="1">
+													<entry name="SchoolId" ns="1" inpkey="960"/>
+												</entry>
+											</entry>
 											<entry name="WeekIdentifier" ns="1" inpkey="519"/>
 											<entry name="BeginDate" ns="1" inpkey="520"/>
 											<entry name="EndDate" ns="1" inpkey="521"/>
 											<entry name="TotalInstructionalDays" ns="1" inpkey="522"/>
-											<entry name="EducationOrganizationReference" ns="1" inpkey="695" expanded="1">
-												<entry name="id" type="attribute" inpkey="696"/>
-												<entry name="ref" type="attribute" inpkey="697"/>
-												<entry name="EducationOrganizationIdentity" ns="1" inpkey="698" expanded="1">
-													<entry name="EducationOrganizationId" ns="1" inpkey="699"/>
-												</entry>
-												<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-													<entry name="EducationOrganizationId" ns="1" inpkey="918"/>
-													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="919" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="920"/>
-														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="921" expanded="1">
-															<entry name="CodeValue" ns="1" inpkey="922"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
 										</entry>
 									</entry>
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" outputinstance="Sample XML 2.0\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0200}InterchangeEducationOrgCalendar"/>
+						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" outputinstance="..\Sample XML\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0200}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="64" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="978"/>
+						<datapoint pos="1" key="977"/>
+						<datapoint pos="2" key="979"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="976"/>
+					</targets>
+					<view ltx="1120" lty="-99" rbx="1213" rby="-23"/>
+				</component>
+				<component name="constant" library="core" uid="63" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="973"/>
+					</targets>
+					<view ltx="942" lty="-55" rbx="1065" rby="-37"/>
+					<data>
+						<constant value="_" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="66" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="993"/>
+					</targets>
+					<view ltx="33" lty="-55" rbx="153" rby="-37"/>
+					<data>
+						<constant value=" " datatype="string"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -355,7 +382,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="-46" lty="10" rbx="491" rby="596"/>
 					<data>
-						<root scrollposition="579">
+						<root scrollposition="35">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -368,7 +395,6 @@
 									<entry name="InterchangeEducationOrgCalendar" ns="1" outkey="2" expanded="1">
 										<entry name="Session" ns="1" outkey="3" expanded="1">
 											<entry name="id" type="attribute" outkey="4"/>
-											<entry name="SessionName" ns="1" outkey="5"/>
 											<entry name="SchoolYear" ns="1" outkey="6"/>
 											<entry name="Term" ns="1" outkey="7"/>
 											<entry name="BeginDate" ns="1" outkey="8"/>
@@ -379,10 +405,7 @@
 												<entry name="ref" type="attribute" outkey="13"/>
 												<entry name="EducationOrganizationIdentity" ns="1" outkey="14" expanded="1">
 													<entry name="StateOrganizationId" ns="1" outkey="15"/>
-													<entry name="EducationOrgIdentificationCode" ns="1" outkey="16" expanded="1">
-														<entry name="IdentificationSystem" type="attribute" outkey="17"/>
-														<entry name="ID" ns="1" outkey="18"/>
-													</entry>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
 												</entry>
 											</entry>
 											<entry name="GradingPeriodReference" ns="1" outkey="19" expanded="1">
@@ -439,7 +462,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="GradingPeriod" ns="1" outkey="70" expanded="1">
+										<entry name="GradingPeriod" ns="1">
 											<entry name="id" type="attribute" outkey="71"/>
 											<entry name="GradingPeriod" ns="1" outkey="72" expanded="1">
 												<entry name="id" type="attribute" outkey="73"/>
@@ -457,10 +480,7 @@
 												<entry name="CalendarDateIdentity" ns="1" expanded="1">
 													<entry name="EducationOrganizationReference" ns="1" expanded="1">
 														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
-															<entry name="EducationOrgIdentificationCode" ns="1" outkey="777" expanded="1">
-																<entry name="IdentificationSystem" type="attribute" outkey="778"/>
-																<entry name="ID" ns="1" outkey="779"/>
-															</entry>
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
 														</entry>
 													</entry>
 												</entry>
@@ -496,10 +516,7 @@
 														<entry name="ref" type="attribute" outkey="129"/>
 														<entry name="EducationOrganizationIdentity" ns="1" outkey="130" expanded="1">
 															<entry name="StateOrganizationId" ns="1" outkey="131"/>
-															<entry name="EducationOrgIdentificationCode" ns="1" outkey="923" expanded="1">
-																<entry name="IdentificationSystem" type="attribute" outkey="924"/>
-																<entry name="ID" ns="1" outkey="925"/>
-															</entry>
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
 														</entry>
 													</entry>
 												</entry>
@@ -509,9 +526,21 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="Sample XML 1.2\EducationOrgCalendar.xml" outputinstance="Sample XML 1.2\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\..\v1.2\Samples\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
 						<wsdl/>
 					</data>
+				</component>
+				<component name="concat" library="core" uid="65" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="990"/>
+						<datapoint pos="1" key="991"/>
+						<datapoint pos="2" key="989"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="992"/>
+					</targets>
+					<view ltx="261" lty="-83" rbx="354" rby="-7"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -538,20 +567,17 @@
 							<edge vertexkey="405" edgekey="538"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="5">
-						<edges>
-							<edge vertexkey="406" edgekey="539"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="6">
 						<edges>
 							<edge vertexkey="407" edgekey="540"/>
+							<edge vertexkey="990" edgekey="994"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="7">
 						<edges>
 							<edge vertexkey="408" edgekey="541"/>
 							<edge vertexkey="669" edgekey="700"/>
+							<edge vertexkey="989" edgekey="995"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="8">
@@ -592,23 +618,7 @@
 					<vertex vertexkey="15">
 						<edges>
 							<edge vertexkey="674" edgekey="705"/>
-							<edge vertexkey="675" edgekey="706"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="16">
-						<edges>
-							<edge vertexkey="676" edgekey="707"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="17">
-						<edges>
-							<edge vertexkey="678" edgekey="708"/>
-							<edge vertexkey="679" edgekey="709"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="18">
-						<edges>
-							<edge vertexkey="677" edgekey="710"/>
+							<edge vertexkey="979" edgekey="980"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="19">
@@ -623,7 +633,7 @@
 					</vertex>
 					<vertex vertexkey="21">
 						<edges>
-							<edge vertexkey="422" edgekey="555"/>
+							<edge vertexkey="978" edgekey="981"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="22">
@@ -738,15 +748,10 @@
 							<edge vertexkey="468" edgekey="601"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="70">
-						<edges>
-							<edge vertexkey="471" edgekey="604"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="71">
 						<edges>
-							<edge vertexkey="472" edgekey="605"/>
 							<edge vertexkey="789" edgekey="790"/>
+							<edge vertexkey="970" edgekey="982"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="72">
@@ -797,6 +802,7 @@
 					<vertex vertexkey="98">
 						<edges>
 							<edge vertexkey="827" edgekey="831"/>
+							<edge vertexkey="894" edgekey="961"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="99">
@@ -813,7 +819,6 @@
 					<vertex vertexkey="101">
 						<edges>
 							<edge vertexkey="691" edgekey="721"/>
-							<edge vertexkey="894" edgekey="900"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="102">
@@ -863,28 +868,27 @@
 					</vertex>
 					<vertex vertexkey="127">
 						<edges>
-							<edge vertexkey="695" edgekey="726"/>
+							<edge vertexkey="956" edgekey="962"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="128">
 						<edges>
-							<edge vertexkey="696" edgekey="727"/>
+							<edge vertexkey="957" edgekey="963"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="129">
 						<edges>
-							<edge vertexkey="697" edgekey="728"/>
+							<edge vertexkey="958" edgekey="964"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="130">
 						<edges>
-							<edge vertexkey="698" edgekey="729"/>
+							<edge vertexkey="959" edgekey="965"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="131">
 						<edges>
-							<edge vertexkey="699" edgekey="730"/>
-							<edge vertexkey="918" edgekey="926"/>
+							<edge vertexkey="960" edgekey="966"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="731">
@@ -901,22 +905,6 @@
 					<vertex vertexkey="733">
 						<edges>
 							<edge vertexkey="740" edgekey="767"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="777">
-						<edges>
-							<edge vertexkey="773" edgekey="810"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="778">
-						<edges>
-							<edge vertexkey="775" edgekey="783"/>
-							<edge vertexkey="776" edgekey="784"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="779">
-						<edges>
-							<edge vertexkey="774" edgekey="811"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="787">
@@ -943,41 +931,6 @@
 					<vertex vertexkey="801">
 						<edges>
 							<edge vertexkey="771" edgekey="809"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="802">
-						<edges>
-							<edge vertexkey="792" edgekey="815"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="803">
-						<edges>
-							<edge vertexkey="772" edgekey="816"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="804">
-						<edges>
-							<edge vertexkey="793" edgekey="817"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="805">
-						<edges>
-							<edge vertexkey="794" edgekey="818"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="806">
-						<edges>
-							<edge vertexkey="795" edgekey="819"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="807">
-						<edges>
-							<edge vertexkey="796" edgekey="820"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="808">
-						<edges>
-							<edge vertexkey="797" edgekey="821"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="828">
@@ -1078,25 +1031,41 @@
 							<edge vertexkey="943" edgekey="955"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="923">
+					<vertex vertexkey="967">
 						<edges>
-							<edge vertexkey="919" edgekey="927"/>
+							<edge vertexkey="968" edgekey="969"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="924">
+					<vertex vertexkey="972">
 						<edges>
-							<edge vertexkey="921" edgekey="928"/>
-							<edge vertexkey="922" edgekey="929"/>
+							<edge vertexkey="472" edgekey="983"/>
+							<edge vertexkey="471" edgekey="984"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="925">
+					<vertex vertexkey="973">
 						<edges>
-							<edge vertexkey="920" edgekey="930"/>
+							<edge vertexkey="974" edgekey="985"/>
+							<edge vertexkey="977" edgekey="986"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="933">
+					<vertex vertexkey="975">
 						<edges>
-							<edge vertexkey="932" edgekey="935"/>
+							<edge vertexkey="971" edgekey="987"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="976">
+						<edges>
+							<edge vertexkey="422" edgekey="988"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="992">
+						<edges>
+							<edge vertexkey="406" edgekey="996"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="993">
+						<edges>
+							<edge vertexkey="991" edgekey="997"/>
 						</edges>
 					</vertex>
 				</vertices>
