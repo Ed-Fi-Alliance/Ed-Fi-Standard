@@ -12960,7 +12960,7 @@ Student late arrival/early dismissal.</xs:documentation>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="StateOfIssueStateAbbreviationType" type="StateAbbreviationType" minOccurs="0">
+			<xs:element name="StateOfIssueStateAbbreviation" type="StateAbbreviationType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>The abbreviation for the name of the state (within the United States) or extra-state jurisdiction in which a license/credential was issued.</xs:documentation>
 					<xs:appinfo>
