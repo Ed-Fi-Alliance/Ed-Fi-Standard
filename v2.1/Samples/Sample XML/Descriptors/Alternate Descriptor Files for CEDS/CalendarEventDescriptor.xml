@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas//Interchange-Descriptors.xsd">
+	<CalendarEventDescriptor>
+		<CodeValue>EmergencyDay</CodeValue>
+		<ShortDescription>EmergencyDay</ShortDescription>
+		<Description>Emergency day</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/CalendarEventDescriptorDescriptor.xml</Namespace>
+		<CalendarEventMap>Emergency day</CalendarEventMap>
+	</CalendarEventDescriptor>
+	<CalendarEventDescriptor>
+		<CodeValue>Holiday</CodeValue>
+		<ShortDescription>Holiday</ShortDescription>
+		<Description>Holiday</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/CalendarEventDescriptorDescriptor.xml</Namespace>
+		<CalendarEventMap>Holiday</CalendarEventMap>
+	</CalendarEventDescriptor>
+	<CalendarEventDescriptor>
+		<CodeValue>Other</CodeValue>
+		<ShortDescription>Other</ShortDescription>
+		<Description>Other</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/CalendarEventDescriptorDescriptor.xml</Namespace>
+		<CalendarEventMap>Other</CalendarEventMap>
+	</CalendarEventDescriptor>
+	<CalendarEventDescriptor>
+		<CodeValue>Strike</CodeValue>
+		<ShortDescription>Strike</ShortDescription>
+		<Description>Strike</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/CalendarEventDescriptorDescriptor.xml</Namespace>
+		<CalendarEventMap>Strike</CalendarEventMap>
+	</CalendarEventDescriptor>
+	<CalendarEventDescriptor>
+		<CodeValue>LateArrivalEarlyDismissal</CodeValue>
+		<ShortDescription>LateArrivalEarlyDismissal</ShortDescription>
+		<Description>Student late arrival/early dismissal</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/CalendarEventDescriptorDescriptor.xml</Namespace>
+		<CalendarEventMap>Student late arrival/early dismissal</CalendarEventMap>
+	</CalendarEventDescriptor>
+	<CalendarEventDescriptor>
+		<CodeValue>TeacherOnlyDay</CodeValue>
+		<ShortDescription>TeacherOnlyDay</ShortDescription>
+		<Description>Teacher only day</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/CalendarEventDescriptorDescriptor.xml</Namespace>
+		<CalendarEventMap>Teacher only day</CalendarEventMap>
+	</CalendarEventDescriptor>
+</InterchangeDescriptors>

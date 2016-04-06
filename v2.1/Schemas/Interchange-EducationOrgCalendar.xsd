@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Education Organization Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeEducationOrgCalendar">
+		<xs:annotation>
+			<xs:documentation>The Education Organization Calendar interchange carries school calendar information. It can be used to exchange school calendar data, including instructional days, sessions, and grading periods.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Session" type="Session"/>
+				<xs:element name="GradingPeriod" type="GradingPeriod"/>
+				<xs:element name="CalendarDate" type="CalendarDate"/>
+				<xs:element name="AcademicWeek" type="AcademicWeek"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
