@@ -9830,9 +9830,6 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:annotation>
-				<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of parents and guardians by unique identification.</xs:documentation>
-			</xs:annotation>
 			<xs:element name="ParentUniqueId" type="UniqueId">
 				<xs:annotation>
 					<xs:documentation>A unique alphanumeric code assigned to a parent.</xs:documentation>
@@ -10970,9 +10967,6 @@ Volunteer/no contract
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:annotation>
-				<xs:documentation>Provide user information to lookup and link to an existing student record in the receiving system by unique identification.</xs:documentation>
-			</xs:annotation>
 			<xs:element name="StudentUniqueId" type="UniqueId">
 				<xs:annotation>
 					<xs:documentation>A unique alphanumeric code assigned to a student.</xs:documentation>
