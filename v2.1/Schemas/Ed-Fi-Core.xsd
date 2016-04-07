@@ -7975,6 +7975,50 @@ Local Neglected Program.</xs:documentation>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="AccountabilityRatingIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an accountability rating.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the AccountabilityRating to an Education Organization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RatingTitle" type="RatingTitleType">
+				<xs:annotation>
+					<xs:documentation>The title of the rating (e.g., School Rating, Safety Score).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolYear" type="SchoolYearType">
+				<xs:annotation>
+					<xs:documentation>The school year for which the AccountabilityRating is assessed.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AccountabilityRatingReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Accountability Rating. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="AccountabilityRatingIdentity" type="AccountabilityRatingIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an accountability rating.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="AccountIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of accounts.</xs:documentation>
@@ -8027,6 +8071,45 @@ Local Neglected Program.</xs:documentation>
 							<xs:appinfo>
 								<ann:EdFiId>2101</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ActualIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an actual.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AsOfDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The date of the reported actual element.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AccountReference" type="AccountReferenceType">
+				<xs:annotation>
+					<xs:documentation>Account with which the Actual is associated.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ActualReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Actual. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="ActualIdentity" type="ActualIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an actual.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -8329,6 +8412,97 @@ Cognitive and perceptual skills test
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="BellScheduleIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a bell schedule.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="BellScheduleName" type="BellScheduleName">
+				<xs:annotation>
+					<xs:documentation>Name or title of the BellSchedule.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>The grade levels the particular BellSchedule applies to.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>The school for which the BellSchedule is defined.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
+				<xs:annotation>
+					<xs:documentation>The first calendar date of the BellSchedule.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BellScheduleReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Bell Schedule. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="BellScheduleIdentity" type="BellScheduleIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a bell schedule.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="BudgetIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a budget.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AsOfDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The date of the reported budget element.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AccountReference" type="AccountReferenceType">
+				<xs:annotation>
+					<xs:documentation>Account with which the Budget is associated.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BudgetReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Budget. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="BudgetIdentity" type="BudgetIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a budget.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="CalendarDateIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of calendar dates in the school calendar.</xs:documentation>
@@ -8538,6 +8712,50 @@ Cognitive and perceptual skills test
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="ContractedStaffIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a contracted staff.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AsOfDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The date of the reported contracted staff element.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AccountReference" type="AccountReferenceType">
+				<xs:annotation>
+					<xs:documentation>Account with which the ContractedStaff expense is associated.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StaffReference" type="StaffReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the staff member to the associated ContractedStaff expense.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContractedStaffReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Contracted Staff. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="ContractedStaffIdentity" type="ContractedStaffIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a contracted staff.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="CourseIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of courses.</xs:documentation>
@@ -8697,6 +8915,98 @@ Cognitive and perceptual skills test
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="CourseTranscriptIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a course transcript.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="CourseAttemptResult" type="CourseAttemptResultType">
+				<xs:annotation>
+					<xs:documentation>The result from the student's attempt to take the course, for example:
+Pass
+Fail
+Incomplete
+Withdrawn.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CourseReference" type="CourseReferenceType">
+				<xs:annotation>
+					<xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StudentAcademicRecordReference" type="StudentAcademicRecordReferenceType">
+				<xs:annotation>
+					<xs:documentation>Link to the student's academic record for a semester/school year.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CourseTranscriptReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Course Transcript. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="CourseTranscriptIdentity" type="CourseTranscriptIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a course transcript.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DisciplineActionIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a discipline action.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="DisciplineActionIdentifier" type="DisciplineActionIdentifier">
+				<xs:annotation>
+					<xs:documentation>Identifier assigned by the education organization to the DisciplineAction.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DisciplineDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The date of the DisciplineAction.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The student(s) disciplined by the DisciplineAction.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DisciplineActionReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Discipline Action. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="DisciplineActionIdentity" type="DisciplineActionIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a discipline action.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="DisciplineIncidentIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of discipline incidents.</xs:documentation>
@@ -8808,6 +9118,45 @@ Cognitive and perceptual skills test
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="EducationOrganizationInterventionPrescriptionAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an education organization intervention prescription association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationalOrganization, often times a district, which is making the InterventionPrescription available to its hierarchy. In some cases, it may be an education organization network instead of a district.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="InterventionPrescriptionReference" type="InterventionPrescriptionReferenceType">
+				<xs:annotation>
+					<xs:documentation>The InterventionPrescription being made available by the EducationOrganization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EducationOrganizationInterventionPrescriptionAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Education Organization Intervention Prescription Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="EducationOrganizationInterventionPrescriptionAssociationIdentity" type="EducationOrganizationInterventionPrescriptionAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an education organization intervention prescription association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="EducationOrganizationLookupType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of educational organizations.</xs:documentation>
@@ -8850,6 +9199,45 @@ Cognitive and perceptual skills test
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EducationOrganizationNetworkAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an education organization network association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationOrganizationNetworkReference" type="EducationOrganizationNetworkReferenceType">
+				<xs:annotation>
+					<xs:documentation>A reference to the EducationOrganizationNetwork to which this education organization is a member.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MemberEducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationOrganization member in the network.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EducationOrganizationNetworkAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Education Organization Network Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="EducationOrganizationNetworkAssociationIdentity" type="EducationOrganizationNetworkAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an education organization network association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="EducationOrganizationNetworkIdentityType">
 		<xs:annotation>
@@ -8938,6 +9326,45 @@ Cognitive and perceptual skills test
 							<xs:appinfo>
 								<ann:EdFiId>2382</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="EducationOrganizationPeerAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an education organization peer association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The associated peer organization(s) for the EducationOrganization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PeerEducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The associated peer organization(s) for the EducationOrganization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EducationOrganizationPeerAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Education Organization Peer Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="EducationOrganizationPeerAssociationIdentity" type="EducationOrganizationPeerAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an education organization peer association.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -9062,6 +9489,50 @@ Cognitive and perceptual skills test
 							<xs:appinfo>
 								<ann:EdFiId>2385</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="FeederSchoolAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a feeder school association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="FeederSchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>Reference to the feeder school.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>Reference to the receiving school.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The month, day, and year of the first day of the feeder school association.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FeederSchoolAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Feeder School Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="FeederSchoolAssociationIdentity" type="FeederSchoolAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a feeder school association.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -9465,6 +9936,45 @@ Cognitive and perceptual skills test
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="InterventionStudyIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an intervention study.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the EducationOrganization which is sponsoring the intervention study.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="InterventionStudyIdentificationCode" type="IdentificationCode">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an intervention study.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InterventionStudyReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Intervention Study. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="InterventionStudyIdentity" type="InterventionStudyIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an intervention study.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="LearningObjectiveIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of the Learning Objective.</xs:documentation>
@@ -9622,6 +10132,53 @@ Cognitive and perceptual skills test
 							<xs:appinfo>
 								<ann:EdFiId>2387</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="LeaveEventIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a leave event.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EventDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date for this leave event.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LeaveEventCategory" type="LeaveEventCategoryType">
+				<xs:annotation>
+					<xs:documentation>The code describing the type of leave taken, for example:
+Sick
+Personal
+Vacation.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StaffReference" type="StaffReferenceType">
+				<xs:annotation>
+					<xs:documentation>The staff associated with this leave event.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LeaveEventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Leave Event. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="LeaveEventIdentity" type="LeaveEventIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a leave event.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -9821,6 +10378,72 @@ Cognitive and perceptual skills test
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="OpenStaffPositionIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an open staff position.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EmploymentStatus" type="EmploymentStatusDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>Reflects the type of employment or contract desired for the position; for example:
+Probationary
+Contractual
+Substitute/temporary
+Tenured or permanent
+Volunteer/no contract
+...</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>EmploymentStatusDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StaffClassification" type="StaffClassificationDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>The titles of employment, official status, or rank of education staff.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>StaffClassificationDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RequisitionNumber" type="RequisitionNumber">
+				<xs:annotation>
+					<xs:documentation>The number or identifier assigned to an open staff position, typically a requisition number assigned by Human Resources.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DatePosted" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date the OpenStaffPosition was posted.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationOrganization with the OpenStaffPosition.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="OpenStaffPositionReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Open Staff Position. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="OpenStaffPositionIdentity" type="OpenStaffPositionIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an open staff position.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="ParentIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of parents and guardians uniquely.</xs:documentation>
@@ -9940,6 +10563,94 @@ Cognitive and perceptual skills test
 							<xs:appinfo>
 								<ann:EdFiId>2410</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PayrollIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a payroll.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AsOfDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The date of the reported payroll element.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AccountReference" type="AccountReferenceType">
+				<xs:annotation>
+					<xs:documentation>Account with which the Payroll expense is associated.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StaffReference" type="StaffReferenceType">
+				<xs:annotation>
+					<xs:documentation>Staff member associated with the Payroll expense.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PayrollReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Payroll. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="PayrollIdentity" type="PayrollIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a payroll.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PostSecondaryEventIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a post secondary event.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="EventDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The date the event occurred or was recorded.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="PostSecondaryEventCategory" type="PostSecondaryEventCategoryType">
+				<xs:annotation>
+					<xs:documentation>The PostSecondaryEvent that is logged (e.g., FAFSA application, college application, college acceptance).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The student associated with the PostSecondaryEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PostSecondaryEventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Post Secondary Event. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="PostSecondaryEventIdentity" type="PostSecondaryEventIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a post secondary event.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -10113,6 +10824,55 @@ Cognitive and perceptual skills test
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="RestraintEventIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a restraint event.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="RestraintEventIdentifier" type="RestraintEventIdentifier">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to a restraint event by a school, school system, state, or other agency or entity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EventDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Month, day, and year of the RestraintEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Reference to student that was restrained.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>The school where the RestraintEvent occurred.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RestraintEventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Restraint Event. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="RestraintEventIdentity" type="RestraintEventIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a restraint event.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="SchoolIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of schools.</xs:documentation>
@@ -10200,6 +10960,45 @@ Cognitive and perceptual skills test
 							<xs:appinfo>
 								<ann:EdFiId>2391</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="SectionAttendanceTakenEventIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a section attendance taken event.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SectionReference" type="SectionReferenceType">
+				<xs:annotation>
+					<xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
+				<xs:annotation>
+					<xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SectionAttendanceTakenEventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Section Attendance Taken Event. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="SectionAttendanceTakenEventIdentity" type="SectionAttendanceTakenEventIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a section attendance taken event.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -10458,6 +11257,102 @@ Cognitive and perceptual skills test
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StaffCohortAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff cohort association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StaffReference" type="StaffReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Staff associated with the cohort of students.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CohortReference" type="CohortReferenceType">
+				<xs:annotation>
+					<xs:documentation>Reference to the Cohort associated with the Staff.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Start date for the association of staff to this cohort.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StaffCohortAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Staff Cohort Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StaffCohortAssociationIdentity" type="StaffCohortAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff cohort association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StaffEducationOrganizationAssignmentAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff education organization assignment association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StaffReference" type="StaffReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Staff assigned to the EducationOrganization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationalOrganization to which the Staff member provides services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StaffClassification" type="StaffClassificationDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>The titles of employment, official status, or rank of education staff.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>StaffClassificationDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Month, day, and year of the start or effective date of a staff member's employment, contract, or relationship with the LEA.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StaffEducationOrganizationAssignmentAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Staff Education Organization Assignment Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StaffEducationOrganizationAssignmentAssociationIdentity" type="StaffEducationOrganizationAssignmentAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff education organization assignment association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StaffEducationOrganizationEmploymentAssociationIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of the Staff Education Organization Employment Association.</xs:documentation>
@@ -10649,6 +11544,50 @@ Volunteer/no contract
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="StaffProgramAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff program association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StaffReference" type="StaffReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Staff associated with the Program.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramReference" type="ProgramReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Program associated to the Staff.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Start date for the association of staff to this program.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StaffProgramAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Staff Program Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StaffProgramAssociationIdentity" type="StaffProgramAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff program association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StaffReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for Staff reference during interchange (including teachers). Use XML IDREF to reference a staff record that is included in the interchange.</xs:documentation>
@@ -10674,6 +11613,97 @@ Volunteer/no contract
 							<xs:appinfo>
 								<ann:EdFiId>2394</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StaffSchoolAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff school association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StaffReference" type="StaffReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Staff member providing services to the School.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>The School where the Staff member provides services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramAssignment" type="ProgramAssignmentDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>The name of the program for which the individual is assigned; for example:
+Regular education
+Title I-Academic
+Title I-Non-Academic
+Special Education
+Bilingual/English as a Second Language.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>ProgramAssignmentDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StaffSchoolAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Staff School Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StaffSchoolAssociationIdentity" type="StaffSchoolAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff school association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StaffSectionAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff section association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StaffReference" type="StaffReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Staff member assigned to the Section.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SectionReference" type="SectionReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Section the Staff member is assigned to.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StaffSectionAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Staff Section Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StaffSectionAssociationIdentity" type="StaffSectionAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a staff section association.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -10900,6 +11930,50 @@ Volunteer/no contract
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StudentCohortAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student cohort association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Student associated with the Cohort.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CohortReference" type="CohortReferenceType">
+				<xs:annotation>
+					<xs:documentation>Reference to the Cohort associated with the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The month, day, and year on which the Student was first identified as part of the Cohort.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentCohortAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Cohort Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentCohortAssociationIdentity" type="StudentCohortAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student cohort association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentCompetencyObjectiveIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of the Student Competency Objectives.</xs:documentation>
@@ -10958,6 +12032,180 @@ Volunteer/no contract
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StudentCTEProgramAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student cte program association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Student associated with the Program.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramReference" type="ProgramReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Program associated with the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentCTEProgramAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student CTE Program Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentCTEProgramAssociationIdentity" type="StudentCTEProgramAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student cte program association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentDisciplineIncidentAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student discipline incident association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Student associated with the DisciplineIncident.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DisciplineIncidentReference" type="DisciplineIncidentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Reference to the DisciplineIncident associated with the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentDisciplineIncidentAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Discipline Incident Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentDisciplineIncidentAssociationIdentity" type="StudentDisciplineIncidentAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student discipline incident association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentEducationOrganizationAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student education organization association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>A reference to the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>A reference to the EducationOrganization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Responsibility" type="ResponsibilityDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>Indications of an education organization's responsibility for a student, such as accountability, attendance, funding, etc.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>ResponsibilityDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentEducationOrganizationAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Education Organization Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentEducationOrganizationAssociationIdentity" type="StudentEducationOrganizationAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student education organization association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentGradebookEntryIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student gradebook entry.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentSectionAssociationReference" type="StudentSectionAssociationReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the student associated with the GradebookEntry.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GradebookEntryReference" type="GradebookEntryReferenceType">
+				<xs:annotation>
+					<xs:documentation>The GradebookEntry associated with the student grade or score.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentGradebookEntryReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Gradebook Entry. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentGradebookEntryIdentity" type="StudentGradebookEntryIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student gradebook entry.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates primary attributes that can be used to lookup the identity of students.</xs:documentation>
@@ -10976,6 +12224,101 @@ Volunteer/no contract
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentInterventionAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student intervention association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Student associated with the Intervention.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="InterventionReference" type="InterventionReferenceType">
+				<xs:annotation>
+					<xs:documentation>An implementation of an instructional approach focusing on the specific techniques and materials used to teach a given subject.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentInterventionAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Intervention Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentInterventionAssociationIdentity" type="StudentInterventionAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student intervention association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentInterventionAttendanceEventIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student intervention attendance event.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Student associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="InterventionReference" type="InterventionReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Intervention associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EventDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date for this attendance event.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>A code describing the attendance event, for example:
+Present
+Unexcused absence
+Excused absence
+Tardy.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentInterventionAttendanceEventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Intervention Attendance Event. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentInterventionAttendanceEventIdentity" type="StudentInterventionAttendanceEventIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student intervention attendance event.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="StudentLearningObjectiveIdentityType">
 		<xs:annotation>
@@ -11118,6 +12461,94 @@ Volunteer/no contract
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="StudentMigrantEducationProgramAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student migrant education program association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Student associated with the Program.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramReference" type="ProgramReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Program associated with the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentMigrantEducationProgramAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Migrant Education Program Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentMigrantEducationProgramAssociationIdentity" type="StudentMigrantEducationProgramAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student migrant education program association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentParentAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student parent association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Student associated with the Parent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ParentReference" type="ParentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Parent associated with the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentParentAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Parent Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentParentAssociationIdentity" type="StudentParentAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student parent association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentProgramAssociationIdentityType">
 		<xs:annotation>
 			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of the Student Program Association.</xs:documentation>
@@ -11184,6 +12615,67 @@ Volunteer/no contract
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:complexType name="StudentProgramAttendanceEventIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student program attendance event.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Student associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationOrganization where the student is participating in or receiving the program services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramReference" type="ProgramReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Program associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EventDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date for this attendance event.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>A code describing the attendance event, for example:
+Present
+Unexcused absence
+Excused absence
+Tardy.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentProgramAttendanceEventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Program Attendance Event. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentProgramAttendanceEventIdentity" type="StudentProgramAttendanceEventIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student program attendance event.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="StudentReferenceType">
 		<xs:annotation>
 			<xs:documentation>Provides alternative references for Student reference during interchange. Use XML IDREF to reference a student record that is included in the interchange.</xs:documentation>
@@ -11209,6 +12701,111 @@ Volunteer/no contract
 							<xs:appinfo>
 								<ann:EdFiId>2396</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentSchoolAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student school association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Student enrolled in the School.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>School enrolling the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EntryDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The month, day, and year on which an individual enters and begins to receive instructional services in a school.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentSchoolAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student School Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentSchoolAssociationIdentity" type="StudentSchoolAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student school association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentSchoolAttendanceEventIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student school attendance event.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Student associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the School associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SessionReference" type="SessionReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Session associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EventDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date for this attendance event.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>A code describing the attendance event, for example:
+Present
+Unexcused absence
+Excused absence
+Tardy.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentSchoolAttendanceEventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student School Attendance Event. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentSchoolAttendanceEventIdentity" type="StudentSchoolAttendanceEventIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student school attendance event.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -11267,6 +12864,160 @@ Volunteer/no contract
 							<xs:appinfo>
 								<ann:EdFiId>2141</ann:EdFiId>
 							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentSectionAttendanceEventIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student section attendance event.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Student associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SectionReference" type="SectionReferenceType">
+				<xs:annotation>
+					<xs:documentation>Relates the Section associated with the AttendanceEvent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EventDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date for this attendance event.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
+				<xs:annotation>
+					<xs:documentation>A code describing the attendance event, for example:
+Present
+Unexcused absence
+Excused absence
+Tardy.</xs:documentation>
+					<xs:appinfo>
+						<ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentSectionAttendanceEventReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Section Attendance Event. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentSectionAttendanceEventIdentity" type="StudentSectionAttendanceEventIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student section attendance event.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentSpecialEducationProgramAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student special education program association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Student associated with the Program.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramReference" type="ProgramReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Program associated with the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentSpecialEducationProgramAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Special Education Program Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentSpecialEducationProgramAssociationIdentity" type="StudentSpecialEducationProgramAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student special education program association.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StudentTitleIPartAProgramAssociationIdentityType">
+		<xs:annotation>
+			<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student title i part a program association.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Identity</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Student associated with the Program.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ProgramReference" type="ProgramReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Program associated with the Student.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BeginDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="StudentTitleIPartAProgramAssociationReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides alternative references for Student Title I Part A Program Association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Reference</ann:TypeGroup>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ReferenceType">
+				<xs:sequence>
+					<xs:element name="StudentTitleIPartAProgramAssociationIdentity" type="StudentTitleIPartAProgramAssociationIdentityType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a student title i part a program association.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
