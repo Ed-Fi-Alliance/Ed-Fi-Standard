@@ -4,7 +4,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd"/>
 	<xs:annotation>
-		<xs:documentation>===== Ed-Fi-Core Version 2.0 April 28, 2015 =====
+		<xs:documentation>===== Ed-Fi-Core Version 2.1 Februrary 2016 IN DRAFT =====
 		
 		Ed-Fi Version History
 		1.0          6/28/11  Request for Comment release
@@ -77,7 +77,7 @@
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="TotalInstructionalDays" type="xs:int">
+					<xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
 						<xs:annotation>
 							<xs:documentation>The total instructional days during the academic week.</xs:documentation>
 							<xs:appinfo>
@@ -3948,7 +3948,7 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="TotalInstructionalDays" type="xs:int">
+					<xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
 						<xs:annotation>
 							<xs:documentation>The total number of instructional days in the school calendar.</xs:documentation>
 							<xs:appinfo>
