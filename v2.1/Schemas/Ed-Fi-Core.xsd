@@ -286,6 +286,7 @@ Attitudinal test
 Cognitive and perceptual skills test
 ...</xs:documentation>
 							<xs:appinfo>
+								<ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
 								<ann:EdFiId>1221</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
@@ -294,10 +295,8 @@ Cognitive and perceptual skills test
 						<xs:annotation>
 							<xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
 							<xs:appinfo>
-								<ann:EdFiId>1219</ann:EdFiId>
-							</xs:appinfo>
-							<xs:appinfo>
 								<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+								<ann:EdFiId>1219</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -491,6 +490,7 @@ Second grade
 						<xs:annotation>
 							<xs:documentation>The category of an assessment based on format and content. For example: Achievement test, Advanced placement test, Alternate assessment/grade-level standards, Attitudinal test, Cognitive, and perceptual skills test, etc.</xs:documentation>
 							<xs:appinfo>
+								<ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
 								<ann:EdFiId>1243</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
@@ -2214,10 +2214,8 @@ Representative of visiting school
 						<xs:annotation>
 							<xs:documentation>Targeted purpose of the Intervention (e.g., attendance issue, dropout risk).</xs:documentation>
 							<xs:appinfo>
-								<ann:EdFiId>1448</ann:EdFiId>
-							</xs:appinfo>
-							<xs:appinfo>
 								<ann:Descriptor>DiagnosisDescriptor</ann:Descriptor>
+								<ann:EdFiId>1448</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -3929,6 +3927,7 @@ Special education students
 						<xs:annotation>
 							<xs:documentation>The term for the Session during the school year.</xs:documentation>
 							<xs:appinfo>
+								<ann:Descriptor>TermDescriptor</ann:Descriptor>
 								<ann:EdFiId>1644</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
@@ -4393,7 +4392,6 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
 						<xs:annotation>
 							<xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
 							<xs:appinfo>
-								<ann:Descriptor>LimitedEnglishProficiencyDescriptor</ann:Descriptor>
 								<ann:EdFiId>1690</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
@@ -4609,6 +4607,7 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
 						<xs:annotation>
 							<xs:documentation>The term for the session during the school year.</xs:documentation>
 							<xs:appinfo>
+								<ann:Descriptor>TermDescriptor</ann:Descriptor>
 								<ann:EdFiId>1725</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
@@ -4746,7 +4745,6 @@ LEP Exempt
 						<xs:annotation>
 							<xs:documentation>The performance level(s) achieved for the StudentAssessment.</xs:documentation>
 							<xs:appinfo>
-								<ann:Descriptor>PerformanceLevelDescriptor</ann:Descriptor>
 								<ann:EdFiId>1734</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
@@ -5567,9 +5565,6 @@ LEP Exempt
 							<xs:appinfo>
 								<ann:EdFiId>627</ann:EdFiId>
 							</xs:appinfo>
-							<xs:appinfo>
-								<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
 				</xs:sequence>
@@ -5592,8 +5587,6 @@ LEP Exempt
 							<xs:documentation>A classification of the certification fields to academic subjects.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-							</xs:appinfo>
-							<xs:appinfo>
 								<ann:EdFiId>290</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
@@ -5874,8 +5867,6 @@ LEP Exempt
 							<xs:documentation>The mapping to known grade levels for which certification exists.</xs:documentation>
 							<xs:appinfo>
 								<ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-							</xs:appinfo>
-							<xs:appinfo>
 								<ann:EdFiId>315</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
@@ -8090,6 +8081,7 @@ Local Neglected Program.</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>The category of an assessment based on format and content. For example: Achievement test, Advanced placement test, Alternate assessment/grade-level standards, Attitudinal test, Cognitive, and perceptual skills test, etc.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
 						<ann:EdFiId>2302</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -8265,6 +8257,7 @@ Attitudinal test
 Cognitive and perceptual skills test
 ...</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
 						<ann:EdFiId>2308</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -10386,6 +10379,7 @@ Cognitive and perceptual skills test
 				<xs:annotation>
 					<xs:documentation>The term for the session during the school year.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>TermDescriptor</ann:Descriptor>
 						<ann:EdFiId>2071</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -10421,6 +10415,7 @@ Cognitive and perceptual skills test
 				<xs:annotation>
 					<xs:documentation>The term for the session during the school year.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>TermDescriptor</ann:Descriptor>
 						<ann:EdFiId>2355</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -10818,6 +10813,7 @@ Volunteer/no contract
 				<xs:annotation>
 					<xs:documentation>The term for the session during the school year.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>TermDescriptor</ann:Descriptor>
 						<ann:EdFiId>2081</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -12186,6 +12182,7 @@ Volunteer/no contract
 				<xs:annotation>
 					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to an assessment.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>AssessmentIdentificationSystemDescriptor</ann:Descriptor>
 						<ann:EdFiId>731</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -12221,6 +12218,7 @@ Volunteer/no contract
 				<xs:annotation>
 					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to an assessment.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>AssessmentIdentificationSystemDescriptor</ann:Descriptor>
 						<ann:EdFiId>734</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -12458,6 +12456,7 @@ Tardy.</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>The country in which an individual is born.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>CountryDescriptor</ann:Descriptor>
 						<ann:EdFiId>752</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -12744,6 +12743,7 @@ Student late arrival/early dismissal.</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>A system that is used to identify the organization of subject matter and related learning experiences provided for the instruction of students.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>CourseIdentificationSystemDescriptor</ann:Descriptor>
 						<ann:EdFiId>780</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -13156,6 +13156,7 @@ Distinguished Achievement Program.</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>The school system, state, or agency assigning the identification code.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>EducationOrganizationIdentificationSystemDescriptor</ann:Descriptor>
 						<ann:EdFiId>815</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -13301,6 +13302,7 @@ Change of assignment.</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>Country of origin of the document.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>CountryDescriptor</ann:Descriptor>
 						<ann:EdFiId>831</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -13395,6 +13397,7 @@ Change of assignment.</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>The name of the country.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>CountryDescriptor</ann:Descriptor>
 						<ann:EdFiId>843</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -14131,6 +14134,7 @@ Change of assignment.</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>The school system, state, or agency assigning the identification code.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>EducationOrganizationIdentificationSystemDescriptor</ann:Descriptor>
 						<ann:EdFiId>898</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -14402,6 +14406,7 @@ Change of assignment.</xs:documentation>
 				<xs:annotation>
 					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a staff member.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>StaffIdentificationSystemDescriptor</ann:Descriptor>
 						<ann:EdFiId>921</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -14611,6 +14616,7 @@ Met standard
 				<xs:annotation>
 					<xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student.</xs:documentation>
 					<xs:appinfo>
+						<ann:Descriptor>StudentIdentificationSystemDescriptor</ann:Descriptor>
 						<ann:EdFiId>939</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
@@ -14705,7 +14711,6 @@ Met standard
 				<xs:annotation>
 					<xs:documentation>The PerformanceLevel(s) achieved for the ObjectiveAssessment.</xs:documentation>
 					<xs:appinfo>
-						<ann:Descriptor>PerformanceLevelDescriptor</ann:Descriptor>
 						<ann:EdFiId>888</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
