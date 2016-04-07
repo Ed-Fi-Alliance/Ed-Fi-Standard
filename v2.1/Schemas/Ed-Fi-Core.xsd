@@ -28326,19 +28326,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			<xs:maxLength value="75"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="NameType">
-		<xs:annotation>
-			<xs:documentation>An alternate name for a person.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-				<ann:EdFiId>73</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="35"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="Nomenclature">
 		<xs:annotation>
 			<xs:documentation>Reflects the common nomenclature for an element.</xs:documentation>
@@ -28610,19 +28597,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="75"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="StaffId">
-		<xs:annotation>
-			<xs:documentation>The person's Social Security number or a state-approved alternative identification number.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-				<ann:EdFiId>105</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="9"/>
-			<xs:maxLength value="9"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="Statement">
@@ -28994,31 +28968,5 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:int"/>
-	</xs:simpleType>
-	<xs:simpleType name="WeekNumber">
-		<xs:annotation>
-			<xs:documentation>The week number (out of the number of weeks in the cycle) for this meeting time.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-				<ann:EdFiId>118</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:int">
-			<xs:minInclusive value="1"/>
-			<xs:maxInclusive value="54"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="WeeksInCycle">
-		<xs:annotation>
-			<xs:documentation>The number of weeks in which the meeting time schedules repeat.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-				<ann:EdFiId>119</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:int">
-			<xs:minInclusive value="1"/>
-			<xs:maxInclusive value="54"/>
-		</xs:restriction>
 	</xs:simpleType>
 </xs:schema>
