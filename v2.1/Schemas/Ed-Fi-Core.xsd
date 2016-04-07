@@ -26979,6 +26979,19 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 	<xs:annotation>
 		<xs:documentation>===== Numeric Simple Types =====</xs:documentation>
 	</xs:annotation>
+	<xs:simpleType name="CreditConversion">
+		<xs:annotation>
+			<xs:documentation>Conversion factor that when multiplied by the number of credits is equivalent to Carnegie units.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
+				<ann:EdFiId>34</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="9"/>
+			<xs:fractionDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="CreditsValue">
 		<xs:annotation>
 			<xs:documentation>The value of credits or units of value awarded for the completion of a course.</xs:documentation>
@@ -26989,19 +27002,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		</xs:annotation>
 		<xs:restriction base="xs:decimal">
 			<xs:minInclusive value="0"/>
-			<xs:totalDigits value="9"/>
-			<xs:fractionDigits value="2"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="CreditConversion">
-		<xs:annotation>
-			<xs:documentation>Conversion factor that when multiplied by the number of credits is equivalent to Carnegie units.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-				<ann:EdFiId>34</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:decimal">
 			<xs:totalDigits value="9"/>
 			<xs:fractionDigits value="2"/>
 		</xs:restriction>
