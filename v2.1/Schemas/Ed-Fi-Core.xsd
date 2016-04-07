@@ -8181,19 +8181,19 @@ Local Neglected Program.</xs:documentation>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="AssessmentReference" type="AssessmentReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2006</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="IdentificationCode" type="IdentificationCode">
 				<xs:annotation>
 					<xs:documentation>A unique number or alphanumeric code assigned to a space, room, site, building, individual, organization, program, or institution by a school, school system, state, or other agency or entity.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2007</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentReference" type="AssessmentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2006</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -8388,19 +8388,19 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="ClassPeriodName" type="ClassPeriodName">
-				<xs:annotation>
-					<xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period or AB schedules).</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2014</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
 					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2015</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ClassPeriodName" type="ClassPeriodName">
+				<xs:annotation>
+					<xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period or AB schedules).</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2014</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -8625,19 +8625,19 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="SessionReference" type="SessionReferenceType">
-				<xs:annotation>
-					<xs:documentation>The session in which the course is offered at the school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2420</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
 					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2022</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SessionReference" type="SessionReferenceType">
+				<xs:annotation>
+					<xs:documentation>The session in which the course is offered at the school.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2420</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9077,18 +9077,6 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="SectionReference" type="SectionReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing Section record in the receiving system. Two cases are supported:
-1. SchoolOrganizationID + UniqueSectionCode
-2. SchoolOrganizationID + 
-      Course (StateCourseCode OR LocalCourseCode) +
-      Term + ClassPeriod + Location.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2035</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="GradebookEntryTitle" type="GradebookEntryTitle">
 				<xs:annotation>
 					<xs:documentation>The name or title of the activity to be recorded in the gradebook entry.</xs:documentation>
@@ -9102,6 +9090,18 @@ Cognitive and perceptual skills test
 					<xs:documentation>The date the assignment, homework, or assessment was assigned or executed.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2033</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SectionReference" type="SectionReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing Section record in the receiving system. Two cases are supported:
+1. SchoolOrganizationID + UniqueSectionCode
+2. SchoolOrganizationID + 
+      Course (StateCourseCode OR LocalCourseCode) +
+      Term + ClassPeriod + Location.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2035</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9198,6 +9198,14 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
+			<xs:element name="GradeType" type="GradeType">
+				<xs:annotation>
+					<xs:documentation>The type of grade reported (e.g., Exam, Final, Grading Period).</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2036</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="StudentSectionAssociationReference" type="StudentSectionAssociationReferenceType">
 				<xs:annotation>
 					<xs:documentation>Relates the student and Section associated with the Grade.</xs:documentation>
@@ -9211,14 +9219,6 @@ Cognitive and perceptual skills test
 					<xs:documentation>Provide user information to lookup and link to an existing grading period record in the receiving system.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2037</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="GradeType" type="GradeType">
-				<xs:annotation>
-					<xs:documentation>The type of grade reported (e.g., Exam, Final, Grading Period).</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2036</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9256,6 +9256,14 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2040</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="GradingPeriod" type="GradingPeriodDescriptorReferenceType">
 				<xs:annotation>
 					<xs:documentation>The name of the period for which grades are reported.</xs:documentation>
@@ -9270,14 +9278,6 @@ Cognitive and perceptual skills test
 					<xs:documentation>Month, day, and year of the first day of the grading period.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2039</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="SchoolReference" type="SchoolReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2040</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9374,19 +9374,19 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="InterventionIdentificationCode" type="IdentificationCode">
-				<xs:annotation>
-					<xs:documentation>A unique number or alphanumeric code assigned to an intervention.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2048</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 				<xs:annotation>
 					<xs:documentation>Provide user information to lookup and link to an existing educational organization record.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2047</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="InterventionIdentificationCode" type="IdentificationCode">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an intervention.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2048</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9401,19 +9401,19 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="InterventionPrescriptionIdentificationCode" type="IdentificationCode">
-				<xs:annotation>
-					<xs:documentation>A unique number or alphanumeric code assigned to an intervention prescription.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2046</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 				<xs:annotation>
 					<xs:documentation>Provide user information to lookup and link to an existing educational organization record.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2045</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="InterventionPrescriptionIdentificationCode" type="IdentificationCode">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to an intervention prescription.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2046</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9730,19 +9730,19 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="ClassroomIdentificationCode" type="ClassroomIdentificationCode">
-				<xs:annotation>
-					<xs:documentation>A unique number or alphanumeric code assigned to a room by a school, school system, state, or other agency or entity.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2054</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
 					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2055</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ClassroomIdentificationCode" type="ClassroomIdentificationCode">
+				<xs:annotation>
+					<xs:documentation>A unique number or alphanumeric code assigned to a room by a school, school system, state, or other agency or entity.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2054</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9780,19 +9780,19 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="AssessmentReference" type="AssessmentReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2056</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="IdentificationCode" type="IdentificationCode">
 				<xs:annotation>
 					<xs:documentation>A unique number or alphanumeric code assigned to a space, room, site, building, individual, organization, program, or institution by a school, school system, state, or other agency or entity.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2057</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AssessmentReference" type="AssessmentReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing assessment.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2056</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9955,11 +9955,11 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="ProgramType" type="ProgramType">
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
 				<xs:annotation>
-					<xs:documentation>The type of program.</xs:documentation>
+					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2061</ann:EdFiId>
+						<ann:EdFiId>2059</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -9971,11 +9971,11 @@ Cognitive and perceptual skills test
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+			<xs:element name="ProgramType" type="ProgramType">
 				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system.</xs:documentation>
+					<xs:documentation>The type of program.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2059</ann:EdFiId>
+						<ann:EdFiId>2061</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10215,30 +10215,6 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="LocationReference" type="LocationReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing location record in the receiving system.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2068</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing class period record in the receiving system.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2066</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="CourseOfferingReference" type="CourseOfferingReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing course offering record in the receiving system.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2067</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="UniqueSectionCode" type="UniqueSectionCode">
 				<xs:annotation>
 					<xs:documentation>A unique identifier for the Section that is defined by the classroom, the subjects taught, and the instructors that are assigned.</xs:documentation>
@@ -10252,6 +10228,30 @@ Cognitive and perceptual skills test
 					<xs:documentation>When a Section is part of a sequence of parts for a course, the number of the sequence.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2412</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CourseOfferingReference" type="CourseOfferingReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing course offering record in the receiving system.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2067</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LocationReference" type="LocationReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing location record in the receiving system.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2068</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing class period record in the receiving system.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2066</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10356,14 +10356,6 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="SchoolReference" type="SchoolReferenceType">
-				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing school.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2069</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="SchoolYear" type="SchoolYearType">
 				<xs:annotation>
 					<xs:documentation>The identifier for the school year.</xs:documentation>
@@ -10378,6 +10370,14 @@ Cognitive and perceptual skills test
 					<xs:appinfo>
 						<ann:Descriptor>TermDescriptor</ann:Descriptor>
 						<ann:EdFiId>2071</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
+				<xs:annotation>
+					<xs:documentation>Provide user information to lookup and link to an existing school.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2069</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10467,19 +10467,19 @@ Cognitive and perceptual skills test
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
-				<xs:annotation>
-					<xs:documentation>The reference to the employing Ed Org.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2072</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="StaffReference" type="StaffReferenceType">
 				<xs:annotation>
 					<xs:documentation>The reference to the staff.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2075</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The reference to the employing Ed Org.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2072</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10849,6 +10849,14 @@ Volunteer/no contract
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
+			<xs:element name="AdministrationDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The month(s), day(s), and year on which an assessment is administered or first day of administration if over multiple days.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2082</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="StudentReference" type="StudentReferenceType">
 				<xs:annotation>
 					<xs:documentation>Provide user information to lookup and link to an existing student record in the receiving system.</xs:documentation>
@@ -10864,14 +10872,6 @@ Volunteer/no contract
 2. AssessmentTitle + AcademicSubject (e.g. mathematics) + GradeLevelAssessed (e.g., Fifth grade) + Version (e.g., 2009).</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2083</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="AdministrationDate" type="xs:date">
-				<xs:annotation>
-					<xs:documentation>The month(s), day(s), and year on which an assessment is administered or first day of administration if over multiple days.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2082</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10909,14 +10909,6 @@ Volunteer/no contract
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>The Identifier for the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2087</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="CompetencyObjectiveReference" type="CompetencyObjectiveReferenceType">
 				<xs:annotation>
 					<xs:documentation>The Identifier for the competency objective.</xs:documentation>
@@ -10930,6 +10922,14 @@ Volunteer/no contract
 					<xs:documentation>Provide user information to lookup and link to an existing grading period record in the receiving system.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2086</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Identifier for the student.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2087</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -10986,14 +10986,6 @@ Volunteer/no contract
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="StudentReference" type="StudentReferenceType">
-				<xs:annotation>
-					<xs:documentation>The Identifier for the student.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2090</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="LearningObjectiveReference" type="LearningObjectiveReferenceType">
 				<xs:annotation>
 					<xs:documentation>The Identifier for the learning objective.</xs:documentation>
@@ -11007,6 +10999,14 @@ Volunteer/no contract
 					<xs:documentation>Provide user information to lookup and link to an existing grading period record in the receiving system.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2088</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="StudentReference" type="StudentReferenceType">
+				<xs:annotation>
+					<xs:documentation>The Identifier for the student.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2090</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -11135,14 +11135,6 @@ Volunteer/no contract
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
-				<xs:annotation>
-					<xs:documentation>The education organization where the student is participating in or receiving the program services.</xs:documentation>
-					<xs:appinfo>
-						<ann:EdFiId>2092</ann:EdFiId>
-					</xs:appinfo>
-				</xs:annotation>
-			</xs:element>
 			<xs:element name="ProgramReference" type="ProgramReferenceType">
 				<xs:annotation>
 					<xs:documentation>Provide user information to lookup and link to an existing program record in the receiving system.</xs:documentation>
@@ -11156,6 +11148,14 @@ Volunteer/no contract
 					<xs:documentation>Month, day, and year of the student's entry or assignment to the program.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>2091</ann:EdFiId>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+				<xs:annotation>
+					<xs:documentation>The education organization where the student is participating in or receiving the program services.</xs:documentation>
+					<xs:appinfo>
+						<ann:EdFiId>2092</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
