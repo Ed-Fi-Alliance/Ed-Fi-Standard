@@ -1450,7 +1450,7 @@ Withdrawn.</xs:documentation>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="DisciplineActionLength" type="xs:int" minOccurs="0">
+					<xs:element name="DisciplineActionLength" type="DisciplineActionLength" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The length of time in school days for the DisciplineAction (e.g. removal, detention), if applicable.</xs:documentation>
 							<xs:appinfo>
@@ -1458,7 +1458,7 @@ Withdrawn.</xs:documentation>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="ActualDisciplineActionLength" type="xs:int" minOccurs="0">
+					<xs:element name="ActualDisciplineActionLength" type="DisciplineActionLength" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Indicates the actual length in school days of a student's disciplinary assignment.</xs:documentation>
 							<xs:appinfo>
@@ -27021,6 +27021,16 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:decimal"/>
+	</xs:simpleType>
+	<xs:simpleType name="DisciplineActionLength">
+		<xs:annotation>
+			<xs:documentation>The length, in school days, of the disciplinary action.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
+				<ann:EdFiId>2460</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:int"/>
 	</xs:simpleType>
 	<xs:simpleType name="Duration">
 		<xs:annotation>
