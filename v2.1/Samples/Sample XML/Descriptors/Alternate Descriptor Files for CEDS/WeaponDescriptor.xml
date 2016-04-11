@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas//Interchange-Descriptors.xsd">
+	<WeaponDescriptor>
+		<CodeValue>Handguns</CodeValue>
+		<ShortDescription>Handguns</ShortDescription>
+		<Description>Handguns</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Handgun</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>RiflesShotguns</CodeValue>
+		<ShortDescription>RiflesShotguns</ShortDescription>
+		<Description>Rifles / Shotguns</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Rifle/Shotgun</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>Multiple</CodeValue>
+		<ShortDescription>Multiple</ShortDescription>
+		<Description>More than one type of weapon or firearm</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Other Firearm</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>Other</CodeValue>
+		<ShortDescription>Other</ShortDescription>
+		<Description>Other</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Other</WeaponMap>
+	</WeaponDescriptor>
+</InterchangeDescriptors>

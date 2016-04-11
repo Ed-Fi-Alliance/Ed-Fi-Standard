@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas//Interchange-Descriptors.xsd">
+	<LimitedEnglishProficiencyDescriptor>
+		<CodeValue>Yes</CodeValue>
+		<ShortDescription>Yes</ShortDescription>
+		<Description>Yes</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+		<LimitedEnglishProficiencyMap>Limited</LimitedEnglishProficiencyMap>
+	</LimitedEnglishProficiencyDescriptor>
+	<LimitedEnglishProficiencyDescriptor>
+		<CodeValue>No</CodeValue>
+		<ShortDescription>No</ShortDescription>
+		<Description>No</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+		<LimitedEnglishProficiencyMap>NotLimited</LimitedEnglishProficiencyMap>
+	</LimitedEnglishProficiencyDescriptor>
+</InterchangeDescriptors>

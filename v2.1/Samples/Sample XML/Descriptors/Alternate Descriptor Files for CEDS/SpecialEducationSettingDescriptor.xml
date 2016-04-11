@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas//Interchange-Descriptors.xsd">
+	<SpecialEducationSettingDescriptor>
+		<CodeValue>RC80</CodeValue>
+		<ShortDescription>RC80</ShortDescription>
+		<Description>Inside regular class 80% or more of the day</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/SpecialEducationSettingDescriptor.xml</Namespace>
+		<SpecialEducationSettingMap>Inside regular class 80% or more of the day</SpecialEducationSettingMap>
+	</SpecialEducationSettingDescriptor>
+	<SpecialEducationSettingDescriptor>
+		<CodeValue>RC79TO40</CodeValue>
+		<ShortDescription>RC79TO40</ShortDescription>
+		<Description>Inside regular class 40% through 79% of the day</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/SpecialEducationSettingDescriptor.xml</Namespace>
+		<SpecialEducationSettingMap>Inside regular class no more than 79% of day and no less than 40% of the day </SpecialEducationSettingMap>
+	</SpecialEducationSettingDescriptor>
+	<SpecialEducationSettingDescriptor>
+		<CodeValue>RC39</CodeValue>
+		<ShortDescription>RC39</ShortDescription>
+		<Description>Inside regular class less than 40% of the day</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/SpecialEducationSettingDescriptor.xml</Namespace>
+		<SpecialEducationSettingMap>Inside regular class less than 40% of the day </SpecialEducationSettingMap>
+	</SpecialEducationSettingDescriptor>
+	<SpecialEducationSettingDescriptor>
+		<CodeValue>SS</CodeValue>
+		<ShortDescription>SS</ShortDescription>
+		<Description>Separate school</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/SpecialEducationSettingDescriptor.xml</Namespace>
+		<SpecialEducationSettingMap>Separate School</SpecialEducationSettingMap>
+	</SpecialEducationSettingDescriptor>
+	<SpecialEducationSettingDescriptor>
+		<CodeValue>RF</CodeValue>
+		<ShortDescription>RF</ShortDescription>
+		<Description>Residential facility</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/SpecialEducationSettingDescriptor.xml</Namespace>
+		<SpecialEducationSettingMap>Residential Facility</SpecialEducationSettingMap>
+	</SpecialEducationSettingDescriptor>
+	<SpecialEducationSettingDescriptor>
+		<CodeValue>HH</CodeValue>
+		<ShortDescription>HH</ShortDescription>
+		<Description>Homebound/hospital</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/SpecialEducationSettingDescriptor.xml</Namespace>
+		<SpecialEducationSettingMap>Homebound/Hospital</SpecialEducationSettingMap>
+	</SpecialEducationSettingDescriptor>
+	<SpecialEducationSettingDescriptor>
+		<CodeValue>CF</CodeValue>
+		<ShortDescription>CF</ShortDescription>
+		<Description>Correctional facility</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/SpecialEducationSettingDescriptor.xml</Namespace>
+		<SpecialEducationSettingMap>Correctional Facilities</SpecialEducationSettingMap>
+	</SpecialEducationSettingDescriptor>
+	<SpecialEducationSettingDescriptor>
+		<CodeValue>PPPS</CodeValue>
+		<ShortDescription>PPPS</ShortDescription>
+		<Description>Parentally placed in private school</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/SpecialEducationSettingDescriptor.xml</Namespace>
+		<SpecialEducationSettingMap>Parentally-placed in Private Schools</SpecialEducationSettingMap>
+	</SpecialEducationSettingDescriptor>
+</InterchangeDescriptors>

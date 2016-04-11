@@ -1,0 +1,4085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" blackbox="0" uid="1" editable="1">
+		<properties SelectedLanguage="xslt2"/>
+		<structure>
+			<children>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="19" kind="19" visible="0">
+					<view ltx="911" lty="-62" rbx="1083" rby="-11"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="550" componentid="10"/>
+							<entry name="replacewith" inpkey="549" componentid="11"/>
+							<entry name="replacewith2" inpkey="551" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="548" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="21" kind="19" visible="0">
+					<view ltx="411" lty="-62" rbx="583" rby="-11"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="558" componentid="10"/>
+							<entry name="replacewith" inpkey="560" componentid="11"/>
+							<entry name="replacewith2" inpkey="561" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="559" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="20" kind="19" visible="0">
+					<view ltx="411" lty="-150" rbx="583" rby="-99"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="556" componentid="10"/>
+							<entry name="replacewith" inpkey="557" componentid="11"/>
+							<entry name="replacewith2" inpkey="555" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="554" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="LearningObjective" library="core" uid="177" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1532"/>
+						<datapoint pos="1" key="1537"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1531"/>
+						<datapoint/>
+					</targets>
+					<view ltx="1002" lty="784" rbx="1116" rby="840"/>
+				</component>
+				<component name="equal" library="core" uid="204" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1748"/>
+						<datapoint pos="1" key="1749"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1750"/>
+					</targets>
+					<view ltx="765" lty="801" rbx="818" rby="857"/>
+				</component>
+				<component name="equal" library="core" uid="206" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1757"/>
+						<datapoint pos="1" key="1758"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1759"/>
+					</targets>
+					<view ltx="730" lty="408" rbx="783" rby="464"/>
+				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="17" kind="19" visible="0">
+					<view ltx="411" lty="27" rbx="583" rby="78"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="350" componentid="10"/>
+							<entry name="replacewith" inpkey="351" componentid="11"/>
+							<entry name="replacewith2" inpkey="352" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="353" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="substitute-missing" library="core" uid="99" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="786"/>
+						<datapoint pos="1" key="787"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="788"/>
+					</targets>
+					<view ltx="1208" lty="-31" rbx="1322" rby="25"/>
+				</component>
+				<component name="GradingPeriodReference" library="core" uid="172" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1546"/>
+						<datapoint pos="1" key="1526"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1524"/>
+						<datapoint/>
+					</targets>
+					<view ltx="972" lty="356" rbx="1118" rby="412"/>
+				</component>
+				<component name="SectionLookup" library="user" blackbox="0" uid="210" kind="19" visible="0">
+					<view ltx="334" lty="765" rbx="583" rby="867"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="LocalCourseCode" inpkey="1887" componentid="192"/>
+							<entry name="SchoolYear" inpkey="1888" componentid="191"/>
+							<entry name="Term" inpkey="1889" componentid="188"/>
+							<entry name="ClassPeriodName" inpkey="1890" componentid="184"/>
+							<entry name="Location" inpkey="1891" componentid="190"/>
+							<entry name="SchoolId" inpkey="1892" componentid="198"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="SequenceOfCourse" outkey="1893" componentid="187"/>
+							<entry name="UniqueSectionCode" outkey="1894" componentid="183"/>
+						</root>
+					</data>
+				</component>
+				<component name="FakeGradingBeginDate" library="user" blackbox="0" uid="97" kind="19" visible="0">
+					<view ltx="1096" lty="-150" rbx="1335" rby="-116"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="GradingPeriodDescription" inpkey="789" componentid="73"/>
+							<entry name="SchoolYear" inpkey="790" componentid="72"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="BeginDate" outkey="791" componentid="71"/>
+						</root>
+					</data>
+				</component>
+				<component name="FakeSectionBeginDate" library="user" blackbox="0" uid="95" kind="19" visible="0">
+					<view ltx="1176" lty="44" rbx="1335" rby="78"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Term" inpkey="783" componentid="55"/>
+							<entry name="SchoolYear" inpkey="784" componentid="56"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="BeginDate" outkey="785" componentid="42"/>
+						</root>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="205" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1754"/>
+						<datapoint pos="1" key="1755"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1756"/>
+					</targets>
+					<view ltx="633" lty="553" rbx="686" rby="609"/>
+				</component>
+				<component name="GradingPeriodReference" library="core" uid="166" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1508"/>
+						<datapoint pos="1" key="1510"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1509"/>
+						<datapoint/>
+					</targets>
+					<view ltx="1069" lty="500" rbx="1215" rby="556"/>
+				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="165" kind="19" visible="0">
+					<view ltx="530" lty="195" rbx="702" rby="246"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="1482" componentid="10"/>
+							<entry name="replacewith" inpkey="1484" componentid="11"/>
+							<entry name="replacewith2" inpkey="1485" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="1483" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="212" kind="19" visible="0">
+					<view ltx="501" lty="356" rbx="673" rby="407"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="1908" componentid="10"/>
+							<entry name="replacewith" inpkey="1909" componentid="11"/>
+							<entry name="replacewith2" inpkey="1910" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="1907" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="Interchange-StudentGrade" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="715" lty="158" rbx="1044" rby="738"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStudentGrade" ns="1" inpkey="817" expanded="1">
+										<entry name="ReportCard" ns="1" inpkey="818">
+											<entry name="id" type="attribute" inpkey="819"/>
+											<entry name="GradeReference" ns="1" inpkey="820" expanded="1">
+												<entry name="id" type="attribute" inpkey="821"/>
+												<entry name="ref" type="attribute" inpkey="822"/>
+												<entry name="GradeIdentity" ns="1" inpkey="823" expanded="1">
+													<entry name="StudentSectionAssociationReference" ns="1" expanded="1">
+														<entry name="StudentSectionAssociationIdentity" ns="1" expanded="1">
+															<entry name="StudentReference" ns="1" inpkey="824">
+																<entry name="id" type="attribute" inpkey="825"/>
+																<entry name="ref" type="attribute" inpkey="826"/>
+																<entry name="StudentIdentity" ns="1" inpkey="827" expanded="1">
+																	<entry name="StudentUniqueId" ns="1" inpkey="828"/>
+																</entry>
+																<entry name="StudentLookup" ns="1" expanded="1">
+																	<entry name="StudentIdentificationCode" ns="1" expanded="1"/>
+																	<entry name="Name" ns="1" expanded="1"/>
+																	<entry name="OtherName" ns="1" expanded="1"/>
+																	<entry name="BirthData" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+															<entry name="SectionReference" ns="1" inpkey="829">
+																<entry name="id" type="attribute" inpkey="830"/>
+																<entry name="ref" type="attribute" inpkey="831"/>
+																<entry name="SectionIdentity" ns="1" inpkey="832" expanded="1">
+																	<entry name="LocationReference" ns="1" expanded="1">
+																		<entry name="LocationIdentity" ns="1" expanded="1">
+																			<entry name="ClassroomIdentificationCode" ns="1" inpkey="1722"/>
+																			<entry name="SchoolReference" ns="1" expanded="1">
+																				<entry name="SchoolIdentity" ns="1" expanded="1">
+																					<entry name="SchoolId" ns="1" inpkey="1723"/>
+																				</entry>
+																			</entry>
+																		</entry>
+																	</entry>
+																	<entry name="ClassPeriodReference" ns="1" expanded="1">
+																		<entry name="ClassPeriodIdentity" ns="1" expanded="1">
+																			<entry name="ClassPeriodName" ns="1" inpkey="1724"/>
+																			<entry name="SchoolReference" ns="1" expanded="1">
+																				<entry name="SchoolIdentity" ns="1" expanded="1">
+																					<entry name="SchoolId" ns="1" inpkey="1725"/>
+																				</entry>
+																			</entry>
+																		</entry>
+																	</entry>
+																	<entry name="CourseOfferingReference" ns="1" expanded="1">
+																		<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+																			<entry name="SessionReference" ns="1" expanded="1">
+																				<entry name="SessionIdentity" ns="1" expanded="1">
+																					<entry name="SchoolReference" ns="1" expanded="1">
+																						<entry name="SchoolIdentity" ns="1" expanded="1">
+																							<entry name="SchoolId" ns="1" inpkey="1726"/>
+																						</entry>
+																					</entry>
+																					<entry name="SchoolYear" ns="1" inpkey="1727"/>
+																					<entry name="Term" ns="1" inpkey="1728" expanded="1">
+																						<entry name="CodeValue" ns="1" inpkey="1729"/>
+																					</entry>
+																				</entry>
+																			</entry>
+																			<entry name="SchoolReference" ns="1" inpkey="1860" expanded="1">
+																				<entry name="id" type="attribute" inpkey="1861"/>
+																				<entry name="ref" type="attribute" inpkey="1862"/>
+																				<entry name="SchoolIdentity" ns="1" expanded="1">
+																					<entry name="SchoolId" ns="1" inpkey="1863"/>
+																				</entry>
+																			</entry>
+																		</entry>
+																	</entry>
+																	<entry name="UniqueSectionCode" ns="1" inpkey="833"/>
+																</entry>
+																<entry name="SectionLookup" ns="1" expanded="1">
+																	<entry name="CourseOfferingReference" ns="1" expanded="1">
+																		<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+																			<entry name="SessionReference" ns="1" expanded="1"/>
+																		</entry>
+																	</entry>
+																	<entry name="SchoolReference" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="GradingPeriodReference" ns="1" inpkey="834" expanded="1">
+														<entry name="id" type="attribute" inpkey="835"/>
+														<entry name="ref" type="attribute" inpkey="836"/>
+														<entry name="GradingPeriodIdentity" ns="1" inpkey="837" expanded="1">
+															<entry name="GradingPeriod" ns="1" inpkey="838" expanded="1">
+																<entry name="id" type="attribute" inpkey="839"/>
+																<entry name="ref" type="attribute" inpkey="840"/>
+																<entry name="CodeValue" ns="1" inpkey="841"/>
+															</entry>
+															<entry name="BeginDate" ns="1" inpkey="842"/>
+															<entry name="SchoolReference" ns="1" expanded="1">
+																<entry name="SchoolIdentity" ns="1" expanded="1">
+																	<entry name="SchoolId" ns="1" inpkey="1730"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="GradeType" ns="1" inpkey="843"/>
+												</entry>
+											</entry>
+											<entry name="StudentCompetencyObjectiveReference" ns="1" expanded="1">
+												<entry name="StudentCompetencyObjectiveIdentity" ns="1" expanded="1">
+													<entry name="StudentReference" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="StudentLearningObjectiveReference" ns="1" expanded="1"/>
+											<entry name="GPAGivenGradingPeriod" ns="1" inpkey="844"/>
+											<entry name="GPACumulative" ns="1" inpkey="845"/>
+											<entry name="NumberOfDaysAbsent" ns="1" inpkey="846"/>
+											<entry name="NumberOfDaysInAttendance" ns="1" inpkey="847"/>
+											<entry name="NumberOfDaysTardy" ns="1" inpkey="848"/>
+											<entry name="StudentReference" ns="1" inpkey="849" expanded="1">
+												<entry name="id" type="attribute" inpkey="850"/>
+												<entry name="ref" type="attribute" inpkey="851"/>
+												<entry name="StudentIdentity" ns="1" inpkey="852" expanded="1"/>
+											</entry>
+											<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
+											<entry name="GradingPeriodReference" ns="1" inpkey="853" expanded="1">
+												<entry name="id" type="attribute" inpkey="854"/>
+												<entry name="ref" type="attribute" inpkey="855"/>
+												<entry name="GradingPeriodIdentity" ns="1" inpkey="856" expanded="1">
+													<entry name="GradingPeriod" ns="1" inpkey="857">
+														<entry name="id" type="attribute" inpkey="858"/>
+														<entry name="ref" type="attribute" inpkey="859"/>
+														<entry name="CodeValue" ns="1" inpkey="860"/>
+													</entry>
+													<entry name="BeginDate" ns="1" inpkey="861"/>
+													<entry name="SchoolReference" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="Grade" ns="1" inpkey="862">
+											<entry name="id" type="attribute" inpkey="863"/>
+											<entry name="LetterGradeEarned" ns="1" inpkey="864"/>
+											<entry name="NumericGradeEarned" ns="1" inpkey="865"/>
+											<entry name="DiagnosticStatement" ns="1" inpkey="866"/>
+											<entry name="GradeType" ns="1" inpkey="867"/>
+											<entry name="PerformanceBaseConversion" ns="1" inpkey="868"/>
+											<entry name="StudentSectionAssociationReference" ns="1" inpkey="1643" expanded="1">
+												<entry name="StudentSectionAssociationIdentity" ns="1" inpkey="1644" expanded="1">
+													<entry name="StudentReference" ns="1" inpkey="1167" expanded="1">
+														<entry name="id" type="attribute" inpkey="1168"/>
+														<entry name="ref" type="attribute" inpkey="1169"/>
+														<entry name="StudentIdentity" ns="1" inpkey="1170" expanded="1">
+															<entry name="StudentUniqueId" ns="1" inpkey="1171"/>
+														</entry>
+														<entry name="StudentLookup" ns="1" expanded="1">
+															<entry name="StudentIdentificationCode" ns="1" expanded="1">
+																<entry name="StudentIdentificationSystem" ns="1" expanded="1"/>
+															</entry>
+															<entry name="Name" ns="1" expanded="1">
+																<entry name="PersonalIdentificationDocument" ns="1" expanded="1">
+																	<entry name="IssuerCountry" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+															<entry name="OtherName" ns="1" expanded="1"/>
+															<entry name="BirthData" ns="1" expanded="1"/>
+															<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+													<entry name="SectionReference" ns="1" inpkey="1205" expanded="1">
+														<entry name="id" type="attribute" inpkey="1206"/>
+														<entry name="ref" type="attribute" inpkey="1207"/>
+														<entry name="SectionIdentity" ns="1" inpkey="1680" expanded="1">
+															<entry name="LocationReference" ns="1" expanded="1">
+																<entry name="LocationIdentity" ns="1" expanded="1">
+																	<entry name="ClassroomIdentificationCode" ns="1" inpkey="1684"/>
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1">
+																			<entry name="SchoolId" ns="1" inpkey="1685"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="ClassPeriodReference" ns="1" expanded="1">
+																<entry name="ClassPeriodIdentity" ns="1" expanded="1">
+																	<entry name="ClassPeriodName" ns="1" inpkey="1686"/>
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1">
+																			<entry name="SchoolId" ns="1" inpkey="1687"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="CourseOfferingReference" ns="1" expanded="1">
+																<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+																	<entry name="LocalCourseCode" ns="1" inpkey="1688"/>
+																	<entry name="SessionReference" ns="1" expanded="1">
+																		<entry name="SessionIdentity" ns="1" expanded="1">
+																			<entry name="SchoolReference" ns="1" expanded="1">
+																				<entry name="SchoolIdentity" ns="1" expanded="1">
+																					<entry name="SchoolId" ns="1" inpkey="1689"/>
+																				</entry>
+																			</entry>
+																			<entry name="SchoolYear" ns="1" inpkey="1690"/>
+																			<entry name="Term" ns="1" inpkey="1691" expanded="1">
+																				<entry name="CodeValue" ns="1" inpkey="1692"/>
+																			</entry>
+																		</entry>
+																	</entry>
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1">
+																			<entry name="SchoolId" ns="1" inpkey="1693"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="UniqueSectionCode" ns="1" inpkey="1885"/>
+															<entry name="SequenceOfCourse" ns="1" inpkey="1886"/>
+														</entry>
+														<entry name="SectionLookup" ns="1" expanded="1">
+															<entry name="CourseOfferingReference" ns="1" expanded="1">
+																<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+																	<entry name="SessionReference" ns="1" expanded="1">
+																		<entry name="SessionIdentity" ns="1" expanded="1">
+																			<entry name="SchoolReference" ns="1" expanded="1">
+																				<entry name="SchoolIdentity" ns="1" expanded="1"/>
+																			</entry>
+																			<entry name="Term" ns="1" expanded="1"/>
+																		</entry>
+																	</entry>
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1"/>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="SchoolReference" ns="1" expanded="1">
+																<entry name="SchoolIdentity" ns="1" expanded="1"/>
+																<entry name="SchoolLookup" ns="1" expanded="1">
+																	<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+																		<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="LocationReference" ns="1" expanded="1">
+																<entry name="LocationIdentity" ns="1" expanded="1">
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1"/>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="ClassPeriodReference" ns="1" expanded="1">
+																<entry name="ClassPeriodIdentity" ns="1" expanded="1">
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1"/>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="BeginDate" ns="1" inpkey="1220"/>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" inpkey="869" expanded="1">
+												<entry name="id" type="attribute" inpkey="870"/>
+												<entry name="ref" type="attribute" inpkey="871"/>
+												<entry name="GradingPeriodIdentity" ns="1" inpkey="872" expanded="1">
+													<entry name="GradingPeriod" ns="1" inpkey="873" expanded="1">
+														<entry name="id" type="attribute" inpkey="874"/>
+														<entry name="ref" type="attribute" inpkey="875"/>
+														<entry name="CodeValue" ns="1" inpkey="876"/>
+														<entry name="Namespace" ns="1" inpkey="1221"/>
+													</entry>
+													<entry name="BeginDate" ns="1" inpkey="877"/>
+													<entry name="SchoolReference" ns="1" inpkey="1379" expanded="1">
+														<entry name="id" type="attribute" inpkey="1380"/>
+														<entry name="ref" type="attribute" inpkey="1381"/>
+														<entry name="SchoolIdentity" ns="1" inpkey="1382" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="1383"/>
+														</entry>
+														<entry name="SchoolLookup" ns="1" expanded="1">
+															<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="CompetencyObjective" ns="1" inpkey="1447">
+											<entry name="id" type="attribute" inpkey="1448"/>
+											<entry name="CompetencyObjectiveId" ns="1" inpkey="1449"/>
+											<entry name="Objective" ns="1" inpkey="1450"/>
+											<entry name="Description" ns="1" inpkey="1451"/>
+											<entry name="ObjectiveGradeLevel" ns="1" inpkey="1452" expanded="1">
+												<entry name="id" type="attribute" inpkey="1453"/>
+												<entry name="ref" type="attribute" inpkey="1454"/>
+												<entry name="CodeValue" ns="1" inpkey="1455"/>
+												<entry name="Namespace" ns="1" inpkey="1490"/>
+											</entry>
+											<entry name="EducationOrganizationReference" ns="1" inpkey="1456" expanded="1">
+												<entry name="id" type="attribute" inpkey="1457"/>
+												<entry name="ref" type="attribute" inpkey="1458"/>
+												<entry name="EducationOrganizationIdentity" ns="1" inpkey="1459" expanded="1">
+													<entry name="EducationOrganizationId" ns="1" inpkey="1491"/>
+												</entry>
+												<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+													<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="LearningObjective" ns="1" inpkey="878" expanded="1">
+											<entry name="id" type="attribute" inpkey="879"/>
+											<entry name="LearningObjectiveId" ns="1" inpkey="880"/>
+											<entry name="ContentStandard" ns="1" inpkey="881">
+												<entry name="Title" ns="1" inpkey="882"/>
+												<entry name="Author" ns="1" inpkey="883"/>
+												<entry name="Version" ns="1" inpkey="884"/>
+												<entry name="URI" ns="1" inpkey="885"/>
+												<entry name="PublicationDate" ns="1" inpkey="886"/>
+												<entry name="PublicationYear" ns="1" inpkey="887"/>
+												<entry name="PublicationStatus" ns="1" inpkey="888"/>
+												<entry name="MandatingEducationOrganizationReference" ns="1" inpkey="889" expanded="1">
+													<entry name="id" type="attribute" inpkey="890"/>
+													<entry name="ref" type="attribute" inpkey="891"/>
+													<entry name="EducationOrganizationIdentity" ns="1" inpkey="892" expanded="1">
+														<entry name="EducationOrganizationId" ns="1" inpkey="1107"/>
+													</entry>
+													<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+															<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+												<entry name="BeginDate" ns="1" inpkey="893"/>
+												<entry name="EndDate" ns="1" inpkey="894"/>
+											</entry>
+											<entry name="Objective" ns="1" inpkey="895"/>
+											<entry name="Description" ns="1" inpkey="896"/>
+											<entry name="AcademicSubject" ns="1" inpkey="897">
+												<entry name="id" type="attribute" inpkey="898"/>
+												<entry name="ref" type="attribute" inpkey="899"/>
+												<entry name="CodeValue" ns="1" inpkey="900"/>
+												<entry name="Namespace" ns="1" inpkey="1113"/>
+											</entry>
+											<entry name="ObjectiveGradeLevel" ns="1" inpkey="901">
+												<entry name="id" type="attribute" inpkey="902"/>
+												<entry name="ref" type="attribute" inpkey="903"/>
+												<entry name="CodeValue" ns="1" inpkey="904"/>
+												<entry name="Namespace" ns="1" inpkey="1114"/>
+											</entry>
+											<entry name="Nomenclature" ns="1" inpkey="905"/>
+											<entry name="SuccessCriteria" ns="1" inpkey="906"/>
+											<entry name="LearningStandardReference" ns="1" inpkey="907">
+												<entry name="id" type="attribute" inpkey="908"/>
+												<entry name="ref" type="attribute" inpkey="909"/>
+												<entry name="LearningStandardIdentity" ns="1" inpkey="910" expanded="1">
+													<entry name="LearningStandardId" ns="1" inpkey="911"/>
+												</entry>
+												<entry name="LearningStandardLookup" ns="1" expanded="1">
+													<entry name="ContentStandard" ns="1" expanded="1">
+														<entry name="MandatingEducationOrganizationReference" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="ParentLearningObjectiveReference" ns="1" inpkey="1911" expanded="1">
+												<entry name="id" type="attribute" inpkey="1912"/>
+												<entry name="ref" type="attribute" inpkey="1913"/>
+												<entry name="LearningObjectiveIdentity" ns="1" inpkey="1914" expanded="1">
+													<entry name="Objective" ns="1" inpkey="1915"/>
+													<entry name="AcademicSubject" ns="1">
+														<entry name="CodeValue" ns="1" inpkey="1916"/>
+														<entry name="Namespace" ns="1" inpkey="1917"/>
+													</entry>
+													<entry name="ObjectiveGradeLevel" ns="1" expanded="1">
+														<entry name="CodeValue" ns="1" inpkey="1918"/>
+														<entry name="Namespace" ns="1" inpkey="1919"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentCompetencyObjective" ns="1" inpkey="912">
+											<entry name="id" type="attribute" inpkey="913"/>
+											<entry name="CompetencyObjectiveReference" ns="1">
+												<entry name="CompetencyObjectiveIdentity" ns="1" expanded="1">
+													<entry name="ObjectiveGradeLevel" ns="1" expanded="1"/>
+													<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="CompetencyLevel" ns="1" inpkey="1559">
+												<entry name="id" type="attribute" inpkey="1560"/>
+												<entry name="ref" type="attribute" inpkey="1561"/>
+												<entry name="CodeValue" ns="1" inpkey="1335"/>
+												<entry name="Namespace" ns="1" inpkey="1562"/>
+											</entry>
+											<entry name="DiagnosticStatement" ns="1" inpkey="1563"/>
+											<entry name="GradingPeriodReference" ns="1" inpkey="1341">
+												<entry name="GradingPeriodIdentity" ns="1" expanded="1">
+													<entry name="SchoolReference" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="StudentReference" ns="1" inpkey="1564">
+												<entry name="id" type="attribute" inpkey="1565"/>
+												<entry name="ref" type="attribute" inpkey="1566"/>
+												<entry name="StudentIdentity" ns="1" inpkey="1567"/>
+												<entry name="StudentLookup" ns="1" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="StudentSectionAssociationReference" ns="1" inpkey="1766" expanded="1">
+												<entry name="id" type="attribute" inpkey="1767"/>
+												<entry name="ref" type="attribute" inpkey="1768"/>
+												<entry name="StudentSectionAssociationIdentity" ns="1" expanded="1">
+													<entry name="StudentReference" ns="1" inpkey="1769">
+														<entry name="id" type="attribute" inpkey="1770"/>
+														<entry name="ref" type="attribute" inpkey="1771"/>
+														<entry name="StudentIdentity" ns="1" inpkey="1772" expanded="1"/>
+														<entry name="StudentLookup" ns="1" expanded="1">
+															<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+													<entry name="SectionReference" ns="1" inpkey="1920" expanded="1">
+														<entry name="id" type="attribute" inpkey="1921"/>
+														<entry name="ref" type="attribute" inpkey="1922"/>
+														<entry name="SectionIdentity" ns="1" inpkey="1773" expanded="1">
+															<entry name="LocationReference" ns="1" expanded="1">
+																<entry name="LocationIdentity" ns="1" expanded="1">
+																	<entry name="ClassroomIdentificationCode" ns="1" inpkey="1774"/>
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1">
+																			<entry name="SchoolId" ns="1" inpkey="1775"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="ClassPeriodReference" ns="1" expanded="1">
+																<entry name="ClassPeriodIdentity" ns="1" expanded="1">
+																	<entry name="ClassPeriodName" ns="1" inpkey="1776"/>
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1">
+																			<entry name="SchoolId" ns="1" inpkey="1777"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="CourseOfferingReference" ns="1" expanded="1">
+																<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+																	<entry name="SessionReference" ns="1" expanded="1">
+																		<entry name="SessionIdentity" ns="1" expanded="1">
+																			<entry name="SchoolReference" ns="1" expanded="1">
+																				<entry name="SchoolIdentity" ns="1" expanded="1">
+																					<entry name="SchoolId" ns="1" inpkey="1778"/>
+																				</entry>
+																			</entry>
+																			<entry name="SchoolYear" ns="1" inpkey="1779"/>
+																			<entry name="Term" ns="1" inpkey="1780" expanded="1">
+																				<entry name="CodeValue" ns="1" inpkey="1781"/>
+																			</entry>
+																		</entry>
+																	</entry>
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1">
+																			<entry name="SchoolId" ns="1" inpkey="1782"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="UniqueSectionCode" ns="1" inpkey="1783"/>
+														</entry>
+														<entry name="SectionLookup" ns="1" expanded="1">
+															<entry name="CourseOfferingReference" ns="1" expanded="1">
+																<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+																	<entry name="SessionReference" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+															<entry name="SchoolReference" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="StudentProgramAssociationReference" ns="1" expanded="1">
+												<entry name="StudentProgramAssociationIdentity" ns="1" expanded="1">
+													<entry name="StudentReference" ns="1" inpkey="1812" expanded="1">
+														<entry name="id" type="attribute" inpkey="1813"/>
+														<entry name="ref" type="attribute" inpkey="1814"/>
+														<entry name="StudentIdentity" ns="1" inpkey="1815" expanded="1">
+															<entry name="StudentUniqueId" ns="1" inpkey="1816"/>
+														</entry>
+													</entry>
+													<entry name="EducationOrganizationReference" ns="1" inpkey="1872" expanded="1">
+														<entry name="id" type="attribute" inpkey="1873"/>
+														<entry name="ref" type="attribute" inpkey="1874"/>
+														<entry name="EducationOrganizationIdentity" ns="1" inpkey="1875" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="1876"/>
+														</entry>
+													</entry>
+													<entry name="ProgramReference" ns="1" inpkey="1817" expanded="1">
+														<entry name="id" type="attribute" inpkey="1818"/>
+														<entry name="ref" type="attribute" inpkey="1819"/>
+														<entry name="ProgramIdentity" ns="1" inpkey="1820" expanded="1">
+															<entry name="ProgramType" ns="1" inpkey="1821"/>
+															<entry name="ProgramName" ns="1" inpkey="1822"/>
+															<entry name="EducationOrganizationReference" ns="1" inpkey="1823" expanded="1">
+																<entry name="id" type="attribute" inpkey="1824"/>
+																<entry name="ref" type="attribute" inpkey="1825"/>
+																<entry name="EducationOrganizationIdentity" ns="1" inpkey="1826" expanded="1">
+																	<entry name="EducationOrganizationId" ns="1" inpkey="1827"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="BeginDate" ns="1" inpkey="1877"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentLearningObjective" ns="1" inpkey="1426">
+											<entry name="LearningObjectiveReference" ns="1" expanded="1">
+												<entry name="LearningObjectiveIdentity" ns="1" inpkey="1135" expanded="1">
+													<entry name="Objective" ns="1" inpkey="1136"/>
+													<entry name="AcademicSubject" ns="1" inpkey="1568" expanded="1">
+														<entry name="id" type="attribute" inpkey="1569"/>
+														<entry name="ref" type="attribute" inpkey="1570"/>
+														<entry name="CodeValue" ns="1" inpkey="1571"/>
+													</entry>
+													<entry name="ObjectiveGradeLevel" ns="1" inpkey="1572" expanded="1">
+														<entry name="id" type="attribute" inpkey="1573"/>
+														<entry name="ref" type="attribute" inpkey="1574"/>
+														<entry name="CodeValue" ns="1" inpkey="1575"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" inpkey="1343" expanded="1">
+												<entry name="GradingPeriodIdentity" ns="1" expanded="1">
+													<entry name="GradingPeriod" ns="1" expanded="1"/>
+													<entry name="SchoolReference" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="StudentReference" ns="1" expanded="1">
+												<entry name="StudentLookup" ns="1" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="StudentSectionAssociationReference" ns="1" expanded="1">
+												<entry name="StudentSectionAssociationIdentity" ns="1" expanded="1">
+													<entry name="SectionReference" ns="1" expanded="1">
+														<entry name="SectionIdentity" ns="1" expanded="1">
+															<entry name="LocationReference" ns="1" expanded="1">
+																<entry name="LocationIdentity" ns="1" expanded="1">
+																	<entry name="SchoolReference" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+															<entry name="ClassPeriodReference" ns="1" expanded="1">
+																<entry name="ClassPeriodIdentity" ns="1" expanded="1">
+																	<entry name="SchoolReference" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+															<entry name="CourseOfferingReference" ns="1" expanded="1">
+																<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+																	<entry name="SessionReference" ns="1" expanded="1"/>
+																	<entry name="SchoolReference" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+														</entry>
+														<entry name="SectionLookup" ns="1" expanded="1">
+															<entry name="CourseOfferingReference" ns="1" expanded="1">
+																<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+																	<entry name="SessionReference" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+															<entry name="SchoolReference" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="StudentProgramAssociationReference" ns="1" expanded="1">
+												<entry name="StudentProgramAssociationIdentity" ns="1" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
+													<entry name="ProgramReference" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-StudentGrade.xsd" outputinstance="Sample XML 2.0" instanceroot="{http://ed-fi.org/0200}InterchangeStudentGrade"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="211" kind="19" visible="0">
+					<view ltx="501" lty="442" rbx="673" rby="493"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="1904" componentid="10"/>
+							<entry name="replacewith" inpkey="1905" componentid="11"/>
+							<entry name="replacewith2" inpkey="1906" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="1903" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="Interchange-StudentGrade" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="164" lty="158" rbx="467" rby="707"/>
+					<data>
+						<root scrollposition="2785">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStudentGrade" ns="1" outkey="118" expanded="1">
+										<entry name="ReportCard" ns="1" outkey="119" expanded="1">
+											<entry name="id" type="attribute" outkey="120"/>
+											<entry name="GradeReference" ns="1" outkey="121" expanded="1">
+												<entry name="id" type="attribute" outkey="122"/>
+												<entry name="ref" type="attribute" outkey="123"/>
+												<entry name="GradeIdentity" ns="1" outkey="124" expanded="1">
+													<entry name="StudentReference" ns="1" outkey="125">
+														<entry name="id" type="attribute" outkey="126"/>
+														<entry name="ref" type="attribute" outkey="127"/>
+														<entry name="StudentIdentity" ns="1" outkey="128" expanded="1">
+															<entry name="PersonUniqueStateId" ns="1" outkey="914"/>
+															<entry name="StudentIdentificationCode" ns="1" expanded="1"/>
+															<entry name="Name" ns="1" expanded="1"/>
+															<entry name="OtherName" ns="1" expanded="1"/>
+															<entry name="BirthData" ns="1" expanded="1"/>
+															<entry name="Race" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+													<entry name="SectionReference" ns="1" outkey="130" expanded="1">
+														<entry name="id" type="attribute" outkey="131"/>
+														<entry name="ref" type="attribute" outkey="132"/>
+														<entry name="SectionIdentity" ns="1" outkey="133" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="1731"/>
+															<entry name="UniqueSectionCode" ns="1" outkey="915"/>
+															<entry name="SchoolYear" ns="1" outkey="1732"/>
+															<entry name="Term" ns="1" outkey="1733"/>
+															<entry name="ClassPeriodName" ns="1" outkey="1734"/>
+															<entry name="Location" ns="1" outkey="1735"/>
+														</entry>
+													</entry>
+													<entry name="GradingPeriodReference" ns="1" outkey="140">
+														<entry name="id" type="attribute" outkey="141"/>
+														<entry name="ref" type="attribute" outkey="142"/>
+														<entry name="GradingPeriodIdentity" ns="1" outkey="143" expanded="1">
+															<entry name="GradingPeriod" ns="1" outkey="144" expanded="1">
+																<entry name="id" type="attribute" outkey="145"/>
+																<entry name="ref" type="attribute" outkey="146"/>
+																<entry name="CodeValue" ns="1" outkey="147"/>
+																<entry name="ShortDescription" ns="1" outkey="355"/>
+																<entry name="Description" ns="1" outkey="356"/>
+															</entry>
+															<entry name="BeginDate" ns="1" outkey="148"/>
+														</entry>
+													</entry>
+													<entry name="GradeType" ns="1" outkey="153"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="1864" expanded="1">
+														<entry name="id" type="attribute" outkey="1865"/>
+														<entry name="ref" type="attribute" outkey="1866"/>
+														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="1867"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="StudentCompetencyReference" ns="1" expanded="1">
+												<entry name="StudentCompetencyIdentity" ns="1" expanded="1">
+													<entry name="LearningObjectiveReference" ns="1" expanded="1">
+														<entry name="ref" type="attribute" outkey="1547"/>
+														<entry name="LearningObjectiveIdentity" ns="1" expanded="1">
+															<entry name="ContentStandard" ns="1" expanded="1">
+																<entry name="BeginDate" ns="1" outkey="1878"/>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="StudentReference" ns="1" outkey="1828">
+														<entry name="id" type="attribute" outkey="1829"/>
+														<entry name="ref" type="attribute" outkey="1830"/>
+														<entry name="StudentIdentity" ns="1" outkey="1831" expanded="1">
+															<entry name="StudentUniqueStateId" ns="1" outkey="1832"/>
+														</entry>
+													</entry>
+													<entry name="ProgramReference" ns="1" outkey="1833" expanded="1">
+														<entry name="id" type="attribute" outkey="1834"/>
+														<entry name="ref" type="attribute" outkey="1835"/>
+														<entry name="ProgramIdentity" ns="1" outkey="1836" expanded="1">
+															<entry name="ProgramType" ns="1" outkey="1837"/>
+															<entry name="ProgramName" ns="1" outkey="1838"/>
+															<entry name="EducationOrganizationReference" ns="1" outkey="1839" expanded="1">
+																<entry name="id" type="attribute" outkey="1840"/>
+																<entry name="ref" type="attribute" outkey="1841"/>
+																<entry name="EducationOrganizationIdentity" ns="1" outkey="1842" expanded="1">
+																	<entry name="StateOrganizationId" ns="1" outkey="1843"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="GPAGivenGradingPeriod" ns="1" outkey="154"/>
+											<entry name="GPACumulative" ns="1" outkey="155"/>
+											<entry name="NumberOfDaysAbsent" ns="1" outkey="156"/>
+											<entry name="NumberOfDaysInAttendance" ns="1" outkey="157"/>
+											<entry name="NumberOfDaysTardy" ns="1" outkey="158"/>
+											<entry name="StudentReference" ns="1" outkey="159">
+												<entry name="id" type="attribute" outkey="160"/>
+												<entry name="ref" type="attribute" outkey="161"/>
+												<entry name="StudentIdentity" ns="1" outkey="162" expanded="1"/>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" outkey="164">
+												<entry name="id" type="attribute" outkey="165"/>
+												<entry name="ref" type="attribute" outkey="166"/>
+												<entry name="GradingPeriodIdentity" ns="1" outkey="167" expanded="1">
+													<entry name="GradingPeriod" ns="1" outkey="168" expanded="1">
+														<entry name="id" type="attribute" outkey="169"/>
+														<entry name="ref" type="attribute" outkey="170"/>
+														<entry name="CodeValue" ns="1" outkey="171"/>
+													</entry>
+													<entry name="BeginDate" ns="1" outkey="172"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="Grade" ns="1" outkey="177" expanded="1">
+											<entry name="id" type="attribute" outkey="178"/>
+											<entry name="LetterGradeEarned" ns="1" outkey="179"/>
+											<entry name="NumericGradeEarned" ns="1" outkey="180"/>
+											<entry name="DiagnosticStatement" ns="1" outkey="181"/>
+											<entry name="GradeType" ns="1" outkey="182"/>
+											<entry name="PerformanceBaseConversion" ns="1" outkey="183"/>
+											<entry name="SectionReference" ns="1" outkey="1225" expanded="1">
+												<entry name="id" type="attribute" outkey="1226"/>
+												<entry name="ref" type="attribute" outkey="1227"/>
+												<entry name="SectionIdentity" ns="1" outkey="1639" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="1229"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+													<entry name="LocalCourseCode" ns="1" outkey="1231"/>
+													<entry name="SchoolYear" ns="1" outkey="423"/>
+													<entry name="Term" ns="1" outkey="424"/>
+													<entry name="ClassPeriodName" ns="1" outkey="1232"/>
+													<entry name="Location" ns="1" outkey="1233"/>
+												</entry>
+											</entry>
+											<entry name="StudentReference" ns="1" outkey="1234" expanded="1">
+												<entry name="id" type="attribute" outkey="1235"/>
+												<entry name="ref" type="attribute" outkey="1236"/>
+												<entry name="StudentIdentity" ns="1" outkey="1237" expanded="1">
+													<entry name="StudentIdentificationCode" ns="1" expanded="1"/>
+													<entry name="StudentUniqueStateId" ns="1" outkey="1242"/>
+													<entry name="Name" ns="1" expanded="1">
+														<entry name="PersonalInformationVerification" ns="1" expanded="1"/>
+													</entry>
+													<entry name="OtherName" ns="1" expanded="1"/>
+													<entry name="BirthData" ns="1" expanded="1"/>
+													<entry name="Race" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" outkey="184" expanded="1">
+												<entry name="id" type="attribute" outkey="185"/>
+												<entry name="ref" type="attribute" outkey="186"/>
+												<entry name="GradingPeriodIdentity" ns="1" outkey="187" expanded="1">
+													<entry name="GradingPeriod" ns="1" outkey="188" expanded="1">
+														<entry name="id" type="attribute" outkey="189"/>
+														<entry name="ref" type="attribute" outkey="190"/>
+														<entry name="namespace" type="attribute" outkey="1269"/>
+														<entry name="CodeValue" ns="1" outkey="191"/>
+														<entry name="ShortDescription" ns="1" outkey="553"/>
+														<entry name="Description" ns="1" outkey="552"/>
+													</entry>
+													<entry name="SchoolYear" ns="1" outkey="792"/>
+													<entry name="BeginDate" ns="1" outkey="192"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="1389" expanded="1">
+														<entry name="id" type="attribute" outkey="1390"/>
+														<entry name="ref" type="attribute" outkey="1391"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="1392" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="1393"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentCompetency" ns="1" outkey="1548">
+											<entry name="id" type="attribute" outkey="1549"/>
+											<entry name="LearningObjectiveReference" ns="1" expanded="1">
+												<entry name="ref" type="attribute" outkey="1527"/>
+												<entry name="LearningObjectiveIdentity" ns="1">
+													<entry name="ContentStandard" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="StudentCompetencyObjectiveReference" ns="1">
+												<entry name="StudentCompetencyObjectiveIdentity" ns="1" expanded="1"/>
+											</entry>
+											<entry name="CompetencyLevel" ns="1" outkey="1550">
+												<entry name="id" type="attribute" outkey="1551"/>
+												<entry name="ref" type="attribute" outkey="1552"/>
+												<entry name="namespace" type="attribute" outkey="1553"/>
+												<entry name="CodeValue" ns="1" outkey="443"/>
+											</entry>
+											<entry name="DiagnosticStatement" ns="1" outkey="1554"/>
+											<entry name="StudentReference" ns="1" outkey="1555" expanded="1">
+												<entry name="id" type="attribute" outkey="1556"/>
+												<entry name="ref" type="attribute" outkey="1557"/>
+												<entry name="StudentIdentity" ns="1" outkey="1558"/>
+											</entry>
+											<entry name="SectionReference" ns="1" outkey="1784" expanded="1">
+												<entry name="id" type="attribute" outkey="1785"/>
+												<entry name="ref" type="attribute" outkey="1786"/>
+												<entry name="SectionIdentity" ns="1" outkey="1787" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="1788"/>
+													<entry name="UniqueSectionCode" ns="1" outkey="1789"/>
+													<entry name="SchoolYear" ns="1" outkey="1790"/>
+													<entry name="Term" ns="1" outkey="1791"/>
+													<entry name="ClassPeriodName" ns="1" outkey="1792"/>
+													<entry name="Location" ns="1" outkey="1793"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="LearningObjective" ns="1" outkey="197" expanded="1">
+											<entry name="id" type="attribute" outkey="198"/>
+											<entry name="LearningObjectiveId" ns="1" outkey="199"/>
+											<entry name="ContentStandard" ns="1" outkey="200">
+												<entry name="Title" ns="1" outkey="201"/>
+												<entry name="Author" ns="1" outkey="202"/>
+												<entry name="Version" ns="1" outkey="203"/>
+												<entry name="URI" ns="1" outkey="204"/>
+												<entry name="PublicationDate" ns="1" outkey="205"/>
+												<entry name="PublicationYear" ns="1" outkey="206"/>
+												<entry name="PublicationStatus" ns="1" outkey="207"/>
+												<entry name="MandatingEducationOrganizationReference" ns="1" outkey="208" expanded="1">
+													<entry name="id" type="attribute" outkey="209"/>
+													<entry name="ref" type="attribute" outkey="210"/>
+													<entry name="EducationOrganizationIdentity" ns="1" outkey="211" expanded="1">
+														<entry name="StateOrganizationId" ns="1" outkey="578"/>
+														<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+												<entry name="BeginDate" ns="1" outkey="212"/>
+												<entry name="EndDate" ns="1" outkey="213"/>
+											</entry>
+											<entry name="Objective" ns="1" outkey="214"/>
+											<entry name="Description" ns="1" outkey="215"/>
+											<entry name="AcademicSubject" ns="1" outkey="216">
+												<entry name="id" type="attribute" outkey="217"/>
+												<entry name="ref" type="attribute" outkey="218"/>
+												<entry name="namespace" type="attribute" outkey="1088"/>
+												<entry name="CodeValue" ns="1" outkey="219"/>
+												<entry name="ShortDescription" ns="1" outkey="579"/>
+												<entry name="Description" ns="1" outkey="580"/>
+											</entry>
+											<entry name="ObjectiveGradeLevel" ns="1" outkey="220" expanded="1">
+												<entry name="id" type="attribute" outkey="221"/>
+												<entry name="ref" type="attribute" outkey="222"/>
+												<entry name="namespace" type="attribute" outkey="1089"/>
+												<entry name="CodeValue" ns="1" outkey="223"/>
+												<entry name="ShortDescription" ns="1" outkey="581"/>
+												<entry name="Description" ns="1" outkey="582"/>
+											</entry>
+											<entry name="Nomenclature" ns="1" outkey="224"/>
+											<entry name="SuccessCriteria" ns="1" outkey="225"/>
+											<entry name="LearningStandardReference" ns="1" outkey="226">
+												<entry name="id" type="attribute" outkey="227"/>
+												<entry name="ref" type="attribute" outkey="228"/>
+												<entry name="LearningStandardIdentity" ns="1" outkey="229" expanded="1">
+													<entry name="LearningStandardId" ns="1" outkey="230"/>
+													<entry name="LearningStandardIdentificationCode" ns="1" expanded="1"/>
+													<entry name="ContentStandard" ns="1" expanded="1">
+														<entry name="MandatingEducationOrganizationReference" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="LearningObjectiveReference" ns="1" outkey="1923" expanded="1">
+												<entry name="id" type="attribute" outkey="1924"/>
+												<entry name="ref" type="attribute" outkey="1925"/>
+												<entry name="LearningObjectiveIdentity" ns="1" outkey="1926" expanded="1">
+													<entry name="Objective" ns="1" outkey="1927"/>
+													<entry name="ContentStandard" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentCompetencyObjective" ns="1" outkey="231" expanded="1">
+											<entry name="id" type="attribute" outkey="232"/>
+											<entry name="StudentCompetencyObjectiveId" ns="1" outkey="1460"/>
+											<entry name="Objective" ns="1" outkey="1461"/>
+											<entry name="Description" ns="1" outkey="1462"/>
+											<entry name="ObjectiveGradeLevel" ns="1" outkey="1270" expanded="1">
+												<entry name="id" type="attribute" outkey="1463"/>
+												<entry name="ref" type="attribute" outkey="1464"/>
+												<entry name="namespace" type="attribute" outkey="1271"/>
+												<entry name="CodeValue" ns="1" outkey="592"/>
+												<entry name="ShortDescription" ns="1" outkey="630"/>
+												<entry name="Description" ns="1" outkey="631"/>
+											</entry>
+											<entry name="EducationOrganizationReference" ns="1" outkey="1465" expanded="1">
+												<entry name="id" type="attribute" outkey="1466"/>
+												<entry name="ref" type="attribute" outkey="1467"/>
+												<entry name="EducationOrganizationIdentity" ns="1" outkey="1468" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="1486"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentGrade.xsd" inputinstance="Sample XML 1.2\StudentGrade.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentGrade"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="118">
+						<edges>
+							<edge vertexkey="817" edgekey="916"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="119">
+						<edges>
+							<edge vertexkey="818" edgekey="917"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="120">
+						<edges>
+							<edge vertexkey="819" edgekey="918"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="121">
+						<edges>
+							<edge vertexkey="820" edgekey="919"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="122">
+						<edges>
+							<edge vertexkey="821" edgekey="920"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="123">
+						<edges>
+							<edge vertexkey="822" edgekey="921"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="124">
+						<edges>
+							<edge vertexkey="823" edgekey="922"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="125">
+						<edges>
+							<edge vertexkey="824" edgekey="923"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="126">
+						<edges>
+							<edge vertexkey="825" edgekey="924"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="127">
+						<edges>
+							<edge vertexkey="826" edgekey="925"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="128">
+						<edges>
+							<edge vertexkey="827" edgekey="926"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="130">
+						<edges>
+							<edge vertexkey="829" edgekey="927"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="131">
+						<edges>
+							<edge vertexkey="830" edgekey="928"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="132">
+						<edges>
+							<edge vertexkey="831" edgekey="929"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="133">
+						<edges>
+							<edge vertexkey="832" edgekey="930"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="140">
+						<edges>
+							<edge vertexkey="834" edgekey="931"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="141">
+						<edges>
+							<edge vertexkey="835" edgekey="932"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="142">
+						<edges>
+							<edge vertexkey="836" edgekey="933"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="143">
+						<edges>
+							<edge vertexkey="837" edgekey="934"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="144">
+						<edges>
+							<edge vertexkey="838" edgekey="935"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="145">
+						<edges>
+							<edge vertexkey="839" edgekey="936"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="146">
+						<edges>
+							<edge vertexkey="840" edgekey="937"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="147">
+						<edges>
+							<edge vertexkey="350" edgekey="358"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="148">
+						<edges>
+							<edge vertexkey="842" edgekey="939"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="153">
+						<edges>
+							<edge vertexkey="843" edgekey="940"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="154">
+						<edges>
+							<edge vertexkey="844" edgekey="941"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="155">
+						<edges>
+							<edge vertexkey="845" edgekey="942"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="156">
+						<edges>
+							<edge vertexkey="846" edgekey="943"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="157">
+						<edges>
+							<edge vertexkey="847" edgekey="944"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="158">
+						<edges>
+							<edge vertexkey="848" edgekey="945"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="159">
+						<edges>
+							<edge vertexkey="849" edgekey="946"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="160">
+						<edges>
+							<edge vertexkey="850" edgekey="947"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="161">
+						<edges>
+							<edge vertexkey="851" edgekey="948"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="162">
+						<edges>
+							<edge vertexkey="852" edgekey="949"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="164">
+						<edges>
+							<edge vertexkey="853" edgekey="950"/>
+							<edge vertexkey="1546" edgekey="1576"/>
+							<edge vertexkey="1508" edgekey="1577"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="165">
+						<edges>
+							<edge vertexkey="854" edgekey="951"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="166">
+						<edges>
+							<edge vertexkey="855" edgekey="952"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="167">
+						<edges>
+							<edge vertexkey="856" edgekey="953"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="168">
+						<edges>
+							<edge vertexkey="857" edgekey="954"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169">
+						<edges>
+							<edge vertexkey="858" edgekey="955"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="170">
+						<edges>
+							<edge vertexkey="859" edgekey="956"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="171">
+						<edges>
+							<edge vertexkey="860" edgekey="957"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="172">
+						<edges>
+							<edge vertexkey="861" edgekey="958"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="177">
+						<edges>
+							<edge vertexkey="862" edgekey="959"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="178">
+						<edges>
+							<edge vertexkey="863" edgekey="960"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="179">
+						<edges>
+							<edge vertexkey="864" edgekey="961"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="180">
+						<edges>
+							<edge vertexkey="865" edgekey="962"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="181">
+						<edges>
+							<edge vertexkey="866" edgekey="963"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="182">
+						<edges>
+							<edge vertexkey="867" edgekey="964"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="183">
+						<edges>
+							<edge vertexkey="868" edgekey="965"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="184">
+						<edges>
+							<edge vertexkey="869" edgekey="966"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="185">
+						<edges>
+							<edge vertexkey="870" edgekey="967"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="186">
+						<edges>
+							<edge vertexkey="871" edgekey="968"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="187">
+						<edges>
+							<edge vertexkey="872" edgekey="969"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="188">
+						<edges>
+							<edge vertexkey="873" edgekey="970"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="189">
+						<edges>
+							<edge vertexkey="874" edgekey="971"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="190">
+						<edges>
+							<edge vertexkey="875" edgekey="972"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="191">
+						<edges>
+							<edge vertexkey="550" edgekey="598"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="192">
+						<edges>
+							<edge vertexkey="786" edgekey="793"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="197">
+						<edges>
+							<edge vertexkey="878" edgekey="975"/>
+							<edge vertexkey="1532" edgekey="1578"/>
+							<edge vertexkey="1135" edgekey="1579"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="198">
+						<edges>
+							<edge vertexkey="879" edgekey="976"/>
+							<edge vertexkey="1749" edgekey="1751"/>
+							<edge vertexkey="1755" edgekey="1760"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="199">
+						<edges>
+							<edge vertexkey="880" edgekey="977"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="200">
+						<edges>
+							<edge vertexkey="881" edgekey="978"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="201">
+						<edges>
+							<edge vertexkey="882" edgekey="979"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="202">
+						<edges>
+							<edge vertexkey="883" edgekey="980"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="203">
+						<edges>
+							<edge vertexkey="884" edgekey="981"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="204">
+						<edges>
+							<edge vertexkey="885" edgekey="982"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="205">
+						<edges>
+							<edge vertexkey="886" edgekey="983"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="206">
+						<edges>
+							<edge vertexkey="887" edgekey="984"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="207">
+						<edges>
+							<edge vertexkey="888" edgekey="985"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="208">
+						<edges>
+							<edge vertexkey="889" edgekey="986"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="209">
+						<edges>
+							<edge vertexkey="890" edgekey="987"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="210">
+						<edges>
+							<edge vertexkey="891" edgekey="988"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="211">
+						<edges>
+							<edge vertexkey="892" edgekey="989"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="212">
+						<edges>
+							<edge vertexkey="893" edgekey="990"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="213">
+						<edges>
+							<edge vertexkey="894" edgekey="991"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="214">
+						<edges>
+							<edge vertexkey="895" edgekey="992"/>
+							<edge vertexkey="1136" edgekey="1582"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="215">
+						<edges>
+							<edge vertexkey="896" edgekey="993"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="216">
+						<edges>
+							<edge vertexkey="897" edgekey="994"/>
+							<edge vertexkey="1568" edgekey="1583"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="217">
+						<edges>
+							<edge vertexkey="898" edgekey="995"/>
+							<edge vertexkey="1569" edgekey="1584"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="218">
+						<edges>
+							<edge vertexkey="899" edgekey="996"/>
+							<edge vertexkey="1570" edgekey="1585"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="219">
+						<edges>
+							<edge vertexkey="556" edgekey="599"/>
+							<edge vertexkey="1571" edgekey="1586"/>
+							<edge vertexkey="1908" edgekey="1928"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="220">
+						<edges>
+							<edge vertexkey="901" edgekey="998"/>
+							<edge vertexkey="1572" edgekey="1587"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="221">
+						<edges>
+							<edge vertexkey="902" edgekey="999"/>
+							<edge vertexkey="1573" edgekey="1588"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="222">
+						<edges>
+							<edge vertexkey="903" edgekey="1000"/>
+							<edge vertexkey="1574" edgekey="1589"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="223">
+						<edges>
+							<edge vertexkey="558" edgekey="600"/>
+							<edge vertexkey="1575" edgekey="1590"/>
+							<edge vertexkey="1904" edgekey="1929"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="224">
+						<edges>
+							<edge vertexkey="905" edgekey="1002"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="225">
+						<edges>
+							<edge vertexkey="906" edgekey="1003"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="226">
+						<edges>
+							<edge vertexkey="907" edgekey="1004"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="227">
+						<edges>
+							<edge vertexkey="908" edgekey="1005"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="228">
+						<edges>
+							<edge vertexkey="909" edgekey="1006"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="229">
+						<edges>
+							<edge vertexkey="910" edgekey="1007"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="230">
+						<edges>
+							<edge vertexkey="911" edgekey="1008"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="231">
+						<edges>
+							<edge vertexkey="1447" edgekey="1469"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="232">
+						<edges>
+							<edge vertexkey="1448" edgekey="1470"/>
+							<edge vertexkey="1758" edgekey="1761"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="353">
+						<edges>
+							<edge vertexkey="841" edgekey="1272"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="355">
+						<edges>
+							<edge vertexkey="351" edgekey="360"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="356">
+						<edges>
+							<edge vertexkey="352" edgekey="361"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="423">
+						<edges>
+							<edge vertexkey="784" edgekey="794"/>
+							<edge vertexkey="1690" edgekey="1694"/>
+							<edge vertexkey="1888" edgekey="1895"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="424">
+						<edges>
+							<edge vertexkey="783" edgekey="795"/>
+							<edge vertexkey="1691" edgekey="1695"/>
+							<edge vertexkey="1692" edgekey="1696"/>
+							<edge vertexkey="1889" edgekey="1896"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="443">
+						<edges>
+							<edge vertexkey="1335" edgekey="1592"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="548">
+						<edges>
+							<edge vertexkey="876" edgekey="1276"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="552">
+						<edges>
+							<edge vertexkey="551" edgekey="602"/>
+							<edge vertexkey="789" edgekey="796"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="553">
+						<edges>
+							<edge vertexkey="549" edgekey="603"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="554">
+						<edges>
+							<edge vertexkey="900" edgekey="1277"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="559">
+						<edges>
+							<edge vertexkey="904" edgekey="1278"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="578">
+						<edges>
+							<edge vertexkey="1107" edgekey="1137"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="579">
+						<edges>
+							<edge vertexkey="557" edgekey="607"/>
+							<edge vertexkey="1909" edgekey="1930"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="580">
+						<edges>
+							<edge vertexkey="555" edgekey="608"/>
+							<edge vertexkey="1910" edgekey="1931"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="581">
+						<edges>
+							<edge vertexkey="560" edgekey="609"/>
+							<edge vertexkey="1905" edgekey="1932"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="582">
+						<edges>
+							<edge vertexkey="561" edgekey="610"/>
+							<edge vertexkey="1906" edgekey="1933"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="592">
+						<edges>
+							<edge vertexkey="1482" edgekey="1497"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="630">
+						<edges>
+							<edge vertexkey="1484" edgekey="1498"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="631">
+						<edges>
+							<edge vertexkey="1485" edgekey="1499"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="785">
+						<edges>
+							<edge vertexkey="1220" edgekey="1280"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="788">
+						<edges>
+							<edge vertexkey="877" edgekey="1281"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="791">
+						<edges>
+							<edge vertexkey="787" edgekey="799"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="792">
+						<edges>
+							<edge vertexkey="790" edgekey="800"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="914">
+						<edges>
+							<edge vertexkey="828" edgekey="1011"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="915">
+						<edges>
+							<edge vertexkey="833" edgekey="1012"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1088">
+						<edges>
+							<edge vertexkey="1113" edgekey="1148"/>
+							<edge vertexkey="1917" edgekey="1934"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1089">
+						<edges>
+							<edge vertexkey="1114" edgekey="1149"/>
+							<edge vertexkey="1919" edgekey="1935"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1225">
+						<edges>
+							<edge vertexkey="1205" edgekey="1282"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1226">
+						<edges>
+							<edge vertexkey="1206" edgekey="1283"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1227">
+						<edges>
+							<edge vertexkey="1207" edgekey="1284"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1229">
+						<edges>
+							<edge vertexkey="1685" edgekey="1697"/>
+							<edge vertexkey="1687" edgekey="1698"/>
+							<edge vertexkey="1689" edgekey="1699"/>
+							<edge vertexkey="1693" edgekey="1700"/>
+							<edge vertexkey="1892" edgekey="1897"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1231">
+						<edges>
+							<edge vertexkey="1688" edgekey="1701"/>
+							<edge vertexkey="1887" edgekey="1898"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1232">
+						<edges>
+							<edge vertexkey="1686" edgekey="1702"/>
+							<edge vertexkey="1890" edgekey="1899"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1233">
+						<edges>
+							<edge vertexkey="1684" edgekey="1703"/>
+							<edge vertexkey="1891" edgekey="1900"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1234">
+						<edges>
+							<edge vertexkey="1167" edgekey="1294"/>
+							<edge vertexkey="1643" edgekey="1672"/>
+							<edge vertexkey="1644" edgekey="1673"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1235">
+						<edges>
+							<edge vertexkey="1168" edgekey="1295"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1236">
+						<edges>
+							<edge vertexkey="1169" edgekey="1296"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1237">
+						<edges>
+							<edge vertexkey="1170" edgekey="1297"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1242">
+						<edges>
+							<edge vertexkey="1171" edgekey="1303"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1269">
+						<edges>
+							<edge vertexkey="1221" edgekey="1332"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1270">
+						<edges>
+							<edge vertexkey="1452" edgekey="1472"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1271">
+						<edges>
+							<edge vertexkey="1490" edgekey="1500"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1389">
+						<edges>
+							<edge vertexkey="1379" edgekey="1397"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1390">
+						<edges>
+							<edge vertexkey="1380" edgekey="1398"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1391">
+						<edges>
+							<edge vertexkey="1381" edgekey="1399"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1392">
+						<edges>
+							<edge vertexkey="1382" edgekey="1400"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1393">
+						<edges>
+							<edge vertexkey="1383" edgekey="1401"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1460">
+						<edges>
+							<edge vertexkey="1449" edgekey="1473"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1461">
+						<edges>
+							<edge vertexkey="1450" edgekey="1474"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1462">
+						<edges>
+							<edge vertexkey="1451" edgekey="1475"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1463">
+						<edges>
+							<edge vertexkey="1453" edgekey="1476"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1464">
+						<edges>
+							<edge vertexkey="1454" edgekey="1477"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1465">
+						<edges>
+							<edge vertexkey="1456" edgekey="1478"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1466">
+						<edges>
+							<edge vertexkey="1457" edgekey="1479"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1467">
+						<edges>
+							<edge vertexkey="1458" edgekey="1480"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1468">
+						<edges>
+							<edge vertexkey="1459" edgekey="1481"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1483">
+						<edges>
+							<edge vertexkey="1455" edgekey="1501"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1486">
+						<edges>
+							<edge vertexkey="1491" edgekey="1502"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1509">
+						<edges>
+							<edge vertexkey="1343" edgekey="1593"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1524">
+						<edges>
+							<edge vertexkey="1341" edgekey="1599"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1527">
+						<edges>
+							<edge vertexkey="1748" edgekey="1752"/>
+							<edge vertexkey="1754" edgekey="1762"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1531">
+						<edges>
+							<edge vertexkey="1426" edgekey="1604"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1547">
+						<edges>
+							<edge vertexkey="1757" edgekey="1763"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1548">
+						<edges>
+							<edge vertexkey="912" edgekey="1608"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1549">
+						<edges>
+							<edge vertexkey="913" edgekey="1609"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1550">
+						<edges>
+							<edge vertexkey="1559" edgekey="1610"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1551">
+						<edges>
+							<edge vertexkey="1560" edgekey="1611"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1552">
+						<edges>
+							<edge vertexkey="1561" edgekey="1612"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1553">
+						<edges>
+							<edge vertexkey="1562" edgekey="1613"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1554">
+						<edges>
+							<edge vertexkey="1563" edgekey="1614"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1555">
+						<edges>
+							<edge vertexkey="1564" edgekey="1615"/>
+							<edge vertexkey="1769" edgekey="1794"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1556">
+						<edges>
+							<edge vertexkey="1565" edgekey="1616"/>
+							<edge vertexkey="1770" edgekey="1795"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1557">
+						<edges>
+							<edge vertexkey="1566" edgekey="1617"/>
+							<edge vertexkey="1771" edgekey="1796"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1558">
+						<edges>
+							<edge vertexkey="1567" edgekey="1618"/>
+							<edge vertexkey="1772" edgekey="1797"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1639">
+						<edges>
+							<edge vertexkey="1680" edgekey="1683"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1731">
+						<edges>
+							<edge vertexkey="1725" edgekey="1739"/>
+							<edge vertexkey="1723" edgekey="1740"/>
+							<edge vertexkey="1726" edgekey="1741"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1732">
+						<edges>
+							<edge vertexkey="1727" edgekey="1743"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1733">
+						<edges>
+							<edge vertexkey="1728" edgekey="1744"/>
+							<edge vertexkey="1729" edgekey="1745"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1734">
+						<edges>
+							<edge vertexkey="1724" edgekey="1746"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1735">
+						<edges>
+							<edge vertexkey="1722" edgekey="1747"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1750">
+						<edges>
+							<edge vertexkey="1537" edgekey="1753"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1756">
+						<edges>
+							<edge vertexkey="1510" edgekey="1764"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1759">
+						<edges>
+							<edge vertexkey="1526" edgekey="1765"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1784">
+						<edges>
+							<edge vertexkey="1766" edgekey="1798"/>
+							<edge vertexkey="1920" edgekey="1936"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1785">
+						<edges>
+							<edge vertexkey="1767" edgekey="1799"/>
+							<edge vertexkey="1921" edgekey="1937"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1786">
+						<edges>
+							<edge vertexkey="1768" edgekey="1800"/>
+							<edge vertexkey="1922" edgekey="1938"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1787">
+						<edges>
+							<edge vertexkey="1773" edgekey="1801"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1788">
+						<edges>
+							<edge vertexkey="1775" edgekey="1802"/>
+							<edge vertexkey="1777" edgekey="1803"/>
+							<edge vertexkey="1782" edgekey="1804"/>
+							<edge vertexkey="1778" edgekey="1805"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1789">
+						<edges>
+							<edge vertexkey="1783" edgekey="1806"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1790">
+						<edges>
+							<edge vertexkey="1779" edgekey="1807"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1791">
+						<edges>
+							<edge vertexkey="1780" edgekey="1808"/>
+							<edge vertexkey="1781" edgekey="1809"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1792">
+						<edges>
+							<edge vertexkey="1776" edgekey="1810"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1793">
+						<edges>
+							<edge vertexkey="1774" edgekey="1811"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1828">
+						<edges>
+							<edge vertexkey="1812" edgekey="1844"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1829">
+						<edges>
+							<edge vertexkey="1813" edgekey="1845"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1830">
+						<edges>
+							<edge vertexkey="1814" edgekey="1846"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1831">
+						<edges>
+							<edge vertexkey="1815" edgekey="1847"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1832">
+						<edges>
+							<edge vertexkey="1816" edgekey="1848"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1833">
+						<edges>
+							<edge vertexkey="1817" edgekey="1849"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1834">
+						<edges>
+							<edge vertexkey="1818" edgekey="1850"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1835">
+						<edges>
+							<edge vertexkey="1819" edgekey="1851"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1836">
+						<edges>
+							<edge vertexkey="1820" edgekey="1852"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1837">
+						<edges>
+							<edge vertexkey="1821" edgekey="1853"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1838">
+						<edges>
+							<edge vertexkey="1822" edgekey="1854"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1839">
+						<edges>
+							<edge vertexkey="1823" edgekey="1855"/>
+							<edge vertexkey="1872" edgekey="1879"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1840">
+						<edges>
+							<edge vertexkey="1824" edgekey="1856"/>
+							<edge vertexkey="1873" edgekey="1880"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1841">
+						<edges>
+							<edge vertexkey="1825" edgekey="1857"/>
+							<edge vertexkey="1874" edgekey="1881"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1842">
+						<edges>
+							<edge vertexkey="1826" edgekey="1858"/>
+							<edge vertexkey="1875" edgekey="1882"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1843">
+						<edges>
+							<edge vertexkey="1827" edgekey="1859"/>
+							<edge vertexkey="1876" edgekey="1883"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1864">
+						<edges>
+							<edge vertexkey="1860" edgekey="1868"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1865">
+						<edges>
+							<edge vertexkey="1861" edgekey="1869"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1866">
+						<edges>
+							<edge vertexkey="1862" edgekey="1870"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1867">
+						<edges>
+							<edge vertexkey="1863" edgekey="1871"/>
+							<edge vertexkey="1730" edgekey="1939"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1878">
+						<edges>
+							<edge vertexkey="1877" edgekey="1884"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1893">
+						<edges>
+							<edge vertexkey="1886" edgekey="1901"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1894">
+						<edges>
+							<edge vertexkey="1885" edgekey="1902"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1903">
+						<edges>
+							<edge vertexkey="1918" edgekey="1940"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1907">
+						<edges>
+							<edge vertexkey="1916" edgekey="1941"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1923">
+						<edges>
+							<edge vertexkey="1911" edgekey="1942"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1924">
+						<edges>
+							<edge vertexkey="1912" edgekey="1943"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1925">
+						<edges>
+							<edge vertexkey="1913" edgekey="1944"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1926">
+						<edges>
+							<edge vertexkey="1914" edgekey="1945"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1927">
+						<edges>
+							<edge vertexkey="1915" edgekey="1946"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="CoalesceCode" library="user" blackbox="0" uid="4" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="CodeValue" library="core" uid="6" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+					</sources>
+					<view ltx="1348" lty="245" rbx="1428" rby="284"/>
+					<data>
+						<output datatype="anyType"/>
+						<wsdl/>
+						<parameter usageKind="output" name="CodeValue"/>
+					</data>
+				</component>
+				<component name="substring" library="core" uid="7" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="13"/>
+						<datapoint pos="2" key="11"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view ltx="756" lty="338" rbx="828" rby="411"/>
+				</component>
+				<component name="substitute-missing" library="core" uid="8" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="20"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="984" lty="245" rbx="1098" rby="301"/>
+				</component>
+				<component name="constant" library="core" uid="9" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="647" lty="403" rbx="691" rby="421"/>
+					<data>
+						<constant value="50" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="node" library="core" uid="10" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="17"/>
+					</targets>
+					<view ltx="580" lty="245" rbx="653" rby="284"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="node"/>
+					</data>
+				</component>
+				<component name="replacewith" library="core" uid="11" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="580" lty="338" rbx="686" rby="377"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="replacewith"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="12" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="647" lty="388" rbx="685" rby="406"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="substring" library="core" uid="13" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="14"/>
+						<datapoint pos="2" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="755" lty="438" rbx="827" rby="511"/>
+				</component>
+				<component name="replacewith2" library="core" uid="14" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="580" lty="439" rbx="692" rby="478"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="replacewith2"/>
+					</data>
+				</component>
+				<component name="substitute-missing" library="core" uid="15" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="18"/>
+						<datapoint pos="1" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view ltx="829" lty="245" rbx="943" rby="301"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4" edgekey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6" edgekey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="25"/>
+							<edge vertexkey="11" edgekey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="27"/>
+							<edge vertexkey="14" edgekey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="16" edgekey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="18" edgekey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="31"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="FakeSectionBeginDate" library="user" blackbox="0" uid="41" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="43" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="686" lty="52" rbx="739" rby="108"/>
+				</component>
+				<component name="constant" library="core" uid="46" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="458" lty="355" rbx="578" rby="373"/>
+					<data>
+						<constant value="Spring Semester" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="48" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="26"/>
+						<datapoint pos="1" key="21"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="620" lty="141" rbx="695" rby="199"/>
+				</component>
+				<component name="concat" library="core" uid="49" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="28"/>
+						<datapoint pos="1" key="19"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="620" lty="246" rbx="695" rby="304"/>
+				</component>
+				<component name="substring-before" library="core" uid="52" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="14"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view ltx="470" lty="143" rbx="578" rby="199"/>
+				</component>
+				<component name="constant" library="core" uid="44" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="373" lty="219" rbx="417" rby="237"/>
+					<data>
+						<constant value="-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="51" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="473" lty="90" rbx="578" rby="108"/>
+					<data>
+						<constant value="Fall Semester" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="45" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="24"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="688" lty="317" rbx="741" rby="373"/>
+				</component>
+				<component name="distinct-values" library="core" uid="116" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="78"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="79"/>
+					</targets>
+					<view ltx="883" lty="498" rbx="980" rby="537"/>
+				</component>
+				<component name="constant" library="core" uid="53" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="506" lty="198" rbx="578" rby="216"/>
+					<data>
+						<constant value="-08-23" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="substring-after" library="core" uid="54" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="13"/>
+						<datapoint pos="1" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="478" lty="246" rbx="578" rby="302"/>
+				</component>
+				<component name="constant" library="core" uid="47" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="506" lty="301" rbx="578" rby="319"/>
+					<data>
+						<constant value="-01-04" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Term" library="core" uid="55" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="43"/>
+					</targets>
+					<view ltx="70" lty="52" rbx="143" rby="91"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="Term"/>
+					</data>
+				</component>
+				<component name="BeginDate" library="core" uid="42" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="29"/>
+					</sources>
+					<view ltx="1190" lty="301" rbx="1267" rby="340"/>
+					<data>
+						<output datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="output" name="BeginDate"/>
+					</data>
+				</component>
+				<component name="logical-and" library="core" uid="107" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="58"/>
+						<datapoint pos="1" key="59"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60"/>
+					</targets>
+					<view ltx="688" lty="539" rbx="767" rby="597"/>
+				</component>
+				<component name="if-else" library="core" uid="50" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="23"/>
+						<datapoint pos="1" key="4"/>
+						<datapoint pos="2" key="12"/>
+						<datapoint pos="3" key="17"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view ltx="812" lty="154" rbx="910" rby="266"/>
+				</component>
+				<component name="substitute-missing" library="core" uid="102" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="61"/>
+						<datapoint pos="1" key="62"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="63"/>
+					</targets>
+					<view ltx="1019" lty="369" rbx="1133" rby="425"/>
+				</component>
+				<component name="SchoolYear" library="core" uid="56" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="46"/>
+					</targets>
+					<view ltx="37" lty="263" rbx="143" rby="302"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SchoolYear"/>
+					</data>
+				</component>
+				<component name="BeginDate" library="core" uid="105" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="55"/>
+						<datapoint pos="1" key="56"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="57"/>
+						<datapoint/>
+					</targets>
+					<view ltx="774" lty="404" rbx="877" rby="460"/>
+				</component>
+				<component name="equal" library="core" uid="103" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="51"/>
+						<datapoint pos="1" key="49"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="50"/>
+					</targets>
+					<view ltx="567" lty="437" rbx="620" rby="493"/>
+				</component>
+				<component name="equal" library="core" uid="104" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="54"/>
+						<datapoint pos="1" key="52"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="567" lty="553" rbx="620" rby="609"/>
+				</component>
+				<component name="Interchange-EducationOrgCalendar" library="xml" uid="100" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="8" lty="384" rbx="299" rby="839"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeEducationOrgCalendar" expanded="1">
+										<entry name="Session" expanded="1">
+											<entry name="SchoolYear" outkey="91"/>
+											<entry name="Term" outkey="92"/>
+											<entry name="BeginDate" outkey="93"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\..\..\..\..\Saxon\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4" edgekey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7" edgekey="32"/>
+							<edge vertexkey="14" edgekey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="12" edgekey="35"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="62" edgekey="67"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="37"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="19" edgekey="38"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="21" edgekey="39"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23" edgekey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="28" edgekey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="5" edgekey="44"/>
+							<edge vertexkey="24" edgekey="45"/>
+							<edge vertexkey="51" edgekey="68"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="46">
+						<edges>
+							<edge vertexkey="8" edgekey="47"/>
+							<edge vertexkey="13" edgekey="48"/>
+							<edge vertexkey="54" edgekey="69"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="50">
+						<edges>
+							<edge vertexkey="58" edgekey="70"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="59" edgekey="71"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="78" edgekey="80"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="56" edgekey="73"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="63">
+						<edges>
+							<edge vertexkey="29" edgekey="74"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="79">
+						<edges>
+							<edge vertexkey="61" edgekey="81"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="91">
+						<edges>
+							<edge vertexkey="52" edgekey="94"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="92">
+						<edges>
+							<edge vertexkey="49" edgekey="95"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="93">
+						<edges>
+							<edge vertexkey="55" edgekey="96"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="FakeGradingBeginDate" library="user" blackbox="0" uid="57" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="59" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="9"/>
+						<datapoint pos="1" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="856" lty="40" rbx="909" rby="96"/>
+				</component>
+				<component name="constant" library="core" uid="70" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="643" lty="78" rbx="758" rby="96"/>
+					<data>
+						<constant value="First Six Weeks" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="63" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="11"/>
+						<datapoint pos="1" key="19"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="834" lty="95" rbx="909" rby="153"/>
+				</component>
+				<component name="substring-before" library="core" uid="65" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="30"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="650" lty="97" rbx="758" rby="153"/>
+				</component>
+				<component name="substring-after" library="core" uid="77" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="51"/>
+						<datapoint pos="1" key="55"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="57"/>
+					</targets>
+					<view ltx="661" lty="552" rbx="761" rby="608"/>
+				</component>
+				<component name="constant" library="core" uid="61" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="336" lty="461" rbx="451" rby="479"/>
+					<data>
+						<constant value="Fifth Six Weeks" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="78" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="49"/>
+					</targets>
+					<view ltx="643" lty="535" rbx="761" rby="553"/>
+					<data>
+						<constant value="Sixth Six Weeks" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="81" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="60"/>
+					</targets>
+					<view ltx="633" lty="387" rbx="758" rby="405"/>
+					<data>
+						<constant value="Fourth Six Weeks" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="83" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="69"/>
+						<datapoint pos="1" key="65"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="67"/>
+					</targets>
+					<view ltx="834" lty="404" rbx="909" rby="462"/>
+				</component>
+				<component name="concat" library="core" uid="64" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="21"/>
+						<datapoint pos="1" key="26"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="23"/>
+					</targets>
+					<view ltx="527" lty="478" rbx="602" rby="536"/>
+				</component>
+				<component name="concat" library="core" uid="75" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="58"/>
+						<datapoint pos="1" key="54"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="56"/>
+					</targets>
+					<view ltx="837" lty="550" rbx="912" rby="608"/>
+				</component>
+				<component name="substring-after" library="core" uid="67" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="31"/>
+						<datapoint pos="1" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="351" lty="480" rbx="451" rby="536"/>
+				</component>
+				<component name="substring-after" library="core" uid="82" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="62"/>
+						<datapoint pos="1" key="66"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="68"/>
+					</targets>
+					<view ltx="658" lty="406" rbx="758" rby="462"/>
+				</component>
+				<component name="concat" library="core" uid="85" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="74"/>
+						<datapoint pos="1" key="78"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="79"/>
+					</targets>
+					<view ltx="527" lty="207" rbx="602" rby="265"/>
+				</component>
+				<component name="constant" library="core" uid="93" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="82"/>
+					</targets>
+					<view ltx="646" lty="223" rbx="764" rby="241"/>
+					<data>
+						<constant value="Third Six Weeks" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="SchoolYear" library="core" uid="72" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="29"/>
+					</targets>
+					<view ltx="85" lty="406" rbx="191" rby="445"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SchoolYear"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="89" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="86"/>
+						<datapoint pos="1" key="83"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="92"/>
+					</targets>
+					<view ltx="859" lty="185" rbx="912" rby="241"/>
+				</component>
+				<component name="concat" library="core" uid="90" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="85"/>
+						<datapoint pos="1" key="89"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="90"/>
+					</targets>
+					<view ltx="837" lty="240" rbx="912" rby="298"/>
+				</component>
+				<component name="constant" library="core" uid="88" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="71"/>
+					</targets>
+					<view ltx="323" lty="190" rbx="454" rby="208"/>
+					<data>
+						<constant value="Second Six Weeks" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="66" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="686" lty="152" rbx="758" rby="170"/>
+					<data>
+						<constant value="-08-23" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="substring-before" library="core" uid="87" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="80"/>
+						<datapoint pos="1" key="76"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="73"/>
+					</targets>
+					<view ltx="343" lty="209" rbx="451" rby="265"/>
+				</component>
+				<component name="constant" library="core" uid="86" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="77"/>
+					</targets>
+					<view ltx="379" lty="264" rbx="451" rby="282"/>
+					<data>
+						<constant value="-10-04" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="91" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="88"/>
+					</targets>
+					<view ltx="689" lty="297" rbx="760" rby="315"/>
+					<data>
+						<constant value="-11-08" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="80" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="64"/>
+					</targets>
+					<view ltx="686" lty="461" rbx="758" rby="479"/>
+					<data>
+						<constant value="-01-04" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="62" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view ltx="379" lty="535" rbx="451" rby="553"/>
+					<data>
+						<constant value="-02-22" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="76" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="689" lty="607" rbx="760" rby="625"/>
+					<data>
+						<constant value="-04-11" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="substring-before" library="core" uid="92" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="91"/>
+						<datapoint pos="1" key="87"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="84"/>
+					</targets>
+					<view ltx="653" lty="242" rbx="761" rby="298"/>
+				</component>
+				<component name="equal" library="core" uid="84" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="75"/>
+						<datapoint pos="1" key="72"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="81"/>
+					</targets>
+					<view ltx="549" lty="152" rbx="602" rby="208"/>
+				</component>
+				<component name="equal" library="core" uid="79" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="63"/>
+						<datapoint pos="1" key="61"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="70"/>
+					</targets>
+					<view ltx="856" lty="349" rbx="909" rby="405"/>
+				</component>
+				<component name="equal" library="core" uid="60" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="22"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="549" lty="423" rbx="602" rby="479"/>
+				</component>
+				<component name="equal" library="core" uid="74" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="52"/>
+						<datapoint pos="1" key="50"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="59"/>
+					</targets>
+					<view ltx="859" lty="495" rbx="912" rby="551"/>
+				</component>
+				<component name="BeginDate" library="core" uid="71" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="28"/>
+					</sources>
+					<view ltx="1370" lty="440" rbx="1447" rby="479"/>
+					<data>
+						<output datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="output" name="BeginDate"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="68" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="13"/>
+						<datapoint pos="1" key="17"/>
+						<datapoint pos="2" key="15"/>
+						<datapoint pos="3" key="24"/>
+						<datapoint pos="4" key="93"/>
+						<datapoint pos="5" key="94"/>
+						<datapoint pos="6" key="95"/>
+						<datapoint pos="7" key="96"/>
+						<datapoint pos="8" key="97"/>
+						<datapoint pos="9" key="98"/>
+						<datapoint pos="10" key="99"/>
+						<datapoint pos="11" key="100"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="1026" lty="314" rbx="1124" rby="570"/>
+				</component>
+				<component name="GradingPeriodDescription" library="core" uid="73" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="20" lty="212" rbx="191" rby="251"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="GradingPeriodDescription"/>
+					</data>
+				</component>
+				<component name="substitute-missing" library="core" uid="112" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="143"/>
+						<datapoint pos="1" key="137"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="141"/>
+					</targets>
+					<view ltx="1138" lty="638" rbx="1252" rby="694"/>
+				</component>
+				<component name="distinct-values" library="core" uid="115" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="153"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="154"/>
+					</targets>
+					<view ltx="983" lty="696" rbx="1080" rby="735"/>
+				</component>
+				<component name="constant" library="core" uid="69" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="407" lty="331" rbx="451" rby="349"/>
+					<data>
+						<constant value="-" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="BeginDate" library="core" uid="108" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="147"/>
+						<datapoint pos="1" key="145"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="142"/>
+						<datapoint/>
+					</targets>
+					<view ltx="850" lty="730" rbx="953" rby="786"/>
+				</component>
+				<component name="equal" library="core" uid="109" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="152"/>
+						<datapoint pos="1" key="136"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="148"/>
+					</targets>
+					<view ltx="620" lty="696" rbx="673" rby="752"/>
+				</component>
+				<component name="Interchange-EducationOrgCalendar" library="xml" uid="113" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="77" lty="714" rbx="377" rby="914"/>
+					<data>
+						<root scrollposition="21">
+							<header>
+								<namespaces>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeEducationOrgCalendar" expanded="1">
+										<entry name="GradingPeriod" expanded="1">
+											<entry name="GradingPeriod" expanded="1">
+												<entry name="CodeValue" outkey="169"/>
+											</entry>
+											<entry name="BeginDate" outkey="170"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\..\..\..\..\Saxon\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="32"/>
+							<edge vertexkey="3" edgekey="33"/>
+							<edge vertexkey="55" edgekey="101"/>
+							<edge vertexkey="66" edgekey="102"/>
+							<edge vertexkey="76" edgekey="103"/>
+							<edge vertexkey="87" edgekey="104"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5" edgekey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7" edgekey="35"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="9" edgekey="36"/>
+							<edge vertexkey="22" edgekey="37"/>
+							<edge vertexkey="63" edgekey="105"/>
+							<edge vertexkey="52" edgekey="106"/>
+							<edge vertexkey="75" edgekey="107"/>
+							<edge vertexkey="86" edgekey="108"/>
+							<edge vertexkey="152" edgekey="157"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="11" edgekey="38"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="39"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="97" edgekey="109"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17" edgekey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="19" edgekey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="21" edgekey="43"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="98" edgekey="110"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="137" edgekey="158"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="30" edgekey="47"/>
+							<edge vertexkey="31" edgekey="48"/>
+							<edge vertexkey="62" edgekey="111"/>
+							<edge vertexkey="51" edgekey="112"/>
+							<edge vertexkey="80" edgekey="113"/>
+							<edge vertexkey="91" edgekey="114"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="50" edgekey="115"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="54" edgekey="116"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="56">
+						<edges>
+							<edge vertexkey="100" edgekey="117"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="58" edgekey="118"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="59">
+						<edges>
+							<edge vertexkey="99" edgekey="119"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="61" edgekey="120"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="65" edgekey="121"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67">
+						<edges>
+							<edge vertexkey="96" edgekey="122"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="68">
+						<edges>
+							<edge vertexkey="69" edgekey="123"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="70">
+						<edges>
+							<edge vertexkey="95" edgekey="124"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="71">
+						<edges>
+							<edge vertexkey="72" edgekey="125"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="73">
+						<edges>
+							<edge vertexkey="74" edgekey="126"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="77">
+						<edges>
+							<edge vertexkey="78" edgekey="127"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="79">
+						<edges>
+							<edge vertexkey="24" edgekey="128"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="81">
+						<edges>
+							<edge vertexkey="15" edgekey="129"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="82">
+						<edges>
+							<edge vertexkey="83" edgekey="130"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="84">
+						<edges>
+							<edge vertexkey="85" edgekey="131"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="88">
+						<edges>
+							<edge vertexkey="89" edgekey="132"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="90">
+						<edges>
+							<edge vertexkey="94" edgekey="133"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="92">
+						<edges>
+							<edge vertexkey="93" edgekey="134"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="141">
+						<edges>
+							<edge vertexkey="28" edgekey="159"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="142">
+						<edges>
+							<edge vertexkey="153" edgekey="160"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="148">
+						<edges>
+							<edge vertexkey="145" edgekey="161"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="154">
+						<edges>
+							<edge vertexkey="143" edgekey="162"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="169">
+						<edges>
+							<edge vertexkey="136" edgekey="171"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="170">
+						<edges>
+							<edge vertexkey="147" edgekey="172"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="SectionLookup" library="user" blackbox="0" uid="181" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="UniqueSectionCode" library="core" uid="183" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="22"/>
+					</sources>
+					<view ltx="1319" lty="204" rbx="1441" rby="243"/>
+					<data>
+						<output datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="output" name="UniqueSectionCode"/>
+					</data>
+				</component>
+				<component name="ClassPeriodName" library="core" uid="184" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="31"/>
+					</targets>
+					<view ltx="653" lty="329" rbx="786" rby="368"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="ClassPeriodName"/>
+					</data>
+				</component>
+				<component name="UniqueSectionCode" library="core" uid="185" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="44"/>
+						<datapoint pos="1" key="47"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+						<datapoint/>
+					</targets>
+					<view ltx="1133" lty="175" rbx="1254" rby="231"/>
+				</component>
+				<component name="SequenceOfCourse" library="core" uid="186" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+						<datapoint pos="1" key="42"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+						<datapoint/>
+					</targets>
+					<view ltx="1053" lty="73" rbx="1176" rby="129"/>
+				</component>
+				<component name="SequenceOfCourse" library="core" uid="187" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<view ltx="1305" lty="117" rbx="1429" rby="156"/>
+					<data>
+						<output datatype="int"/>
+						<wsdl/>
+						<parameter usageKind="output" name="SequenceOfCourse"/>
+					</data>
+				</component>
+				<component name="Term" library="core" uid="188" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="29"/>
+					</targets>
+					<view ltx="685" lty="237" rbx="758" rby="276"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="Term"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="189" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="30"/>
+						<datapoint pos="1" key="40"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="23"/>
+					</targets>
+					<view ltx="829" lty="247" rbx="882" rby="303"/>
+				</component>
+				<component name="Location" library="core" uid="190" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="17"/>
+					</targets>
+					<view ltx="679" lty="425" rbx="769" rby="464"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="Location"/>
+					</data>
+				</component>
+				<component name="SchoolYear" library="core" uid="191" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view ltx="640" lty="151" rbx="746" rby="190"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SchoolYear"/>
+					</data>
+				</component>
+				<component name="LocalCourseCode" library="core" uid="192" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="35"/>
+					</targets>
+					<view ltx="640" lty="3" rbx="775" rby="42"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="LocalCourseCode"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="193" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="32"/>
+						<datapoint pos="1" key="26"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="33"/>
+					</targets>
+					<view ltx="829" lty="329" rbx="882" rby="385"/>
+				</component>
+				<component name="equal" library="core" uid="194" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="18"/>
+						<datapoint pos="1" key="28"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="45"/>
+					</targets>
+					<view ltx="829" lty="425" rbx="882" rby="481"/>
+				</component>
+				<component name="equal" library="core" uid="195" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="14"/>
+						<datapoint pos="1" key="20"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="37"/>
+					</targets>
+					<view ltx="829" lty="162" rbx="882" rby="218"/>
+				</component>
+				<component name="equal" library="core" uid="196" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="36"/>
+						<datapoint pos="1" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="829" lty="53" rbx="882" rby="109"/>
+				</component>
+				<component name="logical-and" library="core" uid="197" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="38"/>
+						<datapoint pos="2" key="24"/>
+						<datapoint pos="3" key="34"/>
+						<datapoint pos="4" key="46"/>
+						<datapoint pos="5" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="41"/>
+					</targets>
+					<view ltx="972" lty="227" rbx="1057" rby="357"/>
+				</component>
+				<component name="SchoolId" library="core" uid="198" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="668" lty="554" rbx="758" rby="593"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SchoolId"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="199" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="819" lty="554" rbx="872" rby="610"/>
+				</component>
+				<component name="Interchange-MasterSchedule" library="xml" uid="200" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="154" lty="40" rbx="590" rby="554"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeMasterSchedule" expanded="1">
+										<entry name="CourseOffering">
+											<entry name="SessionReference" expanded="1">
+												<entry name="SessionIdentity" expanded="1"/>
+											</entry>
+											<entry name="CourseReference" expanded="1">
+												<entry name="CourseIdentity" expanded="1">
+													<entry name="CourseCode" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="Section" expanded="1">
+											<entry name="UniqueSectionCode" outkey="43"/>
+											<entry name="SequenceOfCourse" outkey="15"/>
+											<entry name="CourseOfferingReference" expanded="1">
+												<entry name="CourseOfferingIdentity" expanded="1">
+													<entry name="LocalCourseCode" outkey="3"/>
+													<entry name="Term" outkey="39"/>
+													<entry name="SchoolYear" outkey="19"/>
+												</entry>
+											</entry>
+											<entry name="SchoolReference" expanded="1">
+												<entry name="EducationOrganizationIdentity" expanded="1">
+													<entry name="StateOrganizationId" outkey="7"/>
+												</entry>
+											</entry>
+											<entry name="LocationReference" expanded="1">
+												<entry name="LocationIdentity" expanded="1">
+													<entry name="ClassroomIdentificationCode" outkey="27"/>
+												</entry>
+											</entry>
+											<entry name="ClassPeriodReference" expanded="1">
+												<entry name="ClassPeriodIdentity" expanded="1">
+													<entry name="ClassPeriodName" outkey="25"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xsd" inputinstance="..\..\..\..\..\..\Saxon\MasterSchedule.xml" instanceroot="{http://ed-fi.org/0120}InterchangeMasterSchedule"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="48"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4" edgekey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6" edgekey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="12" edgekey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14" edgekey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="16" edgekey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="18" edgekey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="22" edgekey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="24" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26" edgekey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="28" edgekey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="30" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="32" edgekey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="34" edgekey="64"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="36" edgekey="65"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="38" edgekey="66"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="40" edgekey="67"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="41">
+						<edges>
+							<edge vertexkey="42" edgekey="68"/>
+							<edge vertexkey="47" edgekey="69"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="44" edgekey="70"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="45">
+						<edges>
+							<edge vertexkey="46" edgekey="71"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

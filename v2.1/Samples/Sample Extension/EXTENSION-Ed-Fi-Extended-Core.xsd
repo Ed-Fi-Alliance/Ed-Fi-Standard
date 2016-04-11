@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="../../Schemas/Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Ed-Fi 2.0 Extensions =====</xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:documentation>===== Domain Entities =====</xs:documentation>
+	</xs:annotation>
+	<xs:complexType name="EXTENSION-PostsecondaryInstitution">
+		<xs:sequence>
+			<xs:element name="NameOfInstitution" type="NameOfInstitution"/>
+			<xs:element name="InstitutionLevel" type="EXTENSION-InstitutionLevelType"/>
+			<xs:element name="InstitutionControl" type="EXTENSION-InstitutionControlType"/>
+			<xs:element name="AcceptanceIndicator" type="xs:boolean"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EXTENSION-StudentAcademicRecordExtension">
+		<xs:complexContent>
+			<xs:extension base="EXTENSION-StudentAcademicRecordRestriction">
+				<xs:sequence>
+					<xs:element name="ClassRanking" type="EXTENSION-ClassRankingExtension"/>
+					<xs:element name="SubmissionCertification" type="EXTENSION-SubmissionCertificationType"/>
+					<xs:element name="PostsecondaryInstitutionReference" type="EXTENSION-PostsecondaryInstitutionReferenceType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="EXTENSION-StudentAcademicRecordRestriction">
+		<xs:complexContent>
+			<xs:restriction base="StudentAcademicRecord">
+				<xs:sequence>
+					<xs:element name="CumulativeEarnedCredits" type="Credits" minOccurs="0"/>
+					<xs:element name="CumulativeAttemptedCredits" type="Credits" minOccurs="0"/>
+					<xs:element name="CumulativeGradePointsEarned" type="GPA" minOccurs="0"/>
+					<xs:element name="CumulativeGradePointAverage" type="GPA" minOccurs="0"/>
+					<xs:element name="GradeValueQualifier" type="GradeValueQualifier" minOccurs="0"/>
+					<xs:element name="AcademicHonor" type="AcademicHonor" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="Recognition" type="Recognition" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="ProjectedGraduationDate" type="xs:date" minOccurs="0"/>
+					<xs:element name="SessionEarnedCredits" type="Credits" minOccurs="0"/>
+					<xs:element name="SessionAttemptedCredits" type="Credits" minOccurs="0"/>
+					<xs:element name="SessionGradePointsEarned" type="GPA" minOccurs="0"/>
+					<xs:element name="SessionGradePointAverage" type="GPA" minOccurs="0"/>
+					<xs:element name="Diploma" type="Diploma" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="StudentReference" type="StudentReferenceType"/>
+					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType"/>
+					<xs:element name="SchoolYear" type="SchoolYearType"/>
+					<xs:element name="Term" type="TermDescriptorReferenceType"/>
+					<xs:element name="ReportCardReference" type="ReportCardReferenceType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:annotation>
+		<xs:documentation>===== Extended Reference =====</xs:documentation>
+	</xs:annotation>
+	<xs:complexType name="EXTENSION-PostsecondaryInstitutionReferenceType">
+		<xs:complexContent>
+			<xs:extension base="ReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:annotation>
+		<xs:documentation>===== Common =====</xs:documentation>
+	</xs:annotation>
+	<xs:complexType name="EXTENSION-ClassRankingExtension">
+		<xs:complexContent>
+			<xs:extension base="EXTENSION-ClassRankingRestriction">
+				<xs:sequence>
+					<xs:element name="SpecialEducationGraduationStatus" type="EXTENSION-SpecialEducationGraduationStatusType"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="EXTENSION-ClassRankingRestriction">
+		<xs:complexContent>
+			<xs:restriction base="ClassRanking">
+				<xs:sequence>
+					<xs:element name="ClassRank" type="xs:int"/>
+					<xs:element name="TotalNumberInClass" type="xs:int"/>
+					<xs:element name="PercentageRanking" type="xs:int"/>
+				</xs:sequence>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:annotation>
+		<xs:documentation>===== Enumeration =====</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="EXTENSION-InstitutionControlType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Public"/>
+			<xs:enumeration value="Private Non-Profit"/>
+			<xs:enumeration value="PrivateForProfit"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EXTENSION-InstitutionLevelType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Four Year"/>
+			<xs:enumeration value="Two To Four Year"/>
+			<xs:enumeration value="Less Than Two Year"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EXTENSION-SpecialEducationGraduationStatusType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Completion of IEP and Reached Age 22"/>
+			<xs:enumeration value="Completion of IEP and Access to Services, Employment, or Education"/>
+			<xs:enumeration value="Completion of IEP and Demonstrated Self-Help Skills"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EXTENSION-SubmissionCertificationType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Official"/>
+			<xs:enumeration value="Unofficial"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

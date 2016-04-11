@@ -1,0 +1,3552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeEducationOrganization xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 C:/Projects/DLP-EdFiTeam/Ed-Fi-Standard/v2.0/Schemas/Interchange-EducationOrganization.xsd">
+	<EducationServiceCenter id="ESC_255950">
+		<StateOrganizationId>255950</StateOrganizationId>
+		<EducationOrganizationIdentificationCode>
+			<IdentificationCode>255950</IdentificationCode>
+			<EducationOrganizationIdentificationSystem>
+				<CodeValue>NCES</CodeValue>
+			</EducationOrganizationIdentificationSystem>
+		</EducationOrganizationIdentificationCode>
+		<NameOfInstitution>Region 99 Education Service Center</NameOfInstitution>
+		<EducationOrganizationCategory>Education Service Center</EducationOrganizationCategory>
+		<Address>
+			<StreetNumberName>898 Texas Education Blvd.</StreetNumberName>
+			<City>Dallas</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>75217</PostalCode>
+			<NameOfCounty>Dallas</NameOfCounty>
+			<AddressType>Physical</AddressType>
+		</Address>
+		<Address>
+			<StreetNumberName>P.O. Box 898</StreetNumberName>
+			<City>Dallas</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>75217</PostalCode>
+			<NameOfCounty>Dallas</NameOfCounty>
+			<AddressType>Mailing</AddressType>
+		</Address>
+		<InstitutionTelephone>
+			<TelephoneNumber>(214) 876-8290</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<InstitutionTelephone>
+			<TelephoneNumber>(214) 876-8921</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<EducationServiceCenterId>255950</EducationServiceCenterId>
+	</EducationServiceCenter>
+	<LocalEducationAgency id="LEAG_255901">
+		<StateOrganizationId>255901</StateOrganizationId>
+		<EducationOrganizationIdentificationCode>
+			<IdentificationCode>255901</IdentificationCode>
+			<EducationOrganizationIdentificationSystem>
+				<CodeValue>SEA</CodeValue>
+			</EducationOrganizationIdentificationSystem>
+		</EducationOrganizationIdentificationCode>
+		<NameOfInstitution>Grand Bend ISD</NameOfInstitution>
+		<ShortNameOfInstitution>GBISD</ShortNameOfInstitution>
+		<EducationOrganizationCategory>Local Education Agency</EducationOrganizationCategory>
+		<Address>
+			<StreetNumberName>123 Main Street</StreetNumberName>
+			<City>Grand Bend</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>73334</PostalCode>
+			<NameOfCounty>Williston</NameOfCounty>
+			<AddressType>Physical</AddressType>
+		</Address>
+		<Address>
+			<StreetNumberName>P.O. Box 9376</StreetNumberName>
+			<City>Grand Bend</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>73334-9376</PostalCode>
+			<NameOfCounty>Williston</NameOfCounty>
+			<AddressType>Mailing</AddressType>
+		</Address>
+		<InstitutionTelephone>
+			<TelephoneNumber>(950) 367-2013</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<InstitutionTelephone>
+			<TelephoneNumber>(950) 366-2320</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<WebSite>http://www.GBISD.edu/</WebSite>
+		<LocalEducationAgencyId>255901</LocalEducationAgencyId>
+		<LocalEducationAgencyCategory>Independent</LocalEducationAgencyCategory>
+		<EducationServiceCenterReference ref="ESC_255950">
+			<EducationServiceCenterLookup/>
+		</EducationServiceCenterReference>
+	</LocalEducationAgency>
+	<School id="SCOL_255901001">
+		<StateOrganizationId>255901001</StateOrganizationId>
+		<EducationOrganizationIdentificationCode>
+			<IdentificationCode>255901001</IdentificationCode>
+			<EducationOrganizationIdentificationSystem>
+				<CodeValue>SEA</CodeValue>
+			</EducationOrganizationIdentificationSystem>
+		</EducationOrganizationIdentificationCode>
+		<NameOfInstitution>Grand Bend High School</NameOfInstitution>
+		<ShortNameOfInstitution>GBHS</ShortNameOfInstitution>
+		<EducationOrganizationCategory>School</EducationOrganizationCategory>
+		<Address>
+			<StreetNumberName>456 Elm Street</StreetNumberName>
+			<City>Grand Bend</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>73334</PostalCode>
+			<NameOfCounty>Williston</NameOfCounty>
+			<AddressType>Physical</AddressType>
+		</Address>
+		<Address>
+			<StreetNumberName>P.O. Box 2035</StreetNumberName>
+			<City>Grand Bend</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>73334-2035</PostalCode>
+			<NameOfCounty>Williston</NameOfCounty>
+			<AddressType>Mailing</AddressType>
+		</Address>
+		<InstitutionTelephone>
+			<TelephoneNumber>(950) 325-9465</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<InstitutionTelephone>
+			<TelephoneNumber>(950) 393-3156</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<WebSite>http://www.GBISD.edu/GBHS/</WebSite>
+		<OperationalStatus>Active</OperationalStatus>
+		<SchoolId>255901001</SchoolId>
+		<GradeLevel>
+			<CodeValue>Ninth grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Tenth grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Eleventh grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Twelfth grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<SchoolCategory>High School</SchoolCategory>
+		<SchoolType>Regular</SchoolType>
+		<CharterStatus>Not a Charter School</CharterStatus>
+		<TitleIPartASchoolDesignation>Not designated as a Title I Part A school</TitleIPartASchoolDesignation>
+		<AdministrativeFundingControl>
+			<CodeValue>Public School</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AdministrativeFundingControlDescriptor.xml</Namespace>
+		</AdministrativeFundingControl>
+		<LocalEducationAgencyReference ref="LEAG_255901">
+			<LocalEducationAgencyLookup/>
+		</LocalEducationAgencyReference>
+	</School>
+	<School id="SCOL_255901044">
+		<StateOrganizationId>255901044</StateOrganizationId>
+		<EducationOrganizationIdentificationCode>
+			<IdentificationCode>255901044</IdentificationCode>
+			<EducationOrganizationIdentificationSystem>
+				<CodeValue>SEA</CodeValue>
+			</EducationOrganizationIdentificationSystem>
+		</EducationOrganizationIdentificationCode>
+		<NameOfInstitution>Grand Bend Middle School</NameOfInstitution>
+		<ShortNameOfInstitution>GBMS</ShortNameOfInstitution>
+		<EducationOrganizationCategory>School</EducationOrganizationCategory>
+		<Address>
+			<StreetNumberName>9993 Space Blvd.</StreetNumberName>
+			<City>Grand Bend</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>73334</PostalCode>
+			<NameOfCounty>Williston</NameOfCounty>
+			<AddressType>Physical</AddressType>
+		</Address>
+		<Address>
+			<StreetNumberName>P.O. Box 3393</StreetNumberName>
+			<City>Grand Bend</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>73334-3393</PostalCode>
+			<NameOfCounty>Williston</NameOfCounty>
+			<AddressType>Mailing</AddressType>
+		</Address>
+		<InstitutionTelephone>
+			<TelephoneNumber>(950) 325-3164</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<InstitutionTelephone>
+			<TelephoneNumber>(950) 366-9374</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<WebSite>http://www.GBISD.edu/GBMS/</WebSite>
+		<OperationalStatus>Active</OperationalStatus>
+		<SchoolId>255901044</SchoolId>
+		<GradeLevel>
+			<CodeValue>Sixth grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Seventh grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Eighth grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<SchoolCategory>Middle School</SchoolCategory>
+		<SchoolType>Regular</SchoolType>
+		<CharterStatus>Not a Charter School</CharterStatus>
+		<TitleIPartASchoolDesignation>Not designated as a Title I Part A school</TitleIPartASchoolDesignation>
+		<AdministrativeFundingControl>
+			<CodeValue>Public School</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AdministrativeFundingControlDescriptor.xml</Namespace>
+		</AdministrativeFundingControl>
+		<LocalEducationAgencyReference ref="LEAG_255901">
+			<LocalEducationAgencyLookup/>
+		</LocalEducationAgencyReference>
+	</School>
+	<School id="SCOL_255901107">
+		<StateOrganizationId>255901107</StateOrganizationId>
+		<EducationOrganizationIdentificationCode>
+			<IdentificationCode>255901107</IdentificationCode>
+			<EducationOrganizationIdentificationSystem>
+				<CodeValue>SEA</CodeValue>
+			</EducationOrganizationIdentificationSystem>
+		</EducationOrganizationIdentificationCode>
+		<NameOfInstitution>Grand Bend Elementary School</NameOfInstitution>
+		<ShortNameOfInstitution>GBES</ShortNameOfInstitution>
+		<EducationOrganizationCategory>School</EducationOrganizationCategory>
+		<Address>
+			<StreetNumberName>52 Halsey Ave.</StreetNumberName>
+			<City>Grand Bend</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>73334</PostalCode>
+			<NameOfCounty>Williston</NameOfCounty>
+			<AddressType>Physical</AddressType>
+		</Address>
+		<Address>
+			<StreetNumberName>P.O. Box 9991</StreetNumberName>
+			<City>Grand Bend</City>
+			<StateAbbreviation>TX</StateAbbreviation>
+			<PostalCode>73334-9991</PostalCode>
+			<NameOfCounty>Williston</NameOfCounty>
+			<AddressType>Mailing</AddressType>
+		</Address>
+		<InstitutionTelephone>
+			<TelephoneNumber>(950) 367-1346</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<InstitutionTelephone>
+			<TelephoneNumber>(950) 325-1976</TelephoneNumber>
+			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+		</InstitutionTelephone>
+		<WebSite>http://www.GBISD.edu/GBES/</WebSite>
+		<OperationalStatus>Active</OperationalStatus>
+		<SchoolId>255901107</SchoolId>
+		<GradeLevel>
+			<CodeValue>First grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Second grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Third grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Fourth grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<GradeLevel>
+			<CodeValue>Fifth grade</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+		</GradeLevel>
+		<SchoolCategory>Elementary School</SchoolCategory>
+		<SchoolType>Regular</SchoolType>
+		<CharterStatus>Not a Charter School</CharterStatus>
+		<TitleIPartASchoolDesignation>Not designated as a Title I Part A school</TitleIPartASchoolDesignation>
+		<AdministrativeFundingControl>
+			<CodeValue>Public School</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AdministrativeFundingControlDescriptor.xml</Namespace>
+		</AdministrativeFundingControl>
+		<LocalEducationAgencyReference ref="LEAG_255901">
+			<LocalEducationAgencyLookup/>
+		</LocalEducationAgencyReference>
+	</School>
+	<Location id="LOCN_255901107101-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>101</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107102-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>102</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107103-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>103</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107104-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>104</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107105-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>105</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107106-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>106</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107107-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>107</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107108-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>108</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107201-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>201</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107202-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>202</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107203-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>203</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107204-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>204</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107205-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>205</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107206-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>206</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107207-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>207</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107208-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>208</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107301-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>301</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107302-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>302</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107303-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>303</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107304-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>304</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107501-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>501</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107502-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>502</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107503-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>503</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107504-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>504</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107505-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>505</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107506-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>506</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>20</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>18</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107GYM-E-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>GYM-E</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>40</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901107GYM-W-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>GYM-W</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>100</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>90</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044110-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>110</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044111-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>111</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044112-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>112</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044113-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>113</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044114-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>114</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044115-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>115</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044210-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>210</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044211-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>211</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044212-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>212</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044213-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>213</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044310-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>310</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>30</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>27</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044GYM-N-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>GYM-N</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>100</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>90</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901044GYM-S-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>GYM-S</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>250</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>225</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001120-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>120</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001121-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>121</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001122-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>122</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001123-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>123</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001124-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>124</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001220-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>220</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001221-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>221</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001222-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>222</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001223-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>223</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001320-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>320</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001321-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>321</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001322-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>322</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001323-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>323</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001324-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>324</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<Location id="LOCN_255901001325-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassroomIdentificationCode>325</ClassroomIdentificationCode>
+		<MaximumNumberOfSeats>50</MaximumNumberOfSeats>
+		<OptimalNumberOfSeats>48</OptimalNumberOfSeats>
+	</Location>
+	<ClassPeriod id="CPER_01-Traditional-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>01 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_01-Traditional-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>01 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_01-Traditional-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>01 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_02-Traditional-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>02 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_02-Traditional-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>02 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_02-Traditional-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>02 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_03-Traditional-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>03 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_03-Traditional-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>03 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_03-Traditional-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>03 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_04-Traditional-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>04 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_04-Traditional-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>04 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_04-Traditional-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>04 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_05-Traditional-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>05 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_05-Traditional-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>05 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_05-Traditional-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>05 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_06-Traditional-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>06 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_06-Traditional-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>06 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_06-Traditional-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>06 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_07-Traditional-255901001">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901001</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901001</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>07 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_07-Traditional-255901044">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901044</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901044</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>07 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<ClassPeriod id="CPER_07-Traditional-255901107">
+		<SchoolReference>
+			<SchoolIdentity>
+				<SchoolId>255901107</SchoolId>
+			</SchoolIdentity>
+			<SchoolLookup>
+				<SchoolId>255901107</SchoolId>
+			</SchoolLookup>
+		</SchoolReference>
+		<ClassPeriodName>07 - Traditional</ClassPeriodName>
+	</ClassPeriod>
+	<Course id="CRSE_255901001ALG-1">
+		<CourseCode>03100500</CourseCode>
+		<CourseTitle>Algebra I</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>03100500</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>State course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseIdentificationCode>
+			<IdentificationCode>ALG-1</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Algebra I</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.32.NA.A.1.D</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001ALG-2">
+		<CourseCode>ALG-2</CourseCode>
+		<CourseTitle>Algebra II</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ALG-2</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Algebra II</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.33.b.2A.2.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001ART-1">
+		<CourseCode>ART-1</CourseCode>
+		<CourseTitle>Art I</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-1</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art I</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001ART2-EM">
+		<CourseCode>ART2-EM</CourseCode>
+		<CourseTitle>Art II Electronic Media</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART2-EM</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Career and Technical Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art II Electronic</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001ART3-EM">
+		<CourseCode>ART3-EM</CourseCode>
+		<CourseTitle>Art III Electronic Media</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART3-EM</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Career and Technical Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art III Electronic</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001BIO">
+		<CourseCode>BIO</CourseCode>
+		<CourseTitle>Biology</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>BIO</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Biology</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.34.11.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001CHEM">
+		<CourseCode>CHEM</CourseCode>
+		<CourseTitle>Chemistry</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>CHEM</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Chemistry</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001CREAT-WR">
+		<CourseCode>CREAT-WR</CourseCode>
+		<CourseTitle>Creative/Imaginative Writing</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>CREAT-WR</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Creative Writing</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001ECO-FE">
+		<CourseCode>ECO-FE</CourseCode>
+		<CourseTitle>Economics With Free System Emphasis</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ECO-FE</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Sciences and History</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Free Enterprise</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001ENG-1">
+		<CourseCode>ENG-1</CourseCode>
+		<CourseTitle>English I</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENG-1</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English I</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.31.9.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001ENG-2">
+		<CourseCode>ENG-2</CourseCode>
+		<CourseTitle>English II </CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENG-2</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English II </CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.32.24.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001ENG-3">
+		<CourseCode>ENG-3</CourseCode>
+		<CourseTitle>English III</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENG-3</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English III</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.33.5.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001ENG-4">
+		<CourseCode>ENG-4</CourseCode>
+		<CourseTitle>English IV</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENG-4</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English IV</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.34.24.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001ENVIRSYS">
+		<CourseCode>ENVIRSYS</CourseCode>
+		<CourseTitle>Environmental Systems </CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENVIRSYS</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Life and Physical Sciences</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Environmental System</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001GEOM">
+		<CourseCode>GEOM</CourseCode>
+		<CourseTitle>Geometry</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>GEOM</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Geometry</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.34.NA.G.6.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001GOVT">
+		<CourseCode>GOVT</CourseCode>
+		<CourseTitle>United States Government</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>GOVT</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Sciences and History</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>United States Gov</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001HLTH-ED">
+		<CourseCode>HLTH-ED</CourseCode>
+		<CourseTitle>Health Education</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>HLTH-ED</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Sciences and History</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Health Education</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001HUMT">
+		<CourseCode>HUMT</CourseCode>
+		<CourseTitle>Humanities</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>HUMT</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Life and Physical Sciences</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Humanities</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001PHOTJOUR">
+		<CourseCode>PHOTJOUR</CourseCode>
+		<CourseTitle>Photojournalism</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PHOTJOUR</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Career and Technical Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Photojournalism</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001PHYSICS">
+		<CourseCode>PHYSICS</CourseCode>
+		<CourseTitle>Physics</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PHYSICS</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physics</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.39.2.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001PRE-CALC">
+		<CourseCode>PRE-CALC</CourseCode>
+		<CourseTitle>Precalculus</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PRE-CALC</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Precalculus</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.35.NA.P.4.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901001SPAN-1">
+		<CourseCode>SPAN-1</CourseCode>
+		<CourseTitle>Languages Other Than English Level I</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SPAN-1</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Foreign Language and Literature</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Foreign Language</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001SPAN-2">
+		<CourseCode>SPAN-2</CourseCode>
+		<CourseTitle>Languages Other Than English Level II</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SPAN-2</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Foreign Language and Literature</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Foreign Language</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001SPAN-3">
+		<CourseCode>SPAN-3</CourseCode>
+		<CourseTitle>Languages Other Than English Level III</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SPAN-3</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Foreign Language and Literature</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Foreign Language</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001TAMULTIM">
+		<CourseCode>TAMULTIM</CourseCode>
+		<CourseTitle>Multimedia</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>TAMULTIM</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Career and Technical Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Multimedia</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001US-HIST">
+		<CourseCode>US-HIST</CourseCode>
+		<CourseTitle>United States History Since Reconstruction</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>US-HIST</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Sciences and History</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>US History</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001WGEO">
+		<CourseCode>WGEO</CourseCode>
+		<CourseTitle>World Geography Studies</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>WGEO</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>World Geography</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901001W-HIST">
+		<CourseCode>W-HIST</CourseCode>
+		<CourseTitle>World History Studies</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>W-HIST</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Sciences and History</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>World History</CourseDescription>
+		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901001">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044ART-06">
+		<CourseCode>ART-06</CourseCode>
+		<CourseTitle>Art, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-06</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044BAND-07">
+		<CourseCode>BAND-07</CourseCode>
+		<CourseTitle>Music/Band, Grade 7 </CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>BAND-07</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Music/Band, Grade 7 </CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044BAND-08">
+		<CourseCode>BAND-08</CourseCode>
+		<CourseTitle>Music/Band, Grade 8 </CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>BAND-08</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Music/Band, Grade 8 </CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044EnglishLanguageArts-06">
+		<CourseCode>ELA-06</CourseCode>
+		<CourseTitle>English Language Arts, Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-06</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.18.2.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044EnglishLanguageArts-07">
+		<CourseCode>ELA-07</CourseCode>
+		<CourseTitle>English Language Arts And Reading, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-07</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.19.20.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044EnglishLanguageArts-08">
+		<CourseCode>ELA-08</CourseCode>
+		<CourseTitle>English Language Arts And Reading, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-08</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.20.3.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044HLTH-07">
+		<CourseCode>HLTH-07</CourseCode>
+		<CourseTitle>Health Education, Grades 7-8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>HLTH-07</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Health Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044HLTH-08">
+		<CourseCode>HLTH-08</CourseCode>
+		<CourseTitle>Health Education, Grades 7-8 </CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>HLTH-08</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Health Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044MATH-06">
+		<CourseCode>MATH-06</CourseCode>
+		<CourseTitle>Mathematics, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-06</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Mathematics</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.22.NA.6.2.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044MATH-07">
+		<CourseCode>MATH-07</CourseCode>
+		<CourseTitle>Mathematics, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-07</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 7</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.23.NA.7.4.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044MATH-08">
+		<CourseCode>MATH-08</CourseCode>
+		<CourseTitle>Mathematics, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-08</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 8</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.24.NA.8.15.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044MUS-06">
+		<CourseCode>MUS-06</CourseCode>
+		<CourseTitle>General Music, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MUS-06</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>General Music</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044PE-06">
+		<CourseCode>PE-06</CourseCode>
+		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-06</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044PE-07">
+		<CourseCode>PE-07</CourseCode>
+		<CourseTitle>Physical Education, Grades 7-8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-07</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044PE-08">
+		<CourseCode>PE-08</CourseCode>
+		<CourseTitle>Physical Education, Grades 7-8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-08</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901044SCI-06">
+		<CourseCode>SCI-06</CourseCode>
+		<CourseTitle>Science, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-06</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Science</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.18.5.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044SCI-07">
+		<CourseCode>SCI-07</CourseCode>
+		<CourseTitle>Science, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-07</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Science, Grade 7</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.19.1.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044SCI-08">
+		<CourseCode>SCI-08</CourseCode>
+		<CourseTitle>Science, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-08</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Science, Grade 8</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.20.11.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044SS-06">
+		<CourseCode>SS-06</CourseCode>
+		<CourseTitle>Social Studies, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-06</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.18.15.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044SS-07">
+		<CourseCode>SS-07</CourseCode>
+		<CourseTitle>Social Studies, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-07</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.19.19.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901044SS-08">
+		<CourseCode>SS-08</CourseCode>
+		<CourseTitle>Social Studies, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-08</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901044">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.20.2.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107ART-01">
+		<CourseCode>ART-01</CourseCode>
+		<CourseTitle>Art, Grade 1</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-01</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art, Grade 1</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107ART-02">
+		<CourseCode>ART-02</CourseCode>
+		<CourseTitle>Art, Grade 2</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-02</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art, Grade 2</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107ART-03">
+		<CourseCode>ART-03</CourseCode>
+		<CourseTitle>Art, Grade 3</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-03</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art, Grade 3</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107ART-04">
+		<CourseCode>ART-04</CourseCode>
+		<CourseTitle>Art, Grade 4</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-04</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art, Grade 4</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107ART-05">
+		<CourseCode>ART-05</CourseCode>
+		<CourseTitle>Art, Grade 5</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-05</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Art, Grade 5</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107EnglishLanguageArts-01">
+		<CourseCode>ELA-01</CourseCode>
+		<CourseTitle>English Language Arts, Grade 1</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-01</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107EnglishLanguageArts-02">
+		<CourseCode>ELA-02</CourseCode>
+		<CourseTitle>English Language Arts, Grade 2</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-02</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.13.1.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107EnglishLanguageArts-03">
+		<CourseCode>ELA-03</CourseCode>
+		<CourseTitle>English Language Arts, Grade 3</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-03</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.14.17.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107EnglishLanguageArts-04">
+		<CourseCode>ELA-04</CourseCode>
+		<CourseTitle>English Language Arts, Grade 4</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-04</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.15.24.Ai</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107EnglishLanguageArts-05">
+		<CourseCode>ELA-05</CourseCode>
+		<CourseTitle>English Language Arts, Grade 5</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-05</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>English Language Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.21.Ai</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107MATH-01">
+		<CourseCode>MATH-01</CourseCode>
+		<CourseTitle>Mathematics, Grade 1</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-01</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 1</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107MATH-02">
+		<CourseCode>MATH-02</CourseCode>
+		<CourseTitle>Mathematics, Grade 2</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-02</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 2</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.14.2.1.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107MATH-03">
+		<CourseCode>MATH-03</CourseCode>
+		<CourseTitle>Mathematics, Grade 3</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-03</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 3</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.15.3.4.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107MATH-04">
+		<CourseCode>MATH-04</CourseCode>
+		<CourseTitle>Mathematics, Grade 4</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-04</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 4</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.16.4.11.D</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107MATH-05">
+		<CourseCode>MATH-05</CourseCode>
+		<CourseTitle>Mathematics, Grade 5</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-05</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Mathematics</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 5</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.16.4.6.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107MUS-01">
+		<CourseCode>MUS-01</CourseCode>
+		<CourseTitle>Music, Grade 1</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MUS-01</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Music, Grade 1</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107MUS-02">
+		<CourseCode>MUS-02</CourseCode>
+		<CourseTitle>Music, Grade 2</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MUS-02</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Music, Grade 2</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107MUS-03">
+		<CourseCode>MUS-03</CourseCode>
+		<CourseTitle>Music, Grade 3</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MUS-03</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Music, Grade 3</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107MUS-04">
+		<CourseCode>MUS-04</CourseCode>
+		<CourseTitle>Music, Grade 4</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MUS-04</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Music, Grade 4</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107MUS-05">
+		<CourseCode>MUS-05</CourseCode>
+		<CourseTitle>Music, Grade 5</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MUS-05</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Fine and Performing Arts</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Music, Grade 5</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107PE-01">
+		<CourseCode>PE-01</CourseCode>
+		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-01</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107PE-02">
+		<CourseCode>PE-02</CourseCode>
+		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-02</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107PE-03">
+		<CourseCode>PE-03</CourseCode>
+		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-03</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107PE-04">
+		<CourseCode>PE-04</CourseCode>
+		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-04</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107PE-05">
+		<CourseCode>PE-05</CourseCode>
+		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-05</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Physical, Health, and Safety Education</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107SCI-01">
+		<CourseCode>SCI-01</CourseCode>
+		<CourseTitle>Science, Grade 1</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-01</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Science, Grade 1</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107SCI-02">
+		<CourseCode>SCI-02</CourseCode>
+		<CourseTitle>Science, Grade 2</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-02</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Science, Grade 2</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.13.10.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107SCI-03">
+		<CourseCode>SCI-03</CourseCode>
+		<CourseTitle>Science, Grade 3</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-03</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Science, Grade 3</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.14.5.D</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107SCI-04">
+		<CourseCode>SCI-04</CourseCode>
+		<CourseTitle>Science, Grade 4</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-04</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Science, Grade 4</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.15.7.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107SCI-05">
+		<CourseCode>SCI-05</CourseCode>
+		<CourseTitle>Science, Grade 5</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-05</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Science</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Science, Grade 5</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.16.2.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107SS-01">
+		<CourseCode>SS-01</CourseCode>
+		<CourseTitle>Social Studies, Grade 1</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-01</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+	</Course>
+	<Course id="CRSE_255901107SS-02">
+		<CourseCode>SS-02</CourseCode>
+		<CourseTitle>Social Studies, Grade 2</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-02</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.13.10.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107SS-03">
+		<CourseCode>SS-03</CourseCode>
+		<CourseTitle>Social Studies, Grade 3</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-03</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.14.5.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107SS-04">
+		<CourseCode>SS-04</CourseCode>
+		<CourseTitle>Social Studies, Grade 4</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-04</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.15.17.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course id="CRSE_255901107SS-05">
+		<CourseCode>SS-05</CourseCode>
+		<CourseTitle>Social Studies, Grade 5</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-05</IdentificationCode>
+			<CourseIdentificationSystem>
+				<CodeValue>LEA course code</CodeValue>
+			</CourseIdentificationSystem>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>
+			<CodeValue>Social Studies</CodeValue>
+			<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+		</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<EducationOrganizationReference ref="SCOL_255901107">
+			<EducationOrganizationLookup/>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.16.13.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Program id="PRGM_2559011">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<ProgramId>1</ProgramId>
+		<ProgramName>Bilingual</ProgramName>
+		<ProgramType>Bilingual</ProgramType>
+		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+	</Program>
+	<Program id="PRGM_2559012">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<ProgramId>2</ProgramId>
+		<ProgramName>Bilingual Summer</ProgramName>
+		<ProgramType>Bilingual Summer</ProgramType>
+		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+	</Program>
+	<Program id="PRGM_2559013">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<ProgramId>3</ProgramId>
+		<ProgramName>Career and Technical Education</ProgramName>
+		<ProgramType>Career and Technical Education</ProgramType>
+		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+	</Program>
+	<Program id="PRGM_2559014">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<ProgramId>4</ProgramId>
+		<ProgramName>English as a Second Language (ESL)</ProgramName>
+		<ProgramType>English as a Second Language (ESL)</ProgramType>
+		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+	</Program>
+	<Program id="PRGM_2559015">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<ProgramId>5</ProgramId>
+		<ProgramName>Gifted and Talented</ProgramName>
+		<ProgramType>Gifted and Talented</ProgramType>
+		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+	</Program>
+	<Program id="PRGM_2559016">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<ProgramId>6</ProgramId>
+		<ProgramName>Special Education</ProgramName>
+		<ProgramType>Special Education</ProgramType>
+		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+	</Program>
+	<Program id="PRGM_2559017">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<ProgramId>7</ProgramId>
+		<ProgramName>Title I Part A</ProgramName>
+		<ProgramType>Title I Part A</ProgramType>
+		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+	</Program>
+	<AccountabilityRating>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentificationCode>
+					<IdentificationCode>255901</IdentificationCode>
+					<EducationOrganizationIdentificationSystem>
+						<CodeValue>SEA</CodeValue>
+					</EducationOrganizationIdentificationSystem>
+				</EducationOrganizationIdentificationCode>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<RatingTitle>Accountability Rating</RatingTitle>
+		<Rating>Recognized</Rating>
+		<RatingDate>2012-05-16</RatingDate>
+		<SchoolYear>2011-2012</SchoolYear>
+		<RatingOrganization>SEA</RatingOrganization>
+		<RatingProgram>AEIS</RatingProgram>
+	</AccountabilityRating>
+	<AccountabilityRating>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+				<EducationOrganizationIdentificationCode>
+					<IdentificationCode>255901001</IdentificationCode>
+					<EducationOrganizationIdentificationSystem>
+						<CodeValue>SEA</CodeValue>
+					</EducationOrganizationIdentificationSystem>
+				</EducationOrganizationIdentificationCode>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<RatingTitle>Accountability Rating</RatingTitle>
+		<Rating>Academically Acceptable</Rating>
+		<RatingDate>2012-05-16</RatingDate>
+		<SchoolYear>2011-2012</SchoolYear>
+		<RatingOrganization>SEA</RatingOrganization>
+		<RatingProgram>AEIS</RatingProgram>
+	</AccountabilityRating>
+	<AccountabilityRating>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+				<EducationOrganizationIdentificationCode>
+					<IdentificationCode>255901044</IdentificationCode>
+					<EducationOrganizationIdentificationSystem>
+						<CodeValue>SEA</CodeValue>
+					</EducationOrganizationIdentificationSystem>
+				</EducationOrganizationIdentificationCode>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<RatingTitle>Accountability Rating</RatingTitle>
+		<Rating>Recognized</Rating>
+		<RatingDate>2012-05-16</RatingDate>
+		<SchoolYear>2011-2012</SchoolYear>
+		<RatingOrganization>SEA</RatingOrganization>
+		<RatingProgram>AEIS</RatingProgram>
+	</AccountabilityRating>
+	<AccountabilityRating>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+			<EducationOrganizationLookup>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+				<EducationOrganizationIdentificationCode>
+					<IdentificationCode>255901107</IdentificationCode>
+					<EducationOrganizationIdentificationSystem>
+						<CodeValue>SEA</CodeValue>
+					</EducationOrganizationIdentificationSystem>
+				</EducationOrganizationIdentificationCode>
+			</EducationOrganizationLookup>
+		</EducationOrganizationReference>
+		<RatingTitle>Accountability Rating</RatingTitle>
+		<Rating>Exemplary</Rating>
+		<RatingDate>2012-05-16</RatingDate>
+		<SchoolYear>2011-2012</SchoolYear>
+		<RatingOrganization>SEA</RatingOrganization>
+		<RatingProgram>AEIS</RatingProgram>
+	</AccountabilityRating>
+</InterchangeEducationOrganization>

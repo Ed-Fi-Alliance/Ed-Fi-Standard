@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeStudentAssessment xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 C:/Projects/DLP-EdFiTeam/Ed-Fi-Standard/v2.0/Schemas/Interchange-StudentAssessment.xsd">
+   <AssessmentReference id="TA-3-ELA-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - English A1</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>English Language Arts</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-13-Other-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Spanish B</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Other</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-7-SocialStudies-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - History Americas</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Social Studies</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-2-Science-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Chemistry</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Science</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-10-Science-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Physics</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Science</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-11-Mathematics-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Mathematics</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Mathematics</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-1-Science-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Biology</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Science</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-9-Other-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Psychology</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Social Studies</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-4-Other-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Film</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Other</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-5-Other-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - French B</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Other</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-12-Other-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Music Gr.Perf</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Other</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <AssessmentReference id="TA-15-Other-9-1">
+      <AssessmentIdentity>
+         <AssessmentTitle>IB - Visual Arts Option A</AssessmentTitle>
+         <AcademicSubject>
+            <CodeValue>Other</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+         </AcademicSubject>
+         <AssessedGradeLevel>
+            <CodeValue>Ninth grade</CodeValue>
+            <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+         </AssessedGradeLevel>
+         <Version>1</Version>
+      </AssessmentIdentity>
+   </AssessmentReference>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604822</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-11-Mathematics-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Mathematics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Mathematics</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604847</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-9-Other-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Psychology</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Social Studies</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>3</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604847</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>3</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604849</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604863</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>3</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604874</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604881</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-12-Other-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Music Gr.Perf</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Other</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>6</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604905</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-3-ELA-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - English A1</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>English Language Arts</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604918</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-15-Other-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Visual Arts Option A</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Other</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604927</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604938</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604940</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604956</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>4</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604969</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-10-Science-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - Physics</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>Science</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+   <StudentAssessment>
+      <AdministrationDate>2010-05-01</AdministrationDate>
+      <SerialNumber>1</SerialNumber>
+      <AdministrationLanguage>
+         <CodeValue>English</CodeValue>
+         <Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+      </AdministrationLanguage>
+      <AdministrationEnvironment>Testing Center</AdministrationEnvironment>
+      <RetestIndicator>Primary Administration</RetestIndicator>
+      <ScoreResult>
+         <Result>6</Result>
+         <ResultDatatypeType>Integer</ResultDatatypeType>
+         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+      </ScoreResult>
+      <StudentReference>
+         <StudentIdentity>
+            <StudentUniqueId>604974</StudentUniqueId>
+         </StudentIdentity>
+      </StudentReference>
+      <AssessmentReference ref="TA-3-ELA-9-1">
+         <AssessmentIdentity>
+            <AssessmentTitle>IB - English A1</AssessmentTitle>
+            <AcademicSubject>
+               <CodeValue>English Language Arts</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+            </AcademicSubject>
+            <AssessedGradeLevel>
+               <CodeValue>Ninth grade</CodeValue>
+               <Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+            </AssessedGradeLevel>
+            <Version>1</Version>
+         </AssessmentIdentity>
+      </AssessmentReference>
+   </StudentAssessment>
+</InterchangeStudentAssessment>
