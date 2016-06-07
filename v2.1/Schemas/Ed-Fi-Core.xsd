@@ -4080,7 +4080,7 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="HispanicLatinoEthnicity" type="xs:boolean">
+					<xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
 							<xs:appinfo>
