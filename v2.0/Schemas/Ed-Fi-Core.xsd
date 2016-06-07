@@ -4214,7 +4214,7 @@ Special education students
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="HispanicLatinoEthnicity" type="xs:boolean">
+					<xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
 							<xs:appinfo>
@@ -12965,6 +12965,21 @@ Student late arrival/early dismissal.</xs:documentation>
 					<xs:appinfo>
 						<ann:EdFiId>787</ann:EdFiId>
 					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CredentialIdentifier" type="CredentialIdentifier" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifier or serial number assigned to the credential.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CurrentCredential" type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicator of whether this is the credential currently being used for employment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CredentialEndorsement" type="CredentialEndorsement" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Endorsements are attachments to teaching certificates and indicate areas of specialization.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
@@ -26166,6 +26181,32 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="60"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CredentialIdentifier">
+		<xs:annotation>
+			<xs:documentation>Identifier or serial number assigned to the credential.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
+				<ann:EdFiId>35</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CredentialEndorsement">
+		<xs:annotation>
+			<xs:documentation>Endorsements are attachments to teaching certificates and indicate areas of specialization.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
+				<ann:EdFiId>35</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="255"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="Criteria">
