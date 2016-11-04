@@ -1,31 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas//Interchange-Descriptors.xsd">
+<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas/Interchange-Descriptors.xsd">
 	<WeaponDescriptor>
-		<CodeValue>Handguns</CodeValue>
-		<ShortDescription>Handguns</ShortDescription>
-		<Description>Handguns</Description>
-		<Namespace>http://www.ed-fi.org/CEDSDescriptor/WeaponDescriptor.xml</Namespace>
-		<WeaponMap>Handgun</WeaponMap>
-	</WeaponDescriptor>
-	<WeaponDescriptor>
-		<CodeValue>RiflesShotguns</CodeValue>
-		<ShortDescription>RiflesShotguns</ShortDescription>
-		<Description>Rifles / Shotguns</Description>
-		<Namespace>http://www.ed-fi.org/CEDSDescriptor/WeaponDescriptor.xml</Namespace>
-		<WeaponMap>Rifle/Shotgun</WeaponMap>
-	</WeaponDescriptor>
-	<WeaponDescriptor>
-		<CodeValue>Multiple</CodeValue>
-		<ShortDescription>Multiple</ShortDescription>
-		<Description>More than one type of weapon or firearm</Description>
-		<Namespace>http://www.ed-fi.org/CEDSDescriptor/WeaponDescriptor.xml</Namespace>
+		<CodeValue>Firearm</CodeValue>
+		<ShortDescription>Firearm</ShortDescription>
+		<Description>Firearm</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
 		<WeaponMap>Other Firearm</WeaponMap>
 	</WeaponDescriptor>
 	<WeaponDescriptor>
-		<CodeValue>Other</CodeValue>
-		<ShortDescription>Other</ShortDescription>
-		<Description>Other</Description>
-		<Namespace>http://www.ed-fi.org/CEDSDescriptor/WeaponDescriptor.xml</Namespace>
+		<CodeValue>Handgun</CodeValue>
+		<ShortDescription>Handgun</ShortDescription>
+		<Description>Handgun</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Handgun</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>Knife</CodeValue>
+		<ShortDescription>Knife</ShortDescription>
+		<Description>Knife</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Knife</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>KnifeGreaterThanThreeInches</CodeValue>
+		<ShortDescription>KnifeGreaterThanThreeInches</ShortDescription>
+		<Description>Knife Greater Than Three Inches</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Knife</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>KnifeLessThanTwoPointFiveInches</CodeValue>
+		<ShortDescription>KnifeLessThanTwoPointFiveInches</ShortDescription>
+		<Description>Knife Less Than 2.5 Inches</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Knife</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>KnifeLessThanThreeInches</CodeValue>
+		<ShortDescription>KnifeLessThanThreeInches</ShortDescription>
+		<Description>Knife Less Than Three Inches</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Knife</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>None</CodeValue>
+		<ShortDescription>None</ShortDescription>
+		<Description>None</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
 		<WeaponMap>Other</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>OtherFirearm</CodeValue>
+		<ShortDescription>OtherFirearm</ShortDescription>
+		<Description>Other Firearm</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Other Firearm</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>OtherObject</CodeValue>
+		<ShortDescription>OtherObject</ShortDescription>
+		<Description>Other object</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Other Object</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>OtherSharpObject</CodeValue>
+		<ShortDescription>OtherSharpObject</ShortDescription>
+		<Description>Other sharp object</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Other Sharp Objects</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>OtherWeapon</CodeValue>
+		<ShortDescription>OtherWeapon</ShortDescription>
+		<Description>Other weapon</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Other</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>Rifle</CodeValue>
+		<ShortDescription>Rifle</ShortDescription>
+		<Description>Rifle</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Rifle/Shotgun</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>Shotgun</CodeValue>
+		<ShortDescription>Shotgun</ShortDescription>
+		<Description>Shotgun</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Rifle/Shotgun</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>Substance</CodeValue>
+		<ShortDescription>Substance</ShortDescription>
+		<Description>Substance used as weapon</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Substance Used as Weapon</WeaponMap>
+	</WeaponDescriptor>
+	<WeaponDescriptor>
+		<CodeValue>Unknown</CodeValue>
+		<ShortDescription>Unknown</ShortDescription>
+		<Description>Unknown weapon</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor.WeaponDescriptor.xml</Namespace>
+		<WeaponMap>Unknown</WeaponMap>
 	</WeaponDescriptor>
 </InterchangeDescriptors>
