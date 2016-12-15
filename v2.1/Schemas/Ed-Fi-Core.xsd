@@ -3483,6 +3483,11 @@ LEP Exempt
               <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The school year for which the assessment was administered to a student. Among other uses, handles cases in which a student takes a prior-year exam in a subsequent school year during an exam re-test.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
