@@ -12781,7 +12781,7 @@ Met standard
   </xs:simpleType>
   <xs:simpleType name="AcademicSubjectMapType">
     <xs:annotation>
-      <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
+      <xs:documentation>The mapping to a known AcademicSubject.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -12881,7 +12881,7 @@ Met standard
   </xs:simpleType>
   <xs:simpleType name="AccommodationMapType">
     <xs:annotation>
-      <xs:documentation>The variations used in how an assessment is presented or taken.</xs:documentation>
+      <xs:documentation>The mapping to a known Accommodation.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -12936,7 +12936,7 @@ Met standard
   </xs:simpleType>
   <xs:simpleType name="AchievementCategoryMapType">
     <xs:annotation>
-      <xs:documentation>The category of achievement attributed to the learner.</xs:documentation>
+      <xs:documentation>The mapping to a known AchievementCategory.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13155,7 +13155,7 @@ Testing Center
   </xs:simpleType>
   <xs:simpleType name="AdministrativeFundingControlMapType">
     <xs:annotation>
-      <xs:documentation>The type of education institution as classified by its funding source.</xs:documentation>
+      <xs:documentation>The mapping to a known AdministrativeFundingControl.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13180,13 +13180,7 @@ Testing Center
   </xs:simpleType>
   <xs:simpleType name="AssessmentCategoryMapType">
     <xs:annotation>
-      <xs:documentation>The category of an assessment based on format and content. For example:
-Achievement test
-Advanced placement test
-Alternate assessment/grade-level standards
-Attitudinal test
-Cognitive and perceptual skills test
-...</xs:documentation>
+      <xs:documentation>The mapping to a known AssessmentCategory.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13416,7 +13410,7 @@ Cognitive and perceptual skills test
   </xs:simpleType>
   <xs:simpleType name="AssessmentIdentificationSystemMapType">
     <xs:annotation>
-      <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to an assessment.</xs:documentation>
+      <xs:documentation>The mapping to a known AssessmentIdentificationSystem.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13845,7 +13839,7 @@ Met standard
   </xs:simpleType>
   <xs:simpleType name="AttendanceEventCategoryMapType">
     <xs:annotation>
-      <xs:documentation>A code categorizing the attendance event (e.g., excused absence, unexcused absence).</xs:documentation>
+      <xs:documentation>The mapping to a known AttendanceEventCategory.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13880,7 +13874,7 @@ Met standard
   </xs:simpleType>
   <xs:simpleType name="BehaviorMapType">
     <xs:annotation>
-      <xs:documentation>Enumeration items defining the categories of behavior coded for use in describing an incident.</xs:documentation>
+      <xs:documentation>The mapping to a known Behavior.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13910,14 +13904,7 @@ Met standard
   </xs:simpleType>
   <xs:simpleType name="CalendarEventMapType">
     <xs:annotation>
-      <xs:documentation>The type of scheduled or unscheduled event for the day. For example:
-Instructional day
-Teacher only day
-Holiday
-Make-up day
-Weather day
-Student late arrival/early dismissal
-...</xs:documentation>
+      <xs:documentation>The mapping to a known CalendarEvent.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -14162,7 +14149,7 @@ Student late arrival/early dismissal
   </xs:simpleType>
   <xs:simpleType name="ClassroomPositionMapType">
     <xs:annotation>
-      <xs:documentation>The type of position the staff member holds in the specific class/section.</xs:documentation>
+      <xs:documentation>The mapping to a known ClassroomPosition.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -14417,7 +14404,7 @@ Student late arrival/early dismissal
   </xs:simpleType>
   <xs:simpleType name="ContinuationOfServicesReasonMapType">
     <xs:annotation>
-      <xs:documentation>In the Migrant Education program, a provision allows continuation of services after a child is no longer considered migratory for certain reasons. This type holds the reasons prescribed in the statute.</xs:documentation>
+      <xs:documentation>The mapping to a known ContinuationOfServicesReason.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -14551,7 +14538,7 @@ Withdrawn</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="CourseIdentificationSystemMapType">
     <xs:annotation>
-      <xs:documentation>A system that is used to identify the organization of subject matter and related learning experiences provided for the instruction of students. In addition to identifying courses using the appropriate state codes, cross referencing courses with one of the national course codes is encouraged.</xs:documentation>
+      <xs:documentation>The mapping to a known CourseIdentificationSystem.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -14986,7 +14973,7 @@ Withdrawn</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="DiagnosisMapType">
     <xs:annotation>
-      <xs:documentation>Targeted purpose of the intervention (e.g., attendance issue, dropout risk).</xs:documentation>
+      <xs:documentation>The mapping to a known Diagnosis.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -15226,7 +15213,7 @@ Withdrawn</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="DisabilityMapType">
     <xs:annotation>
-      <xs:documentation>A disability condition that describes a child's impairment.</xs:documentation>
+      <xs:documentation>The mapping to a known Disability.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -15406,7 +15393,7 @@ Withdrawn</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="DisciplineMapType">
     <xs:annotation>
-      <xs:documentation>The category of discipline action.</xs:documentation>
+      <xs:documentation>The mapping to a known Discipline.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -15566,7 +15553,7 @@ Withdrawn</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="EducationOrganizationIdentificationSystemMapType">
     <xs:annotation>
-      <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by education organizations, social services or other agencies to refer to an education organization.</xs:documentation>
+      <xs:documentation>The mapping to a known EducationOrganizationIdentificationSystem.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -15733,7 +15720,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="EmploymentStatusMapType">
     <xs:annotation>
-      <xs:documentation>Reflects the type of employment or contract.</xs:documentation>
+      <xs:documentation>The mapping to a known EmploymentStatus.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -15868,7 +15855,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="EntryTypeMapType">
     <xs:annotation>
-      <xs:documentation>The process by which a student enters a school during a given academic session.</xs:documentation>
+      <xs:documentation>The mapping to a known EntryType.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -16073,7 +16060,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="ExitWithdrawTypeMapType">
     <xs:annotation>
-      <xs:documentation>The circumstances under which the student exited from membership in an educational institution.</xs:documentation>
+      <xs:documentation>The mapping to a known ExitWithdrawType.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -16208,7 +16195,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="GradeLevelMapType">
     <xs:annotation>
-      <xs:documentation>The enumeration items for the set of grade levels.</xs:documentation>
+      <xs:documentation>The mapping to a known GradeLevel.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -16368,7 +16355,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="GradingPeriodMapType">
     <xs:annotation>
-      <xs:documentation>The name of the period for which grades are reported.</xs:documentation>
+      <xs:documentation>The mapping to a known GradingPeriod.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -16478,7 +16465,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="GraduationPlanTypeMapType">
     <xs:annotation>
-      <xs:documentation>The type of academic plan the student is following for graduation.</xs:documentation>
+      <xs:documentation>The mapping to a known GraduationPlanType.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -16913,7 +16900,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="LanguageMapType">
     <xs:annotation>
-      <xs:documentation>The category denoting language(s) spoken or written.</xs:documentation>
+      <xs:documentation>The mapping to a known Language.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -17133,7 +17120,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="LimitedEnglishProficiencyMapType">
     <xs:annotation>
-      <xs:documentation>An indication that the student has been identified as Limited English Proficient or English Proficient by the Language Proficiency Assessment Committee (LPAC).</xs:documentation>
+      <xs:documentation>The mapping to a known LimitedEnglishProficiency.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -17823,7 +17810,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="ProgramAssignmentMapType">
     <xs:annotation>
-      <xs:documentation>The name of the education program for which a teacher is assigned to a school.</xs:documentation>
+      <xs:documentation>The mapping to a known ProgramAssignment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -17863,7 +17850,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="ProgramCharacteristicMapType">
     <xs:annotation>
-      <xs:documentation>Reflects important characteristics of the Program, such as categories or particular indications.</xs:documentation>
+      <xs:documentation>The mapping to a known ProgramCharacteristic.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -18328,7 +18315,7 @@ Vocational.</xs:documentation>
   </xs:simpleType>
   <xs:simpleType name="ReasonExitedMapType">
     <xs:annotation>
-      <xs:documentation>The reason the child left the program within a school or district.</xs:documentation>
+      <xs:documentation>The mapping to a known ReasonExited.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -18796,7 +18783,7 @@ LEP Exempt
   </xs:simpleType>
   <xs:simpleType name="ReporterDescriptionMapType">
     <xs:annotation>
-      <xs:documentation>Information on the type of individual who reported the incident.</xs:documentation>
+      <xs:documentation>The mapping to a known ReporterDescription.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -18836,7 +18823,7 @@ LEP Exempt
   </xs:simpleType>
   <xs:simpleType name="ResidencyStatusMapType">
     <xs:annotation>
-      <xs:documentation>An indication of the location of a persons legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit.</xs:documentation>
+      <xs:documentation>The mapping to a known ResidencyStatus.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -18906,7 +18893,7 @@ Partial response
   </xs:simpleType>
   <xs:simpleType name="ResponsibilityMapType">
     <xs:annotation>
-      <xs:documentation>Indications of an education organization's responsibility for a student, such as accountability, attendance, funding, etc.</xs:documentation>
+      <xs:documentation>The mapping to a known Responsibility.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -19165,7 +19152,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="SchoolFoodServicesEligibilityMapType">
     <xs:annotation>
-      <xs:documentation>An indication of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs.</xs:documentation>
+      <xs:documentation>The mapping to a known SchoolFoodServicesEligibility.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -19435,7 +19422,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="SectionCharacteristicMapType">
     <xs:annotation>
-      <xs:documentation>Enumeration items for Section Characteristic.</xs:documentation>
+      <xs:documentation>The mapping to a known SectionCharacteristic.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -19455,7 +19442,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="SeparationReasonMapType">
     <xs:annotation>
-      <xs:documentation>Reason for terminating the employment; for example:  Employment in education, Employment outside of education, Retirement, Family/personal relocation, Change of assignment.</xs:documentation>
+      <xs:documentation>The mapping to a known SeparationReason.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -19575,7 +19562,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="SpecialEducationSettingMapType">
     <xs:annotation>
-      <xs:documentation>The major instructional setting (more than 50 percent of a student's special education program).</xs:documentation>
+      <xs:documentation>The mapping to a known SpecialEducationSetting.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -19625,7 +19612,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="StaffClassificationMapType">
     <xs:annotation>
-      <xs:documentation>An individual's title of employment, official status or rank.</xs:documentation>
+      <xs:documentation>The mapping to a known StaffClassification.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -19730,7 +19717,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="StaffIdentificationSystemMapType">
     <xs:annotation>
-      <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a staff member.</xs:documentation>
+      <xs:documentation>The mapping to a known StaffIdentificationSystem.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -20135,7 +20122,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="StudentCharacteristicMapType">
     <xs:annotation>
-      <xs:documentation>Enumeration items for the important characteristics of the student's home situation: Displaced Homemaker, Homeless, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
+      <xs:documentation>The mapping to a known StudentCharacteristic.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -20220,7 +20207,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="StudentIdentificationSystemMapType">
     <xs:annotation>
-      <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to a student.</xs:documentation>
+      <xs:documentation>The mapping to a known StudentIdentificationSystem.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -20365,7 +20352,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="TeachingCredentialMapType">
     <xs:annotation>
-      <xs:documentation>An indication of the category of a legal document giving authorization to perform teaching assignment services.</xs:documentation>
+      <xs:documentation>The mapping to a known TeachingCredential.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -20500,7 +20487,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="TermMapType">
     <xs:annotation>
-      <xs:documentation>The type of the session during the school year (e.g., Fall Semester).</xs:documentation>
+      <xs:documentation>The mapping to a known Term.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -20665,7 +20652,7 @@ Second retest
   </xs:simpleType>
   <xs:simpleType name="WeaponMapType">
     <xs:annotation>
-      <xs:documentation>The category for the types of weapon used during an incident.</xs:documentation>
+      <xs:documentation>The mapping to a known Weapon.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
