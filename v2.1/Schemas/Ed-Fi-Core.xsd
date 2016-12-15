@@ -7912,36 +7912,9 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="EmploymentStatus" type="EmploymentStatusDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>Reflects the type of employment or contract desired for the position; for example:
-Probationary
-Contractual
-Substitute/temporary
-Tenured or permanent
-Volunteer/no contract
-...</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>EmploymentStatusDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="StaffClassification" type="StaffClassificationDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The titles of employment, official status, or rank of education staff.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>StaffClassificationDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="RequisitionNumber" type="RequisitionNumber">
         <xs:annotation>
           <xs:documentation>The number or identifier assigned to an open staff position, typically a requisition number assigned by Human Resources.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="DatePosted" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>Date the OpenStaffPosition was posted.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
