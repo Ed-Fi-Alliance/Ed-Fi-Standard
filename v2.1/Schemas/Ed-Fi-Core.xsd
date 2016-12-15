@@ -471,6 +471,11 @@ Prose
               <xs:documentation>Relates the AssessmentItem to an existing assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="AsessmentItemURI" type="URI" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The URI (typical a URL) pointing to the entry in an assessment item bank, which describes this content item.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
