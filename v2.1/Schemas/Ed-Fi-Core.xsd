@@ -508,9 +508,9 @@ Prose
               <xs:documentation>The times at which this BellSchedule is intended to meet.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
+          <xs:element name="CalendarDate" type="xs:date" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The first calendar date of the BellSchedule.</xs:documentation>
+              <xs:documentation>The calendar dates for which the BellSchedule applies.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6320,11 +6320,6 @@ Second grade
       <xs:element name="SchoolReference" type="SchoolReferenceType">
         <xs:annotation>
           <xs:documentation>The school for which the BellSchedule is defined.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
-        <xs:annotation>
-          <xs:documentation>The first calendar date of the BellSchedule.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
