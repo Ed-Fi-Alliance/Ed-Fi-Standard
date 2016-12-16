@@ -250,9 +250,9 @@ Second grade
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
+          <xs:element name="AssessmentFamily" type="AssessmentFamily" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>References the AssessmentFamily this Assessment is a member of.</xs:documentation>
+              <xs:documentation>The AssessmentFamily this Assessment is a member of.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="0">
@@ -267,111 +267,9 @@ Second grade
               </xs:annotation>
             </xs:element>
           </xs:choice>
-          <xs:element name="Namespace" type="URI" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Namespace for the Assessment.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AssessmentFamily">
-    <xs:annotation>
-      <xs:documentation>This entity represents a logical grouping or association of assessments that share a common purpose, heritage or content standard. There may be hierarchies of assessment families, characteristics (e.g., Academic Subject) specified for assessment families, by convention, are inherited by the Assessments associated with the AssessmentFamily.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ComplexObjectType">
-        <xs:sequence>
-          <xs:element name="AssessmentFamilyTitle" type="AssessmentTitle">
-            <xs:annotation>
-              <xs:documentation>The title or name of the AssessmentFamily.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessmentFamilyIdentificationCode" type="AssessmentFamilyIdentificationCode" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The category of an assessment based on format and content. For example: Achievement test, Advanced placement test, Alternate assessment/grade-level standards, Attitudinal test, Cognitive, and perceptual skills test, etc.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment family.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The typical grade level for which an assessment family is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example: Adult, Prekindergarten, First grade, Second grade, etc.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="LowestAssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>If the assessment spans a range of grades, then this attribute holds the lowest grade assessed. If only one grade level is assessed, then this attribute is omitted.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ContentStandard" type="ContentStandard" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard).</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Language" type="LanguageDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>An indication of the languages in which the AssessmentFamily is designed.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>LanguageDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The version identifier for the AssessmentFamily.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="RevisionDate" type="xs:date" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The month, day, and year that the conceptual design for the AssessmentFamily was most recently revised substantially.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Nomenclature" type="Nomenclature" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Reflects the specific nomenclature used for this level of AssessmentFamily.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessmentPeriod" type="AssessmentPeriodDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The periods or windows defined in which an assessment is supposed to be administered.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AssessmentPeriodDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ParentAssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>References the higher level AssessmentFamily the AssessmentFamily belongs to.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="Namespace" type="URI">
             <xs:annotation>
-              <xs:documentation>Namespace for the Assessments in this AssessmentFamily.</xs:documentation>
+              <xs:documentation>Namespace for the Assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -5998,78 +5896,6 @@ Local Neglected Program.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="AssessmentFamilyIdentityType">
-    <xs:annotation>
-      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an AssessmentFamily domain entity.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Identity</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="AssessmentFamilyTitle" type="AssessmentTitle">
-        <xs:annotation>
-          <xs:documentation>The title or name of the AssessmentFamily.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="AssessmentFamilyLookupType">
-    <xs:annotation>
-      <xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of an AssessmentFamily domain entity.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Lookup</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="AssessmentFamilyTitle" type="AssessmentTitle" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The title or name of the AssessmentFamily.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentFamilyIdentificationCode" type="AssessmentFamilyIdentificationCode" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The category of an assessment based on format and content. For example: Achievement test, Advanced placement test, Alternate assessment/grade-level standards, Attitudinal test, Cognitive, and perceptual skills test, etc.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The version identifier for the AssessmentFamily.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="AssessmentFamilyReferenceType">
-    <xs:annotation>
-      <xs:documentation>Provides alternative references for an AssessmentFamily domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ReferenceType">
-        <xs:sequence>
-          <xs:element name="AssessmentFamilyIdentity" type="AssessmentFamilyIdentityType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an AssessmentFamily domain entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessmentFamilyLookup" type="AssessmentFamilyLookupType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of an AssessmentFamily domain entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
   <xs:complexType name="AssessmentIdentityType">
     <xs:annotation>
       <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an Assessment domain entity.</xs:documentation>
@@ -6206,11 +6032,6 @@ Second grade
       <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The version identifier for the assessment.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>References the AssessmentFamily this Assessment is a member of.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -10802,34 +10623,6 @@ Tardy.</xs:documentation>
       <xs:element name="AddressType" type="AddressType">
         <xs:annotation>
           <xs:documentation>The type of address listed for an individual or organization. For example:  Physical Address, Mailing Address, Home Address, etc.)</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="AssessmentFamilyIdentificationCode">
-    <xs:annotation>
-      <xs:documentation>A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Common</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="IdentificationCode" type="IdentificationCode">
-        <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, state, or other agency or entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentIdentificationSystem" type="AssessmentIdentificationSystemDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to an assessment.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AssessmentIdentificationSystemDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssigningOrganizationIdentificationCode" type="IdentificationCode" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The organization code or name assigning the assessment identification code.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -20491,6 +20284,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AssessmentFamily">
+    <xs:annotation>
+      <xs:documentation>The AssessmentFamily an Assessment is a member of.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="60" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="AssessmentForm">
