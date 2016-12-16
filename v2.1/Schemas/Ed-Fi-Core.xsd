@@ -817,6 +817,11 @@ Prose
               <xs:documentation>Learning Objectives to be mastered in the course.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="MaxCompletionsForCredit" type="MaxCompletionsForCredit" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Designates how many times the course may be taken with credit received by the student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -21676,6 +21681,17 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:decimal">
       <xs:totalDigits value="5" />
       <xs:fractionDigits value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MaxCompletionsForCredit">
+    <xs:annotation>
+      <xs:documentation>Designates how many times the course may be taken with credit received by the student.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="NumberOfDaysAbsent">
