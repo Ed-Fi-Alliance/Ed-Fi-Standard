@@ -18065,6 +18065,11 @@ LEP Exempt
           <xs:documentation>The person is the learner's daughterinlaw.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="Emergency">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's emergency.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Employer">
         <xs:annotation>
           <xs:documentation>The person is the learner's employer.</xs:documentation>
@@ -18115,6 +18120,11 @@ LEP Exempt
           <xs:documentation>The person is the learner's friend.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="Godparent">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's godparent.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Grandfather">
         <xs:annotation>
           <xs:documentation>The person is the learner's grandfather.</xs:documentation>
@@ -18123,6 +18133,11 @@ LEP Exempt
       <xs:enumeration value="Grandmother">
         <xs:annotation>
           <xs:documentation>The person is the learner's grandmother.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Grandparent">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's grandparent.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Great aunt">
@@ -18160,9 +18175,19 @@ LEP Exempt
           <xs:documentation>The person is the learner's step mother.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="MotherInLaw">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's mother in law.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="MothersCivilPartner">
         <xs:annotation>
           <xs:documentation>The person is the learner's mother's civil partner.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Neighbor">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's neighbor.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Nephew">
@@ -18180,6 +18205,26 @@ LEP Exempt
           <xs:documentation>The person is the learner's other.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="Parent">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's parent.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Parent, step">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's parent, step.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Relative">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's relative.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sibling">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's sibling.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="SignificantOther">
         <xs:annotation>
           <xs:documentation>The person is the learner's significant other.</xs:documentation>
@@ -18190,9 +18235,24 @@ LEP Exempt
           <xs:documentation>The person is the learner's sister.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="SisterInLaw">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's sister in law.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Son">
         <xs:annotation>
           <xs:documentation>The person is the learner's son.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SonInLaw">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's son in law.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Spouse">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's spouse.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Unknown">
