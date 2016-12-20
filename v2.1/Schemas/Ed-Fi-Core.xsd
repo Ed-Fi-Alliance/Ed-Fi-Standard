@@ -4304,15 +4304,7 @@ LEP Exempt
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DescriptorType">
-        <xs:sequence>
-          <xs:element name="ProgramCharacteristicMap" type="ProgramCharacteristicMapType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The mapping to a known ProgramCharacteristic enumeration type.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
+      <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="ReasonExitedDescriptor">
@@ -17334,21 +17326,6 @@ Vocational.</xs:documentation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="ProgramCharacteristicMapType">
-    <xs:annotation>
-      <xs:documentation>The mapping to a known ProgramCharacteristic.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Enumeration</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:token">
-      <xs:enumeration value="A McKinney-Vento Program for Homelessness">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
   <xs:simpleType name="ProgramSponsorType">
     <xs:annotation>
       <xs:documentation>Ultimate and intermediate providers of funds for a particular educational or service program or activity or for an individual's participation in the program or activity (e.g., Federal, State, ESC, District, School, Private Org).</xs:documentation>
@@ -17553,6 +17530,11 @@ Vocational.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Home Visiting">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Homeless">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
