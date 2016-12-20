@@ -2362,7 +2362,7 @@ Bilingual/English as a Second Language.</xs:documentation>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ProgramSponsor" type="ProgramSponsorType" minOccurs="0">
+          <xs:element name="ProgramSponsor" type="ProgramSponsorType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Ultimate and intermediate providers of funds for a particular educational or service program or activity, or for an individual's participation in the program or activity (e.g., Federal, State, ESC, District, School, Private Organization).</xs:documentation>
             </xs:annotation>
