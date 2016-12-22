@@ -2252,6 +2252,11 @@ Bilingual/English as a Second Language.</xs:documentation>
               <xs:documentation>The login ID for the user; used for security access control interface.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
