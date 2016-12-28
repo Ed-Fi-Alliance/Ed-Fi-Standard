@@ -2671,7 +2671,7 @@ Special education students
               <xs:documentation>The course offering taught in the Section.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="SchoolReference" type="SchoolReferenceType">
+          <xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The school where the Section is taught.</xs:documentation>
             </xs:annotation>
@@ -8194,11 +8194,6 @@ Vacation.</xs:documentation>
       <xs:element name="CourseOfferingReference" type="CourseOfferingReferenceType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The course offering taught in the Section.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The school where the Section is taught.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
