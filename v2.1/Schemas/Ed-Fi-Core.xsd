@@ -2914,6 +2914,11 @@ Special education students
               <xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition. This attribute indicates the teacher is highly qualified for ALL Sections being taught.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="Recognition" type="Recognition" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Recognitions given to the staff for accomplishments in a co-curricular or extracurricular activity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11969,7 +11974,7 @@ Change of assignment.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="Recognition">
     <xs:annotation>
-      <xs:documentation>Recognition given to the student for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
+      <xs:documentation>Recognition given to the learner for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
@@ -11982,7 +11987,7 @@ Change of assignment.</xs:documentation>
       </xs:element>
       <xs:element name="RecognitionType" type="RecognitionType">
         <xs:annotation>
-          <xs:documentation>The nature of recognition given to the student for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
+          <xs:documentation>The nature of recognition given to the learner for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="RecognitionDescription" type="RecognitionDescription" minOccurs="0">
