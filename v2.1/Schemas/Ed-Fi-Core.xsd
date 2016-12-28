@@ -573,6 +573,107 @@ Prose
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="CommunityOrganization">
+    <xs:annotation>
+      <xs:documentation>This entity represents an administrative unit at the state level which exists primarily to operate local community providers.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="EducationOrganization">
+        <xs:sequence>
+          <xs:element name="CommunityOrganiztionId" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The identifier assigned to a CommunityOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityProvider">
+    <xs:annotation>
+      <xs:documentation>This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="EducationOrganization">
+        <xs:sequence>
+          <xs:element name="CommunityProviderIdentifier" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The identifier assigned to a CommunityProvider.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CommunityOrganizationReference" type="CommunityOrganizationReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>CommunityOrganziation of which the CommunityProvider is an organizational component.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProviderProfitability" type="ProviderProfitabilityDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates the profitability status of the provider.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ProviderProfitabilityDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProviderStatus" type="ProviderStatusDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>Indicates the status of the provider.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ProviderStatusDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProviderCategory" type="ProviderCategoryDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>Indicates the category of the provier.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ProviderCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolIndicator" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of whether the community provider is a school.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LicenseExemptIndicator" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of whether the provider is exempt from having a license.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderLicense">
+    <xs:annotation>
+      <xs:documentation>The legal document held by the CommunityProvider that authorizes the holder to perform certain functions and or services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CommunityProviderReference" type="CommunityProviderReferenceType">
+            <xs:annotation>
+              <xs:documentation>Relates the license to the CommunityProvider.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="License" type="License">
+            <xs:annotation>
+              <xs:documentation>The legal document showing proof of permission or authorization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="CompetencyObjective">
     <xs:annotation>
       <xs:documentation>This entity holds additional competencies for student achievement that are not associated with specific learning objectives (e.g., paying attention in class).</xs:documentation>
@@ -4423,6 +4524,36 @@ LEP Exempt
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="LicenseStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the license statuses.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="LicenseStatusMap" type="LicenseStatusMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known LicenseStatus enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LicenseTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the type of a license.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="LimitedEnglishProficiencyDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor defines the indications that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient. The mapping of descriptor values to known Ed-Fi enumeration values is required.</xs:documentation>
@@ -4489,6 +4620,63 @@ LEP Exempt
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor holds the category of the provider.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="ProviderCategoryMap" type="ProviderCategoryMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known ProviderCategory enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderProfitabilityDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor indicates the profitability status of the provider.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="ProviderProfitabilityMap" type="ProviderProfitabilityMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known ProviderProfitability enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the status of the provider.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="ProviderStatusMap" type="ProviderStatusMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known ProviderStatus enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="ReasonExitedDescriptor">
@@ -6495,6 +6683,118 @@ Second grade
           <xs:element name="CohortIdentity" type="CohortIdentityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a Cohort domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityOrganizationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityOrganization domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CommunityOrganiztionId" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The identifier assigned to a CommunityOrganization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CommunityOrganizationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CommunityOrganization domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CommunityOrganizationIdentity" type="CommunityOrganizationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityOrganization domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityProvider domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CommunityProviderIdentifier" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The identifier assigned to a CommunityProvider.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderLicenseIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityProviderLicense domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CommunityProviderReference" type="CommunityProviderReferenceType">
+        <xs:annotation>
+          <xs:documentation>Relates the license to the CommunityProvider.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseIdentifier" type="LicenseIdentifier">
+        <xs:annotation>
+          <xs:documentation>The unique identifier issued by the licensing organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicensingOrganization" type="LicensingOrganization">
+        <xs:annotation>
+          <xs:documentation>The organization issuing the license.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderLicenseReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CommunityProviderLicense domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CommunityProviderLicenseIdentity" type="CommunityProviderLicenseIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityProviderLicense domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CommunityProvider domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CommunityProviderIdentity" type="CommunityProviderIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityProvider domain entity.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -10557,6 +10857,28 @@ Tardy.</xs:documentation>
       <xs:extension base="DescriptorReferenceType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="LicenseStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for license status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LicenseTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for license type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="LimitedEnglishProficiencyDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for limited english proficiency descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -10593,6 +10915,39 @@ Tardy.</xs:documentation>
   <xs:complexType name="ProgramCharacteristicDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for program characteristic descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for provider category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderProfitabilityDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for provider profitability descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for provider status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -11954,6 +12309,72 @@ Change of assignment.</xs:documentation>
       <xs:element name="TactileLearning" type="Learning">
         <xs:annotation>
           <xs:documentation>The student's relative preference expressed as a percent to kinesthetic or tactile learning.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="License">
+    <xs:annotation>
+      <xs:documentation>The legal document showing proof of permission or authorization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="LicenseIdentifier" type="LicenseIdentifier">
+        <xs:annotation>
+          <xs:documentation>The unique identifier issued by the licensing organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicensingOrganization" type="LicensingOrganization">
+        <xs:annotation>
+          <xs:documentation>The organization issuing the license.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseEffectiveDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which a license is active or becomes effective.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseExpirationDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which a license will expire.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseIssueDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which an active license was issued.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseStatus" type="LicenseStatusDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>An indication of the status of the license.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>LicenseStatusDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseType" type="LicenseTypeDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>An indication of the category of the license.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>LicenseTypeDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AuthorizedFacilityCapacity" type="Capacity" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The maximum number that can be contained or accommodated which a provider is authorized or licensed to serve.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="OldestAgeAuthorizedToServe" type="AgeAuthorizedToServe" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The oldest age of children a provider is authorized or licensed to serve.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="YoungestAgeAuthorizedToServe" type="AgeAuthorizedToServe" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The youngest age of children a provider is authorized or licensed to serve.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -16951,6 +17372,31 @@ Vocational.</xs:documentation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="LicenseStatusMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known LicenseStatus.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Exempt">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Regulated">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unregulated">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="LimitedEnglishProficiencyMapType">
     <xs:annotation>
       <xs:documentation>The mapping to a known LimitedEnglishProficiency.</xs:documentation>
@@ -18050,6 +18496,101 @@ Vocational.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Vocational Education">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProviderCategoryMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known ProviderCategory.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Center-EC with SA">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Center-EC">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Center-SA Only">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Licensed Day Care Center">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Licensed Family Child Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Licensed Large Family Child Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Not Applicable">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProviderProfitabilityMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known ProviderProfitability.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Government Run">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ForProfit">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Nonprofit">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProviderStatusMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known ProviderStatus.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Active">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Inactive">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unknown">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -21431,6 +21972,29 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:maxLength value="40" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="LicenseIdentifier">
+    <xs:annotation>
+      <xs:documentation>Identifier assigned by the licensing organization to the license.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LicensingOrganization">
+    <xs:annotation>
+      <xs:documentation>The organization issuing the license.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="75" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="LocalCourseCode">
     <xs:annotation>
       <xs:documentation>The local code assigned by the LEA that identifies the organization of subject matter and related learning experiences provided for the instruction of students.</xs:documentation>
@@ -21839,9 +22403,27 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
   <xs:annotation>
     <xs:documentation>===== Numeric Simple Types =====</xs:documentation>
   </xs:annotation>
+  <xs:simpleType name="AgeAuthorizedToServe">
+    <xs:annotation>
+      <xs:documentation>Age of children a provider is authorized or licensed to serve.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int" />
+  </xs:simpleType>
   <xs:simpleType name="AssessmentVersion">
     <xs:annotation>
       <xs:documentation>The version identifier for the assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int" />
+  </xs:simpleType>
+  <xs:simpleType name="Capacity">
+    <xs:annotation>
+      <xs:documentation>The maximum number that can be contained or accommodated at any given time.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Simple</ann:TypeGroup>
       </xs:appinfo>

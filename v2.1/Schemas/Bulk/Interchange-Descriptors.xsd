@@ -45,10 +45,15 @@ The Descriptor interchange is used to describe metadata about the descriptors an
         <xs:element name="LanguageDescriptor" type="LanguageDescriptor" />
         <xs:element name="LevelDescriptor" type="LevelDescriptor" />
         <xs:element name="LevelOfEducationDescriptor" type="LevelOfEducationDescriptor" />
+        <xs:element name="LicenseTypeDescriptor" type="LicenseTypeDescriptor" />
+        <xs:element name="LicenseStatusDescriptor" type="LicenseStatusDescriptor" />
         <xs:element name="LimitedEnglishProficiencyDescriptor" type="LimitedEnglishProficiencyDescriptor" />
         <xs:element name="PerformanceLevelDescriptor" type="PerformanceLevelDescriptor" />
         <xs:element name="ProgramAssignmentDescriptor" type="ProgramAssignmentDescriptor" />
         <xs:element name="ProgramCharacteristicDescriptor" type="ProgramCharacteristicDescriptor" />
+        <xs:element name="ProviderCategoryDescriptor" type="ProviderCategoryDescriptor" />
+        <xs:element name="ProviderProfitabilityDescriptor" type="ProviderProfitabilityDescriptor" />
+        <xs:element name="ProviderStatusDescriptor" type="ProviderStatusDescriptor" />
         <xs:element name="ReasonExitedDescriptor" type="ReasonExitedDescriptor" />
         <xs:element name="ReporterDescriptionDescriptor" type="ReporterDescriptionDescriptor" />
         <xs:element name="ResidencyStatusDescriptor" type="ResidencyStatusDescriptor" />

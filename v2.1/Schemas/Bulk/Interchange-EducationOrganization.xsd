@@ -26,6 +26,9 @@ Locations and ClassPeriods can be re-used across Schools, if they are the same, 
         <xs:element name="EducationOrganizationPeerAssociation" type="EducationOrganizationPeerAssociation" />
         <xs:element name="EducationOrganizationNetwork" type="EducationOrganizationNetwork" />
         <xs:element name="EducationOrganizationNetworkAssociation" type="EducationOrganizationNetworkAssociation" />
+        <xs:element name="CommunityOrganization" type="CommunityOrganization" />
+        <xs:element name="CommunityProvider" type="CommunityProvider" />
+        <xs:element name="CommunityProviderLicense" type="CommunityProviderLicense" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
