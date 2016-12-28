@@ -8019,11 +8019,6 @@ Vacation.</xs:documentation>
           <xs:documentation>A unique number or alphanumeric code assigned to a restraint event by a school, school system, state, or other agency or entity.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="EventDate" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>Month, day, and year of the RestraintEvent.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="StudentReference" type="StudentReferenceType">
         <xs:annotation>
           <xs:documentation>Reference to student that was restrained.</xs:documentation>
