@@ -2981,6 +2981,95 @@ Special education students
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StaffAbsenceEvent">
+    <xs:annotation>
+      <xs:documentation>This event entity represents the recording of the dates of staff absence.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="EventDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>Date for this leave event.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AbsenceEventCategory" type="AbsenceEventCategoryDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>The code describing the type of absence.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AbsenceEventCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AbsenceEventReason" type="Reason" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Expanded reason for the staff absence.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="HoursAbsent" type="HoursAbsent" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The hours the staff was absent, if not the entire working day.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StaffReference" type="StaffReferenceType">
+            <xs:annotation>
+              <xs:documentation>The staff associated with this absence event.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StaffLeave">
+    <xs:annotation>
+      <xs:documentation>This entity represents the recording of the dates of staff leave (e.g., sick leave, personal time, vacation).</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="BegintDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>The begin date of the staff leave.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EndDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The end data of the staff leave.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StaffLeaveEventCategory" type="StaffLeaveEventCategoryType">
+            <xs:annotation>
+              <xs:documentation>The code describing the type of leave taken, for example:
+Sick
+Personal
+Vacation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Reason" type="Reason" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Expanded reason for the staff leave.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SubstituteAssigned" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicator of whether a substitute was assigned during the period of staff leave.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StaffReference" type="StaffReferenceType">
+            <xs:annotation>
+              <xs:documentation>The staff associated with this leave event.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StateEducationAgency">
     <xs:annotation>
       <xs:documentation>This entity represents the agency of the state charged with the primary responsibility for coordinating and supervising public instruction, including the setting of standards for elementary and secondary instructional programs.</xs:documentation>
@@ -3713,6 +3802,17 @@ LEP Exempt
   <xs:annotation>
     <xs:documentation>===== Descriptors =====</xs:documentation>
   </xs:annotation>
+  <xs:complexType name="AbsenceEventCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor describes the type of absence</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="AcademicSubjectDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor holds the description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language).</xs:documentation>
@@ -8443,6 +8543,53 @@ Vacation.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StaffAbsenceEventIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffAbsenceEvent domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="EventDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Date for this leave event.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AbsenceEventCategory" type="AbsenceEventCategoryDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The code describing the type of absence.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>AbsenceEventCategoryDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StaffReference" type="StaffReferenceType">
+        <xs:annotation>
+          <xs:documentation>The staff associated with this absence event.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffAbsenceEventReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StaffAbsenceEvent domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StaffAbsenceEventIdentity" type="StaffAbsenceEventIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffAbsenceEvent domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StaffCohortAssociationIdentityType">
     <xs:annotation>
       <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffCohortAssociation association.</xs:documentation>
@@ -8611,6 +8758,53 @@ Volunteer/no contract
         </xs:annotation>
       </xs:element>
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffLeaveIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffLeave domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="BegintDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The begin date of the staff leave.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StaffLeaveEventCategory" type="StaffLeaveEventCategoryType">
+        <xs:annotation>
+          <xs:documentation>The code describing the type of leave taken, for example:
+Sick
+Personal
+Vacation.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StaffReference" type="StaffReferenceType">
+        <xs:annotation>
+          <xs:documentation>The staff associated with this leave event.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffLeaveReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StaffLeave domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StaffLeaveIdentity" type="StaffLeaveIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffLeave domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="StaffLookupType">
     <xs:annotation>
@@ -10000,6 +10194,17 @@ Tardy.</xs:documentation>
   <xs:annotation>
     <xs:documentation>===== Extended Descriptor Reference Types =====</xs:documentation>
   </xs:annotation>
+  <xs:complexType name="AbsenceEventCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for absence event category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="AcademicSubjectDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for academic subject descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -19478,6 +19683,106 @@ Second retest
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="StaffLeaveEventCategoryType">
+    <xs:annotation>
+      <xs:documentation>A code describing the type of the leave event.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Vacation">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Jury duty">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Professional development">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Flex time">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Work compensation">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Administrative">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Annual leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bereavement">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Compensatory leave time">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Family and medical leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Government-requested">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Military leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Personal">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Release time">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sabbatical leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sick leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Suspension">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Other">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="StateAbbreviationType">
     <xs:annotation>
       <xs:documentation>The abbreviation for the state (within the United States) or outlying area in which an address is located.</xs:documentation>
@@ -21342,6 +21647,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:maxLength value="60" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="Reason">
+    <xs:annotation>
+      <xs:documentation>Expanded reason for the staff leave.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="RecognitionDescription">
     <xs:annotation>
       <xs:documentation>The description of recognition given to the student for accomplishments in a co-curricular or extra-curricular activity.</xs:documentation>
@@ -21612,6 +21929,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:minInclusive value="0" />
       <xs:totalDigits value="18" />
       <xs:fractionDigits value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HoursAbsent">
+    <xs:annotation>
+      <xs:documentation>The hours the staff was absent, if not the entire working day.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="18" />
+      <xs:fractionDigits value="2" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="HoursOnLeave">

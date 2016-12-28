@@ -12,6 +12,7 @@ The Descriptor interchange is used to describe metadata about the descriptors an
     </xs:annotation>
     <xs:complexType>
       <xs:choice maxOccurs="unbounded">
+        <xs:element name="AbsenceEventCategoryDescriptor" type="AbsenceEventCategoryDescriptor" />
         <xs:element name="AcademicSubjectDescriptor" type="AcademicSubjectDescriptor" />
         <xs:element name="AccommodationDescriptor" type="AccommodationDescriptor" />
         <xs:element name="AccountCodeDescriptor" type="AccountCodeDescriptor" />

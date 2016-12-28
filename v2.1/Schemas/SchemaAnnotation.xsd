@@ -16,6 +16,7 @@
       <xs:documentation>Identifies the descriptor being referenced by a DescriptorReferenceType element.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:token">
+      <xs:enumeration value="AbsenceEventCategoryDescriptor" />
       <xs:enumeration value="AcademicSubjectDescriptor" />
       <xs:enumeration value="AccommodationDescriptor" />
       <xs:enumeration value="AccountCodeDescriptor" />
