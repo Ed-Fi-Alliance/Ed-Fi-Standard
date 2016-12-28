@@ -4206,6 +4206,25 @@ LEP Exempt
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="ContactTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the set of contact types.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="ContactTypeMap" type="ContactTypeMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known ContactType enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="ContinuationOfServicesReasonDescriptor">
     <xs:annotation>
       <xs:documentation>In the Migrant Education program, a provision allows continuation of services after a child is no longer considered migratory for certain reasons. This descriptor holds the reasons prescribed in the statute. The mapping of descriptor values to known Ed-Fi enumeration values is required.</xs:documentation>
@@ -5207,6 +5226,58 @@ LEP Exempt
           <xs:element name="StaffEducationOrganizationEmploymentAssociationReference" type="StaffEducationOrganizationEmploymentAssociationReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>A reference to the employment association.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StaffEducationOrganizationContactAssociation">
+    <xs:annotation>
+      <xs:documentation>This association provides the contact information of the staff associated with the education organization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="StaffReference" type="StaffReferenceType">
+            <xs:annotation>
+              <xs:documentation>The Staff assigned to the EducationOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+            <xs:annotation>
+              <xs:documentation>The EducationalOrganization to which the Staff member provides services.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Address" type="Address" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The optional address for the contact associated with the EducationOrganizationunique.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ContactTitle" type="ContactTitle" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The title of the contact in the context of the EducationOrganization</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ContactType" type="ContactTypeDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>Indicates the type for the contact information.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ContactTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ElectronicMail" type="ElectronicMail">
+            <xs:annotation>
+              <xs:documentation>The optional email for the contact associated with the EducationOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Telephone" type="Telephone" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The optional telephone for the contact association with the EducationOrganization.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -8986,6 +9057,53 @@ Vacation.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StaffEducationOrganizationContactAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffEducationOrganizationContactAssociation association.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StaffReference" type="StaffReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Staff assigned to the EducationOrganization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>The EducationalOrganization to which the Staff member provides services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ContactType" type="ContactTypeDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the type for the contact information.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>ContactTypeDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffEducationOrganizationContactAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StaffEducationOrganizationContactAssociation association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StaffEducationOrganizationContactAssociationIdentity" type="StaffEducationOrganizationContactAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffEducationOrganizationContactAssociation association.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StaffEducationOrganizationEmploymentAssociationIdentityType">
     <xs:annotation>
       <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffEducationOrganizationEmploymentAssociation association.</xs:documentation>
@@ -10662,6 +10780,17 @@ Tardy.</xs:documentation>
   <xs:complexType name="CompetencyLevelDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for competency level descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ContactTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for contact type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -14605,6 +14734,21 @@ Met standard
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Twelfth grade">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ContactTypeMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known ContactType.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Other">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -21538,6 +21682,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="250" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ContactTitle">
+    <xs:annotation>
+      <xs:documentation>The title of the contact in the context of the EducationOrganization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="75" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ContentIdentifier">
