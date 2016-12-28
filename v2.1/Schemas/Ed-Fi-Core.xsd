@@ -372,9 +372,9 @@ Prose
               <xs:documentation>The MeetingTimes that compose this BellSchedule.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarDate" type="xs:date" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Date" type="xs:date" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The calendar dates for which the BellSchedule applies.</xs:documentation>
+              <xs:documentation>The dates for which the BellSchedule applies.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -410,9 +410,59 @@ Prose
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="CalendarDate">
+  <xs:complexType name="Calendar">
     <xs:annotation>
-      <xs:documentation>This entity represents a day in the school calendar.</xs:documentation>
+      <xs:documentation>A set of dates associated with an organization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CalendarName" type="IdentificationCode">
+            <xs:annotation>
+              <xs:documentation>The identifier for the Calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CalendarType" type="CalendarTypeDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>Indicates the type of Calendar.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>CalendarTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates the GradeLevel associated with the Calendar.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolReference" type="SchoolReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the School associated with the Calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolYear" type="SchoolYearType">
+            <xs:annotation>
+              <xs:documentation>The identifier for the school year associated with the Calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionReference" type="SessionReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Reference to the Session associated with the Calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CalendarEvent">
+    <xs:annotation>
+      <xs:documentation>The type of scheduled or unscheduled event for the day.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -422,17 +472,25 @@ Prose
         <xs:sequence>
           <xs:element name="Date" type="xs:date">
             <xs:annotation>
-              <xs:documentation>The month, day, and year of the CalendarDate.</xs:documentation>
+              <xs:documentation>The month, day, and year of the CalendarEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="SchoolReference" type="SchoolReferenceType">
+          <xs:element name="CalendarEventCategory" type="CalendarEventCategoryDescriptorReferenceType">
             <xs:annotation>
-              <xs:documentation>The school for which the calendar event is defined.</xs:documentation>
+              <xs:documentation>The type of scheduled or unscheduled event for the day.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>CalendarEventCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarEvent" type="CalendarEvent" maxOccurs="unbounded">
+          <xs:element name="EventDuration" type="EventDuration">
             <xs:annotation>
-              <xs:documentation>Additional description of the date such as date classification and duration of the event.</xs:documentation>
+              <xs:documentation>The amount of time for the event as recognized by the school: 1 day = 1, 1/2 day = 0.5, 1/3 day = 0.33.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CalendarReference" type="CalendarReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the Calendar associatied to the CalendarEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -2710,9 +2768,9 @@ Special education students
               <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
+          <xs:element name="CalendarEventReference" type="CalendarEventReferenceType">
             <xs:annotation>
-              <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+              <xs:documentation>Reference to the instructional day associated with SectionAttendanceEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="EventDate" type="xs:date">
@@ -2749,14 +2807,6 @@ Special education students
               <xs:documentation>The identifier for the school year.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Term" type="TermDescriptorReferenceType">
-            <xs:annotation>
-              <xs:documentation>The term for the Session during the school year.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>TermDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="BeginDate" type="xs:date">
             <xs:annotation>
               <xs:documentation>Month, day, and year of the first day of the Session.</xs:documentation>
@@ -2765,6 +2815,14 @@ Special education students
           <xs:element name="EndDate" type="xs:date">
             <xs:annotation>
               <xs:documentation>Month, day and year of the last day of the Session.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Term" type="TermDescriptorReferenceType" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The term for the Session during the school year.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>TermDescriptor</ann:Descriptor>
+              </xs:appinfo>
             </xs:annotation>
           </xs:element>
           <xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
@@ -3871,7 +3929,7 @@ LEP Exempt
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="CalendarEventDescriptor">
+  <xs:complexType name="CalendarEventCategoryDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor holds the types of scheduled or unscheduled event for the day (e.g., Instructional day, Teacher only day, Holiday, Make-up day, Weather day, Student late arrival/early dismissal day).</xs:documentation>
       <xs:appinfo>
@@ -3881,9 +3939,28 @@ LEP Exempt
     <xs:complexContent>
       <xs:extension base="DescriptorType">
         <xs:sequence>
-          <xs:element name="CalendarEventMap" type="CalendarEventMapType">
+          <xs:element name="CalendarEventCategoryMap" type="CalendarEventCategoryMapType">
             <xs:annotation>
-              <xs:documentation>The mapping to a known CalendarEvent enumeration type.</xs:documentation>
+              <xs:documentation>The mapping to a known CalendarEventCategory enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CalendarTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the calendar types.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="CalendarTypeMap" type="CalendarTypeMapType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known CalendarType enumeration type.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -5004,6 +5081,11 @@ Bilingual/English as a Second Language.</xs:documentation>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Reference to the Calendar associated with the StaffSchoolAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -5499,6 +5581,11 @@ Vocational.</xs:documentation>
           <xs:element name="EmployedWhileEnrolled" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Reference to the Calendar associated with the StudentSchoolAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6145,9 +6232,9 @@ Second grade
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="CalendarDateIdentityType">
+  <xs:complexType name="CalendarEventIdentityType">
     <xs:annotation>
-      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CalendarDate domain entity.</xs:documentation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CalendarEvent domain entity.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Identity</ann:TypeGroup>
       </xs:appinfo>
@@ -6155,19 +6242,27 @@ Second grade
     <xs:sequence>
       <xs:element name="Date" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year of the CalendarDate.</xs:documentation>
+          <xs:documentation>The month, day, and year of the CalendarEvent.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="SchoolReference" type="SchoolReferenceType">
+      <xs:element name="CalendarEventCategory" type="CalendarEventCategoryDescriptorReferenceType">
         <xs:annotation>
-          <xs:documentation>The school for which the calendar event is defined.</xs:documentation>
+          <xs:documentation>The type of scheduled or unscheduled event for the day.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>CalendarEventCategoryDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CalendarReference" type="CalendarReferenceType">
+        <xs:annotation>
+          <xs:documentation>Reference to the Calendar associatied to the CalendarEvent.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="CalendarDateReferenceType">
+  <xs:complexType name="CalendarEventReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides alternative references for a CalendarDate domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:documentation>Provides alternative references for a CalendarEvent domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -6175,9 +6270,53 @@ Second grade
     <xs:complexContent>
       <xs:extension base="ReferenceType">
         <xs:sequence>
-          <xs:element name="CalendarDateIdentity" type="CalendarDateIdentityType" minOccurs="0">
+          <xs:element name="CalendarEventIdentity" type="CalendarEventIdentityType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CalendarDate domain entity.</xs:documentation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CalendarEvent domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CalendarIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a Calendar domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CalendarName" type="IdentificationCode">
+        <xs:annotation>
+          <xs:documentation>The identifier for the Calendar.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SchoolReference" type="SchoolReferenceType">
+        <xs:annotation>
+          <xs:documentation>Reference to the School associated with the Calendar.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SchoolYear" type="SchoolYearType">
+        <xs:annotation>
+          <xs:documentation>The identifier for the school year associated with the Calendar.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CalendarReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a Calendar domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CalendarIdentity" type="CalendarIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a Calendar domain entity.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -8132,9 +8271,9 @@ Vacation.</xs:documentation>
           <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
+      <xs:element name="CalendarEventReference" type="CalendarEventReferenceType">
         <xs:annotation>
-          <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+          <xs:documentation>Reference to the instructional day associated with SectionAttendanceEvent.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -8230,17 +8369,14 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
+      <xs:element name="SessionName" type="IdentificationCode">
+        <xs:annotation>
+          <xs:documentation>The identifier for the calendar for the academic session (e.g., 2010/11, 2011 Summer).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="SchoolYear" type="SchoolYearType">
         <xs:annotation>
           <xs:documentation>The identifier for the school year.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Term" type="TermDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The term for the Session during the school year.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>TermDescriptor</ann:Descriptor>
-          </xs:appinfo>
         </xs:annotation>
       </xs:element>
       <xs:element name="SchoolReference" type="SchoolReferenceType">
@@ -9985,9 +10121,20 @@ Tardy.</xs:documentation>
       <xs:extension base="DescriptorReferenceType" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="CalendarEventDescriptorReferenceType">
+  <xs:complexType name="CalendarEventCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for calendar event descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Provides references for calendar event category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CalendarTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for calendar type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -10825,35 +10972,6 @@ Tardy.</xs:documentation>
       <xs:element name="MultipleBirthStatus" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Indicator of whether the student was born with other siblings (i.e., twins, triplets, etc.)</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="CalendarEvent">
-    <xs:annotation>
-      <xs:documentation>the calendar event associated with a calendar date.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Common</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="EventDuration" type="EventDuration">
-        <xs:annotation>
-          <xs:documentation>The amount of time for the event as recognized by the school: 1 day = 1, 1/2 day = 0.5, 1/3 day = 0.33.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="CalendarEvent" type="CalendarEventDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The type of scheduled or unscheduled event for the day. For example:
-Instructional day
-Teacher only day
-Holiday
-Make-up day
-Weather day
-Student late arrival/early dismissal.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>CalendarEventDescriptor</ann:Descriptor>
-          </xs:appinfo>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -13382,9 +13500,9 @@ Met standard
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="CalendarEventMapType">
+  <xs:simpleType name="CalendarEventCategoryMapType">
     <xs:annotation>
-      <xs:documentation>The mapping to a known CalendarEvent.</xs:documentation>
+      <xs:documentation>The mapping to a known CalendarEventCategory.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13431,6 +13549,26 @@ Met standard
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Weather day">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CalendarTypeMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known CalendarType.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="IEP">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Student Specific">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
