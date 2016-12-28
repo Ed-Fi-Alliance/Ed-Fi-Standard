@@ -5414,7 +5414,7 @@ Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian
           </xs:element>
           <xs:element name="PrimarySchool" type="xs:boolean" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Indicates if a given enrollment record should be considered the primary record for a student. If omitted, the default is true.</xs:documentation>
+              <xs:documentation>Indicates if a given enrollment record should be considered the primary record for a student.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
