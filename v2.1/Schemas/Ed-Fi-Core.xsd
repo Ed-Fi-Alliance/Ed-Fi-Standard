@@ -2873,7 +2873,7 @@ Special education students
           </xs:element>
           <xs:element name="Citizenship" type="Citizenship" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
+              <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
@@ -3039,7 +3039,7 @@ Special education students
           </xs:element>
           <xs:element name="Citizenship" type="Citizenship" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
+              <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="EconomicDisadvantaged" type="xs:boolean" minOccurs="0">
@@ -10870,7 +10870,7 @@ Student late arrival/early dismissal.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="Citizenship">
     <xs:annotation>
-      <xs:documentation>Describes  information relative to identity and citizenship of a person.</xs:documentation>
+      <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
