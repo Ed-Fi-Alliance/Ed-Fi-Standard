@@ -994,7 +994,7 @@ Withdrawn.</xs:documentation>
               <xs:documentation>Indicates that an academic course has been repeated by a student and how that repeat is to be computed in the student's academic grade average.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CourseReference" type="CourseReferenceType">
+          <xs:element name="CourseReference" type="CourseReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
             </xs:annotation>
@@ -1022,6 +1022,11 @@ Withdrawn.</xs:documentation>
           <xs:element name="AlternativeCourseCode" type="LocalCourseCode" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ExternalEducationOrganizationReference" type="ExternalEducationOrganizationReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Optional association between CourseTranscript and ExternalEdOrg is designed to capture cases in which the student takes a course via an ExternalEducationOrganization (like an enrolled student taking a Khan Academy course).</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -1449,6 +1454,301 @@ Representative of visiting school
           <xs:element name="StateEducationAgencyReference" type="StateEducationAgencyReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The SEA of which the ESC is an organizational component.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalCourseTranscript">
+    <xs:annotation>
+      <xs:documentation>This entity is the final record of a student's performance in their courses at the end of a semester or school year of an ExternalEducationOrgnaization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CourseAttemptResult" type="CourseAttemptResultType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The result from the student's attempt to take the course, for example:
+Pass
+Fail
+Incomplete
+Withdrawn.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AttemptedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The number of credits a student attempted and could earn for successfully completing a given course.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EarnedCredits" type="Credits">
+            <xs:annotation>
+              <xs:documentation>The number of credits a student earned for completing a given course.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EarnedAdditionalCredits" type="AdditionalCredits" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The number of additional credits a student attempted and could earn for successfully completing a given course (e.g., dual credit, AP, IB).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="WhenTakenGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Student's grade level at time of course.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="OfferedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Student's grade level at time of course.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MethodCreditEarned" type="MethodCreditEarnedType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The method the credits were earned (e.g., Classroom, Examination, Transfer).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="FinalLetterGradeEarned" type="GradeEarned" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The final indicator of student performance in a class as submitted by the instructor.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="FinalNumericGradeEarned" type="NumericGrade" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The final indicator of student performance in a class as submitted by the instructor.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseRepeatCode" type="CourseRepeatCodeType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates that an academic course has been repeated by a student and how that repeat is to be computed in the student's academic grade average.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseReference" type="CourseReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ExternalStudentAcademicRecordReference" type="ExternalStudentAcademicRecordReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the ExternalStudentAcademicRecord record for a semester/school year.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseTitle" type="CourseTitle">
+            <xs:annotation>
+              <xs:documentation>The descriptive name given to a course of study offered in a school or other institution or organization. In departmentalized classes at the elementary, secondary, and postsecondary levels (and for staff development activities), this refers to the name by which a course is identified (e.g., American History, English III). For elementary and other non-departmentalized classes, it refers to any portion of the instruction for which a grade or report is assigned (e.g., reading, composition, spelling, language arts).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AlternativeCourseTitle" type="CourseTitle" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AlternativeCourseCode" type="LocalCourseCode" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The intended major subject area of the course.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CareerPathway" type="CareerPathwayType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates the career cluster or pathway the course is associated with as part of a CTE curriculum.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseCode" type="IdentificationCode">
+            <xs:annotation>
+              <xs:documentation>A unique alphanumeric code assigned to a course.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseDescription" type="Description" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A description of the content standards and goals covered in the course. Reference may be made to state or national content standards.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseIdentificationCode" type="CourseIdentificationCode" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The code that identifies the organization of subject matter and related learning experiences provided for the instruction of students.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseLevelCharacteristic" type="CourseLevelCharacteristicType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The type of specific program or designation with which the course is associated (e.g., AP, IB, Dual Credit, CTE).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalEducationOrganization">
+    <xs:annotation>
+      <xs:documentation>This entity represents any external public or private institution, organization, or agency that provides instructional or support services to students or staff at any level. This entity is provided to refer to organizations about which local school and districts have little to no information.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="NameOfInstitution" type="NameOfInstitution">
+            <xs:annotation>
+              <xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ShortNameOfInstitution" type="NameOfInstitution" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A short name for the institution.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Address" type="Address" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The set of elements that describes the physical location of the education entity, including the street address, city, state, ZIP code, and ZIP code + 4.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="InternationalAddress" type="InternationalAddress" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The set of elements that describes the international physical location of the education entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="InstitutionTelephone" type="InstitutionTelephone" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The 10-digit telephone number, including the area code, for the education entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="WebSite" type="URI" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The public web site address (URL) for the EducationOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="OperationalStatus" type="OperationalStatusType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The current operational status of the EducationOrganization (e.g., active, inactive).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalStudentAcademicRecord">
+    <xs:annotation>
+      <xs:documentation>This educational entity represents the cumulative record of academic achievement for a student that is being collected from an extrnal education organization about which local school and districts have little to no information.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CumulativeEarnedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The cumulative number of credits an individual earns by completing courses or examinations during his or her enrollment in the ExternalEducationOrganziation as well as those credits transferred from schools in which the individual had been previously enrolled.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CumulativeAttemptedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The cumulative number of credits an individual attempts to earn by taking courses during his or her enrollment in the ExternalEducationOrganization as well as those credits transferred from schools in which the individual had been previously enrolled.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CumulativeGradePointsEarned" type="GPA" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the ExternalEducationOrganization as well as those transferred from schools in which the individual had been previously enrolled.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CumulativeGradePointAverage" type="GPA" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A measure of average performance in all courses taken by an individual during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her ExternalEducationOrganizaiton as well as those transferred from schools in which the individual was previously enrolled.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="GradeValueQualifier" type="GradeValueQualifier" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's Grade Point Average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ClassRanking" type="ClassRanking" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The academic rank information of a student in relation to his or her graduating class.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AcademicHonor" type="AcademicHonor" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Academic distinctions earned by or awarded to the student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Recognition" type="Recognition" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Recognitions given to the student for accomplishments in a co-curricular or extracurricular activity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProjectedGraduationDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The month and year the student is projected to graduate.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionEarnedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The number of credits an individual earned in the session.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionAttemptedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The number of credits an individual attempted to earn in the session.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionGradePointsEarned" type="GPA" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The number of grade points an individual earned for the session.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionGradePointAverage" type="GPA" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Diploma" type="Diploma" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Diploma(s) earned by the student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StudentReference" type="StudentReferenceType">
+            <xs:annotation>
+              <xs:documentation>Identifies the student who is associated with the ExternalStudentAcademicRecord.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ExternalEducationOrganizationReference" type="ExternalEducationOrganizationReferenceType">
+            <xs:annotation>
+              <xs:documentation>Provides user information to lookup and link to an existing ExternalEducationOrganization record.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolYear" type="SchoolYearType">
+            <xs:annotation>
+              <xs:documentation>The identifier for the school year.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ExternalTerm" type="ExternalTerm">
+            <xs:annotation>
+              <xs:documentation>The external term for the session during the school year.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -7098,11 +7398,6 @@ Incomplete
 Withdrawn.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="CourseReference" type="CourseReferenceType">
-        <xs:annotation>
-          <xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="StudentAcademicRecordReference" type="StudentAcademicRecordReferenceType">
         <xs:annotation>
           <xs:documentation>Link to the student's academic record for a semester/school year.</xs:documentation>
@@ -7564,6 +7859,128 @@ Withdrawn.</xs:documentation>
           <xs:element name="EducationServiceCenterLookup" type="EducationServiceCenterLookupType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of an EducationServiceCenter domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalCourseTranscriptIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalCourseTranscript domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ExternalStudentAcademicRecordReference" type="ExternalStudentAcademicRecordReferenceType">
+        <xs:annotation>
+          <xs:documentation>Reference to the ExternalStudentAcademicRecord record for a semester/school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CourseCode" type="IdentificationCode">
+        <xs:annotation>
+          <xs:documentation>A unique alphanumeric code assigned to a course.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ExternalCourseTranscriptReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an ExternalCourseTranscript domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="ExternalCourseTranscriptIdentity" type="ExternalCourseTranscriptIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalCourseTranscript domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalEducationOrganizationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalEducationOrganization domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="NameOfInstitution" type="NameOfInstitution">
+        <xs:annotation>
+          <xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ExternalEducationOrganizationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an ExternalEducationOrganization domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="ExternalEducationOrganizationIdentity" type="ExternalEducationOrganizationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalEducationOrganization domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalStudentAcademicRecordIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalStudentAcademicRecord domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>Identifies the student who is associated with the ExternalStudentAcademicRecord.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ExternalEducationOrganizationReference" type="ExternalEducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>Provides user information to lookup and link to an existing ExternalEducationOrganization record.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SchoolYear" type="SchoolYearType">
+        <xs:annotation>
+          <xs:documentation>The identifier for the school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ExternalTerm" type="ExternalTerm">
+        <xs:annotation>
+          <xs:documentation>The external term for the session during the school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ExternalStudentAcademicRecordReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an ExternalStudentAcademicRecord domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="ExternalStudentAcademicRecordIdentity" type="ExternalStudentAcademicRecordIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalStudentAcademicRecord domain entity.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -21946,6 +22363,17 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:string">
       <xs:minLength value="7" />
       <xs:maxLength value="128" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ExternalTerm">
+    <xs:annotation>
+      <xs:documentation>Defines the external term of a session during the school year (e.g., Fall Semester) of an ExternalEducationOrganization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="75" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="FirstName">
