@@ -2681,7 +2681,7 @@ Special education students
               <xs:documentation>The location, typically a classroom, where the Section meets.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType" minOccurs="0">
+          <xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The class period during which the Section meets.</xs:documentation>
             </xs:annotation>
