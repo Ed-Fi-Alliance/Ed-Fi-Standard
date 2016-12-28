@@ -3104,6 +3104,11 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
               <xs:documentation>The login ID for the user; used for security access control interface.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="HomelessPrimaryNighttimeResidence" type="HomelessPrimaryNighttimeResidenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>'The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -16007,6 +16012,36 @@ Vocational.</xs:documentation>
       <xs:enumeration value="Not applicable">
         <xs:annotation>
           <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HomelessPrimaryNighttimeResidenceType">
+    <xs:annotation>
+      <xs:documentation>The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Doubled-up">
+        <xs:annotation>
+          <xs:documentation>Doubled - up (i.e., living with another family)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hotels/motels">
+        <xs:annotation>
+          <xs:documentation>Hotels/motels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Shelters">
+        <xs:annotation>
+          <xs:documentation>Shelters, Transitional housing, Awaiting Foster Care.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unsheltered">
+        <xs:annotation>
+          <xs:documentation>Unsheltered (e.g. cars, parks, campgrounds, temporary trailers including FEMA trailers, or abandoned buildings)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
