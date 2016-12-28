@@ -369,7 +369,7 @@ Prose
           </xs:element>
           <xs:element name="MeetingTime" type="MeetingTime" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The times at which this BellSchedule is intended to meet.</xs:documentation>
+              <xs:documentation>The MeetingTimes that compose this BellSchedule.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="CalendarDate" type="xs:date" minOccurs="0" maxOccurs="unbounded">
