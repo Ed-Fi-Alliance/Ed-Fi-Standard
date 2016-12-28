@@ -2254,7 +2254,7 @@ Bilingual/English as a Second Language.</xs:documentation>
           </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -2878,7 +2878,7 @@ Special education students
           </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="HighestCompletedLevelOfEducation" type="LevelOfEducationDescriptorReferenceType" minOccurs="0">
@@ -3066,7 +3066,7 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
           </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
@@ -4191,21 +4191,13 @@ LEP Exempt
   </xs:complexType>
   <xs:complexType name="LanguageDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the language(s) that are spoken or written.</xs:documentation>
+      <xs:documentation>This descriptor defines the language(s) that are spoken or written. It is strongly recommended that entries use only ISO 639-3 language codes: for CodeValue, use the 3 character code; for ShortDescription and Description use the full language name.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DescriptorType">
-        <xs:sequence>
-          <xs:element name="LanguageMap" type="LanguageMapType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The mapping to a known Language enumeration type.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
+      <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="LevelDescriptor">
@@ -16415,31 +16407,6 @@ Vocational.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="No Discernible Effects">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Other">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="LanguageMapType">
-    <xs:annotation>
-      <xs:documentation>The mapping to a known Language.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Enumeration</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:token">
-      <xs:enumeration value="Spanish">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="English">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
