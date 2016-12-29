@@ -11867,6 +11867,11 @@ Tardy.</xs:documentation>
           <xs:documentation>The type of address listed for an individual or organization. For example:  Physical Address, Mailing Address, Home Address, etc.)</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="DoNotPublishIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>An indication that the address should not be published.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="AssessmentIdentificationCode">
@@ -12575,6 +12580,11 @@ Distinguished Achievement Program.</xs:documentation>
       <xs:element name="PrimaryEmailAddressIndicator" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>An indication that the electronic mail address should be used as the principal electronic mail address for an individual or organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DoNotPublishIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>An indication that the electronic email address should not be published.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -13667,6 +13677,11 @@ Met standard
       <xs:element name="TextMessageCapabilityIndicator" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>An indication that the telephone number is technically capable of sending and receiving Short Message Service (SMS) text messages.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DoNotPublishIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>An indication that the telephone number should not be published.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
