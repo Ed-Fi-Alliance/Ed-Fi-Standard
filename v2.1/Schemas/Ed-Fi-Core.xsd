@@ -1868,11 +1868,6 @@ Withdrawn.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="SchoolReference" type="SchoolReferenceType">
-            <xs:annotation>
-              <xs:documentation>Provide user information to lookup and link to an existing school record.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="GradingPeriod" type="GradingPeriodDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>The name of the period for which grades are reported.</xs:documentation>
@@ -1899,6 +1894,11 @@ Withdrawn.</xs:documentation>
           <xs:element name="PeriodSequence" type="xs:int" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The sequential order of this period relative to other periods.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionReference" type="SessionReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the Session associated to the GradingPeriod.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -3234,11 +3234,6 @@ Special education students
           <xs:element name="SchoolReference" type="SchoolReferenceType">
             <xs:annotation>
               <xs:documentation>Relates the Session to the school.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>Grading periods associated with the calendar.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -8167,22 +8162,9 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="SchoolReference" type="SchoolReferenceType">
+      <xs:element name="SessionReference" type="SessionReferenceType">
         <xs:annotation>
-          <xs:documentation>Provide user information to lookup and link to an existing school record.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="GradingPeriod" type="GradingPeriodDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The name of the period for which grades are reported.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradingPeriodDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="BeginDate" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>Month, day, and year of the first day of the GradingPeriod.</xs:documentation>
+          <xs:documentation>Reference to the Session associated to the GradingPeriod.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
