@@ -3562,7 +3562,7 @@ Vacation.</xs:documentation>
           </xs:element>
           <xs:element name="ProfileThumbnail" type="ProfileThumbnail" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Locator for the student photo.</xs:documentation>
+              <xs:documentation>Locator reference for the student photo. The specification for that reference is left to local definition.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
@@ -22721,14 +22721,14 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
   </xs:simpleType>
   <xs:simpleType name="ProfileThumbnail">
     <xs:annotation>
-      <xs:documentation>ProfileThumbnail.</xs:documentation>
+      <xs:documentation>Locator reference for the student photo. The specification for that reference is left to local definition.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Simple</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="59" />
+      <xs:maxLength value="255" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ProgramId">
