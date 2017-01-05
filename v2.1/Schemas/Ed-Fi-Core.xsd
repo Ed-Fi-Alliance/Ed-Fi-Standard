@@ -1470,7 +1470,7 @@ Representative of visiting school
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="CourseAttemptResult" type="CourseAttemptResultType" minOccurs="0">
+          <xs:element name="CourseAttemptResult" type="CourseAttemptResultType">
             <xs:annotation>
               <xs:documentation>The result from the student's attempt to take the course, for example:
 Pass
