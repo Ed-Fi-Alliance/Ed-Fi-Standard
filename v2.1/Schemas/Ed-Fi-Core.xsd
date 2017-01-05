@@ -3429,7 +3429,7 @@ Special education students
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="BegintDate" type="xs:date">
+          <xs:element name="BeginDate" type="xs:date">
             <xs:annotation>
               <xs:documentation>The begin date of the staff leave.</xs:documentation>
             </xs:annotation>
@@ -9599,7 +9599,7 @@ Volunteer/no contract
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="BegintDate" type="xs:date">
+      <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
           <xs:documentation>The begin date of the staff leave.</xs:documentation>
         </xs:annotation>
