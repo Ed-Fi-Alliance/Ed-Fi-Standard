@@ -490,7 +490,7 @@ Prose
           </xs:element>
           <xs:element name="CalendarReference" type="CalendarReferenceType">
             <xs:annotation>
-              <xs:documentation>Reference to the Calendar associatied to the CalendarEvent.</xs:documentation>
+              <xs:documentation>Reference to the Calendar associated to the CalendarEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -630,7 +630,7 @@ Prose
           </xs:element>
           <xs:element name="ProviderCategory" type="ProviderCategoryDescriptorReferenceType">
             <xs:annotation>
-              <xs:documentation>Indicates the category of the provier.</xs:documentation>
+              <xs:documentation>Indicates the category of the provider.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>ProviderCategoryDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -1470,7 +1470,7 @@ Representative of visiting school
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="CourseAttemptResult" type="CourseAttemptResultType" minOccurs="0">
+          <xs:element name="CourseAttemptResult" type="CourseAttemptResultType">
             <xs:annotation>
               <xs:documentation>The result from the student's attempt to take the course, for example:
 Pass
@@ -3429,7 +3429,7 @@ Special education students
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="BegintDate" type="xs:date">
+          <xs:element name="BeginDate" type="xs:date">
             <xs:annotation>
               <xs:documentation>The begin date of the staff leave.</xs:documentation>
             </xs:annotation>
@@ -5552,12 +5552,12 @@ LEP Exempt
               <xs:documentation>The optional address for the contact associated with the EducationOrganizationunique.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ContactTitle" type="ContactTitle" minOccurs="0">
+          <xs:element name="ContactTitle" type="ContactTitle">
             <xs:annotation>
               <xs:documentation>The title of the contact in the context of the EducationOrganization</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ContactType" type="ContactTypeDescriptorReferenceType">
+          <xs:element name="ContactType" type="ContactTypeDescriptorReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Indicates the type for the contact information.</xs:documentation>
               <xs:appinfo>
@@ -6919,7 +6919,7 @@ Second grade
       </xs:element>
       <xs:element name="CalendarReference" type="CalendarReferenceType">
         <xs:annotation>
-          <xs:documentation>Reference to the Calendar associatied to the CalendarEvent.</xs:documentation>
+          <xs:documentation>Reference to the Calendar associated to the CalendarEvent.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -8172,6 +8172,14 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
+      <xs:element name="GradingPeriod" type="GradingPeriodDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The name of the period for which grades are reported.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>GradingPeriodDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="SessionReference" type="SessionReferenceType">
         <xs:annotation>
           <xs:documentation>Reference to the Session associated to the GradingPeriod.</xs:documentation>
@@ -9484,12 +9492,9 @@ Vacation.</xs:documentation>
           <xs:documentation>The EducationalOrganization to which the Staff member provides services.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="ContactType" type="ContactTypeDescriptorReferenceType">
+      <xs:element name="ContactTitle" type="ContactTitle">
         <xs:annotation>
-          <xs:documentation>Indicates the type for the contact information.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>ContactTypeDescriptor</ann:Descriptor>
-          </xs:appinfo>
+          <xs:documentation>The title of the contact in the context of the EducationOrganization</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -9594,7 +9599,7 @@ Volunteer/no contract
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="BegintDate" type="xs:date">
+      <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
           <xs:documentation>The begin date of the staff leave.</xs:documentation>
         </xs:annotation>
