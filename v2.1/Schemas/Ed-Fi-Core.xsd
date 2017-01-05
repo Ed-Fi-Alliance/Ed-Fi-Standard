@@ -4865,7 +4865,15 @@ LEP Exempt
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DescriptorType" />
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="LicenseTypeMap" type="LicenseTypeMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known LicenseType enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="LimitedEnglishProficiencyDescriptor">
@@ -17969,6 +17977,91 @@ Vocational.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Unregulated">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LicenseTypeMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known LicenseType.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Before- and After-School Programs">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Child Care Center">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Child Care Program">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Child Placing Agency">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Day Treatment Program">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Family Child Care Home">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Independent Foster Home">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Large Family Child Care Home">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Night Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Purchase of Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Residential Child Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="School Age Program">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Shelter Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Specialized Day Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Temporary Shelter Care">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
