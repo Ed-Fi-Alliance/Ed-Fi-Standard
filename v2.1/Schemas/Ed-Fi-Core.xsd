@@ -6945,7 +6945,7 @@ Second grade
   </xs:complexType>
   <xs:complexType name="CalendarIdentityType">
     <xs:annotation>
-      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a Calendar.</xs:documentation>
+      <xs:documentation>Identity of a Calendar.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Identity</ann:TypeGroup>
       </xs:appinfo>
@@ -6980,7 +6980,7 @@ Second grade
         <xs:sequence>
           <xs:element name="CalendarIdentity" type="CalendarIdentityType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a Calendar.</xs:documentation>
+              <xs:documentation>Identity of a Calendar.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
