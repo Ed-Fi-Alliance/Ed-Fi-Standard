@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- (c)2016 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<!-- (c)2017 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd" />
   <xs:annotation>
@@ -8172,6 +8172,14 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
+      <xs:element name="GradingPeriod" type="GradingPeriodDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The name of the period for which grades are reported.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>GradingPeriodDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="SessionReference" type="SessionReferenceType">
         <xs:annotation>
           <xs:documentation>Reference to the Session associated to the GradingPeriod.</xs:documentation>
