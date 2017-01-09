@@ -12351,11 +12351,6 @@ Tardy.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="CredentialCode" type="CredentialCode" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A code, often shorter, identifying the type or category of the credential and generally issued by the authorizing entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="EffectiveDate" type="xs:date" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The year, month and day on which an active credential held by an individual was issued.</xs:documentation>
