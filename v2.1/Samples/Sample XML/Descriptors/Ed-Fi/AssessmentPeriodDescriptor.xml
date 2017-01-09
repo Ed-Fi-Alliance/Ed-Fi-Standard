@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas/Interchange-Descriptors.xsd">
+   <AssessmentPeriodDescriptor>
+      <CodeValue>BOY</CodeValue>
+      <ShortDescription>BOY</ShortDescription>
+      <Description>Beginning of Year</Description>
+      <Namespace>http://www.ed-fi.org/Descriptor/AssessmentPeriodDescriptor.xml</Namespace>
+   </AssessmentPeriodDescriptor>
+   <AssessmentPeriodDescriptor>
+      <CodeValue>MOY</CodeValue>
+      <ShortDescription>MOY</ShortDescription>
+      <Description>Middle of Year</Description>
+      <Namespace>http://www.ed-fi.org/Descriptor/AssessmentPeriodDescriptor.xml</Namespace>
+   </AssessmentPeriodDescriptor>
+   <AssessmentPeriodDescriptor>
+      <CodeValue>EOY</CodeValue>
+      <ShortDescription>EOY</ShortDescription>
+      <Description>End of Year</Description>
+      <Namespace>http://www.ed-fi.org/Descriptor/AssessmentPeriodDescriptor.xml</Namespace>
+	  <BeginDate>2013-01-05</BeginDate>
+	  <EndDate>2013-06-15</EndDate>
+   </AssessmentPeriodDescriptor>
+</InterchangeDescriptors>

@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" blackbox="0" uid="1" editable="1">
+		<properties ShowLibraryNameInHeader="1" SelectedLanguage="xslt2"/>
+		<structure>
+			<children>
+				<component name="CodeCoalesce" library="user" blackbox="0" uid="52" kind="19" visible="0">
+					<view ltx="65" lty="-175" rbx="237" rby="-124"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="847" componentid="44"/>
+							<entry name="replacewith" inpkey="848" componentid="50"/>
+							<entry name="replacewith2" inpkey="849" componentid="47"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="850" componentid="46"/>
+						</root>
+					</data>
+				</component>
+				<component name="CodeCoalesce" library="user" blackbox="0" uid="56" kind="19" visible="0">
+					<view ltx="615" lty="586" rbx="787" rby="637"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="867" componentid="44"/>
+							<entry name="replacewith" inpkey="868" componentid="50"/>
+							<entry name="replacewith2" inpkey="869" componentid="47"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="870" componentid="46"/>
+						</root>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="59" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="894"/>
+						<datapoint pos="1" key="896"/>
+						<datapoint pos="2" key="897"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="895"/>
+					</targets>
+					<view ltx="917" lty="563" rbx="1010" rby="639"/>
+				</component>
+				<component name="EdOrgFromCalendarDate" library="user" blackbox="0" uid="38" kind="19" visible="0">
+					<view ltx="198" lty="668" rbx="799" rby="807"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="file" inpkey="826" componentid="24"/>
+							<entry name="CalendarDateId" inpkey="827" componentid="30"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+								</namespaces>
+							</header>
+							<entry name="Result2" componentid="33" expanded="1">
+								<entry name="SchoolReference" ns="1" outkey="875" expanded="1">
+									<entry name="id" type="attribute" outkey="876"/>
+									<entry name="ref" type="attribute" outkey="877"/>
+									<entry name="SchoolIdentity" ns="1" outkey="828" expanded="1">
+										<entry name="SchoolId" ns="1" outkey="881"/>
+									</entry>
+									<entry name="SchoolLookup" ns="1" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="61" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="967"/>
+					</targets>
+					<view ltx="748" lty="333" rbx="863" rby="351"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="60" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="898"/>
+					</targets>
+					<view ltx="887" lty="668" rbx="1010" rby="686"/>
+					<data>
+						<constant value="_" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="CodeCoalesce" library="user" blackbox="0" uid="54" kind="19" visible="0">
+					<view ltx="1275" lty="-175" rbx="1447" rby="-124"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="857" componentid="44"/>
+							<entry name="replacewith" inpkey="858" componentid="50"/>
+							<entry name="replacewith2" inpkey="859" componentid="47"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="860" componentid="46"/>
+						</root>
+					</data>
+				</component>
+				<component name="EdOrgFromGradingPeriod" library="user" blackbox="0" uid="19" kind="19" visible="0">
+					<view ltx="397" lty="-199" rbx="860" rby="-60"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="GradingPeriodId" inpkey="789" componentid="7"/>
+							<entry name="file" inpkey="788" componentid="13"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+								</namespaces>
+							</header>
+							<entry name="Result2" componentid="11" expanded="1">
+								<entry name="SchoolReference" ns="1" outkey="798" expanded="1">
+									<entry name="id" type="attribute" outkey="799"/>
+									<entry name="ref" type="attribute" outkey="800"/>
+									<entry name="SchoolIdentity" ns="1" outkey="801" expanded="1">
+										<entry name="SchoolId" ns="1" outkey="975"/>
+									</entry>
+									<entry name="SchoolLookup" ns="1">
+										<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+											<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="62" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="970"/>
+						<datapoint pos="1" key="974"/>
+						<datapoint pos="2" key="971"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="972"/>
+					</targets>
+					<view ltx="972" lty="-160" rbx="1065" rby="-84"/>
+				</component>
+				<component name="Interchange-EducationOrgCalendar" library="xml" uid="4" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="917" lty="10" rbx="1563" rby="522"/>
+					<data>
+						<root scrollposition="35">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeEducationOrgCalendar" ns="1" inpkey="403" expanded="1">
+										<entry name="Session" ns="1" inpkey="404" expanded="1">
+											<entry name="id" type="attribute" inpkey="405"/>
+											<entry name="SessionName" ns="1" inpkey="406"/>
+											<entry name="SchoolYear" ns="1" inpkey="407"/>
+											<entry name="Term" ns="1" inpkey="408" expanded="1">
+												<entry name="CodeValue" ns="1" inpkey="669"/>
+											</entry>
+											<entry name="BeginDate" ns="1" inpkey="409"/>
+											<entry name="EndDate" ns="1" inpkey="410"/>
+											<entry name="TotalInstructionalDays" ns="1" inpkey="411"/>
+											<entry name="SchoolReference" ns="1" inpkey="670" expanded="1">
+												<entry name="id" type="attribute" inpkey="671"/>
+												<entry name="ref" type="attribute" inpkey="672"/>
+												<entry name="SchoolIdentity" ns="1" inpkey="673" expanded="1">
+													<entry name="SchoolId" ns="1" inpkey="674"/>
+												</entry>
+												<entry name="SchoolLookup" ns="1">
+													<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" inpkey="420" expanded="1">
+												<entry name="id" type="attribute" inpkey="421"/>
+												<entry name="ref" type="attribute" inpkey="422"/>
+												<entry name="GradingPeriodIdentity" ns="1" inpkey="423" expanded="1">
+													<entry name="GradingPeriod" ns="1" inpkey="424" expanded="1">
+														<entry name="id" type="attribute" inpkey="425"/>
+														<entry name="ref" type="attribute" inpkey="426"/>
+														<entry name="CodeValue" ns="1" inpkey="429"/>
+														<entry name="Namespace" ns="1" inpkey="680"/>
+													</entry>
+													<entry name="BeginDate" ns="1" inpkey="433"/>
+													<entry name="SchoolReference" ns="1" inpkey="734" expanded="1">
+														<entry name="id" type="attribute" inpkey="735"/>
+														<entry name="ref" type="attribute" inpkey="736"/>
+														<entry name="SchoolIdentity" ns="1" inpkey="737" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="738"/>
+														</entry>
+														<entry name="SchoolLookup" ns="1" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="931"/>
+															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="739" expanded="1">
+																<entry name="IdentificationCode" ns="1" inpkey="740"/>
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="741" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="742"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="AcademicWeekReference" ns="1" inpkey="456" expanded="1">
+												<entry name="id" type="attribute" inpkey="457"/>
+												<entry name="ref" type="attribute" inpkey="458"/>
+												<entry name="AcademicWeekIdentity" ns="1" inpkey="459" expanded="1">
+													<entry name="SchoolReference" ns="1" inpkey="936" expanded="1">
+														<entry name="id" type="attribute" inpkey="937"/>
+														<entry name="ref" type="attribute" inpkey="938"/>
+														<entry name="SchoolIdentity" ns="1" inpkey="939" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="940"/>
+														</entry>
+														<entry name="SchoolLookup" ns="1" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="941"/>
+															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="942" expanded="1">
+																<entry name="IdentificationCode" ns="1" inpkey="943"/>
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="944" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="945"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="WeekIdentifier" ns="1" inpkey="468"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="GradingPeriod" ns="1" inpkey="471">
+											<entry name="id" type="attribute" inpkey="472"/>
+											<entry name="SchoolReference" ns="1" inpkey="743" expanded="1">
+												<entry name="id" type="attribute" inpkey="744"/>
+												<entry name="ref" type="attribute" inpkey="745"/>
+												<entry name="SchoolIdentity" ns="1" inpkey="771" expanded="1"/>
+												<entry name="SchoolLookup" ns="1">
+													<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="GradingPeriod" ns="1" inpkey="473" expanded="1">
+												<entry name="id" type="attribute" inpkey="474"/>
+												<entry name="ref" type="attribute" inpkey="475"/>
+												<entry name="CodeValue" ns="1" inpkey="478"/>
+												<entry name="Namespace" ns="1" inpkey="688"/>
+											</entry>
+											<entry name="BeginDate" ns="1" inpkey="481"/>
+											<entry name="EndDate" ns="1" inpkey="482"/>
+											<entry name="TotalInstructionalDays" ns="1" inpkey="483"/>
+											<entry name="PeriodSequence" ns="1" inpkey="484"/>
+										</entry>
+										<entry name="CalendarDate" ns="1" inpkey="498" expanded="1">
+											<entry name="id" type="attribute" inpkey="499"/>
+											<entry name="Date" ns="1" inpkey="500"/>
+											<entry name="SchoolReference" ns="1" inpkey="747" expanded="1">
+												<entry name="id" type="attribute" inpkey="748"/>
+												<entry name="ref" type="attribute" inpkey="749"/>
+												<entry name="SchoolIdentity" ns="1" inpkey="824" expanded="1">
+													<entry name="SchoolId" ns="1" inpkey="750"/>
+												</entry>
+												<entry name="SchoolLookup" ns="1" expanded="1"/>
+											</entry>
+											<entry name="CalendarEvent" ns="1" inpkey="822" expanded="1">
+												<entry name="EventDuration" ns="1" inpkey="968"/>
+												<entry name="CalendarEvent" ns="1" inpkey="690" expanded="1">
+													<entry name="id" type="attribute" inpkey="691"/>
+													<entry name="ref" type="attribute" inpkey="692"/>
+													<entry name="CodeValue" ns="1" inpkey="693"/>
+													<entry name="Namespace" ns="1" inpkey="694"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="AcademicWeek" ns="1" inpkey="517">
+											<entry name="id" type="attribute" inpkey="518"/>
+											<entry name="SchoolReference" ns="1" inpkey="956" expanded="1">
+												<entry name="id" type="attribute" inpkey="957"/>
+												<entry name="ref" type="attribute" inpkey="958"/>
+												<entry name="SchoolIdentity" ns="1" inpkey="959" expanded="1">
+													<entry name="SchoolId" ns="1" inpkey="960"/>
+												</entry>
+											</entry>
+											<entry name="WeekIdentifier" ns="1" inpkey="519"/>
+											<entry name="BeginDate" ns="1" inpkey="520"/>
+											<entry name="EndDate" ns="1" inpkey="521"/>
+											<entry name="TotalInstructionalDays" ns="1" inpkey="522"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" outputinstance="..\Sample XML\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0200}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="64" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="978"/>
+						<datapoint pos="1" key="977"/>
+						<datapoint pos="2" key="979"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="976"/>
+					</targets>
+					<view ltx="1120" lty="-99" rbx="1213" rby="-23"/>
+				</component>
+				<component name="constant" library="core" uid="63" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="973"/>
+					</targets>
+					<view ltx="942" lty="-55" rbx="1065" rby="-37"/>
+					<data>
+						<constant value="_" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="66" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="993"/>
+					</targets>
+					<view ltx="33" lty="-55" rbx="153" rby="-37"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Interchange-EducationOrgCalendar" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-46" lty="10" rbx="491" rby="596"/>
+					<data>
+						<root scrollposition="35">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" outkey="787" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeEducationOrgCalendar" ns="1" outkey="2" expanded="1">
+										<entry name="Session" ns="1" outkey="3" expanded="1">
+											<entry name="id" type="attribute" outkey="4"/>
+											<entry name="SchoolYear" ns="1" outkey="6"/>
+											<entry name="Term" ns="1" outkey="7"/>
+											<entry name="BeginDate" ns="1" outkey="8"/>
+											<entry name="EndDate" ns="1" outkey="9"/>
+											<entry name="TotalInstructionalDays" ns="1" outkey="10"/>
+											<entry name="EducationOrganizationReference" ns="1" outkey="11" expanded="1">
+												<entry name="id" type="attribute" outkey="12"/>
+												<entry name="ref" type="attribute" outkey="13"/>
+												<entry name="EducationOrganizationIdentity" ns="1" outkey="14" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="15"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" outkey="19" expanded="1">
+												<entry name="id" type="attribute" outkey="20"/>
+												<entry name="ref" type="attribute" outkey="21"/>
+												<entry name="GradingPeriodIdentity" ns="1" outkey="22" expanded="1">
+													<entry name="GradingPeriod" ns="1" outkey="23" expanded="1">
+														<entry name="id" type="attribute" outkey="24"/>
+														<entry name="ref" type="attribute" outkey="25"/>
+														<entry name="namespace" type="attribute" outkey="27"/>
+														<entry name="CodeValue" ns="1" outkey="28"/>
+														<entry name="ShortDescription" ns="1" outkey="845"/>
+														<entry name="Description" ns="1" outkey="846"/>
+													</entry>
+													<entry name="BeginDate" ns="1" outkey="32"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="34" expanded="1">
+														<entry name="id" type="attribute" outkey="35"/>
+														<entry name="ref" type="attribute" outkey="36"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="37" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="38"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" outkey="731" expanded="1">
+																<entry name="IdentificationSystem" type="attribute" outkey="732"/>
+																<entry name="ID" ns="1" outkey="733"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="CalendarDateReference" ns="1">
+												<entry name="CalendarDateIdentity" ns="1" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="AcademicWeekReference" ns="1" outkey="55" expanded="1">
+												<entry name="id" type="attribute" outkey="56"/>
+												<entry name="ref" type="attribute" outkey="57"/>
+												<entry name="AcademicWeekIdentity" ns="1" outkey="58" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" outkey="59" expanded="1">
+														<entry name="id" type="attribute" outkey="60"/>
+														<entry name="ref" type="attribute" outkey="61"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="62" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="63"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" outkey="905" expanded="1">
+																<entry name="IdentificationSystem" type="attribute" outkey="906"/>
+																<entry name="ID" ns="1" outkey="916"/>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="WeekIdentifier" ns="1" outkey="67"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="GradingPeriod" ns="1">
+											<entry name="id" type="attribute" outkey="71"/>
+											<entry name="GradingPeriod" ns="1" outkey="72" expanded="1">
+												<entry name="id" type="attribute" outkey="73"/>
+												<entry name="ref" type="attribute" outkey="74"/>
+												<entry name="namespace" type="attribute" outkey="76"/>
+												<entry name="CodeValue" ns="1" outkey="77"/>
+												<entry name="ShortDescription" ns="1" outkey="855"/>
+												<entry name="Description" ns="1" outkey="856"/>
+											</entry>
+											<entry name="BeginDate" ns="1" outkey="80"/>
+											<entry name="EndDate" ns="1" outkey="81"/>
+											<entry name="TotalInstructionalDays" ns="1" outkey="82"/>
+											<entry name="PeriodSequence" ns="1" outkey="83"/>
+											<entry name="CalendarDateReference" ns="1" expanded="1">
+												<entry name="CalendarDateIdentity" ns="1" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="CalendarDate" ns="1" expanded="1">
+											<entry name="id" type="attribute" outkey="98"/>
+											<entry name="Date" ns="1" outkey="99"/>
+											<entry name="CalendarEvent" ns="1" outkey="100" expanded="1">
+												<entry name="id" type="attribute" outkey="101"/>
+												<entry name="ref" type="attribute" outkey="102"/>
+												<entry name="namespace" type="attribute" outkey="104"/>
+												<entry name="CodeValue" ns="1" outkey="105"/>
+												<entry name="ShortDescription" ns="1" outkey="865"/>
+												<entry name="Description" ns="1" outkey="866"/>
+											</entry>
+											<entry name="EducationOrganizationReference" ns="1" expanded="1">
+												<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="AcademicWeek" ns="1" outkey="116">
+											<entry name="id" type="attribute" outkey="117"/>
+											<entry name="WeekIdentifier" ns="1" outkey="118"/>
+											<entry name="BeginDate" ns="1" outkey="119"/>
+											<entry name="EndDate" ns="1" outkey="120"/>
+											<entry name="TotalInstructionalDays" ns="1" outkey="121"/>
+											<entry name="CalendarDateReference" ns="1" expanded="1">
+												<entry name="CalendarDateIdentity" ns="1" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" outkey="127" expanded="1">
+														<entry name="id" type="attribute" outkey="128"/>
+														<entry name="ref" type="attribute" outkey="129"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="130" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="131"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\..\v1.2\Samples\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="65" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="990"/>
+						<datapoint pos="1" key="991"/>
+						<datapoint pos="2" key="989"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="992"/>
+					</targets>
+					<view ltx="261" lty="-83" rbx="354" rby="-7"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="809">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="403" edgekey="536"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="404" edgekey="537"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="405" edgekey="538"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="407" edgekey="540"/>
+							<edge vertexkey="990" edgekey="994"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="408" edgekey="541"/>
+							<edge vertexkey="669" edgekey="700"/>
+							<edge vertexkey="989" edgekey="995"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="409" edgekey="542"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="410" edgekey="543"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="411" edgekey="544"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="670" edgekey="701"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="671" edgekey="702"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="672" edgekey="703"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="673" edgekey="704"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="674" edgekey="705"/>
+							<edge vertexkey="979" edgekey="980"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="420" edgekey="553"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="421" edgekey="554"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="978" edgekey="981"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="423" edgekey="556"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="424" edgekey="557"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="425" edgekey="558"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="426" edgekey="559"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="680" edgekey="711"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="847" edgekey="851"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="433" edgekey="566"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="734" edgekey="751"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="735" edgekey="752"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="736" edgekey="753"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="737" edgekey="754"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="738" edgekey="755"/>
+							<edge vertexkey="931" edgekey="934"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="55">
+						<edges>
+							<edge vertexkey="456" edgekey="589"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="56">
+						<edges>
+							<edge vertexkey="457" edgekey="590"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="458" edgekey="591"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58">
+						<edges>
+							<edge vertexkey="459" edgekey="592"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="59">
+						<edges>
+							<edge vertexkey="936" edgekey="946"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="937" edgekey="947"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="61">
+						<edges>
+							<edge vertexkey="938" edgekey="948"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="62">
+						<edges>
+							<edge vertexkey="939" edgekey="949"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="63">
+						<edges>
+							<edge vertexkey="940" edgekey="950"/>
+							<edge vertexkey="941" edgekey="951"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="67">
+						<edges>
+							<edge vertexkey="468" edgekey="601"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="71">
+						<edges>
+							<edge vertexkey="789" edgekey="790"/>
+							<edge vertexkey="970" edgekey="982"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="72">
+						<edges>
+							<edge vertexkey="473" edgekey="606"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="73">
+						<edges>
+							<edge vertexkey="474" edgekey="607"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="74">
+						<edges>
+							<edge vertexkey="475" edgekey="608"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="76">
+						<edges>
+							<edge vertexkey="688" edgekey="786"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="77">
+						<edges>
+							<edge vertexkey="857" edgekey="861"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="80">
+						<edges>
+							<edge vertexkey="481" edgekey="614"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="81">
+						<edges>
+							<edge vertexkey="482" edgekey="615"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="82">
+						<edges>
+							<edge vertexkey="483" edgekey="616"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="83">
+						<edges>
+							<edge vertexkey="484" edgekey="617"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="98">
+						<edges>
+							<edge vertexkey="827" edgekey="831"/>
+							<edge vertexkey="894" edgekey="961"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="99">
+						<edges>
+							<edge vertexkey="500" edgekey="633"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="100">
+						<edges>
+							<edge vertexkey="690" edgekey="720"/>
+							<edge vertexkey="822" edgekey="823"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="101">
+						<edges>
+							<edge vertexkey="691" edgekey="721"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="102">
+						<edges>
+							<edge vertexkey="692" edgekey="722"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="104">
+						<edges>
+							<edge vertexkey="694" edgekey="723"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="105">
+						<edges>
+							<edge vertexkey="867" edgekey="871"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="116">
+						<edges>
+							<edge vertexkey="517" edgekey="650"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="117">
+						<edges>
+							<edge vertexkey="518" edgekey="651"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="118">
+						<edges>
+							<edge vertexkey="519" edgekey="652"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="119">
+						<edges>
+							<edge vertexkey="520" edgekey="653"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="120">
+						<edges>
+							<edge vertexkey="521" edgekey="654"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="121">
+						<edges>
+							<edge vertexkey="522" edgekey="655"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="127">
+						<edges>
+							<edge vertexkey="956" edgekey="962"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="128">
+						<edges>
+							<edge vertexkey="957" edgekey="963"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="129">
+						<edges>
+							<edge vertexkey="958" edgekey="964"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="130">
+						<edges>
+							<edge vertexkey="959" edgekey="965"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="131">
+						<edges>
+							<edge vertexkey="960" edgekey="966"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="731">
+						<edges>
+							<edge vertexkey="739" edgekey="764"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="732">
+						<edges>
+							<edge vertexkey="741" edgekey="765"/>
+							<edge vertexkey="742" edgekey="766"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="733">
+						<edges>
+							<edge vertexkey="740" edgekey="767"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="787">
+						<edges>
+							<edge vertexkey="788" edgekey="791"/>
+							<edge vertexkey="826" edgekey="832"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="798">
+						<edges>
+							<edge vertexkey="743" edgekey="812"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="799">
+						<edges>
+							<edge vertexkey="744" edgekey="813"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="800">
+						<edges>
+							<edge vertexkey="745" edgekey="814"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="801">
+						<edges>
+							<edge vertexkey="771" edgekey="809"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="828">
+						<edges>
+							<edge vertexkey="824" edgekey="844"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="845">
+						<edges>
+							<edge vertexkey="848" edgekey="852"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="846">
+						<edges>
+							<edge vertexkey="849" edgekey="853"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="850">
+						<edges>
+							<edge vertexkey="429" edgekey="854"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="855">
+						<edges>
+							<edge vertexkey="858" edgekey="862"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="856">
+						<edges>
+							<edge vertexkey="859" edgekey="863"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="860">
+						<edges>
+							<edge vertexkey="478" edgekey="864"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="865">
+						<edges>
+							<edge vertexkey="868" edgekey="872"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="866">
+						<edges>
+							<edge vertexkey="869" edgekey="873"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="870">
+						<edges>
+							<edge vertexkey="693" edgekey="874"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="875">
+						<edges>
+							<edge vertexkey="747" edgekey="878"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="876">
+						<edges>
+							<edge vertexkey="748" edgekey="879"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="877">
+						<edges>
+							<edge vertexkey="749" edgekey="880"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="881">
+						<edges>
+							<edge vertexkey="750" edgekey="882"/>
+							<edge vertexkey="897" edgekey="901"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="895">
+						<edges>
+							<edge vertexkey="499" edgekey="902"/>
+							<edge vertexkey="498" edgekey="904"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="898">
+						<edges>
+							<edge vertexkey="896" edgekey="903"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="905">
+						<edges>
+							<edge vertexkey="942" edgekey="952"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="906">
+						<edges>
+							<edge vertexkey="944" edgekey="953"/>
+							<edge vertexkey="945" edgekey="954"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="916">
+						<edges>
+							<edge vertexkey="943" edgekey="955"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="967">
+						<edges>
+							<edge vertexkey="968" edgekey="969"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="972">
+						<edges>
+							<edge vertexkey="472" edgekey="983"/>
+							<edge vertexkey="471" edgekey="984"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="973">
+						<edges>
+							<edge vertexkey="974" edgekey="985"/>
+							<edge vertexkey="977" edgekey="986"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="975">
+						<edges>
+							<edge vertexkey="971" edgekey="987"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="976">
+						<edges>
+							<edge vertexkey="422" edgekey="988"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="992">
+						<edges>
+							<edge vertexkey="406" edgekey="996"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="993">
+						<edges>
+							<edge vertexkey="991" edgekey="997"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="EdOrgFromGradingPeriod" library="user" blackbox="0" uid="5" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="logical-and" library="core" uid="9" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="27"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="1251" lty="512" rbx="1363" rby="570"/>
+				</component>
+				<component name="GradingPeriodId" library="core" uid="7" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view ltx="953" lty="246" rbx="1089" rby="285"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="GradingPeriodId"/>
+					</data>
+				</component>
+				<component name="file" library="core" uid="13" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view ltx="564" lty="304" rbx="638" rby="343"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="file"/>
+					</data>
+				</component>
+				<component name="EducationOrganizationRefe..." library="core" uid="10" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="18"/>
+						<datapoint pos="1" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+						<datapoint/>
+					</targets>
+					<view ltx="1285" lty="412" rbx="1485" rby="468"/>
+				</component>
+				<component name="exists" library="core" uid="8" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="14"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="26"/>
+					</targets>
+					<view ltx="1130" lty="579" rbx="1219" rby="618"/>
+				</component>
+				<component name="equal" library="core" uid="15" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+						<datapoint pos="1" key="20"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="1107" lty="503" rbx="1193" rby="559"/>
+				</component>
+				<component name="document" library="xml" uid="16" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="1415" lty="599" rbx="1720" rby="819"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+								<entry name="SchoolReference" ns="1" inpkey="46" outkey="47" expanded="1">
+									<entry name="id" type="attribute" inpkey="74"/>
+									<entry name="ref" type="attribute" inpkey="75"/>
+									<entry name="SchoolIdentity" ns="1" inpkey="76" expanded="1">
+										<entry name="SchoolId" ns="1" inpkey="77" outkey="52"/>
+									</entry>
+									<entry name="SchoolLookup" ns="1" expanded="1">
+										<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+											<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" instanceroot="{http://ed-fi.org/0200}Session/{http://ed-fi.org/0200}SchoolReference"/>
+						<wsdl/>
+						<parameter usageKind="variable" name="EducationOrganizationReference"/>
+					</data>
+				</component>
+				<component name="group-by" library="core" uid="12" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="33"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+						<datapoint pos="1" key="28"/>
+					</targets>
+					<view ltx="1701" lty="387" rbx="1810" rby="443"/>
+				</component>
+				<component name="document" library="xml" uid="11" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="1928" lty="475" rbx="2462" rby="664"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://ed-fi.org/0200"/>
+								</namespaces>
+							</header>
+							<entry name="SchoolReference" inpkey="54" expanded="1">
+								<entry name="SchoolIdentity" expanded="1">
+									<entry name="SchoolId" inpkey="55"/>
+								</entry>
+								<entry name="SchoolLookup" expanded="1"/>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" instanceroot="{http://ed-fi.org/0200}Session/{http://ed-fi.org/0200}SchoolReference"/>
+						<wsdl/>
+						<parameter usageKind="output" name="Result2"/>
+					</data>
+				</component>
+				<component name="Interchange-EducationOrgCalendar" library="xml" uid="14" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="607" lty="356" rbx="930" rby="803"/>
+					<data>
+						<root scrollposition="63">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" inpkey="25" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeEducationOrgCalendar" ns="1" expanded="1">
+										<entry name="Session" ns="1" expanded="1">
+											<entry name="EducationOrganizationReference" ns="1" outkey="39" expanded="1">
+												<entry name="id" type="attribute" outkey="78"/>
+												<entry name="ref" type="attribute" outkey="79"/>
+												<entry name="EducationOrganizationIdentity" ns="1" outkey="80" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="43"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" expanded="1">
+												<entry name="ref" type="attribute" outkey="71"/>
+												<entry name="GradingPeriodIdentity" ns="1" expanded="1"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="46" edgekey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6" edgekey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="35"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="16" edgekey="36"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="73"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="27" edgekey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="55" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="54" edgekey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="18" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="43">
+						<edges>
+							<edge vertexkey="14" edgekey="66"/>
+							<edge vertexkey="77" edgekey="81"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47">
+						<edges>
+							<edge vertexkey="12" edgekey="69"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52">
+						<edges>
+							<edge vertexkey="33" edgekey="70"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="71">
+						<edges>
+							<edge vertexkey="20" edgekey="72"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="78">
+						<edges>
+							<edge vertexkey="74" edgekey="82"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="79">
+						<edges>
+							<edge vertexkey="75" edgekey="83"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="80">
+						<edges>
+							<edge vertexkey="76" edgekey="84"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="EdOrgFromCalendarDate" library="user" blackbox="0" uid="20" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="CalendarDateId" library="core" uid="30" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="553" lty="517" rbx="686" rby="556"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="CalendarDateId"/>
+					</data>
+				</component>
+				<component name="file" library="core" uid="24" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="-52" lty="28" rbx="22" rby="67"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="file"/>
+					</data>
+				</component>
+				<component name="Interchange-EducationOrgCalendar" library="xml" uid="32" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="60" lty="310" rbx="383" rby="605"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" inpkey="36" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeEducationOrgCalendar" ns="1" expanded="1">
+										<entry name="GradingPeriod" ns="1" expanded="1">
+											<entry name="id" type="attribute" outkey="74"/>
+											<entry name="CalendarDateReference" ns="1" expanded="1">
+												<entry name="ref" type="attribute" outkey="75"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="EducationOrganizationRefe..." library="core" uid="27" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="18"/>
+						<datapoint pos="1" key="27"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="19"/>
+						<datapoint/>
+					</targets>
+					<view ltx="795" lty="127" rbx="995" rby="183"/>
+				</component>
+				<component name="exists" library="core" uid="26" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="22"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="539" lty="434" rbx="628" rby="473"/>
+				</component>
+				<component name="equal" library="core" uid="31" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="31"/>
+						<datapoint pos="1" key="35"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="784" lty="550" rbx="870" rby="606"/>
+				</component>
+				<component name="logical-and" library="core" uid="28" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="25"/>
+						<datapoint pos="1" key="21"/>
+						<datapoint pos="2" key="28"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="26"/>
+					</targets>
+					<view ltx="762" lty="321" rbx="874" rby="397"/>
+				</component>
+				<component name="equal" library="core" uid="29" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="29"/>
+						<datapoint pos="1" key="23"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view ltx="629" lty="284" rbx="715" rby="340"/>
+				</component>
+				<component name="group-by" library="core" uid="34" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="46"/>
+						<datapoint pos="1" key="44"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="37"/>
+						<datapoint pos="1" key="40"/>
+					</targets>
+					<view ltx="971" lty="94" rbx="1080" rby="150"/>
+				</component>
+				<component name="document" library="xml" uid="35" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="921" lty="368" rbx="1175" rby="558"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+								<entry name="SchoolReference" ns="1" inpkey="57" outkey="64" expanded="1">
+									<entry name="id" type="attribute" inpkey="65"/>
+									<entry name="ref" type="attribute" inpkey="66"/>
+									<entry name="SchoolIdentity" ns="1" inpkey="94" expanded="1">
+										<entry name="SchoolId" ns="1" inpkey="67" outkey="68"/>
+									</entry>
+									<entry name="SchoolLookup" ns="1" expanded="1"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" instanceroot="{http://ed-fi.org/0200}Session/{http://ed-fi.org/0200}GradingPeriodReference/{http://ed-fi.org/0200}GradingPeriodIdentity/{http://ed-fi.org/0200}SchoolReference"/>
+						<wsdl/>
+						<parameter usageKind="variable" name="EducationOrganizationReference"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="33" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="1249" lty="251" rbx="1513" rby="450"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://ed-fi.org/0200"/>
+								</namespaces>
+							</header>
+							<entry name="SchoolReference" inpkey="62" expanded="1">
+								<entry name="SchoolIdentity" expanded="1">
+									<entry name="SchoolId" inpkey="63"/>
+								</entry>
+								<entry name="SchoolLookup" expanded="1">
+									<entry name="SchoolId" inpkey="89"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" instanceroot="{http://ed-fi.org/0200}Session/{http://ed-fi.org/0200}GradingPeriodReference/{http://ed-fi.org/0200}GradingPeriodIdentity/{http://ed-fi.org/0200}SchoolReference"/>
+						<wsdl/>
+						<parameter usageKind="output" name="Result2"/>
+					</data>
+				</component>
+				<component name="Interchange-EducationOrgCalendar" library="xml" uid="25" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="178" lty="-4" rbx="566" rby="251"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" inpkey="97" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeEducationOrgCalendar" ns="1" expanded="1">
+										<entry name="Session" ns="1" expanded="1">
+											<entry name="EducationOrganizationReference" ns="1" outkey="56" expanded="1">
+												<entry name="id" type="attribute" outkey="70"/>
+												<entry name="ref" type="attribute" outkey="71"/>
+												<entry name="EducationOrganizationIdentity" ns="1" outkey="93" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="72"/>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" expanded="1">
+												<entry name="ref" type="attribute" outkey="73"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\1.1-to-1.2\EducationOrgCalendar\Sample XML 1.2\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="36" edgekey="58"/>
+							<edge vertexkey="97" edgekey="98"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="57" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="21" edgekey="109"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="25" edgekey="110"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="27" edgekey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="31" edgekey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="28" edgekey="111"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="62" edgekey="77"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="63" edgekey="78"/>
+							<edge vertexkey="89" edgekey="99"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="56">
+						<edges>
+							<edge vertexkey="18" edgekey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="46" edgekey="79"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="68">
+						<edges>
+							<edge vertexkey="44" edgekey="80"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="70">
+						<edges>
+							<edge vertexkey="65" edgekey="81"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="71">
+						<edges>
+							<edge vertexkey="66" edgekey="82"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="72">
+						<edges>
+							<edge vertexkey="67" edgekey="83"/>
+							<edge vertexkey="22" edgekey="85"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="73">
+						<edges>
+							<edge vertexkey="23" edgekey="112"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="74">
+						<edges>
+							<edge vertexkey="29" edgekey="113"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="75">
+						<edges>
+							<edge vertexkey="35" edgekey="88"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="93">
+						<edges>
+							<edge vertexkey="94" edgekey="96"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="CodeCoalesce" library="user" blackbox="0" uid="39" editable="1" inline="1">
+		<properties/>
+		<structure>
+			<children>
+				<component name="substitute-missing" library="core" uid="41" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="15"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view ltx="762" lty="168" rbx="909" rby="224"/>
+				</component>
+				<component name="substring" library="core" uid="42" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="13"/>
+						<datapoint pos="1" key="11"/>
+						<datapoint pos="2" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="533" lty="361" rbx="638" rby="434"/>
+				</component>
+				<component name="substring" library="core" uid="43" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="10"/>
+						<datapoint pos="1" key="2"/>
+						<datapoint pos="2" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="17"/>
+					</targets>
+					<view ltx="534" lty="261" rbx="639" rby="334"/>
+				</component>
+				<component name="node" library="core" uid="44" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="358" lty="168" rbx="442" rby="207"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="node"/>
+					</data>
+				</component>
+				<component name="substitute-missing" library="core" uid="45" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="18"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="568" lty="151" rbx="715" rby="207"/>
+				</component>
+				<component name="CodeValue" library="core" uid="46" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="20"/>
+					</sources>
+					<view ltx="1126" lty="168" rbx="1239" rby="207"/>
+					<data>
+						<output datatype="anyType"/>
+						<wsdl/>
+						<parameter usageKind="output" name="CodeValue"/>
+					</data>
+				</component>
+				<component name="replacewith2" library="core" uid="47" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="358" lty="362" rbx="481" rby="401"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="replacewith2"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="48" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="327" lty="326" rbx="448" rby="344"/>
+					<data>
+						<constant value="50" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="49" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="327" lty="309" rbx="442" rby="327"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="replacewith" library="core" uid="50" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="358" lty="261" rbx="475" rby="300"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="replacewith"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="21"/>
+							<edge vertexkey="11" edgekey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4" edgekey="23"/>
+							<edge vertexkey="16" edgekey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6" edgekey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8" edgekey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10" edgekey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="13" edgekey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="15" edgekey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="18" edgekey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20" edgekey="31"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
