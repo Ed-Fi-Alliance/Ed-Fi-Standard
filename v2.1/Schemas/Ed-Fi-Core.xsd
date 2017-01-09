@@ -583,7 +583,7 @@ Prose
     <xs:complexContent>
       <xs:extension base="EducationOrganization">
         <xs:sequence>
-          <xs:element name="CommunityOrganiztionId" type="xs:int">
+          <xs:element name="CommunityOrganizationId" type="xs:int">
             <xs:annotation>
               <xs:documentation>The identifier assigned to a CommunityOrganization.</xs:documentation>
             </xs:annotation>
@@ -609,7 +609,7 @@ Prose
           </xs:element>
           <xs:element name="CommunityOrganizationReference" type="CommunityOrganizationReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>CommunityOrganziation of which the CommunityProvider is an organizational component.</xs:documentation>
+              <xs:documentation>CommunityOrganization of which the CommunityProvider is an organizational component.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="ProviderProfitability" type="ProviderProfitabilityDescriptorReferenceType" minOccurs="0">
@@ -7110,7 +7110,7 @@ Second grade
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="CommunityOrganiztionId" type="xs:int">
+      <xs:element name="CommunityOrganizationId" type="xs:int">
         <xs:annotation>
           <xs:documentation>The identifier assigned to a CommunityOrganization.</xs:documentation>
         </xs:annotation>
