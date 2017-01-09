@@ -5554,7 +5554,7 @@ LEP Exempt
           </xs:element>
           <xs:element name="ContactTitle" type="ContactTitle">
             <xs:annotation>
-              <xs:documentation>The title of the contact in the context of the EducationOrganization</xs:documentation>
+              <xs:documentation>The title of the contact in the context of the EducationOrganization.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="ContactType" type="ContactTypeDescriptorReferenceType" minOccurs="0">
@@ -5565,14 +5565,14 @@ LEP Exempt
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ElectronicMail" type="ElectronicMail">
+          <xs:element name="ElectronicMailAddress" type="ElectronicMailAddress">
             <xs:annotation>
-              <xs:documentation>The optional email for the contact associated with the EducationOrganization.</xs:documentation>
+              <xs:documentation>The email for the contact associated with the EducationOrganization.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Telephone" type="Telephone" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The optional telephone for the contact association with the EducationOrganization.</xs:documentation>
+              <xs:documentation>The optional telephone for the contact associated with the EducationOrganization.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -9494,7 +9494,7 @@ Vacation.</xs:documentation>
       </xs:element>
       <xs:element name="ContactTitle" type="ContactTitle">
         <xs:annotation>
-          <xs:documentation>The title of the contact in the context of the EducationOrganization</xs:documentation>
+          <xs:documentation>The title of the contact in the context of the EducationOrganization.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
