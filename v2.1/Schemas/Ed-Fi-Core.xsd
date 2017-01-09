@@ -222,7 +222,7 @@ Second grade
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Version" type="Version">
+          <xs:element name="Version" type="AssessmentVersion">
             <xs:annotation>
               <xs:documentation>The version identifier for the assessment.</xs:documentation>
             </xs:annotation>
@@ -341,7 +341,7 @@ Second grade
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Version" type="Version" minOccurs="0">
+          <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The version identifier for the AssessmentFamily.</xs:documentation>
             </xs:annotation>
@@ -6034,7 +6034,7 @@ Local Neglected Program.</xs:documentation>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Version" type="Version" minOccurs="0">
+      <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The version identifier for the AssessmentFamily.</xs:documentation>
         </xs:annotation>
@@ -6099,7 +6099,7 @@ Second grade
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Version" type="Version">
+      <xs:element name="Version" type="AssessmentVersion">
         <xs:annotation>
           <xs:documentation>The version identifier for the assessment.</xs:documentation>
         </xs:annotation>
@@ -6198,7 +6198,7 @@ Second grade
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Version" type="Version" minOccurs="0">
+      <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The version identifier for the assessment.</xs:documentation>
         </xs:annotation>
@@ -13549,17 +13549,6 @@ Met standard
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Met Standard">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="C-scaled scores">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="College Board examination scores">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -21561,6 +21550,15 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
   <xs:annotation>
     <xs:documentation>===== Numeric Simple Types =====</xs:documentation>
   </xs:annotation>
+  <xs:simpleType name="AssessmentVersion">
+    <xs:annotation>
+      <xs:documentation>The version identifier for the assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int" />
+  </xs:simpleType>
   <xs:simpleType name="CreditConversion">
     <xs:annotation>
       <xs:documentation>Conversion factor that when multiplied by the number of credits is equivalent to Carnegie units.</xs:documentation>
@@ -21800,14 +21798,5 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:int">
       <xs:minInclusive value="0" />
     </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="Version">
-    <xs:annotation>
-      <xs:documentation>The version identifier for the assessment.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Simple</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:int" />
   </xs:simpleType>
 </xs:schema>
