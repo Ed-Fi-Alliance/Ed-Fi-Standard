@@ -2987,7 +2987,7 @@ Special education students
               <xs:documentation>The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="HispanicLatinoEthnicity" type="xs:boolean">
+          <xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
             </xs:annotation>
@@ -3148,7 +3148,7 @@ Special education students
               <xs:documentation>Locator for the student photo.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="HispanicLatinoEthnicity" type="xs:boolean">
+          <xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
             </xs:annotation>
