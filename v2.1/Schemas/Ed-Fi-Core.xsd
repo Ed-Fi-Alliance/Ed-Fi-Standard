@@ -583,7 +583,7 @@ Prose
     <xs:complexContent>
       <xs:extension base="EducationOrganization">
         <xs:sequence>
-          <xs:element name="CommunityOrganizationId" type="xs:int">
+          <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
             <xs:annotation>
               <xs:documentation>The identifier assigned to a CommunityOrganization.</xs:documentation>
             </xs:annotation>
@@ -602,7 +602,7 @@ Prose
     <xs:complexContent>
       <xs:extension base="EducationOrganization">
         <xs:sequence>
-          <xs:element name="CommunityProviderIdentifier" type="xs:int">
+          <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
             <xs:annotation>
               <xs:documentation>The identifier assigned to a CommunityProvider.</xs:documentation>
             </xs:annotation>
@@ -1358,11 +1358,6 @@ Representative of visiting school
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="StateOrganizationId" type="IdentificationCode">
-            <xs:annotation>
-              <xs:documentation>The identifier assigned to an education organization by the StateEducationAgency (SEA).</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
@@ -1422,9 +1417,9 @@ Representative of visiting school
     <xs:complexContent>
       <xs:extension base="EducationOrganization">
         <xs:sequence>
-          <xs:element name="EducationOrganizationNetworkId" type="xs:int">
+          <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
             <xs:annotation>
-              <xs:documentation>A unique number or alphanumeric code assigned to a network of education organizations.</xs:documentation>
+              <xs:documentation>The identifier assigned to an EducationOrganizationNetwork.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="NetworkPurpose" type="NetworkPurposeType">
@@ -1446,9 +1441,9 @@ Representative of visiting school
     <xs:complexContent>
       <xs:extension base="EducationOrganization">
         <xs:sequence>
-          <xs:element name="EducationServiceCenterId" type="xs:int">
+          <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
             <xs:annotation>
-              <xs:documentation>The identifier assigned to an education service center by the State Education Agency (SEA).</xs:documentation>
+              <xs:documentation>The identifier assigned to an EducationServiceCenter.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="StateEducationAgencyReference" type="StateEducationAgencyReferenceType" minOccurs="0">
@@ -2411,9 +2406,9 @@ Vacation.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="EducationOrganization">
         <xs:sequence>
-          <xs:element name="LocalEducationAgencyId" type="xs:int">
+          <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
             <xs:annotation>
-              <xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).</xs:documentation>
+              <xs:documentation>The identifier assigned to a LocalEducationAgency.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LocalEducationAgencyCategory" type="LocalEducationAgencyCategoryType">
@@ -2981,9 +2976,9 @@ Bilingual/English as a Second Language.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="EducationOrganization">
         <xs:sequence>
-          <xs:element name="SchoolId" type="xs:int">
+          <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
             <xs:annotation>
-              <xs:documentation>The identifier assigned to a school by the State Education Agency (SEA).</xs:documentation>
+              <xs:documentation>The identifier assigned to a School.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" maxOccurs="unbounded">
@@ -3495,9 +3490,9 @@ Vacation.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="EducationOrganization">
         <xs:sequence>
-          <xs:element name="StateEducationAgencyId" type="xs:int">
+          <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
             <xs:annotation>
-              <xs:documentation>The identifier assigned to a state education agency by the StateEducationAgency (SEA).</xs:documentation>
+              <xs:documentation>The identifier assigned to a StateEducationAgency.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="StateEducationAgencyAccountability" type="StateEducationAgencyAccountability" minOccurs="0" maxOccurs="unbounded">
@@ -7110,7 +7105,7 @@ Second grade
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="CommunityOrganizationId" type="xs:int">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
         <xs:annotation>
           <xs:documentation>The identifier assigned to a CommunityOrganization.</xs:documentation>
         </xs:annotation>
@@ -7144,7 +7139,7 @@ Second grade
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="CommunityProviderIdentifier" type="xs:int">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
         <xs:annotation>
           <xs:documentation>The identifier assigned to a CommunityProvider.</xs:documentation>
         </xs:annotation>
@@ -7591,9 +7586,9 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="EducationOrganizationId" type="xs:int">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to an education agency by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+          <xs:documentation>The identifier assigned to an education organization.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -7645,9 +7640,9 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="EducationOrganizationId" type="xs:int" minOccurs="0">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to an education agency by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+          <xs:documentation>The identifier assigned to an education organization.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
@@ -7714,9 +7709,9 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="EducationOrganizationNetworkId" type="xs:int">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to a network of education organizations.</xs:documentation>
+          <xs:documentation>The identifier assigned to an EducationOrganizationNetwork.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -7729,9 +7724,9 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="EducationOrganizationNetworkId" type="xs:int" minOccurs="0">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to a network of education organizations.</xs:documentation>
+          <xs:documentation>The identifier assigned to an EducationOrganizationNetwork.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
@@ -7846,9 +7841,9 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="EducationServiceCenterId" type="xs:int">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to an education service center by the State Education Agency (SEA).</xs:documentation>
+          <xs:documentation>The identifier assigned to an EducationServiceCenter.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -7861,9 +7856,9 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="EducationServiceCenterId" type="xs:int" minOccurs="0">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to an education service center by the State Education Agency (SEA).</xs:documentation>
+          <xs:documentation>The identifier assigned to an EducationServiceCenter.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
@@ -8592,9 +8587,9 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="LocalEducationAgencyId" type="xs:int">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).</xs:documentation>
+          <xs:documentation>The identifier assigned to a LocalEducationAgency.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -8607,9 +8602,9 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="LocalEducationAgencyId" type="xs:int" minOccurs="0">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).</xs:documentation>
+          <xs:documentation>The identifier assigned to a LocalEducationAgency.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
@@ -9122,9 +9117,9 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="SchoolId" type="xs:int">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to a school by the State Education Agency (SEA).</xs:documentation>
+          <xs:documentation>The identifier assigned to a School.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -9137,9 +9132,9 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="SchoolId" type="xs:int" minOccurs="0">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to a school by the State Education Agency (SEA).</xs:documentation>
+          <xs:documentation>The identifier assigned to a School.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
@@ -9951,9 +9946,9 @@ Bilingual/English as a Second Language.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="StateEducationAgencyId" type="xs:int">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to a state education agency by the StateEducationAgency (SEA).</xs:documentation>
+          <xs:documentation>The identifier assigned to a StateEducationAgency.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -9966,9 +9961,9 @@ Bilingual/English as a Second Language.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="StateEducationAgencyId" type="xs:int" minOccurs="0">
+      <xs:element name="EducationOrganizationIdentifier" type="IdentificationCode" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The identifier assigned to a state education agency by the StateEducationAgency (SEA).</xs:documentation>
+          <xs:documentation>The identifier assigned to a StateEducationAgency.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0">
