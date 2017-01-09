@@ -11054,7 +11054,7 @@ Tardy.</xs:documentation>
       </xs:element>
       <xs:element name="BirthCountry" type="CountryDescriptorReferenceType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The country in which an individual is born.</xs:documentation>
+          <xs:documentation>The country in which an individual is born. It is strongly recommended that entries use only ISO 3166 2-letter country codes.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>CountryDescriptor</ann:Descriptor>
           </xs:appinfo>
