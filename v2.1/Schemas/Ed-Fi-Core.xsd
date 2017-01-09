@@ -5926,6 +5926,16 @@ Reporter.</xs:documentation>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="BeginDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>Month, day, and year of the start date of an education organization's responsibility for a student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EndDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Month, day, and year of the end date of an education organization's responsibility for a student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -10212,6 +10222,11 @@ Bilingual/English as a Second Language.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>ResponsibilityDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Month, day, and year of the start date of an education organization's responsibility for a student.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
