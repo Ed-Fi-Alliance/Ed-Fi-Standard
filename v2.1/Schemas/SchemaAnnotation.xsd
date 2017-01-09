@@ -16,6 +16,7 @@
       <xs:documentation>Identifies the descriptor being referenced by a DescriptorReferenceType element.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:token">
+      <xs:enumeration value="AbsenceEventCategoryDescriptor" />
       <xs:enumeration value="AcademicSubjectDescriptor" />
       <xs:enumeration value="AccommodationDescriptor" />
       <xs:enumeration value="AccountCodeDescriptor" />
@@ -27,9 +28,11 @@
       <xs:enumeration value="AssessmentReportingMethodDescriptor" />
       <xs:enumeration value="AttendanceEventCategoryDescriptor" />
       <xs:enumeration value="BehaviorDescriptor" />
-      <xs:enumeration value="CalendarEventDescriptor" />
+      <xs:enumeration value="CalendarEventCategoryDescriptor" />
+      <xs:enumeration value="CalendarTypeDescriptor" />
       <xs:enumeration value="ClassroomPositionDescriptor" />
       <xs:enumeration value="CompetencyLevelDescriptor" />
+      <xs:enumeration value="ContactTypeDescriptor" />
       <xs:enumeration value="ContinuationOfServicesReasonDescriptor" />
       <xs:enumeration value="CountryDescriptor" />
       <xs:enumeration value="CourseIdentificationSystemDescriptor" />
@@ -47,10 +50,15 @@
       <xs:enumeration value="LanguageDescriptor" />
       <xs:enumeration value="LevelDescriptor" />
       <xs:enumeration value="LevelOfEducationDescriptor" />
+      <xs:enumeration value="LicenseTypeDescriptor" />
+      <xs:enumeration value="LicenseStatusDescriptor" />
       <xs:enumeration value="LimitedEnglishProficiencyDescriptor" />
       <xs:enumeration value="PerformanceLevelDescriptor" />
       <xs:enumeration value="ProgramAssignmentDescriptor" />
       <xs:enumeration value="ProgramCharacteristicDescriptor" />
+      <xs:enumeration value="ProviderCategoryDescriptor" />
+      <xs:enumeration value="ProviderProfitabilityDescriptor" />
+      <xs:enumeration value="ProviderStatusDescriptor" />
       <xs:enumeration value="ReasonExitedDescriptor" />
       <xs:enumeration value="ReporterDescriptionDescriptor" />
       <xs:enumeration value="ResidencyStatusDescriptor" />

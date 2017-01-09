@@ -13,7 +13,8 @@
       <xs:choice maxOccurs="unbounded">
         <xs:element name="Session" type="Session" />
         <xs:element name="GradingPeriod" type="GradingPeriod" />
-        <xs:element name="CalendarDate" type="CalendarDate" />
+        <xs:element name="Calendar" type="Calendar" />
+        <xs:element name="CalendarEvent" type="CalendarEvent" />
       </xs:choice>
     </xs:complexType>
   </xs:element>

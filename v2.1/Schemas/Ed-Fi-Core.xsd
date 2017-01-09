@@ -250,9 +250,9 @@ Second grade
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
+          <xs:element name="AssessmentFamily" type="AssessmentFamily" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>References the AssessmentFamily this Assessment is a member of.</xs:documentation>
+              <xs:documentation>The AssessmentFamily this Assessment is a member of.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="0">
@@ -267,111 +267,9 @@ Second grade
               </xs:annotation>
             </xs:element>
           </xs:choice>
-          <xs:element name="Namespace" type="URI" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Namespace for the Assessment.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AssessmentFamily">
-    <xs:annotation>
-      <xs:documentation>This entity represents a logical grouping or association of assessments that share a common purpose, heritage or content standard. There may be hierarchies of assessment families, characteristics (e.g., Academic Subject) specified for assessment families, by convention, are inherited by the Assessments associated with the AssessmentFamily.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ComplexObjectType">
-        <xs:sequence>
-          <xs:element name="AssessmentFamilyTitle" type="AssessmentTitle">
-            <xs:annotation>
-              <xs:documentation>The title or name of the AssessmentFamily.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessmentFamilyIdentificationCode" type="AssessmentFamilyIdentificationCode" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The category of an assessment based on format and content. For example: Achievement test, Advanced placement test, Alternate assessment/grade-level standards, Attitudinal test, Cognitive, and perceptual skills test, etc.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment family.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The typical grade level for which an assessment family is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example: Adult, Prekindergarten, First grade, Second grade, etc.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="LowestAssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>If the assessment spans a range of grades, then this attribute holds the lowest grade assessed. If only one grade level is assessed, then this attribute is omitted.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ContentStandard" type="ContentStandard" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard).</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Language" type="LanguageDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>An indication of the languages in which the AssessmentFamily is designed.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>LanguageDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The version identifier for the AssessmentFamily.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="RevisionDate" type="xs:date" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The month, day, and year that the conceptual design for the AssessmentFamily was most recently revised substantially.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Nomenclature" type="Nomenclature" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Reflects the specific nomenclature used for this level of AssessmentFamily.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessmentPeriod" type="AssessmentPeriodDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The periods or windows defined in which an assessment is supposed to be administered.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AssessmentPeriodDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ParentAssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>References the higher level AssessmentFamily the AssessmentFamily belongs to.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="Namespace" type="URI">
             <xs:annotation>
-              <xs:documentation>Namespace for the Assessments in this AssessmentFamily.</xs:documentation>
+              <xs:documentation>Namespace for the Assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -471,12 +369,12 @@ Prose
           </xs:element>
           <xs:element name="MeetingTime" type="MeetingTime" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The times at which this BellSchedule is intended to meet.</xs:documentation>
+              <xs:documentation>The MeetingTimes that compose this BellSchedule.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarDate" type="xs:date" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Date" type="xs:date" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The calendar dates for which the BellSchedule applies.</xs:documentation>
+              <xs:documentation>The dates for which the BellSchedule applies.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -512,9 +410,59 @@ Prose
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="CalendarDate">
+  <xs:complexType name="Calendar">
     <xs:annotation>
-      <xs:documentation>This entity represents a day in the school calendar.</xs:documentation>
+      <xs:documentation>A set of dates associated with an organization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CalendarName" type="IdentificationCode">
+            <xs:annotation>
+              <xs:documentation>The identifier for the Calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CalendarType" type="CalendarTypeDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>Indicates the type of Calendar.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>CalendarTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates the GradeLevel associated with the Calendar.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolReference" type="SchoolReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the School associated with the Calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolYear" type="SchoolYearType">
+            <xs:annotation>
+              <xs:documentation>The identifier for the school year associated with the Calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionReference" type="SessionReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Reference to the Session associated with the Calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CalendarEvent">
+    <xs:annotation>
+      <xs:documentation>The type of scheduled or unscheduled event for the day.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -524,17 +472,25 @@ Prose
         <xs:sequence>
           <xs:element name="Date" type="xs:date">
             <xs:annotation>
-              <xs:documentation>The month, day, and year of the CalendarDate.</xs:documentation>
+              <xs:documentation>The month, day, and year of the CalendarEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="SchoolReference" type="SchoolReferenceType">
+          <xs:element name="CalendarEventCategory" type="CalendarEventCategoryDescriptorReferenceType">
             <xs:annotation>
-              <xs:documentation>The school for which the calendar event is defined.</xs:documentation>
+              <xs:documentation>The type of scheduled or unscheduled event for the day.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>CalendarEventCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarEvent" type="CalendarEvent" maxOccurs="unbounded">
+          <xs:element name="EventDuration" type="EventDuration">
             <xs:annotation>
-              <xs:documentation>Additional description of the date such as date classification and duration of the event.</xs:documentation>
+              <xs:documentation>The amount of time for the event as recognized by the school: 1 day = 1, 1/2 day = 0.5, 1/3 day = 0.33.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CalendarReference" type="CalendarReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the Calendar associatied to the CalendarEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -611,6 +567,107 @@ Prose
           <xs:element name="ProgramReference" type="ProgramReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The (optional) program associated with this Cohort (e.g., special education).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityOrganization">
+    <xs:annotation>
+      <xs:documentation>This entity represents an administrative unit at the state level which exists primarily to operate local community providers.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="EducationOrganization">
+        <xs:sequence>
+          <xs:element name="CommunityOrganiztionId" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The identifier assigned to a CommunityOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityProvider">
+    <xs:annotation>
+      <xs:documentation>This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="EducationOrganization">
+        <xs:sequence>
+          <xs:element name="CommunityProviderIdentifier" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The identifier assigned to a CommunityProvider.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CommunityOrganizationReference" type="CommunityOrganizationReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>CommunityOrganziation of which the CommunityProvider is an organizational component.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProviderProfitability" type="ProviderProfitabilityDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates the profitability status of the provider.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ProviderProfitabilityDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProviderStatus" type="ProviderStatusDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>Indicates the status of the provider.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ProviderStatusDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProviderCategory" type="ProviderCategoryDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>Indicates the category of the provier.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ProviderCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolIndicator" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of whether the community provider is a school.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LicenseExemptIndicator" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of whether the provider is exempt from having a license.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderLicense">
+    <xs:annotation>
+      <xs:documentation>The legal document held by the CommunityProvider that authorizes the holder to perform certain functions and or services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CommunityProviderReference" type="CommunityProviderReferenceType">
+            <xs:annotation>
+              <xs:documentation>Relates the license to the CommunityProvider.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="License" type="License">
+            <xs:annotation>
+              <xs:documentation>The legal document showing proof of permission or authorization.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -817,6 +874,11 @@ Prose
               <xs:documentation>Learning Objectives to be mastered in the course.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="MaxCompletionsForCredit" type="MaxCompletionsForCredit" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Designates how many times the course may be taken with credit received by the student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -932,7 +994,7 @@ Withdrawn.</xs:documentation>
               <xs:documentation>Indicates that an academic course has been repeated by a student and how that repeat is to be computed in the student's academic grade average.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CourseReference" type="CourseReferenceType">
+          <xs:element name="CourseReference" type="CourseReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
             </xs:annotation>
@@ -960,6 +1022,11 @@ Withdrawn.</xs:documentation>
           <xs:element name="AlternativeCourseCode" type="LocalCourseCode" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ExternalEducationOrganizationReference" type="ExternalEducationOrganizationReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Optional association between CourseTranscript and ExternalEdOrg is designed to capture cases in which the student takes a course via an ExternalEducationOrganization (like an enrolled student taking a Khan Academy course).</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -1036,7 +1103,7 @@ Withdrawn.</xs:documentation>
           </xs:element>
           <xs:element name="AssignmentSchoolReference" type="SchoolReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Optional school where student is transferred for discipline.</xs:documentation>
+              <xs:documentation>School where student is transferred for discipline.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -1045,7 +1112,7 @@ Withdrawn.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="DisciplineIncident">
     <xs:annotation>
-      <xs:documentation>This event entity represents an occurrence of an infraction ranging from a minor heavioral problem that disrupts the orderly functioning of a school or classroom (such as tardiness) to a criminal act that results in the involvement of a law enforcement official (such as robbery). A single event (e.g., a fight) is one incident regardless of how many perpetrators or victims are involved. Discipline incidents are events classified as warranting discipline action.</xs:documentation>
+      <xs:documentation>This event entity represents an occurrence of an infraction ranging from a minor behavioral problem that disrupts the orderly functioning of a school or classroom (such as tardiness) to a criminal act that results in the involvement of a law enforcement official (such as robbery). A single event (e.g., a fight) is one incident regardless of how many perpetrators or victims are involved. Discipline incidents are events classified as warranting discipline action.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -1393,6 +1460,301 @@ Representative of visiting school
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="ExternalCourseTranscript">
+    <xs:annotation>
+      <xs:documentation>This entity is the final record of a student's performance in their courses at the end of a semester or school year of an ExternalEducationOrgnaization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CourseAttemptResult" type="CourseAttemptResultType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The result from the student's attempt to take the course, for example:
+Pass
+Fail
+Incomplete
+Withdrawn.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AttemptedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The number of credits a student attempted and could earn for successfully completing a given course.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EarnedCredits" type="Credits">
+            <xs:annotation>
+              <xs:documentation>The number of credits a student earned for completing a given course.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EarnedAdditionalCredits" type="AdditionalCredits" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The number of additional credits a student attempted and could earn for successfully completing a given course (e.g., dual credit, AP, IB).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="WhenTakenGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Student's grade level at time of course.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="OfferedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Student's grade level at time of course.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MethodCreditEarned" type="MethodCreditEarnedType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The method the credits were earned (e.g., Classroom, Examination, Transfer).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="FinalLetterGradeEarned" type="GradeEarned" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The final indicator of student performance in a class as submitted by the instructor.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="FinalNumericGradeEarned" type="NumericGrade" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The final indicator of student performance in a class as submitted by the instructor.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseRepeatCode" type="CourseRepeatCodeType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates that an academic course has been repeated by a student and how that repeat is to be computed in the student's academic grade average.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseReference" type="CourseReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ExternalStudentAcademicRecordReference" type="ExternalStudentAcademicRecordReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the ExternalStudentAcademicRecord record for a semester/school year.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseTitle" type="CourseTitle">
+            <xs:annotation>
+              <xs:documentation>The descriptive name given to a course of study offered in a school or other institution or organization. In departmentalized classes at the elementary, secondary, and postsecondary levels (and for staff development activities), this refers to the name by which a course is identified (e.g., American History, English III). For elementary and other non-departmentalized classes, it refers to any portion of the instruction for which a grade or report is assigned (e.g., reading, composition, spelling, language arts).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AlternativeCourseTitle" type="CourseTitle" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The descriptive name given to a course of study offered in the school, if different from the CourseTitle.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AlternativeCourseCode" type="LocalCourseCode" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The intended major subject area of the course.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CareerPathway" type="CareerPathwayType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates the career cluster or pathway the course is associated with as part of a CTE curriculum.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseCode" type="IdentificationCode">
+            <xs:annotation>
+              <xs:documentation>A unique alphanumeric code assigned to a course.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseDescription" type="Description" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A description of the content standards and goals covered in the course. Reference may be made to state or national content standards.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseIdentificationCode" type="CourseIdentificationCode" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The code that identifies the organization of subject matter and related learning experiences provided for the instruction of students.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseLevelCharacteristic" type="CourseLevelCharacteristicType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The type of specific program or designation with which the course is associated (e.g., AP, IB, Dual Credit, CTE).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalEducationOrganization">
+    <xs:annotation>
+      <xs:documentation>This entity represents any external public or private institution, organization, or agency that provides instructional or support services to students or staff at any level. This entity is provided to refer to organizations about which local school and districts have little to no information.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="NameOfInstitution" type="NameOfInstitution">
+            <xs:annotation>
+              <xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ShortNameOfInstitution" type="NameOfInstitution" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A short name for the institution.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Address" type="Address" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The set of elements that describes the physical location of the education entity, including the street address, city, state, ZIP code, and ZIP code + 4.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="InternationalAddress" type="InternationalAddress" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The set of elements that describes the international physical location of the education entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="InstitutionTelephone" type="InstitutionTelephone" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The 10-digit telephone number, including the area code, for the education entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="WebSite" type="URI" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The public web site address (URL) for the EducationOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="OperationalStatus" type="OperationalStatusType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The current operational status of the EducationOrganization (e.g., active, inactive).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalStudentAcademicRecord">
+    <xs:annotation>
+      <xs:documentation>This educational entity represents the cumulative record of academic achievement for a student that is being collected from an extrnal education organization about which local school and districts have little to no information.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CumulativeEarnedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The cumulative number of credits an individual earns by completing courses or examinations during his or her enrollment in the ExternalEducationOrganziation as well as those credits transferred from schools in which the individual had been previously enrolled.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CumulativeAttemptedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The cumulative number of credits an individual attempts to earn by taking courses during his or her enrollment in the ExternalEducationOrganization as well as those credits transferred from schools in which the individual had been previously enrolled.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CumulativeGradePointsEarned" type="GPA" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the ExternalEducationOrganization as well as those transferred from schools in which the individual had been previously enrolled.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CumulativeGradePointAverage" type="GPA" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A measure of average performance in all courses taken by an individual during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her ExternalEducationOrganizaiton as well as those transferred from schools in which the individual was previously enrolled.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="GradeValueQualifier" type="GradeValueQualifier" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The scale of equivalents, if applicable, for grades awarded as indicators of performance in schoolwork. For example, numerical equivalents for letter grades used in determining a student's Grade Point Average (A=4, B=3, C=2, D=1 in a four-point system) or letter equivalents for percentage grades (90-100%=A, 80-90%=B, etc.)</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ClassRanking" type="ClassRanking" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The academic rank information of a student in relation to his or her graduating class.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AcademicHonor" type="AcademicHonor" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Academic distinctions earned by or awarded to the student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Recognition" type="Recognition" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Recognitions given to the student for accomplishments in a co-curricular or extracurricular activity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProjectedGraduationDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The month and year the student is projected to graduate.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionEarnedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The number of credits an individual earned in the session.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionAttemptedCredits" type="Credits" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The number of credits an individual attempted to earn in the session.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionGradePointsEarned" type="GPA" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The number of grade points an individual earned for the session.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionGradePointAverage" type="GPA" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Diploma" type="Diploma" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Diploma(s) earned by the student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StudentReference" type="StudentReferenceType">
+            <xs:annotation>
+              <xs:documentation>Identifies the student who is associated with the ExternalStudentAcademicRecord.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ExternalEducationOrganizationReference" type="ExternalEducationOrganizationReferenceType">
+            <xs:annotation>
+              <xs:documentation>Provides user information to lookup and link to an existing ExternalEducationOrganization record.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolYear" type="SchoolYearType">
+            <xs:annotation>
+              <xs:documentation>The identifier for the school year.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ExternalTerm" type="ExternalTerm">
+            <xs:annotation>
+              <xs:documentation>The external term for the session during the school year.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="Grade">
     <xs:annotation>
       <xs:documentation>This educational entity represents an overall score or assessment tied to a course over a period of time (i.e., the grading period). Student grades are usually a compilation of marks and other scores.</xs:documentation>
@@ -1506,11 +1868,6 @@ Representative of visiting school
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="SchoolReference" type="SchoolReferenceType">
-            <xs:annotation>
-              <xs:documentation>Provide user information to lookup and link to an existing school record.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="GradingPeriod" type="GradingPeriodDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>The name of the period for which grades are reported.</xs:documentation>
@@ -1537,6 +1894,11 @@ Representative of visiting school
           <xs:element name="PeriodSequence" type="xs:int" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The sequential order of this period relative to other periods.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SessionReference" type="SessionReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the Session associated to the GradingPeriod.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -2349,6 +2711,11 @@ Bilingual/English as a Second Language.</xs:documentation>
               <xs:documentation>The login ID for the user; used for security access control interface.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -2459,7 +2826,7 @@ Bilingual/English as a Second Language.</xs:documentation>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ProgramSponsor" type="ProgramSponsorType" minOccurs="0">
+          <xs:element name="ProgramSponsor" type="ProgramSponsorType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Ultimate and intermediate providers of funds for a particular educational or service program or activity, or for an individual's participation in the program or activity (e.g., Federal, State, ESC, District, School, Private Organization).</xs:documentation>
             </xs:annotation>
@@ -2694,12 +3061,12 @@ Bilingual/English as a Second Language.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="UniqueSectionCode" type="UniqueSectionCode">
+          <xs:element name="SectionIdentifier" type="SectionIdentifier">
             <xs:annotation>
               <xs:documentation>A unique identifier for the Section that is defined by the classroom, the subjects taught, and the instructors who are assigned.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="SequenceOfCourse" type="SequenceOfCourse">
+          <xs:element name="SequenceOfCourse" type="SequenceOfCourse" minOccurs="0">
             <xs:annotation>
               <xs:documentation>When a section is part of a sequence of parts for a course, the number of the sequence. If the course has only one part, the value of this section attribute should be 1.</xs:documentation>
             </xs:annotation>
@@ -2763,17 +3130,17 @@ Special education students
               <xs:documentation>The course offering taught in the Section.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="SchoolReference" type="SchoolReferenceType">
+          <xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The school where the Section is taught.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="LocationReference" type="LocationReferenceType">
+          <xs:element name="LocationReference" type="LocationReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The location, typically a classroom, where the Section meets.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType">
+          <xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The class period during which the Section meets.</xs:documentation>
             </xs:annotation>
@@ -2802,9 +3169,9 @@ Special education students
               <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
+          <xs:element name="CalendarEventReference" type="CalendarEventReferenceType">
             <xs:annotation>
-              <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+              <xs:documentation>Reference to the instructional day associated with SectionAttendanceEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="EventDate" type="xs:date">
@@ -2841,14 +3208,6 @@ Special education students
               <xs:documentation>The identifier for the school year.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Term" type="TermDescriptorReferenceType">
-            <xs:annotation>
-              <xs:documentation>The term for the Session during the school year.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>TermDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="BeginDate" type="xs:date">
             <xs:annotation>
               <xs:documentation>Month, day, and year of the first day of the Session.</xs:documentation>
@@ -2859,6 +3218,14 @@ Special education students
               <xs:documentation>Month, day and year of the last day of the Session.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="Term" type="TermDescriptorReferenceType" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The term for the Session during the school year.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>TermDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
             <xs:annotation>
               <xs:documentation>The total number of instructional days in the school calendar.</xs:documentation>
@@ -2867,11 +3234,6 @@ Special education students
           <xs:element name="SchoolReference" type="SchoolReferenceType">
             <xs:annotation>
               <xs:documentation>Relates the Session to the school.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>Grading periods associated with the calendar.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -2965,12 +3327,12 @@ Special education students
           </xs:element>
           <xs:element name="Citizenship" type="Citizenship" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
+              <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="HighestCompletedLevelOfEducation" type="LevelOfEducationDescriptorReferenceType" minOccurs="0">
@@ -3004,6 +3366,100 @@ Special education students
           <xs:element name="HighlyQualifiedTeacher" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition. This attribute indicates the teacher is highly qualified for ALL Sections being taught.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Recognition" type="Recognition" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Recognitions given to the staff for accomplishments in a co-curricular or extracurricular activity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StaffAbsenceEvent">
+    <xs:annotation>
+      <xs:documentation>This event entity represents the recording of the dates of staff absence.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="EventDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>Date for this leave event.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AbsenceEventCategory" type="AbsenceEventCategoryDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>The code describing the type of absence.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AbsenceEventCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AbsenceEventReason" type="Reason" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Expanded reason for the staff absence.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="HoursAbsent" type="HoursAbsent" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The hours the staff was absent, if not the entire working day.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StaffReference" type="StaffReferenceType">
+            <xs:annotation>
+              <xs:documentation>The staff associated with this absence event.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StaffLeave">
+    <xs:annotation>
+      <xs:documentation>This entity represents the recording of the dates of staff leave (e.g., sick leave, personal time, vacation).</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="BegintDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>The begin date of the staff leave.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EndDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The end data of the staff leave.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StaffLeaveEventCategory" type="StaffLeaveEventCategoryType">
+            <xs:annotation>
+              <xs:documentation>The code describing the type of leave taken, for example:
+Sick
+Personal
+Vacation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Reason" type="Reason" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Expanded reason for the staff leave.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SubstituteAssigned" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicator of whether a substitute was assigned during the period of staff leave.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StaffReference" type="StaffReferenceType">
+            <xs:annotation>
+              <xs:documentation>The staff associated with this leave event.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -3101,7 +3557,7 @@ Special education students
           </xs:element>
           <xs:element name="ProfileThumbnail" type="ProfileThumbnail" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Locator for the student photo.</xs:documentation>
+              <xs:documentation>Locator reference for the student photo. The specification for that reference is left to local definition.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
@@ -3126,7 +3582,7 @@ Special education students
           </xs:element>
           <xs:element name="Citizenship" type="Citizenship" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Contains information relative to citizenship status and its associated probationary documentation.</xs:documentation>
+              <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="EconomicDisadvantaged" type="xs:boolean" minOccurs="0">
@@ -3158,7 +3614,7 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
           </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The language(s) the individual uses to communicate.</xs:documentation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
@@ -3194,6 +3650,11 @@ Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Singl
           <xs:element name="LoginId" type="IdentificationCode" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The login ID for the user; used for security access control interface.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="HomelessPrimaryNighttimeResidence" type="HomelessPrimaryNighttimeResidenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>'The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -3737,6 +4198,17 @@ LEP Exempt
   <xs:annotation>
     <xs:documentation>===== Descriptors =====</xs:documentation>
   </xs:annotation>
+  <xs:complexType name="AbsenceEventCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor describes the type of absence</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="AcademicSubjectDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor holds the description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language).</xs:documentation>
@@ -3953,7 +4425,7 @@ LEP Exempt
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="CalendarEventDescriptor">
+  <xs:complexType name="CalendarEventCategoryDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor holds the types of scheduled or unscheduled event for the day (e.g., Instructional day, Teacher only day, Holiday, Make-up day, Weather day, Student late arrival/early dismissal day).</xs:documentation>
       <xs:appinfo>
@@ -3963,9 +4435,28 @@ LEP Exempt
     <xs:complexContent>
       <xs:extension base="DescriptorType">
         <xs:sequence>
-          <xs:element name="CalendarEventMap" type="CalendarEventMapType">
+          <xs:element name="CalendarEventCategoryMap" type="CalendarEventCategoryMapType">
             <xs:annotation>
-              <xs:documentation>The mapping to a known CalendarEvent enumeration type.</xs:documentation>
+              <xs:documentation>The mapping to a known CalendarEventCategory enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CalendarTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the calendar types.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="CalendarTypeMap" type="CalendarTypeMapType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known CalendarType enumeration type.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -4004,6 +4495,25 @@ LEP Exempt
           <xs:element name="PerformanceBaseConversion" type="PerformanceBaseConversionType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>A conversion of the level to a standard set of competency levels.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ContactTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the set of contact types.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="ContactTypeMap" type="ContactTypeMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known ContactType enumeration type.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -4278,21 +4788,13 @@ LEP Exempt
   </xs:complexType>
   <xs:complexType name="LanguageDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the language(s) that are spoken or written.</xs:documentation>
+      <xs:documentation>This descriptor defines the language(s) that are spoken or written. It is strongly recommended that entries use only ISO 639-3 language codes: for CodeValue, use the 3 character code; for ShortDescription and Description use the full language name.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DescriptorType">
-        <xs:sequence>
-          <xs:element name="LanguageMap" type="LanguageMapType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The mapping to a known Language enumeration type.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
+      <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="LevelDescriptor">
@@ -4334,6 +4836,36 @@ LEP Exempt
           </xs:element>
         </xs:sequence>
       </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LicenseStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the license statuses.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="LicenseStatusMap" type="LicenseStatusMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known LicenseStatus enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LicenseTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the type of a license.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="LimitedEnglishProficiencyDescriptor">
@@ -4401,11 +4933,60 @@ LEP Exempt
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor holds the category of the provider.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
       <xs:extension base="DescriptorType">
         <xs:sequence>
-          <xs:element name="ProgramCharacteristicMap" type="ProgramCharacteristicMapType" minOccurs="0">
+          <xs:element name="ProviderCategoryMap" type="ProviderCategoryMapType">
             <xs:annotation>
-              <xs:documentation>The mapping to a known ProgramCharacteristic enumeration type.</xs:documentation>
+              <xs:documentation>The mapping to a known ProviderCategory enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderProfitabilityDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor indicates the profitability status of the provider.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="ProviderProfitabilityMap" type="ProviderProfitabilityMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known ProviderProfitability enumeration type.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the status of the provider.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType">
+        <xs:sequence>
+          <xs:element name="ProviderStatusMap" type="ProviderStatusMapType">
+            <xs:annotation>
+              <xs:documentation>The mapping to a known ProviderStatus enumeration type.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -4946,6 +5527,58 @@ LEP Exempt
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StaffEducationOrganizationContactAssociation">
+    <xs:annotation>
+      <xs:documentation>This association provides the contact information of the staff associated with the education organization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="StaffReference" type="StaffReferenceType">
+            <xs:annotation>
+              <xs:documentation>The Staff assigned to the EducationOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+            <xs:annotation>
+              <xs:documentation>The EducationalOrganization to which the Staff member provides services.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Address" type="Address" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The optional address for the contact associated with the EducationOrganizationunique.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ContactTitle" type="ContactTitle" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The title of the contact in the context of the EducationOrganization</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ContactType" type="ContactTypeDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>Indicates the type for the contact information.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ContactTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ElectronicMail" type="ElectronicMail">
+            <xs:annotation>
+              <xs:documentation>The optional email for the contact associated with the EducationOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Telephone" type="Telephone" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The optional telephone for the contact association with the EducationOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StaffEducationOrganizationEmploymentAssociation">
     <xs:annotation>
       <xs:documentation>This association indicates the EducationOrganization an employee, contractor, volunteer, or other service provider is formally associated with typically indicated by which organization the staff member has a services contract with or receives compensation from.</xs:documentation>
@@ -5100,6 +5733,11 @@ Bilingual/English as a Second Language.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
               </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Reference to the Calendar associated with the StaffSchoolAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -5512,7 +6150,7 @@ Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian
           </xs:element>
           <xs:element name="PrimarySchool" type="xs:boolean" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Indicates if a given enrollment record should be considered the primary record for a student. If omitted, the default is true.</xs:documentation>
+              <xs:documentation>Indicates if a given enrollment record should be considered the primary record for a student.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
@@ -5597,6 +6235,11 @@ Vocational.</xs:documentation>
           <xs:element name="EmployedWhileEnrolled" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Reference to the Calendar associated with the StudentSchoolAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -5993,78 +6636,6 @@ Local Neglected Program.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="AssessmentFamilyIdentityType">
-    <xs:annotation>
-      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an AssessmentFamily domain entity.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Identity</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="AssessmentFamilyTitle" type="AssessmentTitle">
-        <xs:annotation>
-          <xs:documentation>The title or name of the AssessmentFamily.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="AssessmentFamilyLookupType">
-    <xs:annotation>
-      <xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of an AssessmentFamily domain entity.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Lookup</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="AssessmentFamilyTitle" type="AssessmentTitle" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The title or name of the AssessmentFamily.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentFamilyIdentificationCode" type="AssessmentFamilyIdentificationCode" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The category of an assessment based on format and content. For example: Achievement test, Advanced placement test, Alternate assessment/grade-level standards, Attitudinal test, Cognitive, and perceptual skills test, etc.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The version identifier for the AssessmentFamily.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="AssessmentFamilyReferenceType">
-    <xs:annotation>
-      <xs:documentation>Provides alternative references for an AssessmentFamily domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ReferenceType">
-        <xs:sequence>
-          <xs:element name="AssessmentFamilyIdentity" type="AssessmentFamilyIdentityType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an AssessmentFamily domain entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="AssessmentFamilyLookup" type="AssessmentFamilyLookupType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of an AssessmentFamily domain entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
   <xs:complexType name="AssessmentIdentityType">
     <xs:annotation>
       <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an Assessment domain entity.</xs:documentation>
@@ -6203,11 +6774,6 @@ Second grade
           <xs:documentation>The version identifier for the assessment.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="AssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>References the AssessmentFamily this Assessment is a member of.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="AssessmentReferenceType">
@@ -6320,9 +6886,9 @@ Second grade
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="CalendarDateIdentityType">
+  <xs:complexType name="CalendarEventIdentityType">
     <xs:annotation>
-      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CalendarDate domain entity.</xs:documentation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CalendarEvent domain entity.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Identity</ann:TypeGroup>
       </xs:appinfo>
@@ -6330,19 +6896,27 @@ Second grade
     <xs:sequence>
       <xs:element name="Date" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year of the CalendarDate.</xs:documentation>
+          <xs:documentation>The month, day, and year of the CalendarEvent.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="SchoolReference" type="SchoolReferenceType">
+      <xs:element name="CalendarEventCategory" type="CalendarEventCategoryDescriptorReferenceType">
         <xs:annotation>
-          <xs:documentation>The school for which the calendar event is defined.</xs:documentation>
+          <xs:documentation>The type of scheduled or unscheduled event for the day.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>CalendarEventCategoryDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CalendarReference" type="CalendarReferenceType">
+        <xs:annotation>
+          <xs:documentation>Reference to the Calendar associatied to the CalendarEvent.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="CalendarDateReferenceType">
+  <xs:complexType name="CalendarEventReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides alternative references for a CalendarDate domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:documentation>Provides alternative references for a CalendarEvent domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -6350,9 +6924,53 @@ Second grade
     <xs:complexContent>
       <xs:extension base="ReferenceType">
         <xs:sequence>
-          <xs:element name="CalendarDateIdentity" type="CalendarDateIdentityType" minOccurs="0">
+          <xs:element name="CalendarEventIdentity" type="CalendarEventIdentityType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CalendarDate domain entity.</xs:documentation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CalendarEvent domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CalendarIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a Calendar domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CalendarName" type="IdentificationCode">
+        <xs:annotation>
+          <xs:documentation>The identifier for the Calendar.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SchoolReference" type="SchoolReferenceType">
+        <xs:annotation>
+          <xs:documentation>Reference to the School associated with the Calendar.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SchoolYear" type="SchoolYearType">
+        <xs:annotation>
+          <xs:documentation>The identifier for the school year associated with the Calendar.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CalendarReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a Calendar domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CalendarIdentity" type="CalendarIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a Calendar domain entity.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6431,6 +7049,118 @@ Second grade
           <xs:element name="CohortIdentity" type="CohortIdentityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a Cohort domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityOrganizationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityOrganization domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CommunityOrganiztionId" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The identifier assigned to a CommunityOrganization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CommunityOrganizationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CommunityOrganization domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CommunityOrganizationIdentity" type="CommunityOrganizationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityOrganization domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityProvider domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CommunityProviderIdentifier" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The identifier assigned to a CommunityProvider.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderLicenseIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityProviderLicense domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CommunityProviderReference" type="CommunityProviderReferenceType">
+        <xs:annotation>
+          <xs:documentation>Relates the license to the CommunityProvider.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseIdentifier" type="LicenseIdentifier">
+        <xs:annotation>
+          <xs:documentation>The unique identifier issued by the licensing organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicensingOrganization" type="LicensingOrganization">
+        <xs:annotation>
+          <xs:documentation>The organization issuing the license.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderLicenseReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CommunityProviderLicense domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CommunityProviderLicenseIdentity" type="CommunityProviderLicenseIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityProviderLicense domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CommunityProviderReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CommunityProvider domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CommunityProviderIdentity" type="CommunityProviderIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a CommunityProvider domain entity.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6661,11 +7391,6 @@ Pass
 Fail
 Incomplete
 Withdrawn.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="CourseReference" type="CourseReferenceType">
-        <xs:annotation>
-          <xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="StudentAcademicRecordReference" type="StudentAcademicRecordReferenceType">
@@ -7135,6 +7860,128 @@ Withdrawn.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="ExternalCourseTranscriptIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalCourseTranscript domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ExternalStudentAcademicRecordReference" type="ExternalStudentAcademicRecordReferenceType">
+        <xs:annotation>
+          <xs:documentation>Reference to the ExternalStudentAcademicRecord record for a semester/school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CourseCode" type="IdentificationCode">
+        <xs:annotation>
+          <xs:documentation>A unique alphanumeric code assigned to a course.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ExternalCourseTranscriptReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an ExternalCourseTranscript domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="ExternalCourseTranscriptIdentity" type="ExternalCourseTranscriptIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalCourseTranscript domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalEducationOrganizationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalEducationOrganization domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="NameOfInstitution" type="NameOfInstitution">
+        <xs:annotation>
+          <xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ExternalEducationOrganizationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an ExternalEducationOrganization domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="ExternalEducationOrganizationIdentity" type="ExternalEducationOrganizationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalEducationOrganization domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalStudentAcademicRecordIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalStudentAcademicRecord domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>Identifies the student who is associated with the ExternalStudentAcademicRecord.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ExternalEducationOrganizationReference" type="ExternalEducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>Provides user information to lookup and link to an existing ExternalEducationOrganization record.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SchoolYear" type="SchoolYearType">
+        <xs:annotation>
+          <xs:documentation>The identifier for the school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ExternalTerm" type="ExternalTerm">
+        <xs:annotation>
+          <xs:documentation>The external term for the session during the school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ExternalStudentAcademicRecordReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an ExternalStudentAcademicRecord domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="ExternalStudentAcademicRecordIdentity" type="ExternalStudentAcademicRecordIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of an ExternalStudentAcademicRecord domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="FeederSchoolAssociationIdentityType">
     <xs:annotation>
       <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a FeederSchoolAssociation association.</xs:documentation>
@@ -7315,22 +8162,9 @@ Withdrawn.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="SchoolReference" type="SchoolReferenceType">
+      <xs:element name="SessionReference" type="SessionReferenceType">
         <xs:annotation>
-          <xs:documentation>Provide user information to lookup and link to an existing school record.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="GradingPeriod" type="GradingPeriodDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The name of the period for which grades are reported.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradingPeriodDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="BeginDate" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>Month, day, and year of the first day of the GradingPeriod.</xs:documentation>
+          <xs:documentation>Reference to the Session associated to the GradingPeriod.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -8194,11 +9028,6 @@ Vacation.</xs:documentation>
           <xs:documentation>A unique number or alphanumeric code assigned to a restraint event by a school, school system, state, or other agency or entity.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="EventDate" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>Month, day, and year of the RestraintEvent.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="StudentReference" type="StudentReferenceType">
         <xs:annotation>
           <xs:documentation>Reference to student that was restrained.</xs:documentation>
@@ -8312,9 +9141,9 @@ Vacation.</xs:documentation>
           <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="CalendarDateReference" type="CalendarDateReferenceType">
+      <xs:element name="CalendarEventReference" type="CalendarEventReferenceType">
         <xs:annotation>
-          <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+          <xs:documentation>Reference to the instructional day associated with SectionAttendanceEvent.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -8346,29 +9175,14 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="UniqueSectionCode" type="UniqueSectionCode">
+      <xs:element name="SectionIdentifier" type="SectionIdentifier">
         <xs:annotation>
           <xs:documentation>A unique identifier for the Section that is defined by the classroom, the subjects taught, and the instructors who are assigned.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="SequenceOfCourse" type="SequenceOfCourse">
-        <xs:annotation>
-          <xs:documentation>When a section is part of a sequence of parts for a course, the number of the sequence. If the course has only one part, the value of this section attribute should be 1.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="CourseOfferingReference" type="CourseOfferingReferenceType">
         <xs:annotation>
           <xs:documentation>The course offering taught in the Section.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="LocationReference" type="LocationReferenceType">
-        <xs:annotation>
-          <xs:documentation>The location, typically a classroom, where the Section meets.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType">
-        <xs:annotation>
-          <xs:documentation>The class period during which the Section meets.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -8381,34 +9195,14 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="UniqueSectionCode" type="UniqueSectionCode" minOccurs="0">
+      <xs:element name="SectionIdentifier" type="SectionIdentifier" minOccurs="0">
         <xs:annotation>
           <xs:documentation>A unique identifier for the Section that is defined by the classroom, the subjects taught, and the instructors who are assigned.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="SequenceOfCourse" type="SequenceOfCourse" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>When a section is part of a sequence of parts for a course, the number of the sequence. If the course has only one part, the value of this section attribute should be 1.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="CourseOfferingReference" type="CourseOfferingReferenceType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The course offering taught in the Section.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The school where the Section is taught.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="LocationReference" type="LocationReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The location, typically a classroom, where the Section meets.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The class period during which the Section meets.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -8445,17 +9239,14 @@ Vacation.</xs:documentation>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
+      <xs:element name="SessionName" type="IdentificationCode">
+        <xs:annotation>
+          <xs:documentation>The identifier for the calendar for the academic session (e.g., 2010/11, 2011 Summer).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="SchoolYear" type="SchoolYearType">
         <xs:annotation>
           <xs:documentation>The identifier for the school year.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Term" type="TermDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The term for the Session during the school year.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>TermDescriptor</ann:Descriptor>
-          </xs:appinfo>
         </xs:annotation>
       </xs:element>
       <xs:element name="SchoolReference" type="SchoolReferenceType">
@@ -8516,6 +9307,53 @@ Vacation.</xs:documentation>
           <xs:element name="SessionLookup" type="SessionLookupType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Encapsulates alternative attributes that can be used to lookup the identity of a Session domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StaffAbsenceEventIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffAbsenceEvent domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="EventDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Date for this leave event.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AbsenceEventCategory" type="AbsenceEventCategoryDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The code describing the type of absence.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>AbsenceEventCategoryDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StaffReference" type="StaffReferenceType">
+        <xs:annotation>
+          <xs:documentation>The staff associated with this absence event.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffAbsenceEventReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StaffAbsenceEvent domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StaffAbsenceEventIdentity" type="StaffAbsenceEventIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffAbsenceEvent domain entity.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -8618,6 +9456,53 @@ Vacation.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StaffEducationOrganizationContactAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffEducationOrganizationContactAssociation association.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StaffReference" type="StaffReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Staff assigned to the EducationOrganization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>The EducationalOrganization to which the Staff member provides services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ContactType" type="ContactTypeDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the type for the contact information.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>ContactTypeDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffEducationOrganizationContactAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StaffEducationOrganizationContactAssociation association. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StaffEducationOrganizationContactAssociationIdentity" type="StaffEducationOrganizationContactAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffEducationOrganizationContactAssociation association.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StaffEducationOrganizationEmploymentAssociationIdentityType">
     <xs:annotation>
       <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffEducationOrganizationEmploymentAssociation association.</xs:documentation>
@@ -8690,6 +9575,53 @@ Volunteer/no contract
         </xs:annotation>
       </xs:element>
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffLeaveIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffLeave domain entity.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="BegintDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The begin date of the staff leave.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StaffLeaveEventCategory" type="StaffLeaveEventCategoryType">
+        <xs:annotation>
+          <xs:documentation>The code describing the type of leave taken, for example:
+Sick
+Personal
+Vacation.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StaffReference" type="StaffReferenceType">
+        <xs:annotation>
+          <xs:documentation>The staff associated with this leave event.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffLeaveReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StaffLeave domain entity. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to lookup a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StaffLeaveIdentity" type="StaffLeaveIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates the possible attributes that can be used to lookup the identity of a StaffLeave domain entity.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="StaffLookupType">
     <xs:annotation>
@@ -10079,6 +11011,17 @@ Tardy.</xs:documentation>
   <xs:annotation>
     <xs:documentation>===== Extended Descriptor Reference Types =====</xs:documentation>
   </xs:annotation>
+  <xs:complexType name="AbsenceEventCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for absence event category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="AcademicSubjectDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for academic subject descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -10200,9 +11143,20 @@ Tardy.</xs:documentation>
       <xs:extension base="DescriptorReferenceType" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="CalendarEventDescriptorReferenceType">
+  <xs:complexType name="CalendarEventCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for calendar event descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Provides references for calendar event category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CalendarTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for calendar type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -10225,6 +11179,17 @@ Tardy.</xs:documentation>
   <xs:complexType name="CompetencyLevelDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for competency level descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ContactTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for contact type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -10420,6 +11385,28 @@ Tardy.</xs:documentation>
       <xs:extension base="DescriptorReferenceType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="LicenseStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for license status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LicenseTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for license type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="LimitedEnglishProficiencyDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for limited english proficiency descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
@@ -10456,6 +11443,39 @@ Tardy.</xs:documentation>
   <xs:complexType name="ProgramCharacteristicDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for program characteristic descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for provider category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderProfitabilityDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for provider profitability descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for provider status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -10829,32 +11849,9 @@ Tardy.</xs:documentation>
           <xs:documentation>The type of address listed for an individual or organization. For example:  Physical Address, Mailing Address, Home Address, etc.)</xs:documentation>
         </xs:annotation>
       </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="AssessmentFamilyIdentificationCode">
-    <xs:annotation>
-      <xs:documentation>A unique number or alphanumeric code assigned to an assessment family by a school, school system, a state, or other agency or entity.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Common</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="IdentificationCode" type="IdentificationCode">
+      <xs:element name="DoNotPublishIndicator" type="xs:boolean" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, state, or other agency or entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentIdentificationSystem" type="AssessmentIdentificationSystemDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to an assessment.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AssessmentIdentificationSystemDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssigningOrganizationIdentificationCode" type="IdentificationCode" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The organization code or name assigning the assessment identification code.</xs:documentation>
+          <xs:documentation>An indication that the address should not be published.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -11072,38 +12069,9 @@ Tardy.</xs:documentation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="CalendarEvent">
-    <xs:annotation>
-      <xs:documentation>the calendar event associated with a calendar date.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Common</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="EventDuration" type="EventDuration">
-        <xs:annotation>
-          <xs:documentation>The amount of time for the event as recognized by the school: 1 day = 1, 1/2 day = 0.5, 1/3 day = 0.33.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="CalendarEvent" type="CalendarEventDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The type of scheduled or unscheduled event for the day. For example:
-Instructional day
-Teacher only day
-Holiday
-Make-up day
-Weather day
-Student late arrival/early dismissal.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>CalendarEventDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="Citizenship">
     <xs:annotation>
-      <xs:documentation>Describes  information relative to identity and citizenship of a person.</xs:documentation>
+      <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
@@ -11596,6 +12564,11 @@ Distinguished Achievement Program.</xs:documentation>
           <xs:documentation>An indication that the electronic mail address should be used as the principal electronic mail address for an individual or organization.</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="DoNotPublishIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>An indication that the electronic email address should not be published.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="EmploymentPeriod">
@@ -11874,6 +12847,72 @@ Change of assignment.</xs:documentation>
       <xs:element name="TactileLearning" type="Learning">
         <xs:annotation>
           <xs:documentation>The student's relative preference expressed as a percent to kinesthetic or tactile learning.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="License">
+    <xs:annotation>
+      <xs:documentation>The legal document showing proof of permission or authorization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="LicenseIdentifier" type="LicenseIdentifier">
+        <xs:annotation>
+          <xs:documentation>The unique identifier issued by the licensing organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicensingOrganization" type="LicensingOrganization">
+        <xs:annotation>
+          <xs:documentation>The organization issuing the license.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseEffectiveDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which a license is active or becomes effective.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseExpirationDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which a license will expire.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseIssueDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which an active license was issued.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseStatus" type="LicenseStatusDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>An indication of the status of the license.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>LicenseStatusDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LicenseType" type="LicenseTypeDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>An indication of the category of the license.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>LicenseTypeDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AuthorizedFacilityCapacity" type="Capacity" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The maximum number that can be contained or accommodated which a provider is authorized or licensed to serve.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="OldestAgeAuthorizedToServe" type="AgeAuthorizedToServe" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The oldest age of children a provider is authorized or licensed to serve.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="YoungestAgeAuthorizedToServe" type="AgeAuthorizedToServe" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The youngest age of children a provider is authorized or licensed to serve.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -12207,7 +13246,7 @@ Change of assignment.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="Recognition">
     <xs:annotation>
-      <xs:documentation>Recognition given to the student for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
+      <xs:documentation>Recognition given to the learner for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
@@ -12220,7 +13259,7 @@ Change of assignment.</xs:documentation>
       </xs:element>
       <xs:element name="RecognitionType" type="RecognitionType">
         <xs:annotation>
-          <xs:documentation>The nature of recognition given to the student for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
+          <xs:documentation>The nature of recognition given to the learner for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="RecognitionDescription" type="RecognitionDescription" minOccurs="0">
@@ -12622,6 +13661,11 @@ Met standard
           <xs:documentation>An indication that the telephone number is technically capable of sending and receiving Short Message Service (SMS) text messages.</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="DoNotPublishIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>An indication that the telephone number should not be published.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:annotation>
@@ -12741,6 +13785,11 @@ Met standard
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Critical Reading">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Cross Subject">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -13620,9 +14669,9 @@ Met standard
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="CalendarEventMapType">
+  <xs:simpleType name="CalendarEventCategoryMapType">
     <xs:annotation>
-      <xs:documentation>The mapping to a known CalendarEvent.</xs:documentation>
+      <xs:documentation>The mapping to a known CalendarEventCategory.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13669,6 +14718,26 @@ Met standard
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Weather day">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CalendarTypeMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known CalendarType.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="IEP">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Student Specific">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -14079,6 +15148,21 @@ Met standard
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Twelfth grade">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ContactTypeMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known ContactType.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Other">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -15974,6 +17058,11 @@ Vocational.</xs:documentation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="No grade level">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Other">
         <xs:annotation>
           <xs:documentation></xs:documentation>
@@ -16242,6 +17331,36 @@ Vocational.</xs:documentation>
       <xs:enumeration value="Not applicable">
         <xs:annotation>
           <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HomelessPrimaryNighttimeResidenceType">
+    <xs:annotation>
+      <xs:documentation>The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Doubled-up">
+        <xs:annotation>
+          <xs:documentation>Doubled - up (i.e., living with another family)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hotels/motels">
+        <xs:annotation>
+          <xs:documentation>Hotels/motels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Shelters">
+        <xs:annotation>
+          <xs:documentation>Shelters, Transitional housing, Awaiting Foster Care.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unsheltered">
+        <xs:annotation>
+          <xs:documentation>Unsheltered (e.g. cars, parks, campgrounds, temporary trailers including FEMA trailers, or abandoned buildings)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -16616,31 +17735,6 @@ Vocational.</xs:documentation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="LanguageMapType">
-    <xs:annotation>
-      <xs:documentation>The mapping to a known Language.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Enumeration</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:token">
-      <xs:enumeration value="Spanish">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="English">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Other">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
   <xs:simpleType name="LanguageUseType">
     <xs:annotation>
       <xs:documentation>The category denoting how a language is used.</xs:documentation>
@@ -16830,6 +17924,31 @@ Vocational.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Associate's Degree (two years or more)">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LicenseStatusMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known LicenseStatus.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Exempt">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Regulated">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unregulated">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -17566,21 +18685,6 @@ Vocational.</xs:documentation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="ProgramCharacteristicMapType">
-    <xs:annotation>
-      <xs:documentation>The mapping to a known ProgramCharacteristic.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Enumeration</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:token">
-      <xs:enumeration value="A McKinney-Vento Program for Homelessness">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
   <xs:simpleType name="ProgramSponsorType">
     <xs:annotation>
       <xs:documentation>Ultimate and intermediate providers of funds for a particular educational or service program or activity or for an individual's participation in the program or activity (e.g., Federal, State, ESC, District, School, Private Org).</xs:documentation>
@@ -17789,6 +18893,11 @@ Vocational.</xs:documentation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="Homeless">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="IDEA">
         <xs:annotation>
           <xs:documentation></xs:documentation>
@@ -17945,6 +19054,101 @@ Vocational.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Vocational Education">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProviderCategoryMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known ProviderCategory.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Center-EC with SA">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Center-EC">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Center-SA Only">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Licensed Day Care Center">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Licensed Family Child Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Licensed Large Family Child Care">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Not Applicable">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProviderProfitabilityMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known ProviderProfitability.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Government Run">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ForProfit">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Nonprofit">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProviderStatusMapType">
+    <xs:annotation>
+      <xs:documentation>The mapping to a known ProviderStatus.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Active">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Inactive">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unknown">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -18297,6 +19501,11 @@ LEP Exempt
           <xs:documentation>The person is the learner's daughterinlaw.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="Emergency">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's emergency.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Employer">
         <xs:annotation>
           <xs:documentation>The person is the learner's employer.</xs:documentation>
@@ -18347,6 +19556,11 @@ LEP Exempt
           <xs:documentation>The person is the learner's friend.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="Godparent">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's godparent.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Grandfather">
         <xs:annotation>
           <xs:documentation>The person is the learner's grandfather.</xs:documentation>
@@ -18355,6 +19569,11 @@ LEP Exempt
       <xs:enumeration value="Grandmother">
         <xs:annotation>
           <xs:documentation>The person is the learner's grandmother.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Grandparent">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's grandparent.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Great aunt">
@@ -18392,9 +19611,19 @@ LEP Exempt
           <xs:documentation>The person is the learner's step mother.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="MotherInLaw">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's mother in law.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="MothersCivilPartner">
         <xs:annotation>
           <xs:documentation>The person is the learner's mother's civil partner.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Neighbor">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's neighbor.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Nephew">
@@ -18412,6 +19641,26 @@ LEP Exempt
           <xs:documentation>The person is the learner's other.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="Parent">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's parent.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Parent, step">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's parent, step.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Relative">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's relative.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sibling">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's sibling.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="SignificantOther">
         <xs:annotation>
           <xs:documentation>The person is the learner's significant other.</xs:documentation>
@@ -18422,9 +19671,24 @@ LEP Exempt
           <xs:documentation>The person is the learner's sister.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="SisterInLaw">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's sister in law.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Son">
         <xs:annotation>
           <xs:documentation>The person is the learner's son.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SonInLaw">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's son in law.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Spouse">
+        <xs:annotation>
+          <xs:documentation>The person is the learner's spouse.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Unknown">
@@ -19371,6 +20635,11 @@ Second retest
           <xs:documentation></xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="LEA System Administrator">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Librarians/Media Specialists">
         <xs:annotation>
           <xs:documentation>A professional staff member or supervisor assigned specific duties and school time for professional library and media service activities. Activities include: selecting, acquiring, preparing, cataloging, and circulating books and other printed materials; planning the use of library and media services by students, teachers and other members of the instructional staff; and guiding individuals in their use of media services and library materials, (whether maintained separately or as part of an instructional materials center).</xs:documentation>
@@ -19512,6 +20781,106 @@ Second retest
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Other Federal">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StaffLeaveEventCategoryType">
+    <xs:annotation>
+      <xs:documentation>A code describing the type of the leave event.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Enumeration</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Vacation">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Jury duty">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Professional development">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Flex time">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Work compensation">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Administrative">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Annual leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bereavement">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Compensatory leave time">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Family and medical leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Government-requested">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Military leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Personal">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Release time">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sabbatical leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sick leave">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Suspension">
+        <xs:annotation>
+          <xs:documentation></xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Other">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -20518,6 +21887,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:maxLength value="50" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="AssessmentFamily">
+    <xs:annotation>
+      <xs:documentation>The AssessmentFamily an Assessment is a member of.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="60" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="AssessmentForm">
     <xs:annotation>
       <xs:documentation>Identifies the form of the assessment, for example a regular versus makeup form, multiple choice versus contstructed response, etc.</xs:documentation>
@@ -20575,7 +21956,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="255" />
+      <xs:maxLength value="225" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="BellScheduleName">
@@ -20720,6 +22101,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="250" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ContactTitle">
+    <xs:annotation>
+      <xs:documentation>The title of the contact in the context of the EducationOrganization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="75" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ContentIdentifier">
@@ -20974,6 +22367,17 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:maxLength value="128" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="ExternalTerm">
+    <xs:annotation>
+      <xs:documentation>Defines the external term of a session during the school year (e.g., Fall Semester) of an ExternalEducationOrganization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="75" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="FirstName">
     <xs:annotation>
       <xs:documentation>A name given to an individual at birth, baptism, or during another naming ceremony, or through legal change.</xs:documentation>
@@ -21127,7 +22531,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="5" />
-      <xs:maxLength value="255" />
+      <xs:maxLength value="225" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="LearningStandardId">
@@ -21152,6 +22556,29 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LicenseIdentifier">
+    <xs:annotation>
+      <xs:documentation>Identifier assigned by the licensing organization to the license.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LicensingOrganization">
+    <xs:annotation>
+      <xs:documentation>The organization issuing the license.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="75" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="LocalCourseCode">
@@ -21276,14 +22703,14 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
   </xs:simpleType>
   <xs:simpleType name="ProfileThumbnail">
     <xs:annotation>
-      <xs:documentation>ProfileThumbnail.</xs:documentation>
+      <xs:documentation>Locator reference for the student photo. The specification for that reference is left to local definition.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Simple</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="59" />
+      <xs:maxLength value="255" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ProgramId">
@@ -21370,6 +22797,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:maxLength value="60" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="Reason">
+    <xs:annotation>
+      <xs:documentation>Expanded reason for the staff leave.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="40" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="RecognitionDescription">
     <xs:annotation>
       <xs:documentation>The description of recognition given to the student for accomplishments in a co-curricular or extra-curricular activity.</xs:documentation>
@@ -21428,6 +22867,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="35" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SectionIdentifier">
+    <xs:annotation>
+      <xs:documentation>A unique identifier for the Section, that is defined by the classroom, the subjects taught, and the instructors that are assigned.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="255" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ServiceCategory">
@@ -21511,18 +22962,6 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:maxLength value="32" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="UniqueSectionCode">
-    <xs:annotation>
-      <xs:documentation>A unique identifier for the Section, that is defined by the classroom, the subjects taught, and the instructors that are assigned.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Simple</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:minLength value="1" />
-      <xs:maxLength value="255" />
-    </xs:restriction>
-  </xs:simpleType>
   <xs:simpleType name="URI">
     <xs:annotation>
       <xs:documentation>The public web site address (URL), file, or ftp locator.</xs:documentation>
@@ -21532,7 +22971,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="5" />
-      <xs:maxLength value="255" />
+      <xs:maxLength value="225" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="WeekIdentifier">
@@ -21550,9 +22989,27 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
   <xs:annotation>
     <xs:documentation>===== Numeric Simple Types =====</xs:documentation>
   </xs:annotation>
+  <xs:simpleType name="AgeAuthorizedToServe">
+    <xs:annotation>
+      <xs:documentation>Age of children a provider is authorized or licensed to serve.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int" />
+  </xs:simpleType>
   <xs:simpleType name="AssessmentVersion">
     <xs:annotation>
       <xs:documentation>The version identifier for the assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int" />
+  </xs:simpleType>
+  <xs:simpleType name="Capacity">
+    <xs:annotation>
+      <xs:documentation>The maximum number that can be contained or accommodated at any given time.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Simple</ann:TypeGroup>
       </xs:appinfo>
@@ -21642,6 +23099,18 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:fractionDigits value="4" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="HoursAbsent">
+    <xs:annotation>
+      <xs:documentation>The hours the staff was absent, if not the entire working day.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="18" />
+      <xs:fractionDigits value="2" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="HoursOnLeave">
     <xs:annotation>
       <xs:documentation>The hours the staff was absent, if not the entire working day.</xs:documentation>
@@ -21676,6 +23145,17 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     <xs:restriction base="xs:decimal">
       <xs:totalDigits value="5" />
       <xs:fractionDigits value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MaxCompletionsForCredit">
+    <xs:annotation>
+      <xs:documentation>Designates how many times the course may be taken with credit received by the student.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="NumberOfDaysAbsent">

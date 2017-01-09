@@ -12,6 +12,7 @@ The Descriptor interchange is used to describe metadata about the descriptors an
     </xs:annotation>
     <xs:complexType>
       <xs:choice maxOccurs="unbounded">
+        <xs:element name="AbsenceEventCategoryDescriptor" type="AbsenceEventCategoryDescriptor" />
         <xs:element name="AcademicSubjectDescriptor" type="AcademicSubjectDescriptor" />
         <xs:element name="AccommodationDescriptor" type="AccommodationDescriptor" />
         <xs:element name="AccountCodeDescriptor" type="AccountCodeDescriptor" />
@@ -23,9 +24,11 @@ The Descriptor interchange is used to describe metadata about the descriptors an
         <xs:element name="AssessmentReportingMethodDescriptor" type="AssessmentReportingMethodDescriptor" />
         <xs:element name="AttendanceEventCategoryDescriptor" type="AttendanceEventCategoryDescriptor" />
         <xs:element name="BehaviorDescriptor" type="BehaviorDescriptor" />
-        <xs:element name="CalendarEventDescriptor" type="CalendarEventDescriptor" />
+        <xs:element name="CalendarEventCategoryDescriptor" type="CalendarEventCategoryDescriptor" />
+        <xs:element name="CalendarTypeDescriptor" type="CalendarTypeDescriptor" />
         <xs:element name="ClassroomPositionDescriptor" type="ClassroomPositionDescriptor" />
         <xs:element name="CompetencyLevelDescriptor" type="CompetencyLevelDescriptor" />
+        <xs:element name="ContactTypeDescriptor" type="ContactTypeDescriptor" />
         <xs:element name="ContinuationOfServicesReasonDescriptor" type="ContinuationOfServicesReasonDescriptor" />
         <xs:element name="CountryDescriptor" type="CountryDescriptor" />
         <xs:element name="CourseIdentificationSystemDescriptor" type="CourseIdentificationSystemDescriptor" />
@@ -43,10 +46,15 @@ The Descriptor interchange is used to describe metadata about the descriptors an
         <xs:element name="LanguageDescriptor" type="LanguageDescriptor" />
         <xs:element name="LevelDescriptor" type="LevelDescriptor" />
         <xs:element name="LevelOfEducationDescriptor" type="LevelOfEducationDescriptor" />
+        <xs:element name="LicenseTypeDescriptor" type="LicenseTypeDescriptor" />
+        <xs:element name="LicenseStatusDescriptor" type="LicenseStatusDescriptor" />
         <xs:element name="LimitedEnglishProficiencyDescriptor" type="LimitedEnglishProficiencyDescriptor" />
         <xs:element name="PerformanceLevelDescriptor" type="PerformanceLevelDescriptor" />
         <xs:element name="ProgramAssignmentDescriptor" type="ProgramAssignmentDescriptor" />
         <xs:element name="ProgramCharacteristicDescriptor" type="ProgramCharacteristicDescriptor" />
+        <xs:element name="ProviderCategoryDescriptor" type="ProviderCategoryDescriptor" />
+        <xs:element name="ProviderProfitabilityDescriptor" type="ProviderProfitabilityDescriptor" />
+        <xs:element name="ProviderStatusDescriptor" type="ProviderStatusDescriptor" />
         <xs:element name="ReasonExitedDescriptor" type="ReasonExitedDescriptor" />
         <xs:element name="ReporterDescriptionDescriptor" type="ReporterDescriptionDescriptor" />
         <xs:element name="ResidencyStatusDescriptor" type="ResidencyStatusDescriptor" />
