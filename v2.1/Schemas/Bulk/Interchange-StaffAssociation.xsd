@@ -16,10 +16,12 @@
         <xs:element name="StaffEducationOrganizationAssignmentAssociation" type="StaffEducationOrganizationAssignmentAssociation" />
         <xs:element name="StaffSchoolAssociation" type="StaffSchoolAssociation" />
         <xs:element name="StaffSectionAssociation" type="StaffSectionAssociation" />
-        <xs:element name="LeaveEvent" type="LeaveEvent" />
+        <xs:element name="StaffLeave" type="StaffLeave" />
         <xs:element name="OpenStaffPosition" type="OpenStaffPosition" />
         <xs:element name="StaffProgramAssociation" type="StaffProgramAssociation" />
         <xs:element name="StaffEducationOrganizationContactAssociation" type="StaffEducationOrganizationContactAssociation" />
+        <xs:element name="StaffAbsenceEvent" type="StaffAbsenceEvent" />
+        <xs:element name="StaffCredential" type="StaffCredential" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
