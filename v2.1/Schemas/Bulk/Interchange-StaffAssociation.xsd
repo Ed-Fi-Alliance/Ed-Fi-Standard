@@ -19,6 +19,7 @@
         <xs:element name="LeaveEvent" type="LeaveEvent" />
         <xs:element name="OpenStaffPosition" type="OpenStaffPosition" />
         <xs:element name="StaffProgramAssociation" type="StaffProgramAssociation" />
+        <xs:element name="StaffEducationOrganizationContactAssociation" type="StaffEducationOrganizationContactAssociation" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
