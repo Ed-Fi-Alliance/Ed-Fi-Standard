@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <InterchangeEducationOrganization xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 C:/Projects/DLP-EdFiTeam/Ed-Fi-Standard/v2.0/Schemas/Interchange-EducationOrganization.xsd">
 	<EducationServiceCenter id="ESC_255950">
-		<StateOrganizationId>255950</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255950</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -34,10 +33,9 @@
 			<TelephoneNumber>(214) 876-8921</TelephoneNumber>
 			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
-		<EducationServiceCenterId>255950</EducationServiceCenterId>
+		<EducationOrganiationIdentifier>255950</EducationOrganiationIdentifier>
 	</EducationServiceCenter>
 	<LocalEducationAgency id="LEAG_255901">
-		<StateOrganizationId>255901</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255901</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -72,14 +70,13 @@
 			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/</WebSite>
-		<LocalEducationAgencyId>255901</LocalEducationAgencyId>
+		<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 		<LocalEducationAgencyCategory>Independent</LocalEducationAgencyCategory>
 		<EducationServiceCenterReference ref="ESC_255950">
 			<EducationServiceCenterLookup/>
 		</EducationServiceCenterReference>
 	</LocalEducationAgency>
 	<School id="SCOL_255901001">
-		<StateOrganizationId>255901001</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255901001</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -115,7 +112,7 @@
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBHS/</WebSite>
 		<OperationalStatus>Active</OperationalStatus>
-		<SchoolId>255901001</SchoolId>
+		<EducationOrganiationIdentifier>255901001</EducationOrganiationIdentifier>
 		<GradeLevel>
 			<CodeValue>Ninth grade</CodeValue>
 			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
@@ -145,7 +142,6 @@
 		</LocalEducationAgencyReference>
 	</School>
 	<School id="SCOL_255901044">
-		<StateOrganizationId>255901044</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255901044</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -181,7 +177,7 @@
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBMS/</WebSite>
 		<OperationalStatus>Active</OperationalStatus>
-		<SchoolId>255901044</SchoolId>
+		<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 		<GradeLevel>
 			<CodeValue>Sixth grade</CodeValue>
 			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
@@ -207,7 +203,6 @@
 		</LocalEducationAgencyReference>
 	</School>
 	<School id="SCOL_255901107">
-		<StateOrganizationId>255901107</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255901107</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -243,7 +238,7 @@
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBES/</WebSite>
 		<OperationalStatus>Active</OperationalStatus>
-		<SchoolId>255901107</SchoolId>
+		<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 		<GradeLevel>
 			<CodeValue>First grade</CodeValue>
 			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
