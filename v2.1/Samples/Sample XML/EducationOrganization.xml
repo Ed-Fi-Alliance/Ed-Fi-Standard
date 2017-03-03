@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeEducationOrganization xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 C:/Projects/DLP-EdFiTeam/Ed-Fi-Standard/v2.0/Schemas/Interchange-EducationOrganization.xsd">
+<InterchangeEducationOrganization xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../Schemas/Interchange-EducationOrganization.xsd">
 	<EducationServiceCenter id="ESC_255950">
-		<StateOrganizationId>255950</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255950</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -34,10 +33,9 @@
 			<TelephoneNumber>(214) 876-8921</TelephoneNumber>
 			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
-		<EducationServiceCenterId>255950</EducationServiceCenterId>
+		<EducationOrganizationIdentifier>255950</EducationOrganizationIdentifier>
 	</EducationServiceCenter>
 	<LocalEducationAgency id="LEAG_255901">
-		<StateOrganizationId>255901</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255901</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -72,14 +70,13 @@
 			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/</WebSite>
-		<LocalEducationAgencyId>255901</LocalEducationAgencyId>
+		<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 		<LocalEducationAgencyCategory>Independent</LocalEducationAgencyCategory>
 		<EducationServiceCenterReference ref="ESC_255950">
 			<EducationServiceCenterLookup/>
 		</EducationServiceCenterReference>
 	</LocalEducationAgency>
 	<School id="SCOL_255901001">
-		<StateOrganizationId>255901001</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255901001</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -115,7 +112,7 @@
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBHS/</WebSite>
 		<OperationalStatus>Active</OperationalStatus>
-		<SchoolId>255901001</SchoolId>
+		<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 		<GradeLevel>
 			<CodeValue>Ninth grade</CodeValue>
 			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
@@ -145,7 +142,6 @@
 		</LocalEducationAgencyReference>
 	</School>
 	<School id="SCOL_255901044">
-		<StateOrganizationId>255901044</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255901044</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -181,7 +177,7 @@
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBMS/</WebSite>
 		<OperationalStatus>Active</OperationalStatus>
-		<SchoolId>255901044</SchoolId>
+		<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 		<GradeLevel>
 			<CodeValue>Sixth grade</CodeValue>
 			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
@@ -207,7 +203,6 @@
 		</LocalEducationAgencyReference>
 	</School>
 	<School id="SCOL_255901107">
-		<StateOrganizationId>255901107</StateOrganizationId>
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255901107</IdentificationCode>
 			<EducationOrganizationIdentificationSystem>
@@ -243,7 +238,7 @@
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBES/</WebSite>
 		<OperationalStatus>Active</OperationalStatus>
-		<SchoolId>255901107</SchoolId>
+		<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 		<GradeLevel>
 			<CodeValue>First grade</CodeValue>
 			<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
@@ -279,10 +274,10 @@
 	<Location id="LOCN_255901107101-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>101</ClassroomIdentificationCode>
@@ -292,10 +287,10 @@
 	<Location id="LOCN_255901107102-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>102</ClassroomIdentificationCode>
@@ -305,10 +300,10 @@
 	<Location id="LOCN_255901107103-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>103</ClassroomIdentificationCode>
@@ -318,10 +313,10 @@
 	<Location id="LOCN_255901107104-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>104</ClassroomIdentificationCode>
@@ -331,10 +326,10 @@
 	<Location id="LOCN_255901107105-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>105</ClassroomIdentificationCode>
@@ -344,10 +339,10 @@
 	<Location id="LOCN_255901107106-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>106</ClassroomIdentificationCode>
@@ -357,10 +352,10 @@
 	<Location id="LOCN_255901107107-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>107</ClassroomIdentificationCode>
@@ -370,10 +365,10 @@
 	<Location id="LOCN_255901107108-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>108</ClassroomIdentificationCode>
@@ -383,10 +378,10 @@
 	<Location id="LOCN_255901107201-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>201</ClassroomIdentificationCode>
@@ -396,10 +391,10 @@
 	<Location id="LOCN_255901107202-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>202</ClassroomIdentificationCode>
@@ -409,10 +404,10 @@
 	<Location id="LOCN_255901107203-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>203</ClassroomIdentificationCode>
@@ -422,10 +417,10 @@
 	<Location id="LOCN_255901107204-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>204</ClassroomIdentificationCode>
@@ -435,10 +430,10 @@
 	<Location id="LOCN_255901107205-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>205</ClassroomIdentificationCode>
@@ -448,10 +443,10 @@
 	<Location id="LOCN_255901107206-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>206</ClassroomIdentificationCode>
@@ -461,10 +456,10 @@
 	<Location id="LOCN_255901107207-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>207</ClassroomIdentificationCode>
@@ -474,10 +469,10 @@
 	<Location id="LOCN_255901107208-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>208</ClassroomIdentificationCode>
@@ -487,10 +482,10 @@
 	<Location id="LOCN_255901107301-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>301</ClassroomIdentificationCode>
@@ -500,10 +495,10 @@
 	<Location id="LOCN_255901107302-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>302</ClassroomIdentificationCode>
@@ -513,10 +508,10 @@
 	<Location id="LOCN_255901107303-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>303</ClassroomIdentificationCode>
@@ -526,10 +521,10 @@
 	<Location id="LOCN_255901107304-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>304</ClassroomIdentificationCode>
@@ -539,10 +534,10 @@
 	<Location id="LOCN_255901107501-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>501</ClassroomIdentificationCode>
@@ -552,10 +547,10 @@
 	<Location id="LOCN_255901107502-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>502</ClassroomIdentificationCode>
@@ -565,10 +560,10 @@
 	<Location id="LOCN_255901107503-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>503</ClassroomIdentificationCode>
@@ -578,10 +573,10 @@
 	<Location id="LOCN_255901107504-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>504</ClassroomIdentificationCode>
@@ -591,10 +586,10 @@
 	<Location id="LOCN_255901107505-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>505</ClassroomIdentificationCode>
@@ -604,10 +599,10 @@
 	<Location id="LOCN_255901107506-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>506</ClassroomIdentificationCode>
@@ -617,10 +612,10 @@
 	<Location id="LOCN_255901107GYM-E-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>GYM-E</ClassroomIdentificationCode>
@@ -630,10 +625,10 @@
 	<Location id="LOCN_255901107GYM-W-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>GYM-W</ClassroomIdentificationCode>
@@ -643,10 +638,10 @@
 	<Location id="LOCN_255901044110-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>110</ClassroomIdentificationCode>
@@ -656,10 +651,10 @@
 	<Location id="LOCN_255901044111-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>111</ClassroomIdentificationCode>
@@ -669,10 +664,10 @@
 	<Location id="LOCN_255901044112-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>112</ClassroomIdentificationCode>
@@ -682,10 +677,10 @@
 	<Location id="LOCN_255901044113-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>113</ClassroomIdentificationCode>
@@ -695,10 +690,10 @@
 	<Location id="LOCN_255901044114-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>114</ClassroomIdentificationCode>
@@ -708,10 +703,10 @@
 	<Location id="LOCN_255901044115-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>115</ClassroomIdentificationCode>
@@ -721,10 +716,10 @@
 	<Location id="LOCN_255901044210-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>210</ClassroomIdentificationCode>
@@ -734,10 +729,10 @@
 	<Location id="LOCN_255901044211-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>211</ClassroomIdentificationCode>
@@ -747,10 +742,10 @@
 	<Location id="LOCN_255901044212-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>212</ClassroomIdentificationCode>
@@ -760,10 +755,10 @@
 	<Location id="LOCN_255901044213-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>213</ClassroomIdentificationCode>
@@ -773,10 +768,10 @@
 	<Location id="LOCN_255901044310-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>310</ClassroomIdentificationCode>
@@ -786,10 +781,10 @@
 	<Location id="LOCN_255901044GYM-N-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>GYM-N</ClassroomIdentificationCode>
@@ -799,10 +794,10 @@
 	<Location id="LOCN_255901044GYM-S-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>GYM-S</ClassroomIdentificationCode>
@@ -812,10 +807,10 @@
 	<Location id="LOCN_255901001120-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>120</ClassroomIdentificationCode>
@@ -825,10 +820,10 @@
 	<Location id="LOCN_255901001121-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>121</ClassroomIdentificationCode>
@@ -838,10 +833,10 @@
 	<Location id="LOCN_255901001122-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>122</ClassroomIdentificationCode>
@@ -851,10 +846,10 @@
 	<Location id="LOCN_255901001123-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>123</ClassroomIdentificationCode>
@@ -864,10 +859,10 @@
 	<Location id="LOCN_255901001124-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>124</ClassroomIdentificationCode>
@@ -877,10 +872,10 @@
 	<Location id="LOCN_255901001220-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>220</ClassroomIdentificationCode>
@@ -890,10 +885,10 @@
 	<Location id="LOCN_255901001221-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>221</ClassroomIdentificationCode>
@@ -903,10 +898,10 @@
 	<Location id="LOCN_255901001222-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>222</ClassroomIdentificationCode>
@@ -916,10 +911,10 @@
 	<Location id="LOCN_255901001223-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>223</ClassroomIdentificationCode>
@@ -929,10 +924,10 @@
 	<Location id="LOCN_255901001320-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>320</ClassroomIdentificationCode>
@@ -942,10 +937,10 @@
 	<Location id="LOCN_255901001321-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>321</ClassroomIdentificationCode>
@@ -955,10 +950,10 @@
 	<Location id="LOCN_255901001322-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>322</ClassroomIdentificationCode>
@@ -968,10 +963,10 @@
 	<Location id="LOCN_255901001323-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>323</ClassroomIdentificationCode>
@@ -981,10 +976,10 @@
 	<Location id="LOCN_255901001324-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>324</ClassroomIdentificationCode>
@@ -994,10 +989,10 @@
 	<Location id="LOCN_255901001325-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassroomIdentificationCode>325</ClassroomIdentificationCode>
@@ -1007,10 +1002,10 @@
 	<ClassPeriod id="CPER_01-Traditional-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>01 - Traditional</ClassPeriodName>
@@ -1018,10 +1013,10 @@
 	<ClassPeriod id="CPER_01-Traditional-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>01 - Traditional</ClassPeriodName>
@@ -1029,10 +1024,10 @@
 	<ClassPeriod id="CPER_01-Traditional-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>01 - Traditional</ClassPeriodName>
@@ -1040,10 +1035,10 @@
 	<ClassPeriod id="CPER_02-Traditional-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>02 - Traditional</ClassPeriodName>
@@ -1051,10 +1046,10 @@
 	<ClassPeriod id="CPER_02-Traditional-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>02 - Traditional</ClassPeriodName>
@@ -1062,10 +1057,10 @@
 	<ClassPeriod id="CPER_02-Traditional-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>02 - Traditional</ClassPeriodName>
@@ -1073,10 +1068,10 @@
 	<ClassPeriod id="CPER_03-Traditional-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>03 - Traditional</ClassPeriodName>
@@ -1084,10 +1079,10 @@
 	<ClassPeriod id="CPER_03-Traditional-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>03 - Traditional</ClassPeriodName>
@@ -1095,10 +1090,10 @@
 	<ClassPeriod id="CPER_03-Traditional-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>03 - Traditional</ClassPeriodName>
@@ -1106,10 +1101,10 @@
 	<ClassPeriod id="CPER_04-Traditional-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>04 - Traditional</ClassPeriodName>
@@ -1117,10 +1112,10 @@
 	<ClassPeriod id="CPER_04-Traditional-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>04 - Traditional</ClassPeriodName>
@@ -1128,10 +1123,10 @@
 	<ClassPeriod id="CPER_04-Traditional-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>04 - Traditional</ClassPeriodName>
@@ -1139,10 +1134,10 @@
 	<ClassPeriod id="CPER_05-Traditional-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>05 - Traditional</ClassPeriodName>
@@ -1150,10 +1145,10 @@
 	<ClassPeriod id="CPER_05-Traditional-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>05 - Traditional</ClassPeriodName>
@@ -1161,10 +1156,10 @@
 	<ClassPeriod id="CPER_05-Traditional-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>05 - Traditional</ClassPeriodName>
@@ -1172,10 +1167,10 @@
 	<ClassPeriod id="CPER_06-Traditional-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>06 - Traditional</ClassPeriodName>
@@ -1183,10 +1178,10 @@
 	<ClassPeriod id="CPER_06-Traditional-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>06 - Traditional</ClassPeriodName>
@@ -1194,10 +1189,10 @@
 	<ClassPeriod id="CPER_06-Traditional-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>06 - Traditional</ClassPeriodName>
@@ -1205,10 +1200,10 @@
 	<ClassPeriod id="CPER_07-Traditional-255901001">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901001</SchoolId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>07 - Traditional</ClassPeriodName>
@@ -1216,10 +1211,10 @@
 	<ClassPeriod id="CPER_07-Traditional-255901044">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901044</SchoolId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>07 - Traditional</ClassPeriodName>
@@ -1227,10 +1222,10 @@
 	<ClassPeriod id="CPER_07-Traditional-255901107">
 		<SchoolReference>
 			<SchoolIdentity>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolIdentity>
 			<SchoolLookup>
-				<SchoolId>255901107</SchoolId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</SchoolLookup>
 		</SchoolReference>
 		<ClassPeriodName>07 - Traditional</ClassPeriodName>
@@ -3366,10 +3361,10 @@
 	<Program id="PRGM_2559011">
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationLookup>
 		</EducationOrganizationReference>
 		<ProgramId>1</ProgramId>
@@ -3380,10 +3375,10 @@
 	<Program id="PRGM_2559012">
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationLookup>
 		</EducationOrganizationReference>
 		<ProgramId>2</ProgramId>
@@ -3394,10 +3389,10 @@
 	<Program id="PRGM_2559013">
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationLookup>
 		</EducationOrganizationReference>
 		<ProgramId>3</ProgramId>
@@ -3408,10 +3403,10 @@
 	<Program id="PRGM_2559014">
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationLookup>
 		</EducationOrganizationReference>
 		<ProgramId>4</ProgramId>
@@ -3422,10 +3417,10 @@
 	<Program id="PRGM_2559015">
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationLookup>
 		</EducationOrganizationReference>
 		<ProgramId>5</ProgramId>
@@ -3436,10 +3431,10 @@
 	<Program id="PRGM_2559016">
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationLookup>
 		</EducationOrganizationReference>
 		<ProgramId>6</ProgramId>
@@ -3450,10 +3445,10 @@
 	<Program id="PRGM_2559017">
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationLookup>
 		</EducationOrganizationReference>
 		<ProgramId>7</ProgramId>
@@ -3464,10 +3459,10 @@
 	<AccountabilityRating>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901</EducationOrganizationIdentifier>
 				<EducationOrganizationIdentificationCode>
 					<IdentificationCode>255901</IdentificationCode>
 					<EducationOrganizationIdentificationSystem>
@@ -3486,10 +3481,10 @@
 	<AccountabilityRating>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901001</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901001</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901001</EducationOrganizationIdentifier>
 				<EducationOrganizationIdentificationCode>
 					<IdentificationCode>255901001</IdentificationCode>
 					<EducationOrganizationIdentificationSystem>
@@ -3508,10 +3503,10 @@
 	<AccountabilityRating>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901044</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901044</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901044</EducationOrganizationIdentifier>
 				<EducationOrganizationIdentificationCode>
 					<IdentificationCode>255901044</IdentificationCode>
 					<EducationOrganizationIdentificationSystem>
@@ -3530,10 +3525,10 @@
 	<AccountabilityRating>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901107</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 			</EducationOrganizationIdentity>
 			<EducationOrganizationLookup>
-				<EducationOrganizationId>255901107</EducationOrganizationId>
+				<EducationOrganizationIdentifier>255901107</EducationOrganizationIdentifier>
 				<EducationOrganizationIdentificationCode>
 					<IdentificationCode>255901107</IdentificationCode>
 					<EducationOrganizationIdentificationSystem>

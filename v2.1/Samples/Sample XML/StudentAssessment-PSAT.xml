@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeStudentAssessment xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 C:/Projects/DLP-EdFiTeam/Ed-Fi-Standard/v2.0/Schemas/Interchange-StudentAssessment.xsd">
+<InterchangeStudentAssessment xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../Schemas/Interchange-StudentAssessment.xsd">
    <AssessmentReference id="TA-PSAT-CriticalReading-1">
       <AssessmentIdentity>
          <AssessmentTitle>PSAT</AssessmentTitle>
@@ -54,12 +54,16 @@
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>17</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -93,12 +97,16 @@
       <ScoreResult>
          <Result>46</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>46</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -132,12 +140,16 @@
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>27</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -171,12 +183,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -210,12 +226,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -249,12 +269,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>55</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -288,12 +312,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -327,12 +355,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>30</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -366,12 +398,16 @@
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>27</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -405,12 +441,16 @@
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>89</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -444,12 +484,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -483,12 +527,16 @@
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>72</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -522,12 +570,16 @@
       <ScoreResult>
          <Result>44</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -561,12 +613,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>81</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -600,12 +656,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>56</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -639,12 +699,16 @@
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>79</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -678,12 +742,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>90</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -717,12 +785,16 @@
       <ScoreResult>
          <Result>54</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>92</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -756,12 +828,16 @@
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>76</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -795,12 +871,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>81</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -834,12 +914,16 @@
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>80</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -873,12 +957,16 @@
       <ScoreResult>
          <Result>51</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>73</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -912,12 +1000,16 @@
       <ScoreResult>
          <Result>60</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>86</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -951,12 +1043,16 @@
       <ScoreResult>
          <Result>50</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>76</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -990,12 +1086,16 @@
       <ScoreResult>
          <Result>61</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>93</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1029,12 +1129,16 @@
       <ScoreResult>
          <Result>66</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>94</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1068,12 +1172,16 @@
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>90</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1107,12 +1215,16 @@
       <ScoreResult>
          <Result>51</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>73</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1146,12 +1258,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>30</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1185,12 +1301,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1224,12 +1344,16 @@
       <ScoreResult>
          <Result>31</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>9</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1263,12 +1387,16 @@
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>15</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1302,12 +1430,16 @@
       <ScoreResult>
          <Result>37</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>31</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1341,12 +1473,16 @@
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>59</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1380,12 +1516,16 @@
       <ScoreResult>
          <Result>51</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>65</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1419,12 +1559,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1458,12 +1602,16 @@
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>65</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1497,12 +1645,16 @@
       <ScoreResult>
          <Result>50</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>62</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1536,12 +1688,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1575,12 +1731,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1614,12 +1774,16 @@
       <ScoreResult>
          <Result>51</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>65</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1653,12 +1817,16 @@
       <ScoreResult>
          <Result>46</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>66</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1692,12 +1860,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>86</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1731,12 +1903,16 @@
       <ScoreResult>
          <Result>70</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1770,12 +1946,16 @@
       <ScoreResult>
          <Result>54</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>85</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1809,12 +1989,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>86</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1848,12 +2032,16 @@
       <ScoreResult>
          <Result>70</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1887,12 +2075,16 @@
       <ScoreResult>
          <Result>54</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>85</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1926,12 +2118,16 @@
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>76</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -1965,12 +2161,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>81</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2004,12 +2204,16 @@
       <ScoreResult>
          <Result>45</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>60</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2043,12 +2247,16 @@
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>59</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2082,12 +2290,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2121,12 +2333,16 @@
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2160,12 +2376,16 @@
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>59</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2199,12 +2419,16 @@
       <ScoreResult>
          <Result>55</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>75</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2238,12 +2462,16 @@
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2277,12 +2505,16 @@
       <ScoreResult>
          <Result>37</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>24</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2316,12 +2548,16 @@
       <ScoreResult>
          <Result>46</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>46</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2355,12 +2591,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2394,12 +2634,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2433,12 +2677,16 @@
       <ScoreResult>
          <Result>50</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>62</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2472,12 +2720,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2511,12 +2763,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>92</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2550,12 +2806,16 @@
       <ScoreResult>
          <Result>65</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2589,12 +2849,16 @@
       <ScoreResult>
          <Result>54</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>92</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2628,12 +2892,16 @@
       <ScoreResult>
          <Result>51</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>84</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2667,12 +2935,16 @@
       <ScoreResult>
          <Result>63</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>96</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2706,12 +2978,16 @@
       <ScoreResult>
          <Result>54</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>92</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2745,12 +3021,16 @@
       <ScoreResult>
          <Result>33</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>14</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2784,12 +3064,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2823,12 +3107,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2862,12 +3150,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2901,12 +3193,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2940,12 +3236,16 @@
       <ScoreResult>
          <Result>45</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>60</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -2979,12 +3279,16 @@
       <ScoreResult>
          <Result>45</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>65</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3018,12 +3322,16 @@
       <ScoreResult>
          <Result>45</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>56</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3057,12 +3365,16 @@
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>89</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3096,12 +3408,16 @@
       <ScoreResult>
          <Result>72</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>99</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3135,12 +3451,16 @@
       <ScoreResult>
          <Result>64</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>91</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3174,12 +3494,16 @@
       <ScoreResult>
          <Result>71</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>99</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3213,12 +3537,16 @@
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>59</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3252,12 +3580,16 @@
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3291,12 +3623,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>56</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3330,12 +3666,16 @@
       <ScoreResult>
          <Result>33</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>14</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3369,12 +3709,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3408,12 +3752,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3447,12 +3795,16 @@
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>76</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3486,12 +3838,16 @@
       <ScoreResult>
          <Result>59</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>83</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3525,12 +3881,16 @@
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3564,12 +3924,16 @@
       <ScoreResult>
          <Result>74</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>99</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3603,12 +3967,16 @@
       <ScoreResult>
          <Result>80</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>99</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3642,12 +4010,16 @@
       <ScoreResult>
          <Result>67</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3681,12 +4053,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>46</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3720,12 +4096,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3759,12 +4139,16 @@
       <ScoreResult>
          <Result>31</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>12</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3798,12 +4182,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>86</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3837,12 +4225,16 @@
       <ScoreResult>
          <Result>66</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>94</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3876,12 +4268,16 @@
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3915,12 +4311,16 @@
       <ScoreResult>
          <Result>56</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>84</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3954,12 +4354,16 @@
       <ScoreResult>
          <Result>76</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>99</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -3993,12 +4397,16 @@
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>90</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4032,12 +4440,16 @@
       <ScoreResult>
          <Result>32</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>12</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4071,12 +4483,16 @@
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>50</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4110,12 +4526,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4149,12 +4569,16 @@
       <ScoreResult>
          <Result>56</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>84</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4188,12 +4612,16 @@
       <ScoreResult>
          <Result>56</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>78</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4227,12 +4655,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>82</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4266,12 +4698,16 @@
       <ScoreResult>
          <Result>37</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>24</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4305,12 +4741,16 @@
       <ScoreResult>
          <Result>39</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>22</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4344,12 +4784,16 @@
       <ScoreResult>
          <Result>31</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>12</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4383,12 +4827,16 @@
       <ScoreResult>
          <Result>66</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>96</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4422,12 +4870,16 @@
       <ScoreResult>
          <Result>68</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>95</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4461,12 +4913,16 @@
       <ScoreResult>
          <Result>63</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>95</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4500,12 +4956,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>86</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4539,12 +4999,16 @@
       <ScoreResult>
          <Result>72</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>98</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4578,12 +5042,16 @@
       <ScoreResult>
          <Result>63</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>95</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4617,12 +5085,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4656,12 +5128,16 @@
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4695,12 +5171,16 @@
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>20</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4734,12 +5214,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4773,12 +5257,16 @@
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4812,12 +5300,16 @@
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>20</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4851,12 +5343,16 @@
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>42</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4890,12 +5386,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4929,12 +5429,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -4968,12 +5472,16 @@
       <ScoreResult>
          <Result>44</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5007,12 +5515,16 @@
       <ScoreResult>
          <Result>44</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>38</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5046,12 +5558,16 @@
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>20</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5085,12 +5601,16 @@
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>20</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5124,12 +5644,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>26</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5163,12 +5687,16 @@
       <ScoreResult>
          <Result>35</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>24</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5202,12 +5730,16 @@
       <ScoreResult>
          <Result>68</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5241,12 +5773,16 @@
       <ScoreResult>
          <Result>64</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>91</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5280,12 +5816,16 @@
       <ScoreResult>
          <Result>59</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>92</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5319,12 +5859,16 @@
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>89</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5358,12 +5902,16 @@
       <ScoreResult>
          <Result>44</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>38</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5397,12 +5945,16 @@
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5436,12 +5988,16 @@
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>20</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5475,12 +6031,16 @@
       <ScoreResult>
          <Result>63</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>90</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5514,12 +6074,16 @@
       <ScoreResult>
          <Result>38</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5553,12 +6117,16 @@
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>89</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5592,12 +6160,16 @@
       <ScoreResult>
          <Result>59</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>83</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5631,12 +6203,16 @@
       <ScoreResult>
          <Result>50</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>76</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5670,12 +6246,16 @@
       <ScoreResult>
          <Result>38</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>27</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5709,12 +6289,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5748,12 +6332,16 @@
       <ScoreResult>
          <Result>28</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>7</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5787,12 +6375,16 @@
       <ScoreResult>
          <Result>37</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>24</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5826,12 +6418,16 @@
       <ScoreResult>
          <Result>65</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>93</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5865,12 +6461,16 @@
       <ScoreResult>
          <Result>35</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>24</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5904,12 +6504,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>78</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5943,12 +6547,16 @@
       <ScoreResult>
          <Result>63</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>90</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -5982,12 +6590,16 @@
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>72</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6021,12 +6633,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>78</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6060,12 +6676,16 @@
       <ScoreResult>
          <Result>66</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>94</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6099,12 +6719,16 @@
       <ScoreResult>
          <Result>38</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6138,12 +6762,16 @@
       <ScoreResult>
          <Result>61</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>93</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6177,12 +6805,16 @@
       <ScoreResult>
          <Result>66</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>94</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6216,12 +6848,16 @@
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6255,12 +6891,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6294,12 +6934,16 @@
       <ScoreResult>
          <Result>46</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>46</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6333,12 +6977,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6372,12 +7020,16 @@
       <ScoreResult>
          <Result>62</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>93</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6411,12 +7063,16 @@
       <ScoreResult>
          <Result>70</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6450,12 +7106,16 @@
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>90</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6489,12 +7149,16 @@
       <ScoreResult>
          <Result>62</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>93</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6528,12 +7192,16 @@
       <ScoreResult>
          <Result>70</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6567,12 +7235,16 @@
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>90</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6606,12 +7278,16 @@
       <ScoreResult>
          <Result>55</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>82</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6645,12 +7321,16 @@
       <ScoreResult>
          <Result>60</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>86</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6684,12 +7364,16 @@
       <ScoreResult>
          <Result>59</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>92</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6723,12 +7407,16 @@
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>65</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6762,12 +7450,16 @@
       <ScoreResult>
          <Result>57</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>81</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6801,12 +7493,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>41</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6840,12 +7536,16 @@
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>72</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6879,12 +7579,16 @@
       <ScoreResult>
          <Result>44</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6918,12 +7622,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>55</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6957,12 +7665,16 @@
       <ScoreResult>
          <Result>38</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>27</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -6996,12 +7708,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>34</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7035,12 +7751,16 @@
       <ScoreResult>
          <Result>43</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>56</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7074,12 +7794,16 @@
       <ScoreResult>
          <Result>45</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7113,12 +7837,16 @@
       <ScoreResult>
          <Result>39</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>22</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7152,12 +7880,16 @@
       <ScoreResult>
          <Result>37</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>31</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7191,12 +7923,16 @@
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>76</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7230,12 +7966,16 @@
       <ScoreResult>
          <Result>49</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7269,12 +8009,16 @@
       <ScoreResult>
          <Result>38</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7308,12 +8052,16 @@
       <ScoreResult>
          <Result>45</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7347,12 +8095,16 @@
       <ScoreResult>
          <Result>55</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>75</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7386,12 +8138,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>82</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7425,12 +8181,16 @@
       <ScoreResult>
          <Result>45</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7464,12 +8224,16 @@
       <ScoreResult>
          <Result>55</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>75</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7503,12 +8267,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>82</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7542,12 +8310,16 @@
       <ScoreResult>
          <Result>68</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7581,12 +8353,16 @@
       <ScoreResult>
          <Result>68</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>95</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7620,12 +8396,16 @@
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>98</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7659,12 +8439,16 @@
       <ScoreResult>
          <Result>68</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>97</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7698,12 +8482,16 @@
       <ScoreResult>
          <Result>68</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>95</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7737,12 +8525,16 @@
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>98</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7776,12 +8568,16 @@
       <ScoreResult>
          <Result>66</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>96</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7815,12 +8611,16 @@
       <ScoreResult>
          <Result>55</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>75</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7854,12 +8654,16 @@
       <ScoreResult>
          <Result>52</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>80</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7893,12 +8697,16 @@
       <ScoreResult>
          <Result>50</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>81</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7932,12 +8740,16 @@
       <ScoreResult>
          <Result>47</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>65</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -7971,12 +8783,16 @@
       <ScoreResult>
          <Result>54</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>92</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8010,12 +8826,16 @@
       <ScoreResult>
          <Result>44</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>62</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8049,12 +8869,16 @@
       <ScoreResult>
          <Result>45</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>56</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8088,12 +8912,16 @@
       <ScoreResult>
          <Result>36</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>39</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8127,12 +8955,16 @@
       <ScoreResult>
          <Result>53</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>87</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8166,12 +8998,16 @@
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8205,12 +9041,16 @@
       <ScoreResult>
          <Result>40</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>55</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8244,12 +9084,16 @@
       <ScoreResult>
          <Result>58</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>89</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8283,12 +9127,16 @@
       <ScoreResult>
          <Result>63</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>90</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
@@ -8322,12 +9170,16 @@
       <ScoreResult>
          <Result>48</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Raw score</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Raw score</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <ScoreResult>
          <Result>69</Result>
          <ResultDatatypeType>Integer</ResultDatatypeType>
-         <AssessmentReportingMethod>Percentile</AssessmentReportingMethod>
+         <AssessmentReportingMethod>
+				<CodeValue>Percentile</CodeValue>
+			</AssessmentReportingMethod>
       </ScoreResult>
       <StudentReference>
          <StudentIdentity>
