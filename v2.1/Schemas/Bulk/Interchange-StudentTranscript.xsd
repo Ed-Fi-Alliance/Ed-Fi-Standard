@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- (c)2017 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
-  <xs:include schemaLocation="Ed-Fi-Core.xsd" />
-  <xs:annotation>
-    <xs:documentation>===== Student Transcript Interchange Model =====</xs:documentation>
-  </xs:annotation>
-  <xs:element name="InterchangeStudentTranscript">
-    <xs:annotation>
-      <xs:documentation>This interchange defines transcript information for a course and student academic records for a given session. Course transcripts link to the student academic record for the session in which the course was taken.</xs:documentation>
-    </xs:annotation>
-    <xs:complexType>
-      <xs:choice maxOccurs="unbounded">
-        <xs:element name="StudentAcademicRecord" type="StudentAcademicRecord" />
-        <xs:element name="CourseTranscript" type="CourseTranscript" />
-        <xs:element name="ExternalEducationOrganization" type="ExternalEducationOrganization" />
-        <xs:element name="ExternalStudentAcademicRecord" type="ExternalStudentAcademicRecord" />
-        <xs:element name="ExternalCourseTranscript" type="ExternalCourseTranscript" />
-      </xs:choice>
-    </xs:complexType>
-  </xs:element>
+	<xs:include schemaLocation="../Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Transcript Interchange Model =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentTranscript">
+		<xs:annotation>
+			<xs:documentation>This interchange defines transcript information for a course and student academic records for a given session. Course transcripts link to the student academic record for the session in which the course was taken.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="StudentAcademicRecord" type="StudentAcademicRecord"/>
+				<xs:element name="CourseTranscript" type="CourseTranscript"/>
+				<xs:element name="ExternalEducationOrganization" type="ExternalEducationOrganization"/>
+				<xs:element name="ExternalStudentAcademicRecord" type="ExternalStudentAcademicRecord"/>
+				<xs:element name="ExternalCourseTranscript" type="ExternalCourseTranscript"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>
