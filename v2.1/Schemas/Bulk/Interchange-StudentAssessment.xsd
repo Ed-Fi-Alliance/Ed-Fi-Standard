@@ -11,10 +11,10 @@
     </xs:annotation>
     <xs:complexType>
       <xs:choice maxOccurs="unbounded">
+        <xs:element name="StudentAssessment" type="StudentAssessment" />
         <xs:element name="AssessmentReference" type="AssessmentReferenceType" />
         <xs:element name="AssessmentItemReference" type="AssessmentItemReferenceType" />
         <xs:element name="ObjectiveAssessmentReference" type="ObjectiveAssessmentReferenceType" />
-        <xs:element name="StudentAssessment" type="StudentAssessment" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
