@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeStudent xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../Schemas/Interchange-Student.xsd">
+<InterchangeStudent xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../Schemas/Bulk/Interchange-Student.xsd">
 	<Student id="STUD_777777">
 		<StudentUniqueId>777777</StudentUniqueId>
 		<StudentIdentificationCode>
@@ -108,7 +108,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -181,7 +181,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -306,8 +306,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Spanish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>spa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -599,8 +599,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Kimbundu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kmb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -717,8 +717,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tigrinya</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tir</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -847,7 +847,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -1368,7 +1368,7 @@
 		<EconomicDisadvantaged>false</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>FullPrice</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -1537,8 +1537,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Korean</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -1598,8 +1598,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Gujarati</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>guj</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -1826,8 +1826,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Korean</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -1893,8 +1893,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Other</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ces</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -2138,8 +2138,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Persian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fas</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -2320,8 +2320,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Navajo; Navaho</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nav</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -2611,8 +2611,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>German</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>deu</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -2779,8 +2779,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Navajo; Navaho</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nav</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -2904,8 +2904,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malayalam</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mal</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -2971,8 +2971,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bosnian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>bos</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -3084,8 +3084,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Arabic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ara</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -3150,8 +3150,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swedish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swe</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -3212,8 +3212,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malayalam</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mal</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -3328,8 +3328,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Tigrinya</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tir</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -3446,8 +3446,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Italian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ita</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -3513,8 +3513,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Russian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>rus</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -3580,7 +3580,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -3589,8 +3589,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Korean</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -3818,8 +3818,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Inuktitut</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>iku</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Native language</LanguageUse>
 		</Language>
@@ -3941,8 +3941,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Lao</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>lao</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4007,8 +4007,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Norwegian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4130,8 +4130,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Arabic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ara</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4253,8 +4253,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tigrinya</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tir</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4365,8 +4365,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Persian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fas</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4479,8 +4479,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Turkish </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tur</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4588,7 +4588,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -4597,8 +4597,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Urdu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>urd</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4760,8 +4760,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Manipuri</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mni</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4889,8 +4889,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Persian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fas</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -4946,8 +4946,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Hebrew</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>heb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -5004,8 +5004,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Swedish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swe</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -5348,8 +5348,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Efik</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>efi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -5576,8 +5576,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Choctaw</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -5647,8 +5647,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hungarian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hun</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -5980,8 +5980,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Arabic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ara</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -6107,8 +6107,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Turkish </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tur</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -6169,8 +6169,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Vietnamese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>vie</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -6284,7 +6284,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -6453,8 +6453,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>French</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fra</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -6519,8 +6519,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Italian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ita</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -6584,8 +6584,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Cebuano</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ceb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -6711,8 +6711,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Twi</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>twi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7002,8 +7002,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Spanish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>spa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7178,8 +7178,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Afrikaans</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>afr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7296,8 +7296,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Oriya </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ori</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7362,8 +7362,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Swahili</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7428,8 +7428,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bengali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ben</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7490,8 +7490,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tsonga</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tso</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7556,8 +7556,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Cebuano</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ceb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7617,8 +7617,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Manipuri</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mni</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7739,8 +7739,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malay</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zlm</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -7984,8 +7984,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Romanian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ron</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -8051,8 +8051,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tigrinya</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tir</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -8105,7 +8105,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -8174,8 +8174,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Ukrainian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ukr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -8406,8 +8406,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Hindi </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -8463,8 +8463,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Swedish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swe</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -8529,8 +8529,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Japanese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>jpn</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -8748,8 +8748,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Japanese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>jpn</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -9035,8 +9035,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Amharic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>amh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -9317,8 +9317,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Efik</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>efi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -9434,8 +9434,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Spanish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>spa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -9492,7 +9492,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -9557,8 +9557,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Other</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ces</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -9731,8 +9731,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malayalam</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mal</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -9797,8 +9797,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Oriya </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ori</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -9969,8 +9969,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hebrew</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>heb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -10324,8 +10324,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Gujarati</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>guj</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -10387,8 +10387,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tamashek</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tmh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -10512,8 +10512,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Chinese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -10690,8 +10690,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Nepali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>npi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -10757,8 +10757,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>English</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>eng</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -10819,8 +10819,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Afrikaans</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>afr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -10935,8 +10935,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Chinese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -11052,8 +11052,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tsonga</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tso</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -11119,8 +11119,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Afrikaans</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>afr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -11239,8 +11239,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Estonian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>est</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -11306,8 +11306,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bosnian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>bos</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -11518,8 +11518,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>French</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fra</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -11588,8 +11588,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Twi</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>twi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -11760,8 +11760,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Japanese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>jpn</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -11936,8 +11936,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Efik</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>efi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -12170,8 +12170,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Manipuri</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mni</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -12236,8 +12236,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Other</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ces</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -12302,8 +12302,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Twi</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>twi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -12364,7 +12364,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -12373,8 +12373,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Kimbundu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kmb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -12430,8 +12430,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Lao</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>lao</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -12491,8 +12491,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Malayalam</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mal</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -12612,8 +12612,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Spanish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>spa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -12779,8 +12779,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Choctaw</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -13054,7 +13054,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -13063,8 +13063,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Sinhala; Sinhalese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>sin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -13121,8 +13121,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Persian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fas</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -13536,8 +13536,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Welsh </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cym</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -13656,8 +13656,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Nepali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>npi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -13773,8 +13773,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Norwegian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -13840,8 +13840,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bengali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ben</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -13961,8 +13961,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Turkish </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tur</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -14194,8 +14194,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Navajo; Navaho</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nav</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -14255,8 +14255,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Ukrainian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ukr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -14322,8 +14322,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Sinhala; Sinhalese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>sin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -14388,8 +14388,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Amharic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>amh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -14498,7 +14498,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -14677,8 +14677,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>German</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>deu</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -14794,8 +14794,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Welsh </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cym</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -14976,8 +14976,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Welsh </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cym</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -15037,8 +15037,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Other</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ces</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -15163,8 +15163,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Thai</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tha</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -15280,8 +15280,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Lao</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>lao</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -15346,8 +15346,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swahili</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -15404,7 +15404,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -15529,8 +15529,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hungarian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hun</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -15596,8 +15596,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Cebuano</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ceb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -15783,8 +15783,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tamashek</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tmh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -15899,8 +15899,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Korean</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -16075,8 +16075,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Choctaw</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -16132,8 +16132,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Malay</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zlm</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -16256,8 +16256,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Indonesian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ind</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -16323,8 +16323,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Oriya </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ori</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -16553,8 +16553,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Italian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ita</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -16721,8 +16721,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Malay</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zlm</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -16952,8 +16952,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Tigrinya</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tir</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -17018,8 +17018,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Gujarati</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>guj</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -17149,8 +17149,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Estonian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>est</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -17216,8 +17216,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Estonian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>est</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -17329,7 +17329,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -17407,8 +17407,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Portuguese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>por</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -17529,8 +17529,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Portuguese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>por</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -17596,8 +17596,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Kimbundu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kmb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -17720,8 +17720,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Amharic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>amh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -17949,8 +17949,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Indonesian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ind</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18170,8 +18170,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>English</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>eng</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18241,8 +18241,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Twi</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>twi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18307,8 +18307,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Japanese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>jpn</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18374,8 +18374,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>German</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>deu</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18433,7 +18433,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -18442,8 +18442,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hungarian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hun</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18561,8 +18561,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Kimbundu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kmb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18738,12 +18738,12 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 		<Language>
 			<Language>
-				<CodeValue>Malayalam</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mal</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18919,8 +18919,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hausa</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hau</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -18982,8 +18982,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Vietnamese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>vie</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -19205,8 +19205,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Portuguese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>por</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -19271,8 +19271,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Navajo; Navaho</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nav</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -19444,8 +19444,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Ukrainian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ukr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -19506,7 +19506,7 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 	</Student>
 	<Student id="STUD_604967">
@@ -19569,8 +19569,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Hebrew</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>heb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -19739,8 +19739,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Romanian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ron</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -19855,8 +19855,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Oriya </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ori</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -19920,8 +19920,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Thai</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tha</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -19991,12 +19991,12 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 		<Language>
 			<Language>
-				<CodeValue>Lao</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>lao</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -20054,7 +20054,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -20063,8 +20063,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Sinhala; Sinhalese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>sin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -20134,8 +20134,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Chinese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -20310,12 +20310,12 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 		<Language>
 			<Language>
-				<CodeValue>Tsonga</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tso</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -20538,7 +20538,7 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 	</Student>
 	<Student id="STUD_605156">
@@ -20653,8 +20653,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Telugu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tel</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -20723,12 +20723,12 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 		<Language>
 			<Language>
-				<CodeValue>Russian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>rus</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -20794,12 +20794,12 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 		<Language>
 			<Language>
-				<CodeValue>Persian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fas</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -20860,7 +20860,7 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 	</Student>
 	<Student id="STUD_605657">
@@ -20965,7 +20965,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -20974,8 +20974,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Romanian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ron</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21036,8 +21036,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Urdu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>urd</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21097,8 +21097,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Malayalam</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mal</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21160,7 +21160,7 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 	</Student>
 	<Student id="STUD_605670">
@@ -21215,8 +21215,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Korean</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21282,8 +21282,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Romanian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ron</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21462,8 +21462,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hungarian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hun</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21523,8 +21523,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Indonesian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ind</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21590,7 +21590,7 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 	</Student>
 	<Student id="STUD_605490">
@@ -21654,8 +21654,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>English</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>eng</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21770,8 +21770,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Arabic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ara</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -21951,8 +21951,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malay</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zlm</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -22013,8 +22013,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Italian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ita</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -22252,8 +22252,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Kimbundu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kmb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -22315,12 +22315,12 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 		<Language>
 			<Language>
-				<CodeValue>Swedish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swe</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -22386,8 +22386,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Urdu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>urd</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -22503,8 +22503,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Italian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ita</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -22625,7 +22625,7 @@
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
 		</LimitedEnglishProficiency>
 	</Student>
 	<Student id="STUD_605161">
@@ -22912,8 +22912,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Sinhala; Sinhalese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>sin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -22978,8 +22978,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Choctaw</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -23041,8 +23041,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hebrew</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>heb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -23163,8 +23163,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Nepali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>npi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -23286,8 +23286,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Telugu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tel</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -23343,8 +23343,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Japanese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>jpn</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -23468,8 +23468,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>German</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>deu</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -23589,8 +23589,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malay</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zlm</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -23652,8 +23652,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bengali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ben</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -23835,8 +23835,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Ukrainian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ukr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -24013,8 +24013,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Twi</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>twi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -24072,7 +24072,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -24359,8 +24359,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>English</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>eng</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -24422,8 +24422,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hindi </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -24544,8 +24544,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Manipuri</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mni</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -24667,8 +24667,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Spanish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>spa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -24780,8 +24780,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tigrinya</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tir</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -24900,8 +24900,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Japanese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>jpn</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -24957,8 +24957,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Kimbundu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kmb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -25023,8 +25023,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Amharic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>amh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -25085,8 +25085,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swahili</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -25375,8 +25375,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Norwegian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -25498,8 +25498,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Cebuano</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ceb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -25560,8 +25560,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tamashek</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tmh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -25682,8 +25682,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Lao</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>lao</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -25896,8 +25896,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Tigrinya</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tir</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -25962,8 +25962,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Welsh </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cym</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -26021,7 +26021,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -26030,8 +26030,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Turkish </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tur</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -26546,8 +26546,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Bengali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ben</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -26710,7 +26710,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -26774,8 +26774,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Portuguese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>por</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -26892,8 +26892,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>English</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>eng</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -26958,8 +26958,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Russian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>rus</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -27025,8 +27025,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>French</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fra</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -27259,8 +27259,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tamashek</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tmh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -27320,8 +27320,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>English</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>eng</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -27387,8 +27387,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Thai</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tha</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -27501,8 +27501,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Persian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fas</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -27674,7 +27674,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -27910,8 +27910,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Amharic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>amh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -27971,8 +27971,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Hebrew</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>heb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -28033,8 +28033,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Efik</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>efi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -28154,8 +28154,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Cebuano</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ceb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -28325,8 +28325,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Lao</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>lao</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -28391,8 +28391,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>French</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fra</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -28509,8 +28509,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Arabic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ara</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -28623,7 +28623,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -28747,8 +28747,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tsonga</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tso</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -28864,8 +28864,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Navajo; Navaho</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nav</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -28990,8 +28990,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swedish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swe</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -29057,8 +29057,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Sinhala; Sinhalese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>sin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -29124,8 +29124,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Afrikaans</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>afr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -29305,8 +29305,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hausa</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hau</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -29367,8 +29367,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Indonesian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ind</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -29484,8 +29484,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Efik</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>efi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -29613,8 +29613,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bosnian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>bos</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -29794,7 +29794,7 @@
 		<EconomicDisadvantaged>true</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
 			<CodeValue>Free</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
+			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -29803,8 +29803,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hebrew</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>heb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -29916,8 +29916,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Vietnamese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>vie</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -30258,8 +30258,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Italian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ita</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -30323,8 +30323,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>French</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fra</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -30448,8 +30448,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tsonga</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tso</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -30510,8 +30510,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>German</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>deu</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -30857,8 +30857,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hebrew</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>heb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -30923,8 +30923,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hindi </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -30986,8 +30986,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tamashek</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tmh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -31099,8 +31099,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hindi </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -31502,8 +31502,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Estonian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>est</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -31615,8 +31615,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Chinese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -31677,8 +31677,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Amharic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>amh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -31857,8 +31857,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Sinhala; Sinhalese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>sin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -32076,8 +32076,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hausa</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hau</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -32147,8 +32147,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Telugu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tel</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -32322,8 +32322,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bengali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ben</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -32448,8 +32448,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Oriya </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ori</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -33166,8 +33166,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>German</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>deu</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -33292,8 +33292,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Korean</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -33363,8 +33363,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>German</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>deu</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -33434,8 +33434,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Choctaw</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -33606,8 +33606,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bosnian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>bos</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -33945,8 +33945,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Gujarati</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>guj</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -34006,8 +34006,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Indonesian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ind</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -34129,8 +34129,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Navajo; Navaho</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nav</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -34358,8 +34358,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Telugu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tel</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -34478,8 +34478,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Persian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fas</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -34600,8 +34600,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Estonian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>est</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -34943,8 +34943,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Chinese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -35073,8 +35073,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bosnian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>bos</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -35135,8 +35135,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Amharic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>amh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -35635,8 +35635,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Tamashek</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tmh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -35752,8 +35752,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Korean</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -35814,8 +35814,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Choctaw</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -35988,8 +35988,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malay</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zlm</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -36218,8 +36218,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>French</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fra</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -36331,8 +36331,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Russian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>rus</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -36507,8 +36507,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Russian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>rus</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -36573,8 +36573,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Spanish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>spa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -36634,8 +36634,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Telugu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tel</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -36751,8 +36751,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Ukrainian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ukr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -36932,8 +36932,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Norwegian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -37100,8 +37100,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Norwegian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -37167,8 +37167,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Other</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ces</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -37564,8 +37564,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Telugu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tel</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -37626,8 +37626,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Afrikaans</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>afr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -37693,8 +37693,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hausa</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hau</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -37871,8 +37871,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Ukrainian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ukr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -37933,8 +37933,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Norwegian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38116,8 +38116,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Thai</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tha</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38183,8 +38183,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Nepali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>npi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38250,8 +38250,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tamashek</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tmh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38313,8 +38313,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hungarian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hun</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38371,8 +38371,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Tsonga</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tso</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38606,8 +38606,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Cebuano</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ceb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38729,8 +38729,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Chinese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38848,8 +38848,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hungarian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hun</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -38966,8 +38966,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Manipuri</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mni</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -39139,8 +39139,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>French</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fra</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -39413,8 +39413,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Vietnamese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>vie</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -39535,8 +39535,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Navajo; Navaho</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nav</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -39606,8 +39606,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hindi </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -39769,8 +39769,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Ukrainian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ukr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -40052,8 +40052,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Welsh </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cym</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -40287,8 +40287,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Welsh </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cym</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -40349,8 +40349,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Hausa</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hau</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -40471,8 +40471,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bengali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ben</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -40538,8 +40538,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tigrinya</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tir</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -40654,8 +40654,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malay</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zlm</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -40724,8 +40724,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Urdu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>urd</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41015,8 +41015,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Lao</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>lao</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41082,8 +41082,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Turkish </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tur</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41145,8 +41145,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malayalam</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mal</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41270,8 +41270,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Italian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ita</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41341,8 +41341,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Choctaw</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41509,8 +41509,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Estonian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>est</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41576,8 +41576,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Gujarati</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>guj</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41762,8 +41762,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tsonga</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tso</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -41884,8 +41884,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swahili</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42005,8 +42005,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Welsh </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cym</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42126,8 +42126,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Oriya </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ori</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42242,8 +42242,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Spanish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>spa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42308,8 +42308,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Russian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>rus</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42374,8 +42374,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Romanian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ron</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42441,8 +42441,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swahili</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42615,8 +42615,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bosnian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>bos</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42682,8 +42682,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Tsonga</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tso</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42798,8 +42798,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Romanian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ron</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -42861,8 +42861,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Vietnamese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>vie</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43046,8 +43046,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Urdu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>urd</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43108,8 +43108,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Efik</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>efi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43174,8 +43174,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Nepali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>npi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43393,8 +43393,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Chinese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43456,8 +43456,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Urdu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>urd</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43625,8 +43625,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Kimbundu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kmb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43799,8 +43799,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Telugu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tel</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43870,8 +43870,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Korean</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -43991,8 +43991,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Vietnamese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>vie</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -44058,8 +44058,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swedish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swe</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -44231,8 +44231,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Turkish </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tur</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -44297,8 +44297,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Russian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>rus</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -44473,8 +44473,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Tamashek</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tmh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -44810,8 +44810,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Oriya </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ori</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -44881,8 +44881,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Norwegian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nor</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45003,8 +45003,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Sinhala; Sinhalese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>sin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45294,8 +45294,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Estonian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>est</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45360,8 +45360,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Cebuano</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ceb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45421,8 +45421,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Efik</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>efi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45658,8 +45658,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Manipuri</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mni</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45728,8 +45728,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Gujarati</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>guj</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45795,8 +45795,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Turkish </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tur</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45866,8 +45866,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Arabic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ara</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -45974,8 +45974,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Gujarati</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>guj</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -46211,8 +46211,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bosnian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>bos</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -46500,8 +46500,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Cebuano</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ceb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -46567,8 +46567,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Romanian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ron</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -46750,8 +46750,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Italian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ita</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -46877,8 +46877,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Lao</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>lao</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -47003,8 +47003,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Twi</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>twi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -47066,8 +47066,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>English</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>eng</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -47242,8 +47242,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Thai</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tha</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -47309,8 +47309,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Chinese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -47430,8 +47430,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Swedish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swe</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -47769,8 +47769,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Indonesian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ind</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -48050,8 +48050,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Hausa</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hau</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -48116,8 +48116,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Sinhala; Sinhalese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>sin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -48182,8 +48182,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>English</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>eng</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -48245,8 +48245,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Other</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ces</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -48477,8 +48477,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Portuguese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>por</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -48589,8 +48589,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Gujarati</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>guj</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -48768,8 +48768,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Telugu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tel</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -49158,8 +49158,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Other</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ces</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -49663,8 +49663,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Choctaw</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>cho</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -49724,8 +49724,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Swahili</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -49952,8 +49952,8 @@
 		<Race>Asian</Race>
 		<Language>
 			<Language>
-				<CodeValue>Urdu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>urd</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -50015,8 +50015,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Manipuri</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mni</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -50133,8 +50133,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Turkish </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tur</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -50199,8 +50199,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Thai</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tha</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -50329,8 +50329,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Ukrainian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ukr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -50396,8 +50396,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bosnian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>bos</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -50573,8 +50573,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Spanish</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>spa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -50915,8 +50915,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Russian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>rus</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -50982,8 +50982,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Indonesian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ind</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -51052,8 +51052,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hausa</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hau</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -51232,8 +51232,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Thai</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tha</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -51456,8 +51456,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>German</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>deu</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -51578,8 +51578,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Twi</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>twi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -51765,8 +51765,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Kimbundu</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>kmb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -51946,8 +51946,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hindi </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -52178,8 +52178,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Vietnamese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>vie</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -52299,8 +52299,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Japanese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>jpn</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -52475,8 +52475,8 @@
 		<Race>White</Race>
 		<Language>
 			<Language>
-				<CodeValue>Malay</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>zlm</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -52593,8 +52593,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Portuguese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>por</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -52825,8 +52825,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Malayalam</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mal</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -53339,8 +53339,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Navajo; Navaho</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>nav</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -53568,8 +53568,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Romanian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ron</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -53690,8 +53690,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hindi </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -53756,8 +53756,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Arabic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ara</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -53823,8 +53823,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Manipuri</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>mni</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -54005,8 +54005,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Afrikaans</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>afr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -54228,8 +54228,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Persian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>fas</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -54294,8 +54294,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hebrew</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>heb</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -54474,8 +54474,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hausa</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hau</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -54825,8 +54825,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Portuguese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>por</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -54895,8 +54895,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Amharic</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>amh</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -54962,8 +54962,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Nepali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>npi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -55147,8 +55147,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Vietnamese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>vie</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -55266,8 +55266,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swahili</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -55324,8 +55324,8 @@
 		<Race>Black - African American</Race>
 		<Language>
 			<Language>
-				<CodeValue>Portuguese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>por</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -55437,8 +55437,8 @@
 		<Race>Native Hawaiian - Pacific Islander</Race>
 		<Language>
 			<Language>
-				<CodeValue>Twi</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>twi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -55658,8 +55658,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Afrikaans</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>afr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -55775,8 +55775,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Efik</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>efi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -55893,8 +55893,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Other</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ces</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -55960,8 +55960,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hungarian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hun</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -56078,8 +56078,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Swahili</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>swa</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -56432,8 +56432,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Oriya </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ori</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -56490,8 +56490,8 @@
 		<Race>American Indian - Alaska Native</Race>
 		<Language>
 			<Language>
-				<CodeValue>Afrikaans</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>afr</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -56662,8 +56662,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hungarian</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hun</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -56783,8 +56783,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Nepali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>npi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -56853,8 +56853,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Hindi </CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>hin</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -56919,8 +56919,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Bengali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>ben</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -56981,8 +56981,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Japanese</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>jpn</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -57110,8 +57110,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Thai</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>tha</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>
@@ -57177,8 +57177,8 @@
 		</StudentCharacteristic>
 		<Language>
 			<Language>
-				<CodeValue>Nepali</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+				<CodeValue>npi</CodeValue>
+				<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 			</Language>
 			<LanguageUse>Home language</LanguageUse>
 		</Language>

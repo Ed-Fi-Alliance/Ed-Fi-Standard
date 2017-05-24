@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeStudentAssessment xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../Schemas/Interchange-StudentAssessment.xsd">
+<InterchangeStudentAssessment xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../Schemas/Bulk/Interchange-StudentAssessment.xsd">
 	<AssessmentReference id="TA-SAT-Mathematics-1">
 		<AssessmentIdentity>
 			<AssessmentTitle>SAT</AssessmentTitle>
 			<AcademicSubject>
 				<CodeValue>Mathematics</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+				<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 			</AcademicSubject>
 			<AssessedGradeLevel>
 				<CodeValue>Twelfth grade</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+				<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 			</AssessedGradeLevel>
 			<Version>1</Version>
 		</AssessmentIdentity>
@@ -19,11 +19,11 @@
 			<AssessmentTitle>SAT</AssessmentTitle>
 			<AcademicSubject>
 				<CodeValue>Reading</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+				<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 			</AcademicSubject>
 			<AssessedGradeLevel>
 				<CodeValue>Twelfth grade</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+				<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 			</AssessedGradeLevel>
 			<Version>1</Version>
 		</AssessmentIdentity>
@@ -33,11 +33,11 @@
 			<AssessmentTitle>SAT</AssessmentTitle>
 			<AcademicSubject>
 				<CodeValue>Writing</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+				<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 			</AcademicSubject>
 			<AssessedGradeLevel>
 				<CodeValue>Twelfth grade</CodeValue>
-				<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+				<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 			</AssessedGradeLevel>
 			<Version>1</Version>
 		</AssessmentIdentity>
@@ -46,8 +46,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -82,11 +82,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -96,8 +96,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -132,11 +132,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -146,8 +146,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -182,11 +182,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -196,8 +196,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -232,11 +232,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -246,8 +246,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -282,11 +282,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -296,8 +296,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -332,11 +332,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -346,8 +346,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -382,11 +382,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -396,8 +396,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -432,11 +432,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -446,8 +446,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -482,11 +482,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -496,8 +496,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -532,11 +532,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -546,8 +546,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -582,11 +582,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -596,8 +596,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -632,11 +632,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -646,8 +646,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -682,11 +682,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -696,8 +696,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -732,11 +732,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -746,8 +746,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -782,11 +782,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -796,8 +796,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -832,11 +832,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -846,8 +846,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -882,11 +882,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -896,8 +896,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -932,11 +932,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -946,8 +946,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -982,11 +982,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -996,8 +996,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1032,11 +1032,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1046,8 +1046,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1082,11 +1082,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1096,8 +1096,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1132,11 +1132,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1146,8 +1146,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1182,11 +1182,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1196,8 +1196,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1232,11 +1232,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1246,8 +1246,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1282,11 +1282,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1296,8 +1296,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1332,11 +1332,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1346,8 +1346,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1382,11 +1382,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1396,8 +1396,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1432,11 +1432,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1446,8 +1446,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1482,11 +1482,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1496,8 +1496,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1532,11 +1532,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1546,8 +1546,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1582,11 +1582,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1596,8 +1596,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1632,11 +1632,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1646,8 +1646,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1682,11 +1682,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1696,8 +1696,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1732,11 +1732,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1746,8 +1746,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1782,11 +1782,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1796,8 +1796,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1832,11 +1832,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1846,8 +1846,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1882,11 +1882,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1896,8 +1896,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1932,11 +1932,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
@@ -1946,8 +1946,8 @@
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
 		<AdministrationLanguage>
-			<CodeValue>English</CodeValue>
-			<Namespace>http://www.ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
+			<CodeValue>eng</CodeValue>
+			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
 		</AdministrationLanguage>
 		<AdministrationEnvironment>Testing Center</AdministrationEnvironment>
 		<RetestIndicator>Primary Administration</RetestIndicator>
@@ -1982,11 +1982,11 @@
 				<AssessmentTitle>SAT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 				</AcademicSubject>
 				<AssessedGradeLevel>
 					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
+					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 				</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
