@@ -14,7 +14,7 @@
         <xs:element name="Session" type="Session" />
         <xs:element name="GradingPeriod" type="GradingPeriod" />
         <xs:element name="Calendar" type="Calendar" />
-        <xs:element name="CalendarEvent" type="CalendarEvent" />
+        <xs:element name="CalendarDate" type="CalendarDate" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
