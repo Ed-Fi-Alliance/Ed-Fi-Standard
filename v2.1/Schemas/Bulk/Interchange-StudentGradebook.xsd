@@ -11,10 +11,10 @@
     </xs:annotation>
     <xs:complexType>
       <xs:choice maxOccurs="unbounded">
-        <xs:element name="SectionReference" type="SectionReferenceType" />
         <xs:element name="GradebookEntry" type="GradebookEntry" />
         <xs:element name="StudentGradebookEntry" type="StudentGradebookEntry" />
         <xs:element name="LearningObjective" type="LearningObjective" />
+        <xs:element name="SectionReference" type="SectionReferenceType" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
