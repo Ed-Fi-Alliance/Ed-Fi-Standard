@@ -8,7 +8,7 @@
   <xs:element name="InterchangeStudentCohort">
     <xs:annotation>
       <xs:documentation>Cohorts are used to designate groups of students outside of class rosters, enrollment lists, or program participation.
-The Student Cohort interchange describes student cohort information. It can be used to exchange information regarding any named group of students, or cohort, for tracking, analysis, or intervention.</xs:documentation>
+    The Student Cohort interchange describes student cohort information. It can be used to exchange information regarding any named group of students, or cohort, for tracking, analysis, or intervention.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:choice maxOccurs="unbounded">
