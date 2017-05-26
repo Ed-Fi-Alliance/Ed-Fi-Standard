@@ -2882,7 +2882,7 @@
   </xs:complexType>
   <xs:complexType name="Session">
     <xs:annotation>
-      <xs:documentation>This entity represents the prescribed span of time when an education institution is open, instruction is provided and students are under the direction and guidance of teachers and/or education institution administration. A session may be interrupted by one or more vacations.</xs:documentation>
+      <xs:documentation>A term in the school year, generally a unit of time into which courses are scheduled, instruction occurs and by which credits are awarded. Sessions may be interrupted by vacations or other events.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -2912,7 +2912,7 @@
           </xs:element>
           <xs:element name="Term" type="TermDescriptorReferenceType" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The term for the Session during the school year.</xs:documentation>
+              <xs:documentation>An enumeration value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.).</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>TermDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -8889,7 +8889,7 @@
       </xs:element>
       <xs:element name="Term" type="TermDescriptorReferenceType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The term for the Session during the school year.</xs:documentation>
+          <xs:documentation>An enumeration value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.).</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>TermDescriptor</ann:Descriptor>
           </xs:appinfo>
