@@ -6060,11 +6060,6 @@
               <xs:documentation>An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>Reference to the Calendar associated with the StudentSchoolAssociation.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
