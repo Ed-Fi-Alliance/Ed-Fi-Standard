@@ -2983,7 +2983,7 @@
               <xs:documentation>Month, day and year of the last day of the Session.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Term" type="TermDescriptorReferenceType" maxOccurs="unbounded">
+          <xs:element name="Term" type="TermDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>An enumeration value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.).</xs:documentation>
               <xs:appinfo>
