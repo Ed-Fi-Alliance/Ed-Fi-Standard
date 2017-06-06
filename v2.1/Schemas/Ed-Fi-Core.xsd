@@ -3060,6 +3060,11 @@
               <xs:documentation>Relates the Session to the school.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Grading periods associated with the calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="AcademicWeekReference" type="AcademicWeekReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The academic weeks associated with the school year.</xs:documentation>
