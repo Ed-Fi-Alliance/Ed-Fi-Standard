@@ -1058,7 +1058,7 @@
               <xs:documentation>The local code assigned by the school that identifies the course offering, the code from an external educational organization, or other alternate course code.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ExternalEducationOrganizationReference" type="ExternalEducationOrganizationReferenceType" minOccurs="0">
+          <xs:element name="ExternalEducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Optional association between CourseTranscript and ExternalEdOrg is designed to capture cases in which the student takes a course via an ExternalEducationOrganization (like an enrolled student taking a Khan Academy course).</xs:documentation>
             </xs:annotation>
@@ -1561,65 +1561,6 @@
           <xs:element name="StateEducationAgencyReference" type="StateEducationAgencyReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The SEA of which the ESC is an organizational component.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ExternalEducationOrganization">
-    <xs:annotation>
-      <xs:documentation>This entity represents any external public or private institution, organization, or agency that provides instructional or support services to students or staff at any level. This entity is provided to refer to organizations about which local school and districts have little to no information.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ComplexObjectType">
-        <xs:sequence>
-          <xs:element name="EducationOrganizationIdentificationCode" type="EducationOrganizationIdentificationCode" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="NameOfInstitution" type="NameOfInstitution">
-            <xs:annotation>
-              <xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ShortNameOfInstitution" type="NameOfInstitution" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>A short name for the institution.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="EducationOrganizationCategory" type="EducationOrganizationCategoryType" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Address" type="Address" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The set of elements that describes the physical location of the education entity, including the street address, city, state, ZIP code, and ZIP code + 4.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="InternationalAddress" type="InternationalAddress" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The set of elements that describes the international physical location of the education entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="InstitutionTelephone" type="InstitutionTelephone" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The 10-digit telephone number, including the area code, for the education entity.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="WebSite" type="URI" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The public web site address (URL) for the EducationOrganization.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="OperationalStatus" type="OperationalStatusType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The current operational status of the EducationOrganization (e.g., active, inactive).</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -7806,40 +7747,6 @@
           <xs:element name="EducationServiceCenterLookup" type="EducationServiceCenterLookupType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Encapsulates alternative attributes that can be used to look up the identity of an EducationServiceCenter.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ExternalEducationOrganizationIdentityType">
-    <xs:annotation>
-      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of an ExternalEducationOrganization.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Identity</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="NameOfInstitution" type="NameOfInstitution">
-        <xs:annotation>
-          <xs:documentation>The full, legally accepted name of the institution.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ExternalEducationOrganizationReferenceType">
-    <xs:annotation>
-      <xs:documentation>Provides alternative references for an ExternalEducationOrganization. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ReferenceType">
-        <xs:sequence>
-          <xs:element name="ExternalEducationOrganizationIdentity" type="ExternalEducationOrganizationIdentityType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of an ExternalEducationOrganization.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
