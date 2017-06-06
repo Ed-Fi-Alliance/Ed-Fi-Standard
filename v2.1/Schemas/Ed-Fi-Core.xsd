@@ -8,6 +8,45 @@
   <xs:annotation>
     <xs:documentation>===== Domain Entities =====</xs:documentation>
   </xs:annotation>
+  <xs:complexType name="AcademicWeek">
+    <xs:annotation>
+      <xs:documentation>This entity represents the academic weeks for a school year, optionally captured to support analyses.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="SchoolReference" type="SchoolReferenceType">
+            <xs:annotation>
+              <xs:documentation>Relates the academic week to an existing School.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="WeekIdentifier" type="WeekIdentifier">
+            <xs:annotation>
+              <xs:documentation>The school label for the week.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="BeginDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>The start date for the academic week.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EndDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>The end date for the academic week.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
+            <xs:annotation>
+              <xs:documentation>The total instructional days during the academic week.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="Account">
     <xs:annotation>
       <xs:documentation>This financial entity represents a funding source combined with its purpose and type of transaction. It provides a formal record of the debits and credits relating to the specific account.</xs:documentation>
@@ -2946,6 +2985,11 @@
           <xs:element name="SchoolReference" type="SchoolReferenceType">
             <xs:annotation>
               <xs:documentation>Relates the Session to the school.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AcademicWeekReference" type="AcademicWeekReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The academic weeks associated with the school year.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6269,6 +6313,45 @@
   <xs:annotation>
     <xs:documentation>===== Extended Reference Types =====</xs:documentation>
   </xs:annotation>
+  <xs:complexType name="AcademicWeekIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of an AcademicWeek.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SchoolReference" type="SchoolReferenceType">
+        <xs:annotation>
+          <xs:documentation>Relates the academic week to an existing School.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="WeekIdentifier" type="WeekIdentifier">
+        <xs:annotation>
+          <xs:documentation>The school label for the week.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AcademicWeekReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an AcademicWeek. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="AcademicWeekIdentity" type="AcademicWeekIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of an AcademicWeek.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="AccountabilityRatingIdentityType">
     <xs:annotation>
       <xs:documentation>Identity of an AccountabilityRating.</xs:documentation>
