@@ -2983,7 +2983,7 @@
               <xs:documentation>Month, day and year of the last day of the Session.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Term" type="TermDescriptorReferenceType" maxOccurs="unbounded">
+          <xs:element name="Term" type="TermDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>An enumeration value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.).</xs:documentation>
               <xs:appinfo>
@@ -6058,11 +6058,6 @@
           <xs:element name="EmployedWhileEnrolled" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>Reference to the Calendar associated with the StudentSchoolAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -14386,7 +14381,7 @@
   </xs:simpleType>
   <xs:simpleType name="CalendarEventMapType">
     <xs:annotation>
-      <xs:documentation>The mapping to a known CalendarEventCategory.</xs:documentation>
+      <xs:documentation>The mapping to a known CalendarEvent.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -17489,106 +17484,6 @@
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Other language proficiency">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Other">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="LeaveEventCategoryType">
-    <xs:annotation>
-      <xs:documentation>A code describing the type of the leave event.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Enumeration</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:token">
-      <xs:enumeration value="Vacation">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Jury duty">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Professional development">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Flex time">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Work compensation">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Administrative">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Annual leave">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Bereavement">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Compensatory leave time">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Family and medical leave">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Government-requested">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Military leave">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Personal">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Release time">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Sabbatical leave">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Sick leave">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Suspension">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
@@ -22370,18 +22265,6 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
       <xs:maxLength value="60" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="LeaveEventReason">
-    <xs:annotation>
-      <xs:documentation>Expanded reason for the staff leave.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Simple</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:minLength value="1" />
-      <xs:maxLength value="40" />
-    </xs:restriction>
-  </xs:simpleType>
   <xs:simpleType name="LicenseIdentifier">
     <xs:annotation>
       <xs:documentation>Identifier assigned by the licensing organization to the license.</xs:documentation>
@@ -22924,18 +22807,6 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="HoursAbsent">
-    <xs:annotation>
-      <xs:documentation>The hours the staff was absent, if not the entire working day.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Simple</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:decimal">
-      <xs:totalDigits value="18" />
-      <xs:fractionDigits value="2" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="HoursOnLeave">
     <xs:annotation>
       <xs:documentation>The hours the staff was absent, if not the entire working day.</xs:documentation>
       <xs:appinfo>
