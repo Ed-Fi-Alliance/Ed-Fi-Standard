@@ -3138,6 +3138,11 @@
               <xs:documentation>Recognitions given to the staff for accomplishments in a co-curricular or extracurricular activity.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="CredentialReference" type="CredentialReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The legal document giving authorization to perform teaching assignment services.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -3178,30 +3183,6 @@
           <xs:element name="StaffReference" type="StaffReferenceType">
             <xs:annotation>
               <xs:documentation>The staff associated with this absence event.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StaffCredential">
-    <xs:annotation>
-      <xs:documentation>The legal document giving authorization to perform teaching assignment services.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ComplexObjectType">
-        <xs:sequence>
-          <xs:element name="StaffReference" type="StaffReferenceType">
-            <xs:annotation>
-              <xs:documentation>Reference to the Staff associated with the Credential</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="CredentialReference" type="CredentialReferenceType">
-            <xs:annotation>
-              <xs:documentation>The legal document giving authorization to perform teaching assignment services.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -5298,9 +5279,9 @@
               <xs:documentation>A reference to the employment association.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="StaffCredentialReference" type="StaffCredentialReferenceType" minOccurs="0">
+          <xs:element name="CredentialReference" type="CredentialReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Reference to the StaffCredential that is the basis for this assignment.</xs:documentation>
+              <xs:documentation>Reference to the Credential that is the basis for this assignment.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -5418,9 +5399,9 @@
               <xs:documentation>Hourly wage associated with the employment position being reported.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="StaffCredentialReference" type="StaffCredentialReferenceType" minOccurs="0">
+          <xs:element name="CredentialReference" type="CredentialReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Reference to the StaffCredential that is the basis for this employment.</xs:documentation>
+              <xs:documentation>Reference to the Credential that is the basis for this employment.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -9108,40 +9089,6 @@
           <xs:element name="StaffCohortAssociationIdentity" type="StaffCohortAssociationIdentityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Identity of a StaffCohortAssociation.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StaffCredentialIdentityType">
-    <xs:annotation>
-      <xs:documentation>Identity of a StaffCredential.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Identity</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="StaffReference" type="StaffReferenceType">
-        <xs:annotation>
-          <xs:documentation>Reference to the Staff associated with the Credential</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="StaffCredentialReferenceType">
-    <xs:annotation>
-      <xs:documentation>Provides alternative references for a StaffCredential. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ReferenceType">
-        <xs:sequence>
-          <xs:element name="StaffCredentialIdentity" type="StaffCredentialIdentityType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Identity of a StaffCredential.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
