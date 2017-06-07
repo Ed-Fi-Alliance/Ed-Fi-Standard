@@ -15,6 +15,7 @@
         <xs:element name="GradingPeriod" type="GradingPeriod" />
         <xs:element name="Calendar" type="Calendar" />
         <xs:element name="CalendarDate" type="CalendarDate" />
+        <xs:element name="AcademicWeek" type="AcademicWeek" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
