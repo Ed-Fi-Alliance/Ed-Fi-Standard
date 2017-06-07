@@ -14,8 +14,8 @@
         <xs:element name="Assessment" type="Assessment" />
         <xs:element name="ObjectiveAssessment" type="ObjectiveAssessment" />
         <xs:element name="AssessmentItem" type="AssessmentItem" />
-        <xs:element name="LearningObjective" type="LearningObjective" />
-        <xs:element name="LearningStandard" type="LearningStandard" />
+        <xs:element name="LearningObjectiveReference" type="LearningObjectiveReferenceType" />
+        <xs:element name="LearningStandardReference" type="LearningStandardReferenceType" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
