@@ -1028,14 +1028,9 @@
               <xs:documentation>Indicates that an academic course has been repeated by a student and how that repeat is to be computed in the student's academic grade average.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CourseReference" type="CourseReferenceType" minOccurs="0">
+          <xs:element name="CourseReference" type="CourseReferenceType">
             <xs:annotation>
               <xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="SchoolReference" type="SchoolReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The School that provided the reported instruction.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="StudentAcademicRecordReference" type="StudentAcademicRecordReferenceType">
@@ -7218,6 +7213,11 @@
         Fail
         Incomplete
         Withdrawn.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CourseReference" type="CourseReferenceType">
+        <xs:annotation>
+          <xs:documentation>The course recorded in the course transcript entry.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="StudentAcademicRecordReference" type="StudentAcademicRecordReferenceType">
