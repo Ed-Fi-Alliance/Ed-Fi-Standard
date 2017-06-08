@@ -21651,7 +21651,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="225" />
+      <xs:maxLength value="100" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="BellScheduleName">
@@ -22678,7 +22678,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="5" />
-      <xs:maxLength value="225" />
+      <xs:maxLength value="255" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="WeekIdentifier">
