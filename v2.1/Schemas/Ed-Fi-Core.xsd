@@ -3003,7 +3003,7 @@
           </xs:element>
           <xs:element name="GradingPeriodReference" type="GradingPeriodReferenceType" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>Grading periods associated with the calendar.</xs:documentation>
+              <xs:documentation>Grading periods associated with the session.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="AcademicWeekReference" type="AcademicWeekReferenceType" minOccurs="0" maxOccurs="unbounded">
