@@ -21735,7 +21735,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="20" />
+      <xs:maxLength value="60" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ClassroomIdentificationCode">
