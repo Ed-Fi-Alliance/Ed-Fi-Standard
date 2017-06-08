@@ -3662,12 +3662,12 @@
           </xs:element>
           <xs:element name="StudentAssessmentItem" type="StudentAssessmentItem" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+              <xs:documentation>The student's response to an assessment item and the item-level scores such as correct, incorrect, or met standard.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="StudentObjectiveAssessment" type="StudentObjectiveAssessment" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+              <xs:documentation>The student's score and/or performance levels earned for an ObjectiveAssessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="SchoolYear" type="SchoolYearType" minOccurs="0">
@@ -11355,7 +11355,7 @@
     <xs:sequence>
       <xs:element name="Achievement" type="Achievement">
         <xs:annotation>
-          <xs:documentation>NEEDS DOCUMENTATION</xs:documentation>
+          <xs:documentation>The achievement earned by the student upon fulfilling specified criteria.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="AcademicHonorCategory" type="AcademicHonorCategoryType">
@@ -11382,7 +11382,7 @@
   </xs:complexType>
   <xs:complexType name="Achievement">
     <xs:annotation>
-      <xs:documentation>An entity that includes information about achievement earned by a learner upon fulfilling a specified criteria, which may be defined by a related competency set.</xs:documentation>
+      <xs:documentation>The achievement earned by the student upon fulfilling specified criteria.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
@@ -13234,7 +13234,7 @@
   </xs:complexType>
   <xs:complexType name="StudentObjectiveAssessment">
     <xs:annotation>
-      <xs:documentation>This entity holds the score and or performance levels earned for an ObjectiveAssessment by a student.</xs:documentation>
+      <xs:documentation>The student's score and/or performance levels earned for an ObjectiveAssessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
