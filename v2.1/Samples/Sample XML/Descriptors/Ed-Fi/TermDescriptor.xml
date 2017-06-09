@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas/Bulk/Interchange-Descriptors.xsd">
    <TermDescriptor>
+      <CodeValue>Semester</CodeValue>
+      <ShortDescription>Semester</ShortDescription>
+      <Description>Semester</Description>
+      <Namespace>http://ed-fi.org/Descriptor/TermDescriptor.xml</Namespace>
+      <TermMap>Semester</TermMap>
+  </TermDescriptor>
+   <TermDescriptor>
       <CodeValue>Fall Semester</CodeValue>
       <ShortDescription>Fall Semester</ShortDescription>
       <Description>Fall Semester</Description>
@@ -20,6 +27,13 @@
       <Description>Summer Semester</Description>
       <Namespace>http://ed-fi.org/Descriptor/TermDescriptor.xml</Namespace>
       <TermMap>Semester</TermMap>
+  </TermDescriptor>
+    <TermDescriptor>
+      <CodeValue>Quarter</CodeValue>
+      <ShortDescription>Quarter</ShortDescription>
+      <Description>Quarter</Description>
+      <Namespace>http://ed-fi.org/Descriptor/TermDescriptor.xml</Namespace>
+      <TermMap>Quarter</TermMap>
   </TermDescriptor>
   <TermDescriptor>
       <CodeValue>First Quarter</CodeValue>
@@ -48,6 +62,13 @@
       <Description>Fourth Quarter</Description>
       <Namespace>http://ed-fi.org/Descriptor/TermDescriptor.xml</Namespace>
       <TermMap>Quarter</TermMap>
+  </TermDescriptor>
+     <TermDescriptor>
+      <CodeValue>Trimester</CodeValue>
+      <ShortDescription>Trimester</ShortDescription>
+      <Description>Trimester</Description>
+      <Namespace>http://ed-fi.org/Descriptor/TermDescriptor.xml</Namespace>
+      <TermMap>Trimester</TermMap>
   </TermDescriptor>
    <TermDescriptor>
       <CodeValue>First Trimester</CodeValue>
