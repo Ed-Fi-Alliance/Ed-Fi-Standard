@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- (c)2017 Ed-Fi Alliance, LLC. All Rights Reserved. -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0210" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0210" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd" />
   <xs:annotation>
-    <xs:documentation>===== Ed-Fi-Core Version 2.0 ====</xs:documentation>
+    <xs:documentation>===== Ed-Fi-Core Version 2.1 ====</xs:documentation>
   </xs:annotation>
   <xs:annotation>
     <xs:documentation>===== Domain Entities =====</xs:documentation>
@@ -3718,12 +3718,12 @@
             </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="0">
-            <xs:element name="StudentSectionAssociationReference" type="StudentSectionAssociationReferenceType">
+            <xs:element name="StudentSectionAssociationReference" type="StudentSectionAssociationReferenceType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:documentation>Relates the Student and Section associated with the CompetencyObjective.</xs:documentation>
               </xs:annotation>
             </xs:element>
-            <xs:element name="StudentProgramAssociationReference" type="StudentProgramAssociationReferenceType">
+            <xs:element name="StudentProgramAssociationReference" type="StudentProgramAssociationReferenceType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:documentation>Relates the Student and Program associated with the CompetencyObjective.</xs:documentation>
               </xs:annotation>
@@ -3853,12 +3853,12 @@
             </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="0">
-            <xs:element name="StudentSectionAssociationReference" type="StudentSectionAssociationReferenceType">
+            <xs:element name="StudentSectionAssociationReference" type="StudentSectionAssociationReferenceType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:documentation>Relates the Student and Section associated with the LearningObjective.</xs:documentation>
               </xs:annotation>
             </xs:element>
-            <xs:element name="StudentProgramAssociationReference" type="StudentProgramAssociationReferenceType">
+            <xs:element name="StudentProgramAssociationReference" type="StudentProgramAssociationReferenceType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:documentation>Relates the Student and Program associated with the LearningObjective.</xs:documentation>
               </xs:annotation>
