@@ -393,7 +393,7 @@
               <xs:documentation>Name or title of the BellSchedule.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType">
+          <xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The grade levels the particular BellSchedule applies to.</xs:documentation>
               <xs:appinfo>
@@ -6622,14 +6622,6 @@
       <xs:element name="BellScheduleName" type="BellScheduleName">
         <xs:annotation>
           <xs:documentation>Name or title of the BellSchedule.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The grade levels the particular BellSchedule applies to.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-          </xs:appinfo>
         </xs:annotation>
       </xs:element>
       <xs:element name="SchoolReference" type="SchoolReferenceType">
