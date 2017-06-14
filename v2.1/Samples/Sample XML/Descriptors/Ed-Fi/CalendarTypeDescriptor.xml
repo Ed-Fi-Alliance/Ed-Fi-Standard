@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas/Bulk/Interchange-Descriptors.xsd">
-   <CalendarTypeDescriptor>
-      <CodeValue>IEP</CodeValue>
-      <ShortDescription>IEP</ShortDescription>
-      <Description>IEP</Description>
-      <Namespace>http://ed-fi.org/Descriptor/CalendarTypeDescriptor.xml</Namespace>
-      <CalendarTypeMap>IEP</CalendarTypeMap>
-   </CalendarTypeDescriptor>
-   <CalendarTypeDescriptor>
-      <CodeValue>Student Specific</CodeValue>
-      <ShortDescription>Student Specific</ShortDescription>
-      <Description>Student Specific</Description>
-      <Namespace>http://ed-fi.org/Descriptor/CalendarTypeDescriptor.xml</Namespace>
-      <CalendarTypeMap>Student Specific</CalendarTypeMap>
-   </CalendarTypeDescriptor>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0210" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0210 ../../../../Schemas/Bulk/Interchange-Descriptors.xsd">
+	<CalendarTypeDescriptor>
+		<CodeValue>IEP</CodeValue>
+		<ShortDescription>IEP</ShortDescription>
+		<Description>IEP</Description>
+		<Namespace>http://ed-fi.org/Descriptor/CalendarTypeDescriptor.xml</Namespace>
+		<CalendarTypeMap>IEP</CalendarTypeMap>
+	</CalendarTypeDescriptor>
+	<CalendarTypeDescriptor>
+		<CodeValue>Student Specific</CodeValue>
+		<ShortDescription>Student Specific</ShortDescription>
+		<Description>Student Specific</Description>
+		<Namespace>http://ed-fi.org/Descriptor/CalendarTypeDescriptor.xml</Namespace>
+		<CalendarTypeMap>Student Specific</CalendarTypeMap>
+	</CalendarTypeDescriptor>
 </InterchangeDescriptors>
