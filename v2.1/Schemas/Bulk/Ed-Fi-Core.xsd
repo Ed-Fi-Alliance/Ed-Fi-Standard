@@ -4311,7 +4311,7 @@
   </xs:complexType>
   <xs:complexType name="CountryDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the name and code of the country.</xs:documentation>
+      <xs:documentation>This descriptor defines the name and code of the country. It is strongly recommended that entries use only ISO 3166 2-letter country codes.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -12262,7 +12262,7 @@
       </xs:element>
       <xs:element name="IssuerCountry" type="CountryDescriptorReferenceType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Country of origin of the document.</xs:documentation>
+          <xs:documentation>Country of origin of the document. It is strongly recommended that entries use only ISO 3166 2-letter country codes.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>CountryDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -12330,7 +12330,7 @@
       </xs:element>
       <xs:element name="Country" type="CountryDescriptorReferenceType">
         <xs:annotation>
-          <xs:documentation>The name of the country.</xs:documentation>
+          <xs:documentation>The name of the country. It is strongly recommended that entries use only ISO 3166 2-letter country codes.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>CountryDescriptor</ann:Descriptor>
           </xs:appinfo>
