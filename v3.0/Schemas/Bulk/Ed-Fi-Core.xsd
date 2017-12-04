@@ -17191,41 +17191,6 @@
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="IntegratedTechnologyStatusType">
-    <xs:annotation>
-      <xs:documentation>An indication of the extent to which the district has effectively and fully integrated technology, as defined by the state.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Enumeration</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:token">
-      <xs:enumeration value="Developing">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Approaching">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Meets">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Fully integrated">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Not required to report">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
   <xs:simpleType name="InteractivityStyleType">
     <xs:annotation>
       <xs:documentation>The predominate mode of learning supported by the learning resource. Acceptable values are active, expositive, or mixed.</xs:documentation>
@@ -17705,51 +17670,6 @@
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Virtual/On-line Distance learning">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="MeetingDayType">
-    <xs:annotation>
-      <xs:documentation>The enumeration items for the day(s) of the week (e.g., Monday, Wednesday) that the class meets or an indication that a class meets "out-of-school" or "self-paced".</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Enumeration</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:token">
-      <xs:enumeration value="Monday">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Tuesday">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Wednesday">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Thursday">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Friday">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Saturday">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Sunday">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
