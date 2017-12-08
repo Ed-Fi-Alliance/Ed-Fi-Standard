@@ -3312,11 +3312,6 @@
               <xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="LearningStyle" type="LearningStyle" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The student's relative preference to visual, auditory, and tactile learning expressed as percentages.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="CohortYear" type="CohortYear" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade.</xs:documentation>
@@ -12451,31 +12446,6 @@
       <xs:element name="ContentStandardName" type="ContentStandardName">
         <xs:annotation>
           <xs:documentation>The name of the content standard, for example Common Core.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="LearningStyle">
-    <xs:annotation>
-      <xs:documentation>The student's relative preference to visual, auditory, and tactile learning expressed as percentages.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Common</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="VisualLearning" type="Learning">
-        <xs:annotation>
-          <xs:documentation>The student's relative preference expressed as a percent to visual learning.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AuditoryLearning" type="Learning">
-        <xs:annotation>
-          <xs:documentation>The student's relative preference expressed as a percent to auditory learning.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="TactileLearning" type="Learning">
-        <xs:annotation>
-          <xs:documentation>The student's relative preference expressed as a percent to kinesthetic or tactile learning.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
