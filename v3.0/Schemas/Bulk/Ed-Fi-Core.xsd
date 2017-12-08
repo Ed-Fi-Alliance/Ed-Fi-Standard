@@ -11395,7 +11395,7 @@
       </xs:element>
       <xs:element name="NameOfCounty" type="NameOfCounty" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The name of the county, parish, borough, or comparable unit (within a state) in 
+          <xs:documentation>The name of the county, parish, borough, or comparable unit (within a state) in
                       'which an address is located.</xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -11414,14 +11414,9 @@
           <xs:documentation>The geographic longitude of the physical address.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="BeginDate" type="xs:date" minOccurs="0">
+      <xs:element name="Period" type="Period" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
-          <xs:documentation>The first date the address is valid. For physical addresses, the date the person moved to that address.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="EndDate" type="xs:date" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The last date the address is valid. For physical addresses, this would be the date the person moved from that address.</xs:documentation>
+          <xs:documentation>The time periods for which the address is valid. For physical addresses, the periods in which the person lived at that address.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="AddressType" type="AddressType">
@@ -13142,14 +13137,9 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="BeginDate" type="xs:date" minOccurs="0">
+      <xs:element name="Period" type="Period" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
-          <xs:documentation>The date the characteristic was designated.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="EndDate" type="xs:date" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The date the characteristic was removed.</xs:documentation>
+          <xs:documentation>The time periods for which characteristic was effective.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
@@ -13210,14 +13200,9 @@
           <xs:documentation>The value of the indicator or metric.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="BeginDate" type="xs:date" minOccurs="0">
+      <xs:element name="Period" type="Period" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
-          <xs:documentation>The date when the indicator was assigned or computed.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="EndDate" type="xs:date" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The date the indicator or metric was sunset or removed.</xs:documentation>
+          <xs:documentation>The time periods for which the indicator was effective.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
