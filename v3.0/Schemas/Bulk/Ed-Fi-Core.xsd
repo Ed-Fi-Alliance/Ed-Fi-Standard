@@ -4870,7 +4870,7 @@
   </xs:complexType>
   <xs:complexType name="StudentCharacteristicDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the set of important characteristics of the student.</xs:documentation>
+      <xs:documentation>This descriptor captures important characteristics of the student's environment or situation. Generally used for non-program-based student characteristics.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -20869,16 +20869,6 @@
           <xs:documentation></xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="Neglected or Delinquent">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Migrant">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
       <xs:enumeration value="Other">
         <xs:annotation>
           <xs:documentation></xs:documentation>
@@ -20900,11 +20890,6 @@
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Runaway">
-        <xs:annotation>
-          <xs:documentation></xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Section 504 Handicapped">
         <xs:annotation>
           <xs:documentation></xs:documentation>
         </xs:annotation>
