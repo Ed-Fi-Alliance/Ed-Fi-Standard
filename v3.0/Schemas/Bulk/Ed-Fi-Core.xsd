@@ -5557,15 +5557,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DescriptorType">
-        <xs:sequence>
-          <xs:element name="ServiceCategory" type="ServiceCategory" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>A classification of the behavior for reporting types.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
+      <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="SexDescriptor">
