@@ -13511,24 +13511,17 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:choice minOccurs="0">
-        <xs:element name="Visa" type="VisaDescriptorReferenceType" maxOccurs="unbounded">
-          <xs:annotation>
-            <xs:documentation>An indicator of a non-US citizen's Visa type.</xs:documentation>
-            <xs:appinfo>
-              <ann:Descriptor>VisaDescriptor</ann:Descriptor>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="USCitizenshipIdentificationDocument" type="IdentificationDocument" maxOccurs="unbounded">
-          <xs:annotation>
-            <xs:documentation>Describe the probationary documentation of US citizenship.</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-      </xs:choice>
-      <xs:element name="ForeignCitizenshipIdentificationDocument" type="IdentificationDocument" minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Visa" type="VisaDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
-          <xs:documentation>Describe the probationary documentation of citizenship of an alien or a foreign nationality of a U.S. citizen.</xs:documentation>
+          <xs:documentation>An indicator of a non-US citizen's Visa type.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>VisaDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="IdentificationDocument" type="IdentificationDocument" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Describe the documentation of citizenship.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
