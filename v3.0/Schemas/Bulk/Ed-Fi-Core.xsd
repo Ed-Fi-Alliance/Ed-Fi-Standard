@@ -1598,6 +1598,16 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="PeriodSequence" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The sequential order of this period relative to other periods.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolYear" type="SchoolYearType">
+            <xs:annotation>
+              <xs:documentation>The identifier for the grading period school year.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="BeginDate" type="xs:date">
             <xs:annotation>
               <xs:documentation>Month, day, and year of the first day of the GradingPeriod.</xs:documentation>
@@ -1611,11 +1621,6 @@
           <xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
             <xs:annotation>
               <xs:documentation>Total days available for educational instruction during the GradingPeriod.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="PeriodSequence" type="xs:int" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The sequential order of this period relative to other periods.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -7797,9 +7802,14 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="BeginDate" type="xs:date">
+      <xs:element name="PeriodSequence" type="xs:int">
         <xs:annotation>
-          <xs:documentation>Month, day, and year of the first day of the GradingPeriod.</xs:documentation>
+          <xs:documentation>The sequential order of this period relative to other periods.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="SchoolYear" type="SchoolYearType">
+        <xs:annotation>
+          <xs:documentation>The identifier for the grading period school year.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
