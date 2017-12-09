@@ -3,7 +3,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0300" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0300" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd" />
   <xs:annotation>
-    <xs:documentation>===== Ed-Fi-Core Version 3.0 ====</xs:documentation>
+    <xs:documentation>===== Ed-Fi-Core Version 3.0.0 ====</xs:documentation>
   </xs:annotation>
   <xs:annotation>
     <xs:documentation>===== Domain Entities =====</xs:documentation>
@@ -1340,101 +1340,11 @@
                 <xs:documentation>The URI (typical a URL) pointing to the metadata entry in a LRMI metadata repository, which describes this content item.</xs:documentation>
               </xs:annotation>
             </xs:element>
-            <xs:sequence>
-              <xs:element name="ShortDescription" type="ShortDescription">
-                <xs:annotation>
-                  <xs:documentation>A short description or name of the entity.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Description" type="Description" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>An extended written representation of the education content.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Author" type="Author" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:documentation>The individual credited with the creation of the resource.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="AdditionalAuthorsIndicator" type="xs:boolean" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>Indicates whether there are additional un-named authors. In a research report, this is often marked by the abbreviation "et al".</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Publisher" type="Publisher" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>The organization credited with publishing the resource.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="TimeRequired" type="TimeInterval" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="InteractivityStyle" type="InteractivityStyleType" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>The predominate mode of learning supported by the learning resource. Acceptable values are active, expositive, or mixed.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="ContentClass" type="ContentClassType">
-                <xs:annotation>
-                  <xs:documentation>The predominate type or kind characterizing the learning resource.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="UseRightsURL" type="URI" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>The URL where the owner specifies permissions for using the resource.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="DerivativeSourceEducationContentSource" type="EducationContentSource" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>A reference or URL pointing to education content from which this education content was derived.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:choice minOccurs="0">
-                <xs:element name="PublicationDate" type="xs:date">
-                  <xs:annotation>
-                    <xs:documentation>The date on which this content was first published.</xs:documentation>
-                  </xs:annotation>
-                </xs:element>
-                <xs:element name="PublicationYear" type="xs:gYear">
-                  <xs:annotation>
-                    <xs:documentation>The year at which this content was first published.</xs:documentation>
-                  </xs:annotation>
-                </xs:element>
-              </xs:choice>
-              <xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:documentation>Sexes for which this education content is applicable. If omitted, considered generally applicable.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="AppropriateGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:documentation>Grade levels for which this education content is applicable-if omitted, considered generally applicable.</xs:documentation>
-                  <xs:appinfo>
-                    <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-                  </xs:appinfo>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Language" type="LanguageDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:documentation>An indication of the languages in which the Education Content is designed.</xs:documentation>
-                  <xs:appinfo>
-                    <ann:Descriptor>LanguageDescriptor</ann:Descriptor>
-                  </xs:appinfo>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Version" type="ContentVersion" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>The version identifier for the content.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="LearningStandardReference" type="LearningStandardReferenceType" minOccurs="0">
-                <xs:annotation>
-                  <xs:documentation>Relates the competency, learning standard, skill and/or text complexity to which the learning resource is aligned.</xs:documentation>
-                </xs:annotation>
-              </xs:element>
-            </xs:sequence>
+            <xs:element name="LearningResource" type="LearningResource">
+              <xs:annotation>
+                <xs:documentation>This entity maintains information that describes content, materials, and informational resources that support learning.</xs:documentation>
+              </xs:annotation>
+            </xs:element>
           </xs:choice>
           <xs:element name="Cost" type="Currency" minOccurs="0">
             <xs:annotation>
@@ -3400,11 +3310,6 @@
           <xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="LearningStyle" type="LearningStyle" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The student's relative preference to visual, auditory, and tactile learning expressed as percentages.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="CohortYear" type="CohortYear" minOccurs="0" maxOccurs="unbounded">
@@ -12422,6 +12327,109 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="LearningResource">
+    <xs:annotation>
+      <xs:documentation>This entity maintains information that describes content, materials, or informational resources that support learning.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ShortDescription" type="ShortDescription">
+        <xs:annotation>
+          <xs:documentation>A short description or name of the entity.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Description" type="Description" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>An extended written representation of the education content.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Author" type="Author" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>The individual credited with the creation of the resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AdditionalAuthorsIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Indicates whether there are additional un-named authors. In a research report, this is often marked by the abbreviation "et al".</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Publisher" type="Publisher" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The organization credited with publishing the resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TimeRequired" type="TimeInterval" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="InteractivityStyle" type="InteractivityStyleType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The predominate mode of learning supported by the learning resource. Acceptable values are active, expositive, or mixed.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ContentClass" type="ContentClassType">
+        <xs:annotation>
+          <xs:documentation>The predominate type or kind characterizing the learning resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="UseRightsURL" type="URI" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The URL where the owner specifies permissions for using the resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DerivativeSourceEducationContentSource" type="EducationContentSource" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>A reference or URL pointing to education content from which this education content was derived.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:choice minOccurs="0">
+        <xs:element name="PublicationDate" type="xs:date">
+          <xs:annotation>
+            <xs:documentation>The date on which this content was first published.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="PublicationYear" type="xs:gYear">
+          <xs:annotation>
+            <xs:documentation>The year at which this content was first published.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+      <xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Sexes for which this education content is applicable. If omitted, considered generally applicable.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AppropriateGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Grade levels for which this education content is applicable-if omitted, considered generally applicable.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Language" type="LanguageDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>An indication of the languages in which the Education Content is designed.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>LanguageDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Version" type="ContentVersion" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The version identifier for the content.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LearningStandardReference" type="LearningStandardReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Relates the competency, learning standard, skill and/or text complexity to which the learning resource is aligned.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="LearningStandardIdentificationCode">
     <xs:annotation>
       <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a learning Standard.</xs:documentation>
@@ -12438,31 +12446,6 @@
       <xs:element name="ContentStandardName" type="ContentStandardName">
         <xs:annotation>
           <xs:documentation>The name of the content standard, for example Common Core.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="LearningStyle">
-    <xs:annotation>
-      <xs:documentation>The student's relative preference to visual, auditory, and tactile learning expressed as percentages.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Common</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="VisualLearning" type="Learning">
-        <xs:annotation>
-          <xs:documentation>The student's relative preference expressed as a percent to visual learning.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AuditoryLearning" type="Learning">
-        <xs:annotation>
-          <xs:documentation>The student's relative preference expressed as a percent to auditory learning.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="TactileLearning" type="Learning">
-        <xs:annotation>
-          <xs:documentation>The student's relative preference expressed as a percent to kinesthetic or tactile learning.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -12752,6 +12735,26 @@
           <xs:appinfo>
             <ann:Descriptor>PerformanceLevelDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Period">
+    <xs:annotation>
+      <xs:documentation>The time period for which the information is applicable or effective.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year for the start of the period.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year for the end of the period.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
