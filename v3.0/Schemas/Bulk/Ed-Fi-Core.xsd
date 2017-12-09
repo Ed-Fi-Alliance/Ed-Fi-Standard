@@ -281,12 +281,9 @@
               <xs:documentation>Reflects the specific nomenclature used for Assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AssessmentPeriod" type="AssessmentPeriodDescriptorReferenceType" minOccurs="0">
+          <xs:element name="AssessmentPeriod" type="AssessmentPeriod" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The period or window in which an assessment is supposed to be administered.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AssessmentPeriodDescriptor</ann:Descriptor>
-              </xs:appinfo>
             </xs:annotation>
           </xs:element>
           <xs:element name="AssessmentFamily" type="AssessmentFamily" minOccurs="0">
@@ -4267,20 +4264,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DescriptorType">
-        <xs:sequence>
-          <xs:element name="BeginDate" type="xs:date" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The first date the assessment is to be administered.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="EndDate" type="xs:date" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The last date the assessment is to be administered.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
+      <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="AssessmentReportingMethodDescriptor">
@@ -13329,6 +13313,34 @@
           <xs:appinfo>
             <ann:Descriptor>ResultDatatypeTypeDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AssessmentPeriod">
+    <xs:annotation>
+      <xs:documentation>The period or window in which an assessment is supposed to be administered.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="AssessmentPeriod" type="AssessmentPeriodDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The period of time in which an assessment is supposed to be administered (e.g., Beginning of Year, Middle of Year, End of Year).</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>AssessmentPeriodDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The first date the assessment is to be administered.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The last date the assessment is to be administered.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
