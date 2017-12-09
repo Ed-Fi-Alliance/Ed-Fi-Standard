@@ -8,30 +8,30 @@
 			</EducationOrganizationIdentificationSystem>
 		</EducationOrganizationIdentificationCode>
 		<NameOfInstitution>Region 99 Education Service Center</NameOfInstitution>
-		<EducationOrganizationCategory>Education Service Center</EducationOrganizationCategory>
+		<EducationOrganizationCategory>			<CodeValue>Education Service Center</CodeValue>		</EducationOrganizationCategory>
 		<Address>
 			<StreetNumberName>898 Texas Education Blvd.</StreetNumberName>
 			<City>Dallas</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>75217</PostalCode>
 			<NameOfCounty>Dallas</NameOfCounty>
-			<AddressType>Physical</AddressType>
+			<AddressType>				<CodeValue>Physical</CodeValue>			</AddressType>
 		</Address>
 		<Address>
 			<StreetNumberName>P.O. Box 898</StreetNumberName>
 			<City>Dallas</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>75217</PostalCode>
 			<NameOfCounty>Dallas</NameOfCounty>
-			<AddressType>Mailing</AddressType>
+			<AddressType>				<CodeValue>Mailing</CodeValue>			</AddressType>
 		</Address>
 		<InstitutionTelephone>
 			<TelephoneNumber>(214) 876-8290</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Main</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<InstitutionTelephone>
 			<TelephoneNumber>(214) 876-8921</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Fax</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<EducationServiceCenterId>255950</EducationServiceCenterId>
 	</EducationServiceCenter>
@@ -44,34 +44,34 @@
 		</EducationOrganizationIdentificationCode>
 		<NameOfInstitution>Grand Bend ISD</NameOfInstitution>
 		<ShortNameOfInstitution>GBISD</ShortNameOfInstitution>
-		<EducationOrganizationCategory>Local Education Agency</EducationOrganizationCategory>
+		<EducationOrganizationCategory>			<CodeValue>Local Education Agency</CodeValue>		</EducationOrganizationCategory>
 		<Address>
 			<StreetNumberName>123 Main Street</StreetNumberName>
 			<City>Grand Bend</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>73334</PostalCode>
 			<NameOfCounty>Williston</NameOfCounty>
-			<AddressType>Physical</AddressType>
+			<AddressType>				<CodeValue>Physical</CodeValue>			</AddressType>
 		</Address>
 		<Address>
 			<StreetNumberName>P.O. Box 9376</StreetNumberName>
 			<City>Grand Bend</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>73334-9376</PostalCode>
 			<NameOfCounty>Williston</NameOfCounty>
-			<AddressType>Mailing</AddressType>
+			<AddressType>				<CodeValue>Mailing</CodeValue>			</AddressType>
 		</Address>
 		<InstitutionTelephone>
 			<TelephoneNumber>(950) 367-2013</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Main</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<InstitutionTelephone>
 			<TelephoneNumber>(950) 366-2320</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Fax</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/</WebSite>
 		<LocalEducationAgencyId>255901</LocalEducationAgencyId>
-		<LocalEducationAgencyCategory>Independent</LocalEducationAgencyCategory>
+		<LocalEducationAgencyCategory>			<CodeValue>Independent</CodeValue>		</LocalEducationAgencyCategory>
 		<EducationServiceCenterReference ref="ESC_255950">
 			<EducationServiceCenterLookup/>
 		</EducationServiceCenterReference>
@@ -85,33 +85,33 @@
 		</EducationOrganizationIdentificationCode>
 		<NameOfInstitution>Grand Bend High School</NameOfInstitution>
 		<ShortNameOfInstitution>GBHS</ShortNameOfInstitution>
-		<EducationOrganizationCategory>School</EducationOrganizationCategory>
+		<EducationOrganizationCategory>			<CodeValue>School</CodeValue>		</EducationOrganizationCategory>
 		<Address>
 			<StreetNumberName>456 Elm Street</StreetNumberName>
 			<City>Grand Bend</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>73334</PostalCode>
 			<NameOfCounty>Williston</NameOfCounty>
-			<AddressType>Physical</AddressType>
+			<AddressType>				<CodeValue>Physical</CodeValue>			</AddressType>
 		</Address>
 		<Address>
 			<StreetNumberName>P.O. Box 2035</StreetNumberName>
 			<City>Grand Bend</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>73334-2035</PostalCode>
 			<NameOfCounty>Williston</NameOfCounty>
-			<AddressType>Mailing</AddressType>
+			<AddressType>				<CodeValue>Mailing</CodeValue>			</AddressType>
 		</Address>
 		<InstitutionTelephone>
 			<TelephoneNumber>(950) 325-9465</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Main</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<InstitutionTelephone>
 			<TelephoneNumber>(950) 393-3156</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Fax</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBHS/</WebSite>
-		<OperationalStatus>Active</OperationalStatus>
+		<OperationalStatus>			<CodeValue>Active</CodeValue>		</OperationalStatus>
 		<SchoolId>255901001</SchoolId>
 		<GradeLevel>
 			<CodeValue>Ninth grade</CodeValue>
@@ -129,10 +129,10 @@
 			<CodeValue>Twelfth grade</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 		</GradeLevel>
-		<SchoolCategory>High School</SchoolCategory>
-		<SchoolType>Regular</SchoolType>
-		<CharterStatus>Not a Charter School</CharterStatus>
-		<TitleIPartASchoolDesignation>Not designated as a Title I Part A school</TitleIPartASchoolDesignation>
+		<SchoolCategory>			<CodeValue>High School</CodeValue>		</SchoolCategory>
+		<SchoolType>			<CodeValue>Regular</CodeValue>		</SchoolType>
+		<CharterStatus>			<CodeValue>Not a Charter School</CodeValue>		</CharterStatus>
+		<TitleIPartASchoolDesignation>			<CodeValue>Not designated as a Title I Part A school</CodeValue>		</TitleIPartASchoolDesignation>
 		<AdministrativeFundingControl>
 			<CodeValue>Public School</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AdministrativeFundingControlDescriptor.xml</Namespace>
@@ -150,33 +150,33 @@
 		</EducationOrganizationIdentificationCode>
 		<NameOfInstitution>Grand Bend Middle School</NameOfInstitution>
 		<ShortNameOfInstitution>GBMS</ShortNameOfInstitution>
-		<EducationOrganizationCategory>School</EducationOrganizationCategory>
+		<EducationOrganizationCategory>			<CodeValue>School</CodeValue>		</EducationOrganizationCategory>
 		<Address>
 			<StreetNumberName>9993 Space Blvd.</StreetNumberName>
 			<City>Grand Bend</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>73334</PostalCode>
 			<NameOfCounty>Williston</NameOfCounty>
-			<AddressType>Physical</AddressType>
+			<AddressType>				<CodeValue>Physical</CodeValue>			</AddressType>
 		</Address>
 		<Address>
 			<StreetNumberName>P.O. Box 3393</StreetNumberName>
 			<City>Grand Bend</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>73334-3393</PostalCode>
 			<NameOfCounty>Williston</NameOfCounty>
-			<AddressType>Mailing</AddressType>
+			<AddressType>				<CodeValue>Mailing</CodeValue>			</AddressType>
 		</Address>
 		<InstitutionTelephone>
 			<TelephoneNumber>(950) 325-3164</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Main</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<InstitutionTelephone>
 			<TelephoneNumber>(950) 366-9374</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Fax</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBMS/</WebSite>
-		<OperationalStatus>Active</OperationalStatus>
+		<OperationalStatus>			<CodeValue>Active</CodeValue>		</OperationalStatus>
 		<SchoolId>255901044</SchoolId>
 		<GradeLevel>
 			<CodeValue>Sixth grade</CodeValue>
@@ -190,10 +190,10 @@
 			<CodeValue>Eighth grade</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 		</GradeLevel>
-		<SchoolCategory>Middle School</SchoolCategory>
-		<SchoolType>Regular</SchoolType>
-		<CharterStatus>Not a Charter School</CharterStatus>
-		<TitleIPartASchoolDesignation>Not designated as a Title I Part A school</TitleIPartASchoolDesignation>
+		<SchoolCategory>			<CodeValue>Middle School</CodeValue>		</SchoolCategory>
+		<SchoolType>			<CodeValue>Regular</CodeValue>		</SchoolType>
+		<CharterStatus>			<CodeValue>Not a Charter School</CodeValue>		</CharterStatus>
+		<TitleIPartASchoolDesignation>			<CodeValue>Not designated as a Title I Part A school</CodeValue>		</TitleIPartASchoolDesignation>
 		<AdministrativeFundingControl>
 			<CodeValue>Public School</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AdministrativeFundingControlDescriptor.xml</Namespace>
@@ -211,33 +211,33 @@
 		</EducationOrganizationIdentificationCode>
 		<NameOfInstitution>Grand Bend Elementary School</NameOfInstitution>
 		<ShortNameOfInstitution>GBES</ShortNameOfInstitution>
-		<EducationOrganizationCategory>School</EducationOrganizationCategory>
+		<EducationOrganizationCategory>			<CodeValue>School</CodeValue>		</EducationOrganizationCategory>
 		<Address>
 			<StreetNumberName>52 Halsey Ave.</StreetNumberName>
 			<City>Grand Bend</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>73334</PostalCode>
 			<NameOfCounty>Williston</NameOfCounty>
-			<AddressType>Physical</AddressType>
+			<AddressType>				<CodeValue>Physical</CodeValue>			</AddressType>
 		</Address>
 		<Address>
 			<StreetNumberName>P.O. Box 9991</StreetNumberName>
 			<City>Grand Bend</City>
-			<StateAbbreviation>TX</StateAbbreviation>
+			<StateAbbreviation>				<CodeValue>TX</CodeValue>			</StateAbbreviation>
 			<PostalCode>73334-9991</PostalCode>
 			<NameOfCounty>Williston</NameOfCounty>
-			<AddressType>Mailing</AddressType>
+			<AddressType>				<CodeValue>Mailing</CodeValue>			</AddressType>
 		</Address>
 		<InstitutionTelephone>
 			<TelephoneNumber>(950) 367-1346</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Main</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Main</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<InstitutionTelephone>
 			<TelephoneNumber>(950) 325-1976</TelephoneNumber>
-			<InstitutionTelephoneNumberType>Fax</InstitutionTelephoneNumberType>
+			<InstitutionTelephoneNumberType>				<CodeValue>Fax</CodeValue>			</InstitutionTelephoneNumberType>
 		</InstitutionTelephone>
 		<WebSite>http://www.GBISD.edu/GBES/</WebSite>
-		<OperationalStatus>Active</OperationalStatus>
+		<OperationalStatus>			<CodeValue>Active</CodeValue>		</OperationalStatus>
 		<SchoolId>255901107</SchoolId>
 		<GradeLevel>
 			<CodeValue>First grade</CodeValue>
@@ -259,10 +259,10 @@
 			<CodeValue>Fifth grade</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
 		</GradeLevel>
-		<SchoolCategory>Elementary School</SchoolCategory>
-		<SchoolType>Regular</SchoolType>
-		<CharterStatus>Not a Charter School</CharterStatus>
-		<TitleIPartASchoolDesignation>Not designated as a Title I Part A school</TitleIPartASchoolDesignation>
+		<SchoolCategory>			<CodeValue>Elementary School</CodeValue>		</SchoolCategory>
+		<SchoolType>			<CodeValue>Regular</CodeValue>		</SchoolType>
+		<CharterStatus>			<CodeValue>Not a Charter School</CodeValue>		</CharterStatus>
+		<TitleIPartASchoolDesignation>			<CodeValue>Not designated as a Title I Part A school</CodeValue>		</TitleIPartASchoolDesignation>
 		<AdministrativeFundingControl>
 			<CodeValue>Public School</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AdministrativeFundingControlDescriptor.xml</Namespace>
@@ -1246,15 +1246,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Algebra I</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1274,15 +1274,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Algebra II</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1302,15 +1302,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art I</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1325,15 +1325,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Career and Technical Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art II Electronic</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1348,15 +1348,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Career and Technical Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art III Electronic</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1371,15 +1371,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Biology</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1399,15 +1399,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Chemistry</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1422,15 +1422,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Creative Writing</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1445,15 +1445,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Sciences and History</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Free Enterprise</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1468,15 +1468,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English I</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1496,15 +1496,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English II </CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1524,15 +1524,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English III</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1552,15 +1552,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English IV</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1580,15 +1580,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Life and Physical Sciences</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Environmental System</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1603,15 +1603,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Geometry</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1631,15 +1631,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Sciences and History</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>United States Gov</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1654,15 +1654,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Sciences and History</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Health Education</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1677,15 +1677,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Life and Physical Sciences</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Humanities</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1700,15 +1700,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Career and Technical Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Photojournalism</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1723,15 +1723,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physics</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1751,15 +1751,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Precalculus</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1779,15 +1779,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Foreign Language and Literature</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Foreign Language</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1802,15 +1802,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Foreign Language and Literature</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Foreign Language</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1825,15 +1825,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Foreign Language and Literature</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Foreign Language</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1848,15 +1848,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Career and Technical Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Multimedia</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1871,15 +1871,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Sciences and History</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>US History</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1894,15 +1894,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>World Geography</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1917,15 +1917,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Sciences and History</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>World History</CourseDescription>
 		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901001">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1940,15 +1940,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1963,15 +1963,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Music/Band, Grade 7 </CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -1986,15 +1986,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Music/Band, Grade 8 </CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2009,15 +2009,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2037,15 +2037,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2065,15 +2065,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2093,15 +2093,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Health Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2116,15 +2116,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Health Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2139,15 +2139,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Mathematics</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2167,15 +2167,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 7</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2195,15 +2195,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 8</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2223,15 +2223,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>General Music</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2246,15 +2246,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2269,15 +2269,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2292,15 +2292,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2315,15 +2315,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Science</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2343,15 +2343,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Science, Grade 7</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2371,15 +2371,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Science, Grade 8</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2399,15 +2399,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2427,15 +2427,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2455,15 +2455,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901044">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2483,15 +2483,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art, Grade 1</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2506,15 +2506,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art, Grade 2</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2529,15 +2529,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art, Grade 3</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2552,15 +2552,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art, Grade 4</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2575,15 +2575,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Art, Grade 5</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2598,15 +2598,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2621,15 +2621,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2649,15 +2649,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2677,15 +2677,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2705,15 +2705,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>English Language Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2733,15 +2733,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 1</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2756,15 +2756,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 2</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2784,15 +2784,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 3</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2812,15 +2812,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 4</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2840,15 +2840,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Mathematics</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 5</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2868,15 +2868,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Music, Grade 1</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2891,15 +2891,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Music, Grade 2</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2914,15 +2914,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Music, Grade 3</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2937,15 +2937,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Music, Grade 4</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2960,15 +2960,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Fine and Performing Arts</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Music, Grade 5</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -2983,15 +2983,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3006,15 +3006,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3029,15 +3029,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3052,15 +3052,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3075,15 +3075,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Physical, Health, and Safety Education</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3098,15 +3098,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Science, Grade 1</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3121,15 +3121,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Science, Grade 2</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3149,15 +3149,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Science, Grade 3</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3177,15 +3177,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Science, Grade 4</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3205,15 +3205,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Science</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Science, Grade 5</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3233,15 +3233,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3256,15 +3256,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3284,15 +3284,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3312,15 +3312,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3340,15 +3340,15 @@
 				<CodeValue>LEA course code</CodeValue>
 			</CourseIdentificationSystem>
 		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>Core Subject</CourseLevelCharacteristic>
+		<CourseLevelCharacteristic>			<CodeValue>Core Subject</CodeValue>		</CourseLevelCharacteristic>
 		<AcademicSubject>
 			<CodeValue>Social Studies</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
 		</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
 		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>SEA</CourseDefinedBy>
+		<CourseGPAApplicability>			<CodeValue>Applicable</CodeValue>		</CourseGPAApplicability>
+		<CourseDefinedBy>			<CodeValue>SEA</CodeValue>		</CourseDefinedBy>
 		<EducationOrganizationReference ref="SCOL_255901107">
 			<EducationOrganizationLookup/>
 		</EducationOrganizationReference>
@@ -3369,8 +3369,8 @@
 		</EducationOrganizationReference>
 		<ProgramId>1</ProgramId>
 		<ProgramName>Bilingual</ProgramName>
-		<ProgramType>Bilingual</ProgramType>
-		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+		<ProgramType>			<CodeValue>Bilingual</CodeValue>		</ProgramType>
+		<ProgramSponsor>			<CodeValue>Local Education Agency</CodeValue>		</ProgramSponsor>
 	</Program>
 	<Program id="PRGM_2559012">
 		<EducationOrganizationReference>
@@ -3383,8 +3383,8 @@
 		</EducationOrganizationReference>
 		<ProgramId>2</ProgramId>
 		<ProgramName>Bilingual Summer</ProgramName>
-		<ProgramType>Bilingual Summer</ProgramType>
-		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+		<ProgramType>			<CodeValue>Bilingual Summer</CodeValue>		</ProgramType>
+		<ProgramSponsor>			<CodeValue>Local Education Agency</CodeValue>		</ProgramSponsor>
 	</Program>
 	<Program id="PRGM_2559013">
 		<EducationOrganizationReference>
@@ -3397,8 +3397,8 @@
 		</EducationOrganizationReference>
 		<ProgramId>3</ProgramId>
 		<ProgramName>Career and Technical Education</ProgramName>
-		<ProgramType>Career and Technical Education</ProgramType>
-		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+		<ProgramType>			<CodeValue>Career and Technical Education</CodeValue>		</ProgramType>
+		<ProgramSponsor>			<CodeValue>Local Education Agency</CodeValue>		</ProgramSponsor>
 	</Program>
 	<Program id="PRGM_2559014">
 		<EducationOrganizationReference>
@@ -3411,8 +3411,8 @@
 		</EducationOrganizationReference>
 		<ProgramId>4</ProgramId>
 		<ProgramName>English as a Second Language (ESL)</ProgramName>
-		<ProgramType>English as a Second Language (ESL)</ProgramType>
-		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+		<ProgramType>			<CodeValue>English as a Second Language (ESL)</CodeValue>		</ProgramType>
+		<ProgramSponsor>			<CodeValue>Local Education Agency</CodeValue>		</ProgramSponsor>
 	</Program>
 	<Program id="PRGM_2559015">
 		<EducationOrganizationReference>
@@ -3425,8 +3425,8 @@
 		</EducationOrganizationReference>
 		<ProgramId>5</ProgramId>
 		<ProgramName>Gifted and Talented</ProgramName>
-		<ProgramType>Gifted and Talented</ProgramType>
-		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+		<ProgramType>			<CodeValue>Gifted and Talented</CodeValue>		</ProgramType>
+		<ProgramSponsor>			<CodeValue>Local Education Agency</CodeValue>		</ProgramSponsor>
 	</Program>
 	<Program id="PRGM_2559016">
 		<EducationOrganizationReference>
@@ -3439,8 +3439,8 @@
 		</EducationOrganizationReference>
 		<ProgramId>6</ProgramId>
 		<ProgramName>Special Education</ProgramName>
-		<ProgramType>Special Education</ProgramType>
-		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+		<ProgramType>			<CodeValue>Special Education</CodeValue>		</ProgramType>
+		<ProgramSponsor>			<CodeValue>Local Education Agency</CodeValue>		</ProgramSponsor>
 	</Program>
 	<Program id="PRGM_2559017">
 		<EducationOrganizationReference>
@@ -3453,8 +3453,8 @@
 		</EducationOrganizationReference>
 		<ProgramId>7</ProgramId>
 		<ProgramName>Title I Part A</ProgramName>
-		<ProgramType>Title I Part A</ProgramType>
-		<ProgramSponsor>Local Education Agency</ProgramSponsor>
+		<ProgramType>			<CodeValue>Title I Part A</CodeValue>		</ProgramType>
+		<ProgramSponsor>			<CodeValue>Local Education Agency</CodeValue>		</ProgramSponsor>
 	</Program>
 	<AccountabilityRating>
 		<EducationOrganizationReference>
