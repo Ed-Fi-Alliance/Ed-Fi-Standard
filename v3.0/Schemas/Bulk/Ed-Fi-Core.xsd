@@ -13493,6 +13493,14 @@
           <xs:documentation>Indicator of whether the student was born with other siblings (i.e., twins, triplets, etc.)</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="BirthSex" type="SexDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>A person's gender at birth.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>SexDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Citizenship">
