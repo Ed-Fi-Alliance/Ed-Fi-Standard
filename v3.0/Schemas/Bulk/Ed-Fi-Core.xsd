@@ -2197,6 +2197,14 @@
               <xs:documentation>Namespace for the LearningStandard.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="LearningStandardCategory" type="LearningStandardCategoryDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An additional classification of the type of a specific learning standard.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>LearningStandardCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -5016,6 +5024,17 @@
   <xs:complexType name="LanguageUseDescriptor">
     <xs:annotation>
       <xs:documentation>The category denoting how a language is used.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LearningStandardCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>An additional classification of the type of a specific learning standard.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -12345,6 +12364,17 @@
   <xs:complexType name="LanguageUseDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for language use descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LearningStandardCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for learning standard category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
