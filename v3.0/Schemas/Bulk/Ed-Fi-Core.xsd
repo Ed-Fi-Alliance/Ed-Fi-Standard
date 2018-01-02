@@ -1848,6 +1848,16 @@
               <xs:documentation>A unique number or alphanumeric code assigned to an intervention.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="MinDosage" type="Dosage" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The minimum duration of time in minutes that may be assigned for the intervention.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MaxDosage" type="Dosage" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The maximum duration of time in minutes that may be assigned for the intervention.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1923,6 +1933,16 @@
           <xs:element name="InterventionPrescriptionIdentificationCode" type="IdentificationCode">
             <xs:annotation>
               <xs:documentation>A unique number or alphanumeric code assigned to an intervention prescription.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MinDosage" type="Dosage" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The minimum duration of time in minutes that is recommended for the intervention.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MaxDosage" type="Dosage" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The maximum duration of time in minutes that is recommended for the intervention.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -3916,6 +3936,11 @@
           <xs:element name="InterventionReference" type="InterventionReferenceType">
             <xs:annotation>
               <xs:documentation>Relates the Intervention associated with the AttendanceEvent.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="InterventionDuration" type="xs:int" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The duration in minutes in which the student participated in the intervention during this instance.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6421,6 +6446,11 @@
           <xs:element name="DiagnosticStatement" type="DiagnosticStatement" minOccurs="0">
             <xs:annotation>
               <xs:documentation>A statement provided by the assigner that provides information regarding why the student was assigned to this intervention.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Dosage" type="Dosage" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The duration of time in minutes for which the student was assigned to participate in the intervention.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -16807,6 +16837,15 @@
       <xs:totalDigits value="5" />
       <xs:fractionDigits value="2" />
     </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Dosage">
+    <xs:annotation>
+      <xs:documentation>The duration of time in minutes for an intervention or intervention prescription.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int" />
   </xs:simpleType>
   <xs:simpleType name="Duration">
     <xs:annotation>
