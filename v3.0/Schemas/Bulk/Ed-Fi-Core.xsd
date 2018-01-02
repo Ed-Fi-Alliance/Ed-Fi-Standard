@@ -1143,7 +1143,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType">
+          <xs:element name="GradeLevel" type="GradeLevelDescriptorReferenceType" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The grade level(s) certified for teaching.</xs:documentation>
               <xs:appinfo>
