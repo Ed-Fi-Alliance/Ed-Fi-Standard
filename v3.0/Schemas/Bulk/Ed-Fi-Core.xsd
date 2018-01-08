@@ -1380,7 +1380,7 @@
             </xs:annotation>
           </xs:element>
           <xs:choice>
-            <xs:element name="LearningResourceMetadataURI" type="LearningResourceMetadataURI">
+            <xs:element name="LearningResourceMetadataURI" type="URI">
               <xs:annotation>
                 <xs:documentation>The URI (typical a URL) pointing to the metadata entry in a LRMI metadata repository, which describes this content item.</xs:documentation>
               </xs:annotation>
@@ -13971,7 +13971,7 @@
           <xs:documentation>Relates the education content source to the education content.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="LearningResourceMetadataURI" type="LearningResourceMetadataURI" minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="LearningResourceMetadataURI" type="URI" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
           <xs:documentation>The URI (typical a URL) pointing to the metadata entry in a LRMI metadata repository, which describes this content item.</xs:documentation>
         </xs:annotation>
@@ -16347,18 +16347,6 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="75" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="LearningResourceMetadataURI">
-    <xs:annotation>
-      <xs:documentation>The public web site address (URL), file, or ftp locator.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Simple</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:minLength value="5" />
-      <xs:maxLength value="225" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="LearningStandardId">
