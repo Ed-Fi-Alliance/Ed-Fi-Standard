@@ -16848,7 +16848,7 @@
     <xs:restriction base="xs:decimal">
       <xs:minInclusive value="0" />
       <xs:totalDigits value="9" />
-      <xs:fractionDigits value="2" />
+      <xs:fractionDigits value="3" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="Currency">
