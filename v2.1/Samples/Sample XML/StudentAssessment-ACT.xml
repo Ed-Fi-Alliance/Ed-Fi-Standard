@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <InterchangeStudentAssessment xmlns="http://ed-fi.org/0210" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0210 ../../Schemas/Bulk/Interchange-StudentAssessment.xsd">
-	<AssessmentReference id="TA-ACT-Composite-12">
+	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>ACT</AssessmentTitle>
 			<AcademicSubject>
@@ -14,7 +14,7 @@
 			<Version>1</Version>
 		</AssessmentIdentity>
 	</AssessmentReference>
-	<AssessmentReference id="TA-ACT-English-12">
+	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>ACT</AssessmentTitle>
 			<AcademicSubject>
@@ -28,7 +28,7 @@
 			<Version>1</Version>
 		</AssessmentIdentity>
 	</AssessmentReference>
-	<AssessmentReference id="TA-ACT-Mathematics-12">
+	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>ACT</AssessmentTitle>
 			<AcademicSubject>
@@ -42,7 +42,7 @@
 			<Version>1</Version>
 		</AssessmentIdentity>
 	</AssessmentReference>
-	<AssessmentReference id="TA-ACT-Reading-12">
+	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>ACT</AssessmentTitle>
 			<AcademicSubject>
@@ -56,7 +56,7 @@
 			<Version>1</Version>
 		</AssessmentIdentity>
 	</AssessmentReference>
-	<AssessmentReference id="TA-ACT-Science-12">
+	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>ACT</AssessmentTitle>
 			<AcademicSubject>
@@ -70,7 +70,7 @@
 			<Version>1</Version>
 		</AssessmentIdentity>
 	</AssessmentReference>
-	<AssessmentReference id="TA-ACT-Writing-12">
+	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>ACT</AssessmentTitle>
 			<AcademicSubject>
@@ -108,8 +108,7 @@
 				<StudentUniqueId>604896</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -147,8 +146,7 @@
 				<StudentUniqueId>604896</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -186,8 +184,7 @@
 				<StudentUniqueId>604896</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -225,8 +222,7 @@
 				<StudentUniqueId>604896</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -264,8 +260,7 @@
 				<StudentUniqueId>604896</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -303,8 +298,7 @@
 				<StudentUniqueId>604896</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -342,8 +336,7 @@
 				<StudentUniqueId>605019</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -381,8 +374,7 @@
 				<StudentUniqueId>605019</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -420,8 +412,7 @@
 				<StudentUniqueId>605019</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -459,8 +450,7 @@
 				<StudentUniqueId>605019</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -498,8 +488,7 @@
 				<StudentUniqueId>605019</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -537,8 +526,7 @@
 				<StudentUniqueId>605019</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -576,8 +564,7 @@
 				<StudentUniqueId>605259</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -615,8 +602,7 @@
 				<StudentUniqueId>605259</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -654,8 +640,7 @@
 				<StudentUniqueId>605259</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -693,8 +678,7 @@
 				<StudentUniqueId>605259</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -732,8 +716,7 @@
 				<StudentUniqueId>605259</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -771,8 +754,7 @@
 				<StudentUniqueId>605259</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -810,8 +792,7 @@
 				<StudentUniqueId>605326</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -849,8 +830,7 @@
 				<StudentUniqueId>605326</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -888,8 +868,7 @@
 				<StudentUniqueId>605326</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -927,8 +906,7 @@
 				<StudentUniqueId>605326</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -966,8 +944,7 @@
 				<StudentUniqueId>605326</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -1005,8 +982,7 @@
 				<StudentUniqueId>605326</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -1044,8 +1020,7 @@
 				<StudentUniqueId>605467</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -1083,8 +1058,7 @@
 				<StudentUniqueId>605467</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -1122,8 +1096,7 @@
 				<StudentUniqueId>605467</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -1161,8 +1134,7 @@
 				<StudentUniqueId>605467</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -1200,8 +1172,7 @@
 				<StudentUniqueId>605467</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -1239,8 +1210,7 @@
 				<StudentUniqueId>605467</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -1278,8 +1248,7 @@
 				<StudentUniqueId>605554</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -1317,8 +1286,7 @@
 				<StudentUniqueId>605554</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -1356,8 +1324,7 @@
 				<StudentUniqueId>605554</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -1395,8 +1362,7 @@
 				<StudentUniqueId>605554</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -1434,8 +1400,7 @@
 				<StudentUniqueId>605554</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -1473,8 +1438,7 @@
 				<StudentUniqueId>605554</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -1512,8 +1476,7 @@
 				<StudentUniqueId>605691</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -1551,8 +1514,7 @@
 				<StudentUniqueId>605691</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -1590,8 +1552,7 @@
 				<StudentUniqueId>605691</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -1629,8 +1590,7 @@
 				<StudentUniqueId>605691</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -1668,8 +1628,7 @@
 				<StudentUniqueId>605691</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -1707,8 +1666,7 @@
 				<StudentUniqueId>605691</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -1746,8 +1704,7 @@
 				<StudentUniqueId>605732</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -1785,8 +1742,7 @@
 				<StudentUniqueId>605732</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -1824,8 +1780,7 @@
 				<StudentUniqueId>605732</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -1863,8 +1818,7 @@
 				<StudentUniqueId>605732</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -1902,8 +1856,7 @@
 				<StudentUniqueId>605732</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -1941,8 +1894,7 @@
 				<StudentUniqueId>605732</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -1980,8 +1932,7 @@
 				<StudentUniqueId>604827</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -2019,8 +1970,7 @@
 				<StudentUniqueId>604827</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -2058,8 +2008,7 @@
 				<StudentUniqueId>604827</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -2097,8 +2046,7 @@
 				<StudentUniqueId>604827</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -2136,8 +2084,7 @@
 				<StudentUniqueId>604827</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -2175,8 +2122,7 @@
 				<StudentUniqueId>604827</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -2214,8 +2160,7 @@
 				<StudentUniqueId>604992</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -2253,8 +2198,7 @@
 				<StudentUniqueId>604992</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -2292,8 +2236,7 @@
 				<StudentUniqueId>604992</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -2331,8 +2274,7 @@
 				<StudentUniqueId>604992</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -2370,8 +2312,7 @@
 				<StudentUniqueId>604992</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -2409,8 +2350,7 @@
 				<StudentUniqueId>604992</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -2448,8 +2388,7 @@
 				<StudentUniqueId>605062</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -2487,8 +2426,7 @@
 				<StudentUniqueId>605062</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -2526,8 +2464,7 @@
 				<StudentUniqueId>605062</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -2565,8 +2502,7 @@
 				<StudentUniqueId>605062</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -2604,8 +2540,7 @@
 				<StudentUniqueId>605062</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -2643,8 +2578,7 @@
 				<StudentUniqueId>605062</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -2682,8 +2616,7 @@
 				<StudentUniqueId>605093</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -2721,8 +2654,7 @@
 				<StudentUniqueId>605093</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -2760,8 +2692,7 @@
 				<StudentUniqueId>605093</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -2799,8 +2730,7 @@
 				<StudentUniqueId>605093</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -2838,8 +2768,7 @@
 				<StudentUniqueId>605093</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -2877,8 +2806,7 @@
 				<StudentUniqueId>605093</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -2916,8 +2844,7 @@
 				<StudentUniqueId>605139</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -2955,8 +2882,7 @@
 				<StudentUniqueId>605139</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -2994,8 +2920,7 @@
 				<StudentUniqueId>605139</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -3033,8 +2958,7 @@
 				<StudentUniqueId>605139</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -3072,8 +2996,7 @@
 				<StudentUniqueId>605139</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -3111,8 +3034,7 @@
 				<StudentUniqueId>605139</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -3150,8 +3072,7 @@
 				<StudentUniqueId>605417</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -3189,8 +3110,7 @@
 				<StudentUniqueId>605417</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -3228,8 +3148,7 @@
 				<StudentUniqueId>605417</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -3267,8 +3186,7 @@
 				<StudentUniqueId>605417</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -3306,8 +3224,7 @@
 				<StudentUniqueId>605417</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -3345,8 +3262,7 @@
 				<StudentUniqueId>605417</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -3384,8 +3300,7 @@
 				<StudentUniqueId>605540</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -3423,8 +3338,7 @@
 				<StudentUniqueId>605540</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -3462,8 +3376,7 @@
 				<StudentUniqueId>605540</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -3501,8 +3414,7 @@
 				<StudentUniqueId>605540</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -3540,8 +3452,7 @@
 				<StudentUniqueId>605540</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -3579,8 +3490,7 @@
 				<StudentUniqueId>605540</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -3618,8 +3528,7 @@
 				<StudentUniqueId>604915</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -3657,8 +3566,7 @@
 				<StudentUniqueId>604915</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -3696,8 +3604,7 @@
 				<StudentUniqueId>604915</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -3735,8 +3642,7 @@
 				<StudentUniqueId>604915</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -3774,8 +3680,7 @@
 				<StudentUniqueId>604915</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -3813,8 +3718,7 @@
 				<StudentUniqueId>604915</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -3852,8 +3756,7 @@
 				<StudentUniqueId>604987</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -3891,8 +3794,7 @@
 				<StudentUniqueId>604987</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -3930,8 +3832,7 @@
 				<StudentUniqueId>604987</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -3969,8 +3870,7 @@
 				<StudentUniqueId>604987</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -4008,8 +3908,7 @@
 				<StudentUniqueId>604987</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -4047,8 +3946,7 @@
 				<StudentUniqueId>604987</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -4086,8 +3984,7 @@
 				<StudentUniqueId>605225</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -4125,8 +4022,7 @@
 				<StudentUniqueId>605225</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -4164,8 +4060,7 @@
 				<StudentUniqueId>605225</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -4203,8 +4098,7 @@
 				<StudentUniqueId>605225</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -4242,8 +4136,7 @@
 				<StudentUniqueId>605225</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -4281,8 +4174,7 @@
 				<StudentUniqueId>605225</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -4320,8 +4212,7 @@
 				<StudentUniqueId>605266</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -4359,8 +4250,7 @@
 				<StudentUniqueId>605266</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -4398,8 +4288,7 @@
 				<StudentUniqueId>605266</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -4437,8 +4326,7 @@
 				<StudentUniqueId>605266</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -4476,8 +4364,7 @@
 				<StudentUniqueId>605266</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -4515,8 +4402,7 @@
 				<StudentUniqueId>605266</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -4554,8 +4440,7 @@
 				<StudentUniqueId>605451</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -4593,8 +4478,7 @@
 				<StudentUniqueId>605451</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -4632,8 +4516,7 @@
 				<StudentUniqueId>605451</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -4671,8 +4554,7 @@
 				<StudentUniqueId>605451</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -4710,8 +4592,7 @@
 				<StudentUniqueId>605451</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -4749,8 +4630,7 @@
 				<StudentUniqueId>605451</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -4788,8 +4668,7 @@
 				<StudentUniqueId>605470</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -4827,8 +4706,7 @@
 				<StudentUniqueId>605470</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -4866,8 +4744,7 @@
 				<StudentUniqueId>605470</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -4905,8 +4782,7 @@
 				<StudentUniqueId>605470</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -4944,8 +4820,7 @@
 				<StudentUniqueId>605470</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -4983,8 +4858,7 @@
 				<StudentUniqueId>605470</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -5022,8 +4896,7 @@
 				<StudentUniqueId>605528</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -5061,8 +4934,7 @@
 				<StudentUniqueId>605528</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -5100,8 +4972,7 @@
 				<StudentUniqueId>605528</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -5139,8 +5010,7 @@
 				<StudentUniqueId>605528</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -5178,8 +5048,7 @@
 				<StudentUniqueId>605528</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -5217,8 +5086,7 @@
 				<StudentUniqueId>605528</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -5256,8 +5124,7 @@
 				<StudentUniqueId>605549</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -5295,8 +5162,7 @@
 				<StudentUniqueId>605549</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -5334,8 +5200,7 @@
 				<StudentUniqueId>605549</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -5373,8 +5238,7 @@
 				<StudentUniqueId>605549</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -5412,8 +5276,7 @@
 				<StudentUniqueId>605549</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -5451,8 +5314,7 @@
 				<StudentUniqueId>605549</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -5490,8 +5352,7 @@
 				<StudentUniqueId>605065</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -5529,8 +5390,7 @@
 				<StudentUniqueId>605065</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -5568,8 +5428,7 @@
 				<StudentUniqueId>605065</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -5607,8 +5466,7 @@
 				<StudentUniqueId>605065</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -5646,8 +5504,7 @@
 				<StudentUniqueId>605065</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -5685,8 +5542,7 @@
 				<StudentUniqueId>605065</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -5724,8 +5580,7 @@
 				<StudentUniqueId>605245</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -5763,8 +5618,7 @@
 				<StudentUniqueId>605245</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -5802,8 +5656,7 @@
 				<StudentUniqueId>605245</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -5841,8 +5694,7 @@
 				<StudentUniqueId>605245</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -5880,8 +5732,7 @@
 				<StudentUniqueId>605245</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -5919,8 +5770,7 @@
 				<StudentUniqueId>605245</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -5958,8 +5808,7 @@
 				<StudentUniqueId>605248</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -5997,8 +5846,7 @@
 				<StudentUniqueId>605248</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -6036,8 +5884,7 @@
 				<StudentUniqueId>605248</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -6075,8 +5922,7 @@
 				<StudentUniqueId>605248</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -6114,8 +5960,7 @@
 				<StudentUniqueId>605248</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -6153,8 +5998,7 @@
 				<StudentUniqueId>605248</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -6192,8 +6036,7 @@
 				<StudentUniqueId>605294</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -6231,8 +6074,7 @@
 				<StudentUniqueId>605294</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -6270,8 +6112,7 @@
 				<StudentUniqueId>605294</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -6309,8 +6150,7 @@
 				<StudentUniqueId>605294</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -6348,8 +6188,7 @@
 				<StudentUniqueId>605294</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -6387,8 +6226,7 @@
 				<StudentUniqueId>605294</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -6426,8 +6264,7 @@
 				<StudentUniqueId>605302</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -6465,8 +6302,7 @@
 				<StudentUniqueId>605302</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -6504,8 +6340,7 @@
 				<StudentUniqueId>605302</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -6543,8 +6378,7 @@
 				<StudentUniqueId>605302</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -6582,8 +6416,7 @@
 				<StudentUniqueId>605302</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -6621,8 +6454,7 @@
 				<StudentUniqueId>605302</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -6660,8 +6492,7 @@
 				<StudentUniqueId>605474</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -6699,8 +6530,7 @@
 				<StudentUniqueId>605474</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -6738,8 +6568,7 @@
 				<StudentUniqueId>605474</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -6777,8 +6606,7 @@
 				<StudentUniqueId>605474</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -6816,8 +6644,7 @@
 				<StudentUniqueId>605474</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -6855,8 +6682,7 @@
 				<StudentUniqueId>605474</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -6894,8 +6720,7 @@
 				<StudentUniqueId>605674</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -6933,8 +6758,7 @@
 				<StudentUniqueId>605674</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -6972,8 +6796,7 @@
 				<StudentUniqueId>605674</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -7011,8 +6834,7 @@
 				<StudentUniqueId>605674</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -7050,8 +6872,7 @@
 				<StudentUniqueId>605674</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -7089,8 +6910,7 @@
 				<StudentUniqueId>605674</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -7128,8 +6948,7 @@
 				<StudentUniqueId>604886</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -7167,8 +6986,7 @@
 				<StudentUniqueId>604886</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -7206,8 +7024,7 @@
 				<StudentUniqueId>604886</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -7245,8 +7062,7 @@
 				<StudentUniqueId>604886</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -7284,8 +7100,7 @@
 				<StudentUniqueId>604886</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -7323,8 +7138,7 @@
 				<StudentUniqueId>604886</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -7362,8 +7176,7 @@
 				<StudentUniqueId>604901</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -7401,8 +7214,7 @@
 				<StudentUniqueId>604901</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -7440,8 +7252,7 @@
 				<StudentUniqueId>604901</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -7479,8 +7290,7 @@
 				<StudentUniqueId>604901</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -7518,8 +7328,7 @@
 				<StudentUniqueId>604901</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -7557,8 +7366,7 @@
 				<StudentUniqueId>604901</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -7596,8 +7404,7 @@
 				<StudentUniqueId>604990</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -7635,8 +7442,7 @@
 				<StudentUniqueId>604990</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -7674,8 +7480,7 @@
 				<StudentUniqueId>604990</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -7713,8 +7518,7 @@
 				<StudentUniqueId>604990</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -7752,8 +7556,7 @@
 				<StudentUniqueId>604990</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -7791,8 +7594,7 @@
 				<StudentUniqueId>604990</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -7830,8 +7632,7 @@
 				<StudentUniqueId>605041</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -7869,8 +7670,7 @@
 				<StudentUniqueId>605041</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -7908,8 +7708,7 @@
 				<StudentUniqueId>605041</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -7947,8 +7746,7 @@
 				<StudentUniqueId>605041</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -7986,8 +7784,7 @@
 				<StudentUniqueId>605041</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -8025,8 +7822,7 @@
 				<StudentUniqueId>605041</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -8064,8 +7860,7 @@
 				<StudentUniqueId>605273</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -8103,8 +7898,7 @@
 				<StudentUniqueId>605273</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -8142,8 +7936,7 @@
 				<StudentUniqueId>605273</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -8181,8 +7974,7 @@
 				<StudentUniqueId>605273</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -8220,8 +8012,7 @@
 				<StudentUniqueId>605273</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -8259,8 +8050,7 @@
 				<StudentUniqueId>605273</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -8298,8 +8088,7 @@
 				<StudentUniqueId>605531</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -8337,8 +8126,7 @@
 				<StudentUniqueId>605531</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -8376,8 +8164,7 @@
 				<StudentUniqueId>605531</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -8415,8 +8202,7 @@
 				<StudentUniqueId>605531</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -8454,8 +8240,7 @@
 				<StudentUniqueId>605531</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -8493,8 +8278,7 @@
 				<StudentUniqueId>605531</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -8532,8 +8316,7 @@
 				<StudentUniqueId>605667</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -8571,8 +8354,7 @@
 				<StudentUniqueId>605667</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -8610,8 +8392,7 @@
 				<StudentUniqueId>605667</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -8649,8 +8430,7 @@
 				<StudentUniqueId>605667</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -8688,8 +8468,7 @@
 				<StudentUniqueId>605667</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -8727,8 +8506,7 @@
 				<StudentUniqueId>605667</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -8766,8 +8544,7 @@
 				<StudentUniqueId>605715</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -8805,8 +8582,7 @@
 				<StudentUniqueId>605715</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -8844,8 +8620,7 @@
 				<StudentUniqueId>605715</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -8883,8 +8658,7 @@
 				<StudentUniqueId>605715</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -8922,8 +8696,7 @@
 				<StudentUniqueId>605715</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -8961,8 +8734,7 @@
 				<StudentUniqueId>605715</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -9000,8 +8772,7 @@
 				<StudentUniqueId>605721</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -9039,8 +8810,7 @@
 				<StudentUniqueId>605721</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -9078,8 +8848,7 @@
 				<StudentUniqueId>605721</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -9117,8 +8886,7 @@
 				<StudentUniqueId>605721</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -9156,8 +8924,7 @@
 				<StudentUniqueId>605721</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -9195,8 +8962,7 @@
 				<StudentUniqueId>605721</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -9234,8 +9000,7 @@
 				<StudentUniqueId>604830</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -9273,8 +9038,7 @@
 				<StudentUniqueId>604830</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -9312,8 +9076,7 @@
 				<StudentUniqueId>604830</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -9351,8 +9114,7 @@
 				<StudentUniqueId>604830</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -9390,8 +9152,7 @@
 				<StudentUniqueId>604830</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -9429,8 +9190,7 @@
 				<StudentUniqueId>604830</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -9468,8 +9228,7 @@
 				<StudentUniqueId>604957</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -9507,8 +9266,7 @@
 				<StudentUniqueId>604957</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -9546,8 +9304,7 @@
 				<StudentUniqueId>604957</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -9585,8 +9342,7 @@
 				<StudentUniqueId>604957</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -9624,8 +9380,7 @@
 				<StudentUniqueId>604957</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -9663,8 +9418,7 @@
 				<StudentUniqueId>604957</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -9702,8 +9456,7 @@
 				<StudentUniqueId>605146</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -9741,8 +9494,7 @@
 				<StudentUniqueId>605146</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -9780,8 +9532,7 @@
 				<StudentUniqueId>605146</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -9819,8 +9570,7 @@
 				<StudentUniqueId>605146</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -9858,8 +9608,7 @@
 				<StudentUniqueId>605146</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -9897,8 +9646,7 @@
 				<StudentUniqueId>605146</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -9936,8 +9684,7 @@
 				<StudentUniqueId>605188</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -9975,8 +9722,7 @@
 				<StudentUniqueId>605188</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -10014,8 +9760,7 @@
 				<StudentUniqueId>605188</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -10053,8 +9798,7 @@
 				<StudentUniqueId>605188</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -10092,8 +9836,7 @@
 				<StudentUniqueId>605188</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -10131,8 +9874,7 @@
 				<StudentUniqueId>605188</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -10170,8 +9912,7 @@
 				<StudentUniqueId>605611</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -10209,8 +9950,7 @@
 				<StudentUniqueId>605611</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -10248,8 +9988,7 @@
 				<StudentUniqueId>605611</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -10287,8 +10026,7 @@
 				<StudentUniqueId>605611</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -10326,8 +10064,7 @@
 				<StudentUniqueId>605611</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -10365,8 +10102,7 @@
 				<StudentUniqueId>605611</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -10404,8 +10140,7 @@
 				<StudentUniqueId>605716</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -10443,8 +10178,7 @@
 				<StudentUniqueId>605716</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -10482,8 +10216,7 @@
 				<StudentUniqueId>605716</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -10521,8 +10254,7 @@
 				<StudentUniqueId>605716</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -10560,8 +10292,7 @@
 				<StudentUniqueId>605716</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -10599,8 +10330,7 @@
 				<StudentUniqueId>605716</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -10638,8 +10368,7 @@
 				<StudentUniqueId>605750</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -10677,8 +10406,7 @@
 				<StudentUniqueId>605750</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -10716,8 +10444,7 @@
 				<StudentUniqueId>605750</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -10755,8 +10482,7 @@
 				<StudentUniqueId>605750</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -10794,8 +10520,7 @@
 				<StudentUniqueId>605750</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -10833,8 +10558,7 @@
 				<StudentUniqueId>605750</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -10872,8 +10596,7 @@
 				<StudentUniqueId>604934</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -10911,8 +10634,7 @@
 				<StudentUniqueId>604934</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -10950,8 +10672,7 @@
 				<StudentUniqueId>604934</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -10989,8 +10710,7 @@
 				<StudentUniqueId>604934</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -11028,8 +10748,7 @@
 				<StudentUniqueId>604934</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -11067,8 +10786,7 @@
 				<StudentUniqueId>604934</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -11106,8 +10824,7 @@
 				<StudentUniqueId>605313</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -11145,8 +10862,7 @@
 				<StudentUniqueId>605313</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -11184,8 +10900,7 @@
 				<StudentUniqueId>605313</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -11223,8 +10938,7 @@
 				<StudentUniqueId>605313</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -11262,8 +10976,7 @@
 				<StudentUniqueId>605313</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -11301,8 +11014,7 @@
 				<StudentUniqueId>605313</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -11340,8 +11052,7 @@
 				<StudentUniqueId>605626</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -11379,8 +11090,7 @@
 				<StudentUniqueId>605626</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -11418,8 +11128,7 @@
 				<StudentUniqueId>605626</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -11457,8 +11166,7 @@
 				<StudentUniqueId>605626</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -11496,8 +11204,7 @@
 				<StudentUniqueId>605626</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -11535,8 +11242,7 @@
 				<StudentUniqueId>605626</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -11574,8 +11280,7 @@
 				<StudentUniqueId>605749</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -11613,8 +11318,7 @@
 				<StudentUniqueId>605749</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -11652,8 +11356,7 @@
 				<StudentUniqueId>605749</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -11691,8 +11394,7 @@
 				<StudentUniqueId>605749</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -11730,8 +11432,7 @@
 				<StudentUniqueId>605749</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -11769,8 +11470,7 @@
 				<StudentUniqueId>605749</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -11808,8 +11508,7 @@
 				<StudentUniqueId>604883</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -11847,8 +11546,7 @@
 				<StudentUniqueId>604883</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -11886,8 +11584,7 @@
 				<StudentUniqueId>604883</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -11925,8 +11622,7 @@
 				<StudentUniqueId>604883</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -11964,8 +11660,7 @@
 				<StudentUniqueId>604883</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -12003,8 +11698,7 @@
 				<StudentUniqueId>604883</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -12042,8 +11736,7 @@
 				<StudentUniqueId>605308</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -12081,8 +11774,7 @@
 				<StudentUniqueId>605308</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -12120,8 +11812,7 @@
 				<StudentUniqueId>605308</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -12159,8 +11850,7 @@
 				<StudentUniqueId>605308</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -12198,8 +11888,7 @@
 				<StudentUniqueId>605308</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -12237,8 +11926,7 @@
 				<StudentUniqueId>605308</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -12276,8 +11964,7 @@
 				<StudentUniqueId>605387</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -12315,8 +12002,7 @@
 				<StudentUniqueId>605387</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -12354,8 +12040,7 @@
 				<StudentUniqueId>605387</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -12393,8 +12078,7 @@
 				<StudentUniqueId>605387</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -12432,8 +12116,7 @@
 				<StudentUniqueId>605387</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -12471,8 +12154,7 @@
 				<StudentUniqueId>605387</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -12510,8 +12192,7 @@
 				<StudentUniqueId>605401</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -12549,8 +12230,7 @@
 				<StudentUniqueId>605401</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -12588,8 +12268,7 @@
 				<StudentUniqueId>605401</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -12627,8 +12306,7 @@
 				<StudentUniqueId>605401</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -12666,8 +12344,7 @@
 				<StudentUniqueId>605401</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -12705,8 +12382,7 @@
 				<StudentUniqueId>605401</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -12744,8 +12420,7 @@
 				<StudentUniqueId>605422</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -12783,8 +12458,7 @@
 				<StudentUniqueId>605422</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -12822,8 +12496,7 @@
 				<StudentUniqueId>605422</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -12861,8 +12534,7 @@
 				<StudentUniqueId>605422</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -12900,8 +12572,7 @@
 				<StudentUniqueId>605422</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -12939,8 +12610,7 @@
 				<StudentUniqueId>605422</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -12978,8 +12648,7 @@
 				<StudentUniqueId>605511</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -13017,8 +12686,7 @@
 				<StudentUniqueId>605511</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -13056,8 +12724,7 @@
 				<StudentUniqueId>605511</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -13095,8 +12762,7 @@
 				<StudentUniqueId>605511</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -13134,8 +12800,7 @@
 				<StudentUniqueId>605511</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -13173,8 +12838,7 @@
 				<StudentUniqueId>605511</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -13212,8 +12876,7 @@
 				<StudentUniqueId>605587</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -13251,8 +12914,7 @@
 				<StudentUniqueId>605587</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -13290,8 +12952,7 @@
 				<StudentUniqueId>605587</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -13329,8 +12990,7 @@
 				<StudentUniqueId>605587</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -13368,8 +13028,7 @@
 				<StudentUniqueId>605587</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -13407,8 +13066,7 @@
 				<StudentUniqueId>605587</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -13446,8 +13104,7 @@
 				<StudentUniqueId>605654</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -13485,8 +13142,7 @@
 				<StudentUniqueId>605654</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -13524,8 +13180,7 @@
 				<StudentUniqueId>605654</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -13563,8 +13218,7 @@
 				<StudentUniqueId>605654</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -13602,8 +13256,7 @@
 				<StudentUniqueId>605654</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -13641,8 +13294,7 @@
 				<StudentUniqueId>605654</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -13680,8 +13332,7 @@
 				<StudentUniqueId>605187</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -13719,8 +13370,7 @@
 				<StudentUniqueId>605187</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -13758,8 +13408,7 @@
 				<StudentUniqueId>605187</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -13797,8 +13446,7 @@
 				<StudentUniqueId>605187</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -13836,8 +13484,7 @@
 				<StudentUniqueId>605187</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -13875,8 +13522,7 @@
 				<StudentUniqueId>605187</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -13914,8 +13560,7 @@
 				<StudentUniqueId>605253</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -13953,8 +13598,7 @@
 				<StudentUniqueId>605253</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -13992,8 +13636,7 @@
 				<StudentUniqueId>605253</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -14031,8 +13674,7 @@
 				<StudentUniqueId>605253</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -14070,8 +13712,7 @@
 				<StudentUniqueId>605253</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -14109,8 +13750,7 @@
 				<StudentUniqueId>605253</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -14148,8 +13788,7 @@
 				<StudentUniqueId>605435</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -14187,8 +13826,7 @@
 				<StudentUniqueId>605435</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -14226,8 +13864,7 @@
 				<StudentUniqueId>605435</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -14265,8 +13902,7 @@
 				<StudentUniqueId>605435</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -14304,8 +13940,7 @@
 				<StudentUniqueId>605435</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -14343,8 +13978,7 @@
 				<StudentUniqueId>605435</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -14382,8 +14016,7 @@
 				<StudentUniqueId>605457</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -14421,8 +14054,7 @@
 				<StudentUniqueId>605457</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -14460,8 +14092,7 @@
 				<StudentUniqueId>605457</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -14499,8 +14130,7 @@
 				<StudentUniqueId>605457</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -14538,8 +14168,7 @@
 				<StudentUniqueId>605457</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -14577,8 +14206,7 @@
 				<StudentUniqueId>605457</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -14616,8 +14244,7 @@
 				<StudentUniqueId>604924</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -14655,8 +14282,7 @@
 				<StudentUniqueId>604924</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -14694,8 +14320,7 @@
 				<StudentUniqueId>604924</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -14733,8 +14358,7 @@
 				<StudentUniqueId>604924</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -14772,8 +14396,7 @@
 				<StudentUniqueId>604924</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -14811,8 +14434,7 @@
 				<StudentUniqueId>604924</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -14850,8 +14472,7 @@
 				<StudentUniqueId>604962</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -14889,8 +14510,7 @@
 				<StudentUniqueId>604962</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -14928,8 +14548,7 @@
 				<StudentUniqueId>604962</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -14967,8 +14586,7 @@
 				<StudentUniqueId>604962</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -15006,8 +14624,7 @@
 				<StudentUniqueId>604962</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -15045,8 +14662,7 @@
 				<StudentUniqueId>604962</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -15084,8 +14700,7 @@
 				<StudentUniqueId>605083</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -15123,8 +14738,7 @@
 				<StudentUniqueId>605083</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -15162,8 +14776,7 @@
 				<StudentUniqueId>605083</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -15201,8 +14814,7 @@
 				<StudentUniqueId>605083</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -15240,8 +14852,7 @@
 				<StudentUniqueId>605083</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -15279,8 +14890,7 @@
 				<StudentUniqueId>605083</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -15318,8 +14928,7 @@
 				<StudentUniqueId>605115</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -15357,8 +14966,7 @@
 				<StudentUniqueId>605115</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -15396,8 +15004,7 @@
 				<StudentUniqueId>605115</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -15435,8 +15042,7 @@
 				<StudentUniqueId>605115</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -15474,8 +15080,7 @@
 				<StudentUniqueId>605115</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -15513,8 +15118,7 @@
 				<StudentUniqueId>605115</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
@@ -15552,8 +15156,7 @@
 				<StudentUniqueId>605638</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Composite-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Composite</CodeValue>
@@ -15591,8 +15194,7 @@
 				<StudentUniqueId>605638</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-English-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>English</CodeValue>
@@ -15630,8 +15232,7 @@
 				<StudentUniqueId>605638</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Mathematics-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Mathematics</CodeValue>
@@ -15669,8 +15270,7 @@
 				<StudentUniqueId>605638</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Reading-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Reading</CodeValue>
@@ -15708,8 +15308,7 @@
 				<StudentUniqueId>605638</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Science-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Science</CodeValue>
@@ -15747,8 +15346,7 @@
 				<StudentUniqueId>605638</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
-		<AssessmentReference ref="TA-ACT-Writing-12">
-			<AssessmentIdentity>
+		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>ACT</AssessmentTitle>
 				<AcademicSubject>
 					<CodeValue>Writing</CodeValue>
