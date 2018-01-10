@@ -45,6 +45,13 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2007-05-28</BeginDate>
+				<EndDate>2009-12-28</EndDate>
+			</Period>
+			<Period>
+				<BeginDate>2010-01-12</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -69,6 +76,19 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
+		<Citizenship>
+			<CitizenshipStatus>
+				<CodeValue>US Citizen</CodeValue>
+			</CitizenshipStatus>
+			<IdentificationDocument>
+				<PersonalInformationVerification>
+					<CodeValue>Other official document</CodeValue>
+				</PersonalInformationVerification>
+				<IdentificationDocumentUse>
+					<CodeValue>Personal Information Verification</CodeValue>
+				</IdentificationDocumentUse>
+			</IdentificationDocument>
+		</Citizenship>
 	</Student>
 	<Student id="STUD_555555">
 		<StudentUniqueId>555555</StudentUniqueId>
@@ -152,6 +172,9 @@
 			<StudentCharacteristic>
 				<CodeValue>Immigrant</CodeValue>
 			</StudentCharacteristic>
+			<Period>
+				<BeginDate>2001-12-20</BeginDate>
+			</Period>
 		</StudentCharacteristic>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
@@ -161,6 +184,10 @@
 		<StudentIndicator>
 			<IndicatorName>At Risk</IndicatorName>
 			<Indicator>True</Indicator>
+			<Period>
+				<BeginDate>2001-12-20</BeginDate>
+				<EndDate>2009-05-31</EndDate>
+			</Period>
 		</StudentIndicator>
 	</Student>
 	<Student id="STUD_605372">
@@ -560,6 +587,19 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
+		<Citizenship>
+			<CitizenshipStatus>
+				<CodeValue>Permanent resident</CodeValue>
+			</CitizenshipStatus>
+			<IdentificationDocument>
+				<PersonalInformationVerification>
+					<CodeValue>Immigration document/visa</CodeValue>
+				</PersonalInformationVerification>
+				<IdentificationDocumentUse>
+					<CodeValue>Personal Information Verification</CodeValue>
+				</IdentificationDocumentUse>
+			</IdentificationDocument>
+		</Citizenship>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
 				<CodeValue>Immigrant</CodeValue>
@@ -709,7 +749,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -872,6 +912,9 @@
 		<StudentIndicator>
 			<IndicatorName>At Risk</IndicatorName>
 			<Indicator>True</Indicator>
+			<Period>
+				<BeginDate>2008-12-04</BeginDate>
+			</Period>
 		</StudentIndicator>
 	</Student>
 	<Student id="STUD_605377">
@@ -1042,6 +1085,9 @@
 		<StudentIndicator>
 			<IndicatorName>ELL</IndicatorName>
 			<Indicator>True</Indicator>
+			<Period>
+				<BeginDate>2008-04-03</BeginDate>
+			</Period>
 		</StudentIndicator>
 	</Student>
 	<Student id="STUD_605571">
@@ -1202,11 +1248,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604826">
 		<StudentUniqueId>604826</StudentUniqueId>
@@ -1345,11 +1386,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<StudentIndicator>
 			<IndicatorName>At Risk</IndicatorName>
 			<Indicator>True</Indicator>
@@ -1428,11 +1464,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<StudentIndicator>
 			<IndicatorName>At Risk</IndicatorName>
 			<Indicator>True</Indicator>
@@ -1736,7 +1767,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -1809,14 +1840,9 @@
 		</Race>
 		<EconomicDisadvantaged>false</EconomicDisadvantaged>
 		<SchoolFoodServicesEligibility>
-			<CodeValue>FullPrice</CodeValue>
+			<CodeValue>Full Price</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604864">
 		<StudentUniqueId>604864</StudentUniqueId>
@@ -2588,11 +2614,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605189">
 		<StudentUniqueId>605189</StudentUniqueId>
@@ -2919,11 +2940,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605011">
 		<StudentUniqueId>605011</StudentUniqueId>
@@ -3776,7 +3792,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -3853,11 +3869,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>mal</CodeValue>
@@ -3942,11 +3953,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>bos</CodeValue>
@@ -4093,11 +4099,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ara</CodeValue>
@@ -4347,7 +4348,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -4575,11 +4576,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ita</CodeValue>
@@ -4664,11 +4660,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>rus</CodeValue>
@@ -4723,6 +4714,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2009-11-01</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Other</CodeValue>
 			</AddressType>
@@ -4846,11 +4840,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605293">
 		<StudentUniqueId>605293</StudentUniqueId>
@@ -4922,7 +4911,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -4993,11 +4982,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605278">
 		<StudentUniqueId>605278</StudentUniqueId>
@@ -5067,11 +5051,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>iku</CodeValue>
@@ -5481,11 +5460,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ara</CodeValue>
@@ -5948,11 +5922,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tur</CodeValue>
@@ -6104,11 +6073,6 @@
 			<CodeValue>Free</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>urd</CodeValue>
@@ -6808,7 +6772,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -7189,11 +7153,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605404">
 		<StudentUniqueId>605404</StudentUniqueId>
@@ -7811,11 +7770,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605224">
 		<StudentUniqueId>605224</StudentUniqueId>
@@ -8012,6 +7966,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2006-04-03</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Other</CodeValue>
 			</AddressType>
@@ -8042,11 +7999,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605312">
 		<StudentUniqueId>605312</StudentUniqueId>
@@ -8122,11 +8074,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tur</CodeValue>
@@ -8288,11 +8235,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605497">
 		<StudentUniqueId>605497</StudentUniqueId>
@@ -8370,7 +8312,7 @@
 		</SchoolFoodServicesEligibility>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -8674,11 +8616,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ita</CodeValue>
@@ -9161,11 +9098,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604831">
 		<StudentUniqueId>604831</StudentUniqueId>
@@ -9555,11 +9487,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>afr</CodeValue>
@@ -9891,11 +9818,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ben</CodeValue>
@@ -9973,11 +9895,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tso</CodeValue>
@@ -10396,7 +10313,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -10547,11 +10464,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605311">
 		<StudentUniqueId>605311</StudentUniqueId>
@@ -10633,11 +10545,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ron</CodeValue>
@@ -10722,11 +10629,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tir</CodeValue>
@@ -10937,6 +10839,13 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2005-01-20</BeginDate>
+				<EndDate>2007-01-31</EndDate>
+			</Period>
+			<Period>
+				<BeginDate>2009-08-07</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -11433,11 +11342,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604904">
 		<StudentUniqueId>604904</StudentUniqueId>
@@ -11728,11 +11632,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604948">
 		<StudentUniqueId>604948</StudentUniqueId>
@@ -12030,7 +11929,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -12406,11 +12305,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>efi</CodeValue>
@@ -12465,6 +12359,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2010-05-19</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -12652,11 +12549,6 @@
 			<CodeValue>Free</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605402">
 		<StudentUniqueId>605402</StudentUniqueId>
@@ -13272,11 +13164,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>heb</CodeValue>
@@ -13509,11 +13396,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605284">
 		<StudentUniqueId>605284</StudentUniqueId>
@@ -13582,11 +13464,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605729">
 		<StudentUniqueId>605729</StudentUniqueId>
@@ -13921,7 +13798,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -14235,11 +14112,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>npi</CodeValue>
@@ -15826,11 +15698,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605017">
 		<StudentUniqueId>605017</StudentUniqueId>
@@ -16112,6 +15979,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2004-03-09</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -16728,11 +16598,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604980">
 		<StudentUniqueId>604980</StudentUniqueId>
@@ -17189,11 +17054,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605242">
 		<StudentUniqueId>605242</StudentUniqueId>
@@ -17263,11 +17123,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604937">
 		<StudentUniqueId>604937</StudentUniqueId>
@@ -17657,7 +17512,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<StudentCharacteristic>
@@ -17891,11 +17746,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605333">
 		<StudentUniqueId>605333</StudentUniqueId>
@@ -18447,11 +18297,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ben</CodeValue>
@@ -18608,11 +18453,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tur</CodeValue>
@@ -18771,11 +18611,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605200">
 		<StudentUniqueId>605200</StudentUniqueId>
@@ -18919,11 +18754,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>nav</CodeValue>
@@ -19093,7 +18923,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -19179,11 +19009,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>amh</CodeValue>
@@ -19262,11 +19087,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605079">
 		<StudentUniqueId>605079</StudentUniqueId>
@@ -19403,11 +19223,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605231">
 		<StudentUniqueId>605231</StudentUniqueId>
@@ -19476,11 +19291,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605692">
 		<StudentUniqueId>605692</StudentUniqueId>
@@ -19614,6 +19424,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2003-11-24</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Billing</CodeValue>
 			</AddressType>
@@ -19638,11 +19451,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605021">
 		<StudentUniqueId>605021</StudentUniqueId>
@@ -19955,7 +19763,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -20204,11 +20012,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tha</CodeValue>
@@ -20361,11 +20164,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>lao</CodeValue>
@@ -20449,11 +20247,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>swa</CodeValue>
@@ -20536,11 +20329,6 @@
 			<CodeValue>Free</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605149">
 		<StudentUniqueId>605149</StudentUniqueId>
@@ -20610,11 +20398,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605442">
 		<StudentUniqueId>605442</StudentUniqueId>
@@ -20692,7 +20475,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -20868,11 +20651,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605048">
 		<StudentUniqueId>605048</StudentUniqueId>
@@ -21028,11 +20806,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tmh</CodeValue>
@@ -21272,11 +21045,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605655">
 		<StudentUniqueId>605655</StudentUniqueId>
@@ -21420,11 +21188,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>cho</CodeValue>
@@ -22064,11 +21827,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ita</CodeValue>
@@ -22223,7 +21981,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -22349,6 +22107,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2008-10-01</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -22519,11 +22280,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604876">
 		<StudentUniqueId>604876</StudentUniqueId>
@@ -22687,11 +22443,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>guj</CodeValue>
@@ -22862,11 +22613,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>est</CodeValue>
@@ -23113,11 +22859,6 @@
 			<CodeValue>Free</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
 				<CodeValue>Homeless</CodeValue>
@@ -23455,11 +23196,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>kmb</CodeValue>
@@ -23707,7 +23443,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -24317,11 +24053,6 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
 				<CodeValue>Homeless</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
@@ -24499,11 +24230,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>deu</CodeValue>
@@ -24744,11 +24470,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>kmb</CodeValue>
@@ -24899,11 +24620,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605270">
 		<StudentUniqueId>605270</StudentUniqueId>
@@ -24979,11 +24695,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
@@ -25220,7 +24931,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -25301,11 +25012,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>vie</CodeValue>
@@ -25383,11 +25089,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605662">
 		<StudentUniqueId>605662</StudentUniqueId>
@@ -25600,11 +25301,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>por</CodeValue>
@@ -26476,11 +26172,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ori</CodeValue>
@@ -27087,6 +26778,9 @@
 			<StudentCharacteristic>
 				<CodeValue>Parent in Military</CodeValue>
 			</StudentCharacteristic>
+			<Period>
+				<BeginDate>2009-03-29</BeginDate>
+			</Period>
 		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
@@ -27363,6 +27057,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2009-02-14</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -27387,11 +27084,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<LimitedEnglishProficiency>
 			<CodeValue>Limited</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/LimitedEnglishProficiencyDescriptor.xml</Namespace>
@@ -28871,7 +28563,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -30093,11 +29785,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605091">
 		<StudentUniqueId>605091</StudentUniqueId>
@@ -30250,11 +29937,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605101">
 		<StudentUniqueId>605101</StudentUniqueId>
@@ -31456,11 +31138,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>zlm</CodeValue>
@@ -31782,11 +31459,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ukr</CodeValue>
@@ -32106,11 +31778,6 @@
 			<CodeValue>Free</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605502">
 		<StudentUniqueId>605502</StudentUniqueId>
@@ -32563,7 +32230,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -32968,11 +32635,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605106">
 		<StudentUniqueId>605106</StudentUniqueId>
@@ -33031,11 +32693,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tir</CodeValue>
@@ -33434,11 +33091,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>swa</CodeValue>
@@ -34157,11 +33809,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605184">
 		<StudentUniqueId>605184</StudentUniqueId>
@@ -34313,11 +33960,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605680">
 		<StudentUniqueId>605680</StudentUniqueId>
@@ -34755,6 +34397,13 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2005-12-20</BeginDate>
+				<EndDate>2008-05-19</EndDate>
+			</Period>
+			<Period>
+				<BeginDate>2009-06-20</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -34855,7 +34504,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -35001,11 +34650,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605169">
 		<StudentUniqueId>605169</StudentUniqueId>
@@ -35081,11 +34725,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605608">
 		<StudentUniqueId>605608</StudentUniqueId>
@@ -35235,11 +34874,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605343">
 		<StudentUniqueId>605343</StudentUniqueId>
@@ -35539,11 +35173,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605405">
 		<StudentUniqueId>605405</StudentUniqueId>
@@ -35849,11 +35478,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>eng</CodeValue>
@@ -36260,7 +35884,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -36338,11 +35962,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tmh</CodeValue>
@@ -36510,11 +36129,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tha</CodeValue>
@@ -36904,11 +36518,6 @@
 			<CodeValue>Free</CodeValue>
 			<Namespace>http://ed-fi.org/Descriptor/SchoolFoodServicesEligibilityDescriptor.xml</Namespace>
 		</SchoolFoodServicesEligibility>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605538">
 		<StudentUniqueId>605538</StudentUniqueId>
@@ -37052,11 +36661,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605559">
 		<StudentUniqueId>605559</StudentUniqueId>
@@ -37370,11 +36974,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>efi</CodeValue>
@@ -38481,7 +38080,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -38913,11 +38512,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605179">
 		<StudentUniqueId>605179</StudentUniqueId>
@@ -38986,11 +38580,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605238">
 		<StudentUniqueId>605238</StudentUniqueId>
@@ -39393,11 +38982,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605069">
 		<StudentUniqueId>605069</StudentUniqueId>
@@ -39567,11 +39151,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604941">
 		<StudentUniqueId>604941</StudentUniqueId>
@@ -39791,6 +39370,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2010-03-17</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Temporary</CodeValue>
 			</AddressType>
@@ -40121,11 +39703,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605112">
 		<StudentUniqueId>605112</StudentUniqueId>
@@ -40196,7 +39773,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -40341,11 +39918,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ita</CodeValue>
@@ -40840,11 +40412,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605424">
 		<StudentUniqueId>605424</StudentUniqueId>
@@ -40914,11 +40481,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605526">
 		<StudentUniqueId>605526</StudentUniqueId>
@@ -41060,11 +40622,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605100">
 		<StudentUniqueId>605100</StudentUniqueId>
@@ -41140,11 +40697,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>heb</CodeValue>
@@ -41230,7 +40782,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -41462,11 +41014,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>hin</CodeValue>
@@ -41545,11 +41092,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604910">
 		<StudentUniqueId>604910</StudentUniqueId>
@@ -41841,11 +41383,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605113">
 		<StudentUniqueId>605113</StudentUniqueId>
@@ -41915,11 +41452,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605085">
 		<StudentUniqueId>605085</StudentUniqueId>
@@ -42001,11 +41533,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>est</CodeValue>
@@ -42236,7 +41763,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -42322,11 +41849,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604925">
 		<StudentUniqueId>604925</StudentUniqueId>
@@ -42628,11 +42150,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604973">
 		<StudentUniqueId>604973</StudentUniqueId>
@@ -42769,11 +42286,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>hau</CodeValue>
@@ -43263,11 +42775,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ori</CodeValue>
@@ -44225,11 +43732,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>deu</CodeValue>
@@ -44736,7 +44238,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -44783,6 +44285,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2007-01-28</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Billing</CodeValue>
 			</AddressType>
@@ -44901,11 +44406,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604843">
 		<StudentUniqueId>604843</StudentUniqueId>
@@ -45595,11 +45095,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605471">
 		<StudentUniqueId>605471</StudentUniqueId>
@@ -45668,11 +45163,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605342">
 		<StudentUniqueId>605342</StudentUniqueId>
@@ -45741,11 +45231,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605765">
 		<StudentUniqueId>605765</StudentUniqueId>
@@ -46295,11 +45780,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605267">
 		<StudentUniqueId>605267</StudentUniqueId>
@@ -46370,7 +45850,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -46442,11 +45922,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605733">
 		<StudentUniqueId>605733</StudentUniqueId>
@@ -46596,11 +46071,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>zho</CodeValue>
@@ -47010,11 +46480,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605077">
 		<StudentUniqueId>605077</StudentUniqueId>
@@ -47158,11 +46623,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605379">
 		<StudentUniqueId>605379</StudentUniqueId>
@@ -47610,11 +47070,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605631">
 		<StudentUniqueId>605631</StudentUniqueId>
@@ -47922,7 +47377,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -47993,11 +47448,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>zlm</CodeValue>
@@ -48150,11 +47600,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604972">
 		<StudentUniqueId>604972</StudentUniqueId>
@@ -48533,11 +47978,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605116">
 		<StudentUniqueId>605116</StudentUniqueId>
@@ -48606,11 +48046,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604898">
 		<StudentUniqueId>604898</StudentUniqueId>
@@ -49152,6 +48587,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2008-11-20</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Mailing</CodeValue>
 			</AddressType>
@@ -49411,11 +48849,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604919">
 		<StudentUniqueId>604919</StudentUniqueId>
@@ -49801,7 +49234,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -49947,11 +49380,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605544">
 		<StudentUniqueId>605544</StudentUniqueId>
@@ -50099,11 +49527,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tel</CodeValue>
@@ -50181,11 +49604,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>afr</CodeValue>
@@ -50432,11 +49850,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605118">
 		<StudentUniqueId>605118</StudentUniqueId>
@@ -50506,11 +49919,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ukr</CodeValue>
@@ -51254,11 +50662,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605042">
 		<StudentUniqueId>605042</StudentUniqueId>
@@ -51485,11 +50888,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ceb</CodeValue>
@@ -51574,11 +50972,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605316">
 		<StudentUniqueId>605316</StudentUniqueId>
@@ -51648,11 +51041,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>zho</CodeValue>
@@ -52045,11 +51433,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604940">
 		<StudentUniqueId>604940</StudentUniqueId>
@@ -52194,11 +51577,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>fra</CodeValue>
@@ -52346,11 +51724,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605700">
 		<StudentUniqueId>605700</StudentUniqueId>
@@ -52651,11 +52024,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605370">
 		<StudentUniqueId>605370</StudentUniqueId>
@@ -53127,11 +52495,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605339">
 		<StudentUniqueId>605339</StudentUniqueId>
@@ -53342,11 +52705,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604905">
 		<StudentUniqueId>604905</StudentUniqueId>
@@ -53569,7 +52927,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Foster Care</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -53646,11 +53004,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605088">
 		<StudentUniqueId>605088</StudentUniqueId>
@@ -53734,7 +53087,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Unacccompanied Youth</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -53905,11 +53258,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605553">
 		<StudentUniqueId>605553</StudentUniqueId>
@@ -54219,11 +53567,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>zlm</CodeValue>
@@ -54395,11 +53738,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605263">
 		<StudentUniqueId>605263</StudentUniqueId>
@@ -54436,6 +53774,9 @@
 		</Sex>
 		<BirthData>
 			<BirthDate>1997-12-30</BirthDate>
+			<BirthSex>
+				<CodeValue>Female</CodeValue>
+			</BirthSex>
 		</BirthData>
 		<Address>
 			<StreetNumberName>991 New Freeway</StreetNumberName>
@@ -54475,11 +53816,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604863">
 		<StudentUniqueId>604863</StudentUniqueId>
@@ -54702,11 +54038,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>lao</CodeValue>
@@ -54956,11 +54287,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605695">
 		<StudentUniqueId>605695</StudentUniqueId>
@@ -55136,11 +54462,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>cho</CodeValue>
@@ -55451,11 +54772,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>guj</CodeValue>
@@ -55510,6 +54826,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2005-01-18</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -55540,11 +54859,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605309">
 		<StudentUniqueId>605309</StudentUniqueId>
@@ -55619,11 +54933,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605699">
 		<StudentUniqueId>605699</StudentUniqueId>
@@ -55861,11 +55170,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>swa</CodeValue>
@@ -56431,11 +55735,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>rus</CodeValue>
@@ -56519,11 +55818,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ron</CodeValue>
@@ -56764,11 +56058,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605349">
 		<StudentUniqueId>605349</StudentUniqueId>
@@ -57009,11 +56298,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604938">
 		<StudentUniqueId>604938</StudentUniqueId>
@@ -57166,11 +56450,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>vie</CodeValue>
@@ -57255,11 +56534,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605031">
 		<StudentUniqueId>605031</StudentUniqueId>
@@ -57413,11 +56687,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>urd</CodeValue>
@@ -57585,11 +56854,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>npi</CodeValue>
@@ -58269,11 +57533,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605250">
 		<StudentUniqueId>605250</StudentUniqueId>
@@ -58343,11 +57602,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604892">
 		<StudentUniqueId>604892</StudentUniqueId>
@@ -58513,11 +57767,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>kor</CodeValue>
@@ -58595,11 +57844,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605446">
 		<StudentUniqueId>605446</StudentUniqueId>
@@ -58676,8 +57920,12 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Homeless</CodeValue>
 			</StudentCharacteristic>
+			<Period>
+				<BeginDate>2003-05-06</BeginDate>
+				<EndDate>2005-10-31</EndDate>
+			</Period>
 		</StudentCharacteristic>
 		<Language>
 			<Language>
@@ -58763,11 +58011,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>swe</CodeValue>
@@ -58851,11 +58094,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605756">
 		<StudentUniqueId>605756</StudentUniqueId>
@@ -59082,11 +58320,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>rus</CodeValue>
@@ -59665,6 +58898,9 @@
 		</Sex>
 		<BirthData>
 			<BirthDate>1996-10-08</BirthDate>
+			<BirthSex>
+				<CodeValue>Male</CodeValue>
+			</BirthSex>
 		</BirthData>
 		<Address>
 			<StreetNumberName>36 Old Freeway</StreetNumberName>
@@ -59698,11 +58934,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605208">
 		<StudentUniqueId>605208</StudentUniqueId>
@@ -60192,11 +59423,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605610">
 		<StudentUniqueId>605610</StudentUniqueId>
@@ -60419,11 +59645,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>est</CodeValue>
@@ -60746,11 +59967,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605119">
 		<StudentUniqueId>605119</StudentUniqueId>
@@ -60826,11 +60042,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605058">
 		<StudentUniqueId>605058</StudentUniqueId>
@@ -60875,6 +60086,13 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2001-07-20</BeginDate>
+				<EndDate>2007-01-31</EndDate>
+			</Period>
+			<Period>
+				<BeginDate>2009-08-02</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -60999,11 +60217,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>guj</CodeValue>
@@ -61088,11 +60301,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tur</CodeValue>
@@ -61183,11 +60391,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ara</CodeValue>
@@ -61491,11 +60694,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605539">
 		<StudentUniqueId>605539</StudentUniqueId>
@@ -61727,11 +60925,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605297">
 		<StudentUniqueId>605297</StudentUniqueId>
@@ -61807,11 +61000,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605272">
 		<StudentUniqueId>605272</StudentUniqueId>
@@ -61870,11 +61058,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605537">
 		<StudentUniqueId>605537</StudentUniqueId>
@@ -62524,11 +61707,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>lao</CodeValue>
@@ -62858,11 +62036,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604897">
 		<StudentUniqueId>604897</StudentUniqueId>
@@ -63011,11 +62184,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tha</CodeValue>
@@ -63100,11 +62268,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>zho</CodeValue>
@@ -63716,11 +62879,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ind</CodeValue>
@@ -64025,11 +63183,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605674">
 		<StudentUniqueId>605674</StudentUniqueId>
@@ -64352,11 +63505,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ces</CodeValue>
@@ -64744,11 +63892,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604924">
 		<StudentUniqueId>604924</StudentUniqueId>
@@ -65049,11 +64192,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tel</CodeValue>
@@ -65131,11 +64269,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605743">
 		<StudentUniqueId>605743</StudentUniqueId>
@@ -65357,11 +64490,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605667">
 		<StudentUniqueId>605667</StudentUniqueId>
@@ -65876,11 +65004,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605470">
 		<StudentUniqueId>605470</StudentUniqueId>
@@ -65949,11 +65072,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605326">
 		<StudentUniqueId>605326</StudentUniqueId>
@@ -66097,11 +65215,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604962">
 		<StudentUniqueId>604962</StudentUniqueId>
@@ -66246,11 +65359,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>cho</CodeValue>
@@ -66777,6 +65885,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>1995-08-28</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Billing</CodeValue>
 			</AddressType>
@@ -66962,11 +66073,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>tha</CodeValue>
@@ -67050,11 +66156,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605549">
 		<StudentUniqueId>605549</StudentUniqueId>
@@ -67462,11 +66563,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>spa</CodeValue>
@@ -67687,11 +66783,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605474">
 		<StudentUniqueId>605474</StudentUniqueId>
@@ -67761,11 +66852,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605456">
 		<StudentUniqueId>605456</StudentUniqueId>
@@ -67840,11 +66926,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605259">
 		<StudentUniqueId>605259</StudentUniqueId>
@@ -67920,11 +67001,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>rus</CodeValue>
@@ -68564,11 +67640,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605240">
 		<StudentUniqueId>605240</StudentUniqueId>
@@ -68637,11 +67708,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>deu</CodeValue>
@@ -68890,11 +67956,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605528">
 		<StudentUniqueId>605528</StudentUniqueId>
@@ -69138,11 +68199,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605587">
 		<StudentUniqueId>605587</StudentUniqueId>
@@ -69291,11 +68347,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>hin</CodeValue>
@@ -69448,11 +68499,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605229">
 		<StudentUniqueId>605229</StudentUniqueId>
@@ -69578,6 +68624,13 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>1997-01-03</BeginDate>
+				<EndDate>2002-02-17</EndDate>
+			</Period>
+			<Period>
+				<BeginDate>2005-09-20</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -69766,11 +68819,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>jpn</CodeValue>
@@ -69855,11 +68903,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605717">
 		<StudentUniqueId>605717</StudentUniqueId>
@@ -70625,11 +69668,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605204">
 		<StudentUniqueId>605204</StudentUniqueId>
@@ -70967,6 +70005,9 @@
 		</Sex>
 		<BirthData>
 			<BirthDate>1994-02-27</BirthDate>
+			<BirthSex>
+				<CodeValue>Male</CodeValue>
+			</BirthSex>
 		</BirthData>
 		<Address>
 			<StreetNumberName>51 Clarendon Blvd.</StreetNumberName>
@@ -71000,11 +70041,22 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
+		<Citizenship>
+			<CitizenshipStatus>
+				<CodeValue>Non-resident alien</CodeValue>
+			</CitizenshipStatus>
+			<Visa>
+				<CodeValue>F1 - Foreign Student Visa</CodeValue>
+			</Visa>
+			<IdentificationDocument>
+				<PersonalInformationVerification>
+					<CodeValue>Other official document</CodeValue>
+				</PersonalInformationVerification>
+				<IdentificationDocumentUse>
+					<CodeValue>Personal Information Verification</CodeValue>
+				</IdentificationDocumentUse>
+			</IdentificationDocument>
+		</Citizenship>
 	</Student>
 	<Student id="STUD_605568">
 		<StudentUniqueId>605568</StudentUniqueId>
@@ -71241,11 +70293,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604975">
 		<StudentUniqueId>604975</StudentUniqueId>
@@ -71459,11 +70506,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ron</CodeValue>
@@ -71621,11 +70663,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>hin</CodeValue>
@@ -71768,6 +70805,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>1996-12-20</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Billing</CodeValue>
 			</AddressType>
@@ -72042,7 +71082,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Pregnant</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -72122,11 +71162,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604838">
 		<StudentUniqueId>604838</StudentUniqueId>
@@ -72341,7 +71376,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Pregnant</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 		<Language>
@@ -72588,11 +71623,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605501">
 		<StudentUniqueId>605501</StudentUniqueId>
@@ -72667,11 +71697,6 @@
 		<Race>
 			<CodeValue>Black - African American</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>hau</CodeValue>
@@ -72834,11 +71859,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605438">
 		<StudentUniqueId>605438</StudentUniqueId>
@@ -72908,11 +71928,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605527">
 		<StudentUniqueId>605527</StudentUniqueId>
@@ -72982,11 +71997,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605516">
 		<StudentUniqueId>605516</StudentUniqueId>
@@ -73055,11 +72065,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605356">
 		<StudentUniqueId>605356</StudentUniqueId>
@@ -73317,11 +72322,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>npi</CodeValue>
@@ -74012,6 +73012,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2005-11-25</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Home</CodeValue>
 			</AddressType>
@@ -74036,11 +73039,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_604947">
 		<StudentUniqueId>604947</StudentUniqueId>
@@ -74251,11 +73249,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>afr</CodeValue>
@@ -74334,11 +73327,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605639">
 		<StudentUniqueId>605639</StudentUniqueId>
@@ -74493,7 +73481,7 @@
 		</Race>
 		<StudentCharacteristic>
 			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
+				<CodeValue>Pregnant</CodeValue>
 			</StudentCharacteristic>
 		</StudentCharacteristic>
 	</Student>
@@ -74564,11 +73552,6 @@
 		<Race>
 			<CodeValue>American Indian - Alaska Native</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ces</CodeValue>
@@ -75285,11 +74268,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ori</CodeValue>
@@ -75679,11 +74657,6 @@
 		<Race>
 			<CodeValue>Native Hawaiian - Pacific Islander</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605046">
 		<StudentUniqueId>605046</StudentUniqueId>
@@ -75846,11 +74819,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>hin</CodeValue>
@@ -75934,11 +74902,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>ben</CodeValue>
@@ -76016,11 +74979,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>jpn</CodeValue>
@@ -76104,11 +75062,6 @@
 		<Race>
 			<CodeValue>Asian</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 	</Student>
 	<Student id="STUD_605427">
 		<StudentUniqueId>605427</StudentUniqueId>
@@ -76278,11 +75231,6 @@
 		<Race>
 			<CodeValue>White</CodeValue>
 		</Race>
-		<StudentCharacteristic>
-			<StudentCharacteristic>
-				<CodeValue>Migrant</CodeValue>
-			</StudentCharacteristic>
-		</StudentCharacteristic>
 		<Language>
 			<Language>
 				<CodeValue>npi</CodeValue>
@@ -76417,6 +75365,9 @@
 			</StateAbbreviation>
 			<PostalCode>78834</PostalCode>
 			<NameOfCounty>WILLISTON</NameOfCounty>
+			<Period>
+				<BeginDate>2001-04-20</BeginDate>
+			</Period>
 			<AddressType>
 				<CodeValue>Billing</CodeValue>
 			</AddressType>
