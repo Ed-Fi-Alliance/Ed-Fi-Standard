@@ -4316,6 +4316,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="AttemptStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor describes a student's attempt status for a section.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="AttendanceEventCategoryDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor holds the category of the attendance event (e.g., tardy). The map to known enumeration values is required.</xs:documentation>
@@ -6812,6 +6823,14 @@
           <xs:element name="TeacherStudentDataLinkExclusion" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Indicates that the student-section combination is excluded from calculation of value-added or growth attribution calculations used for a particular teacher evaluation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AttemptStatus" type="AttemptStatusDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of the student's attempt status for the section.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AttemptStatusDescriptor</ann:Descriptor>
+              </xs:appinfo>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -11676,6 +11695,17 @@
   <xs:complexType name="AssessmentReportingMethodDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Provides references for assessment reporting method descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AttemptStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for attempt status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
