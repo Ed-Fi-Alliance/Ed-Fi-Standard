@@ -406,14 +406,19 @@
               <xs:documentation>The school for which the BellSchedule is defined.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="MeetingTime" type="MeetingTime" maxOccurs="unbounded">
+          <xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The MeetingTimes that compose this BellSchedule.</xs:documentation>
+              <xs:documentation>The class periods that compose this BellSchedule.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Date" type="xs:date" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The dates for which the BellSchedule applies.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AlternateDayName" type="AlternateDayName" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An alternate name for the day (e.g., Red, Blue).</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -544,6 +549,16 @@
           <xs:element name="ClassPeriodName" type="ClassPeriodName">
             <xs:annotation>
               <xs:documentation>An indication of the portion of a typical daily session in which students receive instruction in a specified subject (e.g., morning, sixth period, block period, or AB schedules).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MeetingTime" type="MeetingTime" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The meeting time(s) for a class period.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="OfficialAttendancePeriod" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicator of whether this class period is used for official daily attendance.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -14614,35 +14629,20 @@
   </xs:complexType>
   <xs:complexType name="MeetingTime">
     <xs:annotation>
-      <xs:documentation>This entity represents the set of elements defining the meeting time for a class period.</xs:documentation>
+      <xs:documentation>The start and end times defining a meeting time.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="ClassPeriodReference" type="ClassPeriodReferenceType">
-        <xs:annotation>
-          <xs:documentation>The class period associated with the meeting time for a bell schedule.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AlternateDayName" type="AlternateDayName" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>An alternate name for the day (e.g., Red, Blue).</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="StartTime" type="xs:time">
         <xs:annotation>
-          <xs:documentation>An indication of the time of day the class begins.</xs:documentation>
+          <xs:documentation>An indication of the time of day the meeting time begins.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EndTime" type="xs:time">
         <xs:annotation>
-          <xs:documentation>An indication of the time of day the class ends.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="OfficialAttendancePeriod" type="xs:boolean" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Indicator of whether this meeting time is used for official daily attendance.</xs:documentation>
+          <xs:documentation>An indication of the time of day the meeting time ends.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
