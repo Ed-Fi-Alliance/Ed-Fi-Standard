@@ -3501,46 +3501,15 @@
               <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="EconomicDisadvantaged" type="xs:boolean" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="SchoolFoodServicesEligibility" type="SchoolFoodServicesEligibilityDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An indication of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>SchoolFoodServicesEligibilityDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Reflects important characteristics of the student's home situation:
         Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>LimitedEnglishProficiencyDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The disability condition(s) that best describes an individual's impairment.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="DisplacementStatus" type="DisplacementStatus" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
@@ -6422,6 +6391,56 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="StudentEducationOrganizationAssociation">
+    <xs:annotation>
+      <xs:documentation>This association represents student information that is specific to a student's relationship with an EducationOrganization. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="StudentReference" type="StudentReferenceType">
+            <xs:annotation>
+              <xs:documentation>A reference to the Student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+            <xs:annotation>
+              <xs:documentation>A reference to the EducationOrganization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The disability condition(s) that best describes an individual's impairment.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EconomicDisadvantaged" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>LimitedEnglishProficiencyDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolFoodServicesEligibility" type="SchoolFoodServicesEligibilityDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>SchoolFoodServicesEligibilityDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StudentEducationOrganizationResponsibilityAssociation">
     <xs:annotation>
       <xs:documentation>This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
       <xs:appinfo>
@@ -10726,19 +10745,6 @@
           <xs:documentation>A reference to the EducationOrganization.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Responsibility" type="ResponsibilityDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>Indications of an education organization's responsibility for a student, such as accountability, attendance, funding, etc.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>ResponsibilityDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="BeginDate" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>Month, day, and year of the start date of an education organization's responsibility for a student.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="StudentEducationOrganizationAssociationReferenceType">
@@ -10754,6 +10760,58 @@
           <xs:element name="StudentEducationOrganizationAssociationIdentity" type="StudentEducationOrganizationAssociationIdentityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Identity of a StudentEducationOrganizationAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StudentEducationOrganizationResponsibilityAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a StudentEducationOrganizationResponsibilityAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>A reference to the Student.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>A reference to the EducationOrganization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Responsibility" type="ResponsibilityDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indications of an education organization's responsibility for a student, such as accountability, attendance, funding, etc.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>ResponsibilityDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Month, day, and year of the start date of an education organization's responsibility for a student.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StudentEducationOrganizationResponsibilityAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StudentEducationOrganizationResponsibilityAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StudentEducationOrganizationResponsibilityAssociationIdentity" type="StudentEducationOrganizationResponsibilityAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a StudentEducationOrganizationResponsibilityAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
