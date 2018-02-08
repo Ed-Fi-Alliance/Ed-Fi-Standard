@@ -12,6 +12,7 @@
     <xs:complexType>
       <xs:choice maxOccurs="unbounded">
         <xs:element name="Account" type="Account" />
+        <xs:element name="AccountCode" type="AccountCode" />
         <xs:element name="Actual" type="Actual" />
         <xs:element name="Budget" type="Budget" />
         <xs:element name="ContractedStaff" type="ContractedStaff" />

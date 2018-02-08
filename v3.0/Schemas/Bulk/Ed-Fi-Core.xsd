@@ -57,17 +57,14 @@
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="AccountNumber" type="AccountNumber">
+          <xs:element name="AccountIdentifier" type="AccountIdentifier">
             <xs:annotation>
               <xs:documentation>The alphanumeric string that identifies the account.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AccountCode" type="AccountCodeDescriptorReferenceType" maxOccurs="unbounded">
+          <xs:element name="AccountCodeReference" type="AccountCodeReferenceType" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The set of account codes defined for the education accounting system organized by account code type (e.g., fund, function, object) that map to the account.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AccountCodeDescriptor</ann:Descriptor>
-              </xs:appinfo>
             </xs:annotation>
           </xs:element>
           <xs:element name="FiscalYear" type="xs:int">
@@ -78,6 +75,11 @@
           <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
             <xs:annotation>
               <xs:documentation>Relates the account to an Education Organization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AccountName" type="AccountName" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A descriptive name for the account.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -127,6 +129,48 @@
           <xs:element name="RatingProgram" type="RatingProgram" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The program associated with the AccountabilityRating (e.g., NCLB, AEIS).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AccountCode">
+    <xs:annotation>
+      <xs:documentation>The set of account codes defined by an education organization for a fiscal year.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="AccountCode" type="AccountCodeIdentifier">
+            <xs:annotation>
+              <xs:documentation>An account code defined for the education accounting system by the education organization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AccountClassification" type="AccountClassificationDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>The type of account code associated with the account.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AccountClassificationDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+            <xs:annotation>
+              <xs:documentation>A reference to the education organization for which the codes are applicable.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="FiscalYear" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The financial accounting year.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AccountCodeDescription" type="AccountCodeDescription" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A description of the account code.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -4169,33 +4213,15 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="AccountCodeDescriptor">
+  <xs:complexType name="AccountClassificationDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor holds the set of account codes defined for the education accounting system organized by account code type (e.g., fund, function, object).</xs:documentation>
+      <xs:documentation>This descriptor holds the set of account code categories defined for the education accounting system organized by account code type (e.g., fund, function, object).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DescriptorType">
-        <xs:sequence>
-          <xs:element name="AccountCodeCategory" type="AccountCodeCategory">
-            <xs:annotation>
-              <xs:documentation>The type of the account code (e.g., fund, function, object).</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="BeginDate" type="xs:date" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The first date the account code is valid.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="EndDate" type="xs:date" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The last date the account code is valid.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
+      <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="AchievementCategoryDescriptor">
@@ -7194,6 +7220,58 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="AccountCodeIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of an AccountCode.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="AccountCode" type="AccountCodeIdentifier">
+        <xs:annotation>
+          <xs:documentation>An account code defined for the education accounting system by the education organization.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="AccountClassification" type="AccountClassificationDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The type of account code associated with the account.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>AccountClassificationDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>A reference to the education organization for which the codes are applicable.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="FiscalYear" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The financial accounting year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AccountCodeReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an AccountCode. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="AccountCodeIdentity" type="AccountCodeIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of an AccountCode.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="AccountIdentityType">
     <xs:annotation>
       <xs:documentation>Identity of an Account.</xs:documentation>
@@ -7202,7 +7280,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="AccountNumber" type="AccountNumber">
+      <xs:element name="AccountIdentifier" type="AccountIdentifier">
         <xs:annotation>
           <xs:documentation>The alphanumeric string that identifies the account.</xs:documentation>
         </xs:annotation>
@@ -11705,9 +11783,9 @@
       <xs:extension base="DescriptorReferenceType" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="AccountCodeDescriptorReferenceType">
+  <xs:complexType name="AccountClassificationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for account code descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Provides references for account classification descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -15701,6 +15779,52 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AccountCodeDescription">
+    <xs:annotation>
+      <xs:documentation>A description of the account code.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="1024" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AccountCodeIdentifier">
+    <xs:annotation>
+      <xs:documentation>An account code defined for the education accounting system by the education organization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AccountIdentifier">
+    <xs:annotation>
+      <xs:documentation>The alphanumeric string that identifies the account.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AccountName">
+    <xs:annotation>
+      <xs:documentation>A descriptive name for an account.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="100" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="AccountNumber">
