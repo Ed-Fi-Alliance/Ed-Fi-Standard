@@ -2617,7 +2617,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="PostSecondaryInstitution" type="PostSecondaryInstitution" minOccurs="0">
+          <xs:element name="PostSecondaryInstitutionReference" type="PostSecondaryInstitutionReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s).</xs:documentation>
             </xs:annotation>
@@ -2625,6 +2625,49 @@
           <xs:element name="StudentReference" type="StudentReferenceType">
             <xs:annotation>
               <xs:documentation>The student associated with the PostSecondaryEvent.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PostSecondaryInstitution">
+    <xs:annotation>
+      <xs:documentation>An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s).</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="EducationOrganization">
+        <xs:sequence>
+          <xs:element name="PostSecondaryInstitutionId" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The ID of the post secondary institution.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MediumOfInstruction" type="MediumOfInstructionDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The categories in which an institution serves the students.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>MediumOfInstructionDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="PostSecondaryInstitutionLevel" type="PostSecondaryInstitutionLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A classification of whether a post secondary institution's highest level of offering is a program of 4-years or higher (4 year), 2-but-less-than 4-years (2 year), or less than 2-years.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>PostSecondaryInstitutionLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AdministrativeFundingControl" type="AdministrativeFundingControlDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A classification of whether a postsecondary institution is operated by publicly elected or appointed officials (public control) or by privately elected or appointed officials and derives its major source of funds from private sources (private control).</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AdministrativeFundingControlDescriptor</ann:Descriptor>
+              </xs:appinfo>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -9402,6 +9445,40 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="PostSecondaryInstitutionIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a PostSecondaryInstitution.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="PostSecondaryInstitutionId" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The ID of the post secondary institution.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PostSecondaryInstitutionReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a PostSecondaryInstitution. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="PostSecondaryInstitutionIdentity" type="PostSecondaryInstitutionIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a PostSecondaryInstitution.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="ProgramIdentityType">
     <xs:annotation>
       <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a Program.</xs:documentation>
@@ -14833,78 +14910,6 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="PostSecondaryInstitution">
-    <xs:annotation>
-      <xs:documentation>An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s).</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Common</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="PostSecondaryInstitutionId" type="PostSecondaryInstitutionId" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The ID of the post secondary institution.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="PostSecondaryInstitutionIdentificationCode" type="PostSecondaryInstitutionIdentificationCode" minOccurs="0" maxOccurs="unbounded">
-        <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to an education organization by a school, school system, a state, or other agency or entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="NameOfInstitution" type="NameOfInstitution">
-        <xs:annotation>
-          <xs:documentation>The postsecondary institution associated with the event.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="MediumOfInstruction" type="MediumOfInstructionDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-        <xs:annotation>
-          <xs:documentation>The categories in which an institution serves the students.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>MediumOfInstructionDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="PostSecondaryInstitutionLevel" type="PostSecondaryInstitutionLevelDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A classification of whether a post secondary institution's highest level of offering is a program of 4-years or higher (4 year), 2-but-less-than 4-years (2 year), or less than 2-years.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>PostSecondaryInstitutionLevelDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AdministrativeFundingControl" type="AdministrativeFundingControlDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A classification of whether a postsecondary institution is operated by publicly elected or appointed officials (public control) or by privately elected or appointed officials and derives its major source of funds from private sources (private control).</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AdministrativeFundingControlDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="PostSecondaryInstitutionIdentificationCode">
-    <xs:annotation>
-      <xs:documentation>A unique number or alphanumeric code that is assigned to an education organization by a school, school system, state, or other agency or entity.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Common</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="IdentificationCode" type="IdentificationCode">
-        <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code that is assigned to an education organization by a school, school system, state, or other agency or entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="EducationOrganizationIdentificationSystem" type="EducationOrganizationIdentificationSystemDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The school system, state, or agency assigning the identification code.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>EducationOrganizationIdentificationSystemDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="ProgramParticipation">
     <xs:annotation>
       <xs:documentation>Programs the student is participating in or receiving services from.</xs:documentation>
@@ -16587,18 +16592,6 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="17" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="PostSecondaryInstitutionId">
-    <xs:annotation>
-      <xs:documentation>A unique number or alphanumeric code assigned to the postsecondary organization.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Simple</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:minLength value="1" />
-      <xs:maxLength value="30" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ProfileThumbnail">
