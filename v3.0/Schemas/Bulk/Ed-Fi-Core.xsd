@@ -3544,12 +3544,6 @@
               <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>Reflects important characteristics of the student's home situation:
-        Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
@@ -3558,11 +3552,6 @@
           <xs:element name="CohortYear" type="CohortYear" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="StudentIndicator" type="StudentIndicator" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>Indicator(s) or metric(s) computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LoginId" type="IdentificationCode" minOccurs="0">
@@ -6442,11 +6431,6 @@
               <xs:documentation>The disability condition(s) that best describes an individual's impairment.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="EconomicDisadvantaged" type="xs:boolean" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An indication of inadequate financial condition of an individual's family, as determined by family income, number of family members/dependents, participation in public assistance programs, and/or other characteristics considered relevant by federal, state, and local policy.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An indication that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient.</xs:documentation>
@@ -6466,6 +6450,17 @@
           <xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Reflects important characteristics of the student's home situation:
+        Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StudentIndicator" type="StudentIndicator" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicator(s) or metric(s) computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
