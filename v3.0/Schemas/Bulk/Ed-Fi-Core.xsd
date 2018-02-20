@@ -145,7 +145,7 @@
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="AccountCode" type="AccountCodeIdentifier">
+          <xs:element name="AccountCodeNumber" type="AccountCodeNumber">
             <xs:annotation>
               <xs:documentation>An account code defined for the education accounting system by the education organization.</xs:documentation>
             </xs:annotation>
@@ -7228,7 +7228,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="AccountCode" type="AccountCodeIdentifier">
+      <xs:element name="AccountCodeNumber" type="AccountCodeNumber">
         <xs:annotation>
           <xs:documentation>An account code defined for the education accounting system by the education organization.</xs:documentation>
         </xs:annotation>
@@ -15792,7 +15792,7 @@
       <xs:maxLength value="1024" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="AccountCodeIdentifier">
+  <xs:simpleType name="AccountCodeNumber">
     <xs:annotation>
       <xs:documentation>An account code defined for the education accounting system by the education organization.</xs:documentation>
       <xs:appinfo>
@@ -15825,18 +15825,6 @@
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:maxLength value="100" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="AccountNumber">
-    <xs:annotation>
-      <xs:documentation>The alphanumeric string that identifies the account.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Simple</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:minLength value="1" />
-      <xs:maxLength value="50" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="AchievementCategorySystem">
