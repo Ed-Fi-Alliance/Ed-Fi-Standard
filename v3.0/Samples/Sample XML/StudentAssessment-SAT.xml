@@ -3,74 +3,47 @@
 	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>SAT</AssessmentTitle>
-			<AcademicSubject>
-				<CodeValue>Mathematics</CodeValue>
-				<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-			</AcademicSubject>
-			<AssessedGradeLevel>
-				<CodeValue>Twelfth grade</CodeValue>
-				<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-			</AssessedGradeLevel>
+			<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+			<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 			<Version>1</Version>
 		</AssessmentIdentity>
 	</AssessmentReference>
 	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>SAT</AssessmentTitle>
-			<AcademicSubject>
-				<CodeValue>Reading</CodeValue>
-				<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-			</AcademicSubject>
-			<AssessedGradeLevel>
-				<CodeValue>Twelfth grade</CodeValue>
-				<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-			</AssessedGradeLevel>
+			<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+			<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 			<Version>1</Version>
 		</AssessmentIdentity>
 	</AssessmentReference>
 	<AssessmentReference>
 		<AssessmentIdentity>
 			<AssessmentTitle>SAT</AssessmentTitle>
-			<AcademicSubject>
-				<CodeValue>Writing</CodeValue>
-				<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-			</AcademicSubject>
-			<AssessedGradeLevel>
-				<CodeValue>Twelfth grade</CodeValue>
-				<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-			</AssessedGradeLevel>
+			<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+			<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 			<Version>1</Version>
 		</AssessmentIdentity>
 	</AssessmentReference>
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>410</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>17</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>17</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -79,14 +52,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -94,32 +61,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>370</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>11</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>13</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -128,14 +86,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -143,32 +95,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>400</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>19</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>23</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -177,14 +120,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -192,32 +129,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>450</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>28</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>30</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -226,14 +154,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -241,32 +163,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>360</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>9</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>11</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -275,14 +188,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -290,32 +197,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>270</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -324,14 +222,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -339,32 +231,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>550</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>61</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>66</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -373,14 +256,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -388,32 +265,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>630</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>86</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>89</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -422,14 +290,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -437,32 +299,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>630</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>87</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>92</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -471,14 +324,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -486,32 +333,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>580</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>70</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>74</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -520,14 +358,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -535,32 +367,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>610</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>82</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>86</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -569,14 +392,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -584,32 +401,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>550</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>69</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>77</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -618,14 +426,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -633,32 +435,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>580</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>70</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>74</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -667,14 +460,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -682,32 +469,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>490</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>46</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>52</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -716,14 +494,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -731,32 +503,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>540</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>66</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>74</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -765,14 +528,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -780,32 +537,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>680</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>90</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>93</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -814,14 +562,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -829,32 +571,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>650</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>89</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>92</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -863,14 +596,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -878,32 +605,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>600</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>82</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>87</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -912,14 +630,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -927,32 +639,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>450</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>28</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>30</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -961,14 +664,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -976,32 +673,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>400</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>17</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>21</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1010,14 +698,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1025,32 +707,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>310</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>4</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>4</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1059,14 +732,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1074,32 +741,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>410</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>17</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>17</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1108,14 +766,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1123,32 +775,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>380</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>13</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>15</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1157,14 +800,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1172,32 +809,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>430</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>29</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>35</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1206,14 +834,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1221,32 +843,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>460</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>31</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>34</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1255,14 +868,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1270,32 +877,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>470</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>39</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>45</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1304,14 +902,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1319,32 +911,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>430</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>29</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>35</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1353,14 +936,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1368,32 +945,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>670</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>89</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>92</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1402,14 +970,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1417,32 +979,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>570</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>72</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>77</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1451,14 +1004,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1466,32 +1013,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>530</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>63</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>71</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1500,14 +1038,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1515,32 +1047,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>370</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>9</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>9</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1549,14 +1072,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1564,32 +1081,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>460</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>35</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>42</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1598,14 +1106,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1613,32 +1115,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>400</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>19</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>23</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1647,14 +1140,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1662,32 +1149,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>220</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1696,14 +1174,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1711,32 +1183,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>380</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>13</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>15</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1745,14 +1208,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1760,32 +1217,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>430</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>29</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>35</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1794,14 +1242,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1809,32 +1251,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>250</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1843,14 +1276,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Mathematics</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1858,32 +1285,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>220</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1892,14 +1310,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Reading</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>
@@ -1907,32 +1319,23 @@
 	<StudentAssessment>
 		<AdministrationDate>2011-05-01</AdministrationDate>
 		<SerialNumber>0</SerialNumber>
-		<AdministrationLanguage>
-			<CodeValue>eng</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/LanguageDescriptor.xml</Namespace>
-		</AdministrationLanguage>
-		<AdministrationEnvironment>			<CodeValue>Testing Center</CodeValue>		</AdministrationEnvironment>
-		<RetestIndicator>			<CodeValue>Primary Administration</CodeValue>		</RetestIndicator>
+		<AdministrationLanguage>urn://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
+		<AdministrationEnvironment>urn://ed-fi.org/AdministrationEnvironmentDescriptor#Testing Center</AdministrationEnvironment>
+		<RetestIndicator>urn://ed-fi.org/RetestIndicatorDescriptor#Primary Administration</RetestIndicator>
 		<ScoreResult>
 			<Result>240</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>Raw score</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>National College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<ScoreResult>
 			<Result>1</Result>
-			<ResultDatatypeType>				<CodeValue>Integer</CodeValue>			</ResultDatatypeType>
-			<AssessmentReportingMethod>
-				<CodeValue>State College-Bound Percentile</CodeValue>
-			</AssessmentReportingMethod>
+			<ResultDatatypeType>urn://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+			<AssessmentReportingMethod>urn://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
 		</ScoreResult>
 		<StudentReference>
 			<StudentIdentity>
@@ -1941,14 +1344,8 @@
 		</StudentReference>
 		<AssessmentReference>			<AssessmentIdentity>
 				<AssessmentTitle>SAT</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Writing</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Twelfth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
 				<Version>1</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>

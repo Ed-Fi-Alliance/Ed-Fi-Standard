@@ -7043,30 +7043,6 @@
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
-  <xs:complexType name="DescriptorReferenceType">
-    <xs:annotation>
-      <xs:documentation>Provides references for descriptors during interchange. Use XML IDREF to reference a descriptor record that is included in the interchange. To lookup when already loaded, specify the full URI or the final segment of the URI.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Base</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="ReferenceType">
-        <xs:sequence>
-          <xs:element name="CodeValue" type="CodeValue">
-            <xs:annotation>
-              <xs:documentation>A globally unique identifier within this descriptor type.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Namespace" type="URI" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An optional globally unique namespace that identifies this descriptor set. If supplied, the author is strongly encouraged to use the Universal Resource Identifier (http, ftp, file, etc.) for the source of the descriptor definition. Best practice is for this source to be the descriptor file itself, so that it can be machine-readable and be fetched in real-time, if necessary. Actual usage of this element for matching descriptors will be system-specific.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
   <xs:complexType name="DescriptorType" abstract="true">
     <xs:annotation>
       <xs:documentation>This is the base for the Descriptor type.</xs:documentation>
@@ -11739,1612 +11715,1351 @@
   <xs:annotation>
     <xs:documentation>===== Extended Descriptor Reference Types =====</xs:documentation>
   </xs:annotation>
-  <xs:complexType name="AbsenceEventCategoryDescriptorReferenceType">
+  <xs:simpleType name="AbsenceEventCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for absence event category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor describes the type of absence</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AcademicHonorCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AcademicHonorCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for academic honor category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>A designation of the type of academic distinctions earned by or awarded to the student.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AcademicSubjectDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AcademicSubjectDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for academic subject descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AccommodationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AccommodationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for accommodation descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines variations used in how an assessment is presented or taken.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AccountClassificationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AccountClassificationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for account classification descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the set of account code categories defined for the education accounting system organized by account code type (e.g., fund, function, object).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AchievementCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AchievementCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for achievement category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the category of achievement attributed to the learner.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AdditionalCreditTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AdditionalCreditTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for additional credit type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of additional credits or units of value awarded for the completion of a course.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AddressTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AddressTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for address type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of address listed for an individual or organization.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AdministrationEnvironmentDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AdministrationEnvironmentDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for administration environment descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The environment in which the test was administered. For example:
+    Electronic
+    Classroom
+    Testing Center
+    ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AdministrativeFundingControlDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AdministrativeFundingControlDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for administrative funding control descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the type of education institution as classified by its funding source (e.g., public or private).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AssessmentCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AssessmentCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for assessment category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the category of an assessment based on format and content.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AssessmentIdentificationSystemDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AssessmentIdentificationSystemDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for assessment identification system descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds a coding scheme that is used for identification and record-keeping purposes by schools, social services or other agencies to refer to an assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AssessmentItemCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AssessmentItemCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for assessment item category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Category or type of the assessment item (e.g., Multiple Choice, Analytic, Prose).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AssessmentItemResultDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AssessmentItemResultDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for assessment item result descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The analyzed result of a student's response to an assessment item.. For example:
+    Correct
+    Incorrect
+    Met standard
+    ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AssessmentPeriodDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AssessmentPeriodDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for assessment period descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the period of time window in which an assessment is supposed to be administered (e.g., Beginning of Year, Middle of Year, End of Year).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AssessmentReportingMethodDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AssessmentReportingMethodDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for assessment reporting method descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the method that the instructor of the class uses to report the performance and achievement of all students. It may be a qualitative method such as individualized teacher comments or a quantitative method such as a letter or a numerical grade.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AttemptStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AttemptStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for attempt status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor describes a student's attempt status for a section.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="AttendanceEventCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="AttendanceEventCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for attendance event category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the category of the attendance event (e.g., tardy). The map to known enumeration values is required.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="BehaviorDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="BehaviorDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for behavior descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the categories of behavior describing a discipline incident.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CalendarEventDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CalendarEventDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for calendar event descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the types of scheduled or unscheduled event for the day (e.g., Instructional day, Teacher only day, Holiday, Make-up day, Weather day, Student late arrival/early dismissal day).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CalendarTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CalendarTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for calendar type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the calendar types.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CareerPathwayDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CareerPathwayDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for career pathway descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The career cluster or pathway representing the career path of the Vocational/Career Tech concentrator.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CharterApprovalAgencyTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CharterApprovalAgencyTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for charter approval agency type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of agency that approved the establishment or continuation of a charter school.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CharterStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CharterStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for charter status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The category of charter school. For example: School Charter, Open Enrollment Charter.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CitizenshipStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CitizenshipStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for citizenship status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indicator of whether or not the person is a U.S. citizen.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ClassroomPositionDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ClassroomPositionDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for classroom position descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the type of position the staff member holds in a specific class/section.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CohortScopeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CohortScopeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for cohort scope descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The scope of cohort (e.g., school, district, classroom).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CohortTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CohortTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for cohort type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of the cohort (e.g., academic intervention, classroom breakout).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CohortYearTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CohortYearTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for cohort year type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The enumeration items for the set of cohort years.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CompetencyLevelDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CompetencyLevelDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for competency level descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines various levels for assessed competencies.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ContactTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ContactTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for contact type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the set of contact types.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ContentClassDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ContentClassDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for content class descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The predominate type or kind characterizing the learning resource.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ContinuationOfServicesReasonDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ContinuationOfServicesReasonDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for continuation of services reason descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>In the Migrant Education program, a provision allows continuation of services after a child is no longer considered migratory for certain reasons. This descriptor holds the reasons prescribed in the statute. The mapping of descriptor values to known Ed-Fi enumeration values is required.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CostRateDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CostRateDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for cost rate descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The rate by which a cost applies (e.g. $1 per student).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CountryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CountryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for country descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the name and code of the country. It is strongly recommended that entries use only ISO 3166 2-letter country codes.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CourseAttemptResultDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CourseAttemptResultDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for course attempt result descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The result from the student's attempt to take the course, for example:
+    Pass
+    Fail
+    Incomplete
+    Withdrawn</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CourseDefinedByDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CourseDefinedByDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for course defined by descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Specifies whether the course was defined by the state education agency, local education agency, school, or national organization.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CourseGPAApplicabilityDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CourseGPAApplicabilityDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for course gpa applicability descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indicator of whether or not this course being described is included in the computation of the student's Grade Point Average, and if so, if it is weighted differently than regular courses.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CourseIdentificationSystemDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CourseIdentificationSystemDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for course identification system descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines a standard code that identifies the organization of subject matter and related learning experiences provided for the instruction of students.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CourseLevelCharacteristicDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CourseLevelCharacteristicDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for course level characteristic descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The item for indication of the nature and difficulty of instruction: Remedial, Basic, Honors, Ap, IB, Dual Credit, CTE. etc.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CourseRepeatCodeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CourseRepeatCodeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for course repeat code descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Indicates that an academic course has been repeated by a student and how that repeat is to be computed in the student's academic grade average.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CredentialFieldDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CredentialFieldDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for credential field descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the fields of certification that the state education agency offers to teachers.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CredentialTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CredentialTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for credential type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indication of the category of credential an individual holds.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CreditTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CreditTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for credit type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of credits or units of value awarded for the completion of a course.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="CurriculumUsedDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="CurriculumUsedDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for curriculum used descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of curriculum used in an early learning classroom or group.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DeliveryMethodDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DeliveryMethodDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for delivery method descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The way in which an intervention was implemented: individual, small group, whole class, or whole school.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DiagnosisDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DiagnosisDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for diagnosis descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines diagnoses that interventions are intended to target.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DiplomaLevelDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DiplomaLevelDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for diploma level descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The level of diploma/credential that is awarded to a student in recognition of his/her completion of the curricular requirements.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DiplomaTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DiplomaTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for diploma type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of diploma/credential that is awarded to a student in recognition of his/her completion of the curricular requirements.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DisabilityDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DisabilityDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for disability descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines a student's impairment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DisabilityDesignationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DisabilityDesignationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for disability designation descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of disability designation (e.g., IDEA, Section 504).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DisabilityDeterminationSourceTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DisabilityDeterminationSourceTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for disability determination source type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The source that provided the disability determination.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DisciplineActionLengthDifferenceReasonDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DisciplineActionLengthDifferenceReasonDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for discipline action length difference reason descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Indicates the reason for the difference, if any, between the official and actual lengths of a student's disciplinary assignment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="DisciplineDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="DisciplineDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for discipline descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the type of action or removal from the classroom used to discipline the student involved as a perpetrator in a discipline incident.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EducationalEnvironmentDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="EducationalEnvironmentDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for educational environment descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The setting in which a child receives education and related services.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EducationOrganizationCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="EducationOrganizationCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for education organization category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The classification of the education agency within the geographic boundaries of a state according to the level of administrative and operational control granted by the state.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EducationOrganizationIdentificationSystemDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="EducationOrganizationIdentificationSystemDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for education organization identification system descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the originating record system and code that is used for record-keeping purposes by education organizations.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EducationPlanDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="EducationPlanDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for education plan descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of education plan(s) the student is following, if appropriate. For example:
+    Special education
+    Vocational.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ElectronicMailTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ElectronicMailTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for electronic mail type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of email listed for an individual or organization.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EmploymentStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="EmploymentStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for employment status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the type of employment or contract.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EntryGradeLevelReasonDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="EntryGradeLevelReasonDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for entry grade level reason descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The primary reason as to why a staff member determined that a student should be promoted or not (or be demoted) at the end of a given school term.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EntryTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="EntryTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for entry type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the process by which a student enters a school during a given academic session.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="EventCircumstanceDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="EventCircumstanceDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for event circumstance descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An unusual event occurred during the administration of the assessment. This could include fire alarm, student became ill, etc.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ExitWithdrawTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ExitWithdrawTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for exit withdraw type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the circumstances under which the student exited from membership in an educational institution.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="GradebookEntryTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="GradebookEntryTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for gradebook entry type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of the gradebook entry; for example, homework, assignment, quiz, unit test, oral presentation, etc.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="GradeLevelDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="GradeLevelDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for grade level descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the set of grade levels. The map to known Ed-Fi enumeration values is required.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="GradeTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="GradeTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for grade type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of grade in a report card or transcript (e.g., Final, Exam, Grading Period).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="GradingPeriodDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="GradingPeriodDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for grading period descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the name of the period for which grades are reported. The mapping of descriptor values to known Ed-Fi enumeration values is required.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="GraduationPlanTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="GraduationPlanTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for graduation plan type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the set of graduation plan types.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="GunFreeSchoolsActReportingStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="GunFreeSchoolsActReportingStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for gun free schools act reporting status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indication of whether the school or local education agency (LEA) submitted a Gun-Free Schools Act (GFSA) of 1994 report to the state, as defined by Title 18, Section 921.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="HomelessPrimaryNighttimeResidenceDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="HomelessPrimaryNighttimeResidenceDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for homeless primary nighttime residence descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="IdentificationDocumentUseDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="IdentificationDocumentUseDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for identification document use descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Identifies the type of use given to an identification document.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="IncidentLocationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="IncidentLocationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for incident location descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Identifies where the incident occurred and whether or not it occurred on school property.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="InstitutionTelephoneNumberTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="InstitutionTelephoneNumberTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for institution telephone number type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of communication number listed for an organization.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="InteractivityStyleDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="InteractivityStyleDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for interactivity style descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The predominate mode of learning supported by the learning resource. Acceptable values are active, expositive, or mixed.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="InternetAccessDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="InternetAccessDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for internet access descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of Internet access available.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="InterventionClassDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="InterventionClassDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for intervention class descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The way in which an intervention is used: curriculum, supplement, or practice.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="InterventionEffectivenessRatingDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="InterventionEffectivenessRatingDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for intervention effectiveness rating descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An intervention demonstrates effectiveness if the research has shown that the program caused an improvement in outcomes. Rating Values: positive effects, potentially positive effects, mixed effects, potentially negative effects, negative effects, and no discernible effects.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="LanguageDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LanguageDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for language descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the language(s) that are spoken or written. It is strongly recommended that entries use only ISO 639-3 language codes: for CodeValue, use the 3 character code; for ShortDescription and Description use the full language name.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="LanguageUseDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LanguageUseDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for language use descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The category denoting how a language is used.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="LearningStandardCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LearningStandardCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for learning standard category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An additional classification of the type of a specific learning standard.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="LevelOfEducationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LevelOfEducationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for level of education descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the different levels of education achievable.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="LicenseStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LicenseStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for license status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the license statuses.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="LicenseTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LicenseTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for license type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the type of a license.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="LimitedEnglishProficiencyDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LimitedEnglishProficiencyDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for limited english proficiency descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the indications that the student has been identified as limited English proficient by the Language Proficiency Assessment Committee (LPAC), or English proficient. The mapping of descriptor values to known Ed-Fi enumeration values is required.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="LocalEducationAgencyCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LocalEducationAgencyCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for local education agency category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The category of local education agency/district. For example: Independent or Charter.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MagnetSpecialProgramEmphasisSchoolDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="MagnetSpecialProgramEmphasisSchoolDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for magnet special program emphasis school descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>A school that has been designed to attract students of different racial/ethnic backgrounds for the purpose of reducing, preventing or eliminating racial isolation; and/or to provide an academic or social focus on a particular theme (e.g., science/math, performing arts, gifted/talented, or foreign language).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MediumOfInstructionDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="MediumOfInstructionDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for medium of instruction descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The media through which teachers provide instruction to students and students and teachers communicate about instructional matters.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="MethodCreditEarnedDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="MethodCreditEarnedDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for method credit earned descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The method the credits were earned, for example:  Classroom, Examination, Transfer.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="NetworkPurposeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="NetworkPurposeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for network purpose descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The purpose(s) of the network, e.g. shared services, collective procurement, etc.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="OldEthnicityDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="OldEthnicityDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for old ethnicity descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and Race.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="OperationalStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="OperationalStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for operational status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The current operational status of the education organization (e.g., active, inactive).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="OtherNameTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="OtherNameTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for other name type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The types of alternate names for a person.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="PerformanceBaseConversionDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PerformanceBaseConversionDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for performance base conversion descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Defines standard levels of competency or performance that can be used for dashboard visualizations: advanced, proficient, basic, and below basic.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="PerformanceLevelDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PerformanceLevelDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for performance level descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines various levels or thresholds for performance on the assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="PersonalInformationVerificationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PersonalInformationVerificationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for personal information verification descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The evidence presented to verify one's personal identity; for example: driver's license, passport, birth certificate, etc.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="PopulationServedDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PopulationServedDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for population served descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of students the Section is offered and tailored to.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="PostingResultDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PostingResultDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for posting result descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Indication of whether the position was filled or retired without filling.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="PostSecondaryEventCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PostSecondaryEventCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for post secondary event category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>A code describing the type of post-secondary event (e.g., college application or acceptance).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="PostSecondaryInstitutionLevelDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PostSecondaryInstitutionLevelDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for post secondary institution level descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>A classification of whether a post-secondary institution's highest level of offering is a program of 4 years or higher (4 year), 2 but less than 4 years (2 year) or less than 2 years.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ProgramAssignmentDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProgramAssignmentDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for program assignment descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the name of the education program for which a teacher is assigned to a school.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ProgramCharacteristicDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProgramCharacteristicDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for program characteristic descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines important characteristics of the Program, such as categories or particular indications.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ProgramSponsorDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProgramSponsorDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for program sponsor descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Ultimate and intermediate providers of funds for a particular educational or service program or activity or for an individual's participation in the program or activity (e.g., Federal, State, ESC, District, School, Private Org).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ProgramTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProgramTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for program type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The formal name of the program of instruction, training, services, or benefits available through federal, state, or local agencies.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ProviderCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProviderCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for provider category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor holds the category of the provider.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ProviderProfitabilityDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProviderProfitabilityDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for provider profitability descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor indicates the profitability status of the provider.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ProviderStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProviderStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for provider status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the status of the provider.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="PublicationStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PublicationStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for publication status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The publication status of the document (i.e., Adopted, Draft, Published, Deprecated, Unknown).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="RaceDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="RaceDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for race descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The enumeration items defining the racial categories which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ReasonExitedDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ReasonExitedDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for reason exited descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the reason a student exited a program.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ReasonNotTestedDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ReasonNotTestedDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for reason not tested descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The primary reason student is not tested. For example:
+    Absent
+    Refusal by parent
+    Refusal by student
+    Medical waiver
+    Illness
+    Disruptive behavior
+    LEP Exempt
+    '...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="RecognitionTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="RecognitionTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for recognition type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The nature of recognition given to the student for accomplishments in a co-curricular, or extra-curricular activity.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="RelationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="RelationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for relation descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The nature of an individual's relationship to a student.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="RepeatIdentifierDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="RepeatIdentifierDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for repeat identifier descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indication as to whether a student has previously taken a given course.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ReporterDescriptionDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ReporterDescriptionDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for reporter description descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the type of individual who reported an incident.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ResidencyStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ResidencyStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for residency status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines indications of the location of a person's legal residence relative to (within or outside of) the boundaries of the public school attended and its administrative unit.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ResponseIndicatorDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ResponseIndicatorDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for response indicator descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Indicator of the response.  For example:
+    Nonscorable response
+    Ineffective response
+    Effective response
+    Partial response
+    ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ResponsibilityDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ResponsibilityDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for responsibility descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines types of responsibility an education organization may have for a student (e.g., accountability, attendance, funding).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="RestraintEventReasonDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="RestraintEventReasonDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for restraint event reason descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The items of categorization of the circumstances or reason for the restraint.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ResultDatatypeTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ResultDatatypeTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for result datatype type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The results can be expressed as a number, percentile, range, level, etc.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="RetestIndicatorDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="RetestIndicatorDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for retest indicator descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Indicator if the test was retaken.  For example:
+    Primary administration
+    First retest
+    Second retest
+    ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SchoolCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SchoolCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for school category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The category of school. For example: High School, Middle School, Elementary School.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SchoolChoiceImplementStatusDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SchoolChoiceImplementStatusDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for school choice implement status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indication of whether the LEA was able to implement the provisions for public school choice under Title I, Part A, Section 1116 of ESEA, as amended.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SchoolFoodServicesEligibilityDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SchoolFoodServicesEligibilityDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for school food services eligibility descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines indications of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SchoolTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SchoolTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for school type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of education institution as classified by its primary focus.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SectionCharacteristicDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SectionCharacteristicDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for section characteristic descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines characteristics of a Section, such as whether attendance is taken and the Section is graded.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SeparationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SeparationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for separation descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Type of employment separation; for example:  Voluntary separation, Involuntary separation, Mutual agreement. Other, etc.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SeparationReasonDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SeparationReasonDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for separation reason descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the reasons for terminating the employment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ServiceDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ServiceDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for service descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a program.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SexDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SexDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for sex descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>A person's gender.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="SpecialEducationSettingDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="SpecialEducationSettingDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for special education setting descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the major instructional setting (more than 50 percent of a student's special education program).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StaffClassificationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="StaffClassificationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for staff classification descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines an individual's title of employment, official status or rank.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StaffIdentificationSystemDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="StaffIdentificationSystemDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for staff identification system descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the originating record system and code that is used for record-keeping purposes of the staff.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StaffLeaveEventCategoryDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="StaffLeaveEventCategoryDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for staff leave event category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>A code describing the type of the leave event.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StateAbbreviationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="StateAbbreviationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for state abbreviation descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The abbreviation for the state (within the United States) or outlying area in which an address is located.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StudentCharacteristicDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="StudentCharacteristicDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for student characteristic descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor captures important characteristics of the student's environment or situation. Generally used for non-program-based student characteristics.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StudentIdentificationSystemDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="StudentIdentificationSystemDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for student identification system descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the originating record system and code that is used for record-keeping purposes of the student.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="StudentParticipationCodeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="StudentParticipationCodeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for student participation code descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The role or type of participation of a student in a discipline incident; for example: Victim, Perpetrator, Witness, Reporter.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="TeachingCredentialBasisDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="TeachingCredentialBasisDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for teaching credential basis descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indication of the pre-determined criteria for granting the teaching credential that an individual holds.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="TeachingCredentialDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="TeachingCredentialDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for teaching credential descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines an indication of the category of a legal document giving authorization to perform teaching assignment services.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="TelephoneNumberTypeDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="TelephoneNumberTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for telephone number type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>The type of communication number listed for an individual.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="TermDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="TermDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for term descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the term of a session during the school year (e.g., Fall Semester).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="TitleIPartAParticipantDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="TitleIPartAParticipantDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for title i part a participant descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indication of the type of Title I program, if any, in which the student is participating and served.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="TitleIPartASchoolDesignationDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="TitleIPartASchoolDesignationDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for title i part a school designation descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>Denotes the Title I Part A designation for the school.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="VisaDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="VisaDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for visa descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>An indicator of a non-U.S. citizen's Visa type.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="WeaponDescriptorReferenceType">
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="WeaponDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>Provides references for weapon descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:documentation>This descriptor defines the types of weapon used during an incident.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DescriptorReferenceType" />
-    </xs:complexContent>
-  </xs:complexType>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:annotation>
     <xs:documentation>===== Common Types =====</xs:documentation>
   </xs:annotation>
@@ -16293,6 +16008,18 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="1024" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for descriptors represented by the full URI format.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="255" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="DesignatedBy">
