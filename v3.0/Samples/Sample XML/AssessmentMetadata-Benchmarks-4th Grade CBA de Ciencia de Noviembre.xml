@@ -4,21 +4,11 @@
 		<AssessmentTitle>CBA de Ciencia de Noviembre 2012-2013</AssessmentTitle>
 		<AssessmentIdentificationCode>
 			<IdentificationCode>f059ea6d-9b6f-49e8-988d-ce0ff6d25f08</IdentificationCode>
-			<AssessmentIdentificationSystem>
-				<CodeValue>Test Contractor</CodeValue>
-			</AssessmentIdentificationSystem>
+			<AssessmentIdentificationSystem>urn://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
 		</AssessmentIdentificationCode>
-		<AssessmentCategory>
-			<CodeValue>Benchmark test</CodeValue>
-		</AssessmentCategory>
-		<AcademicSubject>
-			<CodeValue>Science</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-		</AcademicSubject>
-		<AssessedGradeLevel>
-			<CodeValue>Fourth grade</CodeValue>
-			<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-		</AssessedGradeLevel>
+		<AssessmentCategory>urn://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test</AssessmentCategory>
+		<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
+		<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Fourth grade</AssessedGradeLevel>
 		<ContentStandard>
 			<Title>State Essential Knowledge and Skills</Title>
 		</ContentStandard>
@@ -29,7 +19,7 @@
 	</Assessment>
 	<AssessmentItem>
 		<IdentificationCode>11242102</IdentificationCode>
-		<AssessmentItemCategory>			<CodeValue>List Question</CodeValue>		</AssessmentItemCategory>
+		<AssessmentItemCategory>urn://ed-fi.org/AssessmentItemCategoryDescriptor#List Question</AssessmentItemCategory>
 		<MaxRawScore>1</MaxRawScore>
 		<CorrectResponse>D</CorrectResponse>
 		<LearningStandardReference>
@@ -40,14 +30,8 @@
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentTitle>CBA de Ciencia de Noviembre 2012-2013</AssessmentTitle>
-				<AcademicSubject>
-					<CodeValue>Science</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml</Namespace>
-				</AcademicSubject>
-				<AssessedGradeLevel>
-					<CodeValue>Fourth grade</CodeValue>
-					<Namespace>http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml</Namespace>
-				</AssessedGradeLevel>
+				<AcademicSubject>urn://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
+				<AssessedGradeLevel>urn://ed-fi.org/GradeLevelDescriptor#Fourth grade</AssessedGradeLevel>
 				<Version>5284</Version>
 			</AssessmentIdentity>
 		</AssessmentReference>

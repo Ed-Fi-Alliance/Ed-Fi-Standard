@@ -3,9 +3,9 @@
 	<Account>
 		<AccountIdentifier>1.100.100.1000</AccountIdentifier>
 		<AccountCodeReference>
-			<AccountCodeIdentity>				<AccountCodeNumber>1</AccountCodeNumber>				<AccountClassification>
-					<CodeValue>Fund</CodeValue>
-				</AccountClassification>
+			<AccountCodeIdentity>
+				<AccountCodeNumber>1</AccountCodeNumber>
+				<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Fund</AccountClassification>
 				<EducationOrganizationReference>
 					<EducationOrganizationIdentity>
 						<EducationOrganizationId>255901</EducationOrganizationId>
@@ -15,9 +15,9 @@
 			</AccountCodeIdentity>
 		</AccountCodeReference>
 		<AccountCodeReference>
-			<AccountCodeIdentity>				<AccountCodeNumber>100</AccountCodeNumber>				<AccountClassification>
-					<CodeValue>Program</CodeValue>
-				</AccountClassification>
+			<AccountCodeIdentity>
+				<AccountCodeNumber>100</AccountCodeNumber>
+				<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Program</AccountClassification>
 				<EducationOrganizationReference>
 					<EducationOrganizationIdentity>
 						<EducationOrganizationId>255901</EducationOrganizationId>
@@ -27,9 +27,9 @@
 			</AccountCodeIdentity>
 		</AccountCodeReference>
 		<AccountCodeReference>
-			<AccountCodeIdentity>				<AccountCodeNumber>100</AccountCodeNumber>				<AccountClassification>
-					<CodeValue>Object</CodeValue>
-				</AccountClassification>
+			<AccountCodeIdentity>
+				<AccountCodeNumber>100</AccountCodeNumber>
+				<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Object</AccountClassification>
 				<EducationOrganizationReference>
 					<EducationOrganizationIdentity>
 						<EducationOrganizationId>255901</EducationOrganizationId>
@@ -39,9 +39,9 @@
 			</AccountCodeIdentity>
 		</AccountCodeReference>
 		<AccountCodeReference>
-			<AccountCodeIdentity>				<AccountCodeNumber>1000</AccountCodeNumber>				<AccountClassification>
-					<CodeValue>Function</CodeValue>
-				</AccountClassification>
+			<AccountCodeIdentity>
+				<AccountCodeNumber>1000</AccountCodeNumber>
+				<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Function</AccountClassification>
 				<EducationOrganizationReference>
 					<EducationOrganizationIdentity>
 						<EducationOrganizationId>255901</EducationOrganizationId>
@@ -61,9 +61,9 @@
 	<Account>
 		<AccountIdentifier>2.200.100.1000</AccountIdentifier>
 		<AccountCodeReference>
-			<AccountCodeIdentity>				<AccountCodeNumber>2</AccountCodeNumber>				<AccountClassification>
-					<CodeValue>Fund</CodeValue>
-				</AccountClassification>
+			<AccountCodeIdentity>
+				<AccountCodeNumber>2</AccountCodeNumber>
+				<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Fund</AccountClassification>
 				<EducationOrganizationReference>
 					<EducationOrganizationIdentity>
 						<EducationOrganizationId>255901</EducationOrganizationId>
@@ -73,9 +73,9 @@
 			</AccountCodeIdentity>
 		</AccountCodeReference>
 		<AccountCodeReference>
-			<AccountCodeIdentity>				<AccountCodeNumber>200</AccountCodeNumber>				<AccountClassification>
-					<CodeValue>Program</CodeValue>
-				</AccountClassification>
+			<AccountCodeIdentity>
+				<AccountCodeNumber>200</AccountCodeNumber>
+				<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Program</AccountClassification>
 				<EducationOrganizationReference>
 					<EducationOrganizationIdentity>
 						<EducationOrganizationId>255901</EducationOrganizationId>
@@ -85,9 +85,9 @@
 			</AccountCodeIdentity>
 		</AccountCodeReference>
 		<AccountCodeReference>
-			<AccountCodeIdentity>				<AccountCodeNumber>100</AccountCodeNumber>				<AccountClassification>
-					<CodeValue>Object</CodeValue>
-				</AccountClassification>
+			<AccountCodeIdentity>
+				<AccountCodeNumber>100</AccountCodeNumber>
+				<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Object</AccountClassification>
 				<EducationOrganizationReference>
 					<EducationOrganizationIdentity>
 						<EducationOrganizationId>255901</EducationOrganizationId>
@@ -97,9 +97,9 @@
 			</AccountCodeIdentity>
 		</AccountCodeReference>
 		<AccountCodeReference>
-			<AccountCodeIdentity>				<AccountCodeNumber>1000</AccountCodeNumber>				<AccountClassification>
-					<CodeValue>Function</CodeValue>
-				</AccountClassification>
+			<AccountCodeIdentity>
+				<AccountCodeNumber>1000</AccountCodeNumber>
+				<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Function</AccountClassification>
 				<EducationOrganizationReference>
 					<EducationOrganizationIdentity>
 						<EducationOrganizationId>255901</EducationOrganizationId>
@@ -115,12 +115,9 @@
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<AccountName>SpecialInstruction</AccountName>
-	</Account>
-	<AccountCode>
+	</Account>	<AccountCode>
 		<AccountCodeNumber>1</AccountCodeNumber>
-		<AccountClassification>
-			<CodeValue>Fund</CodeValue>
-		</AccountClassification>
+		<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Fund</AccountClassification>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
 				<EducationOrganizationId>255901</EducationOrganizationId>
@@ -128,12 +125,9 @@
 		</EducationOrganizationReference>
 		<FiscalYear>2011</FiscalYear>
 		<AccountCodeDescription>General Fund</AccountCodeDescription>
-	</AccountCode>
-	<AccountCode>
+	</AccountCode>	<AccountCode>
 		<AccountCodeNumber>2</AccountCodeNumber>
-		<AccountClassification>
-			<CodeValue>Fund</CodeValue>
-		</AccountClassification>
+		<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Fund</AccountClassification>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
 				<EducationOrganizationId>255901</EducationOrganizationId>
@@ -141,10 +135,9 @@
 		</EducationOrganizationReference>
 		<FiscalYear>2011</FiscalYear>
 		<AccountCodeDescription>Special Revenue</AccountCodeDescription>
-	</AccountCode>
-	<AccountCode>		<AccountCodeNumber>100</AccountCodeNumber>		<AccountClassification>
-			<CodeValue>Program</CodeValue>
-		</AccountClassification>
+	</AccountCode>	<AccountCode>
+		<AccountCodeNumber>100</AccountCodeNumber>
+		<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Program</AccountClassification>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
 				<EducationOrganizationId>255901</EducationOrganizationId>
@@ -152,10 +145,9 @@
 		</EducationOrganizationReference>
 		<FiscalYear>2011</FiscalYear>
 		<AccountCodeDescription>Regular Elementary/Secondary Education Programs</AccountCodeDescription>
-	</AccountCode>
-	<AccountCode>		<AccountCodeNumber>200</AccountCodeNumber>		<AccountClassification>
-			<CodeValue>Program</CodeValue>
-		</AccountClassification>
+	</AccountCode>	<AccountCode>
+		<AccountCodeNumber>200</AccountCodeNumber>
+		<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Program</AccountClassification>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
 				<EducationOrganizationId>255901</EducationOrganizationId>
@@ -163,10 +155,9 @@
 		</EducationOrganizationReference>
 		<FiscalYear>2011</FiscalYear>
 		<AccountCodeDescription>Special Programs</AccountCodeDescription>
-	</AccountCode>
-	<AccountCode>		<AccountCodeNumber>100</AccountCodeNumber>		<AccountClassification>
-			<CodeValue>Object</CodeValue>
-		</AccountClassification>
+	</AccountCode>	<AccountCode>
+		<AccountCodeNumber>100</AccountCodeNumber>
+		<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Object</AccountClassification>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
 				<EducationOrganizationId>255901</EducationOrganizationId>
@@ -174,10 +165,9 @@
 		</EducationOrganizationReference>
 		<FiscalYear>2011</FiscalYear>
 		<AccountCodeDescription>Personal Services</AccountCodeDescription>
-	</AccountCode>
-	<AccountCode>		<AccountCodeNumber>1000</AccountCodeNumber>		<AccountClassification>
-			<CodeValue>Function</CodeValue>
-		</AccountClassification>
+	</AccountCode>	<AccountCode>
+		<AccountCodeNumber>1000</AccountCodeNumber>
+		<AccountClassification>urn://ed-fi.org/AccountClassificationDescriptor#Function</AccountClassification>
 		<EducationOrganizationReference>
 			<EducationOrganizationIdentity>
 				<EducationOrganizationId>255901</EducationOrganizationId>
