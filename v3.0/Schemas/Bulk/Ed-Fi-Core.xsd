@@ -305,7 +305,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Version" type="AssessmentVersion">
+          <xs:element name="AssessmentVersion" type="AssessmentVersion">
             <xs:annotation>
               <xs:documentation>The version identifier for the assessment.</xs:documentation>
             </xs:annotation>
@@ -7365,7 +7365,7 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Version" type="AssessmentVersion">
+      <xs:element name="AssessmentVersion" type="AssessmentVersion">
         <xs:annotation>
           <xs:documentation>The version identifier for the assessment.</xs:documentation>
         </xs:annotation>
@@ -7464,7 +7464,7 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Version" type="AssessmentVersion" minOccurs="0">
+      <xs:element name="AssessmentVersion" type="AssessmentVersion" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The version identifier for the assessment.</xs:documentation>
         </xs:annotation>
