@@ -1234,6 +1234,14 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The academic subjects to which the credential pertains.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -4640,18 +4648,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="DescriptorType">
-        <xs:sequence>
-          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>A classification of the certification fields to academic subjects.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
+      <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="CredentialTypeDescriptor">
