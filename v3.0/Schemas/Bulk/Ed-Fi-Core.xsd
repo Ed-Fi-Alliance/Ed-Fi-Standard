@@ -663,11 +663,6 @@
               <xs:documentation>The (optional) program associated with this Cohort (e.g., special education).</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>A calendar associated with the cohort.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -6851,6 +6846,11 @@
           <xs:element name="EmployedWhileEnrolled" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An individual who is a paid employee or works in his or her own business, profession, or farm and at the same time is enrolled in secondary, postsecondary, or adult education.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A reference to the student's calendar.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
