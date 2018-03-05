@@ -208,7 +208,7 @@
   </xs:complexType>
   <xs:complexType name="Assessment">
     <xs:annotation>
-      <xs:documentation>This entity represents a tool, instrument, process, or exhibition composed of a systematic sampling of behavior for measuring a student's competence, knowledge,skills, or behavior. An assessment can be used to measure differences inindividuals or groups and changes in performance from one occasion to the next.</xs:documentation>
+      <xs:documentation>This entity represents a tool, instrument, process, or exhibition composed of a systematic sampling of behavior for measuring a student's competence, knowledge,skills, or behavior. An assessment can be used to measure differences in individuals or groups and changes in performance from one occasion to the next.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -1757,7 +1757,7 @@
   </xs:complexType>
   <xs:complexType name="GraduationPlan">
     <xs:annotation>
-      <xs:documentation>This entity is a plan outlining the required credits, credits by subject,credits by course, and other criteria required for graduation. A graduation plan may be one or more standard plans defined by an education organization and/or individual plans for some or all students.</xs:documentation>
+      <xs:documentation>This entity is a plan outlining the required credits,credits by subject, credits by course, and other criteria required for graduation. A graduation plan may be one or more standard plans defined by an education organization and/or individual plans for some or all students.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -3793,7 +3793,7 @@
           </xs:element>
           <xs:element name="Accommodation" type="AccommodationDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The specific type of special variation used in how an examination is presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examinationmeasures. The proper use of accommodations does not substantially change academic level or performance criteria. For example:
+              <xs:documentation>The specific type of special variation used in how an examination is presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examination measures. The proper use of accommodations does not substantially change academic level or performance criteria. For example:
         Braille
         Enlarged monitor view
         Extra time
