@@ -3367,6 +3367,14 @@
               <xs:documentation>The legal document giving authorization to perform teaching assignment services.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="TribalAffiliation" type="TribalAffiliationDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>An American Indian tribe with which the staff member is affiliated.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>TribalAffiliationDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -3611,6 +3619,14 @@
               <xs:documentation>The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>HomelessPrimaryNighttimeResidenceDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="TribalAffiliation" type="TribalAffiliationDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>An American Indian tribe with which the student is affiliated.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>TribalAffiliationDescriptor</ann:Descriptor>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
@@ -5779,6 +5795,17 @@
   <xs:complexType name="TitleIPartASchoolDesignationDescriptor">
     <xs:annotation>
       <xs:documentation>Denotes the Title I Part A designation for the school.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="TribalAffiliationDescriptor">
+    <xs:annotation>
+      <xs:documentation>An American Indian tribe with which an individual is affiliated.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -13033,6 +13060,15 @@
   <xs:simpleType name="TitleIPartASchoolDesignationDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Denotes the Title I Part A designation for the school.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="TribalAffiliationDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>An American Indian tribe with which an individual is affiliated.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
