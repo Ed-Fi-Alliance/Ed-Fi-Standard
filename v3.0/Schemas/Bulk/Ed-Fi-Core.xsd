@@ -5970,6 +5970,63 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="GeneralStudentProgramAssociation">
+    <xs:annotation>
+      <xs:documentation>This association base class represents the basic relationship between students and programs.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="StudentReference" type="StudentReferenceType">
+            <xs:annotation>
+              <xs:documentation>The Student associated with the Program.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProgramReference" type="ProgramReferenceType">
+            <xs:annotation>
+              <xs:documentation>The Program associated with the Student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="BeginDate" type="xs:date">
+            <xs:annotation>
+              <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EndDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The month, day, and year on which the Student exited the Program or stopped receiving services.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ReasonExited" type="ReasonExitedDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The reason the child left the Program within a school or district.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ReasonExitedDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+            <xs:annotation>
+              <xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ServedOutsideOfRegularSession" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates whether the Student received services during the summer session or between sessions.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StaffCohortAssociation">
     <xs:annotation>
       <xs:documentation>This association indicates the Staff associated with a cohort of students.</xs:documentation>
@@ -6398,7 +6455,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="StudentProgramAssociation">
+      <xs:extension base="GeneralStudentProgramAssociation">
         <xs:sequence>
           <xs:element name="CTEProgram" type="CTEProgram" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
@@ -6606,7 +6663,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="StudentProgramAssociation">
+      <xs:extension base="GeneralStudentProgramAssociation">
         <xs:sequence>
           <xs:element name="PriorityForServices" type="xs:boolean">
             <xs:annotation>
@@ -6711,49 +6768,11 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="ComplexObjectType">
+      <xs:extension base="GeneralStudentProgramAssociation">
         <xs:sequence>
-          <xs:element name="StudentReference" type="StudentReferenceType">
+          <xs:element name="Description" type="Description" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The Student associated with the Program.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ProgramReference" type="ProgramReferenceType">
-            <xs:annotation>
-              <xs:documentation>The Program associated with the Student.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="BeginDate" type="xs:date">
-            <xs:annotation>
-              <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="EndDate" type="xs:date" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The month, day, and year on which the Student exited the Program or stopped receiving services.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ReasonExited" type="ReasonExitedDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The reason the child left the Program within a school or district.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>ReasonExitedDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
-            <xs:annotation>
-              <xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ServedOutsideOfRegularSession" type="xs:boolean" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Indicates whether the Student received services during the summer session or between sessions.</xs:documentation>
+              <xs:documentation>A description of the student program enrollment.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6956,7 +6975,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="StudentProgramAssociation">
+      <xs:extension base="GeneralStudentProgramAssociation">
         <xs:sequence>
           <xs:element name="IdeaEligibility" type="xs:boolean" minOccurs="0">
             <xs:annotation>
@@ -7033,12 +7052,12 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="StudentProgramAssociation">
+      <xs:extension base="GeneralStudentProgramAssociation">
         <xs:sequence>
           <xs:element name="TitleIPartAParticipant" type="TitleIPartAParticipantDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>An indication of the type of Title I program, if any, in which the student is participating and by which the student is served:
-        Public Targeted Assistance Program 
+        Public Targeted Assistance Program
         Public Schoolwide Program
         Private School Students Participating
         Local Neglected Program.</xs:documentation>
@@ -8660,6 +8679,55 @@
           <xs:element name="FeederSchoolAssociationIdentity" type="FeederSchoolAssociationIdentityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Identity of a FeederSchoolAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GeneralStudentProgramAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a GeneralStudentProgramAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Student associated with the Program.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProgramReference" type="ProgramReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Program associated with the Student.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GeneralStudentProgramAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a GeneralStudentProgramAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="GeneralStudentProgramAssociationIdentity" type="GeneralStudentProgramAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a GeneralStudentProgramAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
