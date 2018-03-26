@@ -14777,6 +14777,14 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
+      <xs:element name="AssessmentReportingMethod" type="AssessmentReportingMethodDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The method that the instructor of the class uses to report the performance and achievement. It may be a qualitative method such as individualized teacher comments or a quantitative method such as a letter or numerical grade. In some cases, more than one type of reporting method may be used.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>AssessmentReportingMethodDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Period">
