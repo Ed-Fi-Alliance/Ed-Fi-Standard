@@ -1297,7 +1297,7 @@
               <xs:documentation>The student(s) disciplined by the DisciplineAction.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="DisciplineIncidentReference" type="DisciplineIncidentReferenceType" maxOccurs="unbounded">
+          <xs:element name="StudentDisciplineIncidentAssociationReference" type="StudentDisciplineIncidentAssociationReferenceType" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Reference to the DisciplineIncident associated with the DisciplineAction.</xs:documentation>
             </xs:annotation>
