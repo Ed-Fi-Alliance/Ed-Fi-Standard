@@ -1237,6 +1237,11 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="Namespace" type="URI">
+            <xs:annotation>
+              <xs:documentation>Namespace for the Credential.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
