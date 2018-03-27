@@ -5081,6 +5081,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="LanguageInstructionProgramServiceDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a language instruction program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="LanguageUseDescriptor">
     <xs:annotation>
       <xs:documentation>The category denoting how a language is used.</xs:documentation>
@@ -5202,6 +5213,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="MonitoredDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines monitorization statuses for students who are no longer receiving language instruction program services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="NetworkPurposeDescriptor">
     <xs:annotation>
       <xs:documentation>The purpose(s) of the network, e.g. shared services, collective procurement, etc.</xs:documentation>
@@ -5238,6 +5260,17 @@
   <xs:complexType name="OtherNameTypeDescriptor">
     <xs:annotation>
       <xs:documentation>The types of alternate names for a person.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ParticipationDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines participation in a yearly English language assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -5323,6 +5356,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="ProficiencyDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines proficiency levels for a yearly English language assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="ProgramAssignmentDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor defines the name of the education program for which a teacher is assigned to a school.</xs:documentation>
@@ -5359,6 +5403,17 @@
   <xs:complexType name="ProgramTypeDescriptor">
     <xs:annotation>
       <xs:documentation>The formal name of the program of instruction, training, services, or benefits available through federal, state, or local agencies.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProgressDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines yearly progress or growth from last year’s assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -6711,6 +6766,35 @@ Students in private institutions which do not receive Perkins funding are report
           <xs:element name="Dosage" type="Dosage" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The duration of time in minutes for which the student was assigned to participate in the intervention.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StudentLanguageInstructionProgramAssociation">
+    <xs:annotation>
+      <xs:documentation>This association represents the Title III Language Instruction for Limited English Proficient and Immigrant Students program(s) that a student participates in or from which the Student receives services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="GeneralStudentProgramAssociation">
+        <xs:sequence>
+          <xs:element name="EnglishLanguageProficiencyAssessment" type="EnglishLanguageProficiencyAssessment" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Results of yearly English language assessment.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EnglishLearnerParticipation" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication that an English Learner student is served by an English language instruction educational program supported with Title III of ESEA funds.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LanguageInstructionProgramService" type="LanguageInstructionProgramService" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the service(s) being provided to the Student by the Language Instruction Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -11271,6 +11355,55 @@ Students in private institutions which do not receive Perkins funding are report
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StudentLanguageInstructionProgramAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a StudentLanguageInstructionProgramAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Student associated with the Program.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProgramReference" type="ProgramReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Program associated with the Student.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StudentLanguageInstructionProgramAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StudentLanguageInstructionProgramAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StudentLanguageInstructionProgramAssociationIdentity" type="StudentLanguageInstructionProgramAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a StudentLanguageInstructionProgramAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StudentLearningObjectiveIdentityType">
     <xs:annotation>
       <xs:documentation>Identity of a StudentLearningObjective.</xs:documentation>
@@ -12629,6 +12762,15 @@ Students in private institutions which do not receive Perkins funding are report
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="LanguageInstructionProgramServiceDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a language instruction program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="LanguageUseDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The category denoting how a language is used.</xs:documentation>
@@ -12728,6 +12870,15 @@ Students in private institutions which do not receive Perkins funding are report
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="MonitoredDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines monitorization statuses for students who are no longer receiving language instruction program services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="NetworkPurposeDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The purpose(s) of the network, e.g. shared services, collective procurement, etc.</xs:documentation>
@@ -12758,6 +12909,15 @@ Students in private institutions which do not receive Perkins funding are report
   <xs:simpleType name="OtherNameTypeDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The types of alternate names for a person.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ParticipationDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines participation in a yearly English language assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -12827,6 +12987,15 @@ Students in private institutions which do not receive Perkins funding are report
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="ProficiencyDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines proficiency levels for a yearly English language assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="ProgramAssignmentDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>This descriptor defines the name of the education program for which a teacher is assigned to a school.</xs:documentation>
@@ -12857,6 +13026,15 @@ Students in private institutions which do not receive Perkins funding are report
   <xs:simpleType name="ProgramTypeDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The formal name of the program of instruction, training, services, or benefits available through federal, state, or local agencies.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProgressDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines yearly progress or growth from last year’s assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -14272,6 +14450,53 @@ Students in private institutions which do not receive Perkins funding are report
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="EnglishLanguageProficiencyAssessment">
+    <xs:annotation>
+      <xs:documentation>Results of yearly English language assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SchoolYear" type="SchoolYearType">
+        <xs:annotation>
+          <xs:documentation>The School Year for which the Assessment was administered.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Participation" type="ParticipationDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Field indicating the participation in the yearly English language assessment.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>ParticipationDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Proficiency" type="ProficiencyDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The proficiency level for the yearly English language assessment.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>ProficiencyDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Progress" type="ProgressDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The yearly progress or growth from last year’s assessment.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>ProgressDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Monitored" type="MonitoredDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Student is monitored on content achievement who are no longer receiving services.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>MonitoredDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="IdentificationDocument">
     <xs:annotation>
       <xs:documentation>Represents the valid document that a person uses for identification.</xs:documentation>
@@ -14484,6 +14709,39 @@ Students in private institutions which do not receive Perkins funding are report
           <xs:appinfo>
             <ann:Descriptor>LanguageUseDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LanguageInstructionProgramService">
+    <xs:annotation>
+      <xs:documentation>Indicates the service(s) being provided to the Student by the Language Instruction Program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="LanguageInstructionProgramService" type="LanguageInstructionProgramServiceDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the service being provided to the student by the Language Instruction Program.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>LanguageInstructionProgramServiceDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PrimaryIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>True if service is a primary service.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Last date the Student was in this option for the current school year.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
