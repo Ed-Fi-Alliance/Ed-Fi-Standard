@@ -3624,14 +3624,6 @@
               <xs:documentation>The login ID for the user; used for security access control interface.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="HomelessPrimaryNighttimeResidence" type="HomelessPrimaryNighttimeResidenceDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>HomelessPrimaryNighttimeResidenceDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="TribalAffiliation" type="TribalAffiliationDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>An American Indian tribe with which the student is affiliated.</xs:documentation>
@@ -4985,6 +4977,17 @@
   <xs:complexType name="HomelessPrimaryNighttimeResidenceDescriptor">
     <xs:annotation>
       <xs:documentation>The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="HomelessProgramServiceDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a homeless program.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -6722,6 +6725,43 @@ Students in private institutions which do not receive Perkins funding are report
           <xs:element name="EndDate" type="xs:date" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Month, day, and year of the end date of an education organization's responsibility for a student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StudentHomelessProgramAssociation">
+    <xs:annotation>
+      <xs:documentation>This association represents the McKinney-Vento Homeless Program program(s) that a student participates in or from which the Student receives services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="GeneralStudentProgramAssociation">
+        <xs:sequence>
+          <xs:element name="HomelessPrimaryNighttimeResidence" type="HomelessPrimaryNighttimeResidenceDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>HomelessPrimaryNighttimeResidenceDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AwaitingFosterCare" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>State defined definition for awaiting foster care.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="HomelessUnaccompaniedYouth" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A homeless unaccompanied youth is a youth who is not in the physical custody of a parent or guardian and who fits the McKinney-Vento definition of homeless. Students must be both unaccompanied and homeless to be included as an unaccompanied homeless youth.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="HomelessProgramService" type="HomelessProgramService" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the service(s) being provided to the Student by the Homeless Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -11245,6 +11285,55 @@ Students in private institutions which do not receive Perkins funding are report
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StudentHomelessProgramAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a StudentHomelessProgramAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Student associated with the Program.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProgramReference" type="ProgramReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Program associated with the Student.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StudentHomelessProgramAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StudentHomelessProgramAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StudentHomelessProgramAssociationIdentity" type="StudentHomelessProgramAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a StudentHomelessProgramAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StudentIdentityType">
     <xs:annotation>
       <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a Student.</xs:documentation>
@@ -12684,6 +12773,15 @@ Students in private institutions which do not receive Perkins funding are report
   <xs:simpleType name="HomelessPrimaryNighttimeResidenceDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The primary nighttime residence of the student at the time the student is identified as homeless.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="HomelessProgramServiceDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a homeless program.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -14493,6 +14591,39 @@ Students in private institutions which do not receive Perkins funding are report
           <xs:appinfo>
             <ann:Descriptor>MonitoredDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HomelessProgramService">
+    <xs:annotation>
+      <xs:documentation>Indicates the service(s) being provided to the Student by the Homeless Program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="HomelessProgramService" type="HomelessProgramServiceDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the service being provided to the student by the Homeless Program.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>HomelessProgramServiceDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PrimaryIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>True if service is a primary service.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Last date the Student was in this option for the current school year.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
