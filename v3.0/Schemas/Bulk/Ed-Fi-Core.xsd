@@ -5186,6 +5186,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="MigrantEducationProgramServiceDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a migrant education program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="NetworkPurposeDescriptor">
     <xs:annotation>
       <xs:documentation>The purpose(s) of the network, e.g. shared services, collective procurement, etc.</xs:documentation>
@@ -6731,6 +6742,26 @@ Students in private institutions which do not receive Perkins funding are report
           <xs:element name="USInitialSchoolEntry" type="xs:date" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The month, day, and year on which the Student first entered a U.S. school.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="QualifyingArrivalDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The Qualifying Arrival Date (QAD) is the date the child joins the worker who has already moved, or the date when the worker joins the child who has already moved. The QAD is the date that the child’s eligibility for the MEP begins. The QAD is not affected by subsequent non-qualifying moves.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StateResidencyDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The verified State residency for the student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EligibilityExpirationDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The Eligibility Expiration Date is used to determine end of eligibility and to account for a child’s eligibility expiring earlier than 36 months from the child’s QAD. A child’s eligibility would end earlier than 36 months from the child’s QAD, if the child is no longer entitled to a free public education (e.g., graduated with a high school diploma, obtained a high school equivalency diploma (HSED), or for other reasons as determined by States’ requirements), or if the child passes away.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MigrantEducationProgramService" type="MigrantEducationProgramService" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the Migrant Education Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -12662,6 +12693,15 @@ Students in private institutions which do not receive Perkins funding are report
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="MigrantEducationProgramServiceDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a migrant education program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="NetworkPurposeDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The purpose(s) of the network, e.g. shared services, collective procurement, etc.</xs:documentation>
@@ -14713,6 +14753,39 @@ Students in private institutions which do not receive Perkins funding are report
       <xs:element name="EndTime" type="xs:time">
         <xs:annotation>
           <xs:documentation>An indication of the time of day the meeting time ends.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MigrantEducationProgramService">
+    <xs:annotation>
+      <xs:documentation>The student's migrant education program service information.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="MigrantEducationProgramService" type="MigrantEducationProgramServiceDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the Service being provided to the student by the Migrant Education Program.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>MigrantEducationProgramServiceDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PrimaryIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>True if service is a primary service.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Last date the Student was in this option for the current school year.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
