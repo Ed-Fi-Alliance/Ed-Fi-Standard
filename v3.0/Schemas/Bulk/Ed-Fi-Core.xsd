@@ -5995,11 +5995,6 @@
               <xs:documentation>The Program associated with the Student.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="BeginDate" type="xs:date">
             <xs:annotation>
               <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
@@ -6467,6 +6462,11 @@
               <xs:documentation>The career cluster representing the career path of the Vocational/Career Tech concentrator.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -6775,9 +6775,9 @@
     <xs:complexContent>
       <xs:extension base="GeneralStudentProgramAssociation">
         <xs:sequence>
-          <xs:element name="Description" type="Description" minOccurs="0">
+          <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>A description of the student program enrollment.</xs:documentation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -7069,6 +7069,11 @@
               <xs:appinfo>
                 <ann:Descriptor>TitleIPartAParticipantDescriptor</ann:Descriptor>
               </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
