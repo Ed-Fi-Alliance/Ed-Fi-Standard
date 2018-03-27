@@ -5764,6 +5764,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="TechnicalSkillsAssessmentDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the results of technical skills assessment aligned with industry recognized standards.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="TelephoneNumberTypeDescriptor">
     <xs:annotation>
       <xs:documentation>The type of communication number listed for an individual.</xs:documentation>
@@ -6465,6 +6476,25 @@
           <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="NonTraditionalGenderStatus" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicator that student is from a gender group that comprises less than 25% of the individuals employed in an occupation or field of work.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="PrivateCTEProgram" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicator that student participated in career and technical education at private agencies or institutions that are reported by the state for purposes of the Elementary and Secondary Education Act (ESEA).
+Students in private institutions which do not receive Perkins funding are reported only in the state file.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="TechnicalSkillsAssessment" type="TechnicalSkillsAssessmentDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Results of technical skills assessment aligned with industry recognized standards.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>TechnicalSkillsAssessmentDescriptor</ann:Descriptor>
+              </xs:appinfo>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -13102,6 +13132,15 @@
   <xs:simpleType name="TeachingCredentialDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>This descriptor defines an indication of the category of a legal document giving authorization to perform teaching assignment services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="TechnicalSkillsAssessmentDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the results of technical skills assessment aligned with industry recognized standards.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
