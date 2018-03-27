@@ -1322,6 +1322,11 @@
               <xs:documentation>School where student is transferred for discipline.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="ReceivedEducationServicesDuringExpulsion" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -5665,6 +5670,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="SpecialEducationProgramServiceDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a special education program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="SpecialEducationSettingDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor defines the major instructional setting (more than 50 percent of a student's special education program).</xs:documentation>
@@ -6576,7 +6592,7 @@ Students in private institutions which do not receive Perkins funding are report
           </xs:element>
           <xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The disability condition(s) that best describes an individual's impairment.</xs:documentation>
+              <xs:documentation>The disability condition(s) that best describes an individual's impairment, as determined by evaluation(s) conducted by the education organization.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
@@ -7104,6 +7120,16 @@ Students in private institutions which do not receive Perkins funding are report
           <xs:element name="IEPEndDate" type="xs:date" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The end date of the most recent IEP.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The disability condition(s) that best describes an individual's impairment, as related to special education services received.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SpecialEducationProgramService" type="SpecialEducationProgramService" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the Special Education Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -13088,6 +13114,15 @@ Students in private institutions which do not receive Perkins funding are report
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="SpecialEducationProgramServiceDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a special education program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="SpecialEducationSettingDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>This descriptor defines the major instructional setting (more than 50 percent of a student's special education program).</xs:documentation>
@@ -15113,6 +15148,39 @@ Students in private institutions which do not receive Perkins funding are report
       <xs:element name="PrimaryProvider" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Primary ServiceProvider.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SpecialEducationProgramService">
+    <xs:annotation>
+      <xs:documentation>The student's special education program service information.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SpecialEducationProgramService" type="SpecialEducationProgramServiceDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the service being provided to the student by the Special Education Program.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>SpecialEducationProgramServiceDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PrimaryIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>True if service is a primary service.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Last date the Student was in this option for the current school year.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
