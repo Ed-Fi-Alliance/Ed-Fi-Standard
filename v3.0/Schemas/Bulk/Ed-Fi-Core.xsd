@@ -5684,9 +5684,9 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="SchoolFoodServicesEligibilityDescriptor">
+  <xs:complexType name="SchoolFoodServiceProgramServiceDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines indications of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs.</xs:documentation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a school food service program.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -6694,14 +6694,6 @@ Students in private institutions which do not receive Perkins funding are report
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="SchoolFoodServicesEligibility" type="SchoolFoodServicesEligibilityDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An indication of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>SchoolFoodServicesEligibilityDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
@@ -7179,6 +7171,30 @@ Students in private institutions which do not receive Perkins funding are report
           <xs:element name="CalendarReference" type="CalendarReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>A reference to the student's calendar.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StudentSchoolFoodServiceProgramAssociation">
+    <xs:annotation>
+      <xs:documentation>This association represents the school food services program(s), such as the Free or Reduced Lunch Program, that a student participates in or from which the Student receives services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="GeneralStudentProgramAssociation">
+        <xs:sequence>
+          <xs:element name="DirectCertification" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates that the student's National School Lunch Program (NSLP) eligibility has been determined through direct certification.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SchoolFoodServiceProgramService" type="SchoolFoodServiceProgramService" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the service(s) being provided to the Student by the School Food Service Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -12050,6 +12066,55 @@ Students in private institutions which do not receive Perkins funding are report
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StudentSchoolFoodServiceProgramAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a StudentSchoolFoodServiceProgramAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Student associated with the Program.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProgramReference" type="ProgramReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Program associated with the Student.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StudentSchoolFoodServiceProgramAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StudentSchoolFoodServiceProgramAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StudentSchoolFoodServiceProgramAssociationIdentity" type="StudentSchoolFoodServiceProgramAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a StudentSchoolFoodServiceProgramAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StudentSectionAssociationIdentityType">
     <xs:annotation>
       <xs:documentation>Identity of a StudentSectionAssociation.</xs:documentation>
@@ -13479,9 +13544,9 @@ Students in private institutions which do not receive Perkins funding are report
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
-  <xs:simpleType name="SchoolFoodServicesEligibilityDescriptorReferenceType">
+  <xs:simpleType name="SchoolFoodServiceProgramServiceDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>This descriptor defines indications of a student's level of eligibility for breakfast, lunch, snack, supper, and milk programs.</xs:documentation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a school food service program.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -15638,6 +15703,39 @@ Students in private institutions which do not receive Perkins funding are report
       <xs:element name="RequiredAssessmentPerformanceLevel" type="AssessmentPerformanceLevel" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Performance level required to be met or exceeded.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SchoolFoodServiceProgramService">
+    <xs:annotation>
+      <xs:documentation>Indicates the service(s) being provided to the Student by the School Food Service Program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SchoolFoodServiceProgramService" type="SchoolFoodServiceProgramServiceDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the service being provided to the student by the School Food Service Program.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>SchoolFoodServiceProgramServiceDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PrimaryIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>True if service is a primary service.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Last date the Student was in this option for the current school year.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
