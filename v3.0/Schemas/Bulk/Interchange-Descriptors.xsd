@@ -105,6 +105,8 @@ The Descriptor interchange is used to describe metadata about the descriptors an
         <xs:element name="MethodCreditEarnedDescriptor" type="MethodCreditEarnedDescriptor" />
         <xs:element name="MigrantEducationProgramServiceDescriptor" type="MigrantEducationProgramServiceDescriptor" />
         <xs:element name="MonitoredDescriptor" type="MonitoredDescriptor" />
+        <xs:element name="NeglectedOrDelinquentProgramDescriptor" type="NeglectedOrDelinquentProgramDescriptor" />
+        <xs:element name="NeglectedOrDelinquentProgramServiceDescriptor" type="NeglectedOrDelinquentProgramServiceDescriptor" />
         <xs:element name="NetworkPurposeDescriptor" type="NetworkPurposeDescriptor" />
         <xs:element name="OldEthnicityDescriptor" type="OldEthnicityDescriptor" />
         <xs:element name="OperationalStatusDescriptor" type="OperationalStatusDescriptor" />
@@ -123,6 +125,7 @@ The Descriptor interchange is used to describe metadata about the descriptors an
         <xs:element name="ProgramSponsorDescriptor" type="ProgramSponsorDescriptor" />
         <xs:element name="ProgramTypeDescriptor" type="ProgramTypeDescriptor" />
         <xs:element name="ProgressDescriptor" type="ProgressDescriptor" />
+        <xs:element name="ProgressLevelDescriptor" type="ProgressLevelDescriptor" />
         <xs:element name="ProviderCategoryDescriptor" type="ProviderCategoryDescriptor" />
         <xs:element name="ProviderProfitabilityDescriptor" type="ProviderProfitabilityDescriptor" />
         <xs:element name="ProviderStatusDescriptor" type="ProviderStatusDescriptor" />
