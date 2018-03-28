@@ -5227,6 +5227,28 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="NeglectedOrDelinquentProgramDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the type of program under ESEA Title I, Part D, Subpart 1 (state programs) or Subpart 2 (LEA).</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="NeglectedOrDelinquentProgramServiceDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a neglected or delinquent program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="NetworkPurposeDescriptor">
     <xs:annotation>
       <xs:documentation>The purpose(s) of the network, e.g. shared services, collective procurement, etc.</xs:documentation>
@@ -5417,6 +5439,17 @@
   <xs:complexType name="ProgressDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor defines yearly progress or growth from last year’s assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProgressLevelDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines progress measured from pre- to post-test.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -6902,6 +6935,49 @@ Students in private institutions which do not receive Perkins funding are report
           <xs:element name="MigrantEducationProgramService" type="MigrantEducationProgramService" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Indicates the Service(s) being provided to the Student by the Migrant Education Program.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StudentNeglectedOrDelinquentProgramAssociation">
+    <xs:annotation>
+      <xs:documentation>This association represents the Title I Part D Neglected or Delinquent program(s) that a student participates in or from which the Student receives services.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="GeneralStudentProgramAssociation">
+        <xs:sequence>
+          <xs:element name="NeglectedOrDelinquentProgram" type="NeglectedOrDelinquentProgramDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The type of program under ESEA Title I, Part D, Subpart 1 (state programs) or Subpart 2 (LEA).</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>NeglectedOrDelinquentProgramDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ELAProgressLevel" type="ProgressLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The progress measured from pre- to post- test for ELA.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ProgressLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MathematicsProgressLevel" type="ProgressLevelDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The progress measured from pre- to post-test for Mathematics.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>ProgressLevelDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="NeglectedOrDelinquentProgramService" type="NeglectedOrDelinquentProgramService" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the service(s) being provided to the Student by the Neglected or Delinquent Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -11647,6 +11723,55 @@ Students in private institutions which do not receive Perkins funding are report
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StudentNeglectedOrDelinquentProgramAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a StudentNeglectedOrDelinquentProgramAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Student associated with the Program.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProgramReference" type="ProgramReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Program associated with the Student.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StudentNeglectedOrDelinquentProgramAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StudentNeglectedOrDelinquentProgramAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StudentNeglectedOrDelinquentProgramAssociationIdentity" type="StudentNeglectedOrDelinquentProgramAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a StudentNeglectedOrDelinquentProgramAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StudentParentAssociationIdentityType">
     <xs:annotation>
       <xs:documentation>Identity of a StudentParentAssociation.</xs:documentation>
@@ -12977,6 +13102,24 @@ Students in private institutions which do not receive Perkins funding are report
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="NeglectedOrDelinquentProgramDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the type of program under ESEA Title I, Part D, Subpart 1 (state programs) or Subpart 2 (LEA).</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="NeglectedOrDelinquentProgramServiceDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a neglected or delinquent program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="NetworkPurposeDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The purpose(s) of the network, e.g. shared services, collective procurement, etc.</xs:documentation>
@@ -13133,6 +13276,15 @@ Students in private institutions which do not receive Perkins funding are report
   <xs:simpleType name="ProgressDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>This descriptor defines yearly progress or growth from last year’s assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ProgressLevelDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines progress measured from pre- to post-test.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -15255,6 +15407,39 @@ Students in private institutions which do not receive Perkins funding are report
       <xs:element name="PersonalIdentificationDocument" type="IdentificationDocument" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
           <xs:documentation>The documents presented as evident to verify one's personal identity; for example: drivers license, passport, birth certificate, etc.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NeglectedOrDelinquentProgramService">
+    <xs:annotation>
+      <xs:documentation>Indicates the service(s) being provided to the Student by the Neglected or Delinquent Program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="NeglectedOrDelinquentProgramService" type="NeglectedOrDelinquentProgramServiceDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the service being provided to the student by the Neglected or Delinquent Program.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>NeglectedOrDelinquentProgramServiceDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PrimaryIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>True if service is a primary service.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Last date the Student was in this option for the current school year.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
