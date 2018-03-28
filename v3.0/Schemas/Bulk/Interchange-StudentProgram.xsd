@@ -17,6 +17,10 @@
         <xs:element name="StudentCTEProgramAssociation" type="StudentCTEProgramAssociation" />
         <xs:element name="StudentTitleIPartAProgramAssociation" type="StudentTitleIPartAProgramAssociation" />
         <xs:element name="StudentMigrantEducationProgramAssociation" type="StudentMigrantEducationProgramAssociation" />
+        <xs:element name="StudentLanguageInstructionProgramAssociation" type="StudentLanguageInstructionProgramAssociation" />
+        <xs:element name="StudentHomelessProgramAssociation" type="StudentHomelessProgramAssociation" />
+        <xs:element name="StudentNeglectedOrDelinquentProgramAssociation" type="StudentNeglectedOrDelinquentProgramAssociation" />
+        <xs:element name="StudentSchoolFoodServiceProgramAssociation" type="StudentSchoolFoodServiceProgramAssociation" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
