@@ -208,7 +208,7 @@
   </xs:complexType>
   <xs:complexType name="Assessment">
     <xs:annotation>
-      <xs:documentation>This entity represents a tool, instrument, process, or exhibition composed of a systematic sampling of behavior for measuring a student's competence, knowledge,skills, or behavior. An assessment can be used to measure differences in individuals or groups and changes in performance from one occasion to the next.</xs:documentation>
+      <xs:documentation>This entity represents a tool, instrument, process, or exhibition composed of a systematic sampling of behavior for measuring a student's competence, knowledge, skills, or behavior. An assessment can be used to measure differences in individuals or groups and changes in performance from one occasion to the next.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -1767,7 +1767,7 @@
   </xs:complexType>
   <xs:complexType name="GraduationPlan">
     <xs:annotation>
-      <xs:documentation>This entity is a plan outlining the required credits,credits by subject, credits by course, and other criteria required for graduation. A graduation plan may be one or more standard plans defined by an education organization and/or individual plans for some or all students.</xs:documentation>
+      <xs:documentation>This entity is a plan outlining the required credits, credits by subject, credits by course, and other criteria required for graduation. A graduation plan may be one or more standard plans defined by an education organization and/or individual plans for some or all students.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -14049,7 +14049,7 @@ Students in private institutions which do not receive Perkins funding are report
       </xs:element>
       <xs:element name="ResultDatatypeType" type="ResultDatatypeTypeDescriptorReferenceType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The datatype of the result. The results can be expressed as a number, percentile,range, level, etc.</xs:documentation>
+          <xs:documentation>The datatype of the result. The results can be expressed as a number, percentile, range, level, etc.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>ResultDatatypeTypeDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -14334,7 +14334,7 @@ Students in private institutions which do not receive Perkins funding are report
   </xs:complexType>
   <xs:complexType name="ContentStandard">
     <xs:annotation>
-      <xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard,statewide standard, regional standard, association standard).
+      <xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard, statewide standard, regional standard, association standard).
     ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
