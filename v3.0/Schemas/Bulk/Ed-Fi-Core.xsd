@@ -4831,9 +4831,7 @@
   </xs:complexType>
   <xs:complexType name="EducationPlanDescriptor">
     <xs:annotation>
-      <xs:documentation>The type of education plan(s) the student is following, if appropriate. For example:
-    Special education
-    Vocational.</xs:documentation>
+      <xs:documentation>The type of education plan(s) the student is following, if appropriate.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -7142,9 +7140,7 @@
           </xs:element>
           <xs:element name="EducationPlan" type="EducationPlanDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The type of EducationPlan(s) the student is following, if appropriate. For example:
-        Special education IEP
-        Vocational.</xs:documentation>
+              <xs:documentation>The type of education plan(s) the student is following, if appropriate.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>EducationPlanDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -12843,9 +12839,7 @@
   </xs:simpleType>
   <xs:simpleType name="EducationPlanDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>The type of education plan(s) the student is following, if appropriate. For example:
-    Special education
-    Vocational.</xs:documentation>
+      <xs:documentation>The type of education plan(s) the student is following, if appropriate.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
