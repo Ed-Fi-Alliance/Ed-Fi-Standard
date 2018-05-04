@@ -2615,7 +2615,7 @@
           </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-2 language codes.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -3341,7 +3341,7 @@
           </xs:element>
           <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-2 language codes.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="HighestCompletedLevelOfEducation" type="LevelOfEducationDescriptorReferenceType" minOccurs="0">
@@ -4991,7 +4991,7 @@
   </xs:complexType>
   <xs:complexType name="LanguageDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the language(s) that are spoken or written. It is strongly recommended that entries use only ISO 639-3 language codes: for CodeValue, use the 3 character code; for ShortDescription and Description use the full language name.</xs:documentation>
+      <xs:documentation>This descriptor defines the language(s) that are spoken or written. It is strongly recommended that entries use only ISO 639-2 language codes: for CodeValue, use the 3 character code; for ShortDescription and Description use the full language name.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -13016,7 +13016,7 @@
   </xs:simpleType>
   <xs:simpleType name="LanguageDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the language(s) that are spoken or written. It is strongly recommended that entries use only ISO 639-3 language codes: for CodeValue, use the 3 character code; for ShortDescription and Description use the full language name.</xs:documentation>
+      <xs:documentation>This descriptor defines the language(s) that are spoken or written. It is strongly recommended that entries use only ISO 639-2 language codes: for CodeValue, use the 3 character code; for ShortDescription and Description use the full language name.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
