@@ -1327,6 +1327,11 @@
               <xs:documentation>An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="IEPPlacementMeetingIndicator" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication as to whether an offense and/or disciplinary action resulted in a meeting of a student’s Individualized Education Program (IEP) team to determine appropriate placement.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
