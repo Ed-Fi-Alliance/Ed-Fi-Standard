@@ -3525,11 +3525,6 @@
               <xs:documentation>A unique alphanumeric code assigned to a student.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="StudentIdentificationCode" type="StudentIdentificationCode" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="Name" type="Name">
             <xs:annotation>
               <xs:documentation>Full legal name of the person.</xs:documentation>
@@ -3540,96 +3535,14 @@
               <xs:documentation>Other names (e.g., alias, nickname, previous legal name) associated with a person.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Sex" type="SexDescriptorReferenceType">
-            <xs:annotation>
-              <xs:documentation>A person's gender.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>SexDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="BirthData" type="BirthData">
             <xs:annotation>
               <xs:documentation>The set of elements that capture relevant data regarding a person's birth, including birth date and place of birth.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Address" type="Address" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The set of elements that describes an address, including the street address, city, state, and ZIP code.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="InternationalAddress" type="InternationalAddress" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The set of elements that describes an international address.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Telephone" type="Telephone" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The 10-digit telephone number, including the area code, for the person.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ElectronicMail" type="ElectronicMail" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="ProfileThumbnail" type="ProfileThumbnail" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Locator reference for the student photo. The specification for that reference is left to local definition.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="OldEthnicity" type="OldEthnicityDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and race:
-                      1 - American Indian or Alaskan Native
-                      2 - Asian or Pacific Islander
-                      3 - Black, not of Hispanic origin
-                      4 - Hispanic
-                      5 - White, not of Hispanic origin.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>OldEthnicityDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Race" type="RaceDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>RaceDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="Citizenship" type="Citizenship" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Contains information relative to U.S. citizenship status and its associated probationary documentation.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="CohortYear" type="CohortYear" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="LoginId" type="IdentificationCode" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>The login ID for the user; used for security access control interface.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="TribalAffiliation" type="TribalAffiliationDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation>An American Indian tribe with which the student is affiliated.</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>TribalAffiliationDescriptor</ann:Descriptor>
-              </xs:appinfo>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6679,9 +6592,82 @@
               <xs:documentation>A reference to the EducationOrganization.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="StudentIdentificationCode" type="StudentIdentificationCode" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The disability condition(s) that best describes an individual's impairment, as determined by evaluation(s) conducted by the education organization.</xs:documentation>
+              <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Sex" type="SexDescriptorReferenceType">
+            <xs:annotation>
+              <xs:documentation>A person's gender.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>SexDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Address" type="Address" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The set of elements that describes an address, including the street address, city, state, and ZIP code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="InternationalAddress" type="InternationalAddress" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The set of elements that describes an international address.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Telephone" type="Telephone" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The 10-digit telephone number, including the area code, for the person.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ElectronicMail" type="ElectronicMail" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ProfileThumbnail" type="ProfileThumbnail" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Locator reference for the student photo. The specification for that reference is left to local definition.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="OldEthnicity" type="OldEthnicityDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and race:
+                      1 - American Indian or Alaskan Native
+                      2 - Asian or Pacific Islander
+                      3 - Black, not of Hispanic origin
+                      4 - Hispanic
+                      5 - White, not of Hispanic origin.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>OldEthnicityDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Race" type="RaceDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>RaceDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="TribalAffiliation" type="TribalAffiliationDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>An American Indian tribe with which the student is affiliated.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>TribalAffiliationDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Reflects important characteristics of the student's home situation:
+                      Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
@@ -6692,20 +6678,34 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="Language" type="Language" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The language(s) the individual uses to communicate. It is strongly recommended that entries use only ISO 639-3 language codes.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Disability" type="Disability" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The disability condition(s) that best describes an individual's impairment, as determined by evaluation(s) conducted by the education organization.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CohortYear" type="CohortYear" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>Reflects important characteristics of the student's home situation:
-                      Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
+              <xs:documentation>The type and year of a cohort (e.g., 9th grade) the student belongs to as determined by the year that student entered a specific grade.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="StudentIndicator" type="StudentIndicator" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Indicator(s) or metric(s) computed for the student (e.g., at risk) to influence more effective education or direct specific interventions.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LoginId" type="IdentificationCode" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The login ID for the user; used for security access control interface.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -11245,7 +11245,7 @@
   </xs:complexType>
   <xs:complexType name="StudentEducationOrganizationAssociationIdentityType">
     <xs:annotation>
-      <xs:documentation>Identity of a StudentEducationOrganizationAssociation.</xs:documentation>
+      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a StudentEducationOrganizationAssociation.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Identity</ann:TypeGroup>
       </xs:appinfo>
@@ -11275,7 +11275,7 @@
         <xs:sequence>
           <xs:element name="StudentEducationOrganizationAssociationIdentity" type="StudentEducationOrganizationAssociationIdentityType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Identity of a StudentEducationOrganizationAssociation.</xs:documentation>
+              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a StudentEducationOrganizationAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -11638,11 +11638,6 @@
           <xs:documentation>A unique alphanumeric code assigned to a student.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="StudentIdentificationCode" type="StudentIdentificationCode" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A coding scheme that is used for identification and record-keeping purposes by schools, social services, or other agencies to refer to a student.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="Name" type="Name" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Full legal name of the person.</xs:documentation>
@@ -11653,30 +11648,9 @@
           <xs:documentation>Other names (e.g., alias, nickname, previous legal name) associated with a person.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Sex" type="SexDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A person's gender.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>SexDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="BirthData" type="BirthData" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The set of elements that capture relevant data regarding a person's birth, including birth date and place of birth.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Race" type="RaceDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>RaceDescriptor</ann:Descriptor>
-          </xs:appinfo>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
