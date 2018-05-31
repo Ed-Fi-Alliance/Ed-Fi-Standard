@@ -1,7 +1,7 @@
-This repository hosts the Ed-Fi Data Standard used by the Ed-Fi Technology components. 
+This repository hosts the Ed-Fi Data Standard. 
 	
-Vist [http://techdocs.ed-fi.org](http://techdocs.ed-fi.org/) for technical documentation and [http://tracker.ed-fi.org](http://tracker.ed-fi.org) to view and enter issues, questions, feature requests, etc.
+Vist [Ed-Fi Tech Docs](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Data+Standard) for technical documentation and [Ed-Fi Tracker](https://tracker.ed-fi.org/projects/DATASTD) to view and enter issues, questions, feature requests, etc.
 
-For more information about the Ed-Fi Alliance and Ed-Fi Technology, please visit the Ed-Fi Alliance Web site at [http://www.ed-fi.org](http://www.ed-fi.org/).
+For more information about the Ed-Fi Alliance, please visit the Ed-Fi Alliance Web site at [http://www.ed-fi.org](http://www.ed-fi.org/).
 
-(c)2015 Ed-Fi Alliance, LLC. All Rights Reserved.
+(c)2017 Ed-Fi Alliance, LLC. All Rights Reserved.
