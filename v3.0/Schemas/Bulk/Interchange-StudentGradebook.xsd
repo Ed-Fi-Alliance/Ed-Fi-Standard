@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- (c)2018 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0300" targetNamespace="http://ed-fi.org/0300" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:include schemaLocation="Ed-Fi-Core.xsd" />
+  <xs:annotation>
+    <xs:documentation>===== Student Gradebook Interchange Model =====</xs:documentation>
+  </xs:annotation>
+  <xs:element name="InterchangeStudentGradebook">
+    <xs:annotation>
+      <xs:documentation>The Student Gradebook interchange describes student gradebook entries. Gradebook entries are assignments and students' results on those assignments. The assignments themselves may be linked to learning standards or learning objectives.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="GradebookEntry" type="GradebookEntry" />
+        <xs:element name="StudentGradebookEntry" type="StudentGradebookEntry" />
+        <xs:element name="SectionReference" type="SectionReferenceType" />
+        <xs:element name="LearningObjectiveReference" type="LearningObjectiveReferenceType" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

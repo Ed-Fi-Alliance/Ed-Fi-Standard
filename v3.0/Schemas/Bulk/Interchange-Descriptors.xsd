@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- (c)2018 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0300" targetNamespace="http://ed-fi.org/0300" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:include schemaLocation="Ed-Fi-Core.xsd" />
+  <xs:annotation>
+    <xs:documentation>===== Descriptors Interchange Model =====</xs:documentation>
+  </xs:annotation>
+  <xs:element name="InterchangeDescriptors">
+    <xs:annotation>
+      <xs:documentation>Descriptors provide states, districts, vendors, and other users of the Ed-Fi solution with the flexibility to use their own enumerations and code sets without modifying the Ed-Fi core schema.
+The Descriptor interchange is used to describe metadata about the descriptors and their structure. It is used to define enumeration vocabularies that are not "fixed" within the XML schema, but are loaded in XML files and linked to their source.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="AbsenceEventCategoryDescriptor" type="AbsenceEventCategoryDescriptor" />
+        <xs:element name="AcademicHonorCategoryDescriptor" type="AcademicHonorCategoryDescriptor" />
+        <xs:element name="AcademicSubjectDescriptor" type="AcademicSubjectDescriptor" />
+        <xs:element name="AccommodationDescriptor" type="AccommodationDescriptor" />
+        <xs:element name="AccountClassificationDescriptor" type="AccountClassificationDescriptor" />
+        <xs:element name="AchievementCategoryDescriptor" type="AchievementCategoryDescriptor" />
+        <xs:element name="AdditionalCreditTypeDescriptor" type="AdditionalCreditTypeDescriptor" />
+        <xs:element name="AddressTypeDescriptor" type="AddressTypeDescriptor" />
+        <xs:element name="AdministrationEnvironmentDescriptor" type="AdministrationEnvironmentDescriptor" />
+        <xs:element name="AdministrativeFundingControlDescriptor" type="AdministrativeFundingControlDescriptor" />
+        <xs:element name="AssessmentCategoryDescriptor" type="AssessmentCategoryDescriptor" />
+        <xs:element name="AssessmentIdentificationSystemDescriptor" type="AssessmentIdentificationSystemDescriptor" />
+        <xs:element name="AssessmentItemCategoryDescriptor" type="AssessmentItemCategoryDescriptor" />
+        <xs:element name="AssessmentItemResultDescriptor" type="AssessmentItemResultDescriptor" />
+        <xs:element name="AssessmentPeriodDescriptor" type="AssessmentPeriodDescriptor" />
+        <xs:element name="AssessmentReportingMethodDescriptor" type="AssessmentReportingMethodDescriptor" />
+        <xs:element name="AttemptStatusDescriptor" type="AttemptStatusDescriptor" />
+        <xs:element name="AttendanceEventCategoryDescriptor" type="AttendanceEventCategoryDescriptor" />
+        <xs:element name="BehaviorDescriptor" type="BehaviorDescriptor" />
+        <xs:element name="CalendarEventDescriptor" type="CalendarEventDescriptor" />
+        <xs:element name="CalendarTypeDescriptor" type="CalendarTypeDescriptor" />
+        <xs:element name="CareerPathwayDescriptor" type="CareerPathwayDescriptor" />
+        <xs:element name="CharterApprovalAgencyTypeDescriptor" type="CharterApprovalAgencyTypeDescriptor" />
+        <xs:element name="CharterStatusDescriptor" type="CharterStatusDescriptor" />
+        <xs:element name="CitizenshipStatusDescriptor" type="CitizenshipStatusDescriptor" />
+        <xs:element name="ClassroomPositionDescriptor" type="ClassroomPositionDescriptor" />
+        <xs:element name="CohortScopeDescriptor" type="CohortScopeDescriptor" />
+        <xs:element name="CohortTypeDescriptor" type="CohortTypeDescriptor" />
+        <xs:element name="CohortYearTypeDescriptor" type="CohortYearTypeDescriptor" />
+        <xs:element name="CompetencyLevelDescriptor" type="CompetencyLevelDescriptor" />
+        <xs:element name="ContactTypeDescriptor" type="ContactTypeDescriptor" />
+        <xs:element name="ContentClassDescriptor" type="ContentClassDescriptor" />
+        <xs:element name="ContinuationOfServicesReasonDescriptor" type="ContinuationOfServicesReasonDescriptor" />
+        <xs:element name="CostRateDescriptor" type="CostRateDescriptor" />
+        <xs:element name="CountryDescriptor" type="CountryDescriptor" />
+        <xs:element name="CourseAttemptResultDescriptor" type="CourseAttemptResultDescriptor" />
+        <xs:element name="CourseDefinedByDescriptor" type="CourseDefinedByDescriptor" />
+        <xs:element name="CourseGPAApplicabilityDescriptor" type="CourseGPAApplicabilityDescriptor" />
+        <xs:element name="CourseIdentificationSystemDescriptor" type="CourseIdentificationSystemDescriptor" />
+        <xs:element name="CourseLevelCharacteristicDescriptor" type="CourseLevelCharacteristicDescriptor" />
+        <xs:element name="CourseRepeatCodeDescriptor" type="CourseRepeatCodeDescriptor" />
+        <xs:element name="CredentialFieldDescriptor" type="CredentialFieldDescriptor" />
+        <xs:element name="CredentialTypeDescriptor" type="CredentialTypeDescriptor" />
+        <xs:element name="CreditTypeDescriptor" type="CreditTypeDescriptor" />
+        <xs:element name="CurriculumUsedDescriptor" type="CurriculumUsedDescriptor" />
+        <xs:element name="DeliveryMethodDescriptor" type="DeliveryMethodDescriptor" />
+        <xs:element name="DiagnosisDescriptor" type="DiagnosisDescriptor" />
+        <xs:element name="DiplomaLevelDescriptor" type="DiplomaLevelDescriptor" />
+        <xs:element name="DiplomaTypeDescriptor" type="DiplomaTypeDescriptor" />
+        <xs:element name="DisabilityDescriptor" type="DisabilityDescriptor" />
+        <xs:element name="DisabilityDesignationDescriptor" type="DisabilityDesignationDescriptor" />
+        <xs:element name="DisabilityDeterminationSourceTypeDescriptor" type="DisabilityDeterminationSourceTypeDescriptor" />
+        <xs:element name="DisciplineDescriptor" type="DisciplineDescriptor" />
+        <xs:element name="DisciplineActionLengthDifferenceReasonDescriptor" type="DisciplineActionLengthDifferenceReasonDescriptor" />
+        <xs:element name="EducationalEnvironmentDescriptor" type="EducationalEnvironmentDescriptor" />
+        <xs:element name="EducationOrganizationCategoryDescriptor" type="EducationOrganizationCategoryDescriptor" />
+        <xs:element name="EducationOrganizationIdentificationSystemDescriptor" type="EducationOrganizationIdentificationSystemDescriptor" />
+        <xs:element name="EducationPlanDescriptor" type="EducationPlanDescriptor" />
+        <xs:element name="ElectronicMailTypeDescriptor" type="ElectronicMailTypeDescriptor" />
+        <xs:element name="EmploymentStatusDescriptor" type="EmploymentStatusDescriptor" />
+        <xs:element name="EntryGradeLevelReasonDescriptor" type="EntryGradeLevelReasonDescriptor" />
+        <xs:element name="EntryTypeDescriptor" type="EntryTypeDescriptor" />
+        <xs:element name="EventCircumstanceDescriptor" type="EventCircumstanceDescriptor" />
+        <xs:element name="ExitWithdrawTypeDescriptor" type="ExitWithdrawTypeDescriptor" />
+        <xs:element name="GradebookEntryTypeDescriptor" type="GradebookEntryTypeDescriptor" />
+        <xs:element name="GradeLevelDescriptor" type="GradeLevelDescriptor" />
+        <xs:element name="GradeTypeDescriptor" type="GradeTypeDescriptor" />
+        <xs:element name="GradingPeriodDescriptor" type="GradingPeriodDescriptor" />
+        <xs:element name="GraduationPlanTypeDescriptor" type="GraduationPlanTypeDescriptor" />
+        <xs:element name="GunFreeSchoolsActReportingStatusDescriptor" type="GunFreeSchoolsActReportingStatusDescriptor" />
+        <xs:element name="HomelessPrimaryNighttimeResidenceDescriptor" type="HomelessPrimaryNighttimeResidenceDescriptor" />
+        <xs:element name="HomelessProgramServiceDescriptor" type="HomelessProgramServiceDescriptor" />
+        <xs:element name="IdentificationDocumentUseDescriptor" type="IdentificationDocumentUseDescriptor" />
+        <xs:element name="IncidentLocationDescriptor" type="IncidentLocationDescriptor" />
+        <xs:element name="InstitutionTelephoneNumberTypeDescriptor" type="InstitutionTelephoneNumberTypeDescriptor" />
+        <xs:element name="InteractivityStyleDescriptor" type="InteractivityStyleDescriptor" />
+        <xs:element name="InternetAccessDescriptor" type="InternetAccessDescriptor" />
+        <xs:element name="InterventionClassDescriptor" type="InterventionClassDescriptor" />
+        <xs:element name="InterventionEffectivenessRatingDescriptor" type="InterventionEffectivenessRatingDescriptor" />
+        <xs:element name="LanguageDescriptor" type="LanguageDescriptor" />
+        <xs:element name="LanguageInstructionProgramServiceDescriptor" type="LanguageInstructionProgramServiceDescriptor" />
+        <xs:element name="LanguageUseDescriptor" type="LanguageUseDescriptor" />
+        <xs:element name="LearningStandardCategoryDescriptor" type="LearningStandardCategoryDescriptor" />
+        <xs:element name="LevelOfEducationDescriptor" type="LevelOfEducationDescriptor" />
+        <xs:element name="LicenseStatusDescriptor" type="LicenseStatusDescriptor" />
+        <xs:element name="LicenseTypeDescriptor" type="LicenseTypeDescriptor" />
+        <xs:element name="LimitedEnglishProficiencyDescriptor" type="LimitedEnglishProficiencyDescriptor" />
+        <xs:element name="LocalEducationAgencyCategoryDescriptor" type="LocalEducationAgencyCategoryDescriptor" />
+        <xs:element name="MagnetSpecialProgramEmphasisSchoolDescriptor" type="MagnetSpecialProgramEmphasisSchoolDescriptor" />
+        <xs:element name="MediumOfInstructionDescriptor" type="MediumOfInstructionDescriptor" />
+        <xs:element name="MethodCreditEarnedDescriptor" type="MethodCreditEarnedDescriptor" />
+        <xs:element name="MigrantEducationProgramServiceDescriptor" type="MigrantEducationProgramServiceDescriptor" />
+        <xs:element name="MonitoredDescriptor" type="MonitoredDescriptor" />
+        <xs:element name="NeglectedOrDelinquentProgramDescriptor" type="NeglectedOrDelinquentProgramDescriptor" />
+        <xs:element name="NeglectedOrDelinquentProgramServiceDescriptor" type="NeglectedOrDelinquentProgramServiceDescriptor" />
+        <xs:element name="NetworkPurposeDescriptor" type="NetworkPurposeDescriptor" />
+        <xs:element name="OldEthnicityDescriptor" type="OldEthnicityDescriptor" />
+        <xs:element name="OperationalStatusDescriptor" type="OperationalStatusDescriptor" />
+        <xs:element name="OtherNameTypeDescriptor" type="OtherNameTypeDescriptor" />
+        <xs:element name="ParticipationDescriptor" type="ParticipationDescriptor" />
+        <xs:element name="PerformanceBaseConversionDescriptor" type="PerformanceBaseConversionDescriptor" />
+        <xs:element name="PerformanceLevelDescriptor" type="PerformanceLevelDescriptor" />
+        <xs:element name="PersonalInformationVerificationDescriptor" type="PersonalInformationVerificationDescriptor" />
+        <xs:element name="PopulationServedDescriptor" type="PopulationServedDescriptor" />
+        <xs:element name="PostingResultDescriptor" type="PostingResultDescriptor" />
+        <xs:element name="PostSecondaryEventCategoryDescriptor" type="PostSecondaryEventCategoryDescriptor" />
+        <xs:element name="PostSecondaryInstitutionLevelDescriptor" type="PostSecondaryInstitutionLevelDescriptor" />
+        <xs:element name="ProficiencyDescriptor" type="ProficiencyDescriptor" />
+        <xs:element name="ProgramAssignmentDescriptor" type="ProgramAssignmentDescriptor" />
+        <xs:element name="ProgramCharacteristicDescriptor" type="ProgramCharacteristicDescriptor" />
+        <xs:element name="ProgramSponsorDescriptor" type="ProgramSponsorDescriptor" />
+        <xs:element name="ProgramTypeDescriptor" type="ProgramTypeDescriptor" />
+        <xs:element name="ProgressDescriptor" type="ProgressDescriptor" />
+        <xs:element name="ProgressLevelDescriptor" type="ProgressLevelDescriptor" />
+        <xs:element name="ProviderCategoryDescriptor" type="ProviderCategoryDescriptor" />
+        <xs:element name="ProviderProfitabilityDescriptor" type="ProviderProfitabilityDescriptor" />
+        <xs:element name="ProviderStatusDescriptor" type="ProviderStatusDescriptor" />
+        <xs:element name="PublicationStatusDescriptor" type="PublicationStatusDescriptor" />
+        <xs:element name="RaceDescriptor" type="RaceDescriptor" />
+        <xs:element name="ReasonExitedDescriptor" type="ReasonExitedDescriptor" />
+        <xs:element name="ReasonNotTestedDescriptor" type="ReasonNotTestedDescriptor" />
+        <xs:element name="RecognitionTypeDescriptor" type="RecognitionTypeDescriptor" />
+        <xs:element name="RelationDescriptor" type="RelationDescriptor" />
+        <xs:element name="RepeatIdentifierDescriptor" type="RepeatIdentifierDescriptor" />
+        <xs:element name="ReporterDescriptionDescriptor" type="ReporterDescriptionDescriptor" />
+        <xs:element name="ResidencyStatusDescriptor" type="ResidencyStatusDescriptor" />
+        <xs:element name="ResponseIndicatorDescriptor" type="ResponseIndicatorDescriptor" />
+        <xs:element name="ResponsibilityDescriptor" type="ResponsibilityDescriptor" />
+        <xs:element name="RestraintEventReasonDescriptor" type="RestraintEventReasonDescriptor" />
+        <xs:element name="ResultDatatypeTypeDescriptor" type="ResultDatatypeTypeDescriptor" />
+        <xs:element name="RetestIndicatorDescriptor" type="RetestIndicatorDescriptor" />
+        <xs:element name="SchoolCategoryDescriptor" type="SchoolCategoryDescriptor" />
+        <xs:element name="SchoolChoiceImplementStatusDescriptor" type="SchoolChoiceImplementStatusDescriptor" />
+        <xs:element name="SchoolFoodServiceProgramServiceDescriptor" type="SchoolFoodServiceProgramServiceDescriptor" />
+        <xs:element name="SchoolTypeDescriptor" type="SchoolTypeDescriptor" />
+        <xs:element name="SectionCharacteristicDescriptor" type="SectionCharacteristicDescriptor" />
+        <xs:element name="SeparationDescriptor" type="SeparationDescriptor" />
+        <xs:element name="SeparationReasonDescriptor" type="SeparationReasonDescriptor" />
+        <xs:element name="ServiceDescriptor" type="ServiceDescriptor" />
+        <xs:element name="SexDescriptor" type="SexDescriptor" />
+        <xs:element name="SpecialEducationProgramServiceDescriptor" type="SpecialEducationProgramServiceDescriptor" />
+        <xs:element name="SpecialEducationSettingDescriptor" type="SpecialEducationSettingDescriptor" />
+        <xs:element name="StaffClassificationDescriptor" type="StaffClassificationDescriptor" />
+        <xs:element name="StaffIdentificationSystemDescriptor" type="StaffIdentificationSystemDescriptor" />
+        <xs:element name="StaffLeaveEventCategoryDescriptor" type="StaffLeaveEventCategoryDescriptor" />
+        <xs:element name="StateAbbreviationDescriptor" type="StateAbbreviationDescriptor" />
+        <xs:element name="StudentCharacteristicDescriptor" type="StudentCharacteristicDescriptor" />
+        <xs:element name="StudentIdentificationSystemDescriptor" type="StudentIdentificationSystemDescriptor" />
+        <xs:element name="StudentParticipationCodeDescriptor" type="StudentParticipationCodeDescriptor" />
+        <xs:element name="TeachingCredentialDescriptor" type="TeachingCredentialDescriptor" />
+        <xs:element name="TeachingCredentialBasisDescriptor" type="TeachingCredentialBasisDescriptor" />
+        <xs:element name="TechnicalSkillsAssessmentDescriptor" type="TechnicalSkillsAssessmentDescriptor" />
+        <xs:element name="TelephoneNumberTypeDescriptor" type="TelephoneNumberTypeDescriptor" />
+        <xs:element name="TermDescriptor" type="TermDescriptor" />
+        <xs:element name="TitleIPartAParticipantDescriptor" type="TitleIPartAParticipantDescriptor" />
+        <xs:element name="TitleIPartASchoolDesignationDescriptor" type="TitleIPartASchoolDesignationDescriptor" />
+        <xs:element name="TribalAffiliationDescriptor" type="TribalAffiliationDescriptor" />
+        <xs:element name="VisaDescriptor" type="VisaDescriptor" />
+        <xs:element name="WeaponDescriptor" type="WeaponDescriptor" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
