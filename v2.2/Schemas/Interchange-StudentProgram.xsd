@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Program Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentProgram">
+		<xs:annotation>
+			<xs:documentation>This interchange loads students' participation in programs.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="StudentProgramAssociation" type="StudentProgramAssociation"/>
+				<xs:element name="StudentSpecialEducationProgramAssociation" type="StudentSpecialEducationProgramAssociation"/>
+				<xs:element name="RestraintEvent" type="RestraintEvent"/>
+				<xs:element name="StudentCTEProgramAssociation" type="StudentCTEProgramAssociation"/>
+				<xs:element name="StudentTitleIPartAProgramAssociation" type="StudentTitleIPartAProgramAssociation"/>
+				<xs:element name="StudentMigrantEducationProgramAssociation" type="StudentMigrantEducationProgramAssociation"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

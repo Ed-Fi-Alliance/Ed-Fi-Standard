@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0200 ../../../../Schemas//Interchange-Descriptors.xsd">
+	<ResidencyStatusDescriptor>
+		<CodeValue>01652</CodeValue>
+		<ShortDescription>01652</ShortDescription>
+		<Description>Resident of administrative unit and usual school attendance area</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/ResidencyStatusDescriptor.xml</Namespace>
+		<ResidencyStatusMap>Resident of administrative unit and usual school attendance area</ResidencyStatusMap>
+	</ResidencyStatusDescriptor>
+	<ResidencyStatusDescriptor>
+		<CodeValue>01653</CodeValue>
+		<ShortDescription>01653</ShortDescription>
+		<Description>Resident of administrative unit, but of other school attendance area</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/ResidencyStatusDescriptor.xml</Namespace>
+		<ResidencyStatusMap>Resident of administrative unit, but of other school attendance area</ResidencyStatusMap>
+	</ResidencyStatusDescriptor>
+	<ResidencyStatusDescriptor>
+		<CodeValue>01654</CodeValue>
+		<ShortDescription>01654</ShortDescription>
+		<Description>Resident of this state, but not of this administrative unit</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/ResidencyStatusDescriptor.xml</Namespace>
+		<ResidencyStatusMap>Resident of this state, but not of this administrative unit</ResidencyStatusMap>
+	</ResidencyStatusDescriptor>
+	<ResidencyStatusDescriptor>
+		<CodeValue>01655</CodeValue>
+		<ShortDescription>01655</ShortDescription>
+		<Description>Resident of an administrative unit that crosses state boundaries</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/ResidencyStatusDescriptor.xml</Namespace>
+		<ResidencyStatusMap>Resident of an administrative unit that crosses state boundaries</ResidencyStatusMap>
+	</ResidencyStatusDescriptor>
+	<ResidencyStatusDescriptor>
+		<CodeValue>01656</CodeValue>
+		<ShortDescription>01656</ShortDescription>
+		<Description>Resident of another state</Description>
+		<Namespace>http://www.ed-fi.org/CEDSDescriptor/ResidencyStatusDescriptor.xml</Namespace>
+		<ResidencyStatusMap>Resident of another state</ResidencyStatusMap>
+	</ResidencyStatusDescriptor>
+</InterchangeDescriptors>

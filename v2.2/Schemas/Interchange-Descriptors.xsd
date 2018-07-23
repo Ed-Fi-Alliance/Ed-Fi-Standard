@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:element name="InterchangeDescriptors">
+		<xs:annotation>
+			<xs:documentation>Descriptors provide states, districts, vendors, and other users of the Ed-Fi solution with the flexibility to use their own enumerations and code sets without modifying the Ed-Fi core schema.
+The Descriptor interchange is used to describe metadata about the descriptors and their structure. It is used to define enumeration vocabularies that are not "fixed" within the XML schema, but are loaded in XML files and linked to their source.
+</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AcademicSubjectDescriptor" type="AcademicSubjectDescriptor"/>
+				<xs:element name="AccommodationDescriptor" type="AccommodationDescriptor"/>
+				<xs:element name="AccountCodeDescriptor" type="AccountCodeDescriptor"/>
+				<xs:element name="AchievementCategoryDescriptor" type="AchievementCategoryDescriptor"/>
+				<xs:element name="AdministrativeFundingControlDescriptor" type="AdministrativeFundingControlDescriptor"/>
+				<xs:element name="AssessmentCategoryDescriptor" type="AssessmentCategoryDescriptor"/>
+				<xs:element name="AssessmentIdentificationSystemDescriptor" type="AssessmentIdentificationSystemDescriptor"/>
+				<xs:element name="AssessmentPeriodDescriptor" type="AssessmentPeriodDescriptor"/>
+				<xs:element name="AttendanceEventCategoryDescriptor" type="AttendanceEventCategoryDescriptor"/>
+				<xs:element name="BehaviorDescriptor" type="BehaviorDescriptor"/>
+				<xs:element name="CalendarEventDescriptor" type="CalendarEventDescriptor"/>
+				<xs:element name="ClassroomPositionDescriptor" type="ClassroomPositionDescriptor"/>
+				<xs:element name="CompetencyLevelDescriptor" type="CompetencyLevelDescriptor"/>
+				<xs:element name="ContinuationOfServicesReasonDescriptor" type="ContinuationOfServicesReasonDescriptor"/>
+				<xs:element name="CountryDescriptor" type="CountryDescriptor"/>
+				<xs:element name="CourseIdentificationSystemDescriptor" type="CourseIdentificationSystemDescriptor"/>
+				<xs:element name="CredentialFieldDescriptor" type="CredentialFieldDescriptor"/>
+				<xs:element name="DiagnosisDescriptor" type="DiagnosisDescriptor"/>
+				<xs:element name="DisabilityDescriptor" type="DisabilityDescriptor"/>
+				<xs:element name="DisciplineDescriptor" type="DisciplineDescriptor"/>
+				<xs:element name="EducationOrganizationIdentificationSystemDescriptor" type="EducationOrganizationIdentificationSystemDescriptor"/>
+				<xs:element name="EmploymentStatusDescriptor" type="EmploymentStatusDescriptor"/>
+				<xs:element name="EntryTypeDescriptor" type="EntryTypeDescriptor"/>
+				<xs:element name="ExitWithdrawTypeDescriptor" type="ExitWithdrawTypeDescriptor"/>
+				<xs:element name="GradeLevelDescriptor" type="GradeLevelDescriptor"/>
+				<xs:element name="GradingPeriodDescriptor" type="GradingPeriodDescriptor"/>
+				<xs:element name="GraduationPlanTypeDescriptor" type="GraduationPlanTypeDescriptor"/>
+				<xs:element name="LanguageDescriptor" type="LanguageDescriptor"/>
+				<xs:element name="LevelDescriptor" type="LevelDescriptor"/>
+				<xs:element name="LevelOfEducationDescriptor" type="LevelOfEducationDescriptor"/>
+				<xs:element name="LimitedEnglishProficiencyDescriptor" type="LimitedEnglishProficiencyDescriptor"/>
+				<xs:element name="PerformanceLevelDescriptor" type="PerformanceLevelDescriptor"/>
+				<xs:element name="ProgramAssignmentDescriptor" type="ProgramAssignmentDescriptor"/>
+				<xs:element name="ProgramCharacteristicDescriptor" type="ProgramCharacteristicDescriptor"/>
+				<xs:element name="ReasonExitedDescriptor" type="ReasonExitedDescriptor"/>
+				<xs:element name="ReporterDescriptionDescriptor" type="ReporterDescriptionDescriptor"/>
+				<xs:element name="ResidencyStatusDescriptor" type="ResidencyStatusDescriptor"/>
+				<xs:element name="ResponsibilityDescriptor" type="ResponsibilityDescriptor"/>
+				<xs:element name="SchoolFoodServicesEligibilityDescriptor" type="SchoolFoodServicesEligibilityDescriptor"/>
+				<xs:element name="SectionCharacteristicDescriptor" type="SectionCharacteristicDescriptor"/>
+				<xs:element name="SeparationReasonDescriptor" type="SeparationReasonDescriptor"/>
+				<xs:element name="ServiceDescriptor" type="ServiceDescriptor"/>
+				<xs:element name="SpecialEducationSettingDescriptor" type="SpecialEducationSettingDescriptor"/>
+				<xs:element name="StaffClassificationDescriptor" type="StaffClassificationDescriptor"/>
+				<xs:element name="StaffIdentificationSystemDescriptor" type="StaffIdentificationSystemDescriptor"/>
+				<xs:element name="StudentCharacteristicDescriptor" type="StudentCharacteristicDescriptor"/>
+				<xs:element name="StudentIdentificationSystemDescriptor" type="StudentIdentificationSystemDescriptor"/>
+				<xs:element name="TeachingCredentialDescriptor" type="TeachingCredentialDescriptor"/>
+				<xs:element name="TermDescriptor" type="TermDescriptor"/>
+				<xs:element name="WeaponDescriptor" type="WeaponDescriptor"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
