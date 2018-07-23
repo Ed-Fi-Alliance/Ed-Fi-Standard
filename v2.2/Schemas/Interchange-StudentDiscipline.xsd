@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="Ed-Fi-Core.xsd"/>
+	<xs:annotation>
+		<xs:documentation>===== Student Discipline Interchange Model  =====</xs:documentation>
+	</xs:annotation>
+	<xs:element name="InterchangeStudentDiscipline">
+		<xs:annotation>
+			<xs:documentation>This interchange defines discipline incidents and discipline actions.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DisciplineIncident" type="DisciplineIncident"/>
+				<xs:element name="StudentDisciplineIncidentAssociation" type="StudentDisciplineIncidentAssociation"/>
+				<xs:element name="DisciplineAction" type="DisciplineAction"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

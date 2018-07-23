@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c)2015 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/annotation" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1.00">
+	<xs:simpleType name="DatabaseKey">
+		<xs:annotation>
+			<xs:documentation>Identifies participation in the primary key for the specified data model.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Operational Data Store"/>
+			<xs:enumeration value="Data Warehouse"/>
+			<xs:enumeration value="Data Mart"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Descriptor">
+		<xs:annotation>
+			<xs:documentation>Identifies the descriptor being referenced by a DescriptorReferenceType element.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="AcademicSubjectDescriptor"/>
+			<xs:enumeration value="AccommodationDescriptor"/>
+			<xs:enumeration value="AccountCodeDescriptor"/>
+			<xs:enumeration value="AchievementCategoryDescriptor"/>
+			<xs:enumeration value="AdministrativeFundingControlDescriptor"/>
+			<xs:enumeration value="AssessmentIdentificationSystemDescriptor"/>
+			<xs:enumeration value="AssessmentPeriodDescriptor"/>
+			<xs:enumeration value="AttendanceEventCategoryDescriptor"/>
+			<xs:enumeration value="BehaviorDescriptor"/>
+			<xs:enumeration value="CalendarEventDescriptor"/>
+			<xs:enumeration value="ClassroomPositionDescriptor"/>
+			<xs:enumeration value="CompetencyLevelDescriptor"/>
+			<xs:enumeration value="ContinuationOfServicesReasonDescriptor"/>
+			<xs:enumeration value="CountryDescriptor"/>
+			<xs:enumeration value="CourseIdentificationSystemDescriptor"/>
+			<xs:enumeration value="CredentialFieldDescriptor"/>
+			<xs:enumeration value="DiagnosisDescriptor"/>
+			<xs:enumeration value="DisabilityDescriptor"/>
+			<xs:enumeration value="DisciplineDescriptor"/>
+			<xs:enumeration value="EducationOrganizationIdentificationSystemDescriptor"/>
+			<xs:enumeration value="EmploymentStatusDescriptor"/>
+			<xs:enumeration value="EntryTypeDescriptor"/>
+			<xs:enumeration value="ExitWithdrawTypeDescriptor"/>
+			<xs:enumeration value="GradeLevelDescriptor"/>
+			<xs:enumeration value="GradingPeriodDescriptor"/>
+			<xs:enumeration value="GraduationPlanTypeDescriptor"/>
+			<xs:enumeration value="PerformanceLevelDescriptor"/>
+			<xs:enumeration value="LanguageDescriptor"/>
+			<xs:enumeration value="LevelDescriptor"/>
+			<xs:enumeration value="LevelOfEducationDescriptor"/>
+			<xs:enumeration value="LimitedEnglishProficiencyDescriptor"/>
+			<xs:enumeration value="PerformanceLevelDescriptor"/>
+			<xs:enumeration value="ProgramAssignmentDescriptor"/>
+			<xs:enumeration value="ReasonExitedDescriptor"/>
+			<xs:enumeration value="ReporterDescriptionDescriptor"/>
+			<xs:enumeration value="ResidencyStatusDescriptor"/>
+			<xs:enumeration value="ResponsibilityDescriptor"/>
+			<xs:enumeration value="SchoolFoodServicesEligibilityDescriptor"/>
+			<xs:enumeration value="SectionCharacteristicDescriptor"/>
+			<xs:enumeration value="SeparationReasonDescriptor"/>
+			<xs:enumeration value="ServiceDescriptor"/>
+			<xs:enumeration value="SpecialEducationSettingDescriptor"/>
+			<xs:enumeration value="StaffClassificationDescriptor"/>
+			<xs:enumeration value="StaffIdentificationSystemDescriptor"/>
+			<xs:enumeration value="StudentCharacteristicDescriptor"/>
+			<xs:enumeration value="StudentIdentificationSystemDescriptor"/>
+			<xs:enumeration value="TeachingCredentialDescriptor"/>
+			<xs:enumeration value="TermDescriptor"/>
+			<xs:enumeration value="WeaponDescriptor"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TypeGroup">
+		<xs:annotation>
+			<xs:documentation>Identifies the schema section of which the type is a member.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Association"/>
+			<xs:enumeration value="Base"/>
+			<xs:enumeration value="Common"/>
+			<xs:enumeration value="Descriptor"/>
+			<xs:enumeration value="Domain Entity"/>
+			<xs:enumeration value="Enumeration"/>
+			<xs:enumeration value="Extended Descriptor Reference"/>
+			<xs:enumeration value="Extended Reference"/>
+			<xs:enumeration value="Identity"/>
+			<xs:enumeration value="Lookup"/>
+			<xs:enumeration value="Simple"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EdFiId">
+		<xs:annotation>
+			<xs:documentation>Identifies the individual element or type for use in tracking name/type changes.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="12"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
