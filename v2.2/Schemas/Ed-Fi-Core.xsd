@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- (c)2017 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<!-- (c)2018 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0220" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0220" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd" />
   <xs:annotation>
@@ -172,12 +172,17 @@
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
+          <xs:element name="AssessmentIdentifier" type="IdentificationCode">
+            <xs:annotation>
+              <xs:documentation>A unique number or alphanumeric code assigned to an assessment.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="AssessmentTitle" type="AssessmentTitle">
             <xs:annotation>
               <xs:documentation>The title or name of the Assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" maxOccurs="unbounded">
+          <xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity.</xs:documentation>
             </xs:annotation>
@@ -185,18 +190,18 @@
           <xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The category of an assessment based on format and content. For example:
-        Achievement test
-        Advanced placement test
-        Alternate assessment/grade-level standards
-        Attitudinal test
-        Cognitive and perceptual skills test
-        ...</xs:documentation>
+                      Achievement test
+                      Advanced placement test
+                      Alternate assessment/grade-level standards
+                      Attitudinal test
+                      Cognitive and perceptual skills test
+                      ...</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
               <xs:appinfo>
@@ -204,27 +209,9 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType">
+          <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The typical grade level for which an assessment is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example:
-        Adult
-        Prekindergarten
-        First grade
-        Second grade
-        ...</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="LowestAssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>If the assessment spans a range of grades, then this attribute holds the lowest grade assessed. If only one grade level is assessed, then this attribute is omitted. For example:
-        Adult
-        Prekindergarten
-        First grade
-        Second grade
-        ...</xs:documentation>
+              <xs:documentation>The grade level(s) for which an assessment is designed. The semantics of null is assumed to mean that the assessment is not associated with any grade level.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -238,9 +225,9 @@
           <xs:element name="AssessmentPerformanceLevel" type="AssessmentPerformanceLevel" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Definition of the performance levels and the associated cut scores. Three styles are supported:
-        1. Specification of performance level by minimum and maximum score
-        2. Specification of performance level by cut score, using only minimum score
-        3. Specification of performance level without any mapping to scores.</xs:documentation>
+                      1. Specification of performance level by minimum and maximum score
+                      2. Specification of performance level by cut score, using only minimum score
+                      3. Specification of performance level without any mapping to scores.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="ContentStandard" type="ContentStandard" minOccurs="0">
@@ -261,7 +248,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Version" type="Version">
+          <xs:element name="Version" type="Version" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The version identifier for the assessment.</xs:documentation>
             </xs:annotation>
@@ -306,9 +293,19 @@
               </xs:annotation>
             </xs:element>
           </xs:choice>
-          <xs:element name="Namespace" type="URI" minOccurs="0">
+          <xs:element name="Namespace" type="URI">
             <xs:annotation>
               <xs:documentation>Namespace for the Assessment.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The EducationOganization for which the assessment was developed and in which it was employed.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AdaptiveAssessment" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates that the assessment is adaptive.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -435,10 +432,10 @@
           <xs:element name="AssessmentItemCategory" type="AssessmentItemCategoryType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Category or type of the AssessmentItem. For example:
-        Multiple choice
-        Analytic
-        Prose
-        ...</xs:documentation>
+                      Multiple choice
+                      Analytic
+                      Prose
+                      ...</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="MaxRawScore" type="xs:int" minOccurs="0">
@@ -917,10 +914,10 @@
           <xs:element name="CourseAttemptResult" type="CourseAttemptResultType">
             <xs:annotation>
               <xs:documentation>The result from the student's attempt to take the course, for example:
-        Pass
-        Fail
-        Incomplete
-        Withdrawn.</xs:documentation>
+                      Pass
+                      Fail
+                      Incomplete
+                      Withdrawn.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="AttemptedCredits" type="Credits" minOccurs="0">
@@ -1105,12 +1102,12 @@
           <xs:element name="IncidentLocation" type="IncidentLocationType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Identifies where the DisciplineIncident occurred and whether or not it occurred on school, for example:
-        On school
-        Administrative offices area
-        Cafeteria area
-        Classroom
-        Hallway or stairs
-        ...</xs:documentation>
+                      On school
+                      Administrative offices area
+                      Cafeteria area
+                      Classroom
+                      Hallway or stairs
+                      ...</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="IncidentDescription" type="Description" minOccurs="0">
@@ -1121,12 +1118,12 @@
           <xs:element name="ReporterDescription" type="ReporterDescriptionDescriptorReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Information on the type of individual who reported the DisciplineIncident. When known and/or if useful, use a more specific option code (e.g., "Counselor" rather than "Professional Staff"); for example:
-        Student
-        Parent/guardian
-        Law enforcement officer
-        Nonschool personnel
-        Representative of visiting school
-        ...</xs:documentation>
+                      Student
+                      Parent/guardian
+                      Law enforcement officer
+                      Nonschool personnel
+                      Representative of visiting school
+                      ...</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>ReporterDescriptionDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -1876,7 +1873,7 @@
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="LearningObjectiveId" type="LearningStandardId" minOccurs="0">
+          <xs:element name="LearningObjectiveId" type="LearningStandardId">
             <xs:annotation>
               <xs:documentation>The identifier for the specific learning objective in the context of a standard (e.g., 111.15.3.1.A).</xs:documentation>
             </xs:annotation>
@@ -1896,7 +1893,7 @@
               <xs:documentation>The description of the LearningObjective.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
               <xs:appinfo>
@@ -1904,9 +1901,9 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType">
+          <xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The grade level for which the LearningObjective is targeted.</xs:documentation>
+              <xs:documentation>The grade level for which the LearningObjective is targeted. The semantics of null is assumed to mean that the learning objective is not associated with any grade level.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -2044,9 +2041,9 @@
           <xs:element name="LeaveEventCategory" type="LeaveEventCategoryType">
             <xs:annotation>
               <xs:documentation>The code describing the type of leave taken, for example:
-        Sick
-        Personal
-        Vacation.</xs:documentation>
+                      Sick
+                      Personal
+                      Vacation.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LeaveEventReason" type="LeaveEventReason" minOccurs="0">
@@ -2184,9 +2181,9 @@
           <xs:element name="AssessmentPerformanceLevel" type="AssessmentPerformanceLevel" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Definition of the performance levels and the associated cut scores. Three styles are supported:
-        1. Specification of performance level by minimum and maximum score    
-        2. Specification of performance level by cut score, using only minimum score    
-        3. Specification of performance level without any mapping to scores.</xs:documentation>
+                      1. Specification of performance level by minimum and maximum score
+                      2. Specification of performance level by cut score, using only minimum score
+                      3. Specification of performance level without any mapping to scores</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="PercentOfAssessment" type="Percent" minOccurs="0">
@@ -2251,12 +2248,12 @@
           <xs:element name="EmploymentStatus" type="EmploymentStatusDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>Reflects the type of employment or contract desired for the position; for example:
-        Probationary
-        Contractual
-        Substitute/temporary
-        Tenured or permanent
-        Volunteer/no contract
-        ...</xs:documentation>
+                      Probationary
+                      Contractual
+                      Substitute/temporary
+                      Tenured or permanent
+                      Volunteer/no contract
+                      ...</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>EmploymentStatusDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -2283,11 +2280,11 @@
           <xs:element name="ProgramAssignment" type="ProgramAssignmentDescriptorReferenceType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The name of the program for which the OpenStaffPosition will be assigned; for example:
-        Regular education
-        Title I-Academic
-        Title I-Non-Academic
-        Special Education'
-        Bilingual/English as a Second Language.</xs:documentation>
+                      Regular education
+                      Title I-Academic
+                      Title I-Non-Academic
+                      Special Education'
+                      Bilingual/English as a Second Language.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>ProgramAssignmentDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -2746,34 +2743,34 @@
           <xs:element name="EducationalEnvironment" type="EducationalEnvironmentType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The setting in which a child receives education and related services; for example:
-        Center-based instruction
-        Home-based instruction
-        Hospital class
-        Mainstream
-        Residential care and treatment facility
-        ...</xs:documentation>
+                      Center-based instruction
+                      Home-based instruction
+                      Hospital class
+                      Mainstream
+                      Residential care and treatment facility
+                      ...</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="MediumOfInstruction" type="MediumOfInstructionType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The media through which teachers provide instruction to students and students and teachers communicate about instructional matters; for example:
-        Technology-based instruction in classroom
-        Correspondence instruction
-        Face-to-face instruction
-        Virtual/On-line Distance learning
-        Center-based instruction
-        ...</xs:documentation>
+                      Technology-based instruction in classroom
+                      Correspondence instruction
+                      Face-to-face instruction
+                      Virtual/On-line Distance learning
+                      Center-based instruction
+                      ...</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="PopulationServed" type="PopulationServedType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The type of students the Section is offered and tailored to; for example:
-        Bilingual students
-        Remedial education students
-        Gifted and talented students
-        Career and Technical Education students
-        Special education students
-        ...</xs:documentation>
+                      Bilingual students
+                      Remedial education students
+                      Gifted and talented students
+                      Career and Technical Education students
+                      Special education students
+                      ...</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="AvailableCredits" type="Credits" minOccurs="0">
@@ -2925,11 +2922,11 @@
   <xs:complexType name="Staff">
     <xs:annotation>
       <xs:documentation>This entity represents an individual who performs specified activities for any public or private education institution or agency that provides instructional and/or support services to students or staff at the early childhood level through high school completion. For example, this includes:
-    1. An "employee" who performs services under the direction of the employing institution or agency is compensated for such services by the employer and is eligible for employee benefits and wage or salary tax withholdings
-    2. A "contractor" or "consultant" who performs services for an agreed upon fee or an employee of a management service contracted to work on site
-    3. A "volunteer" who performs services on a voluntary and uncompensated basis
-    4. An in-kind service provider
-    5. An independent contractor or businessperson working at a school site.</xs:documentation>
+            1. An "employee" who performs services under the direction of the employing institution or agency is compensated for such services by the employer and is eligible for employee benefits and wage or salary tax withholdings
+            2. A "contractor" or "consultant" who performs services for an agreed upon fee or an employee of a management service contracted to work on site
+            3. A "volunteer" who performs services on a voluntary and uncompensated basis
+            4. An in-kind service provider
+            5. An independent contractor or businessperson working at a school site.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -2995,11 +2992,11 @@
           <xs:element name="OldEthnicity" type="OldEthnicityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and race:
-        1 - American Indian or Alaskan Native
-        2 - Asian or Pacific Islander
-        3 - Black, not of Hispanic origin
-        4 - Hispanic
-        5 - White, not of Hispanic origin.</xs:documentation>
+                      1 - American Indian or Alaskan Native
+                      2 - Asian or Pacific Islander
+                      3 - Black, not of Hispanic origin
+                      4 - Hispanic
+                      5 - White, not of Hispanic origin.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Race" type="RaceType" minOccurs="0" maxOccurs="unbounded">
@@ -3156,11 +3153,11 @@
           <xs:element name="OldEthnicity" type="OldEthnicityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Previous definition of Ethnicity combining Hispanic/Latino and race:
-        1 - American Indian or Alaskan Native
-        2 - Asian or Pacific Islander
-        3 - Black, not of Hispanic origin
-        4 - Hispanic
-        5 - White, not of Hispanic origin.</xs:documentation>
+                      1 - American Indian or Alaskan Native
+                      2 - Asian or Pacific Islander
+                      3 - Black, not of Hispanic origin
+                      4 - Hispanic
+                      5 - White, not of Hispanic origin.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Race" type="RaceType" minOccurs="0" maxOccurs="unbounded">
@@ -3189,7 +3186,7 @@
           <xs:element name="StudentCharacteristic" type="StudentCharacteristic" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Reflects important characteristics of the student's home situation:
-        Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
+                      Displaced Homemaker, Immigrant, Migratory, Military Parent, Pregnant Teen, Single Parent, and Unaccompanied Youth.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LimitedEnglishProficiency" type="LimitedEnglishProficiencyDescriptorReferenceType" minOccurs="0">
@@ -3366,14 +3363,19 @@
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="AdministrationDate" type="xs:date">
+          <xs:element name="StudentAssessmentIdentifier" type="IdentificationCode">
             <xs:annotation>
-              <xs:documentation>The month(s), day(s), and year on which an assessment is administered or first day of administration if over multiple days.</xs:documentation>
+              <xs:documentation>A unique number or alphanumeric code assigned to an assessment administered to a student.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AdministrationEndDate" type="xs:date" minOccurs="0">
+          <xs:element name="AdministrationDate" type="xs:dateTime">
             <xs:annotation>
-              <xs:documentation>Assessment Administration End Date, if administered over multiple days.</xs:documentation>
+              <xs:documentation>The date and time an assessment was completed by the student. The use of ISO-8601 formats with a timezone designator (UTC or time offset) is recommended in order to prevent ambiguity due to time zones.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AdministrationEndDate" type="xs:dateTime" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The date and time an assessment administration ended.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="SerialNumber" type="IdentificationCode" minOccurs="0">
@@ -3392,22 +3394,22 @@
           <xs:element name="AdministrationEnvironment" type="AdministrationEnvironmentType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The environment in which the test was administered. For example:
-        Electronic
-        Classroom
-        Testing Center
-        ...</xs:documentation>
+                      Electronic
+                      Classroom
+                      Testing Center
+                      ...</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Accommodation" type="AccommodationDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The specific type of special variation used in how an examination is presented, how it is administered, or how the test taker is allowed to respond. This generally refers to changes that do not substantially alter what the examinationmeasures. The proper use of accommodations does not substantially change academic level or performance criteria. For example:
-        Braille
-        Enlarged monitor view
-        Extra time
-        Large Print
-        Setting
-        Oral Administration
-        ...</xs:documentation>
+                      Braille
+                      Enlarged monitor view
+                      Extra time
+                      Large Print
+                      Setting
+                      Oral Administration
+                      ...</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>AccommodationDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -3416,23 +3418,23 @@
           <xs:element name="RetestIndicator" type="RetestIndicatorType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Indicator if the test was retaken. For example:
-        Primary administration
-        First retest
-        Second retest
-        ...</xs:documentation>
+                      Primary administration
+                      First retest
+                      Second retest
+                      ...</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="ReasonNotTested" type="ReasonNotTestedType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The primary reason student is not tested. For example:
-        Absent
-        Refusal by parent
-        Refusal by student
-        Medical waiver
-        Illness
-        Disruptive behavior
-        LEP Exempt
-        ...</xs:documentation>
+                      Absent
+                      Refusal by parent
+                      Refusal by student
+                      Medical waiver
+                      Illness
+                      Disruptive behavior
+                      LEP Exempt
+                      ...</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="ScoreResult" type="ScoreResult" minOccurs="0" maxOccurs="unbounded">
@@ -4997,12 +4999,12 @@
           <xs:element name="EmploymentStatus" type="EmploymentStatusDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>Reflects the type of employment or contract; for example:
-        Probationary
-        Contractual
-        Substitute/temporary
-        Tenured or permanent
-        Volunteer/no contract
-        ...</xs:documentation>
+                      Probationary
+                      Contractual
+                      Substitute/temporary
+                      Tenured or permanent
+                      Volunteer/no contract
+                      ...</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>EmploymentStatusDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -5104,11 +5106,11 @@
           <xs:element name="ProgramAssignment" type="ProgramAssignmentDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>The name of the program for which the individual is assigned; for example:
-        Regular education
-        Title I-Academic
-        Title I-Non-Academic
-        Special Education
-        Bilingual/English as a Second Language.</xs:documentation>
+                      Regular education
+                      Title I-Academic
+                      Title I-Non-Academic
+                      Special Education
+                      Bilingual/English as a Second Language.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>ProgramAssignmentDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -5157,7 +5159,7 @@
           <xs:element name="ClassroomPosition" type="ClassroomPositionDescriptorReferenceType">
             <xs:annotation>
               <xs:documentation>The type of position the Staff member holds in the specific class/section; for example:
-        Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs:documentation>
+                      Teacher of Record, Assistant Teacher, Support Teacher, Substitute Teacher...</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>ClassroomPositionDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -5273,11 +5275,11 @@
           <xs:element name="StudentParticipationCode" type="StudentParticipationCodeType">
             <xs:annotation>
               <xs:documentation>The role or type of participation of a student in a discipline incident; 
-        for example:
-        Victim
-        Perpetrator
-        Witness
-        Reporter.</xs:documentation>
+                      for example:
+                      Victim
+                      Perpetrator
+                      Witness
+                      Reporter.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Behavior" type="Behavior" minOccurs="0" maxOccurs="unbounded">
@@ -5430,7 +5432,7 @@
           <xs:element name="Relation" type="RelationType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The nature of an individual's relationship to a student; for example:
-        Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian, etc.</xs:documentation>
+                      Father, Mother, Step Father, Step Mother, Foster Father, Foster Mother, Guardian, etc.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="PrimaryContactStatus" type="xs:boolean" minOccurs="0">
@@ -5606,8 +5608,8 @@
           <xs:element name="EducationPlan" type="EducationPlanType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The type of EducationPlan(s) the student is following, if appropriate. For example:
-        Special education IEP
-        Vocational.</xs:documentation>
+                      Special education IEP
+                      Vocational.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="ResidencyStatus" type="ResidencyStatusDescriptorReferenceType" minOccurs="0">
@@ -5670,10 +5672,10 @@
           <xs:element name="RepeatIdentifier" type="RepeatIdentifierType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>An indication as to whether a student has previously taken a given course.
-        Repeated, counted in grade point average
-        Repeated, not counted in grade point average
-        Not repeated
-        Other.</xs:documentation>
+                      Repeated, counted in grade point average
+                      Repeated, not counted in grade point average
+                      Not repeated
+                      Other.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="TeacherStudentDataLinkExclusion" type="xs:boolean" minOccurs="0">
@@ -5731,11 +5733,11 @@
           <xs:element name="MedicallyFragile" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Indicates whether the Student receiving special education and related services is:
-        1) in the age range of birth to 22 years, and
-        2) has a serious, ongoing illness or a chronic condition that has lasted or is anticipated to last at least 12 or more months or has required at least one month of hospitalization, and that requires daily, ongoing medical treatments and monitoring by appropriately trained personnel which may include parents or other family members, and
-        3) requires the routine use of medical device or of assistive technology to compensate for the loss of usefulness of a body function needed to participate in activities of daily living, and
-        4) lives with ongoing threat to his or her continued well-being.
-        Aligns with federal requirements.</xs:documentation>
+                      1) in the age range of birth to 22 years, and
+                      2) has a serious, ongoing illness or a chronic condition that has lasted or is anticipated to last at least 12 or more months or has required at least one month of hospitalization, and that requires daily, ongoing medical treatments and monitoring by appropriately trained personnel which may include parents or other family members, and
+                      3) requires the routine use of medical device or of assistive technology to compensate for the loss of usefulness of a body function needed to participate in activities of daily living, and
+                      4) lives with ongoing threat to his or her continued well-being.
+                      Aligns with federal requirements.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LastEvaluationDate" type="xs:date" minOccurs="0">
@@ -5775,10 +5777,10 @@
           <xs:element name="TitleIPartAParticipant" type="TitleIPartAParticipantType">
             <xs:annotation>
               <xs:documentation>An indication of the type of Title I program, if any, in which the student is participating and by which the student is served:
-        Public Targeted Assistance Program 
-        Public Schoolwide Program
-        Private School Students Participating
-        Local Neglected Program.</xs:documentation>
+                      Public Targeted Assistance Program 
+                      Public Schoolwide Program
+                      Private School Students Participating
+                      Local Neglected Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -6135,41 +6137,20 @@
   </xs:complexType>
   <xs:complexType name="AssessmentIdentityType">
     <xs:annotation>
-      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of an Assessment.</xs:documentation>
+      <xs:documentation>Identity of an Assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Identity</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="AssessmentTitle" type="AssessmentTitle">
+      <xs:element name="AssessmentIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>The title or name of the Assessment.</xs:documentation>
+          <xs:documentation>A unique number or alphanumeric code assigned to an assessment.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+      <xs:element name="Namespace" type="URI">
         <xs:annotation>
-          <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The typical grade level for which an assessment is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example:
-        Adult
-        Prekindergarten
-        First grade
-        Second grade
-        ...</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Version" type="Version">
-        <xs:annotation>
-          <xs:documentation>The version identifier for the assessment.</xs:documentation>
+          <xs:documentation>Namespace for the Assessment.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -6220,63 +6201,6 @@
         <ann:TypeGroup>Lookup</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:sequence>
-      <xs:element name="AssessmentTitle" type="AssessmentTitle" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The title or name of the Assessment.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The category of an assessment based on format and content. For example:
-        Achievement test
-        Advanced placement test
-        Alternate assessment/grade-level standards
-        Attitudinal test
-        Cognitive and perceptual skills test
-        ...</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The typical grade level for which an assessment is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example:
-        Adult
-        Prekindergarten
-        First grade
-        Second grade
-        ...</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Version" type="Version" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The version identifier for the assessment.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentFamilyReference" type="AssessmentFamilyReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>References the AssessmentFamily this Assessment is a member of.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="AssessmentReferenceType">
     <xs:annotation>
@@ -6290,7 +6214,7 @@
         <xs:sequence>
           <xs:element name="AssessmentIdentity" type="AssessmentIdentityType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of an Assessment.</xs:documentation>
+              <xs:documentation>Identity of an Assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="AssessmentLookup" type="AssessmentLookupType" minOccurs="0">
@@ -6730,10 +6654,10 @@
       <xs:element name="CourseAttemptResult" type="CourseAttemptResultType">
         <xs:annotation>
           <xs:documentation>The result from the student's attempt to take the course, for example:
-        Pass
-        Fail
-        Incomplete
-        Withdrawn.</xs:documentation>
+                      Pass
+                      Fail
+                      Incomplete
+                      Withdrawn.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="CourseReference" type="CourseReferenceType">
@@ -7599,25 +7523,14 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="Objective" type="Objective">
+      <xs:element name="LearningObjectiveId" type="LearningStandardId">
         <xs:annotation>
-          <xs:documentation>The designated title of the LearningObjective.</xs:documentation>
+          <xs:documentation>The identifier for the specific learning objective in the context of a standard (e.g., 111.15.3.1.A).</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+      <xs:element name="Namespace" type="URI">
         <xs:annotation>
-          <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The grade level for which the LearningObjective is targeted.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-          </xs:appinfo>
+          <xs:documentation>Namespace for the LearningObjective.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -7737,9 +7650,9 @@
       <xs:element name="LeaveEventCategory" type="LeaveEventCategoryType">
         <xs:annotation>
           <xs:documentation>The code describing the type of leave taken, for example:
-        Sick
-        Personal
-        Vacation.</xs:documentation>
+                      Sick
+                      Personal
+                      Vacation.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="StaffReference" type="StaffReferenceType">
@@ -7926,12 +7839,12 @@
       <xs:element name="EmploymentStatus" type="EmploymentStatusDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>Reflects the type of employment or contract desired for the position; for example:
-        Probationary
-        Contractual
-        Substitute/temporary
-        Tenured or permanent
-        Volunteer/no contract
-        ...</xs:documentation>
+                      Probationary
+                      Contractual
+                      Substitute/temporary
+                      Tenured or permanent
+                      Volunteer/no contract
+                      ...</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>EmploymentStatusDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -8739,12 +8652,12 @@
       <xs:element name="EmploymentStatus" type="EmploymentStatusDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>Reflects the type of employment or contract; for example:
-        Probationary
-        Contractual
-        Substitute/temporary
-        Tenured or permanent
-        Volunteer/no contract
-        ...</xs:documentation>
+                      Probationary
+                      Contractual
+                      Substitute/temporary
+                      Tenured or permanent
+                      Volunteer/no contract
+                      ...</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>EmploymentStatusDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -8945,11 +8858,11 @@
       <xs:element name="ProgramAssignment" type="ProgramAssignmentDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>The name of the program for which the individual is assigned; for example:
-        Regular education
-        Title I-Academic
-        Title I-Non-Academic
-        Special Education
-        Bilingual/English as a Second Language.</xs:documentation>
+                      Regular education
+                      Title I-Academic
+                      Title I-Non-Academic
+                      Special Education
+                      Bilingual/English as a Second Language.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>ProgramAssignmentDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -9144,19 +9057,14 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="StudentReference" type="StudentReferenceType">
+      <xs:element name="StudentAssessmentIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>Reference to the Student associated with the Assessment.</xs:documentation>
+          <xs:documentation>A unique number or alphanumeric code assigned to an assessment administered to a student.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="AssessmentReference" type="AssessmentReferenceType">
         <xs:annotation>
           <xs:documentation>Reference to the Assessment taken by the student.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AdministrationDate" type="xs:date">
-        <xs:annotation>
-          <xs:documentation>The month(s), day(s), and year on which an assessment is administered or first day of administration if over multiple days.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -9522,10 +9430,10 @@
       <xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>A code describing the attendance event, for example:
-        Present
-        Unexcused absence
-        Excused absence
-        Tardy.</xs:documentation>
+                      Present
+                      Unexcused absence
+                      Excused absence
+                      Tardy.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -9819,10 +9727,10 @@
       <xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>A code describing the attendance event, for example:
-        Present
-        Unexcused absence
-        Excused absence
-        Tardy.</xs:documentation>
+                      Present
+                      Unexcused absence
+                      Excused absence
+                      Tardy.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -9948,10 +9856,10 @@
       <xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>A code describing the attendance event, for example:
-        Present
-        Unexcused absence
-        Excused absence
-        Tardy.</xs:documentation>
+                      Present
+                      Unexcused absence
+                      Excused absence
+                      Tardy.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -10048,10 +9956,10 @@
       <xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>A code describing the attendance event, for example:
-        Present
-        Unexcused absence
-        Excused absence
-        Tardy.</xs:documentation>
+                      Present
+                      Unexcused absence
+                      Excused absence
+                      Tardy.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -10886,7 +10794,7 @@
       <xs:element name="NameOfCounty" type="NameOfCounty" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The name of the county, parish, borough, or comparable unit (within a state) in 
-                      'which an address is located.</xs:documentation>
+                                    'which an address is located.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="CountyFIPSCode" type="CountyFIPSCode" minOccurs="0">
@@ -10980,9 +10888,9 @@
   <xs:complexType name="AssessmentPerformanceLevel">
     <xs:annotation>
       <xs:documentation>Definition of the performance levels and the associated cut scores. Three styles are supported:
-    1. Specification of performance level by minimum and maximum score
-    2. Specification of performance level by cut score, using only minimum score
-    3. Specification of performance level without any mapping to scores</xs:documentation>
+            1. Specification of performance level by minimum and maximum score
+            2. Specification of performance level by cut score, using only minimum score
+            3. Specification of performance level without any mapping to scores</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
@@ -11064,10 +10972,10 @@
       <xs:element name="AttendanceEventCategory" type="AttendanceEventCategoryDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>A code describing the attendance event, for example:
-        Present
-        Unexcused absence
-        Excused absence
-        Tardy.</xs:documentation>
+                      Present
+                      Unexcused absence
+                      Excused absence
+                      Tardy.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>AttendanceEventCategoryDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -11172,12 +11080,12 @@
       <xs:element name="CalendarEvent" type="CalendarEventDescriptorReferenceType">
         <xs:annotation>
           <xs:documentation>The type of scheduled or unscheduled event for the day. For example:
-        Instructional day
-        Teacher only day
-        Holiday
-        Make-up day
-        Weather day
-        Student late arrival/early dismissal.</xs:documentation>
+                      Instructional day
+                      Teacher only day
+                      Holiday
+                      Make-up day
+                      Weather day
+                      Student late arrival/early dismissal.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>CalendarEventDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -11270,7 +11178,7 @@
   <xs:complexType name="ContentStandard">
     <xs:annotation>
       <xs:documentation>An indication as to whether an assessment conforms to a standard (e.g., local standard,statewide standard, regional standard, association standard).
-    ...</xs:documentation>
+            ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
@@ -11549,9 +11457,9 @@
       <xs:element name="DiplomaLevel" type="DiplomaLevelType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The level of diploma/credential that is awarded to a student in recognition of his/her completion of the curricular requirements.
-        Minimum high school program
-        Recommended high school program
-        Distinguished Achievement Program.</xs:documentation>
+                      Minimum high school program
+                      Recommended high school program
+                      Distinguished Achievement Program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="DiplomaType" type="DiplomaType">
@@ -11703,18 +11611,18 @@
       <xs:element name="Separation" type="SeparationType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Type of employment separation; for example: Voluntary separation, Involuntary separation,
-        Mutual agreement
-        Other, etc.</xs:documentation>
+                      Mutual agreement
+                      Other, etc.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="SeparationReason" type="SeparationReasonDescriptorReferenceType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Reason for terminating the employment; for example:
-        Employment in education
-        Employment outside of education
-        Retirement
-        Family/personal relocation
-        Change of assignment.</xs:documentation>
+                      Employment in education
+                      Employment outside of education
+                      Retirement
+                      Family/personal relocation
+                      Change of assignment.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>SeparationReasonDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -12183,6 +12091,11 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
+      <xs:element name="AssessmentReportingMethod" type="AssessmentReportingMethodType">
+        <xs:annotation>
+          <xs:documentation>The method that the instructor of the class uses to report the performance and achievement of all students. It may be a qualitative method such as individualized teacher comments or a quantitative method such as a letter or numerical grade. In some cases, more than one type of reporting method may be used.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="PostSecondaryInstitution">
@@ -12516,20 +12429,20 @@
       <xs:element name="ResponseIndicator" type="ResponseIndicatorType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Indicator of the response. For example:
-        Nonscorable response
-        Ineffective response
-        Effective response
-        Partial response
-        ...</xs:documentation>
+                      Nonscorable response
+                      Ineffective response
+                      Effective response
+                      Partial response
+                      ...</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="AssessmentItemResult" type="AssessmentItemResultType">
         <xs:annotation>
           <xs:documentation>The analyzed result of a student's response to an assessment item. For example:
-        Correct
-        Incorrect
-         Met standard
-        ...</xs:documentation>
+                      Correct
+                      Incorrect
+                       Met standard
+                      ...</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="RawScoreResult" type="xs:int" minOccurs="0">
@@ -13156,10 +13069,10 @@
   <xs:simpleType name="AdministrationEnvironmentType">
     <xs:annotation>
       <xs:documentation>The environment in which the test was administered. For example:
-    Electronic
-    Classroom
-    Testing Center
-    ...</xs:documentation>
+            Electronic
+            Classroom
+            Testing Center
+            ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13210,12 +13123,12 @@
   <xs:simpleType name="AssessmentCategoryMapType">
     <xs:annotation>
       <xs:documentation>The category of an assessment based on format and content. For example:
-        Achievement test
-        Advanced placement test
-        Alternate assessment/grade-level standards
-        Attitudinal test
-        Cognitive and perceptual skills test
-        ...</xs:documentation>
+                Achievement test
+                Advanced placement test
+                Alternate assessment/grade-level standards
+                Attitudinal test
+                Cognitive and perceptual skills test
+                ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13606,10 +13519,10 @@
   <xs:simpleType name="AssessmentItemResultType">
     <xs:annotation>
       <xs:documentation>The analyzed result of a student's response to an assessment item.. For example:
-    Correct
-    Incorrect
-    Met standard
-    ...</xs:documentation>
+            Correct
+            Incorrect
+            Met standard
+            ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -13940,13 +13853,13 @@
   <xs:simpleType name="CalendarEventMapType">
     <xs:annotation>
       <xs:documentation>The type of scheduled or unscheduled event for the day. For example:
-        Instructional day
-        Teacher only day
-        Holiday
-        Make-up day
-        Weather day
-        Student late arrival/early dismissal
-        ...</xs:documentation>
+                Instructional day
+                Teacher only day
+                Holiday
+                Make-up day
+                Weather day
+                Student late arrival/early dismissal
+                ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -14492,10 +14405,10 @@
   <xs:simpleType name="CourseAttemptResultType">
     <xs:annotation>
       <xs:documentation>The result from the student's attempt to take the course, for example:
-    Pass
-    Fail
-    Incomplete
-    Withdrawn</xs:documentation>
+            Pass
+            Fail
+            Incomplete
+            Withdrawn</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -15661,8 +15574,8 @@
   <xs:simpleType name="EducationPlanType">
     <xs:annotation>
       <xs:documentation>The type of education plan(s) the student is following, if appropriate. For example:
-    Special education
-    Vocational.</xs:documentation>
+            Special education
+            Vocational.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -18423,14 +18336,14 @@
   <xs:simpleType name="ReasonNotTestedType">
     <xs:annotation>
       <xs:documentation>The primary reason student is not tested. For example:
-    Absent
-    Refusal by parent
-    Refusal by student
-    Medical waiver
-    Illness
-    Disruptive behavior
-    LEP Exempt
-    '...</xs:documentation>
+            Absent
+            Refusal by parent
+            Refusal by student
+            Medical waiver
+            Illness
+            Disruptive behavior
+            LEP Exempt
+            '...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -18901,11 +18814,11 @@
   <xs:simpleType name="ResponseIndicatorType">
     <xs:annotation>
       <xs:documentation>Indicator of the response.  For example:
-    Nonscorable response
-    Ineffective response
-    Effective response
-    Partial response
-    ...</xs:documentation>
+            Nonscorable response
+            Ineffective response
+            Effective response
+            Partial response
+            ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -19046,10 +18959,10 @@
   <xs:simpleType name="RetestIndicatorType">
     <xs:annotation>
       <xs:documentation>Indicator if the test was retaken.  For example:
-    Primary administration
-    First retest
-    Second retest
-    ...</xs:documentation>
+            Primary administration
+            First retest
+            Second retest
+            ...</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Enumeration</ann:TypeGroup>
       </xs:appinfo>
@@ -20808,9 +20721,9 @@
       <xs:enumeration value="Rifle/Shotgun">
         <xs:annotation>
           <xs:documentation>Shotgun:
-A weapon designed or redesigned, made or remade, and intended to be fired from the shoulder and designed or redesigned and made or remade to use the energy of an explosive to fire through a smooth bore either a number of ball shots or a single projectile for each single pull of the trigger.
-Rifle:
-A weapon designed or redesigned, made or remade, and intended to be fired from the shoulder and designed or redesigned and made or remade to use the energy of an explosive to fire only a single projectile through a rifled bore for each single pull of the trigger.</xs:documentation>
+            A weapon designed or redesigned, made or remade, and intended to be fired from the shoulder and designed or redesigned and made or remade to use the energy of an explosive to fire through a smooth bore either a number of ball shots or a single projectile for each single pull of the trigger.
+            Rifle:
+            A weapon designed or redesigned, made or remade, and intended to be fired from the shoulder and designed or redesigned and made or remade to use the energy of an explosive to fire only a single projectile through a rifled bore for each single pull of the trigger.</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Other Firearm">
@@ -20975,7 +20888,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="60" />
+      <xs:maxLength value="100" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="AttendanceEventReason">
