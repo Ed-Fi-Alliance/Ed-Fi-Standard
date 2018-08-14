@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0310" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0310 ../Schemas/Bulk/Interchange-Descriptors.xsd">
+	<CostRateDescriptor>
+		<CodeValue>Flat Fee</CodeValue>
+		<ShortDescription>Flat Fee</ShortDescription>
+		<Description>Flat Fee</Description>
+		<Namespace>uri://ed-fi.org/CostRateDescriptor</Namespace>
+	</CostRateDescriptor>
+	<CostRateDescriptor>
+		<CodeValue>Per Student</CodeValue>
+		<ShortDescription>Per Student</ShortDescription>
+		<Description>Per Student</Description>
+		<Namespace>uri://ed-fi.org/CostRateDescriptor</Namespace>
+	</CostRateDescriptor>
+</InterchangeDescriptors>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0310" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0310 ../Schemas/Bulk/Interchange-Descriptors.xsd">
+	<ResidencyStatusDescriptor>
+		<CodeValue>Resident of admin unit and school area</CodeValue>
+		<ShortDescription>Resident of administrative unit and usual school attendance area</ShortDescription>
+		<Description>Resident of administrative unit and usual school attendance area</Description>
+		<Namespace>uri://ed-fi.org/ResidencyStatusDescriptor</Namespace>
+	</ResidencyStatusDescriptor>
+	<ResidencyStatusDescriptor>
+		<CodeValue>Resident of admin unit, but other school area</CodeValue>
+		<ShortDescription>Resident of administrative unit, but of other school attendance area</ShortDescription>
+		<Description>Resident of administrative unit, but of other school attendance area</Description>
+		<Namespace>uri://ed-fi.org/ResidencyStatusDescriptor</Namespace>
+	</ResidencyStatusDescriptor>
+	<ResidencyStatusDescriptor>
+		<CodeValue>Resident of admin unit that crosses states</CodeValue>
+		<ShortDescription>Resident of an administrative unit that crosses state boundaries</ShortDescription>
+		<Description>Resident of an administrative unit that crosses state boundaries</Description>
+		<Namespace>uri://ed-fi.org/ResidencyStatusDescriptor</Namespace>
+	</ResidencyStatusDescriptor>
+	<ResidencyStatusDescriptor>
+		<CodeValue>Resident of another state</CodeValue>
+		<ShortDescription>Resident of another state</ShortDescription>
+		<Description>Resident of another state</Description>
+		<Namespace>uri://ed-fi.org/ResidencyStatusDescriptor</Namespace>
+	</ResidencyStatusDescriptor>
+	<ResidencyStatusDescriptor>
+		<CodeValue>Resident of this state, but not of this admin unit</CodeValue>
+		<ShortDescription>Resident of this state, but not of this administrative unit</ShortDescription>
+		<Description>Resident of this state, but not of this administrative unit</Description>
+		<Namespace>uri://ed-fi.org/ResidencyStatusDescriptor</Namespace>
+	</ResidencyStatusDescriptor>
+</InterchangeDescriptors>

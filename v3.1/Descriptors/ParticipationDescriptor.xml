@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0310" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0310 ../Schemas/Bulk/Interchange-Descriptors.xsd">
+	<ParticipationDescriptor>
+		<CodeValue>Completed</CodeValue>
+		<ShortDescription>Completed</ShortDescription>
+		<Description>Completed</Description>
+		<Namespace>uri://ed-fi.org/ParticipationDescriptor</Namespace>
+	</ParticipationDescriptor>
+	<ParticipationDescriptor>
+		<CodeValue>Attempted</CodeValue>
+		<ShortDescription>Attempted</ShortDescription>
+		<Description>Attempted</Description>
+		<Namespace>uri://ed-fi.org/ParticipationDescriptor</Namespace>
+	</ParticipationDescriptor>
+	<ParticipationDescriptor>
+		<CodeValue>Did Not Take</CodeValue>
+		<ShortDescription>Did Not Take</ShortDescription>
+		<Description>Did Not Take</Description>
+		<Namespace>uri://ed-fi.org/ParticipationDescriptor</Namespace>
+	</ParticipationDescriptor>
+	<ParticipationDescriptor>
+		<CodeValue>Unable Due To Medical Emergency</CodeValue>
+		<ShortDescription>Unable Due To Medical Emergency</ShortDescription>
+		<Description>Unable Due To Medical Emergency</Description>
+		<Namespace>uri://ed-fi.org/ParticipationDescriptor</Namespace>
+	</ParticipationDescriptor>
+</InterchangeDescriptors>
