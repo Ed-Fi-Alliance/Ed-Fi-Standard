@@ -216,12 +216,17 @@
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
+          <xs:element name="AssessmentIdentifier" type="IdentificationCode">
+            <xs:annotation>
+              <xs:documentation>A unique number or alphanumeric code assigned to an assessment.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="AssessmentTitle" type="AssessmentTitle">
             <xs:annotation>
               <xs:documentation>The title or name of the Assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" maxOccurs="unbounded">
+          <xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity.</xs:documentation>
             </xs:annotation>
@@ -240,7 +245,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
               <xs:appinfo>
@@ -248,27 +253,9 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType">
+          <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The typical grade level for which an assessment is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example:
-                      Adult
-                      Prekindergarten
-                      First grade
-                      Second grade
-                      ...</xs:documentation>
-              <xs:appinfo>
-                <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-              </xs:appinfo>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="LowestAssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
-            <xs:annotation>
-              <xs:documentation>If the assessment spans a range of grades, then this attribute holds the lowest grade assessed. If only one grade level is assessed, then this attribute is omitted. For example:
-                      Adult
-                      Prekindergarten
-                      First grade
-                      Second grade
-                      ...</xs:documentation>
+              <xs:documentation>The grade level(s) for which an assessment is designed. The semantics of null is assumed to mean that the assessment is not associated with any grade level.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -305,7 +292,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AssessmentVersion" type="AssessmentVersion">
+          <xs:element name="AssessmentVersion" type="AssessmentVersion" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The version identifier for the assessment.</xs:documentation>
             </xs:annotation>
@@ -350,6 +337,16 @@
           <xs:element name="Namespace" type="URI">
             <xs:annotation>
               <xs:documentation>Namespace for the Assessment.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The EducationOrganization for which the assessment was developed and in which it was employed.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AdaptiveAssessment" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates that the assessment is adaptive.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -1329,7 +1326,7 @@
           </xs:element>
           <xs:element name="IEPPlacementMeetingIndicator" type="xs:boolean" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>An indication as to whether an offense and/or disciplinary action resulted in a meeting of a student’s Individualized Education Program (IEP) team to determine appropriate placement.</xs:documentation>
+              <xs:documentation>An indication as to whether an offense and/or disciplinary action resulted in a meeting of a student's Individualized Education Program (IEP) team to determine appropriate placement.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -2128,7 +2125,7 @@
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="LearningObjectiveId" type="LearningStandardId" minOccurs="0">
+          <xs:element name="LearningObjectiveId" type="LearningStandardId">
             <xs:annotation>
               <xs:documentation>The identifier for the specific learning objective in the context of a standard (e.g., 111.15.3.1.A).</xs:documentation>
             </xs:annotation>
@@ -2148,7 +2145,7 @@
               <xs:documentation>The description of the LearningObjective.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
               <xs:appinfo>
@@ -2156,9 +2153,9 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType">
+          <xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The grade level for which the LearningObjective is targeted.</xs:documentation>
+              <xs:documentation>The grade level for which the LearningObjective is targeted. The semantics of null is assumed to mean that the learning objective is not associated with any grade level.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -2403,9 +2400,9 @@
           <xs:element name="AssessmentPerformanceLevel" type="AssessmentPerformanceLevel" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Definition of the performance levels and the associated cut scores. Three styles are supported:
-                      1. Specification of performance level by minimum and maximum score    
-                      2. Specification of performance level by cut score, using only minimum score    
-                      3. Specification of performance level without any mapping to scores.</xs:documentation>
+                      1. Specification of performance level by minimum and maximum score
+                      2. Specification of performance level by cut score, using only minimum score
+                      3. Specification of performance level without any mapping to scores</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="PercentOfAssessment" type="Percent" minOccurs="0">
@@ -3676,14 +3673,19 @@
     <xs:complexContent>
       <xs:extension base="ComplexObjectType">
         <xs:sequence>
-          <xs:element name="AdministrationDate" type="xs:date">
+          <xs:element name="StudentAssessmentIdentifier" type="IdentificationCode">
             <xs:annotation>
-              <xs:documentation>The month(s), day(s), and year on which an assessment is administered or first day of administration if over multiple days.</xs:documentation>
+              <xs:documentation>A unique number or alphanumeric code assigned to an assessment administered to a student.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AdministrationEndDate" type="xs:date" minOccurs="0">
+          <xs:element name="AdministrationDate" type="xs:dateTime">
             <xs:annotation>
-              <xs:documentation>Assessment Administration End Date, if administered over multiple days.</xs:documentation>
+              <xs:documentation>The date and time an assessment was completed by the student. The use of ISO-8601 formats with a timezone designator (UTC or time offset) is recommended in order to prevent ambiguity due to time zones.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AdministrationEndDate" type="xs:dateTime" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The date and time an assessment administration ended.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="SerialNumber" type="IdentificationCode" minOccurs="0">
@@ -5354,7 +5356,7 @@
   </xs:complexType>
   <xs:complexType name="ProgressDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines yearly progress or growth from last year’s assessment.</xs:documentation>
+      <xs:documentation>This descriptor defines yearly progress or growth from last year's assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -6914,7 +6916,7 @@
           </xs:element>
           <xs:element name="QualifyingArrivalDate" type="xs:date" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The Qualifying Arrival Date (QAD) is the date the child joins the worker who has already moved, or the date when the worker joins the child who has already moved. The QAD is the date that the child’s eligibility for the MEP begins. The QAD is not affected by subsequent non-qualifying moves.</xs:documentation>
+              <xs:documentation>The Qualifying Arrival Date (QAD) is the date the child joins the worker who has already moved, or the date when the worker joins the child who has already moved. The QAD is the date that the child's eligibility for the MEP begins. The QAD is not affected by subsequent non-qualifying moves.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="StateResidencyDate" type="xs:date" minOccurs="0">
@@ -6924,7 +6926,7 @@
           </xs:element>
           <xs:element name="EligibilityExpirationDate" type="xs:date" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The Eligibility Expiration Date is used to determine end of eligibility and to account for a child’s eligibility expiring earlier than 36 months from the child’s QAD. A child’s eligibility would end earlier than 36 months from the child’s QAD, if the child is no longer entitled to a free public education (e.g., graduated with a high school diploma, obtained a high school equivalency diploma (HSED), or for other reasons as determined by States’ requirements), or if the child passes away.</xs:documentation>
+              <xs:documentation>The Eligibility Expiration Date is used to determine end of eligibility and to account for a child's eligibility expiring earlier than 36 months from the child's QAD. A child's eligibility would end earlier than 36 months from the child's QAD, if the child is no longer entitled to a free public education (e.g., graduated with a high school diploma, obtained a high school equivalency diploma (HSED), or for other reasons as determined by States' requirements), or if the child passes away.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="MigrantEducationProgramService" type="MigrantEducationProgramService" minOccurs="0" maxOccurs="unbounded">
@@ -7690,41 +7692,20 @@
   </xs:complexType>
   <xs:complexType name="AssessmentIdentityType">
     <xs:annotation>
-      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of an Assessment.</xs:documentation>
+      <xs:documentation>Identity of an Assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Identity</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="AssessmentTitle" type="AssessmentTitle">
+      <xs:element name="AssessmentIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>The title or name of the Assessment.</xs:documentation>
+          <xs:documentation>A unique number or alphanumeric code assigned to an assessment.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+      <xs:element name="Namespace" type="URI">
         <xs:annotation>
-          <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The typical grade level for which an assessment is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example:
-                      Adult
-                      Prekindergarten
-                      First grade
-                      Second grade
-                      ...</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentVersion" type="AssessmentVersion">
-        <xs:annotation>
-          <xs:documentation>The version identifier for the assessment.</xs:documentation>
+          <xs:documentation>Namespace for the Assessment.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -7775,58 +7756,6 @@
         <ann:TypeGroup>Lookup</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
-    <xs:sequence>
-      <xs:element name="AssessmentTitle" type="AssessmentTitle" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The title or name of the Assessment.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentIdentificationCode" type="AssessmentIdentificationCode" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>A unique number or alphanumeric code assigned to an assessment by a school, school system, a state, or other agency or entity.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The category of an assessment based on format and content. For example:
-                      Achievement test
-                      Advanced placement test
-                      Alternate assessment/grade-level standards
-                      Attitudinal test
-                      Cognitive and perceptual skills test
-                      ...</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AssessmentCategoryDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessedGradeLevel" type="GradeLevelDescriptorReferenceType" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The typical grade level for which an assessment is designed. If the assessment spans a range of grades, then this attribute holds the highest grade assessed. If only one grade level is assessed then only this attribute is used. For example:
-                      Adult
-                      Prekindergarten
-                      First grade
-                      Second grade
-                      ...</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="AssessmentVersion" type="AssessmentVersion" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>The version identifier for the assessment.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="AssessmentReferenceType">
     <xs:annotation>
@@ -7840,7 +7769,7 @@
         <xs:sequence>
           <xs:element name="AssessmentIdentity" type="AssessmentIdentityType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of an Assessment.</xs:documentation>
+              <xs:documentation>Identity of an Assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="AssessmentLookup" type="AssessmentLookupType" minOccurs="0">
@@ -9406,25 +9335,14 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="Objective" type="Objective">
+      <xs:element name="LearningObjectiveId" type="LearningStandardId">
         <xs:annotation>
-          <xs:documentation>The designated title of the LearningObjective.</xs:documentation>
+          <xs:documentation>The identifier for the specific learning objective in the context of a standard (e.g., 111.15.3.1.A).</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+      <xs:element name="Namespace" type="URI">
         <xs:annotation>
-          <xs:documentation>The description of the content or subject area (e.g., arts, mathematics, reading, stenography, or a foreign language) of an assessment.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="ObjectiveGradeLevel" type="GradeLevelDescriptorReferenceType">
-        <xs:annotation>
-          <xs:documentation>The grade level for which the LearningObjective is targeted.</xs:documentation>
-          <xs:appinfo>
-            <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
-          </xs:appinfo>
+          <xs:documentation>Namespace for the LearningObjective.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -11036,14 +10954,9 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="AdministrationDate" type="xs:date">
+      <xs:element name="StudentAssessmentIdentifier" type="IdentificationCode">
         <xs:annotation>
-          <xs:documentation>The month(s), day(s), and year on which an assessment is administered or first day of administration if over multiple days.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="StudentReference" type="StudentReferenceType">
-        <xs:annotation>
-          <xs:documentation>Reference to the Student associated with the Assessment.</xs:documentation>
+          <xs:documentation>A unique number or alphanumeric code assigned to an assessment administered to a student.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="AssessmentReference" type="AssessmentReferenceType">
@@ -13313,7 +13226,7 @@
   </xs:simpleType>
   <xs:simpleType name="ProgressDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>This descriptor defines yearly progress or growth from last year’s assessment.</xs:documentation>
+      <xs:documentation>This descriptor defines yearly progress or growth from last year's assessment.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -14769,7 +14682,7 @@
       </xs:element>
       <xs:element name="Progress" type="ProgressDescriptorReferenceType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>The yearly progress or growth from last year’s assessment.</xs:documentation>
+          <xs:documentation>The yearly progress or growth from last year's assessment.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>ProgressDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -15331,7 +15244,7 @@
       </xs:element>
       <xs:element name="SchoolImprovementReservedFundsPercentage" type="Percent" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED's regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.</xs:documentation>
+          <xs:documentation>An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and 200.100(a) of ED's regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="SupplementalEducationalServicesFundsSpent" type="Currency" minOccurs="0">
@@ -16591,7 +16504,7 @@
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="60" />
+      <xs:maxLength value="100" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="AttendanceEventReason">
