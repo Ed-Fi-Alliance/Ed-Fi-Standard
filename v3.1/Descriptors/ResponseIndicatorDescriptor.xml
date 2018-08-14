@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeDescriptors xmlns="http://ed-fi.org/0310" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0310 ../Schemas/Bulk/Interchange-Descriptors.xsd">
+	<ResponseIndicatorDescriptor>
+		<CodeValue>Effective response</CodeValue>
+		<ShortDescription>Effective response</ShortDescription>
+		<Description>Effective response</Description>
+		<Namespace>uri://ed-fi.org/ResponseIndicatorDescriptor</Namespace>
+	</ResponseIndicatorDescriptor>
+	<ResponseIndicatorDescriptor>
+		<CodeValue>Ineffective response</CodeValue>
+		<ShortDescription>Ineffective response</ShortDescription>
+		<Description>Ineffective response</Description>
+		<Namespace>uri://ed-fi.org/ResponseIndicatorDescriptor</Namespace>
+	</ResponseIndicatorDescriptor>
+	<ResponseIndicatorDescriptor>
+		<CodeValue>Nonscorable response</CodeValue>
+		<ShortDescription>Nonscorable response</ShortDescription>
+		<Description>Nonscorable response</Description>
+		<Namespace>uri://ed-fi.org/ResponseIndicatorDescriptor</Namespace>
+	</ResponseIndicatorDescriptor>
+	<ResponseIndicatorDescriptor>
+		<CodeValue>Partial response</CodeValue>
+		<ShortDescription>Partial response</ShortDescription>
+		<Description>Partial response</Description>
+		<Namespace>uri://ed-fi.org/ResponseIndicatorDescriptor</Namespace>
+	</ResponseIndicatorDescriptor>
+</InterchangeDescriptors>
