@@ -38,7 +38,7 @@
               <xs:documentation>The end date for the academic week.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="TotalInstructionalDays" type="xs:int">
+          <xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
             <xs:annotation>
               <xs:documentation>The total instructional days during the academic week.</xs:documentation>
             </xs:annotation>
@@ -1025,12 +1025,12 @@
               <xs:documentation>The date of the DisciplineAction.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="DisciplineActionLength" type="xs:integer" minOccurs="0">
+          <xs:element name="DisciplineActionLength" type="DisciplineActionLength" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The length of time in school days for the DisciplineAction (e.g. removal, detention), if applicable.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="ActualDisciplineActionLength" type="xs:integer" minOccurs="0">
+          <xs:element name="ActualDisciplineActionLength" type="DisciplineActionLength" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Indicates the actual length in school days of a student's disciplinary assignment.</xs:documentation>
             </xs:annotation>
@@ -1839,7 +1839,7 @@
               <xs:documentation>A subset of students that are the focus of the InterventionStudy.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="2">
+          <xs:element name="AppropriateSex" type="SexType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Sexes participating in this study. If omitted, considered generally applicable.</xs:documentation>
             </xs:annotation>
@@ -2895,7 +2895,7 @@
               <xs:documentation>Month, day and year of the last day of the Session.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="TotalInstructionalDays" type="xs:int">
+          <xs:element name="TotalInstructionalDays" type="TotalInstructionalDays">
             <xs:annotation>
               <xs:documentation>The total number of instructional days in the school calendar.</xs:documentation>
             </xs:annotation>
@@ -11318,7 +11318,7 @@
           <xs:documentation>An indication of the pre-determined criteria for granting the teaching credential that an individual holds.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="StateOfIssueStateAbbreviationType" type="StateAbbreviationType" minOccurs="0">
+      <xs:element name="StateOfIssueStateAbbreviation" type="StateAbbreviationType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The abbreviation for the name of the state (within the United States) or extra-state jurisdiction in which a license/credential was issued.</xs:documentation>
         </xs:annotation>
@@ -11930,7 +11930,7 @@
       </xs:element>
       <xs:element name="SchoolImprovementReservedFundsPercentage" type="Percent" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED's regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.</xs:documentation>
+          <xs:documentation>An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and 200.100(a) of ED's regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="SupplementalEducationalServicesFundsSpent" type="Currency" minOccurs="0">
@@ -12606,7 +12606,7 @@
           <xs:documentation>The type of communication number listed for an individual or organization.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="OrderOfPriority" type="xs:positiveInteger" minOccurs="0">
+      <xs:element name="OrderOfPriority" type="OrderOfPriority" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The order of priority assigned to telephone numbers to define which number to attempt first, second, etc.</xs:documentation>
         </xs:annotation>
@@ -21921,6 +21921,15 @@
     </xs:annotation>
     <xs:restriction base="xs:decimal" />
   </xs:simpleType>
+  <xs:simpleType name="DisciplineActionLength">
+    <xs:annotation>
+      <xs:documentation>The length, in school days, of the disciplinary action.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int" />
+  </xs:simpleType>
   <xs:simpleType name="Duration">
     <xs:annotation>
       <xs:documentation>The actual or estimated number of clock minutes for a given class.</xs:documentation>
@@ -22064,6 +22073,17 @@
     <xs:restriction base="xs:decimal">
       <xs:totalDigits value="9" />
       <xs:fractionDigits value="2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="OrderOfPriority">
+    <xs:annotation>
+      <xs:documentation>The order of priority assigned to telephone numbers to define which number to attempt first, second, etc.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="Percent">
