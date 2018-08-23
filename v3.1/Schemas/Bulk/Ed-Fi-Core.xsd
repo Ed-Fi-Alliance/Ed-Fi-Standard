@@ -10959,6 +10959,11 @@
           <xs:documentation>A unique number or alphanumeric code assigned to an assessment administered to a student.</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>Reference to the Student associated with the Assessment.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="AssessmentReference" type="AssessmentReferenceType">
         <xs:annotation>
           <xs:documentation>Reference to the Assessment taken by the student.</xs:documentation>
