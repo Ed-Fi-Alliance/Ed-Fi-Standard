@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <InterchangeStudentAssessment xmlns="http://ed-fi.org/0300" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0300 ../../Schemas/Bulk/Interchange-StudentAssessment.xsd">
-	<AssessmentReference>
-		<AssessmentIdentity>
-			<AssessmentTitle>CBA de Ciencia de Noviembre 2012-2013</AssessmentTitle>
-			<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
-			<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Fourth grade</AssessedGradeLevel>
-			<AssessmentVersion>5284</AssessmentVersion>
-		</AssessmentIdentity>
-	</AssessmentReference>
 	<StudentAssessment>
 		<AdministrationDate>2012-09-28</AdministrationDate>
 		<AdministrationLanguage>uri://ed-fi.org/LanguageDescriptor#eng</AdministrationLanguage>
@@ -3368,4 +3360,25 @@
 			</AssessmentItemReference>
 		</StudentAssessmentItem>
 	</StudentAssessment>
+	<AssessmentReference>
+		<AssessmentIdentity>
+			<AssessmentTitle>CBA de Ciencia de Noviembre 2012-2013</AssessmentTitle>
+			<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
+			<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Fourth grade</AssessedGradeLevel>
+			<AssessmentVersion>5284</AssessmentVersion>
+		</AssessmentIdentity>
+	</AssessmentReference>
+	<AssessmentItemReference>
+		<AssessmentItemIdentity>
+			<IdentificationCode>11242102</IdentificationCode>
+			<AssessmentReference>
+				<AssessmentIdentity>
+					<AssessmentTitle>CBA de Ciencia de Noviembre 2012-2013</AssessmentTitle>
+					<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
+					<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Fourth grade</AssessedGradeLevel>
+					<AssessmentVersion>5284</AssessmentVersion>
+				</AssessmentIdentity>
+			</AssessmentReference>
+		</AssessmentItemIdentity>
+	</AssessmentItemReference>
 </InterchangeStudentAssessment>
