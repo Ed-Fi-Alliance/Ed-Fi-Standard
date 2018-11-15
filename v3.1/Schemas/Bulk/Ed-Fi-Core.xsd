@@ -2238,7 +2238,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType">
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Subject area for the LearningStandard.</xs:documentation>
               <xs:appinfo>
