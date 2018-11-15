@@ -16989,18 +16989,6 @@
       <xs:maxLength value="20" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="DisplacementStatus">
-    <xs:annotation>
-      <xs:documentation>Indicates a state health or weather related event that displaces a group of students, and may require additional funding, educational, or social services.</xs:documentation>
-      <xs:appinfo>
-        <ann:TypeGroup>Simple</ann:TypeGroup>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:restriction base="xs:string">
-      <xs:minLength value="1" />
-      <xs:maxLength value="30" />
-    </xs:restriction>
-  </xs:simpleType>
   <xs:simpleType name="DocumentTitle">
     <xs:annotation>
       <xs:documentation>The title of the document given by the issuer.</xs:documentation>
