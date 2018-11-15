@@ -5079,6 +5079,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="LocaleDescriptor">
+    <xs:annotation>
+      <xs:documentation>A general geographic indicator that categorizes U.S. territory (e.g., City, Suburban).</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="LocalEducationAgencyCategoryDescriptor">
     <xs:annotation>
       <xs:documentation>The category of local education agency/district. For example: Independent or Charter.</xs:documentation>
@@ -13004,6 +13015,15 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="LocaleDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>A general geographic indicator that categorizes U.S. territory (e.g., City, Suburban).</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="LocalEducationAgencyCategoryDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The category of local education agency/district. For example: Independent or Charter.</xs:documentation>
@@ -13874,6 +13894,14 @@
       <xs:element name="CongressionalDistrict" type="CongressionalDistrict" minOccurs="0">
         <xs:annotation>
           <xs:documentation>The congressional district in which an address is located.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Locale" type="LocaleDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>A general geographic indicator that categorizes U.S. territory (e.g., City, Suburban).</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>LocaleDescriptor</ann:Descriptor>
+          </xs:appinfo>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
