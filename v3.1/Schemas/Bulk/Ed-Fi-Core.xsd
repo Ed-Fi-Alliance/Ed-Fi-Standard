@@ -13871,6 +13871,11 @@
           <xs:documentation>An indication that the address should not be published.</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="CongressionalDistrict" type="CongressionalDistrict" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The congressional district in which an address is located.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="AssessmentIdentificationCode">
@@ -16666,6 +16671,18 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CongressionalDistrict">
+    <xs:annotation>
+      <xs:documentation>The congressional district in which an address is located.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="30" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ContactRestrictions">
