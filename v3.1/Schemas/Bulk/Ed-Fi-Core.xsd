@@ -1034,6 +1034,14 @@
               <xs:documentation>The course being offered by the school.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="CourseLevelCharacteristic" type="CourseLevelCharacteristicDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The type of specific program or designation with which the course offering is associated (e.g., AP, IB, Dual Credit, CTE). This collection should only be populated if it differs from the Course Level Characteristics identified at the Course level.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>CourseLevelCharacteristicDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -3135,6 +3143,14 @@
           <xs:element name="ProgramReference" type="ProgramReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>Optional reference to program (e.g., CTE) to which the Section is associated.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseLevelCharacteristic" type="CourseLevelCharacteristicDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The type of specific program or designation with which the section is associated (e.g., AP, IB, Dual Credit, CTE). This collection should only be populated if it differs from the Course Level Characteristics identified at the Course Offering level.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>CourseLevelCharacteristicDescriptor</ann:Descriptor>
+              </xs:appinfo>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
