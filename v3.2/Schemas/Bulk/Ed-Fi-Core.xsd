@@ -462,6 +462,16 @@
               <xs:documentation>An alternate name for the day (e.g., Red, Blue).</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="StartTime" type="xs:time" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of the time of day the bell schedule begins.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EndTime" type="xs:time" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of the time of day the bell schedule ends.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
