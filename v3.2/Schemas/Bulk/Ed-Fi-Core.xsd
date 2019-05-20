@@ -2815,7 +2815,7 @@
           </xs:element>
           <xs:element name="Service" type="ServiceDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-							<xs:documentation>Defines the services this program provides to students.</xs:documentation>
+              <xs:documentation>DEPRECATED: Defines the services this program provides to students.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>ServiceDescriptor</ann:Descriptor>
               </xs:appinfo>
