@@ -1737,6 +1737,11 @@
               <xs:documentation>Identifies the grading period for the GradebookEntry.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="DueDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The date the assignment, homework, or assessment is due.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
