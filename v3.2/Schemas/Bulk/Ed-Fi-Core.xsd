@@ -3994,7 +3994,7 @@
               <xs:documentation>Relates the Intervention associated with the AttendanceEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
-					<xs:element name="InterventionDuration" type="xs:int" minOccurs="0">
+          <xs:element name="InterventionDuration" type="AttendanceEventDuration" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The duration in minutes in which the student participated in the intervention during this instance.</xs:documentation>
             </xs:annotation>
@@ -4087,6 +4087,11 @@
               <xs:documentation>Relates the Program associated with the AttendanceEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="ProgramAttendanceDuration" type="AttendanceEventDuration" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The duration in minutes of the program attendance event.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -4121,6 +4126,11 @@
               <xs:documentation>Relates the Session associated with the AttendanceEvent.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="SchoolAttendanceDuration" type="AttendanceEventDuration" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The duration in minutes of the school attendance event.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -4148,6 +4158,11 @@
           <xs:element name="SectionReference" type="SectionReferenceType">
             <xs:annotation>
               <xs:documentation>Relates the Section associated with the AttendanceEvent.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SectionAttendanceDuration" type="AttendanceEventDuration" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The duration in minutes of the section attendance event.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -17675,6 +17690,18 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:restriction base="xs:int" />
+  </xs:simpleType>
+  <xs:simpleType name="AttendanceEventDuration">
+    <xs:annotation>
+      <xs:documentation>The duration in minutes of the attendance event.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="1440" />
+    </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="Capacity">
     <xs:annotation>
