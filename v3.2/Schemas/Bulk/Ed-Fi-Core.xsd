@@ -5917,6 +5917,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="TitleIPartAProgramServiceDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a Title I Part A program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="TitleIPartASchoolDesignationDescriptor">
     <xs:annotation>
       <xs:documentation>Denotes the Title I Part A designation for the school.</xs:documentation>
@@ -7450,9 +7461,14 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="TitleIPartAProgramService" type="TitleIPartAProgramService" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the service(s) being provided to the Student by the Title I Part A Program.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-							<xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
+              <xs:documentation>DEPRECATED: Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -13715,6 +13731,15 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="TitleIPartAProgramServiceDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a Title I Part A program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="TitleIPartASchoolDesignationDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>Denotes the Title I Part A designation for the school.</xs:documentation>
@@ -16121,6 +16146,39 @@
       <xs:element name="DoNotPublishIndicator" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>An indication that the telephone number should not be published.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TitleIPartAProgramService">
+    <xs:annotation>
+      <xs:documentation>The student's Title I Part A program service information.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="TitleIPartAProgramService" type="TitleIPartAProgramServiceDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the service being provided to the student by the Title I Part A Program.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>TitleIPartAProgramServiceDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PrimaryIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>True if service is a primary service.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Last date the Student was in this option for the current school year.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
