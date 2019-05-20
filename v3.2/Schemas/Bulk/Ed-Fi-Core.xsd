@@ -4668,6 +4668,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="CTEProgramServiceDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a CTE program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="CurriculumUsedDescriptor">
     <xs:annotation>
       <xs:documentation>The type of curriculum used in an early learning classroom or group.</xs:documentation>
@@ -6590,12 +6601,12 @@
         <xs:sequence>
           <xs:element name="CTEProgram" type="CTEProgram" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-							<xs:documentation>The career cluster representing the career path of the Vocational/Career Tech concentrator.</xs:documentation>
+              <xs:documentation>DEPRECATED: The career cluster representing the career path of the Vocational/Career Tech concentrator.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-							<xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
+              <xs:documentation>DEPRECATED: Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="NonTraditionalGenderStatus" type="xs:boolean" minOccurs="0">
@@ -6615,6 +6626,11 @@
               <xs:appinfo>
                 <ann:Descriptor>TechnicalSkillsAssessmentDescriptor</ann:Descriptor>
               </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CTEProgramService" type="CTEProgramService" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the CTE Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -12706,6 +12722,15 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="CTEProgramServiceDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the services provided by an education organization to populations of students associated with a CTE program.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="CurriculumUsedDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The type of curriculum used in an early learning classroom or group.</xs:documentation>
@@ -14550,6 +14575,44 @@
       <xs:element name="CTEProgramCompletionIndicator" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>A boolean indicator of whether the Student has completed the CTEProgram.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CTEProgramService">
+    <xs:annotation>
+      <xs:documentation>The student's CTE program service information.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CTEProgramService" type="CTEProgramServiceDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>Indicates the service being provided to the student by the CTE Program.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>CTEProgramServiceDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PrimaryIndicator" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>True if service is a primary service.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ServiceEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Last date the Student was in this option for the current school year.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CIPCode" type="CIPCode" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Number and description of the CIP Code associated with the student's CTE Program.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
