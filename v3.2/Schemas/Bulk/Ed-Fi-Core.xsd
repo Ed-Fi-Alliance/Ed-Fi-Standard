@@ -4343,7 +4343,7 @@
   </xs:complexType>
   <xs:complexType name="AttemptStatusDescriptor">
     <xs:annotation>
-			<xs:documentation>This descriptor describes a student's attempt status for a section.</xs:documentation>
+      <xs:documentation>This descriptor describes a student's completion status for a section.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -7316,7 +7316,7 @@
           </xs:element>
           <xs:element name="AttemptStatus" type="AttemptStatusDescriptorReferenceType" minOccurs="0">
             <xs:annotation>
-							<xs:documentation>An indication of the student's attempt status for the section.</xs:documentation>
+              <xs:documentation>An indication of the student's completion status for the section.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>AttemptStatusDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -12421,7 +12421,7 @@
   </xs:simpleType>
   <xs:simpleType name="AttemptStatusDescriptorReferenceType">
     <xs:annotation>
-			<xs:documentation>This descriptor describes a student's attempt status for a section.</xs:documentation>
+      <xs:documentation>This descriptor describes a student's completion status for a section.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
