@@ -1347,7 +1347,7 @@
           </xs:element>
           <xs:element name="ReceivedEducationServicesDuringExpulsion" type="xs:boolean" minOccurs="0">
             <xs:annotation>
-							<xs:documentation>An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons.</xs:documentation>
+              <xs:documentation>DEPRECATED: An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="IEPPlacementMeetingIndicator" type="xs:boolean" minOccurs="0">
