@@ -9,7 +9,7 @@
 	<StudentIdentificationSystemDescriptor>
 		<CodeValue>District</CodeValue>
 		<ShortDescription>District</ShortDescription>
-		<Description>District</Description>
+		<Description>The student identification system for the student at the district level, generally managed by the district student information system, and the one that assigns the principal IDs used to join student data for district operations.</Description>
 		<Namespace>uri://ed-fi.org/StudentIdentificationSystemDescriptor</Namespace>
 	</StudentIdentificationSystemDescriptor>
 	<StudentIdentificationSystemDescriptor>
@@ -26,8 +26,8 @@
 	</StudentIdentificationSystemDescriptor>
 	<StudentIdentificationSystemDescriptor>
 		<CodeValue>Local</CodeValue>
-		<ShortDescription>Local</ShortDescription>
-		<Description>Local</Description>
+		<ShortDescription>DEPRECATED: Local</ShortDescription>
+		<Description>DEPRECATED: Local</Description>
 		<Namespace>uri://ed-fi.org/StudentIdentificationSystemDescriptor</Namespace>
 	</StudentIdentificationSystemDescriptor>
 	<StudentIdentificationSystemDescriptor>
@@ -57,13 +57,19 @@
 	<StudentIdentificationSystemDescriptor>
 		<CodeValue>State</CodeValue>
 		<ShortDescription>State</ShortDescription>
-		<Description>State</Description>
+		<Description>The state identification system for students that assigns a state ID to each student.</Description>
 		<Namespace>uri://ed-fi.org/StudentIdentificationSystemDescriptor</Namespace>
 	</StudentIdentificationSystemDescriptor>
 	<StudentIdentificationSystemDescriptor>
 		<CodeValue>State Migrant</CodeValue>
 		<ShortDescription>State Migrant</ShortDescription>
 		<Description>State Migrant</Description>
+		<Namespace>uri://ed-fi.org/StudentIdentificationSystemDescriptor</Namespace>
+	</StudentIdentificationSystemDescriptor>
+	<StudentIdentificationSystemDescriptor>
+		<CodeValue>Student Number</CodeValue>
+		<ShortDescription>Student Number</ShortDescription>
+		<Description>A category of IDs often provided to enable students and others to remember and use in daily operations. If none exists, the Student Number system is generally equivalent to the District system.</Description>
 		<Namespace>uri://ed-fi.org/StudentIdentificationSystemDescriptor</Namespace>
 	</StudentIdentificationSystemDescriptor>
 </InterchangeDescriptors>
