@@ -6813,7 +6813,7 @@
           </xs:element>
           <xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
+              <xs:documentation>DEPRECATED: Key programs the student is participating in or receives services from.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="CohortYear" type="CohortYear" minOccurs="0" maxOccurs="unbounded">
