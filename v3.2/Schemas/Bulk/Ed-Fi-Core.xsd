@@ -5306,6 +5306,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="ParticipationStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>The student's program participation status.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="PerformanceBaseConversionDescriptor">
     <xs:annotation>
       <xs:documentation>Defines standard levels of competency or performance that can be used for dashboard visualizations: advanced, proficient, basic, and below basic.</xs:documentation>
@@ -6139,7 +6150,7 @@
           </xs:element>
           <xs:element name="BeginDate" type="xs:date">
             <xs:annotation>
-              <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+              <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="EndDate" type="xs:date" minOccurs="0">
@@ -6163,6 +6174,11 @@
           <xs:element name="ServedOutsideOfRegularSession" type="xs:boolean" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Indicates whether the Student received services during the summer session or between sessions.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ParticipationStatus" type="ParticipationStatus" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The status of the student's program participation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -9053,7 +9069,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -11203,7 +11219,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -11421,7 +11437,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -11580,7 +11596,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -11708,7 +11724,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -11757,7 +11773,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -11845,7 +11861,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -12084,7 +12100,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -12233,7 +12249,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -12282,7 +12298,7 @@
       </xs:element>
       <xs:element name="BeginDate" type="xs:date">
         <xs:annotation>
-          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+          <xs:documentation>The earliest date the student is involved with the program. Typically, this is the date the student becomes eligible for the program.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -13238,6 +13254,15 @@
   <xs:simpleType name="ParticipationDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>This descriptor defines participation in a yearly English language assessment.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="ParticipationStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>The student's program participation status.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -15622,6 +15647,39 @@
           <xs:appinfo>
             <ann:Descriptor>OtherNameTypeDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParticipationStatus">
+    <xs:annotation>
+      <xs:documentation>The status of the student's program participation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ParticipationStatus" type="ParticipationStatusDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The student's program participation status.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>ParticipationStatusDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StatusBeginDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The date the student's program participation status began.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StatusEndDate" type="xs:date" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The date the student's program participation status ended.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DesignatedBy" type="DesignatedBy" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The person, organization, or department that designated the participation status.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
