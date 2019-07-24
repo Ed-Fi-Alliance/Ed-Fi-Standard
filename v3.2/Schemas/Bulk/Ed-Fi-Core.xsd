@@ -7271,7 +7271,7 @@
           </xs:element>
           <xs:element name="ExitWithdrawDate" type="xs:date" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The month, day, and year of the first day after the date of an individual's last attendance at a school (if known), the day on which an individual graduated, or the date on which it becomes known officially that an individual left school.</xs:documentation>
+              <xs:documentation>The recorded exit or withdraw date for the student.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="ExitWithdrawType" type="ExitWithdrawTypeDescriptorReferenceType" minOccurs="0">
