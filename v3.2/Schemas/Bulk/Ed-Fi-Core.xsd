@@ -2867,7 +2867,12 @@
           </xs:element>
           <xs:element name="GPACumulative" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>A measure of cumulative average performance in all courses taken by an individual from the beginning of the school year through the current grading period.</xs:documentation>
+              <xs:documentation>DEPRECATED: A measure of cumulative average performance in all courses taken by an individual from the beginning of the school year through the current grading period.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="GradePointAverage" type="GradePointAverage" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>A measure of average performance for courses taken by an individual.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="NumberOfDaysAbsent" type="NumberOfDaysAbsent" minOccurs="0">
@@ -3625,7 +3630,7 @@
           </xs:element>
           <xs:element name="CumulativeGradePointAverage" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>A measure of average performance in all courses taken by an individual during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her current school as well as those transferred from schools in which the individual was previously enrolled.</xs:documentation>
+              <xs:documentation>DEPRECATED: A measure of average performance in all courses taken by an individual during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her current school as well as those transferred from schools in which the individual was previously enrolled.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="GradeValueQualifier" type="GradeValueQualifier" minOccurs="0">
@@ -3670,7 +3675,12 @@
           </xs:element>
           <xs:element name="SessionGradePointAverage" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted.</xs:documentation>
+              <xs:documentation>DEPRECATED: The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="GradePointAverage" type="GradePointAverage" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>A measure of average performance for courses taken by an individual.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Diploma" type="Diploma" minOccurs="0" maxOccurs="unbounded">
@@ -4913,6 +4923,17 @@
   <xs:complexType name="GradeLevelDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor defines the set of grade levels. The map to known Ed-Fi enumeration values is required.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GradePointAverageWeightSystemDescriptor">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the system used for calculating the Grade Point Average.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -12945,6 +12966,15 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="GradePointAverageWeightSystemDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>This descriptor defines the system used for calculating the Grade Point Average.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="GradeTypeDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The type of grade in a report card or transcript (e.g., Final, Exam, Grading Period).</xs:documentation>
@@ -14907,6 +14937,34 @@
           <xs:appinfo>
             <ann:Descriptor>MonitoredDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GradePointAverage">
+    <xs:annotation>
+      <xs:documentation>A measure of average performance for courses taken by an individual.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="GradePointAverageWeightSystem" type="GradePointAverageWeightSystemDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The system used for calculating the Grade Point Average.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>GradePointAverageWeightSystemDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="IsCumulative" type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>Indicator of whether or not the Grade Point Average value is cumulative.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="GradePointAverageValue" type="GPA">
+        <xs:annotation>
+          <xs:documentation>Grade Point Average computed for a grading period, session, or cumulatively.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
