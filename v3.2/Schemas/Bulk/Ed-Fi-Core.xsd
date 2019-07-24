@@ -1460,6 +1460,11 @@
               <xs:documentation>Identifies the staff reporter of the DisciplineIncident by use of a pre-existing school or district unique identifier.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="DisciplineIncidentExternalParticipant" type="DisciplineIncidentExternalParticipant" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Information on an individual involved in the Discipline Incident.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -4796,6 +4801,17 @@
   <xs:complexType name="DisciplineDescriptor">
     <xs:annotation>
       <xs:documentation>This descriptor defines the type of action or removal from the classroom used to discipline the student involved as a perpetrator in a discipline incident.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DisciplineIncidentParticipationCodeDescriptor">
+    <xs:annotation>
+      <xs:documentation>The role or type of participation of a person in a discipline incident; for example: Victim, Perpetrator, Witness, Reporter.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -12873,6 +12889,15 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="DisciplineIncidentParticipationCodeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>The role or type of participation of a person in a discipline incident; for example: Victim, Perpetrator, Witness, Reporter.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="EducationalEnvironmentDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The setting in which a child receives education and related services.</xs:documentation>
@@ -14780,6 +14805,34 @@
           <xs:documentation>Whether the disability is IDEA, Section 504, or other disability designation.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>DisabilityDesignationDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DisciplineIncidentExternalParticipant">
+    <xs:annotation>
+      <xs:documentation>Information on an individual involved in the Discipline Incident.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="FirstName" type="FirstName">
+        <xs:annotation>
+          <xs:documentation>A name given to an individual at birth, baptism, or during another naming ceremony, or through legal change.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LastSurname" type="LastSurname">
+        <xs:annotation>
+          <xs:documentation>The name borne in common by members of a family.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DisciplineIncidentParticipationCode" type="DisciplineIncidentParticipationCodeDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>The role or type of participation of a student in a discipline incident; for example: Victim, Perpetrator, Witness, Reporter.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>DisciplineIncidentParticipationCodeDescriptor</ann:Descriptor>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
