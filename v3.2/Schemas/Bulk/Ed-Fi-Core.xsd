@@ -6748,7 +6748,7 @@
           </xs:element>
           <xs:element name="Sex" type="SexDescriptorReferenceType">
             <xs:annotation>
-              <xs:documentation>A person's gender.</xs:documentation>
+              <xs:documentation>The student's gender as last reported to the education organization.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>SexDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -6781,7 +6781,7 @@
           </xs:element>
           <xs:element name="HispanicLatinoEthnicity" type="xs:boolean" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
+              <xs:documentation>An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race, as last reported to the education organization. The term, "Spanish origin," can be used in addition to "Hispanic or Latino."</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="OldEthnicity" type="OldEthnicityDescriptorReferenceType" minOccurs="0">
@@ -6799,7 +6799,7 @@
           </xs:element>
           <xs:element name="Race" type="RaceDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
+              <xs:documentation>The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies as last reported to the education organization. The data model allows for multiple entries so that each individual can specify all appropriate races.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>RaceDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -6807,7 +6807,7 @@
           </xs:element>
           <xs:element name="TribalAffiliation" type="TribalAffiliationDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>An American Indian tribe with which the student is affiliated.</xs:documentation>
+              <xs:documentation>An American Indian tribe with which the student is affiliated as last reported to the education organization.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>TribalAffiliationDescriptor</ann:Descriptor>
               </xs:appinfo>
