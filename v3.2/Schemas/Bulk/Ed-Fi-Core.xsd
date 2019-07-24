@@ -609,7 +609,7 @@
           </xs:element>
           <xs:element name="OfficialAttendancePeriod" type="xs:boolean" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Indicator of whether this class period is used for official daily attendance.</xs:documentation>
+              <xs:documentation>Indicator of whether this class period is used for official daily attendance. Alternatively, official daily attendance may be tied to a Section.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -3187,6 +3187,11 @@
               <xs:appinfo>
                 <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
               </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="OfficialAttendancePeriod" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicator of whether this section is used for official daily attendance. Alternatively, official daily attendance may be tied to a Class Period.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
