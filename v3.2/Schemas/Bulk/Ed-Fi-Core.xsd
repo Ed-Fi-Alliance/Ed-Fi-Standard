@@ -1457,7 +1457,7 @@
           </xs:element>
           <xs:element name="StaffReference" type="StaffReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Identifies the staff reporter of the DisciplineIncident by use of a pre-existing school or district unique identifier.</xs:documentation>
+              <xs:documentation>DEPRECATED: Identifies the staff reporter of the DisciplineIncident by use of a pre-existing school or district unique identifier.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="DisciplineIncidentExternalParticipant" type="DisciplineIncidentExternalParticipant" minOccurs="0" maxOccurs="unbounded">
