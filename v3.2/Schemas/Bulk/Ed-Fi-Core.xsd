@@ -3625,7 +3625,7 @@
           </xs:element>
           <xs:element name="CumulativeGradePointsEarned" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the current school as well as those transferred from schools in which the individual had been previously enrolled.</xs:documentation>
+              <xs:documentation>DEPRECATED: The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the current school as well as those transferred from schools in which the individual had been previously enrolled.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="CumulativeGradePointAverage" type="GPA" minOccurs="0">
@@ -3670,7 +3670,7 @@
           </xs:element>
           <xs:element name="SessionGradePointsEarned" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The number of grade points an individual earned for this session.</xs:documentation>
+              <xs:documentation>DEPRECATED: The number of grade points an individual earned for this session.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="SessionGradePointAverage" type="GPA" minOccurs="0">
