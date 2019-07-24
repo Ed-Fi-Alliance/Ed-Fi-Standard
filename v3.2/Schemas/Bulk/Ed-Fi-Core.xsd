@@ -7318,6 +7318,11 @@
               <xs:documentation>The full-time equivalent ratio for the student’s assignment to a school for services or instruction. For example, a full-time student would have an FTE value of 1 while a half-time student would have an FTE value of 0.5.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="TermCompletionIndicator" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Idicates whether or not a student completed the most recent school term.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
