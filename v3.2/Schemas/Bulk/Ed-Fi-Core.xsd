@@ -3259,7 +3259,7 @@
           </xs:element>
           <xs:element name="Term" type="TermDescriptorReferenceType">
             <xs:annotation>
-              <xs:documentation>An descriptor value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.).</xs:documentation>
+              <xs:documentation>An descriptor value indicating the term (e.g. 'Semester', 'Quarter', etc.).</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>TermDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -5940,7 +5940,7 @@
   </xs:complexType>
   <xs:complexType name="TermDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the term of a session during the school year (e.g., Fall Semester).</xs:documentation>
+      <xs:documentation>This descriptor defines the term of a session during the school year (e.g., Semester).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -10387,7 +10387,7 @@
       </xs:element>
       <xs:element name="Term" type="TermDescriptorReferenceType" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>An descriptor value indicating the term (e.g. 'Fall Semester', 'Second Quarter', 'Summer Semester', etc.).</xs:documentation>
+          <xs:documentation>An descriptor value indicating the term (e.g. 'Semester', 'Quarter', etc.).</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>TermDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -13795,7 +13795,7 @@
   </xs:simpleType>
   <xs:simpleType name="TermDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the term of a session during the school year (e.g., Fall Semester).</xs:documentation>
+      <xs:documentation>This descriptor defines the term of a session during the school year (e.g., Semester).</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
