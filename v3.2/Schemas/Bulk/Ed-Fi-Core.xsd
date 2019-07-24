@@ -6266,6 +6266,38 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="StaffDisciplineIncidentAssociation">
+    <xs:annotation>
+      <xs:documentation>This association indicates those staff who were victims, perpetrators, witnesses, and reporters for a discipline incident.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="StaffReference" type="StaffReferenceType">
+            <xs:annotation>
+              <xs:documentation>Relates the Staff associated with the DisciplineIncident.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="DisciplineIncidentReference" type="DisciplineIncidentReferenceType">
+            <xs:annotation>
+              <xs:documentation>Reference to the DisciplineIncident associated with the Staff.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="DisciplineIncidentParticipationCode" type="DisciplineIncidentParticipationCodeDescriptorReferenceType" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The role or type of participation of a student in a discipline incident (e.g., Victim, Perpetrator, Witness, Reporter).</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>DisciplineIncidentParticipationCodeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="StaffEducationOrganizationAssignmentAssociation">
     <xs:annotation>
       <xs:documentation>This association indicates the education organization to which a staff member provides services; also known as school of service.</xs:documentation>
@@ -10540,6 +10572,45 @@
           <xs:element name="StaffCohortAssociationIdentity" type="StaffCohortAssociationIdentityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Identity of a StaffCohortAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StaffDisciplineIncidentAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a StaffDisciplineIncidentAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StaffReference" type="StaffReferenceType">
+        <xs:annotation>
+          <xs:documentation>Relates the Staff associated with the DisciplineIncident.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DisciplineIncidentReference" type="DisciplineIncidentReferenceType">
+        <xs:annotation>
+          <xs:documentation>Reference to the DisciplineIncident associated with the Staff.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StaffDisciplineIncidentAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a StaffDisciplineIncidentAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="StaffDisciplineIncidentAssociationIdentity" type="StaffDisciplineIncidentAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a StaffDisciplineIncidentAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
