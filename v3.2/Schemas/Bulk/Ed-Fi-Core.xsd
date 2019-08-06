@@ -15883,7 +15883,7 @@
   </xs:complexType>
   <xs:complexType name="PerformanceLevel">
     <xs:annotation>
-      <xs:documentation>A performance level value that describes student proficiency.</xs:documentation>
+      <xs:documentation>A performance level value that describes student proficiency, generally a cut score.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
@@ -15891,7 +15891,7 @@
     <xs:sequence>
       <xs:element name="PerformanceLevelMet" type="xs:boolean">
         <xs:annotation>
-          <xs:documentation>Optional indicator of whether the performance level was met.</xs:documentation>
+          <xs:documentation>DEPRECATED: Optional indicator of whether the performance level was met.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="PerformanceLevel" type="PerformanceLevelDescriptorReferenceType">
