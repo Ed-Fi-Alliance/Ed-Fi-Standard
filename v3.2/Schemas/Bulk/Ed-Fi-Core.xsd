@@ -3517,10 +3517,7 @@
           </xs:element>
           <xs:element name="StaffLeaveEventCategory" type="StaffLeaveEventCategoryDescriptorReferenceType">
             <xs:annotation>
-              <xs:documentation>The code describing the type of leave taken, for example:
-                      Sick
-                      Personal
-                      Vacation.</xs:documentation>
+              <xs:documentation>The code describing the type of leave taken, for example: Sick, Personal, Vacation.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>StaffLeaveEventCategoryDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -10801,10 +10798,7 @@
       </xs:element>
       <xs:element name="StaffLeaveEventCategory" type="StaffLeaveEventCategoryDescriptorReferenceType">
         <xs:annotation>
-          <xs:documentation>The code describing the type of leave taken, for example:
-                      Sick
-                      Personal
-                      Vacation.</xs:documentation>
+          <xs:documentation>The code describing the type of leave taken, for example: Sick, Personal, Vacation.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>StaffLeaveEventCategoryDescriptor</ann:Descriptor>
           </xs:appinfo>
