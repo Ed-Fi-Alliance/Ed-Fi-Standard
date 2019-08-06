@@ -17573,7 +17573,7 @@
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="60" />
+      <xs:maxLength value="200" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="IssuerName">
