@@ -3160,7 +3160,7 @@
           </xs:element>
           <xs:element name="LocationSchoolReference" type="SchoolReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The school where the Section is taught.</xs:documentation>
+              <xs:documentation>The physical school location in which the Section is taught.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LocationReference" type="LocationReferenceType" minOccurs="0">
@@ -3517,10 +3517,7 @@
           </xs:element>
           <xs:element name="StaffLeaveEventCategory" type="StaffLeaveEventCategoryDescriptorReferenceType">
             <xs:annotation>
-              <xs:documentation>The code describing the type of leave taken, for example:
-                      Sick
-                      Personal
-                      Vacation.</xs:documentation>
+              <xs:documentation>The code describing the type of leave taken, for example: Sick, Personal, Vacation.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>StaffLeaveEventCategoryDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -10801,10 +10798,7 @@
       </xs:element>
       <xs:element name="StaffLeaveEventCategory" type="StaffLeaveEventCategoryDescriptorReferenceType">
         <xs:annotation>
-          <xs:documentation>The code describing the type of leave taken, for example:
-                      Sick
-                      Personal
-                      Vacation.</xs:documentation>
+          <xs:documentation>The code describing the type of leave taken, for example: Sick, Personal, Vacation.</xs:documentation>
           <xs:appinfo>
             <ann:Descriptor>StaffLeaveEventCategoryDescriptor</ann:Descriptor>
           </xs:appinfo>
@@ -15883,7 +15877,7 @@
   </xs:complexType>
   <xs:complexType name="PerformanceLevel">
     <xs:annotation>
-      <xs:documentation>A performance level value that describes student proficiency.</xs:documentation>
+      <xs:documentation>A performance level value that describes student proficiency, generally a cut score.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
@@ -15891,7 +15885,7 @@
     <xs:sequence>
       <xs:element name="PerformanceLevelMet" type="xs:boolean">
         <xs:annotation>
-          <xs:documentation>Optional indicator of whether the performance level was met.</xs:documentation>
+          <xs:documentation>DEPRECATED: Optional indicator of whether the performance level was met.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="PerformanceLevel" type="PerformanceLevelDescriptorReferenceType">
@@ -17579,7 +17573,7 @@
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
-      <xs:maxLength value="60" />
+      <xs:maxLength value="200" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="IssuerName">
