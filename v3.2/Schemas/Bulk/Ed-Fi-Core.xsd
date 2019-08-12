@@ -1551,7 +1551,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="Address" type="Address" maxOccurs="unbounded">
+          <xs:element name="Address" type="Address" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The set of elements that describes the physical location of the education entity, including the street address, city, state, ZIP code, and ZIP code + 4.</xs:documentation>
             </xs:annotation>
