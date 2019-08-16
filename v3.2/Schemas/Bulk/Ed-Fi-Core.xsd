@@ -385,6 +385,16 @@
               <xs:documentation>The maximum raw score achievable across all assessment items that are correct and scored at the maximum.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="ItemText" type="ItemText" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The text of the item.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="PossibleResponse" type="PossibleResponse" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>A possible response to an assessment item.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="CorrectResponse" type="CorrectResponse" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The correct response for the AssessmentItem.</xs:documentation>
@@ -15926,6 +15936,31 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="PossibleResponse">
+    <xs:annotation>
+      <xs:documentation>A possible response to an assessment item.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ResponseValue" type="ResponseValue">
+        <xs:annotation>
+          <xs:documentation>The response value, often an option number or code value (e.g., 1, 2, A, B, true, false).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ResponseDescription" type="ResponseDescription" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Additional text provided to define the response value.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CorrectResponse" type="xs:boolean" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Indicates the response is correct.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="ProgramParticipation">
     <xs:annotation>
       <xs:documentation>Programs the student is participating in or receiving services from.</xs:documentation>
@@ -17588,6 +17623,18 @@
       <xs:maxLength value="150" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="ItemText">
+    <xs:annotation>
+      <xs:documentation>The text of the item.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="1024" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="LastSurname">
     <xs:annotation>
       <xs:documentation>The name borne in common by members of a family.</xs:documentation>
@@ -17897,6 +17944,30 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="20" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ResponseDescription">
+    <xs:annotation>
+      <xs:documentation>Text provided to define a response value.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="1024" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ResponseValue">
+    <xs:annotation>
+      <xs:documentation>The response value, often an option number or code value (e.g., 1, 2, A, B, true, false).</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="60" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="RestraintEventIdentifier">
