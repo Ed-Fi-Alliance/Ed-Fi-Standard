@@ -1695,6 +1695,11 @@
               <xs:documentation>Identifies the grading period for the Grade.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="LearningStandardGrade" type="LearningStandardGrade" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>A collection of learning standards associated with the grade.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -15646,6 +15651,44 @@
       <xs:element name="LearningStandardReference" type="LearningStandardReferenceType" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Relates the competency, learning standard, skill and/or text complexity to which the learning resource is aligned.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LearningStandardGrade">
+    <xs:annotation>
+      <xs:documentation>Learning standard for a grade.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="LearningStandardReference" type="LearningStandardReferenceType">
+        <xs:annotation>
+          <xs:documentation>The learning standard associated with this grade.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LetterGradeEarned" type="GradeEarned" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>A final or interim (grading period) indicator of student performance for a learning standard as submitted by the instructor.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="NumericGradeEarned" type="NumericGrade" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>A final or interim (grading period) indicator of student performance for a learning standard as submitted by the instructor.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DiagnosticStatement" type="DiagnosticStatement" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>A statement provided by the teacher that provides information in addition to the grade or assessment score.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PerformanceBaseConversion" type="PerformanceBaseConversionDescriptorReferenceType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>A performance level that describes the student proficiency.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>PerformanceBaseConversionDescriptor</ann:Descriptor>
+          </xs:appinfo>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
