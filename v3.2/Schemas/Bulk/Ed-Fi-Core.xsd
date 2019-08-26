@@ -1357,7 +1357,7 @@
           </xs:element>
           <xs:element name="ReceivedEducationServicesDuringExpulsion" type="xs:boolean" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons.</xs:documentation>
+              <xs:documentation>An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="IEPPlacementMeetingIndicator" type="xs:boolean" minOccurs="0">
@@ -1467,7 +1467,7 @@
           </xs:element>
           <xs:element name="StaffReference" type="StaffReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: Identifies the staff reporter of the DisciplineIncident by use of a pre-existing school or district unique identifier.</xs:documentation>
+              <xs:documentation>Identifies the staff reporter of the DisciplineIncident by use of a pre-existing school or district unique identifier.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="DisciplineIncidentExternalParticipant" type="DisciplineIncidentExternalParticipant" minOccurs="0" maxOccurs="unbounded">
@@ -2838,7 +2838,7 @@
           </xs:element>
           <xs:element name="Service" type="ServiceDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: Defines the services this program provides to students.</xs:documentation>
+              <xs:documentation>Defines the services this program provides to students.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>ServiceDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -2890,7 +2890,7 @@
           </xs:element>
           <xs:element name="GPACumulative" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: A measure of cumulative average performance in all courses taken by an individual from the beginning of the school year through the current grading period.</xs:documentation>
+              <xs:documentation>A measure of cumulative average performance in all courses taken by an individual from the beginning of the school year through the current grading period.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="GradePointAverage" type="GradePointAverage" minOccurs="0" maxOccurs="unbounded">
@@ -3650,12 +3650,12 @@
           </xs:element>
           <xs:element name="CumulativeGradePointsEarned" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the current school as well as those transferred from schools in which the individual had been previously enrolled.</xs:documentation>
+              <xs:documentation>The cumulative number of grade points an individual earns by successfully completing courses or examinations during his or her enrollment in the current school as well as those transferred from schools in which the individual had been previously enrolled.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="CumulativeGradePointAverage" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: A measure of average performance in all courses taken by an individual during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her current school as well as those transferred from schools in which the individual was previously enrolled.</xs:documentation>
+              <xs:documentation>A measure of average performance in all courses taken by an individual during his or her school career as determined for record-keeping purposes. This is obtained by dividing the total grade points received by the total number of credits attempted. This usually includes grade points received and credits attempted in his or her current school as well as those transferred from schools in which the individual was previously enrolled.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="GradeValueQualifier" type="GradeValueQualifier" minOccurs="0">
@@ -3695,12 +3695,12 @@
           </xs:element>
           <xs:element name="SessionGradePointsEarned" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: The number of grade points an individual earned for this session.</xs:documentation>
+              <xs:documentation>The number of grade points an individual earned for this session.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="SessionGradePointAverage" type="GPA" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted.</xs:documentation>
+              <xs:documentation>The grade point average for an individual computed as the grade points earned during the session divided by the number of credits attempted.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="GradePointAverage" type="GradePointAverage" minOccurs="0" maxOccurs="unbounded">
@@ -6717,12 +6717,12 @@
         <xs:sequence>
           <xs:element name="CTEProgram" type="CTEProgram" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: The career cluster representing the career path of the Vocational/Career Tech concentrator.</xs:documentation>
+              <xs:documentation>The career cluster representing the career path of the Vocational/Career Tech concentrator.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="NonTraditionalGenderStatus" type="xs:boolean" minOccurs="0">
@@ -6913,7 +6913,7 @@
           </xs:element>
           <xs:element name="ProgramParticipation" type="ProgramParticipation" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: Key programs the student is participating in or receives services from.</xs:documentation>
+              <xs:documentation>Key programs the student is participating in or receives services from.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="CohortYear" type="CohortYear" minOccurs="0" maxOccurs="unbounded">
@@ -7610,7 +7610,7 @@
           </xs:element>
           <xs:element name="Service" type="Service" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>DEPRECATED: Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
+              <xs:documentation>Indicates the Service(s) being provided to the Student by the Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -15923,7 +15923,7 @@
     <xs:sequence>
       <xs:element name="PerformanceLevelMet" type="xs:boolean">
         <xs:annotation>
-          <xs:documentation>DEPRECATED: Optional indicator of whether the performance level was met.</xs:documentation>
+          <xs:documentation>Optional indicator of whether the performance level was met.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="PerformanceLevel" type="PerformanceLevelDescriptorReferenceType">
