@@ -7141,6 +7141,11 @@
               <xs:documentation>Indicates the service(s) being provided to the Student by the Language Instruction Program.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="Dosage" type="Dosage" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The duration of time in minutes for which the student was assigned to participate in the program.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
