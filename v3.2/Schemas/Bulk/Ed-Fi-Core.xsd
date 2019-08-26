@@ -5165,6 +5165,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="LearningStandardEquivalenceStrengthDescriptor">
+    <xs:annotation>
+      <xs:documentation>A measure that indicates the strength or quality of the equivalence relationship.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="LearningStandardScopeDescriptor">
     <xs:annotation>
       <xs:documentation>Signals the scope of usage the standard. Does not necessarily relate the standard to the governing body.</xs:documentation>
@@ -6247,6 +6258,53 @@
           <xs:element name="ParticipationStatus" type="ParticipationStatus" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The status of the student's program participation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LearningStandardEquivalenceAssociation">
+    <xs:annotation>
+      <xs:documentation>Indicates a directional association of equivalence from a source to a target learning standard.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="SourceLearningStandardReference" type="LearningStandardReferenceType">
+            <xs:annotation>
+              <xs:documentation>The source learning standard, which is the subject of the association.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="TargetLearningStandardReference" type="LearningStandardReferenceType">
+            <xs:annotation>
+              <xs:documentation>The target learning standard, which is the object of the association.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="Namespace" type="URI">
+            <xs:annotation>
+              <xs:documentation>The namespace of the organization that has created and owns the association.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="EffectiveDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The date that the association is considered to be applicable or effective.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LearningStandardEquivalenceStrength" type="LearningStandardEquivalenceStrengthDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A measure that indicates the strength or quality of the equivalence relationship.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>LearningStandardEquivalenceStrengthDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LearningStandardEquivalenceStrengthDescription" type="LearningStandardEquivalenceStrengthDescription" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Captures supplemental information on the relationship. Recommended for use only when the match is  partial.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -9591,6 +9649,50 @@
           <xs:element name="LearningObjectiveIdentity" type="LearningObjectiveIdentityType" minOccurs="0">
             <xs:annotation>
               <xs:documentation>Identity of a LearningObjective.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LearningStandardEquivalenceAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a LearningStandardEquivalenceAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SourceLearningStandardReference" type="LearningStandardReferenceType">
+        <xs:annotation>
+          <xs:documentation>The source learning standard, which is the subject of the association.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TargetLearningStandardReference" type="LearningStandardReferenceType">
+        <xs:annotation>
+          <xs:documentation>The target learning standard, which is the object of the association.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Namespace" type="URI">
+        <xs:annotation>
+          <xs:documentation>The namespace of the organization that has created and owns the association.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LearningStandardEquivalenceAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a LearningStandardEquivalenceAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="LearningStandardEquivalenceAssociationIdentity" type="LearningStandardEquivalenceAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a LearningStandardEquivalenceAssociation.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -13256,6 +13358,15 @@
   <xs:simpleType name="LearningStandardCategoryDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>An additional classification of the type of a specific learning standard.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LearningStandardEquivalenceStrengthDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>A measure that indicates the strength or quality of the equivalence relationship.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -17684,6 +17795,18 @@
     </xs:annotation>
     <xs:restriction base="xs:string">
       <xs:minLength value="5" />
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LearningStandardEquivalenceStrengthDescription">
+    <xs:annotation>
+      <xs:documentation>Captures supplemental information on the relationship. Recommended for use only when the match is partial.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
       <xs:maxLength value="255" />
     </xs:restriction>
   </xs:simpleType>
