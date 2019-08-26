@@ -2238,7 +2238,7 @@
   </xs:complexType>
   <xs:complexType name="LearningStandard">
     <xs:annotation>
-      <xs:documentation>This entity is a sub-element of a learning objective consisting of a precise statement of the expectation of a student's proficiency.</xs:documentation>
+      <xs:documentation>A statement that describes a specific competency or academic standard.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -2314,7 +2314,7 @@
           </xs:element>
           <xs:element name="Namespace" type="URI">
             <xs:annotation>
-              <xs:documentation>Namespace for the LearningStandard.</xs:documentation>
+              <xs:documentation>The namespace of the organization or entity who governs the standard. It is recommended the namespaces observe a URI format and begin with a domain name under the governing organization or entity control.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="LearningStandardCategory" type="LearningStandardCategoryDescriptorReferenceType" minOccurs="0">
@@ -2322,6 +2322,14 @@
               <xs:documentation>An additional classification of the type of a specific learning standard.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>LearningStandardCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LearningStandardScope" type="LearningStandardScopeDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Signals the scope of usage the standard. Does not necessarily relate the standard to the governing body.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>LearningStandardScopeDescriptor</ann:Descriptor>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
@@ -5149,6 +5157,17 @@
   <xs:complexType name="LearningStandardCategoryDescriptor">
     <xs:annotation>
       <xs:documentation>An additional classification of the type of a specific learning standard.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LearningStandardScopeDescriptor">
+    <xs:annotation>
+      <xs:documentation>Signals the scope of usage the standard. Does not necessarily relate the standard to the governing body.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -13237,6 +13256,15 @@
   <xs:simpleType name="LearningStandardCategoryDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>An additional classification of the type of a specific learning standard.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="LearningStandardScopeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Signals the scope of usage the standard. Does not necessarily relate the standard to the governing body.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
