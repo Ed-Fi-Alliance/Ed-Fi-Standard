@@ -2514,6 +2514,14 @@
               <xs:documentation>Definition of the scores to be expected from this objective assessment.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The subject area of the objective assessment.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
