@@ -6885,7 +6885,7 @@
   </xs:complexType>
   <xs:complexType name="StudentEducationOrganizationAssociation">
     <xs:annotation>
-      <xs:documentation>This association represents student information that is specific to a student's relationship with an EducationOrganization. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
+      <xs:documentation>This association represents student information as reported in the context of the student's relationship to the Education Organization. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Association</ann:TypeGroup>
       </xs:appinfo>
@@ -6900,7 +6900,7 @@
           </xs:element>
           <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
             <xs:annotation>
-              <xs:documentation>A reference to the EducationOrganization.</xs:documentation>
+              <xs:documentation>A reference to the Education Organization representing the context of the student information.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="StudentIdentificationCode" type="StudentIdentificationCode" minOccurs="0" maxOccurs="unbounded">
@@ -11590,7 +11590,7 @@
       </xs:element>
       <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
         <xs:annotation>
-          <xs:documentation>A reference to the EducationOrganization.</xs:documentation>
+          <xs:documentation>A reference to the Education Organization representing the context of the student information.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
