@@ -302,7 +302,7 @@
               <xs:documentation>The month, day, and year that the conceptual design for the assessment was most recently revised substantially.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="MaxRawScore" type="xs:int" minOccurs="0">
+          <xs:element name="MaxRawScore" type="MaxRawScore" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The maximum raw score achievable across all assessment items that are correct and scored at the maximum.</xs:documentation>
             </xs:annotation>
@@ -380,7 +380,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="MaxRawScore" type="xs:int" minOccurs="0">
+          <xs:element name="MaxRawScore" type="MaxRawScore" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The maximum raw score achievable across all assessment items that are correct and scored at the maximum.</xs:documentation>
             </xs:annotation>
@@ -2456,7 +2456,7 @@
               <xs:documentation>A unique number or alphanumeric code assigned to a space, room, site, building, individual, organization, program, or institution by a school, school system, a state, or other agency or entity.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="MaxRawScore" type="xs:int" minOccurs="0">
+          <xs:element name="MaxRawScore" type="MaxRawScore" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The maximum raw score achievable across all assessment items that are correct and scored at the maximum.</xs:documentation>
             </xs:annotation>
@@ -16548,7 +16548,7 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="RawScoreResult" type="xs:int" minOccurs="0">
+      <xs:element name="RawScoreResult" type="RawScoreResult" minOccurs="0">
         <xs:annotation>
           <xs:documentation>A meaningful raw score of the performance of an individual on an assessment item.</xs:documentation>
         </xs:annotation>
@@ -18540,6 +18540,18 @@
       <xs:minInclusive value="1" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="MaxRawScore">
+    <xs:annotation>
+      <xs:documentation>The maximum raw score achievable across all assessment items that are correct and scored at the maximum.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="10" />
+      <xs:fractionDigits value="5" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="NumberOfDaysAbsent">
     <xs:annotation>
       <xs:documentation>The number of days an individual is absent when school is in session during a given reporting period.</xs:documentation>
@@ -18636,6 +18648,18 @@
       <xs:maxInclusive value="1" />
       <xs:totalDigits value="5" />
       <xs:fractionDigits value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RawScoreResult">
+    <xs:annotation>
+      <xs:documentation>A meaningful raw score of the performance of an individual on an assessment item.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="10" />
+      <xs:fractionDigits value="5" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="SequenceOfCourse">
