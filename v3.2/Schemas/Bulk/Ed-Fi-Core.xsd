@@ -3914,7 +3914,7 @@
   </xs:complexType>
   <xs:complexType name="StudentCompetencyObjective">
     <xs:annotation>
-      <xs:documentation>This entity represents the competency assessed or evaluated for the student against a specific learning  objective.</xs:documentation>
+      <xs:documentation>This entity represents the competency assessed or evaluated for the student against a specific competency objective.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Domain Entity</ann:TypeGroup>
       </xs:appinfo>
@@ -3929,7 +3929,7 @@
           </xs:element>
           <xs:element name="CompetencyLevel" type="CompetencyLevelDescriptorReferenceType">
             <xs:annotation>
-              <xs:documentation>The CompetencyLevel assessed for the student for the referenced LearningObjective.</xs:documentation>
+              <xs:documentation>The competency level assessed for the student for the referenced competency objective.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>CompetencyLevelDescriptor</ann:Descriptor>
               </xs:appinfo>
