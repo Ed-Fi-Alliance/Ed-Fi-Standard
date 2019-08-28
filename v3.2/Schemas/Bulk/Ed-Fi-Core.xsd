@@ -349,6 +349,14 @@
               <xs:documentation>Indicates that the assessment is adaptive.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="PlatformType" type="PlatformTypeDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The platforms with which the assessment may be delivered.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>PlatformTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -3908,6 +3916,14 @@
               <xs:documentation>The school year for which the assessment was administered to a student. Among other uses, handles cases in which a student takes a prior-year exam in a subsequent school year during an exam re-test.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="PlatformType" type="PlatformTypeDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The platform with which the assessment was delivered to the student during the assessment session.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>PlatformTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -5451,6 +5467,17 @@
   <xs:complexType name="PersonalInformationVerificationDescriptor">
     <xs:annotation>
       <xs:documentation>The evidence presented to verify one's personal identity; for example: driver's license, passport, birth certificate, etc.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PlatformTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>The platforms with which an assessment may be delivered.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -13610,6 +13637,15 @@
   <xs:simpleType name="PersonalInformationVerificationDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The evidence presented to verify one's personal identity; for example: driver's license, passport, birth certificate, etc.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
+  <xs:simpleType name="PlatformTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>The platforms with which an assessment may be delivered.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
