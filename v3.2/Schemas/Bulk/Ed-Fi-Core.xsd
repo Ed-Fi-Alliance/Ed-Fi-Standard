@@ -7447,7 +7447,12 @@
           </xs:element>
           <xs:element name="GraduationPlanReference" type="GraduationPlanReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The GraduationPlan associated with the student enrolled in the school.</xs:documentation>
+              <xs:documentation>The primary graduation plan associated with the student enrolled in the school.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AlternativeGraduationPlanReference" type="GraduationPlanReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The secondary graduation plan or plans associated with the student enrolled in the school.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="EmployedWhileEnrolled" type="xs:boolean" minOccurs="0">
