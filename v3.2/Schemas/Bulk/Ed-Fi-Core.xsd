@@ -3803,11 +3803,7 @@
           </xs:element>
           <xs:element name="AdministrationEnvironment" type="AdministrationEnvironmentDescriptorReferenceType" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>The environment in which the test was administered. For example:
-                      Electronic
-                      Classroom
-                      Testing Center
-                      ...</xs:documentation>
+              <xs:documentation>The environment in which the test was administered.</xs:documentation>
               <xs:appinfo>
                 <ann:Descriptor>AdministrationEnvironmentDescriptor</ann:Descriptor>
               </xs:appinfo>
@@ -4335,11 +4331,7 @@
   </xs:complexType>
   <xs:complexType name="AdministrationEnvironmentDescriptor">
     <xs:annotation>
-      <xs:documentation>The environment in which the test was administered. For example:
-            Electronic
-            Classroom
-            Testing Center
-            ...</xs:documentation>
+      <xs:documentation>The environment in which the test was administered.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -12700,11 +12692,7 @@
   </xs:simpleType>
   <xs:simpleType name="AdministrationEnvironmentDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>The environment in which the test was administered. For example:
-            Electronic
-            Classroom
-            Testing Center
-            ...</xs:documentation>
+      <xs:documentation>The environment in which the test was administered.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
