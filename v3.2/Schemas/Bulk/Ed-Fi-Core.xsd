@@ -4176,6 +4176,16 @@
               <xs:documentation>The duration in minutes of the school attendance event.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="ArrivalTime" type="xs:time" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The time of day the student arrived for the attendance event in ISO 8601 format.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="DepartureTime" type="xs:time" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The time of day the student departed for the attendance event in ISO 8601 format.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -4208,6 +4218,16 @@
           <xs:element name="SectionAttendanceDuration" type="AttendanceEventDuration" minOccurs="0">
             <xs:annotation>
               <xs:documentation>The duration in minutes of the section attendance event.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ArrivalTime" type="xs:time" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The time of day the student arrived for the attendance event in ISO 8601 format.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="DepartureTime" type="xs:time" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The time of day the student departed for the attendance event in ISO 8601 format.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
