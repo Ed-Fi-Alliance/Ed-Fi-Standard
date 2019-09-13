@@ -13,6 +13,7 @@
       <xs:choice maxOccurs="unbounded">
         <xs:element name="LearningObjective" type="LearningObjective" />
         <xs:element name="LearningStandard" type="LearningStandard" />
+        <xs:element name="LearningStandardEquivalenceAssociation" type="LearningStandardEquivalenceAssociation" />
       </xs:choice>
     </xs:complexType>
   </xs:element>
