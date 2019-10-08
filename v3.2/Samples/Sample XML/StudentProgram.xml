@@ -1296,6 +1296,10 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<ParticipationStatus>
+			<ParticipationStatus>uri://ed-fi.org/ParticipationStatusDescriptor#Referred</ParticipationStatus>
+			<DesignatedBy>255901107</DesignatedBy>
+		</ParticipationStatus>
 	</StudentProgramAssociation>
 	<StudentProgramAssociation>
 		<StudentReference>
@@ -1756,6 +1760,10 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<ParticipationStatus>
+			<ParticipationStatus>uri://ed-fi.org/ParticipationStatusDescriptor#Active in Program</ParticipationStatus>
+			<StatusBeginDate>2010-08-30</StatusBeginDate>
+		</ParticipationStatus>
 	</StudentProgramAssociation>
 	<StudentProgramAssociation>
 		<StudentReference>
@@ -2225,6 +2233,11 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<ParticipationStatus>
+			<ParticipationStatus>uri://ed-fi.org/ParticipationStatusDescriptor#Refused</ParticipationStatus>
+			<StatusBeginDate>2010-08-30</StatusBeginDate>
+			<StatusEndDate>2010-09-02</StatusEndDate>
+		</ParticipationStatus>
 	</StudentProgramAssociation>
 	<StudentProgramAssociation>
 		<StudentReference>
@@ -2371,6 +2384,9 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<ParticipationStatus>
+			<ParticipationStatus>uri://ed-fi.org/ParticipationStatusDescriptor#Eligible</ParticipationStatus>
+		</ParticipationStatus>
 	</StudentProgramAssociation>
 	<StudentProgramAssociation>
 		<StudentReference>
@@ -3197,6 +3213,17 @@
 		<LastEvaluationDate>2010-08-24</LastEvaluationDate>
 		<IEPReviewDate>2010-08-27</IEPReviewDate>
 		<IEPBeginDate>2010-09-01</IEPBeginDate>
+		<SpecialEducationProgramService>
+			<SpecialEducationProgramService>uri://ed-fi.org/SpecialEducationProgramServiceDescriptor#Early Identification And Evaluation</SpecialEducationProgramService>
+			<ServiceProvider>
+				<StaffReference>
+					<StaffIdentity>
+						<StaffUniqueId>207221</StaffUniqueId>
+					</StaffIdentity>
+				</StaffReference>
+				<PrimaryProvider>true</PrimaryProvider>
+			</ServiceProvider>
+		</SpecialEducationProgramService>
 	</StudentSpecialEducationProgramAssociation>
 	<StudentSpecialEducationProgramAssociation>
 		<StudentReference>
@@ -4824,6 +4851,16 @@
 		<LastEvaluationDate>2010-08-23</LastEvaluationDate>
 		<IEPReviewDate>2010-08-27</IEPReviewDate>
 		<IEPBeginDate>2010-09-01</IEPBeginDate>
+		<SpecialEducationProgramService>
+			<SpecialEducationProgramService>uri://ed-fi.org/SpecialEducationProgramServiceDescriptor#Speech-Language And Audiology Services</SpecialEducationProgramService>
+			<ServiceProvider>
+				<StaffReference>
+					<StaffIdentity>
+						<StaffUniqueId>207241</StaffUniqueId>
+					</StaffIdentity>
+				</StaffReference>
+			</ServiceProvider>
+		</SpecialEducationProgramService>
 	</StudentSpecialEducationProgramAssociation>
 	<StudentSpecialEducationProgramAssociation>
 		<StudentReference>
@@ -6225,6 +6262,11 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<CTEProgramService>
+			<CTEProgramService>uri://ed-fi.org/CTEProgramServiceDescriptor#Information Technology</CTEProgramService>
+			<ServiceBeginDate>2010-10-01</ServiceBeginDate>
+			<ServiceEndDate>2010-12-17</ServiceEndDate>
+		</CTEProgramService>
 	</StudentCTEProgramAssociation>
 	<StudentCTEProgramAssociation>
 		<StudentReference>
@@ -6467,6 +6509,11 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<CTEProgramService>
+			<CTEProgramService>uri://ed-fi.org/CTEProgramServiceDescriptor#Finance</CTEProgramService>
+			<ServiceBeginDate>2010-08-30</ServiceBeginDate>
+			<CIPCode>52.0304</CIPCode>
+		</CTEProgramService>
 	</StudentCTEProgramAssociation>
 	<StudentCTEProgramAssociation>
 		<StudentReference>
@@ -6761,6 +6808,10 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<CTEProgramService>
+			<CTEProgramService>uri://ed-fi.org/CTEProgramServiceDescriptor#Education and Training</CTEProgramService>
+			<CIPCode>13.0410</CIPCode>
+		</CTEProgramService>
 	</StudentCTEProgramAssociation>
 	<StudentCTEProgramAssociation>
 		<StudentReference>
@@ -7303,6 +7354,10 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<CTEProgramService>
+			<CTEProgramService>uri://ed-fi.org/CTEProgramServiceDescriptor#Science, Technology, Engineering and Mathematics</CTEProgramService>
+			<PrimaryIndicator>true</PrimaryIndicator>
+		</CTEProgramService>
 	</StudentCTEProgramAssociation>
 	<StudentCTEProgramAssociation>
 		<StudentReference>
@@ -14700,6 +14755,7 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<Dosage>300</Dosage>
 	</StudentLanguageInstructionProgramAssociation>
 	<StudentLanguageInstructionProgramAssociation>
 		<StudentReference>
@@ -14902,6 +14958,7 @@
 				<EducationOrganizationId>255901</EducationOrganizationId>
 			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
+		<Dosage>175</Dosage>
 	</StudentLanguageInstructionProgramAssociation>
 	<StudentLanguageInstructionProgramAssociation>
 		<StudentReference>
