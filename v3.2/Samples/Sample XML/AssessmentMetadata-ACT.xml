@@ -6,21 +6,33 @@
 		<AssessmentIdentificationCode>
 			<IdentificationCode>ACT Composite</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>CollegeBoard</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Composite</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Composite Score</AssessmentReportingMethod>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>36</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
 		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>23</MinimumScore>
-			<MaximumScore>30</MaximumScore>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Above Benchmark</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Composite Score</AssessmentReportingMethod>
+			<MinimumScore>24</MinimumScore>
+			<MaximumScore>36</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>ACT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>30</MaxRawScore>
+		</ContentStandard>
+		<AssessmentVersion>2005</AssessmentVersion>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>36.00000</MaxRawScore>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 	</Assessment>
 	<Assessment>
 		<AssessmentIdentifier>ACT English</AssessmentIdentifier>
@@ -28,43 +40,33 @@
 		<AssessmentIdentificationCode>
 			<IdentificationCode>ACT English</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>CollegeBoard</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+		<AssessmentScore>
 			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>19</MinimumScore>
-			<MaximumScore>25</MaximumScore>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>36</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Above Benchmark</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>24</MinimumScore>
+			<MaximumScore>36</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>ACT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>25</MaxRawScore>
+		</ContentStandard>
+		<AssessmentVersion>2005</AssessmentVersion>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>36.00000</MaxRawScore>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
-	</Assessment>
-	<Assessment>
-		<AssessmentIdentifier>ACT Mathematics</AssessmentIdentifier>
-		<AssessmentTitle>ACT</AssessmentTitle>
-		<AssessmentIdentificationCode>
-			<IdentificationCode>ACT Mathematics</IdentificationCode>
-			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
-		</AssessmentIdentificationCode>
-		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
-		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>19</MinimumScore>
-			<MaximumScore>25</MaximumScore>
-		</AssessmentPerformanceLevel>
-		<ContentStandard>
-			<Title>ACT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>25</MaxRawScore>
-		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 	</Assessment>
 	<Assessment>
 		<AssessmentIdentifier>ACT Reading</AssessmentIdentifier>
@@ -72,21 +74,33 @@
 		<AssessmentIdentificationCode>
 			<IdentificationCode>ACT Reading</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>CollegeBoard</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+		<AssessmentScore>
 			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>19</MinimumScore>
-			<MaximumScore>25</MaximumScore>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>36</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Above Benchmark</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>24</MinimumScore>
+			<MaximumScore>36</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>ACT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>25</MaxRawScore>
+		</ContentStandard>
+		<AssessmentVersion>2005</AssessmentVersion>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>36.00000</MaxRawScore>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 	</Assessment>
 	<Assessment>
 		<AssessmentIdentifier>ACT Science</AssessmentIdentifier>
@@ -94,21 +108,33 @@
 		<AssessmentIdentificationCode>
 			<IdentificationCode>ACT Science</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>CollegeBoard</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+		<AssessmentScore>
 			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>19</MinimumScore>
-			<MaximumScore>25</MaximumScore>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>36</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Above Benchmark</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>24</MinimumScore>
+			<MaximumScore>36</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>ACT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>25</MaxRawScore>
+		</ContentStandard>
+		<AssessmentVersion>2005</AssessmentVersion>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>36.00000</MaxRawScore>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 	</Assessment>
 	<Assessment>
 		<AssessmentIdentifier>ACT Writing</AssessmentIdentifier>
@@ -116,20 +142,32 @@
 		<AssessmentIdentificationCode>
 			<IdentificationCode>ACT Writing</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>CollegeBoard</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+		<AssessmentScore>
 			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>19</MinimumScore>
-			<MaximumScore>25</MaximumScore>
+			<MinimumScore>2</MinimumScore>
+			<MaximumScore>12</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Above Benchmark</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>9</MinimumScore>
+			<MaximumScore>12</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>ACT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>25</MaxRawScore>
+		</ContentStandard>
+		<AssessmentVersion>2005</AssessmentVersion>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>12.00000</MaxRawScore>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 	</Assessment>
 </InterchangeAssessmentMetadata>

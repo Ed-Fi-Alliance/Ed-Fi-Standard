@@ -4,154 +4,552 @@
 		<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 		<AssessmentTitle>7th Grade Math Placement</AssessmentTitle>
 		<AssessmentIdentificationCode>
-			<IdentificationCode>27</IdentificationCode>
-			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Other</AssessmentIdentificationSystem>
+			<IdentificationCode>2013-MP-7</IdentificationCode>
+			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#District</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>255901</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#Benchmark test</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Seventh grade</AssessedGradeLevel>
-		<AssessmentVersion>2013</AssessmentVersion>
-		<MaxRawScore>25.5</MaxRawScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>25.5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Below Basic</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>15</MinimumScore>
+			<MaximumScore>18</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Well Below Basic</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>14</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>23</MinimumScore>
+			<MaximumScore>25.5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>19</MinimumScore>
+			<MaximumScore>22</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentVersion>2010</AssessmentVersion>
+		<RevisionDate>2010-07-15</RevisionDate>
+		<MaxRawScore>25.50000</MaxRawScore>
+		<AssessmentPeriod>
+			<AssessmentPeriod>uri://ed-fi.org/AssessmentPeriodDescriptor#BOY</AssessmentPeriod>
+		</AssessmentPeriod>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
-		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 	</Assessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-37</IdentificationCode>
-		<MaxRawScore>3</MaxRawScore>
+		<MaxRawScore>3.00000</MaxRawScore>
+		<PercentOfAssessment>0.1176</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1418</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1419</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1420</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>3</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-38</IdentificationCode>
-		<MaxRawScore>1.5</MaxRawScore>
+		<MaxRawScore>1.50000</MaxRawScore>
+		<PercentOfAssessment>0.0588</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1417</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>1.5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-39</IdentificationCode>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
+		<PercentOfAssessment>0.0392</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1421</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>1</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-40</IdentificationCode>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
+		<PercentOfAssessment>0.0392</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1422</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>1</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-41</IdentificationCode>
-		<MaxRawScore>2</MaxRawScore>
+		<MaxRawScore>2.00000</MaxRawScore>
+		<PercentOfAssessment>0.0784</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1423</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1424</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>2</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-42</IdentificationCode>
-		<MaxRawScore>4</MaxRawScore>
+		<MaxRawScore>4.00000</MaxRawScore>
+		<PercentOfAssessment>0.1569</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1425</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1426</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1427</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1428</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>4</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-43</IdentificationCode>
-		<MaxRawScore>2</MaxRawScore>
+		<MaxRawScore>2.00000</MaxRawScore>
+		<PercentOfAssessment>0.0784</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1429</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1430</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>2</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-44</IdentificationCode>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
+		<PercentOfAssessment>0.0392</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1431</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>1</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-45</IdentificationCode>
-		<MaxRawScore>3</MaxRawScore>
+		<MaxRawScore>3.00000</MaxRawScore>
+		<PercentOfAssessment>0.1176</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1432</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1433</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1434</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>3</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-46</IdentificationCode>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
+		<PercentOfAssessment>0.0392</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1435</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>1</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-47</IdentificationCode>
-		<MaxRawScore>5</MaxRawScore>
+		<MaxRawScore>5.00000</MaxRawScore>
+		<PercentOfAssessment>0.1961</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1436</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1437</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1438</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1439</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1440</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>Seventh grade Mathematics-48</IdentificationCode>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
+		<PercentOfAssessment>0.0392</PercentOfAssessment>
+		<AssessmentItemReference>
+			<AssessmentItemIdentity>
+				<IdentificationCode>DBRDY_18_7_1441</IdentificationCode>
+				<AssessmentReference>
+					<AssessmentIdentity>
+						<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
+						<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+					</AssessmentIdentity>
+				</AssessmentReference>
+			</AssessmentItemIdentity>
+		</AssessmentItemReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>1</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal</ResultDatatypeType>
+		</AssessmentScore>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1417</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice multi-select</AssessmentItemCategory>
-		<MaxRawScore>1.5</MaxRawScore>
+		<MaxRawScore>1.50000</MaxRawScore>
 		<ItemText>Which expressions are equivalent to -3-(7.5+4)?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>
@@ -203,7 +601,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1418</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Which equation is true?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>
@@ -240,7 +638,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1419</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Round 7.49362 to the nearest thousandth.</ItemText>
 		<PossibleResponse>
 			<ResponseValue>7.494</ResponseValue>
@@ -261,7 +659,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1420</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>The length of a track around a field is 1/4 miles. You jog 3 1/2 times around the track. How far do you jog?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>
@@ -298,7 +696,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1421</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Michael paid a total of $48 for 4 pizzas. He used a coupon for $4 off the entire order. What is the equation to determine the regular price of 1 pizza, p?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>4p-4=48</ResponseValue>
@@ -319,7 +717,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1422</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>A roll of 40 quarters weighs 8 ounces. Which proportion can be used to find the weight in ounces, w, of 200 quarters?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>
@@ -356,7 +754,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1423</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>How many seconds are in 2 hours and 2 minutes?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>7,320</ResponseValue>
@@ -377,7 +775,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1424</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Use the diagram provided to answer the question. Which shape best represents the 2-dimensional shape formed by the slice made by the plane through the vertices of the cube shown?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>
@@ -410,7 +808,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1425</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Vincent bought a 25-pound bag of rice. He cooked 6.25 pounds of the rice. He stored the rest of the rice in 3 3/4-pound portions. What is the maximum number of 3 3/4-pound portions he stored?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>5.0</ResponseValue>
@@ -431,7 +829,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1426</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Simplify -(6/15) + (10/22)</ItemText>
 		<PossibleResponse>
 			<ResponseValue>(3/55)</ResponseValue>
@@ -452,7 +850,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1427</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Compare the quantities (2/3)x(1/4) and (1/3)x(3/4).</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>
@@ -489,7 +887,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1428</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Solve (3/4)/(3/2)</ItemText>
 		<PossibleResponse>
 			<ResponseValue>1/2</ResponseValue>
@@ -510,7 +908,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1429</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Ariana is playing a game. For each of her turns, she rolls a number cube labeled with the numbers 1 through 6. She also spins the spinner shown, divided equally into three parts labelled 1, 2, and 3. To win the game Ariana needs to roll a 3 and spin a 3 on her next turn. What is the probability that Ariana will win the game on her next turn?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>1/18</ResponseValue>
@@ -531,7 +929,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1430</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>What is the greatest common factor for 12 and 30?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>6</ResponseValue>
@@ -552,7 +950,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1431</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Solve 1 3/4 + 1 3/4</ItemText>
 		<PossibleResponse>
 			<ResponseValue>3 1/2</ResponseValue>
@@ -573,12 +971,17 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1432</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>In Ms. Morales’s class, the ratio of boys to girls is 3:7. The class sizes at Ms. Morales’s school range from 22 to 34 students per class. What is the total number of students in Ms. Morales’s class?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>30</ResponseValue>
 			<CorrectResponse>true</CorrectResponse>
 		</PossibleResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>CC.5.NF.1</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
 		<AssessmentReference>
 			<AssessmentIdentity>
 				<AssessmentIdentifier>MP-2013-Mathematics-Seventh grade</AssessmentIdentifier>
@@ -589,7 +992,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1433</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>The sale price of an item on sale for 40% off is $48. What was the regular price?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>$80</ResponseValue>
@@ -610,7 +1013,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1434</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Angles F and G are complementary angles. Angles G and H are supplementary angles. The degree measure of each angle is a whole number. What is the smallest possible measure of angle H?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>
@@ -647,7 +1050,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1435</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Solve 2 1/2 + 1 1/6</ItemText>
 		<PossibleResponse>
 			<ResponseValue>3 2/3</ResponseValue>
@@ -668,7 +1071,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1436</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>In a game, Janeesa started with 0 points. She then earned 50 points, lost 80 points, and earned 10 points. Which number line shows Janeesa’s ending score in the game?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>
@@ -701,7 +1104,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1437</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>A one-quart container of oil costs $0.89. A case of 12 one-quart containers costs $8.64. How much is saved per container by buying the oil by the case?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>0.17</ResponseValue>
@@ -722,7 +1125,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1438</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Last year Jan had 25 model airplanes in her collection. This year she has 32% more model airplanes. Jan then gave her brother 6 model airplanes to start a collection. How many model airplanes does Jan have after she gave 6 to her brother?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>27</ResponseValue>
@@ -743,7 +1146,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1439</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Megan uses 2/3 cup of almonds to make 4 cups of trail mix. Using this same proportion, how many cups of almonds would Megan need to make 9 cups of trail mix?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>1 1/2 cups</ResponseValue>
@@ -764,7 +1167,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1440</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Short answer</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>The scale on a map shows that 5 centimeters = 2 kilometers. What number of centimeters on the map represents an actual distance of 5 kilometers?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>12.5 centimeters</ResponseValue>
@@ -785,7 +1188,7 @@
 	<AssessmentItem>
 		<IdentificationCode>DBRDY_18_7_1441</IdentificationCode>
 		<AssessmentItemCategory>uri://ed-fi.org/AssessmentItemCategoryDescriptor#Multiple-choice</AssessmentItemCategory>
-		<MaxRawScore>1</MaxRawScore>
+		<MaxRawScore>1.00000</MaxRawScore>
 		<ItemText>Victoria folded 56 paper cranes in 6 hours. Daimon folded paper cranes at the same rate as Victoria. Which graph could model the rate at which Daimon folded paper cranes?</ItemText>
 		<PossibleResponse>
 			<ResponseValue>A</ResponseValue>

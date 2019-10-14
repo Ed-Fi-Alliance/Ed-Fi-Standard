@@ -4,27 +4,50 @@
 		<AssessmentIdentifier>SA-2011-Mathematics-Eighth grade</AssessmentIdentifier>
 		<AssessmentTitle>State Assessment</AssessmentTitle>
 		<AssessmentIdentificationCode>
-			<IdentificationCode>75</IdentificationCode>
-			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Other</AssessmentIdentificationSystem>
+			<IdentificationCode>SA2011Math8</IdentificationCode>
+			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#State</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>Texas Education Agency</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentIdentificationCode>
 			<IdentificationCode>State Assessment 8th Grade Mathematics</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>STAAR</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#State summative assessment 3-8 general</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Eighth grade</AssessedGradeLevel>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>50</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Vertical score</AssessmentReportingMethod>
+			<MinimumScore>100</MinimumScore>
+			<MaximumScore>950</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>28</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>45</MinimumScore>
+			<MaximumScore>50</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
 		<AssessmentPerformanceLevel>
 			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 			<MinimumScore>29</MinimumScore>
 			<MaximumScore>50</MaximumScore>
-		</AssessmentPerformanceLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>45</MinimumScore>
-			<MaximumScore>50</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>State Essential Knowledge and Skills</Title>
@@ -32,69 +55,62 @@
 		</ContentStandard>
 		<AssessmentVersion>2011</AssessmentVersion>
 		<RevisionDate>2011-09-01</RevisionDate>
-		<MaxRawScore>50</MaxRawScore>
-		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
-	</Assessment>
-	<Assessment>
-		<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
-		<AssessmentTitle>State Assessment</AssessmentTitle>
-		<AssessmentIdentificationCode>
-			<IdentificationCode>30</IdentificationCode>
-			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Other</AssessmentIdentificationSystem>
-		</AssessmentIdentificationCode>
-		<AssessmentIdentificationCode>
-			<IdentificationCode>State Assessment 8th Grade Reading</IdentificationCode>
-			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
-		</AssessmentIdentificationCode>
-		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#State summative assessment 3-8 general</AssessmentCategory>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
-		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Eighth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>35</MinimumScore>
-			<MaximumScore>48</MaximumScore>
-		</AssessmentPerformanceLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>45</MinimumScore>
-			<MaximumScore>48</MaximumScore>
-		</AssessmentPerformanceLevel>
-		<ContentStandard>
-			<Title>State Essential Knowledge and Skills</Title>
-			<PublicationYear>2011</PublicationYear>
-		</ContentStandard>
-		<AssessmentVersion>2011</AssessmentVersion>
-		<RevisionDate>2011-09-01</RevisionDate>
-		<MaxRawScore>48</MaxRawScore>
+		<MaxRawScore>50.00000</MaxRawScore>
+		<AssessmentPeriod>
+			<AssessmentPeriod>uri://ed-fi.org/AssessmentPeriodDescriptor#EOY</AssessmentPeriod>
+			<BeginDate>2010-03-29</BeginDate>
+			<EndDate>2010-05-07</EndDate>
+		</AssessmentPeriod>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 	</Assessment>
 	<Assessment>
 		<AssessmentIdentifier>SA-2011-Mathematics-Fifth grade</AssessmentIdentifier>
 		<AssessmentTitle>State Assessment</AssessmentTitle>
 		<AssessmentIdentificationCode>
-			<IdentificationCode>60</IdentificationCode>
-			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Other</AssessmentIdentificationSystem>
+			<IdentificationCode>SA2011Math5</IdentificationCode>
+			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#State</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>Texas Education Agency</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentIdentificationCode>
 			<IdentificationCode>State Assessment 5th Grade Mathematics</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>STAAR</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#State summative assessment 3-8 general</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Fifth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>28</MinimumScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
 			<MaximumScore>44</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Vertical score</AssessmentReportingMethod>
+			<MinimumScore>100</MinimumScore>
+			<MaximumScore>875</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>27</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<AssessmentPerformanceLevel>
 			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 			<MinimumScore>40</MinimumScore>
 			<MaximumScore>44</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>28</MinimumScore>
+			<MaximumScore>44</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>State Essential Knowledge and Skills</Title>
@@ -102,34 +118,137 @@
 		</ContentStandard>
 		<AssessmentVersion>2011</AssessmentVersion>
 		<RevisionDate>2011-09-01</RevisionDate>
-		<MaxRawScore>44</MaxRawScore>
+		<MaxRawScore>44.00000</MaxRawScore>
+		<AssessmentPeriod>
+			<AssessmentPeriod>uri://ed-fi.org/AssessmentPeriodDescriptor#EOY</AssessmentPeriod>
+			<BeginDate>2010-03-29</BeginDate>
+			<EndDate>2010-05-07</EndDate>
+		</AssessmentPeriod>
+		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+	</Assessment>
+	<Assessment>
+		<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
+		<AssessmentTitle>State Assessment</AssessmentTitle>
+		<AssessmentIdentificationCode>
+			<IdentificationCode>SA2011Read8</IdentificationCode>
+			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#State</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>Texas Education Agency</AssigningOrganizationIdentificationCode>
+		</AssessmentIdentificationCode>
+		<AssessmentIdentificationCode>
+			<IdentificationCode>State Assessment 8th Grade Reading</IdentificationCode>
+			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>STAAR</AssigningOrganizationIdentificationCode>
+		</AssessmentIdentificationCode>
+		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#State summative assessment 3-8 general</AssessmentCategory>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Eighth grade</AssessedGradeLevel>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure</AssessmentReportingMethod>
+			<MinimumScore>849</MinimumScore>
+			<MaximumScore>1700</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>48</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Vertical score</AssessmentReportingMethod>
+			<MinimumScore>100</MinimumScore>
+			<MaximumScore>950</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>34</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>45</MinimumScore>
+			<MaximumScore>48</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>35</MinimumScore>
+			<MaximumScore>48</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<ContentStandard>
+			<Title>State Essential Knowledge and Skills</Title>
+			<PublicationYear>2011</PublicationYear>
+		</ContentStandard>
+		<AssessmentVersion>2011</AssessmentVersion>
+		<RevisionDate>2011-09-01</RevisionDate>
+		<MaxRawScore>48.00000</MaxRawScore>
+		<AssessmentPeriod>
+			<AssessmentPeriod>uri://ed-fi.org/AssessmentPeriodDescriptor#EOY</AssessmentPeriod>
+			<BeginDate>2010-03-29</BeginDate>
+			<EndDate>2010-05-07</EndDate>
+		</AssessmentPeriod>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 	</Assessment>
 	<Assessment>
 		<AssessmentIdentifier>SA-2011-Reading-Fifth grade</AssessmentIdentifier>
 		<AssessmentTitle>State Assessment</AssessmentTitle>
 		<AssessmentIdentificationCode>
-			<IdentificationCode>15</IdentificationCode>
-			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Other</AssessmentIdentificationSystem>
+			<IdentificationCode>SA2011Read5</IdentificationCode>
+			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#State</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>Texas Education Agency</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentIdentificationCode>
 			<IdentificationCode>State Assessment 5th Grade Reading</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>STAAR</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#State summative assessment 3-8 general</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Fifth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>30</MinimumScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure</AssessmentReportingMethod>
+			<MinimumScore>549</MinimumScore>
+			<MaximumScore>1700</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
 			<MaximumScore>42</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Vertical score</AssessmentReportingMethod>
+			<MinimumScore>100</MinimumScore>
+			<MaximumScore>875</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>29</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<AssessmentPerformanceLevel>
 			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
 			<MinimumScore>39</MinimumScore>
 			<MaximumScore>42</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>30</MinimumScore>
+			<MaximumScore>42</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>State Essential Knowledge and Skills</Title>
@@ -137,12 +256,39 @@
 		</ContentStandard>
 		<AssessmentVersion>2011</AssessmentVersion>
 		<RevisionDate>2011-09-01</RevisionDate>
-		<MaxRawScore>42</MaxRawScore>
+		<MaxRawScore>42.00000</MaxRawScore>
+		<AssessmentPeriod>
+			<AssessmentPeriod>uri://ed-fi.org/AssessmentPeriodDescriptor#EOY</AssessmentPeriod>
+			<BeginDate>2010-03-29</BeginDate>
+			<EndDate>2010-05-07</EndDate>
+		</AssessmentPeriod>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 	</Assessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics8-1</IdentificationCode>
-		<MaxRawScore>10</MaxRawScore>
+		<MaxRawScore>10.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>6</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>9</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.2000</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.24.NA.8.1.A</LearningStandardId>
@@ -154,10 +300,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics8-2</IdentificationCode>
-		<MaxRawScore>10</MaxRawScore>
+		<MaxRawScore>10.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>6</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>9</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.2000</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.24.NA.8.2.A</LearningStandardId>
@@ -169,10 +344,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics8-3</IdentificationCode>
-		<MaxRawScore>7</MaxRawScore>
+		<MaxRawScore>7.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>4</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>6</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>5</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1400</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.24.NA.8.3.A</LearningStandardId>
@@ -184,10 +388,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics8-4</IdentificationCode>
-		<MaxRawScore>5</MaxRawScore>
+		<MaxRawScore>5.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>3</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>5</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>4</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1000</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.24.NA.8.4.A</LearningStandardId>
@@ -199,10 +432,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics8-5</IdentificationCode>
-		<MaxRawScore>8</MaxRawScore>
+		<MaxRawScore>8.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>6</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1600</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.24.NA.8.5.A</LearningStandardId>
@@ -214,10 +476,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics8-6</IdentificationCode>
-		<MaxRawScore>10</MaxRawScore>
+		<MaxRawScore>10.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>6</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>9</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.2000</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.24.NA.8.6.A</LearningStandardId>
@@ -229,70 +520,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
-	</ObjectiveAssessment>
-	<ObjectiveAssessment>
-		<IdentificationCode>State Assessment_Reading8-1</IdentificationCode>
-		<MaxRawScore>12</MaxRawScore>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.20.1.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-		<AssessmentReference>
-			<AssessmentIdentity>
-				<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
-				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
-			</AssessmentIdentity>
-		</AssessmentReference>
-	</ObjectiveAssessment>
-	<ObjectiveAssessment>
-		<IdentificationCode>State Assessment_Reading8-2</IdentificationCode>
-		<MaxRawScore>10</MaxRawScore>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.20.2.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-		<AssessmentReference>
-			<AssessmentIdentity>
-				<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
-				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
-			</AssessmentIdentity>
-		</AssessmentReference>
-	</ObjectiveAssessment>
-	<ObjectiveAssessment>
-		<IdentificationCode>State Assessment_Reading8-3</IdentificationCode>
-		<MaxRawScore>10</MaxRawScore>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.20.3.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-		<AssessmentReference>
-			<AssessmentIdentity>
-				<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
-				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
-			</AssessmentIdentity>
-		</AssessmentReference>
-	</ObjectiveAssessment>
-	<ObjectiveAssessment>
-		<IdentificationCode>State Assessment_Reading8-4</IdentificationCode>
-		<MaxRawScore>16</MaxRawScore>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.20.4.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-		<AssessmentReference>
-			<AssessmentIdentity>
-				<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
-				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
-			</AssessmentIdentity>
-		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics5-1</IdentificationCode>
-		<MaxRawScore>11</MaxRawScore>
+		<MaxRawScore>11.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>10</MinimumScore>
+			<MaximumScore>11</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>8</MinimumScore>
+			<MaximumScore>11</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.2500</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.17.5.1.A</LearningStandardId>
@@ -304,10 +564,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>11</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics5-2</IdentificationCode>
-		<MaxRawScore>7</MaxRawScore>
+		<MaxRawScore>7.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>4</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>6</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>5</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1591</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.17.5.2.A</LearningStandardId>
@@ -319,10 +608,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics5-3</IdentificationCode>
-		<MaxRawScore>7</MaxRawScore>
+		<MaxRawScore>7.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>4</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>6</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>5</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1591</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.17.5.3.A</LearningStandardId>
@@ -334,10 +652,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics5-4</IdentificationCode>
-		<MaxRawScore>7</MaxRawScore>
+		<MaxRawScore>7.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>4</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>6</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>5</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1591</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.17.5.4.A</LearningStandardId>
@@ -349,10 +696,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>7</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics5-5</IdentificationCode>
-		<MaxRawScore>5</MaxRawScore>
+		<MaxRawScore>5.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>3</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>5</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>4</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1136</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.17.5.5.A</LearningStandardId>
@@ -364,10 +740,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Mathematics5-6</IdentificationCode>
-		<MaxRawScore>8</MaxRawScore>
+		<MaxRawScore>8.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>6</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1818</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>111.17.5.6.A</LearningStandardId>
@@ -379,10 +784,215 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+	</ObjectiveAssessment>
+	<ObjectiveAssessment>
+		<IdentificationCode>State Assessment_Reading8-1</IdentificationCode>
+		<MaxRawScore>12.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>9</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>11</MinimumScore>
+			<MaximumScore>12</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>10</MinimumScore>
+			<MaximumScore>12</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.2500</PercentOfAssessment>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.20.1.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<AssessmentReference>
+			<AssessmentIdentity>
+				<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
+				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+			</AssessmentIdentity>
+		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>12</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+	</ObjectiveAssessment>
+	<ObjectiveAssessment>
+		<IdentificationCode>State Assessment_Reading8-2</IdentificationCode>
+		<MaxRawScore>10.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>6</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>9</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.2083</PercentOfAssessment>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.20.2.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<AssessmentReference>
+			<AssessmentIdentity>
+				<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
+				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+			</AssessmentIdentity>
+		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+	</ObjectiveAssessment>
+	<ObjectiveAssessment>
+		<IdentificationCode>State Assessment_Reading8-3</IdentificationCode>
+		<MaxRawScore>10.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>6</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>9</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.2083</PercentOfAssessment>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.20.3.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<AssessmentReference>
+			<AssessmentIdentity>
+				<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
+				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+			</AssessmentIdentity>
+		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>10</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
+	</ObjectiveAssessment>
+	<ObjectiveAssessment>
+		<IdentificationCode>State Assessment_Reading8-4</IdentificationCode>
+		<MaxRawScore>16.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>11</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>15</MinimumScore>
+			<MaximumScore>16</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>12</MinimumScore>
+			<MaximumScore>16</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.3333</PercentOfAssessment>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.20.4.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<AssessmentReference>
+			<AssessmentIdentity>
+				<AssessmentIdentifier>SA-2011-Reading-Eighth grade</AssessmentIdentifier>
+				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+			</AssessmentIdentity>
+		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>16</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Reading5-1</IdentificationCode>
-		<MaxRawScore>13</MaxRawScore>
+		<MaxRawScore>13.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>9</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>12</MinimumScore>
+			<MaximumScore>13</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>10</MinimumScore>
+			<MaximumScore>13</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.3095</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>110.16.1.A</LearningStandardId>
@@ -394,10 +1004,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>13</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Reading5-2</IdentificationCode>
-		<MaxRawScore>8</MaxRawScore>
+		<MaxRawScore>8.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>6</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1905</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>110.16.2.A</LearningStandardId>
@@ -409,10 +1048,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Reading5-3</IdentificationCode>
-		<MaxRawScore>8</MaxRawScore>
+		<MaxRawScore>8.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>5</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>7</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>6</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.1905</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>110.16.3.A</LearningStandardId>
@@ -424,10 +1092,39 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
 	</ObjectiveAssessment>
 	<ObjectiveAssessment>
 		<IdentificationCode>State Assessment_Reading5-4</IdentificationCode>
-		<MaxRawScore>13</MaxRawScore>
+		<MaxRawScore>13.00000</MaxRawScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Fail</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>9</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Advanced</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>12</MinimumScore>
+			<MaximumScore>13</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Pass</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>10</MinimumScore>
+			<MaximumScore>13</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<PercentOfAssessment>0.3095</PercentOfAssessment>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>110.16.4.A</LearningStandardId>
@@ -439,5 +1136,12 @@
 				<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
 			</AssessmentIdentity>
 		</AssessmentReference>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
+			<MinimumScore>0</MinimumScore>
+			<MaximumScore>13</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
 	</ObjectiveAssessment>
 </InterchangeAssessmentMetadata>
