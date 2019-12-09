@@ -1,48 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <InterchangeAssessmentMetadata xmlns="http://ed-fi.org/0320" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320 ../../Schemas/Bulk/Interchange-AssessmentMetadata.xsd">
 	<Assessment>
-		<AssessmentIdentifier>SAT Mathematics</AssessmentIdentifier>
-		<AssessmentTitle>SAT</AssessmentTitle>
-		<AssessmentIdentificationCode>
-			<IdentificationCode>SAT Mathematics</IdentificationCode>
-			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
-		</AssessmentIdentificationCode>
-		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
-		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
-		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Proficient</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>500</MinimumScore>
-			<MaximumScore>750</MaximumScore>
-		</AssessmentPerformanceLevel>
-		<ContentStandard>
-			<Title>SAT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>750</MaxRawScore>
-		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
-	</Assessment>
-	<Assessment>
 		<AssessmentIdentifier>SAT Critical Reading</AssessmentIdentifier>
 		<AssessmentTitle>SAT</AssessmentTitle>
 		<AssessmentIdentificationCode>
 			<IdentificationCode>SAT Critical Reading</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>CollegeBoard</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Reading</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>100</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>200</MinimumScore>
+			<MaximumScore>800</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>100</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
 		<AssessmentPerformanceLevel>
-			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Proficient</PerformanceLevel>
-			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score</AssessmentReportingMethod>
-			<MinimumScore>500</MinimumScore>
-			<MaximumScore>750</MaximumScore>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Above Benchmark</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>480</MinimumScore>
+			<MaximumScore>800</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
 		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>SAT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>750</MaxRawScore>
+		</ContentStandard>
+		<AssessmentVersion>2005</AssessmentVersion>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>800.00000</MaxRawScore>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
+	</Assessment>
+	<Assessment>
+		<AssessmentIdentifier>SAT Mathematics</AssessmentIdentifier>
+		<AssessmentTitle>SAT</AssessmentTitle>
+		<AssessmentIdentificationCode>
+			<IdentificationCode>SAT Mathematics</IdentificationCode>
+			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>CollegeBoard</AssigningOrganizationIdentificationCode>
+		</AssessmentIdentificationCode>
+		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>100</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>200</MinimumScore>
+			<MaximumScore>800</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>100</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Above Benchmark</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>530</MinimumScore>
+			<MaximumScore>800</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
+		<ContentStandard>
+			<Title>SAT</Title>
+		</ContentStandard>
+		<AssessmentVersion>2005</AssessmentVersion>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>800.00000</MaxRawScore>
+		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 	</Assessment>
 	<Assessment>
 		<AssessmentIdentifier>SAT Writing</AssessmentIdentifier>
@@ -50,14 +98,44 @@
 		<AssessmentIdentificationCode>
 			<IdentificationCode>SAT Writing</IdentificationCode>
 			<AssessmentIdentificationSystem>uri://ed-fi.org/AssessmentIdentificationSystemDescriptor#Test Contractor</AssessmentIdentificationSystem>
+			<AssigningOrganizationIdentificationCode>CollegeBoard</AssigningOrganizationIdentificationCode>
 		</AssessmentIdentificationCode>
 		<AssessmentCategory>uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam</AssessmentCategory>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Writing</AcademicSubject>
 		<AssessedGradeLevel>uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade</AssessedGradeLevel>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#National College-Bound Percentile</AssessmentReportingMethod>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>100</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>2</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentScore>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#State College-Bound Percentile</AssessmentReportingMethod>
+			<MinimumScore>1</MinimumScore>
+			<MaximumScore>100</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentScore>
+		<AssessmentPerformanceLevel>
+			<PerformanceLevel>uri://ed-fi.org/PerformanceLevelDescriptor#Above Benchmark</PerformanceLevel>
+			<AssessmentReportingMethod>uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score</AssessmentReportingMethod>
+			<MinimumScore>5</MinimumScore>
+			<MaximumScore>8</MaximumScore>
+			<ResultDatatypeType>uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer</ResultDatatypeType>
+		</AssessmentPerformanceLevel>
 		<ContentStandard>
 			<Title>SAT</Title>
-		</ContentStandard>		<AssessmentVersion>1</AssessmentVersion>		<RevisionDate>2005-03-12</RevisionDate>
-		<MaxRawScore>750</MaxRawScore>
+		</ContentStandard>
+		<AssessmentVersion>2005</AssessmentVersion>
+		<RevisionDate>2005-03-12</RevisionDate>
+		<MaxRawScore>8.00000</MaxRawScore>
 		<Namespace>uri://ed-fi.org/Assessment/Assessment.xml</Namespace>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Paper-based</PlatformType>
+		<PlatformType>uri://ed-fi.org/PlatformTypeDescriptor#Computer-based</PlatformType>
 	</Assessment>
 </InterchangeAssessmentMetadata>
