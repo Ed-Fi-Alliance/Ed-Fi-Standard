@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- (c)2019 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/annotation" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1.00">
+  <xs:simpleType name="DatabaseKey">
+    <xs:annotation>
+      <xs:documentation>Identifies participation in the primary key for the specified data model.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Operational Data Store" />
+      <xs:enumeration value="Data Warehouse" />
+      <xs:enumeration value="Data Mart" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Descriptor">
+    <xs:annotation>
+      <xs:documentation>Identifies the descriptor being referenced by a DescriptorReferenceType element.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="AbsenceEventCategoryDescriptor" />
+      <xs:enumeration value="AcademicHonorCategoryDescriptor" />
+      <xs:enumeration value="AcademicSubjectDescriptor" />
+      <xs:enumeration value="AccommodationDescriptor" />
+      <xs:enumeration value="AccountClassificationDescriptor" />
+      <xs:enumeration value="AchievementCategoryDescriptor" />
+      <xs:enumeration value="AdditionalCreditTypeDescriptor" />
+      <xs:enumeration value="AddressTypeDescriptor" />
+      <xs:enumeration value="AdministrationEnvironmentDescriptor" />
+      <xs:enumeration value="AdministrativeFundingControlDescriptor" />
+      <xs:enumeration value="AssessmentCategoryDescriptor" />
+      <xs:enumeration value="AssessmentIdentificationSystemDescriptor" />
+      <xs:enumeration value="AssessmentItemCategoryDescriptor" />
+      <xs:enumeration value="AssessmentItemResultDescriptor" />
+      <xs:enumeration value="AssessmentPeriodDescriptor" />
+      <xs:enumeration value="AssessmentReportingMethodDescriptor" />
+      <xs:enumeration value="AttemptStatusDescriptor" />
+      <xs:enumeration value="AttendanceEventCategoryDescriptor" />
+      <xs:enumeration value="BehaviorDescriptor" />
+      <xs:enumeration value="CalendarEventDescriptor" />
+      <xs:enumeration value="CalendarTypeDescriptor" />
+      <xs:enumeration value="CareerPathwayDescriptor" />
+      <xs:enumeration value="CharterApprovalAgencyTypeDescriptor" />
+      <xs:enumeration value="CharterStatusDescriptor" />
+      <xs:enumeration value="CitizenshipStatusDescriptor" />
+      <xs:enumeration value="ClassroomPositionDescriptor" />
+      <xs:enumeration value="CohortScopeDescriptor" />
+      <xs:enumeration value="CohortTypeDescriptor" />
+      <xs:enumeration value="CohortYearTypeDescriptor" />
+      <xs:enumeration value="CompetencyLevelDescriptor" />
+      <xs:enumeration value="ContactTypeDescriptor" />
+      <xs:enumeration value="ContentClassDescriptor" />
+      <xs:enumeration value="ContinuationOfServicesReasonDescriptor" />
+      <xs:enumeration value="CostRateDescriptor" />
+      <xs:enumeration value="CountryDescriptor" />
+      <xs:enumeration value="CourseAttemptResultDescriptor" />
+      <xs:enumeration value="CourseDefinedByDescriptor" />
+      <xs:enumeration value="CourseGPAApplicabilityDescriptor" />
+      <xs:enumeration value="CourseIdentificationSystemDescriptor" />
+      <xs:enumeration value="CourseLevelCharacteristicDescriptor" />
+      <xs:enumeration value="CourseRepeatCodeDescriptor" />
+      <xs:enumeration value="CredentialFieldDescriptor" />
+      <xs:enumeration value="CredentialTypeDescriptor" />
+      <xs:enumeration value="CreditTypeDescriptor" />
+      <xs:enumeration value="CTEProgramServiceDescriptor" />
+      <xs:enumeration value="CurriculumUsedDescriptor" />
+      <xs:enumeration value="DeliveryMethodDescriptor" />
+      <xs:enumeration value="DiagnosisDescriptor" />
+      <xs:enumeration value="DiplomaLevelDescriptor" />
+      <xs:enumeration value="DiplomaTypeDescriptor" />
+      <xs:enumeration value="DisabilityDescriptor" />
+      <xs:enumeration value="DisabilityDesignationDescriptor" />
+      <xs:enumeration value="DisabilityDeterminationSourceTypeDescriptor" />
+      <xs:enumeration value="DisciplineActionLengthDifferenceReasonDescriptor" />
+      <xs:enumeration value="DisciplineDescriptor" />
+      <xs:enumeration value="DisciplineIncidentParticipationCodeDescriptor" />
+      <xs:enumeration value="EducationalEnvironmentDescriptor" />
+      <xs:enumeration value="EducationOrganizationCategoryDescriptor" />
+      <xs:enumeration value="EducationOrganizationIdentificationSystemDescriptor" />
+      <xs:enumeration value="EducationPlanDescriptor" />
+      <xs:enumeration value="ElectronicMailTypeDescriptor" />
+      <xs:enumeration value="EmploymentStatusDescriptor" />
+      <xs:enumeration value="EntryGradeLevelReasonDescriptor" />
+      <xs:enumeration value="EntryTypeDescriptor" />
+      <xs:enumeration value="EventCircumstanceDescriptor" />
+      <xs:enumeration value="ExitWithdrawTypeDescriptor" />
+      <xs:enumeration value="GradebookEntryTypeDescriptor" />
+      <xs:enumeration value="GradeLevelDescriptor" />
+      <xs:enumeration value="GradePointAverageWeightSystemDescriptor" />
+      <xs:enumeration value="GradeTypeDescriptor" />
+      <xs:enumeration value="GradingPeriodDescriptor" />
+      <xs:enumeration value="GraduationPlanTypeDescriptor" />
+      <xs:enumeration value="GunFreeSchoolsActReportingStatusDescriptor" />
+      <xs:enumeration value="HomelessPrimaryNighttimeResidenceDescriptor" />
+      <xs:enumeration value="HomelessProgramServiceDescriptor" />
+      <xs:enumeration value="IdentificationDocumentUseDescriptor" />
+      <xs:enumeration value="IncidentLocationDescriptor" />
+      <xs:enumeration value="InstitutionTelephoneNumberTypeDescriptor" />
+      <xs:enumeration value="InteractivityStyleDescriptor" />
+      <xs:enumeration value="InternetAccessDescriptor" />
+      <xs:enumeration value="InterventionClassDescriptor" />
+      <xs:enumeration value="InterventionEffectivenessRatingDescriptor" />
+      <xs:enumeration value="LanguageDescriptor" />
+      <xs:enumeration value="LanguageInstructionProgramServiceDescriptor" />
+      <xs:enumeration value="LanguageUseDescriptor" />
+      <xs:enumeration value="LearningStandardCategoryDescriptor" />
+      <xs:enumeration value="LearningStandardEquivalenceStrengthDescriptor" />
+      <xs:enumeration value="LearningStandardScopeDescriptor" />
+      <xs:enumeration value="LevelOfEducationDescriptor" />
+      <xs:enumeration value="LicenseStatusDescriptor" />
+      <xs:enumeration value="LicenseTypeDescriptor" />
+      <xs:enumeration value="LimitedEnglishProficiencyDescriptor" />
+      <xs:enumeration value="LocaleDescriptor" />
+      <xs:enumeration value="LocalEducationAgencyCategoryDescriptor" />
+      <xs:enumeration value="MagnetSpecialProgramEmphasisSchoolDescriptor" />
+      <xs:enumeration value="MediumOfInstructionDescriptor" />
+      <xs:enumeration value="MethodCreditEarnedDescriptor" />
+      <xs:enumeration value="MigrantEducationProgramServiceDescriptor" />
+      <xs:enumeration value="MonitoredDescriptor" />
+      <xs:enumeration value="NeglectedOrDelinquentProgramDescriptor" />
+      <xs:enumeration value="NeglectedOrDelinquentProgramServiceDescriptor" />
+      <xs:enumeration value="NetworkPurposeDescriptor" />
+      <xs:enumeration value="OldEthnicityDescriptor" />
+      <xs:enumeration value="OperationalStatusDescriptor" />
+      <xs:enumeration value="OtherNameTypeDescriptor" />
+      <xs:enumeration value="ParticipationDescriptor" />
+      <xs:enumeration value="ParticipationStatusDescriptor" />
+      <xs:enumeration value="PerformanceBaseConversionDescriptor" />
+      <xs:enumeration value="PerformanceLevelDescriptor" />
+      <xs:enumeration value="PersonalInformationVerificationDescriptor" />
+      <xs:enumeration value="PlatformTypeDescriptor" />
+      <xs:enumeration value="PopulationServedDescriptor" />
+      <xs:enumeration value="PostingResultDescriptor" />
+      <xs:enumeration value="PostSecondaryEventCategoryDescriptor" />
+      <xs:enumeration value="PostSecondaryInstitutionLevelDescriptor" />
+      <xs:enumeration value="ProficiencyDescriptor" />
+      <xs:enumeration value="ProgramAssignmentDescriptor" />
+      <xs:enumeration value="ProgramCharacteristicDescriptor" />
+      <xs:enumeration value="ProgramSponsorDescriptor" />
+      <xs:enumeration value="ProgramTypeDescriptor" />
+      <xs:enumeration value="ProgressDescriptor" />
+      <xs:enumeration value="ProgressLevelDescriptor" />
+      <xs:enumeration value="ProviderCategoryDescriptor" />
+      <xs:enumeration value="ProviderProfitabilityDescriptor" />
+      <xs:enumeration value="ProviderStatusDescriptor" />
+      <xs:enumeration value="PublicationStatusDescriptor" />
+      <xs:enumeration value="RaceDescriptor" />
+      <xs:enumeration value="ReasonExitedDescriptor" />
+      <xs:enumeration value="ReasonNotTestedDescriptor" />
+      <xs:enumeration value="RecognitionTypeDescriptor" />
+      <xs:enumeration value="RelationDescriptor" />
+      <xs:enumeration value="RepeatIdentifierDescriptor" />
+      <xs:enumeration value="ReporterDescriptionDescriptor" />
+      <xs:enumeration value="ResidencyStatusDescriptor" />
+      <xs:enumeration value="ResponseIndicatorDescriptor" />
+      <xs:enumeration value="ResponsibilityDescriptor" />
+      <xs:enumeration value="RestraintEventReasonDescriptor" />
+      <xs:enumeration value="ResultDatatypeTypeDescriptor" />
+      <xs:enumeration value="RetestIndicatorDescriptor" />
+      <xs:enumeration value="SchoolCategoryDescriptor" />
+      <xs:enumeration value="SchoolChoiceImplementStatusDescriptor" />
+      <xs:enumeration value="SchoolFoodServiceProgramServiceDescriptor" />
+      <xs:enumeration value="SchoolTypeDescriptor" />
+      <xs:enumeration value="SectionCharacteristicDescriptor" />
+      <xs:enumeration value="SeparationDescriptor" />
+      <xs:enumeration value="SeparationReasonDescriptor" />
+      <xs:enumeration value="ServiceDescriptor" />
+      <xs:enumeration value="SexDescriptor" />
+      <xs:enumeration value="SpecialEducationProgramServiceDescriptor" />
+      <xs:enumeration value="SpecialEducationSettingDescriptor" />
+      <xs:enumeration value="StaffClassificationDescriptor" />
+      <xs:enumeration value="StaffIdentificationSystemDescriptor" />
+      <xs:enumeration value="StaffLeaveEventCategoryDescriptor" />
+      <xs:enumeration value="StateAbbreviationDescriptor" />
+      <xs:enumeration value="StudentCharacteristicDescriptor" />
+      <xs:enumeration value="StudentIdentificationSystemDescriptor" />
+      <xs:enumeration value="StudentParticipationCodeDescriptor" />
+      <xs:enumeration value="TeachingCredentialBasisDescriptor" />
+      <xs:enumeration value="TeachingCredentialDescriptor" />
+      <xs:enumeration value="TechnicalSkillsAssessmentDescriptor" />
+      <xs:enumeration value="TelephoneNumberTypeDescriptor" />
+      <xs:enumeration value="TermDescriptor" />
+      <xs:enumeration value="TitleIPartAParticipantDescriptor" />
+      <xs:enumeration value="TitleIPartAProgramServiceDescriptor" />
+      <xs:enumeration value="TitleIPartASchoolDesignationDescriptor" />
+      <xs:enumeration value="TribalAffiliationDescriptor" />
+      <xs:enumeration value="VisaDescriptor" />
+      <xs:enumeration value="WeaponDescriptor" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TypeGroup">
+    <xs:annotation>
+      <xs:documentation>Identifies the schema section of which the type is a member.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Association" />
+      <xs:enumeration value="Base" />
+      <xs:enumeration value="Common" />
+      <xs:enumeration value="Descriptor" />
+      <xs:enumeration value="Domain Entity" />
+      <xs:enumeration value="Enumeration" />
+      <xs:enumeration value="Extended Descriptor Reference" />
+      <xs:enumeration value="Extended Reference" />
+      <xs:enumeration value="Identity" />
+      <xs:enumeration value="Simple" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
