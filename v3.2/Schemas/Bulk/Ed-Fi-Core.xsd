@@ -1188,6 +1188,21 @@
               <xs:documentation>Optional association between CourseTranscript and ExternalEdOrg is designed to capture cases in which the student takes a course via an ExternalEducationOrganization (like an enrolled student taking a Khan Academy course).</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="AlternativeCourseIdentificationCode" type="CourseIdentificationCode" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The code that identifies the course, course offering, the code from an external educational organization, or other alternate course code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AssigningOrganizationIdentificationCode" type="IdentificationCode" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The organization code or name assigning the course identification code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseCatalogURL" type="CourseCatalogURL" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The URL for the course catalog that defines the course identification code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
