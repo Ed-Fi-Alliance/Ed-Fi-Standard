@@ -16144,7 +16144,7 @@
     <xs:sequence>
       <xs:element name="PerformanceLevelMet" type="xs:boolean">
         <xs:annotation>
-          <xs:documentation>Optional indicator of whether the performance level was met.</xs:documentation>
+          <xs:documentation>Indicator of whether the performance level was met.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="PerformanceLevel" type="PerformanceLevelDescriptorReferenceType">
