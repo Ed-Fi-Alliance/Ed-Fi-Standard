@@ -3279,6 +3279,11 @@
               <xs:documentation>Indicator of whether this section is used for official daily attendance. Alternatively, official daily attendance may be tied to a Class Period.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="SectionName" type="SectionName" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A locally-defined name for the section, generally created to make the section more recognizable in informal contexts and generally distinct from the SectionIdentifier.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -18366,6 +18371,18 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SectionName">
+    <xs:annotation>
+      <xs:documentation>A locally-defined name for the section, generally created to make the section more recognizable in informal contexts and generally distinct from the SectionIdentifier.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="100" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ServiceCategory">
