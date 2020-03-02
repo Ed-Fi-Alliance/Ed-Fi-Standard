@@ -7104,7 +7104,7 @@
   </xs:complexType>
   <xs:complexType name="StudentEducationOrganizationResponsibilityAssociation">
     <xs:annotation>
-      <xs:documentation>This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
+      <xs:documentation>This association indicates a relationship between a student and an education organization other than an enrollment relationship, and generally indicating some kind of responsibility of the education organization for the student. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Association</ann:TypeGroup>
       </xs:appinfo>
