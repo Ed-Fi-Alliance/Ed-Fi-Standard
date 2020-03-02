@@ -1203,6 +1203,22 @@
               <xs:documentation>The URL for the course catalog that defines the course identification code.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="CreditCategory" type="CreditCategoryDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>A categorization for the course transcript credits awarded in the course transcript.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>CreditCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The subject area for the course transcript credits awarded in the course transcript.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1882,6 +1898,11 @@
           <xs:element name="CreditsByCourse" type="CreditsByCourse" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The total credits required for graduation by taking a specific course, or by taking one or more from a set of courses.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CreditsByCreditCategory" type="CreditsByCreditCategory" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The total credits required for graduation based on the credit category.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -4745,6 +4766,17 @@
   <xs:complexType name="CredentialTypeDescriptor">
     <xs:annotation>
       <xs:documentation>An indication of the category of credential an individual holds.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CreditCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>A categorization for the course transcript credits.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -13055,6 +13087,15 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="CreditCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>A categorization for the course transcript credits.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="CreditTypeDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The type of credits or units of value awarded for the completion of a course.</xs:documentation>
@@ -14920,6 +14961,29 @@
           <xs:appinfo>
             <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CreditsByCreditCategory">
+    <xs:annotation>
+      <xs:documentation>The total credits required for graduation based on the credit category.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CreditCategory" type="CreditCategoryDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>A categorization for the course transcript credits awarded in the course transcript.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>CreditCategoryDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Credits" type="Credits">
+        <xs:annotation>
+          <xs:documentation>The value of credits or units of value awarded for the completion of a course.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
