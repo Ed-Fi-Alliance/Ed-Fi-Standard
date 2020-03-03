@@ -3772,7 +3772,7 @@
           </xs:element>
           <xs:element name="GradePointAverage" type="GradePointAverage" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>A measure of average performance for courses taken by an individual.</xs:documentation>
+              <xs:documentation>The grade point average for an individual computed as the grade points earned divided by the number of credits attempted.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Diploma" type="Diploma" minOccurs="0" maxOccurs="unbounded">
@@ -5065,9 +5065,9 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="GradePointAverageWeightSystemDescriptor">
+  <xs:complexType name="GradePointAverageTypeDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the system used for calculating the Grade Point Average.</xs:documentation>
+      <xs:documentation>The system used for calculating the grade point average for an individual.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -13326,9 +13326,9 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
-  <xs:simpleType name="GradePointAverageWeightSystemDescriptorReferenceType">
+  <xs:simpleType name="GradePointAverageTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the system used for calculating the Grade Point Average.</xs:documentation>
+      <xs:documentation>The system used for calculating the grade point average for an individual.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -15386,28 +15386,33 @@
   </xs:complexType>
   <xs:complexType name="GradePointAverage">
     <xs:annotation>
-      <xs:documentation>A measure of average performance for courses taken by an individual.</xs:documentation>
+      <xs:documentation>The grade point average for an individual computed as the grade points earned divided by the number of credits attempted.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="GradePointAverageWeightSystem" type="GradePointAverageWeightSystemDescriptorReferenceType">
+      <xs:element name="GradePointAverageType" type="GradePointAverageTypeDescriptorReferenceType">
         <xs:annotation>
-          <xs:documentation>The system used for calculating the Grade Point Average.</xs:documentation>
+          <xs:documentation>The system used for calculating the grade point average for an individual.</xs:documentation>
           <xs:appinfo>
-            <ann:Descriptor>GradePointAverageWeightSystemDescriptor</ann:Descriptor>
+            <ann:Descriptor>GradePointAverageTypeDescriptor</ann:Descriptor>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="IsCumulative" type="xs:boolean">
+      <xs:element name="IsCumulative" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Indicator of whether or not the Grade Point Average value is cumulative.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="GradePointAverageValue" type="GPA">
         <xs:annotation>
-          <xs:documentation>Grade Point Average computed for a grading period, session, or cumulatively.</xs:documentation>
+          <xs:documentation>The value of the grade points earned divided by the number of credits attempted.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MaxGradePointAverageValue" type="GPA" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The maximum value for the grade point average.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
