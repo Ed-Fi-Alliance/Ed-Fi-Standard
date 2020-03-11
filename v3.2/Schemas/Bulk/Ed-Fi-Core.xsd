@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- (c)2019 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<!-- (c)2020 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0320" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0320" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="http://ed-fi.org/annotation" schemaLocation="SchemaAnnotation.xsd" />
   <xs:annotation>
@@ -1188,6 +1188,37 @@
               <xs:documentation>Optional association between CourseTranscript and ExternalEdOrg is designed to capture cases in which the student takes a course via an ExternalEducationOrganization (like an enrolled student taking a Khan Academy course).</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="AlternativeCourseIdentificationCode" type="CourseIdentificationCode" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The code that identifies the course, course offering, the code from an external educational organization, or other alternate course code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AssigningOrganizationIdentificationCode" type="IdentificationCode" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The organization code or name assigning the course identification code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CourseCatalogURL" type="CourseCatalogURL" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The URL for the course catalog that defines the course identification code.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CreditCategory" type="CreditCategoryDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>A categorization for the course transcript credits awarded in the course transcript.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>CreditCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AcademicSubject" type="AcademicSubjectDescriptorReferenceType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The subject area for the course transcript credits awarded in the course transcript.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>AcademicSubjectDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1867,6 +1898,11 @@
           <xs:element name="CreditsByCourse" type="CreditsByCourse" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation>The total credits required for graduation by taking a specific course, or by taking one or more from a set of courses.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CreditsByCreditCategory" type="CreditsByCreditCategory" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>The total credits required for graduation based on the credit category.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
@@ -3243,6 +3279,11 @@
               <xs:documentation>Indicator of whether this section is used for official daily attendance. Alternatively, official daily attendance may be tied to a Class Period.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="SectionName" type="SectionName" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>A locally-defined name for the section, generally created to make the section more recognizable in informal contexts and generally distinct from the SectionIdentifier.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -3731,7 +3772,7 @@
           </xs:element>
           <xs:element name="GradePointAverage" type="GradePointAverage" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>A measure of average performance for courses taken by an individual.</xs:documentation>
+              <xs:documentation>The grade point average for an individual computed as the grade points earned divided by the number of credits attempted.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="Diploma" type="Diploma" minOccurs="0" maxOccurs="unbounded">
@@ -4738,6 +4779,17 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="CreditCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>A categorization for the course transcript credits.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="CreditTypeDescriptor">
     <xs:annotation>
       <xs:documentation>The type of credits or units of value awarded for the completion of a course.</xs:documentation>
@@ -5013,9 +5065,9 @@
       <xs:extension base="DescriptorType" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="GradePointAverageWeightSystemDescriptor">
+  <xs:complexType name="GradePointAverageTypeDescriptor">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the system used for calculating the Grade Point Average.</xs:documentation>
+      <xs:documentation>The system used for calculating the grade point average for an individual.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Descriptor</ann:TypeGroup>
       </xs:appinfo>
@@ -7052,7 +7104,7 @@
   </xs:complexType>
   <xs:complexType name="StudentEducationOrganizationResponsibilityAssociation">
     <xs:annotation>
-      <xs:documentation>This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
+      <xs:documentation>This association indicates a relationship between a student and an education organization other than an enrollment relationship, and generally indicating some kind of responsibility of the education organization for the student. Enrollment relationship semantics are covered by StudentSchoolAssociation.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Association</ann:TypeGroup>
       </xs:appinfo>
@@ -13040,6 +13092,15 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
+  <xs:simpleType name="CreditCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>A categorization for the course transcript credits.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="DescriptorReferenceType" />
+  </xs:simpleType>
   <xs:simpleType name="CreditTypeDescriptorReferenceType">
     <xs:annotation>
       <xs:documentation>The type of credits or units of value awarded for the completion of a course.</xs:documentation>
@@ -13265,9 +13326,9 @@
     </xs:annotation>
     <xs:restriction base="DescriptorReferenceType" />
   </xs:simpleType>
-  <xs:simpleType name="GradePointAverageWeightSystemDescriptorReferenceType">
+  <xs:simpleType name="GradePointAverageTypeDescriptorReferenceType">
     <xs:annotation>
-      <xs:documentation>This descriptor defines the system used for calculating the Grade Point Average.</xs:documentation>
+      <xs:documentation>The system used for calculating the grade point average for an individual.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
       </xs:appinfo>
@@ -14841,6 +14902,11 @@
           <xs:documentation>The organization code or name assigning the Identification Code.</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="CourseCatalogURL" type="CourseCatalogURL" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The URL for the course catalog that defines the course identification code.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Credits">
@@ -14900,6 +14966,29 @@
           <xs:appinfo>
             <ann:Descriptor>GradeLevelDescriptor</ann:Descriptor>
           </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CreditsByCreditCategory">
+    <xs:annotation>
+      <xs:documentation>The total credits required for graduation based on the credit category.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Common</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CreditCategory" type="CreditCategoryDescriptorReferenceType">
+        <xs:annotation>
+          <xs:documentation>A categorization for the course transcript credits awarded in the course transcript.</xs:documentation>
+          <xs:appinfo>
+            <ann:Descriptor>CreditCategoryDescriptor</ann:Descriptor>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Credits" type="Credits">
+        <xs:annotation>
+          <xs:documentation>The value of credits or units of value awarded for the completion of a course.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -15297,28 +15386,33 @@
   </xs:complexType>
   <xs:complexType name="GradePointAverage">
     <xs:annotation>
-      <xs:documentation>A measure of average performance for courses taken by an individual.</xs:documentation>
+      <xs:documentation>The grade point average for an individual computed as the grade points earned divided by the number of credits attempted.</xs:documentation>
       <xs:appinfo>
         <ann:TypeGroup>Common</ann:TypeGroup>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="GradePointAverageWeightSystem" type="GradePointAverageWeightSystemDescriptorReferenceType">
+      <xs:element name="GradePointAverageType" type="GradePointAverageTypeDescriptorReferenceType">
         <xs:annotation>
-          <xs:documentation>The system used for calculating the Grade Point Average.</xs:documentation>
+          <xs:documentation>The system used for calculating the grade point average for an individual.</xs:documentation>
           <xs:appinfo>
-            <ann:Descriptor>GradePointAverageWeightSystemDescriptor</ann:Descriptor>
+            <ann:Descriptor>GradePointAverageTypeDescriptor</ann:Descriptor>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="IsCumulative" type="xs:boolean">
+      <xs:element name="IsCumulative" type="xs:boolean" minOccurs="0">
         <xs:annotation>
           <xs:documentation>Indicator of whether or not the Grade Point Average value is cumulative.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="GradePointAverageValue" type="GPA">
         <xs:annotation>
-          <xs:documentation>Grade Point Average computed for a grading period, session, or cumulatively.</xs:documentation>
+          <xs:documentation>The value of the grade points earned divided by the number of credits attempted.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MaxGradePointAverageValue" type="GPA" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The maximum value for the grade point average.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -16144,7 +16238,7 @@
     <xs:sequence>
       <xs:element name="PerformanceLevelMet" type="xs:boolean">
         <xs:annotation>
-          <xs:documentation>Optional indicator of whether the performance level was met.</xs:documentation>
+          <xs:documentation>Indicator of whether the performance level was met.</xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="PerformanceLevel" type="PerformanceLevelDescriptorReferenceType">
@@ -17554,6 +17648,18 @@
       <xs:maxLength value="5" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="CourseCatalogURL">
+    <xs:annotation>
+      <xs:documentation>The URL for the course catalog that defines the course identification code.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5" />
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="CourseSetName">
     <xs:annotation>
       <xs:documentation>Identifying name given to a collection of courses.</xs:documentation>
@@ -18272,6 +18378,18 @@
       <xs:maxLength value="255" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="SectionName">
+    <xs:annotation>
+      <xs:documentation>A locally-defined name for the section, generally created to make the section more recognizable in informal contexts and generally distinct from the SectionIdentifier.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="100" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="ServiceCategory">
     <xs:annotation>
       <xs:documentation>The category of service provided by a program.</xs:documentation>
@@ -18580,7 +18698,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:restriction base="xs:decimal">
-      <xs:totalDigits value="10" />
+      <xs:totalDigits value="15" />
       <xs:fractionDigits value="5" />
     </xs:restriction>
   </xs:simpleType>
@@ -18690,7 +18808,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:restriction base="xs:decimal">
-      <xs:totalDigits value="10" />
+      <xs:totalDigits value="15" />
       <xs:fractionDigits value="5" />
     </xs:restriction>
   </xs:simpleType>
