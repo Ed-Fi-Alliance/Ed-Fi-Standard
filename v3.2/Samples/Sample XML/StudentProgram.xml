@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeStudentProgram xmlns="http://ed-fi.org/0320" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320 ../../Schemas/Bulk/Interchange-StudentProgram.xsd">
+<InterchangeStudentProgram xmlns="http://ed-fi.org/0320b" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320b ../../Schemas/Bulk/Interchange-StudentProgram.xsd">
 	<StudentProgramAssociation>
 		<StudentReference>
 			<StudentIdentity>
@@ -15579,30 +15579,6 @@
 	<StudentHomelessProgramAssociation>
 		<StudentReference>
 			<StudentIdentity>
-				<StudentUniqueId>555555</StudentUniqueId>
-			</StudentIdentity>
-		</StudentReference>
-		<ProgramReference>
-			<ProgramIdentity>
-				<EducationOrganizationReference>
-					<EducationOrganizationIdentity>
-						<EducationOrganizationId>255901 </EducationOrganizationId>
-					</EducationOrganizationIdentity>
-				</EducationOrganizationReference>
-				<ProgramName>Homeless</ProgramName>
-				<ProgramType>uri://ed-fi.org/ProgramTypeDescriptor#Homeless</ProgramType>
-			</ProgramIdentity>
-		</ProgramReference>
-		<BeginDate>2010-08-30</BeginDate>
-		<EducationOrganizationReference>
-			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
-			</EducationOrganizationIdentity>
-		</EducationOrganizationReference>
-	</StudentHomelessProgramAssociation>
-	<StudentHomelessProgramAssociation>
-		<StudentReference>
-			<StudentIdentity>
 				<StudentUniqueId>604996</StudentUniqueId>
 			</StudentIdentity>
 		</StudentReference>
@@ -16113,30 +16089,6 @@
 			<ServiceBeginDate>2010-08-30</ServiceBeginDate>
 		</NeglectedOrDelinquentProgramService>
 	</StudentNeglectedOrDelinquentProgramAssociation>
-	<StudentSchoolFoodServiceProgramAssociation>
-		<StudentReference>
-			<StudentIdentity>
-				<StudentUniqueId>555555</StudentUniqueId>
-			</StudentIdentity>
-		</StudentReference>
-		<ProgramReference>
-			<ProgramIdentity>
-				<EducationOrganizationReference>
-					<EducationOrganizationIdentity>
-						<EducationOrganizationId>255901 </EducationOrganizationId>
-					</EducationOrganizationIdentity>
-				</EducationOrganizationReference>
-				<ProgramName>School Food Service</ProgramName>
-				<ProgramType>uri://ed-fi.org/ProgramTypeDescriptor#Compensatory Services for Disadvantaged Students</ProgramType>
-			</ProgramIdentity>
-		</ProgramReference>
-		<BeginDate>2010-08-30</BeginDate>
-		<EducationOrganizationReference>
-			<EducationOrganizationIdentity>
-				<EducationOrganizationId>255901</EducationOrganizationId>
-			</EducationOrganizationIdentity>
-		</EducationOrganizationReference>
-	</StudentSchoolFoodServiceProgramAssociation>
 	<StudentSchoolFoodServiceProgramAssociation>
 		<StudentReference>
 			<StudentIdentity>

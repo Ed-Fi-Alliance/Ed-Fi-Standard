@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- (c)2019 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<!-- (c)2020 Ed-Fi Alliance, LLC. All Rights Reserved. -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/annotation" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1.00">
   <xs:simpleType name="DatabaseKey">
     <xs:annotation>
@@ -59,6 +59,7 @@
       <xs:enumeration value="CourseRepeatCodeDescriptor" />
       <xs:enumeration value="CredentialFieldDescriptor" />
       <xs:enumeration value="CredentialTypeDescriptor" />
+      <xs:enumeration value="CreditCategoryDescriptor" />
       <xs:enumeration value="CreditTypeDescriptor" />
       <xs:enumeration value="CTEProgramServiceDescriptor" />
       <xs:enumeration value="CurriculumUsedDescriptor" />
@@ -84,7 +85,7 @@
       <xs:enumeration value="ExitWithdrawTypeDescriptor" />
       <xs:enumeration value="GradebookEntryTypeDescriptor" />
       <xs:enumeration value="GradeLevelDescriptor" />
-      <xs:enumeration value="GradePointAverageWeightSystemDescriptor" />
+      <xs:enumeration value="GradePointAverageTypeDescriptor" />
       <xs:enumeration value="GradeTypeDescriptor" />
       <xs:enumeration value="GradingPeriodDescriptor" />
       <xs:enumeration value="GraduationPlanTypeDescriptor" />

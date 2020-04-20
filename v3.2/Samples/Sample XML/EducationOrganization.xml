@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeEducationOrganization xmlns="http://ed-fi.org/0320" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320 ../../Schemas/Bulk/Interchange-EducationOrganization.xsd">
+<InterchangeEducationOrganization xmlns="http://ed-fi.org/0320b" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320b ../../Schemas/Bulk/Interchange-EducationOrganization.xsd">
 	<EducationServiceCenter id="ESC_255950">
 		<EducationOrganizationIdentificationCode>
 			<IdentificationCode>255950</IdentificationCode>
@@ -1028,25 +1028,29 @@
 			<EndTime>15:45:00</EndTime>
 		</MeetingTime>
 	</ClassPeriod>
-	<Course id="CRSE_255901001ALG-1">
+	<Course>
 		<CourseCode>03100500</CourseCode>
 		<CourseTitle>Algebra I</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
-			<IdentificationCode>03100500</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#State course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseIdentificationCode>
 			<IdentificationCode>ALG-1</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseIdentificationCode>
+			<IdentificationCode>03100500</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#State course code</CourseIdentificationSystem>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<CourseDescription>Algebra I</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -1054,21 +1058,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901001ALG-2">
+	<Course>
 		<CourseCode>ALG-2</CourseCode>
 		<CourseTitle>Algebra II</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ALG-2</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<CourseDescription>Algebra II</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -1076,72 +1084,256 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901001ART-1">
+	<Course>
+		<CourseCode>ART-01</CourseCode>
+		<CourseTitle>Art, Grade 1</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-01</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>Art, Grade 1</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>ART-02</CourseCode>
+		<CourseTitle>Art, Grade 2</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-02</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>Art, Grade 2</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>ART-03</CourseCode>
+		<CourseTitle>Art, Grade 3</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-03</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>Art, Grade 3</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>ART-04</CourseCode>
+		<CourseTitle>Art, Grade 4</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-04</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>Art, Grade 4</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>ART-05</CourseCode>
+		<CourseTitle>Art, Grade 5</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-05</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>Art, Grade 5</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>ART-06</CourseCode>
+		<CourseTitle>Art, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ART-06</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>Art</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
 		<CourseCode>ART-1</CourseCode>
 		<CourseTitle>Art I</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ART-1</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
 		<CourseDescription>Art I</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901001ART2-EM">
+	<Course>
 		<CourseCode>ART2-EM</CourseCode>
 		<CourseTitle>Art II Electronic Media</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ART2-EM</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Career and Technical Education</AcademicSubject>
 		<CourseDescription>Art II Electronic</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901001ART3-EM">
+	<Course>
 		<CourseCode>ART3-EM</CourseCode>
 		<CourseTitle>Art III Electronic Media</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ART3-EM</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Career and Technical Education</AcademicSubject>
 		<CourseDescription>Art III Electronic</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901001BIO">
+	<Course>
+		<CourseCode>BAND-07</CourseCode>
+		<CourseTitle>Music/Band, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>BAND-07</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>Music/Band, Grade 7</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>BAND-08</CourseCode>
+		<CourseTitle>Music/Band, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>BAND-08</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>Music/Band, Grade 8</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
 		<CourseCode>BIO</CourseCode>
 		<CourseTitle>Biology</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>BIO</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
 		<CourseDescription>Biology</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -1149,949 +1341,109 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901001CHEM">
+	<Course>
 		<CourseCode>CHEM</CourseCode>
 		<CourseTitle>Chemistry</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>CHEM</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
 		<CourseDescription>Chemistry</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901001CREAT-WR">
+	<Course>
 		<CourseCode>CREAT-WR</CourseCode>
 		<CourseTitle>Creative/Imaginative Writing</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>CREAT-WR</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
 		<CourseDescription>Creative Writing</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901001ECO-FE">
+	<Course>
 		<CourseCode>ECO-FE</CourseCode>
 		<CourseTitle>Economics With Free System Emphasis</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ECO-FE</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
 		<CourseDescription>Free Enterprise</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901001ENG-1">
-		<CourseCode>ENG-1</CourseCode>
-		<CourseTitle>English I</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ENG-1</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
-		<CourseDescription>English I</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.31.9.B</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901001ENG-2">
-		<CourseCode>ENG-2</CourseCode>
-		<CourseTitle>English II</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ENG-2</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
-		<CourseDescription>English II</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.32.24.C</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901001ENG-3">
-		<CourseCode>ENG-3</CourseCode>
-		<CourseTitle>English III</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ENG-3</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
-		<CourseDescription>English III</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.33.5.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901001ENG-4">
-		<CourseCode>ENG-4</CourseCode>
-		<CourseTitle>English IV</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ENG-4</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
-		<CourseDescription>English IV</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.34.24.B</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901001ENVIRSYS">
-		<CourseCode>ENVIRSYS</CourseCode>
-		<CourseTitle>Environmental Systems</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ENVIRSYS</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Life and Physical Sciences</AcademicSubject>
-		<CourseDescription>Environmental System</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001GEOM">
-		<CourseCode>GEOM</CourseCode>
-		<CourseTitle>Geometry</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>GEOM</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
-		<CourseDescription>Geometry</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>111.34.NA.G.6.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901001GOVT">
-		<CourseCode>GOVT</CourseCode>
-		<CourseTitle>United States Government</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>GOVT</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
-		<CourseDescription>United States Gov</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001HLTH-ED">
-		<CourseCode>HLTH-ED</CourseCode>
-		<CourseTitle>Health Education</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>HLTH-ED</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
-		<CourseDescription>Health Education</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001HUMT">
-		<CourseCode>HUMT</CourseCode>
-		<CourseTitle>Humanities</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>HUMT</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Life and Physical Sciences</AcademicSubject>
-		<CourseDescription>Humanities</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001PHOTJOUR">
-		<CourseCode>PHOTJOUR</CourseCode>
-		<CourseTitle>Photojournalism</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>PHOTJOUR</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Career and Technical Education</AcademicSubject>
-		<CourseDescription>Photojournalism</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001PHYSICS">
-		<CourseCode>PHYSICS</CourseCode>
-		<CourseTitle>Physics</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>PHYSICS</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
-		<CourseDescription>Physics</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>112.39.2.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901001PRE-CALC">
-		<CourseCode>PRE-CALC</CourseCode>
-		<CourseTitle>Precalculus</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>PRE-CALC</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
-		<CourseDescription>Precalculus</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>111.35.NA.P.4.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901001SPAN-1">
-		<CourseCode>SPAN-1</CourseCode>
-		<CourseTitle>Languages Other Than English Level I</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SPAN-1</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Foreign Language and Literature</AcademicSubject>
-		<CourseDescription>Foreign Language</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001SPAN-2">
-		<CourseCode>SPAN-2</CourseCode>
-		<CourseTitle>Languages Other Than English Level II</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SPAN-2</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Foreign Language and Literature</AcademicSubject>
-		<CourseDescription>Foreign Language</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001SPAN-3">
-		<CourseCode>SPAN-3</CourseCode>
-		<CourseTitle>Languages Other Than English Level III</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SPAN-3</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Foreign Language and Literature</AcademicSubject>
-		<CourseDescription>Foreign Language</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001TAMULTIM">
-		<CourseCode>TAMULTIM</CourseCode>
-		<CourseTitle>Multimedia</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>TAMULTIM</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Career and Technical Education</AcademicSubject>
-		<CourseDescription>Multimedia</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001US-HIST">
-		<CourseCode>US-HIST</CourseCode>
-		<CourseTitle>United States History Since Reconstruction</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>US-HIST</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
-		<CourseDescription>US History</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001WGEO">
-		<CourseCode>WGEO</CourseCode>
-		<CourseTitle>World Geography Studies</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>WGEO</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
-		<CourseDescription>World Geography</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901001W-HIST">
-		<CourseCode>W-HIST</CourseCode>
-		<CourseTitle>World History Studies</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>W-HIST</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
-		<CourseDescription>World History</CourseDescription>
-		<HighSchoolCourseRequirement>true</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901001">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044ART-06">
-		<CourseCode>ART-06</CourseCode>
-		<CourseTitle>Art, Departmentalized Grade 6</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ART-06</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044BAND-07">
-		<CourseCode>BAND-07</CourseCode>
-		<CourseTitle>Music/Band, Grade 7</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>BAND-07</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>Music/Band, Grade 7</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044BAND-08">
-		<CourseCode>BAND-08</CourseCode>
-		<CourseTitle>Music/Band, Grade 8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>BAND-08</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>Music/Band, Grade 8</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044EnglishLanguageArts-06">
-		<CourseCode>ELA-06</CourseCode>
-		<CourseTitle>English Language Arts, Grade 6</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ELA-06</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
-		<CourseDescription>English Language Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.18.2.C</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044EnglishLanguageArts-07">
-		<CourseCode>ELA-07</CourseCode>
-		<CourseTitle>English Language Arts And Reading, Grade 7</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ELA-07</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
-		<CourseDescription>English Language Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.19.20.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044EnglishLanguageArts-08">
-		<CourseCode>ELA-08</CourseCode>
-		<CourseTitle>English Language Arts And Reading, Grade 8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ELA-08</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
-		<CourseDescription>English Language Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>110.20.3.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044HLTH-07">
-		<CourseCode>HLTH-07</CourseCode>
-		<CourseTitle>Health Education, Grades 7-8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>HLTH-07</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
-		<CourseDescription>Health Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044HLTH-08">
-		<CourseCode>HLTH-08</CourseCode>
-		<CourseTitle>Health Education, Grades 7-8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>HLTH-08</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
-		<CourseDescription>Health Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044MATH-06">
-		<CourseCode>MATH-06</CourseCode>
-		<CourseTitle>Mathematics, Departmentalized Grade 6</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>MATH-06</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
-		<CourseDescription>Mathematics</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>111.22.NA.6.2.C</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044MATH-07">
-		<CourseCode>MATH-07</CourseCode>
-		<CourseTitle>Mathematics, Grade 7</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>MATH-07</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
-		<CourseDescription>Mathematics, Grade 7</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>111.23.NA.7.4.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044MATH-08">
-		<CourseCode>MATH-08</CourseCode>
-		<CourseTitle>Mathematics, Grade 8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>MATH-08</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
-		<CourseDescription>Mathematics, Grade 8</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>111.24.NA.8.15.B</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044MUS-06">
-		<CourseCode>MUS-06</CourseCode>
-		<CourseTitle>General Music, Departmentalized Grade 6</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>MUS-06</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>General Music</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044PE-06">
-		<CourseCode>PE-06</CourseCode>
-		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>PE-06</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
-		<CourseDescription>Physical Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044PE-07">
-		<CourseCode>PE-07</CourseCode>
-		<CourseTitle>Physical Education, Grades 7-8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>PE-07</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
-		<CourseDescription>Physical Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044PE-08">
-		<CourseCode>PE-08</CourseCode>
-		<CourseTitle>Physical Education, Grades 7-8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>PE-08</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
-		<CourseDescription>Physical Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901044SCI-06">
-		<CourseCode>SCI-06</CourseCode>
-		<CourseTitle>Science, Departmentalized Grade 6</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SCI-06</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
-		<CourseDescription>Science</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>112.18.5.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044SCI-07">
-		<CourseCode>SCI-07</CourseCode>
-		<CourseTitle>Science, Grade 7</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SCI-07</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
-		<CourseDescription>Science, Grade 7</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>112.19.1.B</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044SCI-08">
-		<CourseCode>SCI-08</CourseCode>
-		<CourseTitle>Science, Grade 8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SCI-08</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
-		<CourseDescription>Science, Grade 8</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>112.20.11.B</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044SS-06">
-		<CourseCode>SS-06</CourseCode>
-		<CourseTitle>Social Studies, Departmentalized Grade 6</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SS-06</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
-		<CourseDescription>Social Studies</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>113.18.15.B</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044SS-07">
-		<CourseCode>SS-07</CourseCode>
-		<CourseTitle>Social Studies, Grade 7</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SS-07</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
-		<CourseDescription>Social Studies</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>113.19.19.C</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901044SS-08">
-		<CourseCode>SS-08</CourseCode>
-		<CourseTitle>Social Studies, Grade 8</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>SS-08</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
-		<CourseDescription>Social Studies</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901044">
-		</EducationOrganizationReference>
-		<LearningStandardReference>
-			<LearningStandardIdentity>
-				<LearningStandardId>113.20.2.A</LearningStandardId>
-			</LearningStandardIdentity>
-		</LearningStandardReference>
-	</Course>
-	<Course id="CRSE_255901107ART-01">
-		<CourseCode>ART-01</CourseCode>
-		<CourseTitle>Art, Grade 1</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ART-01</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>Art, Grade 1</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901107ART-02">
-		<CourseCode>ART-02</CourseCode>
-		<CourseTitle>Art, Grade 2</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ART-02</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>Art, Grade 2</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901107ART-03">
-		<CourseCode>ART-03</CourseCode>
-		<CourseTitle>Art, Grade 3</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ART-03</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>Art, Grade 3</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901107ART-04">
-		<CourseCode>ART-04</CourseCode>
-		<CourseTitle>Art, Grade 4</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ART-04</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>Art, Grade 4</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901107ART-05">
-		<CourseCode>ART-05</CourseCode>
-		<CourseTitle>Art, Grade 5</CourseTitle>
-		<NumberOfParts>1</NumberOfParts>
-		<CourseIdentificationCode>
-			<IdentificationCode>ART-05</IdentificationCode>
-			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
-		</CourseIdentificationCode>
-		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
-		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
-		<CourseDescription>Art, Grade 5</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
-		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
-		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
-		</EducationOrganizationReference>
-	</Course>
-	<Course id="CRSE_255901107EnglishLanguageArts-01">
+	<Course>
 		<CourseCode>ELA-01</CourseCode>
 		<CourseTitle>English Language Arts, Grade 1</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ELA-01</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107EnglishLanguageArts-02">
+	<Course>
 		<CourseCode>ELA-02</CourseCode>
 		<CourseTitle>English Language Arts, Grade 2</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ELA-02</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2099,21 +1451,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107EnglishLanguageArts-03">
+	<Course>
 		<CourseCode>ELA-03</CourseCode>
 		<CourseTitle>English Language Arts, Grade 3</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ELA-03</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2121,21 +1477,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107EnglishLanguageArts-04">
+	<Course>
 		<CourseCode>ELA-04</CourseCode>
 		<CourseTitle>English Language Arts, Grade 4</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ELA-04</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2143,21 +1503,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107EnglishLanguageArts-05">
+	<Course>
 		<CourseCode>ELA-05</CourseCode>
 		<CourseTitle>English Language Arts, Grade 5</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>ELA-05</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
 		<CourseDescription>English Language Art</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2165,38 +1529,380 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107MATH-01">
+	<Course>
+		<CourseCode>ELA-06</CourseCode>
+		<CourseTitle>English Language Arts, Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-06</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.18.2.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>ELA-07</CourseCode>
+		<CourseTitle>English Language Arts And Reading, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-07</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.19.20.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>ELA-08</CourseCode>
+		<CourseTitle>English Language Arts And Reading, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ELA-08</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
+		<CourseDescription>English Language Art</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.20.3.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>ENG-1</CourseCode>
+		<CourseTitle>English I</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENG-1</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
+		<CourseDescription>English I</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.31.9.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>ENG-2</CourseCode>
+		<CourseTitle>English II</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENG-2</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
+		<CourseDescription>English II</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.32.24.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>ENG-3</CourseCode>
+		<CourseTitle>English III</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENG-3</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
+		<CourseDescription>English III</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.33.5.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>ENG-4</CourseCode>
+		<CourseTitle>English IV</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENG-4</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts</AcademicSubject>
+		<CourseDescription>English IV</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.34.24.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>ENVIRSYS</CourseCode>
+		<CourseTitle>Environmental Systems</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>ENVIRSYS</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Life and Physical Sciences</AcademicSubject>
+		<CourseDescription>Environmental System</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>GEOM</CourseCode>
+		<CourseTitle>Geometry</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>GEOM</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+		<CourseDescription>Geometry</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.34.NA.G.6.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>GOVT</CourseCode>
+		<CourseTitle>United States Government</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>GOVT</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
+		<CourseDescription>United States Gov</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>HLTH-07</CourseCode>
+		<CourseTitle>Health Education, Grades 7-8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>HLTH-07</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
+		<CourseDescription>Health Education</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>HLTH-08</CourseCode>
+		<CourseTitle>Health Education, Grades 7-8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>HLTH-08</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
+		<CourseDescription>Health Education</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>HLTH-ED</CourseCode>
+		<CourseTitle>Health Education</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>HLTH-ED</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
+		<CourseDescription>Health Education</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>HUMT</CourseCode>
+		<CourseTitle>Humanities</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>HUMT</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Life and Physical Sciences</AcademicSubject>
+		<CourseDescription>Humanities</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
 		<CourseCode>MATH-01</CourseCode>
 		<CourseTitle>Mathematics, Grade 1</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MATH-01</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 1</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107MATH-02">
+	<Course>
 		<CourseCode>MATH-02</CourseCode>
 		<CourseTitle>Mathematics, Grade 2</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MATH-02</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 2</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2204,21 +1910,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107MATH-03">
+	<Course>
 		<CourseCode>MATH-03</CourseCode>
 		<CourseTitle>Mathematics, Grade 3</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MATH-03</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 3</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2226,21 +1936,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107MATH-04">
+	<Course>
 		<CourseCode>MATH-04</CourseCode>
 		<CourseTitle>Mathematics, Grade 4</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MATH-04</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 4</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2248,21 +1962,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107MATH-05">
+	<Course>
 		<CourseCode>MATH-05</CourseCode>
 		<CourseTitle>Mathematics, Grade 5</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MATH-05</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
 		<CourseDescription>Mathematics, Grade 5</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2270,208 +1988,491 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107MUS-01">
+	<Course>
+		<CourseCode>MATH-06</CourseCode>
+		<CourseTitle>Mathematics, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-06</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+		<CourseDescription>Mathematics</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.22.NA.6.2.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>MATH-07</CourseCode>
+		<CourseTitle>Mathematics, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-07</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 7</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.23.NA.7.4.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>MATH-08</CourseCode>
+		<CourseTitle>Mathematics, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MATH-08</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+		<CourseDescription>Mathematics, Grade 8</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.24.NA.8.15.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
 		<CourseCode>MUS-01</CourseCode>
 		<CourseTitle>Music, Grade 1</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MUS-01</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
 		<CourseDescription>Music, Grade 1</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107MUS-02">
+	<Course>
 		<CourseCode>MUS-02</CourseCode>
 		<CourseTitle>Music, Grade 2</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MUS-02</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
 		<CourseDescription>Music, Grade 2</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107MUS-03">
+	<Course>
 		<CourseCode>MUS-03</CourseCode>
 		<CourseTitle>Music, Grade 3</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MUS-03</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
 		<CourseDescription>Music, Grade 3</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107MUS-04">
+	<Course>
 		<CourseCode>MUS-04</CourseCode>
 		<CourseTitle>Music, Grade 4</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MUS-04</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
 		<CourseDescription>Music, Grade 4</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107MUS-05">
+	<Course>
 		<CourseCode>MUS-05</CourseCode>
 		<CourseTitle>Music, Grade 5</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>MUS-05</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
 		<CourseDescription>Music, Grade 5</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107PE-01">
+	<Course>
+		<CourseCode>MUS-06</CourseCode>
+		<CourseTitle>General Music, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>MUS-06</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Fine and Performing Arts</AcademicSubject>
+		<CourseDescription>General Music</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
 		<CourseCode>PE-01</CourseCode>
 		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>PE-01</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107PE-02">
+	<Course>
 		<CourseCode>PE-02</CourseCode>
 		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>PE-02</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107PE-03">
+	<Course>
 		<CourseCode>PE-03</CourseCode>
 		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>PE-03</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107PE-04">
+	<Course>
 		<CourseCode>PE-04</CourseCode>
 		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>PE-04</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107PE-05">
+	<Course>
 		<CourseCode>PE-05</CourseCode>
 		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>PE-05</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
 		<CourseDescription>Physical Education</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107SCI-01">
+	<Course>
+		<CourseCode>PE-06</CourseCode>
+		<CourseTitle>Physical Education, Grades 1-6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-06</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>PE-07</CourseCode>
+		<CourseTitle>Physical Education, Grades 7-8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-07</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>PE-08</CourseCode>
+		<CourseTitle>Physical Education, Grades 7-8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PE-08</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Physical, Health, and Safety Education</AcademicSubject>
+		<CourseDescription>Physical Education</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>PHOTJOUR</CourseCode>
+		<CourseTitle>Photojournalism</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PHOTJOUR</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Career and Technical Education</AcademicSubject>
+		<CourseDescription>Photojournalism</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>PHYSICS</CourseCode>
+		<CourseTitle>Physics</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PHYSICS</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
+		<CourseDescription>Physics</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.39.2.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>PRE-CALC</CourseCode>
+		<CourseTitle>Precalculus</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>PRE-CALC</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics</AcademicSubject>
+		<CourseDescription>Precalculus</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>111.35.NA.P.4.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
 		<CourseCode>SCI-01</CourseCode>
 		<CourseTitle>Science, Grade 1</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SCI-01</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
 		<CourseDescription>Science, Grade 1</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107SCI-02">
+	<Course>
 		<CourseCode>SCI-02</CourseCode>
 		<CourseTitle>Science, Grade 2</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SCI-02</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
 		<CourseDescription>Science, Grade 2</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2479,21 +2480,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107SCI-03">
+	<Course>
 		<CourseCode>SCI-03</CourseCode>
 		<CourseTitle>Science, Grade 3</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SCI-03</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
 		<CourseDescription>Science, Grade 3</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2501,21 +2506,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107SCI-04">
+	<Course>
 		<CourseCode>SCI-04</CourseCode>
 		<CourseTitle>Science, Grade 4</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SCI-04</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
 		<CourseDescription>Science, Grade 4</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2523,21 +2532,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107SCI-05">
+	<Course>
 		<CourseCode>SCI-05</CourseCode>
 		<CourseTitle>Science, Grade 5</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SCI-05</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
 		<CourseDescription>Science, Grade 5</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2545,38 +2558,187 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107SS-01">
+	<Course>
+		<CourseCode>SCI-06</CourseCode>
+		<CourseTitle>Science, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-06</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
+		<CourseDescription>Science</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.18.5.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>SCI-07</CourseCode>
+		<CourseTitle>Science, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-07</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
+		<CourseDescription>Science, Grade 7</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.19.1.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>SCI-08</CourseCode>
+		<CourseTitle>Science, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SCI-08</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Science</AcademicSubject>
+		<CourseDescription>Science, Grade 8</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.20.11.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>SPAN-1</CourseCode>
+		<CourseTitle>Languages Other Than English Level I</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SPAN-1</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Foreign Language and Literature</AcademicSubject>
+		<CourseDescription>Foreign Language</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>SPAN-2</CourseCode>
+		<CourseTitle>Languages Other Than English Level II</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SPAN-2</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Foreign Language and Literature</AcademicSubject>
+		<CourseDescription>Foreign Language</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>SPAN-3</CourseCode>
+		<CourseTitle>Languages Other Than English Level III</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SPAN-3</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Foreign Language and Literature</AcademicSubject>
+		<CourseDescription>Foreign Language</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
 		<CourseCode>SS-01</CourseCode>
 		<CourseTitle>Social Studies, Grade 1</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SS-01</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 	</Course>
-	<Course id="CRSE_255901107SS-02">
+	<Course>
 		<CourseCode>SS-02</CourseCode>
 		<CourseTitle>Social Studies, Grade 2</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SS-02</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2584,21 +2746,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107SS-03">
+	<Course>
 		<CourseCode>SS-03</CourseCode>
 		<CourseTitle>Social Studies, Grade 3</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SS-03</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2606,21 +2772,25 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107SS-04">
+	<Course>
 		<CourseCode>SS-04</CourseCode>
 		<CourseTitle>Social Studies, Grade 4</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SS-04</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
@@ -2628,27 +2798,193 @@
 			</LearningStandardIdentity>
 		</LearningStandardReference>
 	</Course>
-	<Course id="CRSE_255901107SS-05">
+	<Course>
 		<CourseCode>SS-05</CourseCode>
 		<CourseTitle>Social Studies, Grade 5</CourseTitle>
 		<NumberOfParts>1</NumberOfParts>
 		<CourseIdentificationCode>
 			<IdentificationCode>SS-05</IdentificationCode>
 			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
 		</CourseIdentificationCode>
 		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
 		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
 		<CourseDescription>Social Studies</CourseDescription>
-		<HighSchoolCourseRequirement>false</HighSchoolCourseRequirement>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
 		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
 		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
-		<EducationOrganizationReference ref="SCOL_255901107">
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901107</EducationOrganizationId>
+			</EducationOrganizationIdentity>
 		</EducationOrganizationReference>
 		<LearningStandardReference>
 			<LearningStandardIdentity>
 				<LearningStandardId>113.16.13.B</LearningStandardId>
 			</LearningStandardIdentity>
 		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>SS-06</CourseCode>
+		<CourseTitle>Social Studies, Departmentalized Grade 6</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-06</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.18.15.B</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>SS-07</CourseCode>
+		<CourseTitle>Social Studies, Grade 7</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-07</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.19.19.C</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>SS-08</CourseCode>
+		<CourseTitle>Social Studies, Grade 8</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>SS-08</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
+		<CourseDescription>Social Studies</CourseDescription>
+		<HighSchoolCourseRequirement>0</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901044</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>113.20.2.A</LearningStandardId>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+	</Course>
+	<Course>
+		<CourseCode>TAMULTIM</CourseCode>
+		<CourseTitle>Multimedia</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>TAMULTIM</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Career and Technical Education</AcademicSubject>
+		<CourseDescription>Multimedia</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>US-HIST</CourseCode>
+		<CourseTitle>United States History Since Reconstruction</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>US-HIST</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
+		<CourseDescription>US History</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>WGEO</CourseCode>
+		<CourseTitle>World Geography Studies</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>WGEO</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Studies</AcademicSubject>
+		<CourseDescription>World Geography</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
+	</Course>
+	<Course>
+		<CourseCode>W-HIST</CourseCode>
+		<CourseTitle>World History Studies</CourseTitle>
+		<NumberOfParts>1</NumberOfParts>
+		<CourseIdentificationCode>
+			<IdentificationCode>W-HIST</IdentificationCode>
+			<CourseIdentificationSystem>uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code</CourseIdentificationSystem>
+			<CourseCatalogURL>http://www.GBISD.edu/coursecatalog</CourseCatalogURL>
+		</CourseIdentificationCode>
+		<CourseLevelCharacteristic>uri://ed-fi.org/CourseLevelCharacteristicDescriptor#Core Subject</CourseLevelCharacteristic>
+		<AcademicSubject>uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History</AcademicSubject>
+		<CourseDescription>World History</CourseDescription>
+		<HighSchoolCourseRequirement>1</HighSchoolCourseRequirement>
+		<CourseGPAApplicability>uri://ed-fi.org/CourseGPAApplicabilityDescriptor#Applicable</CourseGPAApplicability>
+		<CourseDefinedBy>uri://ed-fi.org/CourseDefinedByDescriptor#SEA</CourseDefinedBy>
+		<EducationOrganizationReference>
+			<EducationOrganizationIdentity>
+				<EducationOrganizationId>255901001</EducationOrganizationId>
+			</EducationOrganizationIdentity>
+		</EducationOrganizationReference>
 	</Course>
 	<Program id="PRGM_2559011">
 		<EducationOrganizationReference>

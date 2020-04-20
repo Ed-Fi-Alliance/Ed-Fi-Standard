@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeStudent xmlns="http://ed-fi.org/0320" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320 ../../Schemas/Bulk/Interchange-Student.xsd">
-	<Student>
-		<StudentUniqueId>555555</StudentUniqueId>
-		<Name>
-			<PersonalTitlePrefix>Mrs</PersonalTitlePrefix>
-			<FirstName>Sarah</FirstName>
-			<LastSurname>Stevens</LastSurname>
-		</Name>
-		<BirthData>
-			<BirthDate>2005-06-12</BirthDate>
-		</BirthData>
-	</Student>
+<InterchangeStudent xmlns="http://ed-fi.org/0320b" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320b ../../Schemas/Bulk/Interchange-Student.xsd">
 	<Student>
 		<StudentUniqueId>604821</StudentUniqueId>
 		<Name>
@@ -11089,21 +11078,5 @@
 		<BirthData>
 			<BirthDate>1997-09-09</BirthDate>
 		</BirthData>
-	</Student>
-	<Student>
-		<StudentUniqueId>777777</StudentUniqueId>
-		<Name>
-			<PersonalTitlePrefix>Mr</PersonalTitlePrefix>
-			<FirstName>Sandro</FirstName>
-			<MiddleName>Francisco</MiddleName>
-			<LastSurname>Miguel</LastSurname>
-			<GenerationCodeSuffix>Jr</GenerationCodeSuffix>
-		</Name>
-		<BirthData>
-			<BirthDate>2005-12-16</BirthDate>
-		</BirthData>
-		<Citizenship>
-			<CitizenshipStatus>uri://ed-fi.org/CitizenshipStatusDescriptor#US Citizen</CitizenshipStatus>
-		</Citizenship>
 	</Student>
 </InterchangeStudent>

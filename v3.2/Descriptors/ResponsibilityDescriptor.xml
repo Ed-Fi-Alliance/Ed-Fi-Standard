@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<InterchangeDescriptors xmlns="http://ed-fi.org/0320" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320 ../Schemas/Bulk/Interchange-Descriptors.xsd">
+<InterchangeDescriptors xmlns="http://ed-fi.org/0320b" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0320b ../Schemas/Bulk/Interchange-Descriptors.xsd">
 	<ResponsibilityDescriptor>
 		<CodeValue>Accountability</CodeValue>
 		<ShortDescription>Accountability</ShortDescription>
@@ -40,6 +40,12 @@
 		<CodeValue>Transportation</CodeValue>
 		<ShortDescription>Transportation</ShortDescription>
 		<Description>Transportation</Description>
+		<Namespace>uri://ed-fi.org/ResponsibilityDescriptor</Namespace>
+	</ResponsibilityDescriptor>
+	<ResponsibilityDescriptor>
+		<CodeValue>Residency</CodeValue>
+		<ShortDescription>Residency</ShortDescription>
+		<Description>Residency</Description>
 		<Namespace>uri://ed-fi.org/ResponsibilityDescriptor</Namespace>
 	</ResponsibilityDescriptor>
 </InterchangeDescriptors>
