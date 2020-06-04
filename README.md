@@ -1,4 +1,4 @@
-This repository is no longer maintained by the Ed-Fi Alliance.
+This repository is no longer maintained.
 
 The Ed-Fi Data Standard is now hosted in the Ed-Fi-Alliance-OSS [Ed-Fi-Standard](https://github.com/Ed-Fi-Alliance-OSS/Ed-Fi-Standard) repository.
 
